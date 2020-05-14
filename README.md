@@ -1,2 +1,2 @@
 # AAG-College-Algebra
-Repository for current version of Automated Assessments Generation for College Algebra at the University of Florida.
+This repository is a work-in-progress on automatically generating assessments in a College Algebra course. By automating, we mean that assessments are generated (via a combination of technology) with little input. This is achieved by front-loading the creation of question structures and associated conceptions/errors that are called by a shell script to create PDF versions of assessments for instructors to utilize in the classroom. Published and under-review articles on this project are housed [here](Articles).
