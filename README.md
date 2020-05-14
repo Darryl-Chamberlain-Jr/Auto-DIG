@@ -21,7 +21,7 @@ This repository is a **work-in-progress** on automatically generating assessment
 
        You can achieve this by typing *cd ./git-repos/AAG-Colege-Algebra/shellScript*
 
-    2. **Run the shell script.**
+    2. Run the shell script.
 
        You can achieve this by typing *generateExams.sh "Semester" "Password" examNumber* The current version of the script will then generate the PDFs of the assessment and label the PDF with the Semester and Exam Number you input. In this version, it creates the number of Modules currently needed for each assessment, but this can be easily modified for your own uses. Password-protected PDFs are also generated.
 
