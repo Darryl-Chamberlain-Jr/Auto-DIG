@@ -13,16 +13,13 @@ This repository is a **work-in-progress** on automatically generating assessment
 
 3. Modify the shell script file *generateExams.sh* to point to your local directory.
   1. Navigate to the *generateExams.sh* file found in the shellScript folder.
-
   2. Open the file with a text editor. We suggest [Atom](https://atom.io/).
-
   3. Modify the *DIR* to point to your local directory. Example: *home/yourUsername/git-repos/AAG-College-Algebra*
 
 4. Run the shell script *generateExams.sh*
   1. Open your command prompt/terminal and navigate to the shellScript folder.
 
      You can achieve this by typing *cd ./git-repos/AAG-Colege-Algebra/shellScript*
-
   2. Run the shell script.
 
      You can achieve this by typing *generateExams.sh "Semester" "Password" examNumber*
