@@ -21,11 +21,11 @@ This repository is a **work-in-progress** on automatically generating assessment
 
 4. Run the shell script *generateExams.sh*
 
-   1. Open your command prompt/terminal and navigate to the shellScript folder.
+  1. Open your command prompt/terminal and navigate to the shellScript folder.
 
      You can achieve this by typing *cd ./git-repos/AAG-Colege-Algebra/shellScript*
 
-   2. Run the shell script.
+  2. Run the shell script.
 
      You can achieve this by typing *generateExams.sh "Semester" "Password" examNumber*
 
