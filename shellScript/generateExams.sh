@@ -4,18 +4,8 @@
 ### CHANGE THIS ONCE ###
 DIR="home/archdoc/git-repos/AAG-College-Algebra"
 currentDayTime=$( date +'%m_%d_%Y_%H_%M' )
-echo $currentDayTime
-touch /${DIR}/ExamGenerationReports/ExamGenerationReport${currentDayTime}.txt
 
 ############# DOES NOT NEED TO BE CHANGED #################
-examGenerationReport() {
-    fileName=$1
-    /bin/cat >> /${DIR}/ExamGenerationReports/ExamGenerationReport${currentDayTime}.txt << FINISH_HIM
-Running ${fileName}.
-
-FINISH_HIM
-}
-
 copyKeys() {
     FileName=$1
     cp /${DIR}/Keys/*.pdf /${DIR}/CompleteExam/Keys/
@@ -142,7 +132,6 @@ createQuestion1() {
   Version=$1
   ProblemNumber=$2
   FileName=$3
-  examGenerationReport "subgroupReal.sage"
   /bin/cat >> /${DIR}/buildExams/${FileName}${Version}.tex << FINISH_HIM
 
 \begin{sagesilent}
@@ -168,7 +157,6 @@ createQuestion2() {
   Version=$1
   ProblemNumber=$2
   FileName=$3
-  examGenerationReport "orderOfOperations.sage"
   /bin/cat >> /${DIR}/buildExams/${FileName}${Version}.tex << FINISH_HIM
 
 \begin{sagesilent}
@@ -194,7 +182,6 @@ createQuestion3() {
   Version=$1
   ProblemNumber=$2
   FileName=$3
-  examGenerationReport "subgroupComplex.sage"
   /bin/cat >> /${DIR}/buildExams/${FileName}${Version}.tex << FINISH_HIM
 
 \begin{sagesilent}
@@ -220,7 +207,6 @@ createQuestion4() {
   Version=$1
   ProblemNumber=$2
   FileName=$3
-  examGenerationReport "multiplyComplex.sage"
   /bin/cat >> /${DIR}/buildExams/${FileName}${Version}.tex << FINISH_HIM
 
 \begin{sagesilent}
@@ -248,7 +234,6 @@ createQuestion5() {
   Version=$1
   ProblemNumber=$2
   FileName=$3
-  examGenerationReport "divideComplex.sage"
   /bin/cat >> /${DIR}/buildExams/${FileName}${Version}.tex << FINISH_HIM
 
 \begin{sagesilent}
@@ -278,7 +263,6 @@ createQuestion6() {
   Version=$1
   ProblemNumber=$2
   FileName=$3
-  examGenerationReport "linearTwoPoints.sage"
   /bin/cat >> /${DIR}/buildExams/${FileName}${Version}.tex << FINISH_HIM
 
 \begin{sagesilent}
@@ -306,7 +290,6 @@ createQuestion7() {
   Version=$1
   ProblemNumber=$2
   FileName=$3
-  examGenerationReport "linearGraphToStandard.sage"
   /bin/cat >> /${DIR}/buildExams/${FileName}${Version}.tex << FINISH_HIM
 
 \begin{sagesilent}
@@ -337,7 +320,6 @@ createQuestion8() {
   Version=$1
   ProblemNumber=$2
   FileName=$3
-  examGenerationReport "linearParOrPer.sage"
   /bin/cat >> /${DIR}/buildExams/${FileName}${Version}.tex << FINISH_HIM
 
 \begin{sagesilent}
@@ -366,7 +348,6 @@ createQuestion9() {
   Version=$1
   ProblemNumber=$2
   FileName=$3
-  examGenerationReport "solveIntegerLinear.sage"
   /bin/cat >> /${DIR}/buildExams/${FileName}${Version}.tex << FINISH_HIM
 
 \begin{sagesilent}
@@ -396,7 +377,6 @@ createQuestion10() {
   Version=$1
   ProblemNumber=$2
   FileName=$3
-  examGenerationReport "solveRationalLinear.sage"
   /bin/cat >> /${DIR}/buildExams/${FileName}${Version}.tex << FINISH_HIM
 
 \begin{sagesilent}
@@ -427,7 +407,6 @@ createQuestion11() {
   Version=$1
   ProblemNumber=$2
   FileName=$3
-  examGenerationReport "describeSet.sage"
   /bin/cat >> /${DIR}/buildExams/${FileName}${Version}.tex << FINISH_HIM
 
 \begin{sagesilent}
@@ -455,7 +434,6 @@ createQuestion12() {
   Version=$1
   ProblemNumber=$2
   FileName=$3
-  examGenerationReport "solveIntegerInequality.sage"
   /bin/cat >> /${DIR}/buildExams/${FileName}${Version}.tex << FINISH_HIM
 
 \begin{sagesilent}
@@ -484,7 +462,6 @@ createQuestion13() {
   Version=$1
   ProblemNumber=$2
   FileName=$3
-  examGenerationReport "solveRationalInequality.sage"
   /bin/cat >> /${DIR}/buildExams/${FileName}${Version}.tex << FINISH_HIM
 
 \begin{sagesilent}
@@ -513,7 +490,6 @@ createQuestion14() {
   Version=$1
   ProblemNumber=$2
   FileName=$3
-  examGenerationReport "solveCompoundOR.sage"
   /bin/cat >> /${DIR}/buildExams/${FileName}${Version}.tex << FINISH_HIM
 
 \begin{sagesilent}
@@ -541,7 +517,6 @@ createQuestion15() {
   Version=$1
   ProblemNumber=$2
   FileName=$3
-  examGenerationReport "solveCompoundAND.sage"
   /bin/cat >> /${DIR}/buildExams/${FileName}${Version}.tex << FINISH_HIM
 
 \begin{sagesilent}
@@ -572,7 +547,6 @@ createQuestion16() {
   Version=$1
   ProblemNumber=$2
   FileName=$3
-  examGenerationReport "quadraticGraphToEquation.sage"
   /bin/cat >> /${DIR}/buildExams/${FileName}${Version}.tex << FINISH_HIM
 
 \begin{sagesilent}
@@ -602,7 +576,6 @@ createQuestion17() {
   Version=$1
   ProblemNumber=$2
   FileName=$3
-  examGenerationReport "quadraticEquationToGraph.sage"
   /bin/cat >> /${DIR}/buildExams/${FileName}${Version}.tex << FINISH_HIM
 
 \begin{sagesilent}
@@ -629,7 +602,6 @@ createQuestion18() {
   Version=$1
   ProblemNumber=$2
   FileName=$3
-  examGenerationReport "factorLeadingOver1Composite.sage"
   /bin/cat >> /${DIR}/buildExams/${FileName}${Version}.tex << FINISH_HIM
 
 \begin{sagesilent}
@@ -658,7 +630,6 @@ createQuestion19() {
   Version=$1
   ProblemNumber=$2
   FileName=$3
-  examGenerationReport "solveQuadraticFactorComposites.sage"
   /bin/cat >> /${DIR}/buildExams/${FileName}${Version}.tex << FINISH_HIM
 
 \begin{sagesilent}
@@ -686,7 +657,6 @@ createQuestion20() {
   Version=$1
   ProblemNumber=$2
   FileName=$3
-  examGenerationReport "quadraticFormula.sage"
   /bin/cat >> /${DIR}/buildExams/${FileName}${Version}.tex << FINISH_HIM
 
 \begin{sagesilent}
@@ -716,7 +686,6 @@ createQuestion21() {
   Version=$1
   ProblemNumber=$2
   FileName=$3
-  examGenerationReport "domainRadical.sage"
   /bin/cat >> /${DIR}/buildExams/${FileName}${Version}.tex << FINISH_HIM
 
 \begin{sagesilent}
@@ -743,7 +712,6 @@ createQuestion22() {
   Version=$1
   ProblemNumber=$2
   FileName=$3
-  examGenerationReport "radicalGraphToEquation.sage"
   /bin/cat >> /${DIR}/buildExams/${FileName}${Version}.tex << FINISH_HIM
 
 \begin{sagesilent}
@@ -776,7 +744,6 @@ createQuestion23() {
   Version=$1
   ProblemNumber=$2
   FileName=$3
-  examGenerationReport "radicalEquationToGraph.sage"
   /bin/cat >> /${DIR}/buildExams/${FileName}${Version}.tex << FINISH_HIM
 
 \begin{sagesilent}
@@ -815,7 +782,6 @@ createQuestion24() {
   Version=$1
   ProblemNumber=$2
   FileName=$3
-  examGenerationReport "solveRadicalLinear.sage"
   /bin/cat >> /${DIR}/buildExams/${FileName}${Version}.tex << FINISH_HIM
 
 \begin{sagesilent}
@@ -843,7 +809,6 @@ createQuestion25() {
   Version=$1
   ProblemNumber=$2
   FileName=$3
-  examGenerationReport "solveRadicalQuadratic.sage"
   /bin/cat >> /${DIR}/buildExams/${FileName}${Version}.tex << FINISH_HIM
 
 \begin{sagesilent}
@@ -873,7 +838,6 @@ createQuestion26() {
   Version=$1
   ProblemNumber=$2
   FileName=$3
-  examGenerationReport "polyGraphToFunction.sage"
   /bin/cat >> /${DIR}/buildExams/${FileName}${Version}.tex << FINISH_HIM
 
 \begin{sagesilent}
@@ -903,7 +867,6 @@ createQuestion27() {
   Version=$1
   ProblemNumber=$2
   FileName=$3
-  examGenerationReport "polyEndBehavior.sage"
   /bin/cat >> /${DIR}/buildExams/${FileName}${Version}.tex << FINISH_HIM
 
 \begin{sagesilent}
@@ -935,7 +898,6 @@ createQuestion28() {
   Version=$1
   ProblemNumber=$2
   FileName=$3
-  examGenerationReport "polyZeroBehavior.sage"
   /bin/cat >> /${DIR}/buildExams/${FileName}${Version}.tex << FINISH_HIM
 
 \begin{sagesilent}
@@ -967,7 +929,6 @@ createQuestion29() {
   Version=$1
   ProblemNumber=$2
   FileName=$3
-  examGenerationReport "constructPolyRationals.sage"
   /bin/cat >> /${DIR}/buildExams/${FileName}${Version}.tex << FINISH_HIM
 
 \begin{sagesilent}
@@ -995,7 +956,6 @@ createQuestion30() {
   Version=$1
   ProblemNumber=$2
   FileName=$3
-  examGenerationReport "constructPolyComplex.sage"
   /bin/cat >> /${DIR}/buildExams/${FileName}${Version}.tex << FINISH_HIM
 
 \begin{sagesilent}
@@ -1025,7 +985,6 @@ createQuestion31() {
   Version=$1
   ProblemNumber=$2
   FileName=$3
-  examGenerationReport "domainRational.sage"
   /bin/cat >> /${DIR}/buildExams/${FileName}${Version}.tex << FINISH_HIM
 
 \begin{sagesilent}
@@ -1053,7 +1012,6 @@ createQuestion32() {
   Version=$1
   ProblemNumber=$2
   FileName=$3
-  examGenerationReport "solveRationalLinear.sage"
   /bin/cat >> /${DIR}/buildExams/${FileName}${Version}.tex << FINISH_HIM
 
 \begin{sagesilent}
@@ -1081,7 +1039,6 @@ createQuestion33() {
   Version=$1
   ProblemNumber=$2
   FileName=$3
-  examGenerationReport "solveRationalQuadratic.sage"
   /bin/cat >> /${DIR}/buildExams/${FileName}${Version}.tex << FINISH_HIM
 
 \begin{sagesilent}
@@ -1109,7 +1066,6 @@ createQuestion34() {
   Version=$1
   ProblemNumber=$2
   FileName=$3
-  examGenerationReport "rationalGraphToEquation.sage"
   /bin/cat >> /${DIR}/buildExams/${FileName}${Version}.tex << FINISH_HIM
 
 \begin{sagesilent}
@@ -1143,7 +1099,6 @@ createQuestion35() {
   Version=$1
   ProblemNumber=$2
   FileName=$3
-  examGenerationReport "rationalEquationToGraph.sage"
   /bin/cat >> /${DIR}/buildExams/${FileName}${Version}.tex << FINISH_HIM
 
 \begin{sagesilent}
@@ -1183,7 +1138,6 @@ createQuestion36() {
   Version=$1
   ProblemNumber=$2
   FileName=$3
-  examGenerationReport "domainRangeLog.sage"
   /bin/cat >> /${DIR}/buildExams/${FileName}${Version}.tex << FINISH_HIM
 
 \begin{sagesilent}
@@ -1210,7 +1164,6 @@ createQuestion37() {
   Version=$1
   ProblemNumber=$2
   FileName=$3
-  examGenerationReport "domainRangeExp.sage"
   /bin/cat >> /${DIR}/buildExams/${FileName}${Version}.tex << FINISH_HIM
 
 \begin{sagesilent}
@@ -1237,7 +1190,6 @@ createQuestion38() {
   Version=$1
   ProblemNumber=$2
   FileName=$3
-  examGenerationReport "solveByConverting.sage"
   /bin/cat >> /${DIR}/buildExams/${FileName}${Version}.tex << FINISH_HIM
 
 \begin{sagesilent}
@@ -1262,7 +1214,6 @@ createQuestion39() {
   Version=$1
   ProblemNumber=$2
   FileName=$3
-  examGenerationReport "solveByLogProperties.sage"
   /bin/cat >> /${DIR}/buildExams/${FileName}${Version}.tex << FINISH_HIM
 
 \begin{sagesilent}
@@ -1288,7 +1239,6 @@ createQuestion40() {
   Version=$1
   ProblemNumber=$2
   FileName=$3
-  examGenerationReport "solveExpDifferentBases.sage"
   /bin/cat >> /${DIR}/buildExams/${FileName}${Version}.tex << FINISH_HIM
 
 \begin{sagesilent}
@@ -1317,7 +1267,6 @@ createQuestion41() {
   Version=$1
   ProblemNumber=$2
   FileName=$3
-  examGenerationReport "identifyModelPopulation.sage"
   /bin/cat >> /${DIR}/buildExams/${FileName}${Version}.tex << FINISH_HIM
 
 \begin{sagesilent}
@@ -1349,7 +1298,6 @@ createQuestion42() {
   Version=$1
   ProblemNumber=$2
   FileName=$3
-  examGenerationReport "domainLinear.sage"
   /bin/cat >> /${DIR}/buildExams/${FileName}${Version}.tex << FINISH_HIM
 
 \begin{sagesilent}
@@ -1377,7 +1325,6 @@ createQuestion43() {
   Version=$1
   ProblemNumber=$2
   FileName=$3
-  examGenerationReport "constructLinearModel1.sage"
   /bin/cat >> /${DIR}/buildExams/${FileName}${Version}.tex << FINISH_HIM
 
 \begin{sagesilent}
@@ -1405,7 +1352,6 @@ createQuestion44() {
   Version=$1
   ProblemNumber=$2
   FileName=$3
-  examGenerationReport "constructLinearModel2.sage"
   /bin/cat >> /${DIR}/buildExams/${FileName}${Version}.tex << FINISH_HIM
 
 \begin{sagesilent}
@@ -1433,7 +1379,6 @@ createQuestion45() {
   Version=$1
   ProblemNumber=$2
   FileName=$3
-  examGenerationReport "constructLinearModel3.sage"
   /bin/cat >> /${DIR}/buildExams/${FileName}${Version}.tex << FINISH_HIM
 
 \begin{sagesilent}
@@ -1461,7 +1406,6 @@ createQuestion46() {
   Version=$1
   ProblemNumber=$2
   FileName=$3
-  examGenerationReport "identifyModelPopulation.sage"
   /bin/cat >> /${DIR}/buildExams/${FileName}${Version}.tex << FINISH_HIM
 
 \begin{sagesilent}
@@ -1493,7 +1437,6 @@ createQuestion47() {
   Version=$1
   ProblemNumber=$2
   FileName=$3
-  examGenerationReport "identifyModelVariation.sage"
   /bin/cat >> /${DIR}/buildExams/${FileName}${Version}.tex << FINISH_HIM
 
 \begin{sagesilent}
@@ -1520,7 +1463,6 @@ createQuestion48() {
   Version=$1
   ProblemNumber=$2
   FileName=$3
-  examGenerationReport "constructDirectModel.sage"
   /bin/cat >> /${DIR}/buildExams/${FileName}${Version}.tex << FINISH_HIM
 
 \begin{sagesilent}
@@ -1548,7 +1490,6 @@ createQuestion49() {
   Version=$1
   ProblemNumber=$2
   FileName=$3
-  examGenerationReport "constructIndirectModel.sage"
   /bin/cat >> /${DIR}/buildExams/${FileName}${Version}.tex << FINISH_HIM
 
 \begin{sagesilent}
@@ -1576,7 +1517,6 @@ createQuestion50() {
   Version=$1
   ProblemNumber=$2
   FileName=$3
-  examGenerationReport "constructJointModel.sage"
   /bin/cat >> /${DIR}/buildExams/${FileName}${Version}.tex << FINISH_HIM
 
 \begin{sagesilent}
@@ -1604,7 +1544,6 @@ createQuestion51() {
   Version=$1
   ProblemNumber=$2
   FileName=$3
-  examGenerationReport "identifyModelPopulation.sage"
   /bin/cat >> /${DIR}/buildExams/${FileName}${Version}.tex << FINISH_HIM
 
 \begin{sagesilent}
@@ -1636,7 +1575,6 @@ createQuestion52() {
   Version=$1
   ProblemNumber=$2
   FileName=$3
-  examGenerationReport "identifyModelGraph.sage"
   /bin/cat >> /${DIR}/buildExams/${FileName}${Version}.tex << FINISH_HIM
 
 \begin{sagesilent}
@@ -1666,7 +1604,6 @@ createQuestion53() {
   Version=$1
   ProblemNumber=$2
   FileName=$3
-  examGenerationReport "constructBacteriaGrowth.sage"
   /bin/cat >> /${DIR}/buildExams/${FileName}${Version}.tex << FINISH_HIM
 
 \begin{sagesilent}
@@ -1694,7 +1631,6 @@ createQuestion54() {
   Version=$1
   ProblemNumber=$2
   FileName=$3
-  examGenerationReport "constructTemperatureModel.sage"
   /bin/cat >> /${DIR}/buildExams/${FileName}${Version}.tex << FINISH_HIM
 
 \begin{sagesilent}
@@ -1722,7 +1658,6 @@ createQuestion55() {
   Version=$1
   ProblemNumber=$2
   FileName=$3
-  examGenerationReport "constructHalfLifeModel.sage"
   /bin/cat >> /${DIR}/buildExams/${FileName}${Version}.tex << FINISH_HIM
 
 \begin{sagesilent}
@@ -1750,7 +1685,6 @@ createQuestion56() {
   Version=$1
   ProblemNumber=$2
   FileName=$3
-  examGenerationReport "identifyModelGraph.sage"
   /bin/cat >> /${DIR}/buildExams/${FileName}${Version}.tex << FINISH_HIM
 
 \begin{sagesilent}
@@ -1780,7 +1714,6 @@ createQuestion57() {
   Version=$1
   ProblemNumber=$2
   FileName=$3
-  examGenerationReport "constructModelMixed.sage"
   /bin/cat >> /${DIR}/buildExams/${FileName}${Version}.tex << FINISH_HIM
 
 \begin{sagesilent}
@@ -1808,7 +1741,6 @@ createQuestion58() {
   Version=$1
   ProblemNumber=$2
   FileName=$3
-  examGenerationReport "solveModelLinear.sage"
   /bin/cat >> /${DIR}/buildExams/${FileName}${Version}.tex << FINISH_HIM
 
 \begin{sagesilent}
@@ -1836,7 +1768,6 @@ createQuestion59() {
   Version=$1
   ProblemNumber=$2
   FileName=$3
-  examGenerationReport "solveModelPower.sage"
   /bin/cat >> /${DIR}/buildExams/${FileName}${Version}.tex << FINISH_HIM
 
 \begin{sagesilent}
@@ -1864,7 +1795,6 @@ createQuestion60() {
   Version=$1
   ProblemNumber=$2
   FileName=$3
-  examGenerationReport "solveModelExp.sage"
   /bin/cat >> /${DIR}/buildExams/${FileName}${Version}.tex << FINISH_HIM
 
 \begin{sagesilent}
@@ -1892,7 +1822,6 @@ createQuestion61() {
   Version=$1
   ProblemNumber=$2
   FileName=$3
-  examGenerationReport "domainAfterOperating.sage"
   /bin/cat >> /${DIR}/buildExams/${FileName}${Version}.tex << FINISH_HIM
 
 \begin{sagesilent}
@@ -1920,7 +1849,6 @@ createQuestion62() {
   Version=$1
   ProblemNumber=$2
   FileName=$3
-  examGenerationReport "functionComposition.sage"
   /bin/cat >> /${DIR}/buildExams/${FileName}${Version}.tex << FINISH_HIM
 
 \begin{sagesilent}
@@ -1948,7 +1876,6 @@ createQuestion63() {
   Version=$1
   ProblemNumber=$2
   FileName=$3
-  examGenerationReport "determine1to1.sage"
   /bin/cat >> /${DIR}/buildExams/${FileName}${Version}.tex << FINISH_HIM
 
 \begin{sagesilent}
@@ -1976,7 +1903,6 @@ createQuestion64() {
   Version=$1
   ProblemNumber=$2
   FileName=$3
-  examGenerationReport "findInversePolyOrRadical.sage"
   /bin/cat >> /${DIR}/buildExams/${FileName}${Version}.tex << FINISH_HIM
 
 \begin{sagesilent}
@@ -2004,7 +1930,6 @@ createQuestion65() {
   Version=$1
   ProblemNumber=$2
   FileName=$3
-  examGenerationReport "findInverseLogOrExp.sage"
   /bin/cat >> /${DIR}/buildExams/${FileName}${Version}.tex << FINISH_HIM
 
 \begin{sagesilent}
@@ -2032,7 +1957,6 @@ createQuestion66() {
   Version=$1
   ProblemNumber=$2
   FileName=$3
-  examGenerationReport "syntheticDivision.sage"
   /bin/cat >> /${DIR}/buildExams/${FileName}${Version}.tex << FINISH_HIM
 
 \begin{sagesilent}
@@ -2060,7 +1984,6 @@ createQuestion67() {
   Version=$1
   ProblemNumber=$2
   FileName=$3
-  examGenerationReport "syntheticDivisionMissingTerms.sage"
   /bin/cat >> /${DIR}/buildExams/${FileName}${Version}.tex << FINISH_HIM
 
 \begin{sagesilent}
@@ -2088,7 +2011,6 @@ createQuestion68() {
   Version=$1
   ProblemNumber=$2
   FileName=$3
-  examGenerationReport "possibleRoots.sage"
   /bin/cat >> /${DIR}/buildExams/${FileName}${Version}.tex << FINISH_HIM
 
 \begin{sagesilent}
@@ -2116,7 +2038,6 @@ createQuestion69() {
   Version=$1
   ProblemNumber=$2
   FileName=$3
-  examGenerationReport "factorUsingSynthetic2Integers.sage"
   /bin/cat >> /${DIR}/buildExams/${FileName}${Version}.tex << FINISH_HIM
 
 \begin{sagesilent}
@@ -2144,7 +2065,6 @@ createQuestion70() {
   Version=$1
   ProblemNumber=$2
   FileName=$3
-  examGenerationReport "factorUsingSynthetic2Rationals.sage"
   /bin/cat >> /${DIR}/buildExams/${FileName}${Version}.tex << FINISH_HIM
 
 \begin{sagesilent}
@@ -2172,7 +2092,6 @@ createQuestion71() {
   Version=$1
   ProblemNumber=$2
   FileName=$3
-  examGenerationReport "interpretLimit.sage"
   /bin/cat >> /${DIR}/buildExams/${FileName}${Version}.tex << FINISH_HIM
 
 \begin{sagesilent}
@@ -2200,7 +2119,6 @@ createQuestion72() {
   Version=$1
   ProblemNumber=$2
   FileName=$3
-  examGenerationReport "oneSidedLimits.sage"
   /bin/cat >> /${DIR}/buildExams/${FileName}${Version}.tex << FINISH_HIM
 
 \begin{sagesilent}
@@ -2228,7 +2146,6 @@ createQuestion73() {
   Version=$1
   ProblemNumber=$2
   FileName=$3
-  examGenerationReport "evaluateLimitGraphically.sage"
   /bin/cat >> /${DIR}/buildExams/${FileName}${Version}.tex << FINISH_HIM
 
 \begin{sagesilent}
@@ -2258,7 +2175,6 @@ createQuestion74() {
   Version=$1
   ProblemNumber=$2
   FileName=$3
-  examGenerationReport "evaluateLimitAnalyticalEasy.sage"
   /bin/cat >> /${DIR}/buildExams/${FileName}${Version}.tex << FINISH_HIM
 
 \begin{sagesilent}
@@ -2286,7 +2202,6 @@ createQuestion75() {
   Version=$1
   ProblemNumber=$2
   FileName=$3
-  examGenerationReport "evaluateLimitAnalyticalHard.sage"
   /bin/cat >> /${DIR}/buildExams/${FileName}${Version}.tex << FINISH_HIM
 
 \begin{sagesilent}
@@ -2314,7 +2229,6 @@ createQuestion76() {
   Version=$1
   ProblemNumber=$2
   FileName=$3
-  examGenerationReport "identifyHoles.sage"
   /bin/cat >> /${DIR}/buildExams/${FileName}${Version}.tex << FINISH_HIM
 
 \begin{sagesilent}
@@ -2342,7 +2256,6 @@ createQuestion77() {
   Version=$1
   ProblemNumber=$2
   FileName=$3
-  examGenerationReport "identifyVAs.sage"
   /bin/cat >> /${DIR}/buildExams/${FileName}${Version}.tex << FINISH_HIM
 
 \begin{sagesilent}
@@ -2370,7 +2283,6 @@ createQuestion78() {
   Version=$1
   ProblemNumber=$2
   FileName=$3
-  examGenerationReport "identifyHAs.sage"
   /bin/cat >> /${DIR}/buildExams/${FileName}${Version}.tex << FINISH_HIM
 
 \begin{sagesilent}
@@ -2398,7 +2310,6 @@ createQuestion79() {
   Version=$1
   ProblemNumber=$2
   FileName=$3
-  examGenerationReport "identifyOAs.sage"
   /bin/cat >> /${DIR}/buildExams/${FileName}${Version}.tex << FINISH_HIM
 
 \begin{sagesilent}
@@ -2428,7 +2339,6 @@ createQuestion80() {
   FileName=$3
   TypeList=("A" "B" "C")
   TYPE=${TypeList[$(( $RANDOM %3 ))]}
-  examGenerationReport "identifyGraphOfRationalFunction.sage"
   /bin/cat >> /${DIR}/buildExams/${FileName}${Version}.tex << FINISH_HIM
 
 \begin{sagesilent}
@@ -2990,7 +2900,7 @@ if [ "$1" == "debug" ]; then
     fi
 else
     while [ "$1" == "" ] || [ "$2" == "" ] || [ "$3" == "" ]; do
-        echo -e "\nArguments for the exam are missing. The arguments are Semester, Password, and Exam Number. \n \nPlease put the semester in parentheses and make sure it has no spaces, such as 'Spring\,2020'. \nThe password should be a single word in parentheses, such as 'Password1'. \nThe exam number should be 1, 2, 3, 4, or 5 (final exam). The number of Modules generated is based on the exam number."
+        echo -e "\nArguments for the exam are missing. The arguments are Semester, Password, and Exam Number. \n \nPlease put the semester in parentheses and make sure it has no spaces, such as 'Spring\,2020'. \nThe password should be a single word in parentheses, such as 'Password1'. \nThe exam number should be 1, 2, 3, 4, 5, 6, or 7 (final exam). The number of Modules generated is based on the exam number."
         echo -e "\n If you meant to debug, make the first argument 'debug' and the second argument the single module you want to run."
         exit -1
     done
@@ -2999,8 +2909,14 @@ else
         generateModuleAllVersions 1 $setExamNumber $setSemester 0 "Module\,1\,-\,Real\,and\,Complex\,Numbers" $setPassword "Module1"
         generateModuleAllVersions 2 $setExamNumber $setSemester 5 "Module\,2\,-\,Linear\,Functions" $setPassword "Module2"
         generateModuleAllVersions 3 $setExamNumber $setSemester 10 "Module\,3\,-\,Inequalities" $setPassword "Module3"
-        generateModuleAllVersions 4 $setExamNumber $setSemester 15 "Module\,4\,-\,Quadratic\,Functions" $setPassword "Module4"
     elif [ "$3" == 2 ]; then
+        generateModuleAllVersions 1 $setExamNumber $setSemester 0 "Module\,1\,-\,Real\,and\,Complex\,Numbers" $setPassword "Module1"
+        generateModuleAllVersions 2 $setExamNumber $setSemester 5 "Module\,2\,-\,Linear\,Functions" $setPassword "Module2"
+        generateModuleAllVersions 3 $setExamNumber $setSemester 10 "Module\,3\,-\,Inequalities" $setPassword "Module3"
+        generateModuleAllVersions 4 $setExamNumber $setSemester 15 "Module\,4\,-\,Quadratic\,Functions" $setPassword "Module4"
+        generateModuleAllVersions 5 $setExamNumber $setSemester 20 "Module\,5\,-\,Radical\,Functions" $setPassword "Module5"
+        generateModuleAllVersions 6 $setExamNumber $setSemester 25 "Module\,6\,-\,Polynomial\,Functions" $setPassword "Module6"
+    elif [ "$3" == 3 ]; then
         generateModuleAllVersions 1 $setExamNumber $setSemester 0 "Module\,1\,-\,Real\,and\,Complex\,Numbers" $setPassword "Module1"
         generateModuleAllVersions 2 $setExamNumber $setSemester 5 "Module\,2\,-\,Linear\,Functions" $setPassword "Module2"
         generateModuleAllVersions 3 $setExamNumber $setSemester 10 "Module\,3\,-\,Inequalities" $setPassword "Module3"
@@ -3009,7 +2925,9 @@ else
         generateModuleAllVersions 6 $setExamNumber $setSemester 25 "Module\,6\,-\,Polynomial\,Functions" $setPassword "Module6"
         generateModuleAllVersions 7 $setExamNumber $setSemester 30 "Module\,7\,-\,Rational\,Functions" $setPassword "Module7"
         generateModuleAllVersions 8 $setExamNumber $setSemester 35 "Module\,8\,-\,Logarithmic\,and\,Exponential\,Functions" $setPassword "Module8"
-    elif [ "$3" == 3 ] || [ "$3" == 4 ]; then
+        generateModuleAllVersions "9M" $setExamNumber $setSemester 40 "Module\,9M\,-\,Modeling\,Linear\,Functions" $setPassword "Module9M"
+        generateModuleAllVersions "9L" $setExamNumber $setSemester 60 "Module\,9L\,-\,Operations\,on\,Functions" $setPassword "Module9L"
+    elif [ "$3" == 4 ] || [ "$3" == 5 ] || [ "$3" == 6 ]; then
         generateModuleAllVersions 1 $setExamNumber $setSemester 0 "Module\,1\,-\,Real\,and\,Complex\,Numbers" $setPassword "Module1"
         generateModuleAllVersions 2 $setExamNumber $setSemester 5 "Module\,2\,-\,Linear\,Functions" $setPassword "Module2"
         generateModuleAllVersions 3 $setExamNumber $setSemester 10 "Module\,3\,-\,Inequalities" $setPassword "Module3"
