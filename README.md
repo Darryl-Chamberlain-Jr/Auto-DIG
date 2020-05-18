@@ -1,7 +1,10 @@
-# Welcome!
+Welcome!
+========
 This repository is a **work-in-progress** on automatically generating assessments in a College Algebra course. By *automatically*, we mean that assessments are generated (via a combination of technology) with little input from the user. This is achieved by front-loading the creation of question structures and associated conceptions/errors that are later called by a shell script to create PDF versions of assessments for instructors to utilize in the classroom. Published and under-review articles on this project are housed [here](Articles). The related project, an open-source College Algebra online homework system, is housed [here](https://github.com/Darryl-Chamberlain-Jr/mac1105summer2020).
 
 **No coding experience is required to use this work as-is.** If you would like to generate exams through the shell scripts, here is what you will need to do **the first time**. *On subsequent assessments, you'll only need to complete steps 4 and 5.*
+
+Steps to generate exams for the first time.
 ------
 1. Download the necessary programs.
 
@@ -29,6 +32,6 @@ This repository is a **work-in-progress** on automatically generating assessment
 
    If all goes well, the collection of PDFs are available in the *CompleteExam* folder!
 
-------
+Contribute to this project!
 ------
 ### If you would like to contribute to the creation of the assessments, please contact Darryl Chamberlain Jr. at dchamberlain31@ufl.edu.
