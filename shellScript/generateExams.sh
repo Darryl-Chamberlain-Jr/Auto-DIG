@@ -23,7 +23,7 @@ createAnswerKeyFile() {
     HeadingName=$4
     /bin/cat > /${DIR}/Keys/key${FileName}${Version}.tex << FINISH_HIM
 
-\documentclass{article}[12pt]
+\documentclass{article}[14pt]
 \usepackage{multicol, enumerate, enumitem, hyperref, color, soul, setspace, parskip, fancyhdr, amssymb, amsthm, amsmath, bbm, latexsym, units, mathtools}
 \everymath{\displaystyle}
 \usepackage[headsep=0.5cm,headheight=0cm, left=1 in,right= 1 in,top= 1 in,bottom= 1 in]{geometry}
@@ -64,7 +64,7 @@ createExamHeading() {
   LONGNAME=$5
   FileName=$6
   /bin/cat > /${DIR}/buildExams/${FileName}${MODULEVERSION}.tex << FINISH_HIM
-\documentclass[12pt]{article}
+\documentclass[14pt]{article}
 %General Packages
 \usepackage{multicol, enumerate, enumitem, hyperref, color, soul, setspace, parskip, fancyhdr}
 
@@ -2601,7 +2601,7 @@ createFinalExamHeading() {
   FileName=$3
   /bin/cat > /${DIR}/buildExams/${FileName}${VERSION}.tex << FINISH_HIM
 
-\documentclass[12pt]{article}
+\documentclass[14pt]{article}
 %General Packages
 \usepackage{multicol, enumerate, enumitem, hyperref, color, soul, setspace, parskip, fancyhdr}
 

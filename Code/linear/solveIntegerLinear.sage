@@ -68,7 +68,7 @@ solution = generateSolution(blocks)
 distractor1 = generateSolution(distractorDistributionC(blocks))
 distractor2 = generateSolution(distractorDistributionF(blocks))
 #DEAD distractor3 = distractorDistributionCandF(blocks)
-distractor3 = generateSolution(distractorNegativeSolution(blocks))
+distractor3 = [-solution[0]]
 
 solutionList = [solution, distractor1, distractor2, distractor3]
 precision = 1
