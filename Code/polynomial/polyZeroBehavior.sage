@@ -32,8 +32,9 @@ def displayFactor(a):
 def determineZeroBehavior(a, zeros, exponents, zeroDisplayed):
     a0, b0, c0, d0 = zeros
     ae, be, ce, de = exponents
-    checkSmaller = float(zeroDisplayed - 0.5)
-    checkLarger = float(zeroDisplayed + 0.5)
+    floatDisplayed = float(zeroDisplayed)
+    checkSmaller = float(floatDisplayed - 0.5)
+    checkLarger = float(floatDisplayed + 0.5)
     smallerValue = float(a * (checkSmaller - a0)**ae * (checkSmaller - b0)**be * (checkSmaller - c0)**ce * (checkSmaller -d0)**de)
     largerValue = float(a * (checkLarger - a0)**ae * (checkLarger - b0)**be * (checkLarger - c0)**ce * (checkLarger -d0)**de)
     if smallerValue < 0 and largerValue < 0:
@@ -100,9 +101,12 @@ behaviorOfPolynomial = leadingCoefficient*( firstTerm * secondTerm * thirdTerm *
 displayPolynomial = leadingCoefficient * (x+factor1[1])**e0 *(x-factor1[1])**e1 *(x+factor2[1])**e2 *(x-factor2[1])**e3
 displayProblem = "f(x) = %s(%s)^{%d}(%s)^{%d}(%s)^{%d}(%s)^{%d}" %(leadingCoefficient, displayFactor(-factor1[1]), e0, displayFactor(factor1[1]), e1, displayFactor(-factor2[1]), e2, displayFactor(factor2[1]), e3)
 
-zeros = [factor1[0], factor1[1], factor2[0], factor2[1]]
+zeros = [-factor1[1], factor1[1], -factor2[1], factor2[1]]
 exponents = [e0, e1, e2, e3]
 behavior = determineZeroBehavior(leadingCoefficient, zeros, exponents, zeroOnDisplay)
+print("\n", zeros, "\n")
+print(exponents, "\n")
+print(behavior, "\n")
 if behavior == "positiveEven":
     displaySolution = "zeroBehaviorPositiveEven%s" %version
     answerLetter="C"

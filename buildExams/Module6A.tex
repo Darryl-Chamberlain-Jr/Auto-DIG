@@ -23,8 +23,8 @@
 \pagestyle{fancy}
 \lhead{Module\,6\,-\,Polynomial\,Functions}
 \chead{}
-\rhead{Progress Exam 2}
-\lfoot{Summer\,C\,2020}
+\rhead{Progress Exam 0}
+\lfoot{debug}
 \cfoot{}
 \rfoot{Version A}
 
@@ -45,24 +45,22 @@ version = "A"
 \begin{sagesilent}
 moduleNumber=6
 problemNumber=26
-load("../Code/polynomial/polyEndBehavior.sage")
+load("../Code/polynomial/polyGraphToFunction.sage")
 \end{sagesilent}
 
 \litem{ \sage{displayStem}
 
-	\[ f(x) = \sage{displayPolynomial} \]
+	\begin{center}
+	\includegraphics[width = 0.3\textwidth]{../Figures/polyGraphToFunctionA.png}
+	\end{center}
 
-\begin{multicols}{4}
 	\begin{enumerate}[label=\Alph*.]
-		\item \begin{center} \includegraphics[width=.2\textwidth]{../Figures/endBehaviorNegativeOddA} \end{center}
-    \columnbreak
-		\item \begin{center} \includegraphics[width=.2\textwidth]{../Figures/endBehaviorNegativeEvenA}\end{center}
-    \columnbreak
-		\item \begin{center} \includegraphics[width=.2\textwidth]{../Figures/endBehaviorPositiveEvenA}\end{center}
-    \columnbreak
-		\item \begin{center} \includegraphics[width=.2\textwidth]{../Figures/endBehaviorPositiveOddA}\end{center}
+		\item \( \sage{choices[0]} \)
+		\item \( \sage{choices[1]} \)
+		\item \( \sage{choices[2]} \)
+		\item \( \sage{choices[3]} \)
+		\item \( \sage{choices[4]} \)
 	\end{enumerate}
-\end{multicols}
 }
 
 \begin{sagesilent}
@@ -87,27 +85,6 @@ load("../Code/polynomial/constructPolyComplex.sage")
 \begin{sagesilent}
 moduleNumber=6
 problemNumber=28
-load("../Code/polynomial/polyGraphToFunction.sage")
-\end{sagesilent}
-
-\litem{ \sage{displayStem}
-
-	\begin{center}
-	\includegraphics[width = 0.3\textwidth]{../Figures/polyGraphToFunctionA.png}
-	\end{center}
-
-	\begin{enumerate}[label=\Alph*.]
-		\item \( \sage{choices[0]} \)
-		\item \( \sage{choices[1]} \)
-		\item \( \sage{choices[2]} \)
-		\item \( \sage{choices[3]} \)
-		\item \( \sage{choices[4]} \)
-	\end{enumerate}
-}
-
-\begin{sagesilent}
-moduleNumber=6
-problemNumber=29
 load("../Code/polynomial/constructPolyRationals.sage")
 \end{sagesilent}
 
@@ -126,7 +103,7 @@ load("../Code/polynomial/constructPolyRationals.sage")
 
 \begin{sagesilent}
 moduleNumber=6
-problemNumber=30
+problemNumber=29
 load("../Code/polynomial/polyZeroBehavior.sage")
 \end{sagesilent}
 
@@ -143,6 +120,29 @@ load("../Code/polynomial/polyZeroBehavior.sage")
 		\item \begin{center} \includegraphics[width=.2\textwidth]{../Figures/zeroBehaviorPositiveEvenA}\end{center}
     \columnbreak
 		\item \begin{center} \includegraphics[width=.2\textwidth]{../Figures/zeroBehaviorPositiveOddA}\end{center}
+	\end{enumerate}
+\end{multicols}
+}
+
+\begin{sagesilent}
+moduleNumber=6
+problemNumber=30
+load("../Code/polynomial/polyEndBehavior.sage")
+\end{sagesilent}
+
+\litem{ \sage{displayStem}
+
+	\[ f(x) = \sage{displayPolynomial} \]
+
+\begin{multicols}{4}
+	\begin{enumerate}[label=\Alph*.]
+		\item \begin{center} \includegraphics[width=.2\textwidth]{../Figures/endBehaviorNegativeOddA} \end{center}
+    \columnbreak
+		\item \begin{center} \includegraphics[width=.2\textwidth]{../Figures/endBehaviorNegativeEvenA}\end{center}
+    \columnbreak
+		\item \begin{center} \includegraphics[width=.2\textwidth]{../Figures/endBehaviorPositiveEvenA}\end{center}
+    \columnbreak
+		\item \begin{center} \includegraphics[width=.2\textwidth]{../Figures/endBehaviorPositiveOddA}\end{center}
 	\end{enumerate}
 \end{multicols}
 }

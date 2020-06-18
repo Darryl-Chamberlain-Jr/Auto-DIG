@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.3.30)  3 JUN 2020 13:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.3.30)  18 JUN 2020 11:04
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -612,70 +612,70 @@ e
 \ST@sf=\write5
 \openout5 = `Module6C.sagetex.sage'.
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 62.
+<../Figures/polyGraphToFunctionC.png, id=4, 453.8556pt x 336.7782pt>
+File: ../Figures/polyGraphToFunctionC.png Graphic file (type png)
+<use ../Figures/polyGraphToFunctionC.png>
+Package pdftex.def Info: ../Figures/polyGraphToFunctionC.png  used on input lin
+e 64.
+(pdftex.def)             Requested size: 140.92793pt x 104.57487pt.
+LaTeX Font Info:    Try loading font information for U+msa on input line 64.
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 62.
+LaTeX Font Info:    Try loading font information for U+msb on input line 64.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+lasy on input line 62.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 64.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-<../Figures/endBehaviorNegativeOddC.png, id=4, 182.18062pt x 204.01219pt>
-File: ../Figures/endBehaviorNegativeOddC.png Graphic file (type png)
-<use ../Figures/endBehaviorNegativeOddC.png>
-Package pdftex.def Info: ../Figures/endBehaviorNegativeOddC.png  used on input 
-line 85.
-(pdftex.def)             Requested size: 93.94957pt x 105.20598pt.
+<../Figures/zeroBehaviorNegativeOddC.png, id=6, 90.3375pt x 103.88812pt>
+File: ../Figures/zeroBehaviorNegativeOddC.png Graphic file (type png)
+<use ../Figures/zeroBehaviorNegativeOddC.png>
+Package pdftex.def Info: ../Figures/zeroBehaviorNegativeOddC.png  used on input
+ line 87.
+(pdftex.def)             Requested size: 93.94957pt x 108.04268pt.
 
-Overfull \hbox (12.26083pt too wide) in paragraph at lines 85--85
+Overfull \hbox (12.26083pt too wide) in paragraph at lines 87--87
  [] 
  []
 
-<../Figures/endBehaviorNegativeEvenC.png, id=6, 184.43906pt x 124.21407pt>
-File: ../Figures/endBehaviorNegativeEvenC.png Graphic file (type png)
-<use ../Figures/endBehaviorNegativeEvenC.png>
-Package pdftex.def Info: ../Figures/endBehaviorNegativeEvenC.png  used on input
- line 85.
-(pdftex.def)             Requested size: 93.94957pt x 63.2725pt.
+<../Figures/zeroBehaviorNegativeEvenC.png, id=7, 133.24782pt x 161.10187pt>
+File: ../Figures/zeroBehaviorNegativeEvenC.png Graphic file (type png)
+<use ../Figures/zeroBehaviorNegativeEvenC.png>
+Package pdftex.def Info: ../Figures/zeroBehaviorNegativeEvenC.png  used on inpu
+t line 87.
+(pdftex.def)             Requested size: 93.94957pt x 113.59157pt.
 
-Overfull \hbox (12.26083pt too wide) in paragraph at lines 85--85
+Overfull \hbox (12.26083pt too wide) in paragraph at lines 87--87
  [] 
  []
 
-<../Figures/endBehaviorPositiveEvenC.png, id=7, 180.675pt x 127.22531pt>
-File: ../Figures/endBehaviorPositiveEvenC.png Graphic file (type png)
-<use ../Figures/endBehaviorPositiveEvenC.png>
-Package pdftex.def Info: ../Figures/endBehaviorPositiveEvenC.png  used on input
- line 85.
-(pdftex.def)             Requested size: 93.94957pt x 66.1556pt.
+<../Figures/zeroBehaviorPositiveEvenC.png, id=8, 90.3375pt x 103.88812pt>
+File: ../Figures/zeroBehaviorPositiveEvenC.png Graphic file (type png)
+<use ../Figures/zeroBehaviorPositiveEvenC.png>
+Package pdftex.def Info: ../Figures/zeroBehaviorPositiveEvenC.png  used on inpu
+t line 87.
+(pdftex.def)             Requested size: 93.94957pt x 108.04268pt.
 
-Overfull \hbox (12.26083pt too wide) in paragraph at lines 85--85
+Overfull \hbox (12.26083pt too wide) in paragraph at lines 87--87
  [] 
  []
 
-<../Figures/endBehaviorPositiveOddC.png, id=8, 179.92218pt x 213.04594pt>
-File: ../Figures/endBehaviorPositiveOddC.png Graphic file (type png)
-<use ../Figures/endBehaviorPositiveOddC.png>
-Package pdftex.def Info: ../Figures/endBehaviorPositiveOddC.png  used on input 
-line 85.
-(pdftex.def)             Requested size: 93.94957pt x 111.24939pt.
+<../Figures/zeroBehaviorPositiveOddC.png, id=9, 90.3375pt x 103.88812pt>
+File: ../Figures/zeroBehaviorPositiveOddC.png Graphic file (type png)
+<use ../Figures/zeroBehaviorPositiveOddC.png>
+Package pdftex.def Info: ../Figures/zeroBehaviorPositiveOddC.png  used on input
+ line 87.
+(pdftex.def)             Requested size: 93.94957pt x 108.04268pt.
 
-Overfull \hbox (12.26083pt too wide) in paragraph at lines 85--85
+Overfull \hbox (12.26083pt too wide) in paragraph at lines 87--87
  [] 
  []
 
-<../Figures/polyGraphToFunctionC.png, id=9, 449.5194pt x 336.7782pt>
-File: ../Figures/polyGraphToFunctionC.png Graphic file (type png)
-<use ../Figures/polyGraphToFunctionC.png>
-Package pdftex.def Info: ../Figures/polyGraphToFunctionC.png  used on input lin
-e 106.
-(pdftex.def)             Requested size: 140.92793pt x 105.58208pt.
 
 Package Fancyhdr Warning: \headheight is too small (0.0pt): 
 Make it at least 12.0pt.
@@ -684,58 +684,58 @@ This may cause the page layout to be inconsistent, however.
 
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
- <../Figures/endBehaviorNegativeOddC.png> <../Figures/endBehaviorNegativeEvenC.
-png> <../Figures/endBehaviorPositiveEvenC.png> <../Figures/endBehaviorPositiveO
-ddC.png> <../Figures/polyGraphToFunctionC.png>]
-<../Figures/zeroBehaviorNegativeOddC.png, id=42, 90.3375pt x 103.88812pt>
-File: ../Figures/zeroBehaviorNegativeOddC.png Graphic file (type png)
-<use ../Figures/zeroBehaviorNegativeOddC.png>
-Package pdftex.def Info: ../Figures/zeroBehaviorNegativeOddC.png  used on input
- line 148.
-(pdftex.def)             Requested size: 93.94957pt x 108.04268pt.
+ <../Figures/polyGraphToFunctionC.png> <../Figures/zeroBehaviorNegativeOddC.png
+> <../Figures/zeroBehaviorNegativeEvenC.png> <../Figures/zeroBehaviorPositiveEv
+enC.png> <../Figures/zeroBehaviorPositiveOddC.png>]
+<../Figures/endBehaviorNegativeOddC.png, id=39, 182.18062pt x 204.01219pt>
+File: ../Figures/endBehaviorNegativeOddC.png Graphic file (type png)
+<use ../Figures/endBehaviorNegativeOddC.png>
+Package pdftex.def Info: ../Figures/endBehaviorNegativeOddC.png  used on input 
+line 129.
+(pdftex.def)             Requested size: 93.94957pt x 105.20598pt.
 
-Overfull \hbox (12.26083pt too wide) in paragraph at lines 148--148
+Overfull \hbox (12.26083pt too wide) in paragraph at lines 129--129
  [] 
  []
 
-<../Figures/zeroBehaviorNegativeEvenC.png, id=43, 133.24782pt x 161.10187pt>
-File: ../Figures/zeroBehaviorNegativeEvenC.png Graphic file (type png)
-<use ../Figures/zeroBehaviorNegativeEvenC.png>
-Package pdftex.def Info: ../Figures/zeroBehaviorNegativeEvenC.png  used on inpu
-t line 148.
-(pdftex.def)             Requested size: 93.94957pt x 113.59157pt.
+<../Figures/endBehaviorNegativeEvenC.png, id=40, 184.43906pt x 124.21407pt>
+File: ../Figures/endBehaviorNegativeEvenC.png Graphic file (type png)
+<use ../Figures/endBehaviorNegativeEvenC.png>
+Package pdftex.def Info: ../Figures/endBehaviorNegativeEvenC.png  used on input
+ line 129.
+(pdftex.def)             Requested size: 93.94957pt x 63.2725pt.
 
-Overfull \hbox (12.26083pt too wide) in paragraph at lines 148--148
+Overfull \hbox (12.26083pt too wide) in paragraph at lines 129--129
  [] 
  []
 
-<../Figures/zeroBehaviorPositiveEvenC.png, id=44, 90.3375pt x 103.88812pt>
-File: ../Figures/zeroBehaviorPositiveEvenC.png Graphic file (type png)
-<use ../Figures/zeroBehaviorPositiveEvenC.png>
-Package pdftex.def Info: ../Figures/zeroBehaviorPositiveEvenC.png  used on inpu
-t line 148.
-(pdftex.def)             Requested size: 93.94957pt x 108.04268pt.
+<../Figures/endBehaviorPositiveEvenC.png, id=41, 180.675pt x 127.22531pt>
+File: ../Figures/endBehaviorPositiveEvenC.png Graphic file (type png)
+<use ../Figures/endBehaviorPositiveEvenC.png>
+Package pdftex.def Info: ../Figures/endBehaviorPositiveEvenC.png  used on input
+ line 129.
+(pdftex.def)             Requested size: 93.94957pt x 66.1556pt.
 
-Overfull \hbox (12.26083pt too wide) in paragraph at lines 148--148
+Overfull \hbox (12.26083pt too wide) in paragraph at lines 129--129
  [] 
  []
 
-<../Figures/zeroBehaviorPositiveOddC.png, id=45, 90.3375pt x 103.88812pt>
-File: ../Figures/zeroBehaviorPositiveOddC.png Graphic file (type png)
-<use ../Figures/zeroBehaviorPositiveOddC.png>
-Package pdftex.def Info: ../Figures/zeroBehaviorPositiveOddC.png  used on input
- line 148.
-(pdftex.def)             Requested size: 93.94957pt x 108.04268pt.
+<../Figures/endBehaviorPositiveOddC.png, id=42, 179.92218pt x 213.04594pt>
+File: ../Figures/endBehaviorPositiveOddC.png Graphic file (type png)
+<use ../Figures/endBehaviorPositiveOddC.png>
+Package pdftex.def Info: ../Figures/endBehaviorPositiveOddC.png  used on input 
+line 129.
+(pdftex.def)             Requested size: 93.94957pt x 111.24939pt.
 
-Overfull \hbox (12.26083pt too wide) in paragraph at lines 148--148
+Overfull \hbox (12.26083pt too wide) in paragraph at lines 129--129
  [] 
  []
 
 *********************************************************************
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 152.
-[2 <../Figures/zeroBehaviorNegativeOddC.png> <../Figures/zeroBehaviorNegativeEv
-enC.png> <../Figures/zeroBehaviorPositiveEvenC.png> <../Figures/zeroBehaviorPos
-itiveOddC.png>]
+[2 <../Figures/endBehaviorNegativeOddC.png> <../Figures/endBehaviorNegativeEven
+C.png> <../Figures/endBehaviorPositiveEvenC.png> <../Figures/endBehaviorPositiv
+eOddC.png>]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 152.
  (./Module6C.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 152.
@@ -747,7 +747,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 152.
 Here is how much of TeX's memory you used:
  10579 strings out of 492609
  154235 string characters out of 6131462
- 281428 words of memory out of 5000000
+ 281394 words of memory out of 5000000
  14300 multiletter control sequences out of 15000+600000
  6316 words of font info for 27 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -757,7 +757,7 @@ r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share
 /texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf
 -dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on Module6C.pdf (2 pages, 102301 bytes).
+Output written on Module6C.pdf (2 pages, 101660 bytes).
 PDF statistics:
  87 PDF objects out of 1000 (max. 8388607)
  62 compressed objects within 1 object stream
