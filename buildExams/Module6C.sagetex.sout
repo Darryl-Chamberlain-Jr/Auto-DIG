@@ -3,55 +3,55 @@
 \newlabel{@sageinline0}{{%
 Which of the following equations \textit{could} be of the graph presented below?}{}{}{}{}}
 \newlabel{@sageinline1}{{%
--3(x - 3)^{4} (x + 1)^{7} (x - 1)^{7}}{}{}{}{}}
+-18x^{10} (x + 1)^{9} (x + 2)^{5}}{}{}{}{}}
 \newlabel{@sageinline2}{{%
-20(x - 3)^{4} (x + 1)^{6} (x - 1)^{5}}{}{}{}{}}
+-8x^{6} (x + 1)^{10} (x + 2)^{11}}{}{}{}{}}
 \newlabel{@sageinline3}{{%
--13(x - 3)^{6} (x + 1)^{10} (x - 1)^{8}}{}{}{}{}}
+-2x^{8} (x + 1)^{8} (x + 2)^{4}}{}{}{}{}}
 \newlabel{@sageinline4}{{%
--10(x - 3)^{6} (x + 1)^{8} (x - 1)^{11}}{}{}{}{}}
+6x^{4} (x + 1)^{10} (x + 2)^{9}}{}{}{}{}}
 \newlabel{@sageinline5}{{%
-13(x - 3)^{8} (x + 1)^{8} (x - 1)^{8}}{}{}{}{}}
+14x^{4} (x + 1)^{8} (x + 2)^{4}}{}{}{}{}}
 \newlabel{@sageinline6}{{%
-Describe the zero behavior of the zero $x = -9$ of the polynomial below.}{}{}{}{}}
-\newlabel{@sageinline7}{{%
-2 \left(x - 9\right)^{9} \left(x - 2\right)^{10} \left(x + 2\right)^{6} \left(x + 9\right)^{8}}{}{}{}{}}
-\newlabel{@sageinline8}{{%
 Construct the lowest-degree polynomial given the zeros below. Then, choose the intervals that contain the coefficients of the polynomial in the form $x^3+bx^2+cx+d$.}{}{}{}{}}
-\newlabel{@sageinline9}{{%
-2 - 5i}{}{}{}{}}
-\newlabel{@sageinline10}{{%
+\newlabel{@sageinline7}{{%
+-4 + 2i}{}{}{}{}}
+\newlabel{@sageinline8}{{%
 -3}{}{}{}{}}
+\newlabel{@sageinline9}{{%
+b \in [0, 6], c \in [-3, 5], \text{ and } d \in [-10, -3]}{}{}{}{}}
+\newlabel{@sageinline10}{{%
+b \in [0, 6], c \in [5, 12], \text{ and } d \in [9, 14]}{}{}{}{}}
 \newlabel{@sageinline11}{{%
-b \in [0.2, 1.4], c \in [10, 19], \text{ and } d \in [-89, -83]}{}{}{}{}}
+b \in [5, 12], c \in [43, 55], \text{ and } d \in [51, 63]}{}{}{}{}}
 \newlabel{@sageinline12}{{%
-b \in [0.2, 1.4], c \in [7, 14], \text{ and } d \in [10, 18]}{}{}{}{}}
+b \in [-16, -9], c \in [43, 55], \text{ and } d \in [-67, -56]}{}{}{}{}}
 \newlabel{@sageinline13}{{%
-b \in [0.2, 1.4], c \in [-1, 4], \text{ and } d \in [-8, -3]}{}{}{}{}}
-\newlabel{@sageinline14}{{%
-b \in [-2, -0.7], c \in [10, 19], \text{ and } d \in [79, 89]}{}{}{}{}}
-\newlabel{@sageinline15}{{%
 \text{None of the above.}}{}{}{}{}}
-\newlabel{@sageinline16}{{%
-Describe the end behavior of the polynomial below.}{}{}{}{}}
-\newlabel{@sageinline17}{{%
-6 \left(x - 9\right)^{4} \left(x - 2\right)^{5} \left(x + 2\right)^{8} \left(x + 9\right)^{2}}{}{}{}{}}
-\newlabel{@sageinline18}{{%
+\newlabel{@sageinline14}{{%
 Construct the lowest-degree polynomial given the zeros below. Then, choose the intervals that contain the coefficients of the polynomial in the form $ax^3+bx^2+cx+d$.}{}{}{}{}}
+\newlabel{@sageinline15}{{%
+\frac{1}{4}}{}{}{}{}}
+\newlabel{@sageinline16}{{%
+-5}{}{}{}{}}
+\newlabel{@sageinline17}{{%
+7}{}{}{}{}}
+\newlabel{@sageinline18}{{%
+a \in [0, 7], b \in [-47.7, -42], c \in [120, 137], \text{ and } d \in [31, 41]}{}{}{}{}}
 \newlabel{@sageinline19}{{%
-\frac{5}{2}}{}{}{}{}}
+a \in [0, 7], b \in [-12.1, -7.8], c \in [-139, -134], \text{ and } d \in [-43, -30]}{}{}{}{}}
 \newlabel{@sageinline20}{{%
-\frac{-4}{5}}{}{}{}{}}
+a \in [0, 7], b \in [-12.1, -7.8], c \in [-139, -134], \text{ and } d \in [31, 41]}{}{}{}{}}
 \newlabel{@sageinline21}{{%
-\frac{2}{5}}{}{}{}{}}
+a \in [0, 7], b \in [-8.9, -6.8], c \in [-149, -141], \text{ and } d \in [-43, -30]}{}{}{}{}}
 \newlabel{@sageinline22}{{%
-a \in [45, 62], b \in [101, 107], c \in [-71, -61], \text{ and } d \in [-41, -36]}{}{}{}{}}
+a \in [0, 7], b \in [8.2, 12.2], c \in [-139, -134], \text{ and } d \in [-43, -30]}{}{}{}{}}
 \newlabel{@sageinline23}{{%
-a \in [45, 62], b \in [-113, -96], c \in [-71, -61], \text{ and } d \in [-41, -36]}{}{}{}{}}
+Describe the end behavior of the polynomial below.}{}{}{}{}}
 \newlabel{@sageinline24}{{%
-a \in [45, 62], b \in [62, 69], c \in [-136, -133], \text{ and } d \in [30, 46]}{}{}{}{}}
+8 \left(x - 8\right)^{5} \left(x - 7\right)^{5} \left(x + 7\right)^{10} \left(x + 8\right)^{5}}{}{}{}{}}
 \newlabel{@sageinline25}{{%
-a \in [45, 62], b \in [141, 146], c \in [31, 45], \text{ and } d \in [-41, -36]}{}{}{}{}}
+Describe the zero behavior of the zero $x = -4$ of the polynomial below.}{}{}{}{}}
 \newlabel{@sageinline26}{{%
-a \in [45, 62], b \in [-113, -96], c \in [-71, -61], \text{ and } d \in [30, 46]}{}{}{}{}}
-%cc024a5765063c5f2633b228705abed4% md5sum of corresponding .sage file (minus "goboom", "current_tex_line", and pause/unpause lines)
+- 9 \left(x - 7\right)^{6} \left(x - 4\right)^{10} \left(x + 4\right)^{7} \left(x + 7\right)^{3}}{}{}{}{}}
+%3c354ee7b7182c0cf1a7cf441855fd3f% md5sum of corresponding .sage file (minus "goboom", "current_tex_line", and pause/unpause lines)

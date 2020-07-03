@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.3.30)  18 JUN 2020 11:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.3.30)  23 JUN 2020 18:03
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -499,26 +499,27 @@ Package graphics Info: Driver file: pdftex.def on input line 99.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-<../Figures/polyGraphToFunctionA.png, id=6, 460.3599pt x 336.7782pt>
-File: ../Figures/polyGraphToFunctionA.png Graphic file (type png)
-<use ../Figures/polyGraphToFunctionA.png>
-Package pdftex.def Info: ../Figures/polyGraphToFunctionA.png  used on input lin
-e 23.
-(pdftex.def)             Requested size: 140.92793pt x 103.0949pt.
-LaTeX Font Info:    Try loading font information for U+msa on input line 25.
+LaTeX Font Info:    Try loading font information for U+msa on input line 22.
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 25.
+LaTeX Font Info:    Try loading font information for U+msb on input line 22.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+lasy on input line 25.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 22.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
+<../Figures/endBehaviorPositiveOddA.png, id=6, 179.92218pt x 213.04594pt>
+File: ../Figures/endBehaviorPositiveOddA.png Graphic file (type png)
+<use ../Figures/endBehaviorPositiveOddA.png>
+Package pdftex.def Info: ../Figures/endBehaviorPositiveOddA.png  used on input 
+line 53.
+(pdftex.def)             Requested size: 140.92793pt x 166.88708pt.
+
 
 Package Fancyhdr Warning: \headheight is too small (0.0pt): 
 Make it at least 12.0pt.
@@ -527,73 +528,73 @@ This may cause the page layout to be inconsistent, however.
 
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
- <../Figures/polyGraphToFunctionA.png>]
-<../Figures/zeroBehaviorPositiveOddA.png, id=28, 90.3375pt x 103.88812pt>
-File: ../Figures/zeroBehaviorPositiveOddA.png Graphic file (type png)
-<use ../Figures/zeroBehaviorPositiveOddA.png>
-Package pdftex.def Info: ../Figures/zeroBehaviorPositiveOddA.png  used on input
- line 106.
-(pdftex.def)             Requested size: 140.92793pt x 162.08224pt.
- [2]
-<../Figures/zeroBehaviorNegativeOddA.png, id=41, 90.3375pt x 103.88812pt>
-File: ../Figures/zeroBehaviorNegativeOddA.png Graphic file (type png)
-<use ../Figures/zeroBehaviorNegativeOddA.png>
-Package pdftex.def Info: ../Figures/zeroBehaviorNegativeOddA.png  used on input
- line 109.
-(pdftex.def)             Requested size: 140.92793pt x 162.08224pt.
-<../Figures/zeroBehaviorNegativeEvenA.png, id=42, 133.24782pt x 161.10187pt>
-File: ../Figures/zeroBehaviorNegativeEvenA.png Graphic file (type png)
-<use ../Figures/zeroBehaviorNegativeEvenA.png>
-Package pdftex.def Info: ../Figures/zeroBehaviorNegativeEvenA.png  used on inpu
-t line 109.
-(pdftex.def)             Requested size: 140.92793pt x 170.40334pt.
-<../Figures/zeroBehaviorPositiveEvenA.png, id=43, 90.3375pt x 103.88812pt>
-File: ../Figures/zeroBehaviorPositiveEvenA.png Graphic file (type png)
-<use ../Figures/zeroBehaviorPositiveEvenA.png>
-Package pdftex.def Info: ../Figures/zeroBehaviorPositiveEvenA.png  used on inpu
-t line 112.
-(pdftex.def)             Requested size: 140.92793pt x 162.08224pt.
-File: ../Figures/zeroBehaviorPositiveOddA.png Graphic file (type png)
-<use ../Figures/zeroBehaviorPositiveOddA.png>
-Package pdftex.def Info: ../Figures/zeroBehaviorPositiveOddA.png  used on input
- line 112.
-(pdftex.def)             Requested size: 140.92793pt x 162.08224pt.
-<../Figures/endBehaviorNegativeOddA.png, id=44, 182.18062pt x 204.01219pt>
+]
+<../Figures/endBehaviorNegativeOddA.png, id=25, 182.18062pt x 204.01219pt>
 File: ../Figures/endBehaviorNegativeOddA.png Graphic file (type png)
 <use ../Figures/endBehaviorNegativeOddA.png>
 Package pdftex.def Info: ../Figures/endBehaviorNegativeOddA.png  used on input 
-line 127.
+line 56.
 (pdftex.def)             Requested size: 140.92793pt x 157.82141pt.
- [3 <../Figures/zeroBehaviorPositiveOddA.png> <../Figures/zeroBehaviorNegativeO
-ddA.png> <../Figures/zeroBehaviorNegativeEvenA.png> <../Figures/zeroBehaviorPos
-itiveEvenA.png>]
-File: ../Figures/endBehaviorNegativeOddA.png Graphic file (type png)
-<use ../Figures/endBehaviorNegativeOddA.png>
-Package pdftex.def Info: ../Figures/endBehaviorNegativeOddA.png  used on input 
-line 130.
-(pdftex.def)             Requested size: 140.92793pt x 157.82141pt.
-<../Figures/endBehaviorNegativeEvenA.png, id=50, 184.43906pt x 124.21407pt>
+<../Figures/endBehaviorNegativeEvenA.png, id=26, 184.43906pt x 124.21407pt>
 File: ../Figures/endBehaviorNegativeEvenA.png Graphic file (type png)
 <use ../Figures/endBehaviorNegativeEvenA.png>
 Package pdftex.def Info: ../Figures/endBehaviorNegativeEvenA.png  used on input
- line 130.
+ line 56.
 (pdftex.def)             Requested size: 140.92793pt x 94.90971pt.
-<../Figures/endBehaviorPositiveEvenA.png, id=51, 180.675pt x 127.22531pt>
+<../Figures/endBehaviorPositiveEvenA.png, id=27, 180.675pt x 127.22531pt>
 File: ../Figures/endBehaviorPositiveEvenA.png Graphic file (type png)
 <use ../Figures/endBehaviorPositiveEvenA.png>
 Package pdftex.def Info: ../Figures/endBehaviorPositiveEvenA.png  used on input
- line 133.
+ line 59.
 (pdftex.def)             Requested size: 140.92793pt x 99.23727pt.
-<../Figures/endBehaviorPositiveOddA.png, id=52, 179.92218pt x 213.04594pt>
 File: ../Figures/endBehaviorPositiveOddA.png Graphic file (type png)
 <use ../Figures/endBehaviorPositiveOddA.png>
 Package pdftex.def Info: ../Figures/endBehaviorPositiveOddA.png  used on input 
-line 133.
+line 59.
 (pdftex.def)             Requested size: 140.92793pt x 166.88708pt.
+ [2 <../Figures/endBehaviorPositiveOddA.png> <../Figures/endBehaviorNegativeOdd
+A.png> <../Figures/endBehaviorNegativeEvenA.png> <../Figures/endBehaviorPositiv
+eEvenA.png>]
+<../Figures/polyGraphToFunctionA.png, id=36, 421.3341pt x 336.7782pt>
+File: ../Figures/polyGraphToFunctionA.png Graphic file (type png)
+<use ../Figures/polyGraphToFunctionA.png>
+Package pdftex.def Info: ../Figures/polyGraphToFunctionA.png  used on input lin
+e 96.
+(pdftex.def)             Requested size: 140.92793pt x 112.64282pt.
+ [3 <../Figures/polyGraphToFunctionA.png>]
+<../Figures/zeroBehaviorNegativeOddA.png, id=52, 90.3375pt x 103.88812pt>
+File: ../Figures/zeroBehaviorNegativeOddA.png Graphic file (type png)
+<use ../Figures/zeroBehaviorNegativeOddA.png>
+Package pdftex.def Info: ../Figures/zeroBehaviorNegativeOddA.png  used on input
+ line 127.
+(pdftex.def)             Requested size: 140.92793pt x 162.08224pt.
+File: ../Figures/zeroBehaviorNegativeOddA.png Graphic file (type png)
+<use ../Figures/zeroBehaviorNegativeOddA.png>
+Package pdftex.def Info: ../Figures/zeroBehaviorNegativeOddA.png  used on input
+ line 130.
+(pdftex.def)             Requested size: 140.92793pt x 162.08224pt.
+<../Figures/zeroBehaviorNegativeEvenA.png, id=53, 133.24782pt x 161.10187pt>
+File: ../Figures/zeroBehaviorNegativeEvenA.png Graphic file (type png)
+<use ../Figures/zeroBehaviorNegativeEvenA.png>
+Package pdftex.def Info: ../Figures/zeroBehaviorNegativeEvenA.png  used on inpu
+t line 130.
+(pdftex.def)             Requested size: 140.92793pt x 170.40334pt.
+<../Figures/zeroBehaviorPositiveEvenA.png, id=54, 90.3375pt x 103.88812pt>
+File: ../Figures/zeroBehaviorPositiveEvenA.png Graphic file (type png)
+<use ../Figures/zeroBehaviorPositiveEvenA.png>
+Package pdftex.def Info: ../Figures/zeroBehaviorPositiveEvenA.png  used on inpu
+t line 133.
+(pdftex.def)             Requested size: 140.92793pt x 162.08224pt.
+<../Figures/zeroBehaviorPositiveOddA.png, id=55, 90.3375pt x 103.88812pt>
+File: ../Figures/zeroBehaviorPositiveOddA.png Graphic file (type png)
+<use ../Figures/zeroBehaviorPositiveOddA.png>
+Package pdftex.def Info: ../Figures/zeroBehaviorPositiveOddA.png  used on input
+ line 133.
+(pdftex.def)             Requested size: 140.92793pt x 162.08224pt.
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 144.
- [4 <../Figures/endBehaviorNegativeOddA.png> <../Figures/endBehaviorNegativeEve
-nA.png> <../Figures/endBehaviorPositiveEvenA.png> <../Figures/endBehaviorPositi
-veOddA.png>]
+ [4 <../Figures/zeroBehaviorNegativeOddA.png> <../Figures/zeroBehaviorNegativeE
+venA.png> <../Figures/zeroBehaviorPositiveEvenA.png> <../Figures/zeroBehaviorPo
+sitiveOddA.png>]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 144.
  (./keyModule6A.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 144.
@@ -612,18 +613,18 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 144.
 Here is how much of TeX's memory you used:
  8099 strings out of 492609
  118555 string characters out of 6131462
- 231054 words of memory out of 5000000
+ 231062 words of memory out of 5000000
  11894 multiletter control sequences out of 15000+600000
  6624 words of font info for 28 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 28i,11n,43p,988b,443s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 28i,12n,43p,988b,425s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texli
 ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf
 -dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/
 fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on keyModule6A.pdf (4 pages, 129216 bytes).
+Output written on keyModule6A.pdf (4 pages, 124700 bytes).
 PDF statistics:
  87 PDF objects out of 1000 (max. 8388607)
  59 compressed objects within 1 object stream
