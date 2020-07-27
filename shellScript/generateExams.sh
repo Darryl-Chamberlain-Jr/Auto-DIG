@@ -2827,68 +2827,68 @@ setPassword=$2
 setExamNumber=$3
 
 if [ "$1" == "debug" ]; then
-    if [ "$2" == 1 ]; then
-        generateModuleAllVersions 1 0 $setSemester 0 "Module\,1\,-\,Real\,and\,Complex\,Numbers" "debug" "Module1"
+    if [ "$3" == 1 ]; then
+        generateModuleAllVersions 1 $setExamNumber $setPassword 0 "Module\,1\,-\,Real\,and\,Complex\,Numbers" "debug" "Module1"
         copyKeys
         exit -1
-    elif [ "$2" == 2 ]; then
-        generateModuleAllVersions 2 0 $setSemester 5 "Module\,2\,-\,Linear\,Functions" "debug" "Module2"
+    elif [ "$3" == 2 ]; then
+        generateModuleAllVersions 2 $setExamNumber $setPassword 5 "Module\,2\,-\,Linear\,Functions" "debug" "Module2"
         copyKeys
         exit -1
-    elif [ "$2" == 3 ]; then
-        generateModuleAllVersions 3 0 $setSemester 10 "Module\,3\,-\,Inequalities" "debug" "Module3"
+    elif [ "$3" == 3 ]; then
+        generateModuleAllVersions 3 $setExamNumber $setPassword 10 "Module\,3\,-\,Inequalities" "debug" "Module3"
         copyKeys
         exit -1
-    elif [ "$2" == 4 ]; then
-        generateModuleAllVersions 4 0 $setSemester 15 "Module\,4\,-\,Quadratic\,Functions" "debug" "Module4"
+    elif [ "$3" == 4 ]; then
+        generateModuleAllVersions 4 $setExamNumber $setPassword 15 "Module\,4\,-\,Quadratic\,Functions" "debug" "Module4"
         copyKeys
         exit -1
-    elif [ "$2" == 5 ]; then
-        generateModuleAllVersions 5 0 $setSemester 20 "Module\,5\,-\,Radical\,Functions" "debug" "Module5"
+    elif [ "$3" == 5 ]; then
+        generateModuleAllVersions 5 $setExamNumber $setPassword 20 "Module\,5\,-\,Radical\,Functions" "debug" "Module5"
         copyKeys
         exit -1
-    elif [ "$2" == 6 ]; then
-        generateModuleAllVersions 6 0 $setSemester 25 "Module\,6\,-\,Polynomial\,Functions" "debug" "Module6"
+    elif [ "$3" == 6 ]; then
+        generateModuleAllVersions 6 $setExamNumber $setPassword 25 "Module\,6\,-\,Polynomial\,Functions" "debug" "Module6"
         copyKeys
         exit -1
-    elif [ "$2" == 7 ]; then
-        generateModuleAllVersions 7 0 $setSemester 30 "Module\,7\,-\,Rational\,Functions" "debug" "Module7"
+    elif [ "$3" == 7 ]; then
+        generateModuleAllVersions 7 $setExamNumber $setPassword 30 "Module\,7\,-\,Rational\,Functions" "debug" "Module7"
         copyKeys
         exit -1
-    elif [ "$2" == 8 ]; then
-        generateModuleAllVersions 8 0 $setSemester 35 "Module\,8\,-\,Logarithmic\,and\,Exponential\,Functions" "debug" "Module8"
+    elif [ "$3" == 8 ]; then
+        generateModuleAllVersions 8 $setExamNumber $setPassword 35 "Module\,8\,-\,Logarithmic\,and\,Exponential\,Functions" "debug" "Module8"
         copyKeys
         exit -1
-    elif [ "$2" == 9 ]; then
-        generateModuleAllVersions "9M" 0 $setSemester 40 "Module\,9M\,-\,Modeling\,Linear\,Functions" "debug" "Module9M"
+    elif [ "$3" == 9 ]; then
+        generateModuleAllVersions "9M" $setExamNumber $setPassword 40 "Module\,9M\,-\,Modeling\,Linear\,Functions" "debug" "Module9M"
         copyKeys
         exit -1
-    elif [ "$2" == 10 ]; then
-        generateModuleAllVersions "10M" 0 $setSemester 45 "Module\,10M\,-\,Modeling\,with\,Power\,Functions" "debug" "Module10M"
+    elif [ "$3" == 10 ]; then
+        generateModuleAllVersions "10M" $setExamNumber $setPassword 45 "Module\,10M\,-\,Modeling\,with\,Power\,Functions" "debug" "Module10M"
         copyKeys
         exit -1
-    elif [ "$2" == 11 ]; then
-        generateModuleAllVersions "11M" 0 $setSemester 50 "Module\,11M\,-\,Modeling\,with\,Log\,and\,Exp\,Functions" "debug" "Module11M"
+    elif [ "$3" == 11 ]; then
+        generateModuleAllVersions "11M" $setExamNumber $setPassword 50 "Module\,11M\,-\,Modeling\,with\,Log\,and\,Exp\,Functions" "debug" "Module11M"
         copyKeys
         exit -1
-    elif [ "$2" == 12 ]; then
-        generateModuleAllVersions "12M" 0 $setSemester 55 "Module\,12M\,-\,Solving\,Word\,Problems" "debug" "Module12M"
+    elif [ "$3" == 12 ]; then
+        generateModuleAllVersions "12M" $setExamNumber $setPassword 55 "Module\,12M\,-\,Solving\,Word\,Problems" "debug" "Module12M"
         copyKeys
         exit -1
-    elif [ "$2" == 13 ]; then
-        generateModuleAllVersions "9L" 0 $setSemester 60 "Module\,9L\,-\,Operations\,on\,Functions" "debug" "Module9L"
+    elif [ "$3" == 13 ]; then
+        generateModuleAllVersions "9L" $setExamNumber $setPassword 60 "Module\,9L\,-\,Operations\,on\,Functions" "debug" "Module9L"
         copyKeys
         exit -1
-    elif [ "$2" == 14 ]; then
-        generateModuleAllVersions "10L" 0 $setSemester 65 "Module\,10L\,-\,Synthetic\,Division" "debug" "Module10L"
+    elif [ "$3" == 14 ]; then
+        generateModuleAllVersions "10L" $setExamNumber $setPassword 65 "Module\,10L\,-\,Synthetic\,Division" "debug" "Module10L"
         copyKeys
         exit -1
     elif [ "$2" == 15 ]; then
-        generateModuleAllVersions "11L" 0 $setSemester 70 "Module\,11L\,-\,Introduction\,to\,Limits" "debug" "Module11L"
+        generateModuleAllVersions "11L" $setExamNumber $setPassword 70 "Module\,11L\,-\,Introduction\,to\,Limits" "debug" "Module11L"
         copyKeys
         exit -1
-    elif [ "$2" == 16 ]; then
-        generateModuleAllVersions "12L" 0 $setSemester 75 "Module\,12L\,-\,Graphing\,Rational\,Functions" "debug" "Module12L"
+    elif [ "$3" == 16 ]; then
+        generateModuleAllVersions "12L" $setExamNumber $setPassword 75 "Module\,12L\,-\,Graphing\,Rational\,Functions" "debug" "Module12L"
         copyKeys
         exit -1
     else
@@ -2898,7 +2898,7 @@ if [ "$1" == "debug" ]; then
 else
     while [ "$1" == "" ] || [ "$2" == "" ] || [ "$3" == "" ]; do
         echo -e "\nArguments for the exam are missing. The arguments are Semester, Password, and Exam Number. \n \nPlease put the semester in parentheses and make sure it has no spaces, such as 'Spring\,2020'. \nThe password should be a single word in parentheses, such as 'Password1'. \nThe exam number should be 1, 2, 3, 4, 5, 6, or 7 (final exam). The number of Modules generated is based on the exam number."
-        echo -e "\n If you meant to debug, make the first argument 'debug' and the second argument the single module you want to run."
+        echo -e "\n If you meant to debug, make the first argument 'debug', the second argument the Semester, and the third argument the single module you want to run. Modeling modules are 9-12 and Limits modules are 13-16."
         exit -1
     done
 
