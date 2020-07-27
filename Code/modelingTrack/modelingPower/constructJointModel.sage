@@ -1,4 +1,4 @@
-displayStem = "For the scenario below, use the model for the volume of a cylinder as $V = \\pi r^2 h$ to find the coefficient for the model of the new volume."
+displayStem = "For the scenario below, use the model for the volume of a cylinder as $V = \\pi r^2 h$ to find the coefficient for the model of the new volume $V_{\text{new}} = k r^2 h$."
 
 increasesOrDecreasesRadius = random.choice(["increase", "decrease"])
 increasesOrDecreasesHeight = random.choice(["increase", "decrease"])
@@ -7,17 +7,17 @@ heightPercentChange = random.randint(10, 20)
 while radiusPercentChange == heightPercentChange:
     radiusPercentChange = random.randint(10, 20)
     heightPercentChange = random.randint(10, 20)
-if increasesOrDecreasesRadius == "increases":
-    newRadius = 100+radiusPercentChange
+if increasesOrDecreasesRadius == "increase":
+    newRadius = float(100+radiusPercentChange)
     radiusSign = 1
 else:
-    newRadius = 100-radiusPercentChange
+    newRadius = float(100-radiusPercentChange)
     radiusSign = -1
-if increasesOrDecreasesHeight == "increases":
-    newHeight = 100+heightPercentChange
+if increasesOrDecreasesHeight == "increase":
+    newHeight = float(100+heightPercentChange)
     heightSign = 1
 else:
-    newHeight = 100-heightPercentChange
+    newHeight = float(100-heightPercentChange)
     heightSign = -1
 
 constant = float( pi * (newRadius/100.0)**2 * (newHeight/100.0)  )

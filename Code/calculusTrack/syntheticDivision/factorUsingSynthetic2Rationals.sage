@@ -19,7 +19,7 @@ def generateDisplayAndZeros():
     za = maybeMakeNegative(random.randint(2, 5))
     zb = maybeMakeNegative(random.randint(2, 5))
 
-    while (math.gcd(a0, b0)>1 or math.gcd(a1, b1)>1) or (a0 == a1 and b0 == b1) or (za == zb):
+    while (gcd(a0, b0)>1 or gcd(a1, b1)>1) or (a0 == a1 and b0 == b1) or (za == zb):
         a0 = random.randint(2, 5)
         b0 = maybeMakeNegative(random.randint(2, 5))
         a1 = random.randint(2, 5)

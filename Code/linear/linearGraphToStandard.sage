@@ -4,7 +4,7 @@ from sympy import Symbol
 import matplotlib.pyplot as plt
 
 ##### IMPORTANT #####
-# If we just use gcd, Sage assumes it is the Sage function (and so we have to be careful what types of values we feed it.)
+# If we just use, Sage assumes it is the Sage function (and so we have to be careful what types of values we feed it.)
 # To just use the Python gcd, we import math and use math.gcd
 
 # OBJECTIVE 1 - Constructing linear functions from points and slope
@@ -24,16 +24,16 @@ def simplifySolution(A, B, C):
         A = -A
         B = -B
         C = -C
-    aBGCD = math.gcd(A, B)
-    bCGCD = math.gcd(B, C)
-    mixedGCD = math.gcd(aBGCD, bCGCD)
+    aBGCD = gcd(A, B)
+    bCGCD = gcd(B, C)
+    mixedGCD = gcd(aBGCD, bCGCD)
     while(mixedGCD > 1):
         A = int(A/mixedGCD)
         B = int(B/mixedGCD)
         C = int(C/mixedGCD)
-        aBGCD = math.gcd(A, B)
-        bCGCD = math.gcd(B, C)
-        mixedGCD = math.gcd(aBGCD, bCGCD)
+        aBGCD = gcd(A, B)
+        bCGCD = gcd(B, C)
+        mixedGCD = gcd(aBGCD, bCGCD)
     return [A, B, C]
 
 def generateProblemAndSolution(numeratorMax, interceptMax):
@@ -41,7 +41,7 @@ def generateProblemAndSolution(numeratorMax, interceptMax):
     denominatorSlope = random.randint(2, numeratorMax)
 
     # Makes sure slope is rational
-    while math.gcd(numeratorSlope, denominatorSlope) > 1:
+    while gcd(numeratorSlope, denominatorSlope) > 1:
         numeratorSlope = maybeMakeNegative(random.randint(2, numeratorMax))
         denominatorSlope = random.randint(2, numeratorMax)
 

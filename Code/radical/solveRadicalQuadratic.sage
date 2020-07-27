@@ -54,7 +54,7 @@ def generateCoefficients(numberOfSolutions):
     #
     if (numberOfSolutions==0):
         # Makes sure each solution fails at least one of the radicals
-        while (check[0]*check[1]+check[2]*check[3] > 0) or (checkDiscriminant<=0) or (math.gcd(math.gcd(a, c), math.gcd(b, d)) > 1):
+        while (check[0]*check[1]+check[2]*check[3] > 0) or (checkDiscriminant<=0) or (gcd(gcd(a, c), gcd(b, d)) > 1):
             a = maybeMakeNegative(random.randint(2, 9))
             b = maybeMakeNegative(random.randint(2, 9))
             c = maybeMakeNegative(random.randint(2, 9))
@@ -62,7 +62,7 @@ def generateCoefficients(numberOfSolutions):
             check = radicalCheck([a, b, c, d])
             checkDiscriminant = float((a*d+b*c)**2 - 4*a*c*b*d)
     elif (numberOfSolutions==1):
-        while (check[0]*check[1]+check[2]*check[3] !=1) or (checkDiscriminant<=0) or (math.gcd(math.gcd(a, c), math.gcd(b, d)) > 1):
+        while (check[0]*check[1]+check[2]*check[3] !=1) or (checkDiscriminant<=0) or (gcd(gcd(a, c), gcd(b, d)) > 1):
             a = maybeMakeNegative(random.randint(2, 9))
             b = maybeMakeNegative(random.randint(2, 9))
             c = maybeMakeNegative(random.randint(2, 9))
@@ -70,7 +70,7 @@ def generateCoefficients(numberOfSolutions):
             check = radicalCheck([a, b, c, d])
             checkDiscriminant = float((a*d+b*c)**2 - 4*a*c*b*d)
     else:
-        while (check[0]*check[1]+check[2]*check[3] < 2) or (checkDiscriminant<=0) or (math.gcd(math.gcd(a, c), math.gcd(b, d)) > 1):
+        while (check[0]*check[1]+check[2]*check[3] < 2) or (checkDiscriminant<=0) or (gcd(gcd(a, c), gcd(b, d)) > 1):
             a = maybeMakeNegative(random.randint(2, 9))
             b = maybeMakeNegative(random.randint(2, 9))
             c = maybeMakeNegative(random.randint(2, 9))

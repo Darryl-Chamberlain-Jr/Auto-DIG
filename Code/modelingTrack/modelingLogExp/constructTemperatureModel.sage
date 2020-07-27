@@ -1,13 +1,23 @@
-initialTemp = random.randint(10, 20)*10
-bathTemp = random.randint(10, 20)
-finalTemp = initialTemp - random.randint(40, 70)
-timePassed = random.randint(10, 40)
-A = initialTemp - bathTemp
-distractorA = initialTemp
-k = log( float(finalTemp - bathTemp) / float(A) ) / float( timePassed*log(exp(1)) )
-distractork = log( float(finalTemp - bathTemp) / float(distractorA) ) / float( timePassed*log(exp(1)) )
-badk = -log(finalTemp - bathTemp) / float( timePassed*log(exp(1)*A) )
-badDistractork = -log(finalTemp - bathTemp) / float( timePassed*log(exp(1)*distractorA) )
+k, distractork, badk, badDistractork = 0, 0, 0, 0
+duplicate = True
+
+while duplicate == True:
+    initialTemp = random.randint(10, 20)*10
+    bathTemp = random.randint(10, 20)
+    finalTemp = initialTemp - random.randint(40, 70)
+    timePassed = random.randint(10, 40)
+    A = initialTemp - bathTemp
+    distractorA = initialTemp
+    k = math.log( float(finalTemp - bathTemp) / float(A) ) / float( timePassed*math.log(math.exp(1)) )
+    distractork = math.log( float(finalTemp - bathTemp) / float(distractorA) ) / float( timePassed*math.log(math.exp(1)) )
+    badk = -math.log(finalTemp - bathTemp) / float( timePassed*math.log(math.exp(1)*A) )
+    badDistractork = -math.log(finalTemp - bathTemp) / float( timePassed*math.log(math.exp(1)*distractorA) )
+    ### Checks list of values for duplicates
+    checkList = [round(k, 5), round(distractork, 5), round(badk, 5), round(badDistractork, 5)]
+    if len(checkList) == len(set(checkList)):
+        duplicate = False
+    else:
+        duplicate = True
 ###
 displayStem = "The temperature of an object, $T$, in a different surrounding temperature $T_s$ will behave according to the formula $T(t) = Ae^{kt} + T_s$, where $t$ is minutes, $A$ is a constant, and k is a constant. Use this formula and the situation below to construct a model that describes the uranium's temperature, $T$, based on the amount of time t (in minutes) that have passed. Choose the correct constant $k$ from the options below."
 displayProblem = "\\begin{center} \\textit{Uranium is taken out of the reactor with a temperature of $%d^{\\circ}$ C and is placed into a $%d^{\\circ}$ C bath to cool. After %d minutes, the uranium has cooled to $%d^{\\circ}$ C.} \\end{center}" %(initialTemp, bathTemp, timePassed, finalTemp)

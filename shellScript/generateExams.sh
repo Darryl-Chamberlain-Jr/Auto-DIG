@@ -1288,7 +1288,6 @@ load("../Code/modelingTrack/modelingLinear/identifyModelPopulation.sage")
   \item \( \sage{choices[1]} \)
   \item \( \sage{choices[2]} \)
   \item \( \sage{choices[3]} \)
-  \item \( \sage{choices[4]} \)
 	\end{enumerate}
 }
 FINISH_HIM
@@ -1427,7 +1426,6 @@ load("../Code/modelingTrack/modelingPower/identifyModelPopulation.sage")
   \item \( \sage{choices[1]} \)
   \item \( \sage{choices[2]} \)
   \item \( \sage{choices[3]} \)
-  \item \( \sage{choices[4]} \)
 	\end{enumerate}
 }
 FINISH_HIM
@@ -1565,7 +1563,6 @@ load("../Code/modelingTrack/modelingLogExp/identifyModelPopulation.sage")
   \item \( \sage{choices[1]} \)
   \item \( \sage{choices[2]} \)
   \item \( \sage{choices[3]} \)
-  \item \( \sage{choices[4]} \)
 	\end{enumerate}
 }
 FINISH_HIM

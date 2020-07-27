@@ -27,8 +27,8 @@ def generateStem(type):
     return [initialPop, populations]
 
 # TYPE OF PROBLEM TO BE DETERMINED BY MODULE
-typesToChooseFrom=["linear", "direct", "indirect", "exponential", "logarithmic"]
-problemType = typesToChooseFrom[random.randint(0, 4)]
+typesToChooseFrom=["linear", "direct", "exponential", "logarithmic"]
+problemType = typesToChooseFrom[random.randint(0, 3)]
 initialPop, populations = generateStem(problemType)
 displayStem = "A town has an initial population of %d. The town's population for the next 10 years is provided below. Which type of function would be most appropriate to model the town's population?" %initialPop
 displayProblem = "Check for table in main PDF."
@@ -54,22 +54,22 @@ else:
 
 c0 = ["\\text{Linear}", "This suggests a constant growth. You would be able to add or subtract the same amount year-to-year if this is the correct answer.", linearAnswer]
 c1 = ["\\text{Direct variation}", "This suggests a growth faster than constant but slower than exponential.", directAnswer]
-c2 = ["\\text{Indirect variation}", "This suggests a growth slower than constant but faster than logarithmic.", indirectAnswer]
-c3 = ["\\text{Logarithmic}", "This suggests the slowest of growths that we know.", logAnswer]
-c4 = ["\\text{Exponential}", "This suggests the fastest of growths that we know.", expAnswer]
+#c2 = ["\\text{Indirect variation}", "This suggests a growth slower than constant but faster than logarithmic.", indirectAnswer]
+c2 = ["\\text{Logarithmic}", "This suggests the slowest of growths that we know.", logAnswer]
+c3 = ["\\text{Exponential}", "This suggests the fastest of growths that we know.", expAnswer]
 
-choiceAndCommentList = [c0, c1, c2, c3, c4]
+choiceAndCommentList = [c0, c1, c2, c3]
 random.shuffle(choiceAndCommentList)
 
-choices = [0, 0, 0, 0, 0]
-choiceComments = [0, 0, 0, 0, 0]
+choices = [0, 0, 0, 0]
+choiceComments = [0, 0, 0, 0]
 
-for k in range(0, 5):
+for k in range(0, 4):
     choices[k] = choiceAndCommentList[k][0]
     choiceComments[k] = choiceAndCommentList[k][1]
 
 answerIndex = 0
-letters = ["A", "B", "C", "D", "E"]
+letters = ["A", "B", "C", "D"]
 for checkLetter in letters:
     if choiceAndCommentList[answerIndex][2] == 1:
         answerLetter = letters[answerIndex]
