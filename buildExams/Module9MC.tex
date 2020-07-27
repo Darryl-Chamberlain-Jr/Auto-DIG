@@ -1,0 +1,147 @@
+\documentclass[14pt]{article}
+%General Packages
+\usepackage{multicol, enumerate, enumitem, hyperref, color, soul, setspace, parskip, fancyhdr}
+
+%Math Packages
+\usepackage{amssymb, amsthm, amsmath, bbm, latexsym, units, mathtools}
+
+%All math in Display Style
+\everymath{\displaystyle}
+
+% Packages with additional options
+%\usepackage[T1]{fontenc}
+\usepackage[headsep=0.5cm,headheight=0cm, left=1 in,right= 1 in,top= 1 in,bottom= 1 in]{geometry}
+\usepackage[usenames,dvipsnames]{xcolor}
+
+% SageTeX
+\usepackage{sagetex}
+
+% Package to use the command below to create lines between items
+\usepackage{dashrule}
+\newcommand{\litem}[1]{\item#1\hspace*{-1cm}\rule{\textwidth}{0.4pt}}
+
+\pagestyle{fancy}
+\lhead{Module\,9M\,-\,Modeling\,Linear\,Functions}
+\chead{}
+\rhead{Progress Exam 3}
+\lfoot{Summer\,C\,2020}
+\cfoot{}
+\rfoot{Version C}
+
+\begin{document}
+\pagestyle{fancy}
+
+\begin{sagesilent}
+load("../Code/generalPurposeMethods.sage")
+load("../Code/keyGeneration.sage")
+keyFileName = "Module9M"
+version = "C"
+\end{sagesilent}
+
+\begin{enumerate}
+\setcounter{enumi}{40}
+
+
+\begin{sagesilent}
+moduleNumber=9
+problemNumber=41
+load("../Code/modelingTrack/modelingLinear/domainLinear.sage")
+\end{sagesilent}
+
+\litem{ \sage{displayStem}
+
+ \sage{displayProblem}
+
+	\begin{enumerate}[label=\Alph*.]
+  \item \( \sage{choices[0]} \)
+  \item \( \sage{choices[1]} \)
+  \item \( \sage{choices[2]} \)
+  \item \( \sage{choices[3]} \)
+  \item \( \sage{choices[4]} \)
+	\end{enumerate}
+}
+
+\begin{sagesilent}
+moduleNumber=9
+problemNumber=42
+load("../Code/modelingTrack/modelingLinear/constructLinearModel1.sage")
+\end{sagesilent}
+
+\litem{ \sage{displayStem}
+
+ \sage{displayProblem}
+
+	\begin{enumerate}[label=\Alph*.]
+  \item \( \sage{choices[0]} \)
+  \item \( \sage{choices[1]} \)
+  \item \( \sage{choices[2]} \)
+  \item \( \sage{choices[3]} \)
+  \item \( \sage{choices[4]} \)
+	\end{enumerate}
+}
+
+\begin{sagesilent}
+moduleNumber=9
+problemNumber=43
+load("../Code/modelingTrack/modelingLinear/constructLinearModel2.sage")
+\end{sagesilent}
+
+\litem{ \sage{displayStem}
+
+\sage{displayProblem}
+
+	\begin{enumerate}[label=\Alph*.]
+  \item \( \sage{choices[0]} \)
+  \item \( \sage{choices[1]} \)
+  \item \( \sage{choices[2]} \)
+  \item \( \sage{choices[3]} \)
+  \item \( \sage{choices[4]} \)
+	\end{enumerate}
+}
+
+\begin{sagesilent}
+moduleNumber=9
+problemNumber=44
+load("../Code/modelingTrack/modelingLinear/identifyModelPopulation.sage")
+\end{sagesilent}
+
+\litem{ \sage{displayStem}
+
+\begin{tabular}{c|c|c|c|c|c|c|c|c|c}
+\textbf{Year} & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 \tabularnewline
+\hline
+\textbf{Pop.} & \sage{populations[0]} & \sage{populations[1]} & \sage{populations[2]} & \sage{populations[3]} & \sage{populations[4]} & \sage{populations[5]} & \sage{populations[6]} & \sage{populations[7]} & \sage{populations[8]}
+\end{tabular}
+
+	\begin{enumerate}[label=\Alph*.]
+  \item \( \sage{choices[0]} \)
+  \item \( \sage{choices[1]} \)
+  \item \( \sage{choices[2]} \)
+  \item \( \sage{choices[3]} \)
+  \item \( \sage{choices[4]} \)
+	\end{enumerate}
+}
+
+\begin{sagesilent}
+moduleNumber=9
+problemNumber=45
+load("../Code/modelingTrack/modelingLinear/constructLinearModel3.sage")
+\end{sagesilent}
+
+\litem{ \sage{displayStem}
+
+ \sage{displayProblem}
+
+	\begin{enumerate}[label=\Alph*.]
+  \item \( \sage{choices[0]} \)
+  \item \( \sage{choices[1]} \)
+  \item \( \sage{choices[2]} \)
+  \item \( \sage{choices[3]} \)
+  \item \( \sage{choices[4]} \)
+	\end{enumerate}
+}
+
+\end{enumerate}
+
+\end{document}
+
