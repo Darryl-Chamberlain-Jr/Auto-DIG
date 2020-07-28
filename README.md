@@ -26,7 +26,7 @@ Steps to generate exams for the first time.
 
     2. Run the shell script.
 
-       You can achieve this by typing *generateExams.sh "Semester" "Password" examNumber* The current version of the script will then generate the PDFs of the assessment and label the PDF with the Semester and Exam Number you input. In this version, it creates the number of Modules currently needed for each assessment, but this can be easily modified for your own uses. Password-protected PDFs are also generated.
+       You can achieve this by typing *./generateExams.sh "Semester" "Password" examNumber* The current version of the script will then generate the PDFs of the assessment and label the PDF with the Semester and Exam Number you input. In this version, it creates the number of Modules currently needed for each assessment, but this can be easily modified for your own uses. Password-protected PDFs are also generated.
 
 5. Check the folder *CompleteExam* for the PDFs, locked PDFs, and keys.
 
