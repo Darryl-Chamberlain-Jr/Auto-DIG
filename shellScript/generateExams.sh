@@ -1,4 +1,3 @@
-#!/bin/bash
 # This script generates exams.
 
 ### CHANGE THIS ONCE ###
@@ -2400,7 +2399,8 @@ createQuestion() {
   elif [ $ProblemNumber -eq 16 ]; then
     createQuestion16 $1 $3 $4
   elif [ $ProblemNumber -eq 17 ]; then
-    createQuestion17 $1 $3 $4
+    source /${DIR}/shellScript/questionCreationFunctions.sh
+    createMathProblemAnd4Graph1TextOptions $1 $3 $4 4 'quadratic' 'quadraticEquationToGraph'
   elif [ $ProblemNumber -eq 18 ]; then
     createQuestion18 $1 $3 $4
   elif [ $ProblemNumber -eq 19 ]; then
