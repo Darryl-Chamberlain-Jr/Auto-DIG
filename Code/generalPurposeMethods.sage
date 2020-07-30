@@ -4,106 +4,9 @@ import random
 import math
 from decimal import Decimal
 import decimal
+import traceback
 
-def greatestCommonDenominator(a, b):
-    if(not (isinstance(a, int) and isinstance(b, int))):
-        raise TypeError("One of the numbers you passed is not an integer.")
-    while (not b == 0):
-        temp = b
-        b = a % b
-        a = temp
-    return abs(a)
-
-# Checks if the solution and distractors are "Distinct". If not, returns "Copies".
-def checkUnique(values):
-    counter=0
-    while counter < len(values)-1:
-        subcounter = counter+1
-        while subcounter < len(values):
-            if values[counter] == values[subcounter]:
-                return "Copies"
-                break
-            else:
-                subcounter=subcounter+1
-        counter = counter+1
-    return "Distinct"
-
-def generatePolynomialDisplay(coefficients):
-    terms = generateTerms(coefficients)
-    if len(terms) == 10:
-        polynomial = "%s %s %s %s %s %s %s %s %s %s" %(terms[0], terms[1], terms[2], terms[3], terms[4], terms[5], terms[6], terms[7], terms[8], terms[9])
-    elif len(terms) == 9:
-        polynomial = "%s %s %s %s %s %s %s %s %s" %(terms[0], terms[1], terms[2], terms[3], terms[4], terms[5], terms[6], terms[7], terms[8])
-    elif len(terms) == 8:
-        polynomial = "%s %s %s %s %s %s %s %s" %(terms[0], terms[1], terms[2], terms[3], terms[4], terms[5], terms[6], terms[7])
-    elif len(terms) == 7:
-        polynomial = "%s %s %s %s %s %s %s" %(terms[0], terms[1], terms[2], terms[3], terms[4], terms[5], terms[6])
-    elif len(terms) == 6:
-        polynomial = "%s %s %s %s %s %s" %(terms[0], terms[1], terms[2], terms[3], terms[4], terms[5])
-    elif len(terms) == 5:
-        polynomial = "%s %s %s %s %s" %(terms[0], terms[1], terms[2], terms[3], terms[4])
-    elif len(terms) == 4:
-        polynomial = "%s %s %s %s" %(terms[0], terms[1], terms[2], terms[3])
-    elif len(terms) == 3:
-        polynomial = "%s %s %s" %(terms[0], terms[1], terms[2])
-    elif len(terms) == 2:
-        polynomial = "%s %s" %(terms[0], terms[1])
-    elif len(terms) == 1:
-        polynomial = "%s" %(terms[0])
-    else:
-        polynomial = "Your polynomial has more than 10 terms."
-    return polynomial
-
-def generateTerms(coefficients):
-    i=0
-    if len(coefficients) == 2:
-        if coefficients[i] == 1:
-            terms = ["x"]
-        elif coefficients[i] == -1:
-            terms = ["-x"]
-        else:
-            terms = ["%sx" %(coefficients[0])]
-    elif len(coefficients) == 1:
-        terms = ["%s" %coefficients[0]]
-    else:
-        if coefficients[i] == 1:
-            terms = ["x^{%d}" %(len(coefficients)-1)]
-        elif coefficients[i] == -1:
-            terms = ["-x^{%d}" %(len(coefficients)-1)]
-        else:
-            terms = ["%sx^{%d}" %(coefficients[0], len(coefficients)-1)]
-    i=i+1
-    while i < len(coefficients):
-        if coefficients[i] == 0:
-            print("Skipping a zero term.")
-        elif coefficients[i] < 0:
-            if len(coefficients)-i-1 == 1:
-                if coefficients[i] == -1:
-                    terms.append("-x")
-                else:
-                    terms.append("-%s x" %(-coefficients[i]))
-            elif len(coefficients)-i-1 == 0:
-                terms.append("-%s" %(-coefficients[i]))
-            else:
-                if coefficients[i] == 1:
-                    terms.append("-x^{%d}" %(len(coefficients)-i-1))
-                else:
-                    terms.append("-%s x^{%d}" %(-coefficients[i], len(coefficients)-i-1))
-        else:
-            if len(coefficients)-i-1 == 1:
-                if coefficients[i] == 1:
-                    terms.append("+x")
-                else:
-                    terms.append("+%s x" %(coefficients[i]))
-            elif len(coefficients)-i-1 == 0:
-                terms.append("+ %s" %(coefficients[i]))
-            else:
-                if coefficients[i] == 1:
-                    terms.append("+ x^{%d}" %(len(coefficients)-i-1))
-                else:
-                    terms.append("+%s x^{%d}" %(coefficients[i], len(coefficients)-i-1))
-        i=i+1
-    return terms
+### These functions are used to automatically generate the intervals that disguise option values. Comments will be added to these in the future.
 
 def listToFloats(listOfNumbers):
     listOfNumbers = [float(i) for i in listOfNumbers]
@@ -148,11 +51,6 @@ def checkInterval(interval, solution):
     if(not (solution <= rightPoint and solution >= leftPoint)):
         isPermissible = True
     return isPermissible
-
-def maybeMakeNegative(rational):
-    maybeNegative = int((-1)**random.randint(0, 1))
-    rational = maybeNegative * rational
-    return rational
 
 def createInterval(solution, intervalRange, precision = None):
     if(precision == None):

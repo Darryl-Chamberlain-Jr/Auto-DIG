@@ -1,0 +1,175 @@
+This acts as a directory of the current questions generated, along with comments on each.
+
+Questions are generated using *createBasicStructure* function in shell script unless otherwise specified.
+Image naming convention: ${CodeName}${OptionLetter}${Version}.png
+
+01realComplex
+1   divideComplex
+2   multiplyComplex # Include non-integers in a,b
+3   orderOfOperations # Include more structures targeting misconceptions.
+4   subgroupComplex
+5   subgroupReal
+
+02linear
+6   linearGraphToStandard # Revise graph
+      # Uses *displayGraphProblem* function in shell script.
+7   linearParOrPer
+8   linearTwoPoints
+9   solveIntegerLinear
+10  solveRationalLinear
+
+03inequality
+11  describeSet
+12  solveCompoundAND
+13  solveCompoundOR # Two options as OR, two options as AND, and None of the above. Correct values OR, Correct values but wrong ends, Correct values AND, Correct values AND but wrong ends. When 'None of the above' is the answer, use all negative values of the correct. Majority of work should be done with rational inequalities AND question.
+14  solveIntegerInequality
+15  solveRationalInequality
+
+04quadratic
+16  factorLeadingOver1Composite
+17  quadraticEquationToGraph
+      # Uses *createMathProblemAnd4Graph1TextOptions* function in shell script.
+18  quadraticFormula
+19  quadraticGraphToEquation
+      # Uses *displayGraphProblem* function in shell script.
+20  solveQuadraticFactorComposites
+
+05radical
+21  domainRadical
+22  radicalEquationToGraph
+      # Uses *createMathProblemAnd4Graph1TextOptions* function in shell script.
+23  radicalGraphToEquation
+      # Uses *displayGraphProblem* function in shell script.
+24  solveRadicalLinear
+25  solveRadicalQuadratic
+
+06polynomial
+26  constructPolyComplex
+      # Revise displayProblem
+27  constructPolyRationals
+      # Revise displayProblem
+28  polyEndBehavior # Revise images
+      # Uses *createMathProblemAnd4GraphOptions*
+      # Revise image names for compatibility
+      # Revise displayProblem
+29  polyGraphToFunction # Create dynamic bounds to improve visual image.
+      # Uses *displayGraphProblem* function in shell script.
+30  polyZeroBehavior # Revise images
+      # Uses *createMathProblemAnd4GraphOptions*
+      # Revise image names for compatibility
+      # Revise displayProblem
+
+07rational
+31  domainRational
+32  rationalEquationToGraph
+      # Uses *createMathProblemAnd4Graph1TextOptions* function in shell script.
+33  rationalGraphToEquation
+      # Uses *displayGraphProblem* function in shell script.
+34  solveRationalLinear
+      # Revise displayProblem
+35  solveRationalQuadratic
+
+08logExp
+36  domainRangeExp
+37  domainRangeLog
+38  solveByConverting
+39  solveByLogProperties
+40  solveExpDifferentBases
+
+09modelingLinear # Improve feedback
+41  constructLinearModelDistanceAndRate
+      # Uses *displayNoMathModeProblem* function in shell script.
+      # Revise displayProblem to remove center and italics.
+42  constructLinearModelCostsProfitsRevenue
+      # Uses *displayNoMathModeProblem* function in shell script.
+      # Revise displayProblem to remove center and italics.
+43  constructLinearModelMixture
+      # Uses *displayNoMathModeProblem* function in shell script.
+      # Revise displayProblem to remove center and italics.
+44  domainLinearModel
+      # Uses *displayNoMathModeProblem* function in shell script.
+      # Revise displayProblem to remove center and italics.
+45  identifyModelPopulation
+      # Uses *displayTableProblemSpecial* function in shell script.
+
+10modelingPower # Improve feedback
+46  constructDirectModel
+      # Uses *displayNoMathModeProblem* function in shell script.
+      # Revise displayProblem to remove center and italics.
+47  constructIndirectModel
+      # Uses *displayNoMathModeProblem* function in shell script.
+      # Revise displayProblem to remove center and italics.
+48  constructJointModel
+      # Uses *displayNoMathModeProblem* function in shell script.
+      # Revise displayProblem to remove center and italics.
+49  identifyModelPopulation
+      # Currently same as 09modelingLinear code
+      # Uses *displayTableProblemSpecial* function in shell script.
+50  identifyModelVariation
+      # Uses *displayNoMathModeProblem* function in shell script.
+      # Revise displayProblem to remove center and italics.
+
+11modelingLogExp # Improve feedback
+51  constructBacteriaGrowth
+      # Uses *displayNoMathModeProblem* function in shell script.
+      # Revise displayProblem to remove center and italics.
+52  constructHalfLifeModel
+      # Uses *displayNoMathModeProblem* function in shell script.
+      # Revise displayProblem to remove center and italics.
+53  constructTemperatureModel
+      # Uses *displayNoMathModeProblem* function in shell script.
+      # Revise displayProblem to remove center and italics.
+54  identifyModelGraph
+      # Uses *displayGraphProblem* function in shell script.
+55  identifyModelPopulation
+      # Currently same as 09modelingLinear code
+      # Uses *displayTableProblemSpecial* function in shell script.
+
+12solvingWordProblems # Improve feedback
+56  constructModelMixed
+      # Uses *displayNoMathModeProblem* function in shell script.
+      # Revise displayProblem to remove center and italics.
+57  identifyModelGraph
+      # Uses *displayGraphProblem* function in shell script.
+      # Same code as 11modelingLogExp
+58  solveModelExp
+      # Uses *displayNoMathModeProblem* function in shell script.
+      # Revise displayProblem to remove center and italics.
+59  solveModelLinear
+      # Uses *displayNoMathModeProblem* function in shell script.
+      # Revise displayProblem to remove center and italics.
+60  solveModelPower
+      # Uses *displayNoMathModeProblem* function in shell script.
+      # Revise displayProblem to remove center and italics.
+
+13operationsOnFunctions
+61  determine1to1
+62  domainAfterOperating
+63  findInverseLogOrExp
+64  findInversePolyOrRadical
+65  functionComposition
+
+14syntheticDivision
+66  factorUsingSynthetic2Integers
+67  factorUsingSynthetic2Rationals
+68  possibleRoots
+69  syntheticDivision
+70  syntheticDivisionMissingTerms
+
+15introToLimits
+71  evaluateLimitAnalyticalEasy
+72  evaluateLimitAnalyticalHard
+73  evaluateLimitGraphically
+      # Uses *displayGraphProblem* function in shell script.
+74  interpretLimit
+75  oneSidedLimits
+
+16graphingRationalFunctions
+76  identifyGraphOfRationalFunction # Dynamically graph functions.
+      # Uses *displayGraphProblem* function in shell script.
+      # Revise names of images to be compatible.
+      # Insert random choice of version into sage code. Define name as ${CodeName}${Version}. If it needs to be a static question until the graphs auto-generate, that's fine.
+77  identifyHAs
+78  identifyHoles
+79  identifyOAs
+80  identifyVAs

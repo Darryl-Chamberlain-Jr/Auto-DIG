@@ -14,7 +14,7 @@ def writeToKey(keyFileName, version, problemNumber, stem, problemDisplayType, pr
     ### Prints the initial question ###
     keyFile.write("%d. %s\n" %(problemNumber, stem))
     if problemDisplayType == "MathMode":
-        keyFile.write("$$ %s $$ \n" %problem)
+        keyFile.write("\[ %s \] \n" %problem)
     elif problemDisplayType == "NoMathMode":
         keyFile.write("%s \n" %problem)
     elif problemDisplayType == "Graph":
@@ -48,6 +48,10 @@ def writeToKey(keyFileName, version, problemNumber, stem, problemDisplayType, pr
                i=i+2
             keyFile.write("\\hline \n E. None of the figures above. & \\tabularnewline \n")
             keyFile.write("\\hline \n \\end{tabular} \n \n")
+        keyFile.write("\\begin{enumerate}[label=\\Alph*.] \n")
+        for i in range(len(items)):
+            keyFile.write("\\item %s  \n" %itemComments[i])
+        keyFile.write("\\end{enumerate} \n \n")
     keyFile.write("%s\n\n" %generalComment)
     keyFile.write("-----------------------------------------------\n\n")
     keyFile.close()
