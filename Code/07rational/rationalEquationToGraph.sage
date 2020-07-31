@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 
 def sketchRationalFunction(vertAsy, leadingCoeff, power, horShift, figureName, optionLetter):
     ### Defines x-values to avoid asymptote
-    plt.rcParams.update({'font.size': 22})
+    plt.rcParams.update({'font.size': 36})
     stepSize = 0.01
     xLeftMin = vertAsy - 2.5
     xLeftMax = vertAsy - stepSize
@@ -28,7 +28,7 @@ def sketchRationalFunction(vertAsy, leadingCoeff, power, horShift, figureName, o
     plt.ylim([float(yMin),float(yMax)])
     ### Saves and closes picture
     plt.grid(True)
-    plt.savefig('../Figures/' + str(figureName) + str(optionLetter) + '.png', bbox_inches='tight')
+    plt.savefig('../Figures/' + str(figureName) + str(optionLetter) + str(version) + '.png', bbox_inches='tight')
     plt.close()
 
 def createFunction():
@@ -82,16 +82,17 @@ def createDistractors(vertAsy, leadingCoeff, power, horShift, figureName, option
 
 ##### END OF DEFINITIONS #####
 graphedRightOrWrong = random.randint(0, 1)
-figureName = "rationalEquationToGraph%s" %(version)
+figureName = "rationalEquationToGraph"
 optionList = ["A", "B", "C", "D"]
+unshuffledOptionList = optionList
 random.shuffle(optionList)
-choices = [ "%sA" %figureName, "%sB" %figureName, "%sC" %figureName, "%sD" %figureName]
-figureNameShuffledList = [ "%s%s" %(figureName, optionList[0]), "%s%s" %(figureName, optionList[1]), "%s%s" %(figureName, optionList[2]), "%s%s" %(figureName, optionList[3])]
+choices = [ "%sA%s" %(figureName, version), "%sB%s" %(figureName, version), "%sC%s" %(figureName, version), "%sD%s" %(figureName, version)]
+figureNameShuffledList = [ "%s%s%s" %(figureName, optionList[0], version), "%s%s%s" %(figureName, optionList[1], version), "%s%s%s" %(figureName, optionList[2], version), "%s%s%s" %(figureName, optionList[3], version)]
 vertAsy, leadingCoeff, power, horShift = createFunction()
 
 if graphedRightOrWrong == 0:
     sketchRationalFunction(vertAsy, leadingCoeff, power, horShift, figureName, "E")
-    displaySolution = "rationalEquationToGraph%sE" %(version)
+    displaySolution = "rationalEquationToGraphE%s" %(version)
     otherWrongThings = random.randint(0, 2)
     if otherWrongThings == 0:
         solution = [displayEquation(-vertAsy, leadingCoeff, power, horShift), "Incorrect due to $x$-value."]
@@ -103,30 +104,22 @@ if graphedRightOrWrong == 0:
         solution = [displayEquation(-vertAsy, leadingCoeff, power, -horShift), "Incorrect due to $x$- and $y$-value."]
         distractor1, distractor2, distractor3 = createDistractors(-vertAsy, leadingCoeff, power, -horShift, figureName, optionList)
     answerLetter = "E"
-    shuffledCommentList = [solution[1], distractor1[1], distractor2[1], distractor3[1]]
+    shuffledCommentsList = [solution[1], distractor1[1], distractor2[1], distractor3[1]]
 else:
     sketchRationalFunction(vertAsy, leadingCoeff, power, horShift, figureName, optionList[0])
     solution = [displayEquation(vertAsy, leadingCoeff, power, horShift), "This is the correct option."]
     displaySolution = "rationalEquationToGraph%s%s" %(version, optionList[0])
     distractor1, distractor2, distractor3 = createDistractors(vertAsy, leadingCoeff, power, horShift, figureName, optionList)
-    shuffledCommentList = [solution[1], distractor1[1], distractor2[1], distractor3[1]]
+    shuffledCommentsList = [solution[1], distractor1[1], distractor2[1], distractor3[1]]
     answerLetter = optionList[0]
 
-choiceComments = ["", "", "", "", ""]
-for i in range(4):
-    k=0
-    for letter in ["A", "B", "C", "D"]:
-        if letter == optionList[i]:
-            choiceComments[i] = shuffledCommentList[k]
-        k=k+1
-
+choiceComments = commentsForGraphs(unshuffledOptionList, optionList, shuffledCommentsList)
 if graphedRightOrWrong == 0:
-    choiceComments[4] = "None of the graph options are correct, so this is the correct answer."
+    choiceComments.append("None of the graph options are correct, so this is the correct answer.")
 else:
-    choiceComments[4] = "You likely thought the vertex was not correct for any of the graphs."
+    choiceComments.append("You likely thought the vertex was not correct for any of the graphs.")
 
 displayStem = "Choose the graph of the equation below."
 displayProblem = displayEquation(vertAsy, leadingCoeff, power, horShift)
 generalComment = "General Comments: Remember that the general form of a basic rational equation is $ f(x) = \\frac{a}{(x-h)^n} + k$, where $a$ is the leading coefficient (and in this case, we assume is either $1$ or $-1$), $n$ is the degree (in this case, either $1$ or $2$), and $(h, k)$ is the intersection of the asymptotes."
-
 writeToKey(keyFileName, version, problemNumber, displayStem, "MathMode", displayProblem, "Graphs", displaySolution, answerLetter, choices, choiceComments, generalComment)

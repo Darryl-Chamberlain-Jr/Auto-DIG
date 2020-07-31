@@ -55,7 +55,7 @@ distractorHor = ["\\text{Vertical Asymptote of } x = %s \\text{ and hole at } x 
 distractorAllNumerator = ["\\text{Vertical Asymptotes of } x = %s \\text{ and } x = %s \\text{ with a hole at } x = %s" %(cleanRational(verticalAsy), cleanRational(fakeVert), cleanRational(hole)), "This corresponds to setting the numerator equal to 0.", 0]
 
 displayStem = "Determine the vertical asymptotes and holes in the rational function below."
-displayProblem = "\\frac{%s}{%s}" %(numerator, denominator)
+displayProblem = "f(x) = \\frac{%s}{%s}" %(numerator, denominator)
 displaySolution = solution[0]
 generalComment = "General Comments: Remember to factor the numerator and denominator. Any factors that cancel are holes in the function. The zeros left in the denominator are the vertical asymptotes."
 

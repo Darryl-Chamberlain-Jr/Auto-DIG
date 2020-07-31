@@ -74,7 +74,7 @@ if degree == 6:
     #
     xPlot = numpy.arange(xMinimum, xMaximum, 0.05)
     solutionGraph = aCoeff*(xPlot-randomZeros[0])**2 * (xPlot-randomZeros[1])**2 * (xPlot-randomZeros[2])**2
-    plt.rcParams.update({'font.size': 22})
+    plt.rcParams.update({'font.size': 36})
     showPlot = plt.plot(xPlot, solutionGraph, linewidth = 5, color = 	'#02325f')
     plt.xlabel('x')
     plt.ylabel('y')
@@ -104,7 +104,7 @@ elif degree ==5:
     #
     xPlot = numpy.arange(xMinimum, xMaximum, 0.05)
     solutionGraph = aCoeff*(xPlot-randomZeros[0])**2 * (xPlot-randomZeros[1])**2 * (xPlot-randomZeros[2])
-    plt.rcParams.update({'font.size': 22})
+    plt.rcParams.update({'font.size': 36})
     showPlot = plt.plot(xPlot, solutionGraph, linewidth = 5, color = 	'#02325f')
     plt.xlabel('x')
     plt.ylabel('y')
@@ -134,7 +134,7 @@ elif degree ==4:
     #
     xPlot = numpy.arange(xMinimum, xMaximum, 0.05)
     solutionGraph = aCoeff*(xPlot-randomZeros[0])**2 * (xPlot-randomZeros[1]) * (xPlot-randomZeros[2])
-    plt.rcParams.update({'font.size': 22})
+    plt.rcParams.update({'font.size': 36})
     showPlot = plt.plot(xPlot, solutionGraph, linewidth = 5, color = 	'#02325f')
     plt.xlabel('x')
     plt.ylabel('y')
@@ -164,7 +164,7 @@ else:
     #
     xPlot = numpy.arange(xMinimum, xMaximum, 0.05)
     solutionGraph = aCoeff*(xPlot-randomZeros[0]) * (xPlot-randomZeros[1]) * (xPlot-randomZeros[2])
-    plt.rcParams.update({'font.size': 22})
+    plt.rcParams.update({'font.size': 36})
     showPlot = plt.plot(xPlot, solutionGraph, linewidth = 5, color = 	'#02325f')
     plt.xlabel('x')
     plt.ylabel('y')

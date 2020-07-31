@@ -104,23 +104,20 @@ displayProblem = "f(x) = %s(%s)^{%d}(%s)^{%d}(%s)^{%d}(%s)^{%d}" %(leadingCoeffi
 zeros = [-factor1[1], factor1[1], -factor2[1], factor2[1]]
 exponents = [e0, e1, e2, e3]
 behavior = determineZeroBehavior(leadingCoefficient, zeros, exponents, zeroOnDisplay)
-print("\n", zeros, "\n")
-print(exponents, "\n")
-print(behavior, "\n")
 if behavior == "positiveEven":
-    displaySolution = "zeroBehaviorPositiveEven%s" %version
+    displaySolution = "polyZeroBehaviorC%s" %version
     answerLetter="C"
 elif behavior == "negativeEven":
-    displaySolution = "zeroBehaviorNegativeEven%s" %version
+    displaySolution = "polyZeroBehaviorB%s" %version
     answerLetter="B"
 elif behavior == "positiveOdd":
-    displaySolution = "zeroBehaviorPositiveOdd%s" %version
+    displaySolution = "polyZeroBehaviorD%s" %version
     answerLetter="D"
 else:
-    displaySolution = "zeroBehaviorNegativeOdd%s" %version
+    displaySolution = "polyZeroBehaviorA%s" %version
     answerLetter="A"
 
-choices = ["zeroBehaviorNegativeOdd%s" %version, "zeroBehaviorNegativeEven%s" %version, "zeroBehaviorPositiveEven%s" %version, "zeroBehaviorPositiveOdd%s" %version]
+choices = ["polyZeroBehaviorA%s" %version, "polyZeroBehaviorB%s" %version, "polyZeroBehaviorC%s" %version, "polyZeroBehaviorD%s" %version]
 
 displayStem = 'Describe the zero behavior of the zero $x = %s$ of the polynomial below.' %zeroOnDisplay
 generalComment = "\\textbf{General Comments:} You will need to sketch the entire graph, then zoom in on the zero the question asks about."

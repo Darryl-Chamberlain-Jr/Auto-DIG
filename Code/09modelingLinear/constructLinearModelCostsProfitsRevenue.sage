@@ -64,7 +64,7 @@ else:
         option4 = ["B(x) = %d x" %(profits - badCosts), "This treats the educational expense and savings as something you get every month rather than a 1-time payment AND treats weekly expenses as month expenses rather than multiplying each weekly expense by 4.", 0]
         option5 = ["\\text{None of the above.}", "You may have chosen this if you thought you were modeling total costs or income.", 0]
 
-displayProblem = "\\begin{center} \\textit{Aubrey is a college student going into her first year at UF. She will receive Bright Futures, which covers her tuition plus a \\$%d educational expense each year. Before college, Aubrey saved up \\$%d. She knows she will need to pay \\$%d in rent a month, \\$%d for food a week, and \\$%d in other weekly expenses.} \\end{center}" %(edExpense, savings, rent, food, misc)
+displayProblem = "Aubrey is a college student going into her first year at UF. She will receive Bright Futures, which covers her tuition plus a \\$%d educational expense each year. Before college, Aubrey saved up \\$%d. She knows she will need to pay \\$%d in rent a month, \\$%d for food a week, and \\$%d in other weekly expenses." %(edExpense, savings, rent, food, misc)
 
 generalComment = "\\textbf{General Comments:} This is a Costs, Profit, Revenue question! The most common issues here are: (1) not converting the weekly costs to monthly costs, (2) treating the one-time values like savings and educational expense as happening per month, and (3) not checking that your model is for cost, profit [income], or revenue [budget]."
 

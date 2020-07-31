@@ -1,6 +1,0 @@
-This starts the report on Progress Exam 1.
-
-The exam is done running at 22:53 on 07/29/2020.
-
-It took 29 seconds to run, which is 0 minutes and 29 seconds.
-

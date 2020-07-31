@@ -12,9 +12,31 @@ function reportOnSageError {
     ModuleNumber=$2
     Version=$3
     cat >> /${DIR}/GenerationReport/ProgressExam${ExamNumber}Report.txt << FINISH_HIM
-There was an error when running the sage file on Module $2 Version $3. This will be improved in the future to print the error that occurred. For now, review the Terminal. \n \n
+
+There was an error when running the sage file on Module $2 Version $3. This will be improved in the future to print the error that occurred. For now, review the Terminal.
 
 FINISH_HIM
+}
+
+function reportOnModuleRunTime {
+    ModuleNumber=$1
+    ExamNumber=$2
+    ModuleRunTimeStart=$3
+    ModuleRunTimeEnd=$4
+    Version=$5
+    TotalRunTimeSeconds=$(( ModuleRunTimeEnd - ModuleRunTimeStart ))
+    RunTimeMinutes=$(( (ModuleRunTimeEnd - ModuleRunTimeStart) / 60 ))
+    RunTimeSecondsRemainder=$(( TotalRunTimeSeconds - (RunTimeMinutes * 60) ))
+    if [ $RunTimeMinutes == 0 ]
+    then
+        cat >> /${DIR}/GenerationReport/ProgressExam${ExamNumber}Report.txt << FINISH_HIM
+Module $1 Version $5 took $RunTimeSecondsRemainder seconds to run.
+FINISH_HIM
+    else
+        cat >> /${DIR}/GenerationReport/ProgressExam${ExamNumber}Report.txt << FINISH_HIM
+Module $1 Version $5 took $RunTimeMinutes minutes and $RunTimeSecondsRemainder seconds to run.
+FINISH_HIM
+    fi
 }
 
 function reportOnPDFlatexError {
@@ -22,6 +44,7 @@ function reportOnPDFlatexError {
     ModuleNumber=$2
     Version=$3
     cat >> /${DIR}/GenerationReport/ProgressExam${ExamNumber}Report.txt << FINISH_HIM
+
 There was an error when running the tex file on Module $2 Version $3. This will be improved in the future to print the error that occurred. For now, review the Terminal.
 
 FINISH_HIM
@@ -32,13 +55,12 @@ function finishReport {
     StartTime=$2
     EndTime=$3
     currentDayTime=$( date +'%H:%M on %m/%d/%Y' )
-    TimeToRunSeconds=$(( EndTime - StartTime ))
-    TimeToRunMinutes=$(( (EndTime - StartTime) / 60 ))
-    TimeToRunSecondsRemainder=$(( TimeToRunSeconds - (TimeToRunMinutes * 60) ))
+    TotalRunTimeSeconds=$(( EndTime - StartTime ))
+    RunTimeMinutes=$(( (EndTime - StartTime) / 60 ))
+    RunTimeSecondsRemainder=$(( TotalRunTimeSeconds - (RunTimeMinutes * 60) ))
     cat >> /${DIR}/GenerationReport/ProgressExam${ExamNumber}Report.txt << FINISH_HIM
-The exam is done running at ${currentDayTime}.
 
-It took $TimeToRunSeconds seconds to run, which is $TimeToRunMinutes minutes and $TimeToRunSecondsRemainder seconds.
+The exam finished running at ${currentDayTime}. It took $RunTimeMinutes minutes and $RunTimeSecondsRemainder seconds.
 
 FINISH_HIM
 }

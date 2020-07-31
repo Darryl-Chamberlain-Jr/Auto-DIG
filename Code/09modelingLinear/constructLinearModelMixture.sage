@@ -12,7 +12,7 @@ totalCostHigh = [highPrice-lowPrice, lowPrice*totalWeight]
 totalCostLow = [lowPrice-highPrice, highPrice*totalWeight]
 
 displayStem = "Using the situation below, construct a linear model that describes the cost of the coffee beans $C(h)$ in terms of the weight of the %s coffee beans $h$." %highOrLowQuality
-displayProblem = " \\begin{center} \\textit{Veronica needs to prepare %d of blended coffee beans selling for \\$%.2f per pound. She has a high-quality bean that sells for \\$%.2f a pound and a low-quality bean that sells for \\$%.2f a pound.} \\end{center}" %(totalWeight, blendPrice, highPrice, lowPrice)
+displayProblem = "Veronica needs to prepare %d of blended coffee beans selling for \\$%.2f per pound. She has a high-quality bean that sells for \\$%.2f a pound and a low-quality bean that sells for \\$%.2f a pound." %(totalWeight, blendPrice, highPrice, lowPrice)
 
 if highOrLowQuality == "high-quality":
     displaySolution = "C(h) = %.2f h + %.2f" %(totalCostHigh[0], totalCostHigh[1])

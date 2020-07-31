@@ -13,7 +13,7 @@ indirectConstant = float(orbitTime**timeExponent * averageDistance**distanceExpo
 reversePowers = float(orbitTime**(1/float(timeExponent))) / float(averageDistance**(1/float(distanceExponent)))
 
 displayStem = "For the scenario below, find the variation constant $k$ of the model (if possible)."
-displayProblem = "\\begin{center} \\textit{In an alternative galaxy, the %s of the time, $T$ (Earth years), required for a planet to orbit Sun $\\chi$ %s as the %s of the distance, $d$ (AUs), that the planet is from Sun $\\chi$ %s. For example, when Ea's average distance from Sun $\\chi$ is %d, it takes %d Earth days to complete an orbit.} \\end{center}" %(timeDescription, increasesOrDecreases, distanceDescription, increasesOrDecreases, averageDistance, orbitTime)
+displayProblem = "In an alternative galaxy, the %s of the time, $T$ (Earth years), required for a planet to orbit Sun $\\chi$ %s as the %s of the distance, $d$ (AUs), that the planet is from Sun $\\chi$ %s. For example, when Ea's average distance from Sun $\\chi$ is %d, it takes %d Earth days to complete an orbit." %(timeDescription, increasesOrDecreases, distanceDescription, increasesOrDecreases, averageDistance, orbitTime)
 
 # Solution
 option1 = ["k = %.3f" %constant, "* This is the correct option corresponding to the model $T^{%d} = k d^{%d}$." %(timeExponent, distanceExponent), 1]

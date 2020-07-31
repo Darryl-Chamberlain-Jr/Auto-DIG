@@ -15,7 +15,7 @@ def coefficientsForPoly(zeros):
 #type = random.choice(typeList)
 
 displayStem = "Which of the following functions \\textit{could} be the graph below?"
-displayProblem = "identifyRationalGraph%s" %type
+displayProblem = "identifyGraphOfRationalFunction%s" %version
 
 denomGraphA = generatePolynomialDisplay(coefficientsForPoly([-1, 2, 5]))
 denomGraphC = generatePolynomialDisplay(coefficientsForPoly([1, -2, -5]))
@@ -37,13 +37,13 @@ option3 = ["f(x) = \\frac{%s}{%s}" %(numGraphC, denomGraphC), "This function has
 option4 = ["f(x) = \\frac{%s}{%s}" %(numGraphD, denomGraphD), "This function has vertical asymptotes at $x=-1$, and $x=2$.", 0]
 option5 = ["\\text{None of the above are possible equations for the graph.}", "If you believe none of the functions above could be the graph, please contact the coordinator.", 0]
 
-if type == "A":
+if version == "A":
     displaySolution = option1[0]
     option1[2] = 1
-if type == "B":
+if version == "B":
     displaySolution = option2[0]
     option2[2] = 1
-if type == "C":
+if version == "C":
     displaySolution = option3[0]
     option3[2] = 1
 else:

@@ -101,15 +101,15 @@ function createQuestion {
     createBasicStructure $1 $3 $4 8 '08logExp' 'solveExpDifferentBases'
   # MODULE 9M: Questions 41-45
   elif [ $QuestionStructure -eq 41 ]; then
-    displayNoMathModeProblem $1 $3 $4 '9M' '09modelingLinear' 'constructLinearModelDistanceAndRate'
+    displayNoMathModeProblem $1 $3 $4 "9M" '09modelingLinear' 'constructLinearModelDistanceAndRate'
   elif [ $QuestionStructure -eq 42 ]; then
-    displayNoMathModeProblem $1 $3 $4 '9M' '09modelingLinear' 'constructLinearModelCostsProfitsRevenue'
+    displayNoMathModeProblem $1 $3 $4 "9M" '09modelingLinear' 'constructLinearModelCostsProfitsRevenue'
   elif [ $QuestionStructure -eq 43 ]; then
-    displayNoMathModeProblem $1 $3 $4 '9M' '09modelingLinear' 'constructLinearModelMixture'
+    displayNoMathModeProblem $1 $3 $4 "9M" '09modelingLinear' 'constructLinearModelMixture'
   elif [ $QuestionStructure -eq 44 ]; then
-    displayNoMathModeProblem $1 $3 $4 '9M' '09modelingLinear' 'domainLinearModel'
+    displayNoMathModeProblem $1 $3 $4 "9M" '09modelingLinear' 'domainLinearModel'
   elif [ $QuestionStructure -eq 45 ]; then
-    displayTableProblemSpecial $1 $3 $4 '9M' '09modelingLinear' 'identifyModelPopulation'
+    displayTableProblemSpecial $1 $3 $4 "9M" '09modelingLinear' 'identifyModelPopulation'
   # MODULE 10M: Questions 46-50
   elif [ $QuestionStructure -eq 46 ]; then
     displayNoMathModeProblem $1 $3 $4 '10M' '10modelingPower' 'constructDirectModel'
@@ -120,7 +120,7 @@ function createQuestion {
   elif [ $QuestionStructure -eq 49 ]; then
     displayTableProblemSpecial $1 $3 $4 '10M' '10modelingPower' 'identifyModelPopulation'
   elif [ $QuestionStructure -eq 50 ]; then
-    displayNoMathModeProblem $1 $3 $4 '10M' '10modelingPower' 'identifyModelVariation'
+    displayNoMathModeProblem4Options $1 $3 $4 '10M' '10modelingPower' 'identifyModelVariation'
   # MODULE 11M: Questions 51-55
   elif [ $QuestionStructure -eq 51 ]; then
     displayNoMathModeProblem $1 $3 $4 '11M' '11modelingLogExp' 'constructBacteriaGrowth'
@@ -129,14 +129,14 @@ function createQuestion {
   elif [ $QuestionStructure -eq 53 ]; then
     displayNoMathModeProblem $1 $3 $4 '11M' '11modelingLogExp' 'constructTemperatureModel'
   elif [ $QuestionStructure -eq 54 ]; then
-    displayGraphProblem $1 $3 $4 '11M' '11modelingLogExp' 'identifyModelGraph'
+    displayGraphProblem $1 $3 $4 '11M' '11modelingLogExp' 'identifyModelGraph11'
   elif [ $QuestionStructure -eq 55 ]; then
     displayTableProblemSpecial $1 $3 $4 '11M' '11modelingLogExp' 'identifyModelPopulation'
   # MODULE 12M: Questions 56-60
   elif [ $QuestionStructure -eq 56 ]; then
     displayNoMathModeProblem  $1 $3 $4 '12M' '12solvingWordProblems' 'constructModelMixed'
   elif [ $QuestionStructure -eq 57 ]; then
-    displayGraphProblem $1 $3 $4 '12M' '12solvingWordProblems' 'identifyModelGraph'
+    displayGraphProblem $1 $3 $4 '12M' '12solvingWordProblems' 'identifyModelGraph12'
   elif [ $QuestionStructure -eq 58 ]; then
     displayNoMathModeProblem  $1 $3 $4 '12M' '12solvingWordProblems' 'solveModelExp'
   elif [ $QuestionStructure -eq 59 ]; then
@@ -173,7 +173,7 @@ function createQuestion {
   elif [ $QuestionStructure -eq 73 ]; then
     displayGraphProblem $1 $3 $4 '11L' '15introToLimits' 'evaluateLimitGraphically'
   elif [ $QuestionStructure -eq 74 ]; then
-    createBasicStructure $1 $3 $4 '11L' '15introToLimits' 'interpretLimit'
+    displayNoMathModeProblem $1 $3 $4 '11L' '15introToLimits' 'interpretLimit'
   elif [ $QuestionStructure -eq 75 ]; then
     createBasicStructure $1 $3 $4 '11L' '15introToLimits' 'oneSidedLimits'
   # MODULE 12L: Questions 76-80
@@ -316,10 +316,10 @@ function generateModuleAllVersions {
     FINALRESULT=1
     source /${DIR}/shellScript/fileCreationFunctions.sh
     source /${DIR}/shellScript/reportFunctions.sh
-    createReportFile $2
     # Creating empty keys for all versions
     for version in A B C
     do
+        ModuleRunTimeStart=$( date +'%s' )
         cd /${DIR}/buildExams/
         createExamHeading $version $2 $3 $4 $5 $7
         createModuleBodyTex $version $4 $7
@@ -358,6 +358,8 @@ function generateModuleAllVersions {
         pdflatex -file-line-error -halt-on-error /${DIR}/Keys/key${FileName}${version}.tex
         cat /${DIR}/Keys/lettersAnswerKey${FileName}${version}.csv >> /${DIR}/Keys/lettersMasterKey${version}.csv
         cat /${DIR}/Keys/numbersAnswerKey${FileName}${version}.csv >> /${DIR}/Keys/numbersMasterKey${version}.csv
+        ModuleRunTimeEnd=$( date +'%s' )
+        reportOnModuleRunTime $1 $2 $ModuleRunTimeStart $ModuleRunTimeEnd $version
     done
     # Copy/Pastes all completed PDFs to a new folder
     cp /${DIR}/buildExams/*.pdf /${DIR}/CompleteExam/PDFs
@@ -373,29 +375,32 @@ function generateModuleAllVersions {
 }
 
 source /${DIR}/shellScript/fileManipulationFunctions.sh
+source /${DIR}/shellScript/reportFunctions.sh
 clearOldVersions
 setSemester=$1
 setPassword=$2
 setExamNumber=$3
 setModuleNumber=$4
 
+createReportFile $3
+
 if [ "$1" == "debug" ]; then
     if [ "$4" == 1 ]; then
-        generateModuleAllVersions 1 $setExamNumber $setPassword 0 "Module\,1\,-\,Real\,and\,Complex\,Numbers" "debug" "Module1"
+        generateModuleAllVersions "1" $setExamNumber $setPassword 0 "Module\,1\,-\,Real\,and\,Complex\,Numbers" "debug" "Module1"
     elif [ "$4" == 2 ]; then
-        generateModuleAllVersions 2 $setExamNumber $setPassword 5 "Module\,2\,-\,Linear\,Functions" "debug" "Module2"
+        generateModuleAllVersions "2" $setExamNumber $setPassword 5 "Module\,2\,-\,Linear\,Functions" "debug" "Module2"
     elif [ "$4" == 3 ]; then
-        generateModuleAllVersions 3 $setExamNumber $setPassword 10 "Module\,3\,-\,Inequalities" "debug" "Module3"
+        generateModuleAllVersions "3" $setExamNumber $setPassword 10 "Module\,3\,-\,Inequalities" "debug" "Module3"
     elif [ "$4" == 4 ]; then
-        generateModuleAllVersions 4 $setExamNumber $setPassword 15 "Module\,4\,-\,Quadratic\,Functions" "debug" "Module4"
+        generateModuleAllVersions "4" $setExamNumber $setPassword 15 "Module\,4\,-\,Quadratic\,Functions" "debug" "Module4"
     elif [ "$4" == 5 ]; then
-        generateModuleAllVersions 5 $setExamNumber $setPassword 20 "Module\,5\,-\,Radical\,Functions" "debug" "Module5"
+        generateModuleAllVersions "5" $setExamNumber $setPassword 20 "Module\,5\,-\,Radical\,Functions" "debug" "Module5"
     elif [ "$4" == 6 ]; then
-        generateModuleAllVersions 6 $setExamNumber $setPassword 25 "Module\,6\,-\,Polynomial\,Functions" "debug" "Module6"
+        generateModuleAllVersions "6" $setExamNumber $setPassword 25 "Module\,6\,-\,Polynomial\,Functions" "debug" "Module6"
     elif [ "$4" == 7 ]; then
-        generateModuleAllVersions 7 $setExamNumber $setPassword 30 "Module\,7\,-\,Rational\,Functions" "debug" "Module7"
+        generateModuleAllVersions "7" $setExamNumber $setPassword 30 "Module\,7\,-\,Rational\,Functions" "debug" "Module7"
     elif [ "$4" == 8 ]; then
-        generateModuleAllVersions 8 $setExamNumber $setPassword 35 "Module\,8\,-\,Logarithmic\,and\,Exponential\,Functions" "debug" "Module8"
+        generateModuleAllVersions "8" $setExamNumber $setPassword 35 "Module\,8\,-\,Logarithmic\,and\,Exponential\,Functions" "debug" "Module8"
     elif [ "$4" == 9 ]; then
         generateModuleAllVersions "9M" $setExamNumber $setPassword 40 "Module\,9M\,-\,Modeling\,Linear\,Functions" "debug" "Module9M"
     elif [ "$4" == 10 ]; then
@@ -423,36 +428,36 @@ else
     done
 
     if [ "$3" == 1 ]; then
-        generateModuleAllVersions 1 $setExamNumber $setSemester 0 "Module\,1\,-\,Real\,and\,Complex\,Numbers" $setPassword "Module1"
-        generateModuleAllVersions 2 $setExamNumber $setSemester 5 "Module\,2\,-\,Linear\,Functions" $setPassword "Module2"
-        generateModuleAllVersions 3 $setExamNumber $setSemester 10 "Module\,3\,-\,Inequalities" $setPassword "Module3"
+        generateModuleAllVersions "1" $setExamNumber $setSemester 0 "Module\,1\,-\,Real\,and\,Complex\,Numbers" $setPassword "Module1"
+        generateModuleAllVersions "2" $setExamNumber $setSemester 5 "Module\,2\,-\,Linear\,Functions" $setPassword "Module2"
+        generateModuleAllVersions "3" $setExamNumber $setSemester 10 "Module\,3\,-\,Inequalities" $setPassword "Module3"
     elif [ "$3" == 2 ]; then
-        generateModuleAllVersions 1 $setExamNumber $setSemester 0 "Module\,1\,-\,Real\,and\,Complex\,Numbers" $setPassword "Module1"
-        generateModuleAllVersions 2 $setExamNumber $setSemester 5 "Module\,2\,-\,Linear\,Functions" $setPassword "Module2"
-        generateModuleAllVersions 3 $setExamNumber $setSemester 10 "Module\,3\,-\,Inequalities" $setPassword "Module3"
-        generateModuleAllVersions 4 $setExamNumber $setSemester 15 "Module\,4\,-\,Quadratic\,Functions" $setPassword "Module4"
-        generateModuleAllVersions 5 $setExamNumber $setSemester 20 "Module\,5\,-\,Radical\,Functions" $setPassword "Module5"
-        generateModuleAllVersions 6 $setExamNumber $setSemester 25 "Module\,6\,-\,Polynomial\,Functions" $setPassword "Module6"
+        generateModuleAllVersions "1" $setExamNumber $setSemester 0 "Module\,1\,-\,Real\,and\,Complex\,Numbers" $setPassword "Module1"
+        generateModuleAllVersions "2" $setExamNumber $setSemester 5 "Module\,2\,-\,Linear\,Functions" $setPassword "Module2"
+        generateModuleAllVersions "3" $setExamNumber $setSemester 10 "Module\,3\,-\,Inequalities" $setPassword "Module3"
+        generateModuleAllVersions "4" $setExamNumber $setSemester 15 "Module\,4\,-\,Quadratic\,Functions" $setPassword "Module4"
+        generateModuleAllVersions "5" $setExamNumber $setSemester 20 "Module\,5\,-\,Radical\,Functions" $setPassword "Module5"
+        generateModuleAllVersions "6" $setExamNumber $setSemester 25 "Module\,6\,-\,Polynomial\,Functions" $setPassword "Module6"
     elif [ "$3" == 3 ]; then
-        generateModuleAllVersions 1 $setExamNumber $setSemester 0 "Module\,1\,-\,Real\,and\,Complex\,Numbers" $setPassword "Module1"
-        generateModuleAllVersions 2 $setExamNumber $setSemester 5 "Module\,2\,-\,Linear\,Functions" $setPassword "Module2"
-        generateModuleAllVersions 3 $setExamNumber $setSemester 10 "Module\,3\,-\,Inequalities" $setPassword "Module3"
-        generateModuleAllVersions 4 $setExamNumber $setSemester 15 "Module\,4\,-\,Quadratic\,Functions" $setPassword "Module4"
-        generateModuleAllVersions 5 $setExamNumber $setSemester 20 "Module\,5\,-\,Radical\,Functions" $setPassword "Module5"
-        generateModuleAllVersions 6 $setExamNumber $setSemester 25 "Module\,6\,-\,Polynomial\,Functions" $setPassword "Module6"
-        generateModuleAllVersions 7 $setExamNumber $setSemester 30 "Module\,7\,-\,Rational\,Functions" $setPassword "Module7"
-        generateModuleAllVersions 8 $setExamNumber $setSemester 35 "Module\,8\,-\,Logarithmic\,and\,Exponential\,Functions" $setPassword "Module8"
+        generateModuleAllVersions "1" $setExamNumber $setSemester 0 "Module\,1\,-\,Real\,and\,Complex\,Numbers" $setPassword "Module1"
+        generateModuleAllVersions "2" $setExamNumber $setSemester 5 "Module\,2\,-\,Linear\,Functions" $setPassword "Module2"
+        generateModuleAllVersions "3" $setExamNumber $setSemester 10 "Module\,3\,-\,Inequalities" $setPassword "Module3"
+        generateModuleAllVersions "4" $setExamNumber $setSemester 15 "Module\,4\,-\,Quadratic\,Functions" $setPassword "Module4"
+        generateModuleAllVersions "5" $setExamNumber $setSemester 20 "Module\,5\,-\,Radical\,Functions" $setPassword "Module5"
+        generateModuleAllVersions "6" $setExamNumber $setSemester 25 "Module\,6\,-\,Polynomial\,Functions" $setPassword "Module6"
+        generateModuleAllVersions "7" $setExamNumber $setSemester 30 "Module\,7\,-\,Rational\,Functions" $setPassword "Module7"
+        generateModuleAllVersions "8" $setExamNumber $setSemester 35 "Module\,8\,-\,Logarithmic\,and\,Exponential\,Functions" $setPassword "Module8"
         generateModuleAllVersions "9M" $setExamNumber $setSemester 40 "Module\,9M\,-\,Modeling\,Linear\,Functions" $setPassword "Module9M"
         generateModuleAllVersions "9L" $setExamNumber $setSemester 60 "Module\,9L\,-\,Operations\,on\,Functions" $setPassword "Module9L"
     elif [ "$3" == 4 ] || [ "$3" == 5 ] || [ "$3" == 6 ]; then
-        generateModuleAllVersions 1 $setExamNumber $setSemester 0 "Module\,1\,-\,Real\,and\,Complex\,Numbers" $setPassword "Module1"
-        generateModuleAllVersions 2 $setExamNumber $setSemester 5 "Module\,2\,-\,Linear\,Functions" $setPassword "Module2"
-        generateModuleAllVersions 3 $setExamNumber $setSemester 10 "Module\,3\,-\,Inequalities" $setPassword "Module3"
-        generateModuleAllVersions 4 $setExamNumber $setSemester 15 "Module\,4\,-\,Quadratic\,Functions" $setPassword "Module4"
-        generateModuleAllVersions 5 $setExamNumber $setSemester 20 "Module\,5\,-\,Radical\,Functions" $setPassword "Module5"
-        generateModuleAllVersions 6 $setExamNumber $setSemester 25 "Module\,6\,-\,Polynomial\,Functions" $setPassword "Module6"
-        generateModuleAllVersions 7 $setExamNumber $setSemester 30 "Module\,7\,-\,Rational\,Functions" $setPassword "Module7"
-        generateModuleAllVersions 8 $setExamNumber $setSemester 35 "Module\,8\,-\,Logarithmic\,and\,Exponential\,Functions" $setPassword "Module8"
+        generateModuleAllVersions "1" $setExamNumber $setSemester 0 "Module\,1\,-\,Real\,and\,Complex\,Numbers" $setPassword "Module1"
+        generateModuleAllVersions "2" $setExamNumber $setSemester 5 "Module\,2\,-\,Linear\,Functions" $setPassword "Module2"
+        generateModuleAllVersions "3" $setExamNumber $setSemester 10 "Module\,3\,-\,Inequalities" $setPassword "Module3"
+        generateModuleAllVersions "4" $setExamNumber $setSemester 15 "Module\,4\,-\,Quadratic\,Functions" $setPassword "Module4"
+        generateModuleAllVersions "5" $setExamNumber $setSemester 20 "Module\,5\,-\,Radical\,Functions" $setPassword "Module5"
+        generateModuleAllVersions "6" $setExamNumber $setSemester 25 "Module\,6\,-\,Polynomial\,Functions" $setPassword "Module6"
+        generateModuleAllVersions "7" $setExamNumber $setSemester 30 "Module\,7\,-\,Rational\,Functions" $setPassword "Module7"
+        generateModuleAllVersions "8" $setExamNumber $setSemester 35 "Module\,8\,-\,Logarithmic\,and\,Exponential\,Functions" $setPassword "Module8"
         generateModuleAllVersions "9M" $setExamNumber $setSemester 40 "Module\,9M\,-\,Modeling\,Linear\,Functions" $setPassword "Module9M"
         generateModuleAllVersions "10M" $setExamNumber $setSemester 45 "Module\,10M\,-\,Modeling\,with\,Power\,Functions" $setPassword "Module10M"
         generateModuleAllVersions "11M" $setExamNumber $setSemester 50 "Module\,11M\,-\,Modeling\,with\,Log\,and\,Exp\,Functions" $setPassword "Module11M"

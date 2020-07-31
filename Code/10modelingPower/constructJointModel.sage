@@ -26,7 +26,7 @@ justChange = float( pi * (radiusPercentChange/100.0)**2 * (heightPercentChange/1
 justChangeWithoutPi = float( (radiusPercentChange/100.0)**2 * (heightPercentChange/100.0)  )
 combinePercentages = float(pi * (radiusPercentChange*radiusSign + heightPercentChange*heightSign) )
 
-displayProblem = "\\begin{center} \\textit{Pepsi wants to increase the volume of soda in their cans. They've decided to %s the radius by %d percent and %s the height by %d percent. They want to model the new volume based on the radius and height of the original cans.} \\end{center}" %(increasesOrDecreasesRadius, radiusPercentChange, increasesOrDecreasesHeight, heightPercentChange)
+displayProblem = "Pepsi wants to increase the volume of soda in their cans. They've decided to %s the radius by %d percent and %s the height by %d percent. They want to model the new volume based on the radius and height of the original cans." %(increasesOrDecreasesRadius, radiusPercentChange, increasesOrDecreasesHeight, heightPercentChange)
 
 option1 = ["k = %.5f" %constant, "* This is the correct option and corresponds to the model: $V = \\pi (%.2f r)^2 (%.2f h)$." %(float(newRadius/100), float(newHeight/100)), 1]
 option2 = ["k = %.5f" %withoutPi, "This corresponds to the model: $V = (%.2f r)^2 (%.2f h)$." %(float(newRadius/100), float(newHeight/100)), 0]

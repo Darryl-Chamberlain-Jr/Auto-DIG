@@ -20,7 +20,7 @@ while duplicate == True:
         duplicate = True
 ###
 displayStem = "The temperature of an object, $T$, in a different surrounding temperature $T_s$ will behave according to the formula $T(t) = Ae^{kt} + T_s$, where $t$ is minutes, $A$ is a constant, and k is a constant. Use this formula and the situation below to construct a model that describes the uranium's temperature, $T$, based on the amount of time t (in minutes) that have passed. Choose the correct constant $k$ from the options below."
-displayProblem = "\\begin{center} \\textit{Uranium is taken out of the reactor with a temperature of $%d^{\\circ}$ C and is placed into a $%d^{\\circ}$ C bath to cool. After %d minutes, the uranium has cooled to $%d^{\\circ}$ C.} \\end{center}" %(initialTemp, bathTemp, timePassed, finalTemp)
+displayProblem = "Uranium is taken out of the reactor with a temperature of $%d^{\\circ}$ C and is placed into a $%d^{\\circ}$ C bath to cool. After %d minutes, the uranium has cooled to $%d^{\\circ}$ C." %(initialTemp, bathTemp, timePassed, finalTemp)
 
 listedOrNot = random.randint(0, 1)
 if listedOrNot == 0:

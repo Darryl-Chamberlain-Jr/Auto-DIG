@@ -58,7 +58,7 @@ distractorObliqueAndHorizontal = ["\\text{Horizontal Asymptote of } y = %s \\tex
 distractorObliqueAndVertical = ["\\text{Horizontal Asymptote of } y = %s \\text{ and Oblique Asymptote of } y = %s" %(cleanRational(verticalAsy), obliqueAsy), "This corresponds to believing there can be both a horizontal and oblique asymptote AND mixing up horizontal/vertical asymoptote.", 0]
 
 displayStem = "Determine the horizontal and/or oblique asymptotes in the rational function below."
-displayProblem = "\\frac{%s}{%s}" %(numerator, denominator)
+displayProblem = "f(x) = \\frac{%s}{%s}" %(numerator, denominator)
 displaySolution = "y = %s" %(obliqueAsy)
 generalComment = "General Comments: We have a Horizontal Asymptote if the degree of the numerator is smaller than or equal to the degree of the denominator. We have an Oblique Asymptote if the degree of the numerator is larger than the degree of the denominator. We cannot have both!"
 

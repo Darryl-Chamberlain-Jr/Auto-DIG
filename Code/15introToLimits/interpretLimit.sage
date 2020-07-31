@@ -12,9 +12,9 @@ else:
 displayStem = "Based on the information below, which of the following statements is always true?"
 xFirst = random.randint(0, 1)
 if xFirst == 1:
-    displayProblem = "\\begin{center} As $x$ approaches $%s$, $f(x)$ approaches $%s$. \\end{center}" %(x_0, y_0)
+    displayProblem = "As $x$ approaches $%s$, $f(x)$ approaches $%s$." %(x_0, y_0)
 else:
-    displayProblem = "\\begin{center} $f(x)$ approaches $%s$ as $x$ approaches $%s$. \\end{center}" %(y_0, x_0)
+    displayProblem = "$f(x)$ approaches $%s$ as $x$ approaches $%s$." %(y_0, x_0)
 
 noneOfTheAboveOrNot = random.randint(0, 1)
 

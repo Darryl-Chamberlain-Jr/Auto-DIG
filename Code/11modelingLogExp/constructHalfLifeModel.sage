@@ -15,7 +15,7 @@ halfLifeWithBaseE = int(-1.0/kWithBaseE) * 365
 ###
 ### LATER, MAKE A BASE OF E ###
 displayStem = "Using the scenario below, model the situation using an exponential function and a base of $\\frac{1}{2}$. Then, solve for the half-life of the element, rounding to the nearest day."
-displayProblem = "\\begin{center} \\textit{The half-life of an element is the amount of time it takes for the element to decay to half of its initial starting amount. There is initially %d grams of element $X$ and after %d years there is %d grams remaining.} \\end{center}" %(initialAmount, timePassed, finalAmount)
+displayProblem = "The half-life of an element is the amount of time it takes for the element to decay to half of its initial starting amount. There is initially %d grams of element $X$ and after %d years there is %d grams remaining." %(initialAmount, timePassed, finalAmount)
 
 option1 = ["\\text{About } %d \\text{ days}" %halfLife, "* This is the correct option.", 1]
 option2 = ["\\text{About } %d \\text{ days}" %halfLifeBadSolve, "This uses the correct model but solves for the exponential constant incorrectly.", 0]

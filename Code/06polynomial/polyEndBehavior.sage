@@ -50,19 +50,19 @@ displayProblem = "f(x) = %s(%s)^{%d}(%s)^{%d}(%s)^{%d}(%s)^{%d}" %(leadingCoeffi
 sumOfExponents = e0 + e1 + e2 + e3
 
 if leadingCoefficient < 0 and sumOfExponents % 2 == 0:
-    displaySolution = "endBehaviorNegativeEven%s" %version
+    displaySolution = "polyEndBehaviorB%s" %version
     answerLetter="B"
 elif leadingCoefficient > 0 and sumOfExponents % 2 == 0:
-    displaySolution = "endBehaviorPositiveEven%s" %version
+    displaySolution = "polyEndBehaviorC%s" %version
     answerLetter="C"
 elif leadingCoefficient > 0 and sumOfExponents % 2 == 1:
-    displaySolution = "endBehaviorPositiveOdd%s" %version
+    displaySolution = "polyEndBehaviorD%s" %version
     answerLetter="D"
 else:
-    displaySolution = "endBehaviorNegativeOdd%s" %version
+    displaySolution = "polyEndBehaviorA%s" %version
     answerLetter="A"
 
-choices = ["endBehaviorNegativeOdd%s" %version, "endBehaviorNegativeEven%s" %version, "endBehaviorPositiveEven%s" %version, "endBehaviorPositiveOdd%s" %version]
+choices = ["polyEndBehaviorA%s" %version, "polyEndBehaviorB%s" %version, "polyEndBehaviorC%s" %version, "polyEndBehaviorD%s" %version]
 choiceComments = ["The function is above the $x$-axis, then passes through.", "The function is below the $x$-axis, then touches.", "The function is above the $x$-axis, then touches.", "The function is below the $x$-axis, then passes through."]
 
 displayStem = 'Describe the end behavior of the polynomial below.'

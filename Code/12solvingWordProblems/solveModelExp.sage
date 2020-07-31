@@ -26,7 +26,7 @@ while len(set(test_list)) != len(test_list):
     test_list = [daysUntilThreshold, incorrectProperties, eAsBase, incorrectPropertiesEAsBase]
 
 displayStem = "Solve the modeling problem below, if possible."
-displayProblem = "\\begin{center} \\textit{A new virus is spreading throughout the world. There were initially %d many cases reported, but the number of confirmed cases has %s every %d days. How long will it be until there are at least %d confirmed cases?} \\end{center}" %(initialPop, growthDescription, replicationRate, thresholdConfirmedCases)
+displayProblem = "A new virus is spreading throughout the world. There were initially %d many cases reported, but the number of confirmed cases has %s every %d days. How long will it be until there are at least %d confirmed cases?" %(initialPop, growthDescription, replicationRate, thresholdConfirmedCases)
 
 option1 = ["\\text{About } %d \\text{ days}" %daysUntilThreshold, "* This is the correct option.", 1]
 option2 = ["\\text{About } %d \\text{ days}" %incorrectProperties, "You modeled the situation correctly but did not apply the properties of log correctly.", 0]

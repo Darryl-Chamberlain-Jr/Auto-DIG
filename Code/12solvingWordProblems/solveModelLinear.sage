@@ -43,7 +43,7 @@ else:
     otherConc = concentrationA
 ##
 displayStem = "Solve the modeling problem below, if possible."
-displayProblem = "\\begin{center} \\textit{In CHM2045L, Brittany created a %d liter %d percent solution of chemical $\\chi$ using two different solution percentages of chemical $\\chi$. When she went to write her lab report, she realized she forgot to write the amount of each solution she used! If she remembers she used %d percent and %d percent solutions, what was the amount she used of the %d percent solution?} \\end{center}" %(totalVolume, totalConcentration, concentrationA, concentrationB, concQuestion)
+displayProblem = "In CHM2045L, Brittany created a %d liter %d percent solution of chemical $\\chi$ using two different solution percentages of chemical $\\chi$. When she went to write her lab report, she realized she forgot to write the amount of each solution she used! If she remembers she used %d percent and %d percent solutions, what was the amount she used of the %d percent solution?" %(totalVolume, totalConcentration, concentrationA, concentrationB, concQuestion)
 
 option1 = ["%.2f" %volumeQuestion, "*This is the correct option.", 1]
 option2 = ["%.2f" %otherVolume, "This is the concentration of %d percent solution." %otherConc, 0]

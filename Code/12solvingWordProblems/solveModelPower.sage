@@ -14,7 +14,7 @@ while len(set(test_list)) != len(test_list):
 
 displayStem = "For the scenario below, use the model for the volume of a cylinder as $V = \\pi r^2 h$."
 
-displayProblem = "\\begin{center} \\textit{Pringles wants to add %d \\text{percent} more chips to their cylinder cans and minimize the design change of their cans. They've decided that the best way to minimize the design change is to increase the radius and height by the same percentage. What should this increase be?} \\end{center}" %percentMore
+displayProblem = "Pringles wants to add %d \\text{percent} more chips to their cylinder cans and minimize the design change of their cans. They've decided that the best way to minimize the design change is to increase the radius and height by the same percentage. What should this increase be?" %percentMore
 
 option1 = ["\\text{About } %d \\text{ percent}" %increaseEach, "* This is the correct option.", 1]
 option2 = ["\\text{About } %d \\text{ percent}" %increaseSQRT, "This corresponds to solving correctly but treating both radius and height as equal contributors to the volume.", 0]

@@ -13,195 +13,195 @@ try:
 except:
  _st_.goboom(41)
 _st_.blockend()
-_st_.current_tex_line = 46
+_st_.current_tex_line = 47
 _st_.blockbegin()
 try:
- moduleNumber=5
- problemNumber=21
- load("../Code/05radical/solveRadicalLinear.sage")
-except:
- _st_.goboom(50)
-_st_.blockend()
-try:
- _st_.current_tex_line = 63
- _st_.inline(0, latex(displayStem))
-except:
- _st_.goboom(63)
-try:
- _st_.current_tex_line = 63
- _st_.inline(1, latex(displayProblem))
-except:
- _st_.goboom(63)
-try:
- _st_.current_tex_line = 63
- _st_.inline(2, latex(choices[0]))
-except:
- _st_.goboom(63)
-try:
- _st_.current_tex_line = 63
- _st_.inline(3, latex(choices[1]))
-except:
- _st_.goboom(63)
-try:
- _st_.current_tex_line = 63
- _st_.inline(4, latex(choices[2]))
-except:
- _st_.goboom(63)
-try:
- _st_.current_tex_line = 63
- _st_.inline(5, latex(choices[3]))
-except:
- _st_.goboom(63)
-try:
- _st_.current_tex_line = 63
- _st_.inline(6, latex(choices[4]))
-except:
- _st_.goboom(63)
-_st_.current_tex_line = 64
-_st_.blockbegin()
-try:
- moduleNumber=5
- problemNumber=22
- load("../Code/05radical/domainRadical.sage")
-except:
- _st_.goboom(68)
-_st_.blockend()
-try:
- _st_.current_tex_line = 81
- _st_.inline(7, latex(displayStem))
-except:
- _st_.goboom(81)
-try:
- _st_.current_tex_line = 81
- _st_.inline(8, latex(displayProblem))
-except:
- _st_.goboom(81)
-try:
- _st_.current_tex_line = 81
- _st_.inline(9, latex(choices[0]))
-except:
- _st_.goboom(81)
-try:
- _st_.current_tex_line = 81
- _st_.inline(10, latex(choices[1]))
-except:
- _st_.goboom(81)
-try:
- _st_.current_tex_line = 81
- _st_.inline(11, latex(choices[2]))
-except:
- _st_.goboom(81)
-try:
- _st_.current_tex_line = 81
- _st_.inline(12, latex(choices[3]))
-except:
- _st_.goboom(81)
-try:
- _st_.current_tex_line = 81
- _st_.inline(13, latex(choices[4]))
-except:
- _st_.goboom(81)
-_st_.current_tex_line = 83
-_st_.blockbegin()
-try:
-   moduleNumber=5
-   problemNumber=23
+   moduleNumber="5"
+   problemNumber=21
    load("../Code/05radical/radicalGraphToEquation.sage")
    
 except:
- _st_.goboom(87)
+ _st_.goboom(51)
 _st_.blockend()
 try:
- _st_.current_tex_line = 102
- _st_.inline(14, latex(displayStem))
+ _st_.current_tex_line = 66
+ _st_.inline(0, latex(displayStem))
 except:
- _st_.goboom(102)
+ _st_.goboom(66)
 try:
- _st_.current_tex_line = 102
- _st_.inline(15, latex(choices[0]))
+ _st_.current_tex_line = 66
+ _st_.inline(1, latex(choices[0]))
 except:
- _st_.goboom(102)
+ _st_.goboom(66)
 try:
- _st_.current_tex_line = 102
- _st_.inline(16, latex(choices[1]))
+ _st_.current_tex_line = 66
+ _st_.inline(2, latex(choices[1]))
 except:
- _st_.goboom(102)
+ _st_.goboom(66)
 try:
- _st_.current_tex_line = 102
- _st_.inline(17, latex(choices[2]))
+ _st_.current_tex_line = 66
+ _st_.inline(3, latex(choices[2]))
 except:
- _st_.goboom(102)
+ _st_.goboom(66)
 try:
- _st_.current_tex_line = 102
- _st_.inline(18, latex(choices[3]))
+ _st_.current_tex_line = 66
+ _st_.inline(4, latex(choices[3]))
 except:
- _st_.goboom(102)
+ _st_.goboom(66)
 try:
- _st_.current_tex_line = 102
- _st_.inline(19, latex(choices[4]))
+ _st_.current_tex_line = 66
+ _st_.inline(5, latex(choices[4]))
 except:
- _st_.goboom(102)
-_st_.current_tex_line = 103
+ _st_.goboom(66)
+_st_.current_tex_line = 68
 _st_.blockbegin()
 try:
- moduleNumber=5
- problemNumber=24
- load("../Code/05radical/solveRadicalQuadratic.sage")
-except:
- _st_.goboom(107)
-_st_.blockend()
-try:
- _st_.current_tex_line = 120
- _st_.inline(20, latex(displayStem))
-except:
- _st_.goboom(120)
-try:
- _st_.current_tex_line = 120
- _st_.inline(21, latex(displayProblem))
-except:
- _st_.goboom(120)
-try:
- _st_.current_tex_line = 120
- _st_.inline(22, latex(choices[0]))
-except:
- _st_.goboom(120)
-try:
- _st_.current_tex_line = 120
- _st_.inline(23, latex(choices[1]))
-except:
- _st_.goboom(120)
-try:
- _st_.current_tex_line = 120
- _st_.inline(24, latex(choices[2]))
-except:
- _st_.goboom(120)
-try:
- _st_.current_tex_line = 120
- _st_.inline(25, latex(choices[3]))
-except:
- _st_.goboom(120)
-try:
- _st_.current_tex_line = 120
- _st_.inline(26, latex(choices[4]))
-except:
- _st_.goboom(120)
-_st_.current_tex_line = 122
-_st_.blockbegin()
-try:
- moduleNumber=5
- problemNumber=25
+ moduleNumber="5"
+ problemNumber=22
  load("../Code/05radical/radicalEquationToGraph.sage")
 except:
- _st_.goboom(126)
+ _st_.goboom(72)
+_st_.blockend()
+try:
+ _st_.current_tex_line = 87
+ _st_.inline(6, latex(displayStem))
+except:
+ _st_.goboom(87)
+try:
+ _st_.current_tex_line = 87
+ _st_.inline(7, latex(displayProblem))
+except:
+ _st_.goboom(87)
+_st_.current_tex_line = 88
+_st_.blockbegin()
+try:
+ moduleNumber="5"
+ problemNumber=23
+ load("../Code/05radical/solveRadicalLinear.sage")
+except:
+ _st_.goboom(92)
+_st_.blockend()
+try:
+ _st_.current_tex_line = 105
+ _st_.inline(8, latex(displayStem))
+except:
+ _st_.goboom(105)
+try:
+ _st_.current_tex_line = 105
+ _st_.inline(9, latex(displayProblem))
+except:
+ _st_.goboom(105)
+try:
+ _st_.current_tex_line = 105
+ _st_.inline(10, latex(choices[0]))
+except:
+ _st_.goboom(105)
+try:
+ _st_.current_tex_line = 105
+ _st_.inline(11, latex(choices[1]))
+except:
+ _st_.goboom(105)
+try:
+ _st_.current_tex_line = 105
+ _st_.inline(12, latex(choices[2]))
+except:
+ _st_.goboom(105)
+try:
+ _st_.current_tex_line = 105
+ _st_.inline(13, latex(choices[3]))
+except:
+ _st_.goboom(105)
+try:
+ _st_.current_tex_line = 105
+ _st_.inline(14, latex(choices[4]))
+except:
+ _st_.goboom(105)
+_st_.current_tex_line = 106
+_st_.blockbegin()
+try:
+ moduleNumber="5"
+ problemNumber=24
+ load("../Code/05radical/domainRadical.sage")
+except:
+ _st_.goboom(110)
+_st_.blockend()
+try:
+ _st_.current_tex_line = 123
+ _st_.inline(15, latex(displayStem))
+except:
+ _st_.goboom(123)
+try:
+ _st_.current_tex_line = 123
+ _st_.inline(16, latex(displayProblem))
+except:
+ _st_.goboom(123)
+try:
+ _st_.current_tex_line = 123
+ _st_.inline(17, latex(choices[0]))
+except:
+ _st_.goboom(123)
+try:
+ _st_.current_tex_line = 123
+ _st_.inline(18, latex(choices[1]))
+except:
+ _st_.goboom(123)
+try:
+ _st_.current_tex_line = 123
+ _st_.inline(19, latex(choices[2]))
+except:
+ _st_.goboom(123)
+try:
+ _st_.current_tex_line = 123
+ _st_.inline(20, latex(choices[3]))
+except:
+ _st_.goboom(123)
+try:
+ _st_.current_tex_line = 123
+ _st_.inline(21, latex(choices[4]))
+except:
+ _st_.goboom(123)
+_st_.current_tex_line = 124
+_st_.blockbegin()
+try:
+ moduleNumber="5"
+ problemNumber=25
+ load("../Code/05radical/solveRadicalQuadratic.sage")
+except:
+ _st_.goboom(128)
 _st_.blockend()
 try:
  _st_.current_tex_line = 141
- _st_.inline(27, latex(displayStem))
+ _st_.inline(22, latex(displayStem))
 except:
  _st_.goboom(141)
 try:
  _st_.current_tex_line = 141
- _st_.inline(28, latex(displayProblem))
+ _st_.inline(23, latex(displayProblem))
+except:
+ _st_.goboom(141)
+try:
+ _st_.current_tex_line = 141
+ _st_.inline(24, latex(choices[0]))
+except:
+ _st_.goboom(141)
+try:
+ _st_.current_tex_line = 141
+ _st_.inline(25, latex(choices[1]))
+except:
+ _st_.goboom(141)
+try:
+ _st_.current_tex_line = 141
+ _st_.inline(26, latex(choices[2]))
+except:
+ _st_.goboom(141)
+try:
+ _st_.current_tex_line = 141
+ _st_.inline(27, latex(choices[3]))
+except:
+ _st_.goboom(141)
+try:
+ _st_.current_tex_line = 141
+ _st_.inline(28, latex(choices[4]))
 except:
  _st_.goboom(141)
 _st_.endofdoc()

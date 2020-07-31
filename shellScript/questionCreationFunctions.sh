@@ -9,7 +9,7 @@ function createBasicStructure {
     CodeName=$6
     /bin/cat >> /${DIR}/buildExams/${FileName}${Version}.tex << FINISH_HIM
 \begin{sagesilent}
-moduleNumber=$4
+moduleNumber="${ModuleNumber}"
 problemNumber=$2
 load("../Code/${CodeFolderName}/${CodeName}.sage")
 \end{sagesilent}
@@ -39,7 +39,7 @@ function displayNoMathModeProblem {
     /bin/cat >> /${DIR}/buildExams/${FileName}${Version}.tex << FINISH_HIM
 
 \begin{sagesilent}
-moduleNumber=$4
+moduleNumber="${ModuleNumber}"
 problemNumber=$2
 load("../Code/${CodeFolderName}/${CodeName}.sage")
 \end{sagesilent}
@@ -61,6 +61,37 @@ load("../Code/${CodeFolderName}/${CodeName}.sage")
 FINISH_HIM
 }
 
+function displayNoMathModeProblem4Options {
+    Version=$1
+    ProblemNumber=$2
+    FileName=$3
+    ModuleNumber=$4
+    CodeFolderName=$5
+    CodeName=$6
+    /bin/cat >> /${DIR}/buildExams/${FileName}${Version}.tex << FINISH_HIM
+
+\begin{sagesilent}
+moduleNumber="${ModuleNumber}"
+problemNumber=$2
+load("../Code/${CodeFolderName}/${CodeName}.sage")
+\end{sagesilent}
+
+  \litem{ \sage{displayStem}
+
+   \begin{center}
+      \textit{ \sage{displayProblem} }
+   \end{center}
+
+  	\begin{enumerate}[label=\Alph*.]
+    \item \( \sage{choices[0]} \)
+    \item \( \sage{choices[1]} \)
+    \item \( \sage{choices[2]} \)
+    \item \( \sage{choices[3]} \)
+  	\end{enumerate}
+  }
+FINISH_HIM
+}
+
 function displayGraphProblem {
     Version=$1
     ProblemNumber=$2
@@ -71,7 +102,7 @@ function displayGraphProblem {
     /bin/cat >> /${DIR}/buildExams/${FileName}${Version}.tex << FINISH_HIM
 
   \begin{sagesilent}
-  moduleNumber=$4
+  moduleNumber="${ModuleNumber}"
   problemNumber=$2
   load("../Code/${CodeFolderName}/${CodeName}.sage")
   \end{sagesilent}
@@ -79,7 +110,7 @@ function displayGraphProblem {
   \litem{ \sage{displayStem}
 
    \begin{center}
-       \includegraphics[width=0.3\textwidth]{../Figures/${CodeName}${Version}.png}
+       \includegraphics[width=0.5\textwidth]{../Figures/${CodeName}${Version}.png}
    \end{center}
 
   	\begin{enumerate}[label=\Alph*.]
@@ -103,7 +134,7 @@ function displayTableProblemSpecial {
     /bin/cat >> /${DIR}/buildExams/${FileName}${Version}.tex << FINISH_HIM
 
   \begin{sagesilent}
-  moduleNumber=$4
+  moduleNumber="${ModuleNumber}"
   problemNumber=$2
   load("../Code/${CodeFolderName}/${CodeName}.sage")
   \end{sagesilent}
@@ -137,7 +168,7 @@ function createMathProblemAnd4Graph1TextOptions {
     /bin/cat >> /${DIR}/buildExams/${FileName}${Version}.tex << FINISH_HIM
 
 \begin{sagesilent}
-moduleNumber=$4
+moduleNumber="${ModuleNumber}"
 problemNumber=$2
 load("../Code/${CodeFolderName}/${CodeName}.sage")
 \end{sagesilent}
@@ -169,7 +200,7 @@ function createMathProblemAnd4GraphOptions {
     /bin/cat >> /${DIR}/buildExams/${FileName}${Version}.tex << FINISH_HIM
 
 \begin{sagesilent}
-moduleNumber=$4
+moduleNumber="${ModuleNumber}"
 problemNumber=$2
 load("../Code/${CodeFolderName}/${CodeName}.sage")
 \end{sagesilent}

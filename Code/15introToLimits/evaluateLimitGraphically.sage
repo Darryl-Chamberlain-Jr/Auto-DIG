@@ -61,7 +61,7 @@ else:
     option5 = ["\\text{No } a \\text{ make the limit true}.", "", 0]
     generalComment = "\\textbf{General Comments:} Remember that the limit does not exist if the left-hand and right-hand limits do not match."
 
-displayProblem = "evaluateLimitGraph1"
+displayProblem = "evaluateLimitGraphically%s" %version
 
 answerList = [option1, option2, option3]
 random.shuffle(answerList)

@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 
 def sketchRationalFunction(vertAsy, leadingCoeff, power, horShift, figureName):
     ### Defines x-values to avoid asymptote
-    plt.rcParams.update({'font.size': 22})
+    plt.rcParams.update({'font.size': 36})
     stepSize = 0.01
     xLeftMin = vertAsy - 2.5
     xLeftMax = vertAsy - stepSize
@@ -28,7 +28,7 @@ def sketchRationalFunction(vertAsy, leadingCoeff, power, horShift, figureName):
     plt.ylim([float(yMin),float(yMax)])
     ### Saves and closes picture
     plt.grid(True)
-    plt.savefig('../Figures/' + str(figureName) + '.png', bbox_inches='tight')
+    plt.savefig('../Figures/' + str(figureName) + str(version) + '.png', bbox_inches='tight')
     plt.close()
 
 def createFunction():
@@ -37,7 +37,7 @@ def createFunction():
     leadingCoeff = (-1)**random.randint(0, 1)
     power = random.randint(1, 2)
     #
-    figureName = "rationalGraphToEquation%s" %(version)
+    figureName = "rationalGraphToEquation"
     sketchRationalFunction(vertAsy, leadingCoeff, power, horShift, figureName)
     return [vertAsy, leadingCoeff, power, horShift]
 

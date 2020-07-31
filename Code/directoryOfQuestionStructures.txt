@@ -45,19 +45,13 @@ Image naming convention: ${CodeName}${OptionLetter}${Version}.png
 
 06polynomial
 26  constructPolyComplex
-      # Revise displayProblem
 27  constructPolyRationals
-      # Revise displayProblem
 28  polyEndBehavior # Revise images
       # Uses *createMathProblemAnd4GraphOptions*
-      # Revise image names for compatibility
-      # Revise displayProblem
 29  polyGraphToFunction # Create dynamic bounds to improve visual image.
       # Uses *displayGraphProblem* function in shell script.
 30  polyZeroBehavior # Revise images
       # Uses *createMathProblemAnd4GraphOptions*
-      # Revise image names for compatibility
-      # Revise displayProblem
 
 07rational
 31  domainRational
@@ -66,7 +60,6 @@ Image naming convention: ${CodeName}${OptionLetter}${Version}.png
 33  rationalGraphToEquation
       # Uses *displayGraphProblem* function in shell script.
 34  solveRationalLinear
-      # Revise displayProblem
 35  solveRationalQuadratic
 
 08logExp
@@ -79,68 +72,51 @@ Image naming convention: ${CodeName}${OptionLetter}${Version}.png
 09modelingLinear # Improve feedback
 41  constructLinearModelDistanceAndRate
       # Uses *displayNoMathModeProblem* function in shell script.
-      # Revise displayProblem to remove center and italics.
 42  constructLinearModelCostsProfitsRevenue
       # Uses *displayNoMathModeProblem* function in shell script.
-      # Revise displayProblem to remove center and italics.
 43  constructLinearModelMixture
       # Uses *displayNoMathModeProblem* function in shell script.
-      # Revise displayProblem to remove center and italics.
 44  domainLinearModel
       # Uses *displayNoMathModeProblem* function in shell script.
-      # Revise displayProblem to remove center and italics.
 45  identifyModelPopulation
       # Uses *displayTableProblemSpecial* function in shell script.
 
 10modelingPower # Improve feedback
 46  constructDirectModel
       # Uses *displayNoMathModeProblem* function in shell script.
-      # Revise displayProblem to remove center and italics.
 47  constructIndirectModel
       # Uses *displayNoMathModeProblem* function in shell script.
-      # Revise displayProblem to remove center and italics.
 48  constructJointModel
       # Uses *displayNoMathModeProblem* function in shell script.
-      # Revise displayProblem to remove center and italics.
 49  identifyModelPopulation
       # Currently same as 09modelingLinear code
-      # Uses *displayTableProblemSpecial* function in shell script.
 50  identifyModelVariation
-      # Uses *displayNoMathModeProblem* function in shell script.
-      # Revise displayProblem to remove center and italics.
+      # Uses *displayNoMathModeProblem4Options* function in shell script.
 
 11modelingLogExp # Improve feedback
 51  constructBacteriaGrowth
       # Uses *displayNoMathModeProblem* function in shell script.
-      # Revise displayProblem to remove center and italics.
 52  constructHalfLifeModel
       # Uses *displayNoMathModeProblem* function in shell script.
-      # Revise displayProblem to remove center and italics.
 53  constructTemperatureModel
       # Uses *displayNoMathModeProblem* function in shell script.
-      # Revise displayProblem to remove center and italics.
-54  identifyModelGraph
+54  identifyModelGraph11
       # Uses *displayGraphProblem* function in shell script.
 55  identifyModelPopulation
       # Currently same as 09modelingLinear code
-      # Uses *displayTableProblemSpecial* function in shell script.
 
 12solvingWordProblems # Improve feedback
 56  constructModelMixed
       # Uses *displayNoMathModeProblem* function in shell script.
-      # Revise displayProblem to remove center and italics.
-57  identifyModelGraph
+57  identifyModelGraph12
       # Uses *displayGraphProblem* function in shell script.
       # Same code as 11modelingLogExp
 58  solveModelExp
       # Uses *displayNoMathModeProblem* function in shell script.
-      # Revise displayProblem to remove center and italics.
 59  solveModelLinear
       # Uses *displayNoMathModeProblem* function in shell script.
-      # Revise displayProblem to remove center and italics.
 60  solveModelPower
       # Uses *displayNoMathModeProblem* function in shell script.
-      # Revise displayProblem to remove center and italics.
 
 13operationsOnFunctions
 61  determine1to1
@@ -162,13 +138,12 @@ Image naming convention: ${CodeName}${OptionLetter}${Version}.png
 73  evaluateLimitGraphically
       # Uses *displayGraphProblem* function in shell script.
 74  interpretLimit
+      # Uses *displayNoMathModeProblem* function in shell script.
 75  oneSidedLimits
 
 16graphingRationalFunctions
 76  identifyGraphOfRationalFunction # Dynamically graph functions.
       # Uses *displayGraphProblem* function in shell script.
-      # Revise names of images to be compatible.
-      # Insert random choice of version into sage code. Define name as ${CodeName}${Version}. If it needs to be a static question until the graphs auto-generate, that's fine.
 77  identifyHAs
 78  identifyHoles
 79  identifyOAs

@@ -53,7 +53,7 @@ else:
     logAnswer = 1
 
 c0 = ["\\text{Linear}", "This suggests a constant growth. You would be able to add or subtract the same amount year-to-year if this is the correct answer.", linearAnswer]
-c1 = ["\\text{Direct variation}", "This suggests a growth faster than constant but slower than exponential.", directAnswer]
+c1 = ["\\text{Non-Linear Power}", "This suggests a growth faster than constant but slower than exponential.", directAnswer]
 #c2 = ["\\text{Indirect variation}", "This suggests a growth slower than constant but faster than logarithmic.", indirectAnswer]
 c2 = ["\\text{Logarithmic}", "This suggests the slowest of growths that we know.", logAnswer]
 c3 = ["\\text{Exponential}", "This suggests the fastest of growths that we know.", expAnswer]
@@ -67,6 +67,9 @@ choiceComments = [0, 0, 0, 0]
 for k in range(0, 4):
     choices[k] = choiceAndCommentList[k][0]
     choiceComments[k] = choiceAndCommentList[k][1]
+
+choices.append("\\text{None of the above}")
+choiceComments.append("Please contact the coordinator to discuss why you believe none of the options model the population.")
 
 answerIndex = 0
 letters = ["A", "B", "C", "D"]
