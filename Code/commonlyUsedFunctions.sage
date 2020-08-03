@@ -1,4 +1,14 @@
 # Commonly used to find the GCF of two integers.
+
+def identifyAnswerLetter(identifierList):
+    answerIndex = 0
+    letters = ["A", "B", "C", "D", "E"]
+    for checkLetter in letters:
+        if identifierList[answerIndex] == 1:
+            answerLetter = checkLetter
+            break
+        answerIndex = answerIndex+1
+
 def greatestCommonDenominator(a, b):
     if(not (isinstance(a, int) and isinstance(b, int))):
         raise TypeError("One of the numbers you passed is not an integer.")

@@ -52,7 +52,7 @@ def writeToKey(keyFileName, version, problemNumber, stem, problemDisplayType, pr
         for i in range(len(items)):
             keyFile.write("\\item %s  \n" %itemComments[i])
         keyFile.write("\\end{enumerate} \n \n")
-    keyFile.write("%s\n\n" %generalComment)
+    keyFile.write("\\textbf{General Comment:} %s \n\n" %generalComment)
     keyFile.write("-----------------------------------------------\n\n")
     keyFile.close()
     masterAnswerKeyFileLetters = open('../Keys/lettersAnswerKey' + str(keyFileName) + str(version) + '.csv', 'a')
