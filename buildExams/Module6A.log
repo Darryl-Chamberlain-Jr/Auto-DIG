@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.8.30)  30 JUL 2020 14:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.8.30)  3 AUG 2020 12:21
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -616,59 +616,60 @@ e
 \ST@sf=\write5
 \openout5 = `Module6A.sagetex.sage'.
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 66.
+LaTeX Font Info:    Try loading font information for U+msa on input line 63.
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 66.
+LaTeX Font Info:    Try loading font information for U+msb on input line 63.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+lasy on input line 66.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 63.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
+Overfull \hbox (9.56866pt too wide) in paragraph at lines 63--63
+[]$\OML/cmm/m/it/14.4 a \OMS/cmsy/m/n/14.4 2 \OT1/cmr/m/n/14.4 [57\OML/cmm/m/it
+/14.4 ; \OT1/cmr/m/n/14.4 68]\OML/cmm/m/it/14.4 ; b \OMS/cmsy/m/n/14.4 2 \OT1/c
+mr/m/n/14.4 [\OMS/cmsy/m/n/14.4 ^^@\OT1/cmr/m/n/14.4 48\OML/cmm/m/it/14.4 ; \OM
+S/cmsy/m/n/14.4 ^^@\OT1/cmr/m/n/14.4 38]\OML/cmm/m/it/14.4 ; c \OMS/cmsy/m/n/14
+.4 2 \OT1/cmr/m/n/14.4 [\OMS/cmsy/m/n/14.4 ^^@\OT1/cmr/m/n/14.4 186\OML/cmm/m/i
+t/14.4 ; \OMS/cmsy/m/n/14.4 ^^@\OT1/cmr/m/n/14.4 177]\OML/cmm/m/it/14.4 ; []d \
+OMS/cmsy/m/n/14.4 2 \OT1/cmr/m/n/14.4 [\OMS/cmsy/m/n/14.4 ^^@\OT1/cmr/m/n/14.4 
+143\OML/cmm/m/it/14.4 ; \OMS/cmsy/m/n/14.4 ^^@\OT1/cmr/m/n/14.4 138]$ 
+ []
+
+
+Overfull \hbox (6.79684pt too wide) in paragraph at lines 63--64
+| [] 
+ []
+
 <../Figures/polyZeroBehaviorAA.png, id=4, 90.3375pt x 103.88812pt>
 File: ../Figures/polyZeroBehaviorAA.png Graphic file (type png)
 <use ../Figures/polyZeroBehaviorAA.png>
 Package pdftex.def Info: ../Figures/polyZeroBehaviorAA.png  used on input line 
-66.
+84.
 (pdftex.def)             Requested size: 140.92793pt x 162.08224pt.
 <../Figures/polyZeroBehaviorBA.png, id=5, 133.24782pt x 161.10187pt>
 File: ../Figures/polyZeroBehaviorBA.png Graphic file (type png)
 <use ../Figures/polyZeroBehaviorBA.png>
 Package pdftex.def Info: ../Figures/polyZeroBehaviorBA.png  used on input line 
-66.
+84.
 (pdftex.def)             Requested size: 140.92793pt x 170.40334pt.
 <../Figures/polyZeroBehaviorCA.png, id=7, 90.3375pt x 103.88812pt>
 File: ../Figures/polyZeroBehaviorCA.png Graphic file (type png)
 <use ../Figures/polyZeroBehaviorCA.png>
 Package pdftex.def Info: ../Figures/polyZeroBehaviorCA.png  used on input line 
-66.
+84.
 (pdftex.def)             Requested size: 140.92793pt x 162.08224pt.
 <../Figures/polyZeroBehaviorDA.png, id=8, 90.3375pt x 103.88812pt>
 File: ../Figures/polyZeroBehaviorDA.png Graphic file (type png)
 <use ../Figures/polyZeroBehaviorDA.png>
 Package pdftex.def Info: ../Figures/polyZeroBehaviorDA.png  used on input line 
-66.
+84.
 (pdftex.def)             Requested size: 140.92793pt x 162.08224pt.
-
-Overfull \hbox (6.79684pt too wide) in paragraph at lines 66--67
-| [] 
- []
-
-<../Figures/polyGraphToFunctionA.png, id=9, 466.8642pt x 364.2408pt>
-File: ../Figures/polyGraphToFunctionA.png Graphic file (type png)
-<use ../Figures/polyGraphToFunctionA.png>
-Package pdftex.def Info: ../Figures/polyGraphToFunctionA.png  used on input lin
-e 87.
-(pdftex.def)             Requested size: 234.8775pt x 183.2482pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 17.0pt.
@@ -677,14 +678,19 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
- <../Figures/polyZeroBehaviorAA.png> <../Figures/polyZeroBehaviorBA.png> <../Fi
-gures/polyZeroBehaviorCA.png> <../Figures/polyZeroBehaviorDA.png>]
-Overfull \hbox (6.79684pt too wide) in paragraph at lines 87--93
+ <../Figures/polyZeroBehaviorAA.png> <../Figures/polyZeroBehaviorBA.png>]
+Overfull \hbox (6.79684pt too wide) in paragraph at lines 84--85
 | [] 
  []
 
+<../Figures/polyGraphToFunctionA.png, id=28, 466.8642pt x 364.2408pt>
+File: ../Figures/polyGraphToFunctionA.png Graphic file (type png)
+<use ../Figures/polyGraphToFunctionA.png>
+Package pdftex.def Info: ../Figures/polyGraphToFunctionA.png  used on input lin
+e 105.
+(pdftex.def)             Requested size: 234.8775pt x 183.2482pt.
 
-Overfull \hbox (6.79684pt too wide) in paragraph at lines 105--111
+Overfull \hbox (6.79684pt too wide) in paragraph at lines 105--106
 | [] 
  []
 
@@ -694,35 +700,37 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[2 <../Figures/polyGraphToFunctionA.png>]
-Overfull \hbox (6.79684pt too wide) in paragraph at lines 123--124
-| [] 
- []
-
+[2 <../Figures/polyZeroBehaviorCA.png> <../Figures/polyZeroBehaviorDA.png> <../
+Figures/polyGraphToFunctionA.png>]
 <../Figures/polyEndBehaviorAA.png, id=45, 182.18062pt x 204.01219pt>
 File: ../Figures/polyEndBehaviorAA.png Graphic file (type png)
 <use ../Figures/polyEndBehaviorAA.png>
 Package pdftex.def Info: ../Figures/polyEndBehaviorAA.png  used on input line 1
-44.
+26.
 (pdftex.def)             Requested size: 140.92793pt x 157.82141pt.
 <../Figures/polyEndBehaviorBA.png, id=46, 184.43906pt x 124.21407pt>
 File: ../Figures/polyEndBehaviorBA.png Graphic file (type png)
 <use ../Figures/polyEndBehaviorBA.png>
 Package pdftex.def Info: ../Figures/polyEndBehaviorBA.png  used on input line 1
-44.
+26.
 (pdftex.def)             Requested size: 140.92793pt x 94.90971pt.
 <../Figures/polyEndBehaviorCA.png, id=47, 180.675pt x 127.22531pt>
 File: ../Figures/polyEndBehaviorCA.png Graphic file (type png)
 <use ../Figures/polyEndBehaviorCA.png>
 Package pdftex.def Info: ../Figures/polyEndBehaviorCA.png  used on input line 1
-44.
+26.
 (pdftex.def)             Requested size: 140.92793pt x 99.23727pt.
 <../Figures/polyEndBehaviorDA.png, id=48, 179.92218pt x 213.04594pt>
 File: ../Figures/polyEndBehaviorDA.png Graphic file (type png)
 <use ../Figures/polyEndBehaviorDA.png>
 Package pdftex.def Info: ../Figures/polyEndBehaviorDA.png  used on input line 1
-44.
+26.
 (pdftex.def)             Requested size: 140.92793pt x 166.88708pt.
+
+Overfull \hbox (6.79684pt too wide) in paragraph at lines 126--132
+| [] 
+ []
+
 
 Overfull \hbox (6.79684pt too wide) in paragraph at lines 144--145
 | [] 
@@ -750,17 +758,17 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 148.
 Here is how much of TeX's memory you used:
  10129 strings out of 492982
  150675 string characters out of 6134896
- 262843 words of memory out of 5000000
+ 262927 words of memory out of 5000000
  13493 multiletter control sequences out of 15000+600000
  7217 words of font info for 30 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 33i,12n,43p,336b,507s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 33i,12n,43p,336b,670s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share
 /texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on Module6A.pdf (3 pages, 98652 bytes).
+Output written on Module6A.pdf (3 pages, 98963 bytes).
 PDF statistics:
  93 PDF objects out of 1000 (max. 8388607)
  67 compressed objects within 1 object stream

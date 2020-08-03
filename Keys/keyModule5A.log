@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.8.30)  30 JUL 2020 14:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.8.30)  3 AUG 2020 12:20
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -530,43 +530,35 @@ Package Fancyhdr Warning: \headheight is too small (0.0pt):
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 ]
-<../Figures/radicalEquationToGraphCA.png, id=26, 435.0654pt x 349.7868pt>
+<../Figures/radicalEquationToGraphCA.png, id=28, 458.1918pt x 349.7868pt>
 File: ../Figures/radicalEquationToGraphCA.png Graphic file (type png)
 <use ../Figures/radicalEquationToGraphCA.png>
 Package pdftex.def Info: ../Figures/radicalEquationToGraphCA.png  used on input
  line 104.
-(pdftex.def)             Requested size: 140.92793pt x 113.30042pt.
-
-
-Package Fancyhdr Warning: \headheight is too small (0.0pt): 
- Make it at least 12.0pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[2]
+(pdftex.def)             Requested size: 140.92793pt x 107.58415pt.
 File: ../Figures/radicalEquationToGraphCA.png Graphic file (type png)
 <use ../Figures/radicalEquationToGraphCA.png>
 Package pdftex.def Info: ../Figures/radicalEquationToGraphCA.png  used on input
  line 107.
-(pdftex.def)             Requested size: 140.92793pt x 113.30042pt.
-<../Figures/radicalEquationToGraphAA.png, id=42, 435.0654pt x 349.7868pt>
+(pdftex.def)             Requested size: 140.92793pt x 107.58415pt.
+<../Figures/radicalEquationToGraphAA.png, id=30, 458.1918pt x 349.7868pt>
 File: ../Figures/radicalEquationToGraphAA.png Graphic file (type png)
 <use ../Figures/radicalEquationToGraphAA.png>
 Package pdftex.def Info: ../Figures/radicalEquationToGraphAA.png  used on input
  line 107.
-(pdftex.def)             Requested size: 140.92793pt x 113.30042pt.
-<../Figures/radicalEquationToGraphBA.png, id=43, 437.9562pt x 349.7868pt>
-File: ../Figures/radicalEquationToGraphBA.png Graphic file (type png)
-<use ../Figures/radicalEquationToGraphBA.png>
-Package pdftex.def Info: ../Figures/radicalEquationToGraphBA.png  used on input
- line 110.
-(pdftex.def)             Requested size: 140.92793pt x 112.55319pt.
-<../Figures/radicalEquationToGraphDA.png, id=44, 437.2335pt x 349.7868pt>
+(pdftex.def)             Requested size: 140.92793pt x 107.58415pt.
+<../Figures/radicalEquationToGraphDA.png, id=31, 461.0826pt x 349.7868pt>
 File: ../Figures/radicalEquationToGraphDA.png Graphic file (type png)
 <use ../Figures/radicalEquationToGraphDA.png>
 Package pdftex.def Info: ../Figures/radicalEquationToGraphDA.png  used on input
  line 110.
-(pdftex.def)             Requested size: 140.92793pt x 112.74533pt.
+(pdftex.def)             Requested size: 140.92793pt x 106.90631pt.
+<../Figures/radicalEquationToGraphBA.png, id=32, 461.0826pt x 349.7868pt>
+File: ../Figures/radicalEquationToGraphBA.png Graphic file (type png)
+<use ../Figures/radicalEquationToGraphBA.png>
+Package pdftex.def Info: ../Figures/radicalEquationToGraphBA.png  used on input
+ line 110.
+(pdftex.def)             Requested size: 140.92793pt x 106.90631pt.
 
 
 Package Fancyhdr Warning: \headheight is too small (0.0pt): 
@@ -574,9 +566,15 @@ Package Fancyhdr Warning: \headheight is too small (0.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[3 <../Figures/radicalEquationToGraphCA.png> <../Figures/radicalEquationToGraph
-AA.png> <../Figures/radicalEquationToGraphBA.png> <../Figures/radicalEquationTo
-GraphDA.png>]
+[2 <../Figures/radicalEquationToGraphCA.png>]
+
+Package Fancyhdr Warning: \headheight is too small (0.0pt): 
+ Make it at least 12.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[3 <../Figures/radicalEquationToGraphAA.png> <../Figures/radicalEquationToGraph
+DA.png> <../Figures/radicalEquationToGraphBA.png>]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 154.
 
 
@@ -608,7 +606,7 @@ Here is how much of TeX's memory you used:
  11222 multiletter control sequences out of 15000+600000
  6624 words of font info for 28 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 28i,11n,43p,527b,445s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 28i,12n,43p,527b,445s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texl
@@ -618,7 +616,7 @@ mf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist
 ype1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
 lic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
 sfonts/cm/cmti10.pfb>
-Output written on keyModule5A.pdf (4 pages, 167118 bytes).
+Output written on keyModule5A.pdf (4 pages, 167545 bytes).
 PDF statistics:
  102 PDF objects out of 1000 (max. 8388607)
  78 compressed objects within 1 object stream

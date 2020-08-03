@@ -24,7 +24,7 @@
 \pagestyle{fancy}
 \lhead{Module\,5\,-\,Radical\,Functions}
 \chead{}
-\rhead{Progress Exam 6}
+\rhead{Progress Exam 5}
 \lfoot{Summer\,C\,2020}
 \cfoot{}
 \rfoot{Version A}
@@ -43,15 +43,18 @@ version = "A"
 \begin{enumerate}
 %\setcounter{enumi}{20}
 
-\begin{sagesilent}
-moduleNumber="5"
-problemNumber=21
-load("../Code/05radical/solveRadicalQuadratic.sage")
-\end{sagesilent}
 
-\litem{ \sage{displayStem}
+  \begin{sagesilent}
+  moduleNumber="5"
+  problemNumber=21
+  load("../Code/05radical/radicalGraphToEquation.sage")
+  \end{sagesilent}
 
-   \[ \sage{displayProblem} \]
+  \litem{ \sage{displayStem}
+
+   \begin{center}
+       \includegraphics[width=0.5\textwidth]{../Figures/radicalGraphToEquationA.png}
+   \end{center}
 
   	\begin{enumerate}[label=\Alph*.]
     \item \( \sage{choices[0]} \)
@@ -64,7 +67,7 @@ load("../Code/05radical/solveRadicalQuadratic.sage")
 \begin{sagesilent}
 moduleNumber="5"
 problemNumber=22
-load("../Code/05radical/solveRadicalLinear.sage")
+load("../Code/05radical/domainRadical.sage")
 \end{sagesilent}
 
 \litem{ \sage{displayStem}
@@ -79,18 +82,15 @@ load("../Code/05radical/solveRadicalLinear.sage")
     \item \( \sage{choices[4]} \)
   	\end{enumerate}
   }
+\begin{sagesilent}
+moduleNumber="5"
+problemNumber=23
+load("../Code/05radical/solveRadicalQuadratic.sage")
+\end{sagesilent}
 
-  \begin{sagesilent}
-  moduleNumber="5"
-  problemNumber=23
-  load("../Code/05radical/radicalGraphToEquation.sage")
-  \end{sagesilent}
+\litem{ \sage{displayStem}
 
-  \litem{ \sage{displayStem}
-
-   \begin{center}
-       \includegraphics[width=0.5\textwidth]{../Figures/radicalGraphToEquationA.png}
-   \end{center}
+   \[ \sage{displayProblem} \]
 
   	\begin{enumerate}[label=\Alph*.]
     \item \( \sage{choices[0]} \)
@@ -124,7 +124,7 @@ load("../Code/05radical/radicalEquationToGraph.sage")
 \begin{sagesilent}
 moduleNumber="5"
 problemNumber=25
-load("../Code/05radical/domainRadical.sage")
+load("../Code/05radical/solveRadicalLinear.sage")
 \end{sagesilent}
 
 \litem{ \sage{displayStem}

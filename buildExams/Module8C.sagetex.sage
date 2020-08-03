@@ -18,7 +18,7 @@ _st_.blockbegin()
 try:
  moduleNumber="8"
  problemNumber=36
- load("../Code/08logExp/solveExpDifferentBases.sage")
+ load("../Code/08logExp/domainRangeLog.sage")
 except:
  _st_.goboom(50)
 _st_.blockend()
@@ -62,7 +62,7 @@ _st_.blockbegin()
 try:
  moduleNumber="8"
  problemNumber=37
- load("../Code/08logExp/domainRangeExp.sage")
+ load("../Code/08logExp/solveByLogProperties.sage")
 except:
  _st_.goboom(68)
 _st_.blockend()
@@ -106,7 +106,7 @@ _st_.blockbegin()
 try:
  moduleNumber="8"
  problemNumber=38
- load("../Code/08logExp/solveByLogProperties.sage")
+ load("../Code/08logExp/solveByConverting.sage")
 except:
  _st_.goboom(86)
 _st_.blockend()
@@ -150,7 +150,7 @@ _st_.blockbegin()
 try:
  moduleNumber="8"
  problemNumber=39
- load("../Code/08logExp/solveByConverting.sage")
+ load("../Code/08logExp/domainRangeExp.sage")
 except:
  _st_.goboom(104)
 _st_.blockend()
@@ -194,7 +194,7 @@ _st_.blockbegin()
 try:
  moduleNumber="8"
  problemNumber=40
- load("../Code/08logExp/domainRangeLog.sage")
+ load("../Code/08logExp/solveExpDifferentBases.sage")
 except:
  _st_.goboom(122)
 _st_.blockend()

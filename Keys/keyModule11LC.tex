@@ -18,18 +18,70 @@
 
 \rule{\textwidth}{0.4pt}
 
-71. Evaluate the one-sided limit of the function $f(x)$ below, if possible.
-\[ \lim_{x \rightarrow 5^+} \frac{-4}{(x+5)^8}+4 \] 
-The solution is $ f(5) $ 
+71. To estimate the one-sided limit of the function below as $x$ approaches 6 from the right, which of the following sets of numbers should you use?
+\[ \frac{\frac{6}{x} - 1}{x - 6} \] 
+The solution is $ \{ 6.1000, 6.0100, 6.0010, 6.0001 \} $ 
+
+\begin{enumerate}[label=\Alph*.] 
+\item $ \{ 5.9000, 5.9900, 5.9990, 5.9999 \} $ 
+
+ These values would estimate the limit of 6 on the left. 
+\item $ \{ 6.1000, 6.0100, 6.0010, 6.0001 \} $ 
+
+ This is correct! 
+\item $ \{ 6.0000, 6.1000, 6.0100, 6.0010 \} $ 
+
+ If we get $\frac{0}{0}$ or $\frac{\infty}{\infty}$, the value 6 doesn't help us estimate the limit. 
+\item $ \{ 6.0000, 5.9000, 5.9900, 5.9990 \} $ 
+
+ If we get $\frac{0}{0}$ or $\frac{\infty}{\infty}$, the value 6 doesn't help us estimate the limit. 
+\item $ \{ 5.9000, 5.9900, 6.0100, 6.1000 \} $ 
+
+ These values would estimate the limit at the point and not a one-sided limit. 
+\end{enumerate} 
+ 
+\textbf{General Comments:} To evaluate a one-sided limit, we want to put numbers close to the limit. We can't use the limit value itself if it results in $\frac{0}{0}$ or $\frac{\infty}{\infty}$
+
+-----------------------------------------------
+
+72. Based on the information below, which of the following statements is always true?
+$f(x)$ approaches $2.96$ as $x$ approaches $0$. 
+The solution is $ \text{None of the above are always true.} $ 
+
+\begin{enumerate}[label=\Alph*.] 
+\item $ f(2) = 0 $ 
+
+  
+\item $ f(0) = 2 $ 
+
+  
+\item $ f(0) \text{ is close to or exactly } 2 $ 
+
+  
+\item $ f(2) \text{ is close to or exactly } 0 $ 
+
+  
+\item $ \text{None of the above are always true.} $ 
+
+  
+\end{enumerate} 
+ 
+\textbf{General comments:} The limit tells you what happens as the $x$-values approach $0$. It says \textbf{absolutely nothing} about what is happening exactly at $f(x)$!
+
+-----------------------------------------------
+
+73. Evaluate the one-sided limit of the function $f(x)$ below, if possible.
+\[ \lim_{x \rightarrow -6^-} \frac{2}{(x-6)^5}+5 \] 
+The solution is $ f(-6) $ 
 
 \begin{enumerate}[label=\Alph*.] 
 \item $ \infty $ 
 
   
-\item $ f(5) $ 
+\item $ -\infty $ 
 
   
-\item $ -\infty $ 
+\item $ f(-6) $ 
 
   
 \item $ \text{The limit does not exist} $ 
@@ -44,108 +96,56 @@ The solution is $ f(5) $
 
 -----------------------------------------------
 
-72. For the graph below, evaluate the limit: $ \displaystyle \lim_{x \rightarrow -2} f(x)$.
+74. Evaluate the limit below, if possible.
+\[ \lim_{x \rightarrow 8} \frac{\sqrt{5x - 15} - 5}{7x - 56} \] 
+The solution is $ \text{None of the above} $ 
+
+\begin{enumerate}[label=\Alph*.] 
+\item $ 0.014 $ 
+
+ You likely learned L'Hospital's Rule in a previous course, but misapplied it here. 
+\item $ \infty $ 
+
+ You likely believed that since the denominator is equal to 0, the limit is infinity. 
+\item $ 0.100 $ 
+
+ You likely memorized how to solve the similar homework problem and used the same formula here. 
+\item $ 0.319 $ 
+
+ You likely tried to use a shortcut to find the limit of a function that only works for when the numerator/denominator are polynomials. 
+\item $ \text{None of the above} $ 
+
+ * This is the correct option as the limit is 0.071. 
+\end{enumerate} 
+ 
+\textbf{General comments:} It is difficult to imagine the graph of this function, so you need to test values close to $x = 8$.
+
+-----------------------------------------------
+
+75. For the graph below, find the value(s) $a$ that makes the limit true: $ \displaystyle \lim_{x \rightarrow a} f(x)$ does not exist.
 \begin{center} \includegraphics[width=0.3\textwidth]{../Figures/evaluateLimitGraphicallyC.png} \end{center} 
 
-The solution is $ 3 $ 
+The solution is $ 1 $ 
 
 \begin{enumerate}[label=\Alph*.] 
 \item $ 3 $ 
 
   
-\item $ -\infty $ 
+\item $ 1 $ 
 
   
 \item $ -2 $ 
 
   
-\item $ \text{The limit does not exist} $ 
+\item $ \text{Multiple } a \text{ make the limit true}. $ 
 
   
-\item $ \text{None of the above} $ 
+\item $ \text{No } a \text{ make the limit true}. $ 
 
   
 \end{enumerate} 
  
 \textbf{General Comments:} Remember that the limit does not exist if the left-hand and right-hand limits do not match.
-
------------------------------------------------
-
-73. Evaluate the limit below, if possible.
-\[ \lim_{x \rightarrow 6} \frac{\sqrt{9x - 5} - 7}{8x - 48} \] 
-The solution is $ 0.080 $ 
-
-\begin{enumerate}[label=\Alph*.] 
-\item $ 0.080 $ 
-
- * This is the correct option. 
-\item $ 0.375 $ 
-
- You likely tried to use a shortcut to find the limit of a function that only works for when the numerator/denominator are polynomials. 
-\item $ 0.071 $ 
-
- You likely memorized how to solve the similar homework problem and used the same formula here. 
-\item $ \infty $ 
-
- You likely believed that since the denominator is equal to 0, the limit is infinity. 
-\item $ \text{None of the above} $ 
-
- If you got a limit that does not match any of the above, please contact the coordinator. 
-\end{enumerate} 
- 
-\textbf{General comments:} It is difficult to imagine the graph of this function, so you need to test values close to $x = 6$.
-
------------------------------------------------
-
-74. Based on the information below, which of the following statements is always true?
-$f(x)$ approaches $11.009$ as $x$ approaches $2$. 
-The solution is $ f(x) \text{ is close to or exactly } 11.009 \text{ when } x \text{ is close to } 2 $ 
-
-\begin{enumerate}[label=\Alph*.] 
-\item $ f(x) \text{ is close to or exactly } 11.009 \text{ when } x \text{ is close to } 2 $ 
-
-  
-\item $ f(x) = 11.009 \text{ when } x \text{ is close to } 2 $ 
-
-  
-\item $ f(x) \text{ is close to or exactly } 2 \text{ when } x \text{ is close to } 11.009 $ 
-
-  
-\item $ f(x) = 2 \text{ when } x \text{ is close to } 11.009 $ 
-
-  
-\item $ \text{None of the above are always true.} $ 
-
-  
-\end{enumerate} 
- 
-\textbf{General comments:} The limit tells you what happens as the $x$-values approach $2$. It says \textbf{absolutely nothing} about what is happening exactly at $f(x)$!
-
------------------------------------------------
-
-75. To estimate the one-sided limit of the function below as $x$ approaches 6 from the right, which of the following sets of numbers should you use?
-\[ \frac{\frac{6}{x} - 1}{x - 6} \] 
-The solution is $ \{ 6.1000, 6.0100, 6.0010, 6.0001 \} $ 
-
-\begin{enumerate}[label=\Alph*.] 
-\item $ \{ 6.1000, 6.0100, 6.0010, 6.0001 \} $ 
-
- This is correct! 
-\item $ \{ 6.0000, 5.9000, 5.9900, 5.9990 \} $ 
-
- If we get $\frac{0}{0}$ or $\frac{\infty}{\infty}$, the value 6 doesn't help us estimate the limit. 
-\item $ \{ 6.0000, 6.1000, 6.0100, 6.0010 \} $ 
-
- If we get $\frac{0}{0}$ or $\frac{\infty}{\infty}$, the value 6 doesn't help us estimate the limit. 
-\item $ \{ 5.9000, 5.9900, 5.9990, 5.9999 \} $ 
-
- These values would estimate the limit of 6 on the left. 
-\item $ \{ 5.9000, 5.9900, 6.0100, 6.1000 \} $ 
-
- These values would estimate the limit at the point and not a one-sided limit. 
-\end{enumerate} 
- 
-\textbf{General Comments:} To evaluate a one-sided limit, we want to put numbers close to the limit. We can't use the limit value itself if it results in $\frac{0}{0}$ or $\frac{\infty}{\infty}$
 
 -----------------------------------------------
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.8.30)  30 JUL 2020 14:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.8.30)  3 AUG 2020 12:20
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -532,10 +532,10 @@ File: ../Figures/radicalEquationToGraphBC.png Graphic file (type png)
 Package pdftex.def Info: ../Figures/radicalEquationToGraphBC.png  used on input
  line 55.
 (pdftex.def)             Requested size: 140.92793pt x 108.26732pt.
-<../Figures/radicalEquationToGraphCC.png, id=8, 455.301pt x 349.7868pt>
-File: ../Figures/radicalEquationToGraphCC.png Graphic file (type png)
-<use ../Figures/radicalEquationToGraphCC.png>
-Package pdftex.def Info: ../Figures/radicalEquationToGraphCC.png  used on input
+<../Figures/radicalEquationToGraphAC.png, id=8, 455.301pt x 349.7868pt>
+File: ../Figures/radicalEquationToGraphAC.png Graphic file (type png)
+<use ../Figures/radicalEquationToGraphAC.png>
+Package pdftex.def Info: ../Figures/radicalEquationToGraphAC.png  used on input
  line 55.
 (pdftex.def)             Requested size: 140.92793pt x 108.26732pt.
 <../Figures/radicalEquationToGraphDC.png, id=9, 455.301pt x 349.7868pt>
@@ -544,10 +544,10 @@ File: ../Figures/radicalEquationToGraphDC.png Graphic file (type png)
 Package pdftex.def Info: ../Figures/radicalEquationToGraphDC.png  used on input
  line 58.
 (pdftex.def)             Requested size: 140.92793pt x 108.26732pt.
-<../Figures/radicalEquationToGraphAC.png, id=10, 455.301pt x 349.7868pt>
-File: ../Figures/radicalEquationToGraphAC.png Graphic file (type png)
-<use ../Figures/radicalEquationToGraphAC.png>
-Package pdftex.def Info: ../Figures/radicalEquationToGraphAC.png  used on input
+<../Figures/radicalEquationToGraphCC.png, id=10, 455.301pt x 349.7868pt>
+File: ../Figures/radicalEquationToGraphCC.png Graphic file (type png)
+<use ../Figures/radicalEquationToGraphCC.png>
+Package pdftex.def Info: ../Figures/radicalEquationToGraphCC.png  used on input
  line 58.
 (pdftex.def)             Requested size: 140.92793pt x 108.26732pt.
 
@@ -566,8 +566,8 @@ Package Fancyhdr Warning: \headheight is too small (0.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[2 <../Figures/radicalEquationToGraphCC.png> <../Figures/radicalEquationToGraph
-DC.png> <../Figures/radicalEquationToGraphAC.png>]
+[2 <../Figures/radicalEquationToGraphAC.png> <../Figures/radicalEquationToGraph
+DC.png> <../Figures/radicalEquationToGraphCC.png>]
 
 Package Fancyhdr Warning: \headheight is too small (0.0pt): 
  Make it at least 12.0pt.
@@ -606,7 +606,7 @@ Here is how much of TeX's memory you used:
  11222 multiletter control sequences out of 15000+600000
  6624 words of font info for 28 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 28i,11n,43p,527b,445s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 28i,12n,43p,527b,447s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texl
@@ -616,7 +616,7 @@ mf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist
 ype1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
 lic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
 sfonts/cm/cmti10.pfb>
-Output written on keyModule5C.pdf (4 pages, 171164 bytes).
+Output written on keyModule5C.pdf (4 pages, 171718 bytes).
 PDF statistics:
  102 PDF objects out of 1000 (max. 8388607)
  78 compressed objects within 1 object stream

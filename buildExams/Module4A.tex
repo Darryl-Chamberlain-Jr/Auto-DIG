@@ -24,7 +24,7 @@
 \pagestyle{fancy}
 \lhead{Module\,4\,-\,Quadratic\,Functions}
 \chead{}
-\rhead{Progress Exam 6}
+\rhead{Progress Exam 5}
 \lfoot{Summer\,C\,2020}
 \cfoot{}
 \rfoot{Version A}
@@ -43,18 +43,15 @@ version = "A"
 \begin{enumerate}
 %\setcounter{enumi}{15}
 
+\begin{sagesilent}
+moduleNumber="4"
+problemNumber=16
+load("../Code/04quadratic/solveQuadraticFactorComposites.sage")
+\end{sagesilent}
 
-  \begin{sagesilent}
-  moduleNumber="4"
-  problemNumber=16
-  load("../Code/04quadratic/quadraticGraphToEquation.sage")
-  \end{sagesilent}
+\litem{ \sage{displayStem}
 
-  \litem{ \sage{displayStem}
-
-   \begin{center}
-       \includegraphics[width=0.5\textwidth]{../Figures/quadraticGraphToEquationA.png}
-   \end{center}
+   \[ \sage{displayProblem} \]
 
   	\begin{enumerate}[label=\Alph*.]
     \item \( \sage{choices[0]} \)
@@ -85,15 +82,18 @@ load("../Code/04quadratic/quadraticEquationToGraph.sage")
         \item \text{None of the above.}
 \end{enumerate}
 }
-\begin{sagesilent}
-moduleNumber="4"
-problemNumber=18
-load("../Code/04quadratic/solveQuadraticFactorComposites.sage")
-\end{sagesilent}
 
-\litem{ \sage{displayStem}
+  \begin{sagesilent}
+  moduleNumber="4"
+  problemNumber=18
+  load("../Code/04quadratic/quadraticGraphToEquation.sage")
+  \end{sagesilent}
 
-   \[ \sage{displayProblem} \]
+  \litem{ \sage{displayStem}
+
+   \begin{center}
+       \includegraphics[width=0.5\textwidth]{../Figures/quadraticGraphToEquationA.png}
+   \end{center}
 
   	\begin{enumerate}[label=\Alph*.]
     \item \( \sage{choices[0]} \)

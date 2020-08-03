@@ -18,7 +18,7 @@ _st_.blockbegin()
 try:
  moduleNumber="2"
  problemNumber=6
- load("../Code/02linear/linearTwoPoints.sage")
+ load("../Code/02linear/solveIntegerLinear.sage")
 except:
  _st_.goboom(50)
 _st_.blockend()
@@ -57,63 +57,63 @@ try:
  _st_.inline(6, latex(choices[4]))
 except:
  _st_.goboom(63)
-_st_.current_tex_line = 64
-_st_.blockbegin()
-try:
- moduleNumber="2"
- problemNumber=7
- load("../Code/02linear/linearParOrPer.sage")
-except:
- _st_.goboom(68)
-_st_.blockend()
-try:
- _st_.current_tex_line = 81
- _st_.inline(7, latex(displayStem))
-except:
- _st_.goboom(81)
-try:
- _st_.current_tex_line = 81
- _st_.inline(8, latex(displayProblem))
-except:
- _st_.goboom(81)
-try:
- _st_.current_tex_line = 81
- _st_.inline(9, latex(choices[0]))
-except:
- _st_.goboom(81)
-try:
- _st_.current_tex_line = 81
- _st_.inline(10, latex(choices[1]))
-except:
- _st_.goboom(81)
-try:
- _st_.current_tex_line = 81
- _st_.inline(11, latex(choices[2]))
-except:
- _st_.goboom(81)
-try:
- _st_.current_tex_line = 81
- _st_.inline(12, latex(choices[3]))
-except:
- _st_.goboom(81)
-try:
- _st_.current_tex_line = 81
- _st_.inline(13, latex(choices[4]))
-except:
- _st_.goboom(81)
-_st_.current_tex_line = 83
+_st_.current_tex_line = 65
 _st_.blockbegin()
 try:
    moduleNumber="2"
-   problemNumber=8
+   problemNumber=7
    load("../Code/02linear/linearGraphToStandard.sage")
    
 except:
- _st_.goboom(87)
+ _st_.goboom(69)
+_st_.blockend()
+try:
+ _st_.current_tex_line = 84
+ _st_.inline(7, latex(displayStem))
+except:
+ _st_.goboom(84)
+try:
+ _st_.current_tex_line = 84
+ _st_.inline(8, latex(choices[0]))
+except:
+ _st_.goboom(84)
+try:
+ _st_.current_tex_line = 84
+ _st_.inline(9, latex(choices[1]))
+except:
+ _st_.goboom(84)
+try:
+ _st_.current_tex_line = 84
+ _st_.inline(10, latex(choices[2]))
+except:
+ _st_.goboom(84)
+try:
+ _st_.current_tex_line = 84
+ _st_.inline(11, latex(choices[3]))
+except:
+ _st_.goboom(84)
+try:
+ _st_.current_tex_line = 84
+ _st_.inline(12, latex(choices[4]))
+except:
+ _st_.goboom(84)
+_st_.current_tex_line = 85
+_st_.blockbegin()
+try:
+ moduleNumber="2"
+ problemNumber=8
+ load("../Code/02linear/linearTwoPoints.sage")
+except:
+ _st_.goboom(89)
 _st_.blockend()
 try:
  _st_.current_tex_line = 102
- _st_.inline(14, latex(displayStem))
+ _st_.inline(13, latex(displayStem))
+except:
+ _st_.goboom(102)
+try:
+ _st_.current_tex_line = 102
+ _st_.inline(14, latex(displayProblem))
 except:
  _st_.goboom(102)
 try:
@@ -146,7 +146,7 @@ _st_.blockbegin()
 try:
  moduleNumber="2"
  problemNumber=9
- load("../Code/02linear/solveIntegerLinear.sage")
+ load("../Code/02linear/linearParOrPer.sage")
 except:
  _st_.goboom(107)
 _st_.blockend()

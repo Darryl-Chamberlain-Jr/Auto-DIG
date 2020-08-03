@@ -22,7 +22,7 @@ _st_.blockbegin()
 try:
  moduleNumber="9M"
  problemNumber=_sage_const_41 
- load("../Code/09modelingLinear/constructLinearModelMixture.sage")
+ load("../Code/09modelingLinear/domainLinearModel.sage")
 except:
  _st_.goboom(_sage_const_51 )
 _st_.blockend()
@@ -239,7 +239,7 @@ _st_.blockbegin()
 try:
  moduleNumber="9M"
  problemNumber=_sage_const_45 
- load("../Code/09modelingLinear/domainLinearModel.sage")
+ load("../Code/09modelingLinear/constructLinearModelMixture.sage")
 except:
  _st_.goboom(_sage_const_137 )
 _st_.blockend()

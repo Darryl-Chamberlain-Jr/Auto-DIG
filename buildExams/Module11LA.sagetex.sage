@@ -102,7 +102,7 @@ _st_.blockbegin()
 try:
  moduleNumber="11L"
  problemNumber=73
- load("../Code/15introToLimits/oneSidedLimits.sage")
+ load("../Code/15introToLimits/evaluateLimitAnalyticalHard.sage")
 except:
  _st_.goboom(92)
 _st_.blockend()
@@ -190,7 +190,7 @@ _st_.blockbegin()
 try:
  moduleNumber="11L"
  problemNumber=75
- load("../Code/15introToLimits/evaluateLimitAnalyticalHard.sage")
+ load("../Code/15introToLimits/oneSidedLimits.sage")
 except:
  _st_.goboom(128)
 _st_.blockend()

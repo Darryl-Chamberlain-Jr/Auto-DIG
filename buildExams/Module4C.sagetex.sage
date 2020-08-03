@@ -13,111 +13,111 @@ try:
 except:
  _st_.goboom(41)
 _st_.blockend()
-_st_.current_tex_line = 47
+_st_.current_tex_line = 46
 _st_.blockbegin()
 try:
  moduleNumber="4"
  problemNumber=16
- load("../Code/04quadratic/quadraticEquationToGraph.sage")
+ load("../Code/04quadratic/factorLeadingOver1Composite.sage")
 except:
- _st_.goboom(51)
+ _st_.goboom(50)
 _st_.blockend()
 try:
- _st_.current_tex_line = 66
+ _st_.current_tex_line = 63
  _st_.inline(0, latex(displayStem))
 except:
- _st_.goboom(66)
+ _st_.goboom(63)
 try:
- _st_.current_tex_line = 66
+ _st_.current_tex_line = 63
  _st_.inline(1, latex(displayProblem))
 except:
- _st_.goboom(66)
-_st_.current_tex_line = 67
+ _st_.goboom(63)
+try:
+ _st_.current_tex_line = 63
+ _st_.inline(2, latex(choices[0]))
+except:
+ _st_.goboom(63)
+try:
+ _st_.current_tex_line = 63
+ _st_.inline(3, latex(choices[1]))
+except:
+ _st_.goboom(63)
+try:
+ _st_.current_tex_line = 63
+ _st_.inline(4, latex(choices[2]))
+except:
+ _st_.goboom(63)
+try:
+ _st_.current_tex_line = 63
+ _st_.inline(5, latex(choices[3]))
+except:
+ _st_.goboom(63)
+try:
+ _st_.current_tex_line = 63
+ _st_.inline(6, latex(choices[4]))
+except:
+ _st_.goboom(63)
+_st_.current_tex_line = 64
 _st_.blockbegin()
 try:
  moduleNumber="4"
  problemNumber=17
  load("../Code/04quadratic/quadraticFormula.sage")
 except:
- _st_.goboom(71)
+ _st_.goboom(68)
 _st_.blockend()
 try:
- _st_.current_tex_line = 84
- _st_.inline(2, latex(displayStem))
+ _st_.current_tex_line = 81
+ _st_.inline(7, latex(displayStem))
 except:
- _st_.goboom(84)
+ _st_.goboom(81)
 try:
- _st_.current_tex_line = 84
- _st_.inline(3, latex(displayProblem))
+ _st_.current_tex_line = 81
+ _st_.inline(8, latex(displayProblem))
 except:
- _st_.goboom(84)
+ _st_.goboom(81)
 try:
- _st_.current_tex_line = 84
- _st_.inline(4, latex(choices[0]))
+ _st_.current_tex_line = 81
+ _st_.inline(9, latex(choices[0]))
 except:
- _st_.goboom(84)
+ _st_.goboom(81)
 try:
- _st_.current_tex_line = 84
- _st_.inline(5, latex(choices[1]))
+ _st_.current_tex_line = 81
+ _st_.inline(10, latex(choices[1]))
 except:
- _st_.goboom(84)
+ _st_.goboom(81)
 try:
- _st_.current_tex_line = 84
- _st_.inline(6, latex(choices[2]))
+ _st_.current_tex_line = 81
+ _st_.inline(11, latex(choices[2]))
 except:
- _st_.goboom(84)
+ _st_.goboom(81)
 try:
- _st_.current_tex_line = 84
- _st_.inline(7, latex(choices[3]))
+ _st_.current_tex_line = 81
+ _st_.inline(12, latex(choices[3]))
 except:
- _st_.goboom(84)
+ _st_.goboom(81)
 try:
- _st_.current_tex_line = 84
- _st_.inline(8, latex(choices[4]))
+ _st_.current_tex_line = 81
+ _st_.inline(13, latex(choices[4]))
 except:
- _st_.goboom(84)
-_st_.current_tex_line = 85
+ _st_.goboom(81)
+_st_.current_tex_line = 83
 _st_.blockbegin()
 try:
  moduleNumber="4"
  problemNumber=18
- load("../Code/04quadratic/factorLeadingOver1Composite.sage")
+ load("../Code/04quadratic/quadraticEquationToGraph.sage")
 except:
- _st_.goboom(89)
+ _st_.goboom(87)
 _st_.blockend()
 try:
  _st_.current_tex_line = 102
- _st_.inline(9, latex(displayStem))
+ _st_.inline(14, latex(displayStem))
 except:
  _st_.goboom(102)
 try:
  _st_.current_tex_line = 102
- _st_.inline(10, latex(displayProblem))
-except:
- _st_.goboom(102)
-try:
- _st_.current_tex_line = 102
- _st_.inline(11, latex(choices[0]))
-except:
- _st_.goboom(102)
-try:
- _st_.current_tex_line = 102
- _st_.inline(12, latex(choices[1]))
-except:
- _st_.goboom(102)
-try:
- _st_.current_tex_line = 102
- _st_.inline(13, latex(choices[2]))
-except:
- _st_.goboom(102)
-try:
- _st_.current_tex_line = 102
- _st_.inline(14, latex(choices[3]))
-except:
- _st_.goboom(102)
-try:
- _st_.current_tex_line = 102
- _st_.inline(15, latex(choices[4]))
+ _st_.inline(15, latex(displayProblem))
 except:
  _st_.goboom(102)
 _st_.current_tex_line = 103

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.8.30)  30 JUL 2020 14:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.8.30)  3 AUG 2020 12:24
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -635,32 +635,12 @@ Overfull \hbox (6.79684pt too wide) in paragraph at lines 63--69
  []
 
 
-Overfull \hbox (9.30853pt too wide) in paragraph at lines 81--81
-[]$[]\OML/cmm/m/it/14.4 x \OT1/cmr/m/n/14.4 = \OML/cmm/m/it/14.4 a; []a \OMS/cm
-sy/m/n/14.4 2 \OT1/cmr/m/n/14.4 [\OMS/cmsy/m/n/14.4 ^^@\OT1/cmr/m/n/14.4 8\OML/
-cmm/m/it/14.4 ; \OMS/cmsy/m/n/14.4 ^^@\OT1/cmr/m/n/14.4 3]$ 
- []
-
-
-Overfull \hbox (40.98114pt too wide) in paragraph at lines 81--81
-[]$[]\OML/cmm/m/it/14.4 x \OT1/cmr/m/n/14.4 = \OML/cmm/m/it/14.4 a; []a \OMS/cm
-sy/m/n/14.4 2
- []
-
-
-Overfull \hbox (62.75752pt too wide) in paragraph at lines 81--81
-[]$[]\OML/cmm/m/it/14.4 x \OT1/cmr/m/n/14.4 = \OML/cmm/m/it/14.4 a; []a \OMS/cm
-sy/m/n/14.4 2
- []
-
-
-Overfull \hbox (19.74893pt too wide) in paragraph at lines 81--81
-[]$[]\OML/cmm/m/it/14.4 x \OT1/cmr/m/n/14.4 = \OML/cmm/m/it/14.4 a[]x \OT1/cmr/
-m/n/14.4 = \OML/cmm/m/it/14.4 b; []a \OMS/cmsy/m/n/14.4 2
- []
-
-
 Overfull \hbox (6.79684pt too wide) in paragraph at lines 81--87
+| [] 
+ []
+
+
+Overfull \hbox (6.79684pt too wide) in paragraph at lines 99--105
 | [] 
  []
 
@@ -673,13 +653,26 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 ]
-Overfull \hbox (6.79684pt too wide) in paragraph at lines 99--105
+Overfull \hbox (6.79684pt too wide) in paragraph at lines 117--123
 | [] 
  []
 
 
-Overfull \hbox (6.79684pt too wide) in paragraph at lines 117--123
-| [] 
+Overfull \hbox (62.75752pt too wide) in paragraph at lines 135--135
+[]$[]\OML/cmm/m/it/14.4 x \OT1/cmr/m/n/14.4 = \OML/cmm/m/it/14.4 a; []a \OMS/cm
+sy/m/n/14.4 2
+ []
+
+
+Overfull \hbox (40.98114pt too wide) in paragraph at lines 135--135
+[]$[]\OML/cmm/m/it/14.4 x \OT1/cmr/m/n/14.4 = \OML/cmm/m/it/14.4 a; []a \OMS/cm
+sy/m/n/14.4 2
+ []
+
+
+Overfull \hbox (19.74893pt too wide) in paragraph at lines 135--135
+[]$[]\OML/cmm/m/it/14.4 x \OT1/cmr/m/n/14.4 = \OML/cmm/m/it/14.4 a[]x \OT1/cmr/
+m/n/14.4 = \OML/cmm/m/it/14.4 b; []a \OMS/cmsy/m/n/14.4 2
  []
 
 
@@ -711,13 +704,13 @@ Here is how much of TeX's memory you used:
  13469 multiletter control sequences out of 15000+600000
  7621 words of font info for 33 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 33i,11n,43p,337b,551s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 33i,11n,43p,337b,441s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texli
 ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on Module9LC.pdf (2 pages, 56369 bytes).
+Output written on Module9LC.pdf (2 pages, 56143 bytes).
 PDF statistics:
  73 PDF objects out of 1000 (max. 8388607)
  63 compressed objects within 1 object stream

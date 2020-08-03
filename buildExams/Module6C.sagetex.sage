@@ -60,10 +60,9 @@ except:
 _st_.current_tex_line = 65
 _st_.blockbegin()
 try:
-   moduleNumber="6"
-   problemNumber=27
-   load("../Code/06polynomial/polyGraphToFunction.sage")
-   
+ moduleNumber="6"
+ problemNumber=27
+ load("../Code/06polynomial/polyZeroBehavior.sage")
 except:
  _st_.goboom(69)
 _st_.blockend()
@@ -74,90 +73,91 @@ except:
  _st_.goboom(84)
 try:
  _st_.current_tex_line = 84
- _st_.inline(8, latex(choices[0]))
+ _st_.inline(8, latex(displayProblem))
 except:
  _st_.goboom(84)
-try:
- _st_.current_tex_line = 84
- _st_.inline(9, latex(choices[1]))
-except:
- _st_.goboom(84)
-try:
- _st_.current_tex_line = 84
- _st_.inline(10, latex(choices[2]))
-except:
- _st_.goboom(84)
-try:
- _st_.current_tex_line = 84
- _st_.inline(11, latex(choices[3]))
-except:
- _st_.goboom(84)
-try:
- _st_.current_tex_line = 84
- _st_.inline(12, latex(choices[4]))
-except:
- _st_.goboom(84)
-_st_.current_tex_line = 85
+_st_.current_tex_line = 86
 _st_.blockbegin()
 try:
- moduleNumber="6"
- problemNumber=28
- load("../Code/06polynomial/constructPolyRationals.sage")
+   moduleNumber="6"
+   problemNumber=28
+   load("../Code/06polynomial/polyGraphToFunction.sage")
+   
 except:
- _st_.goboom(89)
+ _st_.goboom(90)
 _st_.blockend()
 try:
- _st_.current_tex_line = 102
- _st_.inline(13, latex(displayStem))
+ _st_.current_tex_line = 105
+ _st_.inline(9, latex(displayStem))
 except:
- _st_.goboom(102)
+ _st_.goboom(105)
 try:
- _st_.current_tex_line = 102
- _st_.inline(14, latex(displayProblem))
+ _st_.current_tex_line = 105
+ _st_.inline(10, latex(choices[0]))
 except:
- _st_.goboom(102)
+ _st_.goboom(105)
 try:
- _st_.current_tex_line = 102
- _st_.inline(15, latex(choices[0]))
+ _st_.current_tex_line = 105
+ _st_.inline(11, latex(choices[1]))
 except:
- _st_.goboom(102)
+ _st_.goboom(105)
 try:
- _st_.current_tex_line = 102
- _st_.inline(16, latex(choices[1]))
+ _st_.current_tex_line = 105
+ _st_.inline(12, latex(choices[2]))
 except:
- _st_.goboom(102)
+ _st_.goboom(105)
 try:
- _st_.current_tex_line = 102
- _st_.inline(17, latex(choices[2]))
+ _st_.current_tex_line = 105
+ _st_.inline(13, latex(choices[3]))
 except:
- _st_.goboom(102)
+ _st_.goboom(105)
 try:
- _st_.current_tex_line = 102
- _st_.inline(18, latex(choices[3]))
+ _st_.current_tex_line = 105
+ _st_.inline(14, latex(choices[4]))
 except:
- _st_.goboom(102)
-try:
- _st_.current_tex_line = 102
- _st_.inline(19, latex(choices[4]))
-except:
- _st_.goboom(102)
-_st_.current_tex_line = 104
+ _st_.goboom(105)
+_st_.current_tex_line = 106
 _st_.blockbegin()
 try:
  moduleNumber="6"
  problemNumber=29
- load("../Code/06polynomial/polyEndBehavior.sage")
+ load("../Code/06polynomial/constructPolyRationals.sage")
 except:
- _st_.goboom(108)
+ _st_.goboom(110)
 _st_.blockend()
 try:
  _st_.current_tex_line = 123
- _st_.inline(20, latex(displayStem))
+ _st_.inline(15, latex(displayStem))
 except:
  _st_.goboom(123)
 try:
  _st_.current_tex_line = 123
- _st_.inline(21, latex(displayProblem))
+ _st_.inline(16, latex(displayProblem))
+except:
+ _st_.goboom(123)
+try:
+ _st_.current_tex_line = 123
+ _st_.inline(17, latex(choices[0]))
+except:
+ _st_.goboom(123)
+try:
+ _st_.current_tex_line = 123
+ _st_.inline(18, latex(choices[1]))
+except:
+ _st_.goboom(123)
+try:
+ _st_.current_tex_line = 123
+ _st_.inline(19, latex(choices[2]))
+except:
+ _st_.goboom(123)
+try:
+ _st_.current_tex_line = 123
+ _st_.inline(20, latex(choices[3]))
+except:
+ _st_.goboom(123)
+try:
+ _st_.current_tex_line = 123
+ _st_.inline(21, latex(choices[4]))
 except:
  _st_.goboom(123)
 _st_.current_tex_line = 125
@@ -165,7 +165,7 @@ _st_.blockbegin()
 try:
  moduleNumber="6"
  problemNumber=30
- load("../Code/06polynomial/polyZeroBehavior.sage")
+ load("../Code/06polynomial/polyEndBehavior.sage")
 except:
  _st_.goboom(129)
 _st_.blockend()

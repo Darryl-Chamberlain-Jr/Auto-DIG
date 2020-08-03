@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.8.30)  30 JUL 2020 14:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.8.30)  3 AUG 2020 12:20
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -616,55 +616,59 @@ e
 \ST@sf=\write5
 \openout5 = `Module4A.sagetex.sage'.
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 66.
+LaTeX Font Info:    Try loading font information for U+msa on input line 63.
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 66.
+LaTeX Font Info:    Try loading font information for U+msb on input line 63.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+lasy on input line 66.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 63.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-<../Figures/quadraticGraphToEquationA.png, id=4, 448.7967pt x 346.1733pt>
-File: ../Figures/quadraticGraphToEquationA.png Graphic file (type png)
-<use ../Figures/quadraticGraphToEquationA.png>
-Package pdftex.def Info: ../Figures/quadraticGraphToEquationA.png  used on inpu
-t line 66.
-(pdftex.def)             Requested size: 234.8775pt x 181.17322pt.
-
-Overfull \hbox (6.79684pt too wide) in paragraph at lines 66--67
+Overfull \hbox (6.79684pt too wide) in paragraph at lines 63--64
 | [] 
  []
 
-<../Figures/quadraticEquationToGraphAA.png, id=6, 479.8728pt x 350.5095pt>
+<../Figures/quadraticEquationToGraphAA.png, id=4, 479.8728pt x 346.1733pt>
 File: ../Figures/quadraticEquationToGraphAA.png Graphic file (type png)
 <use ../Figures/quadraticEquationToGraphAA.png>
 Package pdftex.def Info: ../Figures/quadraticEquationToGraphAA.png  used on inp
-ut line 87.
-(pdftex.def)             Requested size: 140.92793pt x 102.9341pt.
-<../Figures/quadraticEquationToGraphBA.png, id=7, 459.6372pt x 346.1733pt>
+ut line 84.
+(pdftex.def)             Requested size: 140.92793pt x 101.66068pt.
+<../Figures/quadraticEquationToGraphBA.png, id=6, 459.6372pt x 346.1733pt>
 File: ../Figures/quadraticEquationToGraphBA.png Graphic file (type png)
 <use ../Figures/quadraticEquationToGraphBA.png>
 Package pdftex.def Info: ../Figures/quadraticEquationToGraphBA.png  used on inp
-ut line 87.
+ut line 84.
 (pdftex.def)             Requested size: 140.92793pt x 106.13997pt.
-<../Figures/quadraticEquationToGraphCA.png, id=8, 459.6372pt x 346.1733pt>
+<../Figures/quadraticEquationToGraphCA.png, id=7, 459.6372pt x 346.1733pt>
 File: ../Figures/quadraticEquationToGraphCA.png Graphic file (type png)
 <use ../Figures/quadraticEquationToGraphCA.png>
 Package pdftex.def Info: ../Figures/quadraticEquationToGraphCA.png  used on inp
-ut line 87.
+ut line 84.
 (pdftex.def)             Requested size: 140.92793pt x 106.13997pt.
-<../Figures/quadraticEquationToGraphDA.png, id=9, 479.8728pt x 350.5095pt>
+<../Figures/quadraticEquationToGraphDA.png, id=8, 479.8728pt x 346.1733pt>
 File: ../Figures/quadraticEquationToGraphDA.png Graphic file (type png)
 <use ../Figures/quadraticEquationToGraphDA.png>
 Package pdftex.def Info: ../Figures/quadraticEquationToGraphDA.png  used on inp
-ut line 87.
-(pdftex.def)             Requested size: 140.92793pt x 102.9341pt.
+ut line 84.
+(pdftex.def)             Requested size: 140.92793pt x 101.66068pt.
+
+Overfull \hbox (6.79684pt too wide) in paragraph at lines 84--85
+| [] 
+ []
+
+<../Figures/quadraticGraphToEquationA.png, id=9, 448.7967pt x 346.1733pt>
+File: ../Figures/quadraticGraphToEquationA.png Graphic file (type png)
+<use ../Figures/quadraticGraphToEquationA.png>
+Package pdftex.def Info: ../Figures/quadraticGraphToEquationA.png  used on inpu
+t line 105.
+(pdftex.def)             Requested size: 234.8775pt x 181.17322pt.
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 17.0pt.
@@ -673,13 +677,9 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
- <../Figures/quadraticGraphToEquationA.png> <../Figures/quadraticEquationToGrap
-hAA.png> <../Figures/quadraticEquationToGraphBA.png>]
-Overfull \hbox (6.79684pt too wide) in paragraph at lines 87--93
-| [] 
- []
-
-
+ <../Figures/quadraticEquationToGraphAA.png> <../Figures/quadraticEquationToGra
+phBA.png> <../Figures/quadraticEquationToGraphCA.png> <../Figures/quadraticEqua
+tionToGraphDA.png>]
 Overfull \hbox (6.79684pt too wide) in paragraph at lines 105--111
 | [] 
  []
@@ -695,8 +695,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[2 <../Figures/quadraticEquationToGraphCA.png> <../Figures/quadraticEquationToG
-raphDA.png>]
+[2 <../Figures/quadraticGraphToEquationA.png>]
 Overfull \hbox (6.79684pt too wide) in paragraph at lines 141--142
 | [] 
  []
@@ -721,16 +720,16 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 145.
 Here is how much of TeX's memory you used:
  10112 strings out of 492982
  150240 string characters out of 6134896
- 264337 words of memory out of 5000000
+ 263334 words of memory out of 5000000
  13481 multiletter control sequences out of 15000+600000
  6870 words of font info for 29 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 33i,11n,43p,336b,670s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 33i,12n,43p,336b,507s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share
 /texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on Module4A.pdf (3 pages, 129510 bytes).
+Output written on Module4A.pdf (3 pages, 136276 bytes).
 PDF statistics:
  84 PDF objects out of 1000 (max. 8388607)
  64 compressed objects within 1 object stream

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.8.30)  30 JUL 2020 14:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.8.30)  3 AUG 2020 12:20
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -616,53 +616,47 @@ e
 \ST@sf=\write5
 \openout5 = `Module4C.sagetex.sage'.
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 66.
+LaTeX Font Info:    Try loading font information for U+msa on input line 63.
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 66.
+LaTeX Font Info:    Try loading font information for U+msb on input line 63.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+lasy on input line 66.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 63.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-<../Figures/quadraticEquationToGraphAC.png, id=4, 479.8728pt x 352.6776pt>
+Overfull \hbox (6.79684pt too wide) in paragraph at lines 63--69
+| [] 
+ []
+
+
+Overfull \hbox (6.79684pt too wide) in paragraph at lines 81--82
+| [] 
+ []
+
+<../Figures/quadraticEquationToGraphAC.png, id=4, 479.8728pt x 346.1733pt>
 File: ../Figures/quadraticEquationToGraphAC.png Graphic file (type png)
 <use ../Figures/quadraticEquationToGraphAC.png>
 Package pdftex.def Info: ../Figures/quadraticEquationToGraphAC.png  used on inp
-ut line 66.
-(pdftex.def)             Requested size: 140.92793pt x 103.5708pt.
+ut line 102.
+(pdftex.def)             Requested size: 140.92793pt x 101.66068pt.
 <../Figures/quadraticEquationToGraphBC.png, id=6, 459.6372pt x 346.1733pt>
 File: ../Figures/quadraticEquationToGraphBC.png Graphic file (type png)
 <use ../Figures/quadraticEquationToGraphBC.png>
 Package pdftex.def Info: ../Figures/quadraticEquationToGraphBC.png  used on inp
-ut line 66.
+ut line 102.
 (pdftex.def)             Requested size: 140.92793pt x 106.13997pt.
-<../Figures/quadraticEquationToGraphCC.png, id=7, 459.6372pt x 346.1733pt>
-File: ../Figures/quadraticEquationToGraphCC.png Graphic file (type png)
-<use ../Figures/quadraticEquationToGraphCC.png>
-Package pdftex.def Info: ../Figures/quadraticEquationToGraphCC.png  used on inp
-ut line 66.
-(pdftex.def)             Requested size: 140.92793pt x 106.13997pt.
-<../Figures/quadraticEquationToGraphDC.png, id=8, 479.8728pt x 352.6776pt>
-File: ../Figures/quadraticEquationToGraphDC.png Graphic file (type png)
-<use ../Figures/quadraticEquationToGraphDC.png>
-Package pdftex.def Info: ../Figures/quadraticEquationToGraphDC.png  used on inp
-ut line 66.
-(pdftex.def)             Requested size: 140.92793pt x 103.5708pt.
 
-Overfull \hbox (6.79684pt too wide) in paragraph at lines 66--72
-| [] 
- []
+Overfull \vbox (49.73067pt too high) has occurred while \output is active []
 
 
-Overfull \hbox (6.79684pt too wide) in paragraph at lines 84--90
-| [] 
- []
+Overfull \vbox (49.73067pt too high) has occurred while \output is active []
+
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -672,21 +666,19 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
- <../Figures/quadraticEquationToGraphAC.png> <../Figures/quadraticEquationToGra
-phBC.png> <../Figures/quadraticEquationToGraphCC.png> <../Figures/quadraticEqua
-tionToGraphDC.png>]
-Overfull \hbox (9.01427pt too wide) in paragraph at lines 102--102
-[]$\OML/cmm/m/it/14.4 a \OMS/cmsy/m/n/14.4 2 \OT1/cmr/m/n/14.4 [\OMS/cmsy/m/n/1
-4.4 ^^@\OT1/cmr/m/n/14.4 0\OML/cmm/m/it/14.4 :\OT1/cmr/m/n/14.4 4\OML/cmm/m/it/
-14.4 ; \OT1/cmr/m/n/14.4 1\OML/cmm/m/it/14.4 :\OT1/cmr/m/n/14.4 5]\OML/cmm/m/it
-/14.4 ;|  b \OMS/cmsy/m/n/14.4 2 \OT1/cmr/m/n/14.4 [23\OML/cmm/m/it/14.4 ; \OT1
-/cmr/m/n/14.4 36]\OML/cmm/m/it/14.4 ;|  c \OMS/cmsy/m/n/14.4 2 \OT1/cmr/m/n/14.
-4 [\OMS/cmsy/m/n/14.4 ^^@\OT1/cmr/m/n/14.4 0\OML/cmm/m/it/14.4 :\OT1/cmr/m/n/14
-.4 81\OML/cmm/m/it/14.4 ; \OT1/cmr/m/n/14.4 2\OML/cmm/m/it/14.4 :\OT1/cmr/m/n/1
-4.4 81]\OML/cmm/m/it/14.4 ; []| d \OMS/cmsy/m/n/14.4 2 \OT1/cmr/m/n/14.4 [28\OM
-L/cmm/m/it/14.4 ; \OT1/cmr/m/n/14.4 31]$ 
- []
-
+ <../Figures/quadraticEquationToGraphAC.png>]
+<../Figures/quadraticEquationToGraphCC.png, id=31, 459.6372pt x 346.1733pt>
+File: ../Figures/quadraticEquationToGraphCC.png Graphic file (type png)
+<use ../Figures/quadraticEquationToGraphCC.png>
+Package pdftex.def Info: ../Figures/quadraticEquationToGraphCC.png  used on inp
+ut line 102.
+(pdftex.def)             Requested size: 140.92793pt x 106.13997pt.
+<../Figures/quadraticEquationToGraphDC.png, id=32, 479.8728pt x 346.1733pt>
+File: ../Figures/quadraticEquationToGraphDC.png Graphic file (type png)
+<use ../Figures/quadraticEquationToGraphDC.png>
+Package pdftex.def Info: ../Figures/quadraticEquationToGraphDC.png  used on inp
+ut line 102.
+(pdftex.def)             Requested size: 140.92793pt x 101.66068pt.
 
 Overfull \hbox (6.79684pt too wide) in paragraph at lines 102--108
 | [] 
@@ -697,14 +689,14 @@ Overfull \hbox (6.79684pt too wide) in paragraph at lines 120--121
 | [] 
  []
 
-<../Figures/quadraticGraphToEquationC.png, id=35, 444.4605pt x 346.1733pt>
+<../Figures/quadraticGraphToEquationC.png, id=33, 464.6961pt x 346.1733pt>
 File: ../Figures/quadraticGraphToEquationC.png Graphic file (type png)
 <use ../Figures/quadraticGraphToEquationC.png>
 Package pdftex.def Info: ../Figures/quadraticGraphToEquationC.png  used on inpu
 t line 141.
-(pdftex.def)             Requested size: 234.8775pt x 182.93747pt.
+(pdftex.def)             Requested size: 234.8775pt x 174.97195pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 1365) has occurred while \output is active []
 
 
 
@@ -713,7 +705,8 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[2]
+[2 <../Figures/quadraticEquationToGraphBC.png> <../Figures/quadraticEquationToG
+raphCC.png> <../Figures/quadraticEquationToGraphDC.png>]
 Overfull \hbox (6.79684pt too wide) in paragraph at lines 141--142
 | [] 
  []
@@ -738,16 +731,16 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 145.
 Here is how much of TeX's memory you used:
  10112 strings out of 492982
  150240 string characters out of 6134896
- 264353 words of memory out of 5000000
+ 266332 words of memory out of 5000000
  13481 multiletter control sequences out of 15000+600000
  6870 words of font info for 29 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 33i,12n,43p,336b,507s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 33i,11n,43p,336b,670s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share
 /texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on Module4C.pdf (3 pages, 135910 bytes).
+Output written on Module4C.pdf (3 pages, 129488 bytes).
 PDF statistics:
  84 PDF objects out of 1000 (max. 8388607)
  64 compressed objects within 1 object stream

@@ -3,71 +3,71 @@
 \newlabel{@sageinline0}{{%
 Solve the linear inequality below. Then, choose the constant and interval combination that describes the solution set.}{}{}{}{}}
 \newlabel{@sageinline1}{{%
-\frac{8}{2} - \frac{8}{6} x > \frac{-4}{8} x - \frac{7}{5}}{}{}{}{}}
+-9x + 7 \leq 7x + 9}{}{}{}{}}
 \newlabel{@sageinline2}{{%
-(a, \infty), \text{ where } a \in [3, 9]}{}{}{}{}}
+(-\infty, a], \text{ where } a \in [0.04, 0.4]}{}{}{}{}}
 \newlabel{@sageinline3}{{%
-(-\infty, a), \text{ where } a \in [-9, -6]}{}{}{}{}}
+(-\infty, a], \text{ where } a \in [-0.17, 0.04]}{}{}{}{}}
 \newlabel{@sageinline4}{{%
-(-\infty, a), \text{ where } a \in [3, 9]}{}{}{}{}}
+[a, \infty), \text{ where } a \in [-0.18, -0.06]}{}{}{}{}}
 \newlabel{@sageinline5}{{%
-(a, \infty), \text{ where } a \in [-10, -5]}{}{}{}{}}
+[a, \infty), \text{ where } a \in [0.04, 0.23]}{}{}{}{}}
 \newlabel{@sageinline6}{{%
 \text{None of the above}.}{}{}{}{}}
 \newlabel{@sageinline7}{{%
 Solve the linear inequality below. Then, choose the constant and interval combination that describes the solution set.}{}{}{}{}}
 \newlabel{@sageinline8}{{%
--9 + 9 x > 11 x \text{ or } 9 + 5 x < 8 x}{}{}{}{}}
+-3 + 4 x > 6 x \text{ or } 7 + 7 x < 9 x}{}{}{}{}}
 \newlabel{@sageinline9}{{%
-(-\infty, a] \cup [b, \infty), \text{ where } a \in [-4.6, -4.1] \text{ and } b \in [2, 4]}{}{}{}{}}
+(-\infty, a] \cup [b, \infty), \text{ where } a \in [-7, -2] \text{ and } b \in [0.8, 2.5]}{}{}{}{}}
 \newlabel{@sageinline10}{{%
-(-\infty, a] \cup [b, \infty), \text{ where } a \in [-3.8, -0.5] \text{ and } b \in [4, 6]}{}{}{}{}}
+(-\infty, a] \cup [b, \infty), \text{ where } a \in [-2, 0] \text{ and } b \in [3.1, 6]}{}{}{}{}}
 \newlabel{@sageinline11}{{%
-(-\infty, a) \cup (b, \infty), \text{ where } a \in [-4.06, -1.72] \text{ and } b \in [3.3, 4.7]}{}{}{}{}}
+(-\infty, a) \cup (b, \infty), \text{ where } a \in [-5, -2] \text{ and } b \in [0, 2]}{}{}{}{}}
 \newlabel{@sageinline12}{{%
-(-\infty, a) \cup (b, \infty), \text{ where } a \in [-4.82, -3.78] \text{ and } b \in [1.9, 3.7]}{}{}{}{}}
+(-\infty, a) \cup (b, \infty), \text{ where } a \in [-3, 0] \text{ and } b \in [3, 5]}{}{}{}{}}
 \newlabel{@sageinline13}{{%
 (-\infty, \infty)}{}{}{}{}}
 \newlabel{@sageinline14}{{%
 Solve the linear inequality below. Then, choose the constant and interval combination that describes the solution set.}{}{}{}{}}
 \newlabel{@sageinline15}{{%
--8x -10 \leq 7x -6}{}{}{}{}}
+-9 + 5 x < \frac{23 x + 3}{4} \leq 7 + 4 x}{}{}{}{}}
 \newlabel{@sageinline16}{{%
-[a, \infty), \text{ where } a \in [-1.03, -0.2]}{}{}{}{}}
+(a, b], \text{ where } a \in [7, 18] \text{ and } b \in [-4, -1]}{}{}{}{}}
 \newlabel{@sageinline17}{{%
-(-\infty, a], \text{ where } a \in [-1.68, 0.13]}{}{}{}{}}
+[a, b), \text{ where } a \in [10, 19] \text{ and } b \in [-5, 0]}{}{}{}{}}
 \newlabel{@sageinline18}{{%
-(-\infty, a], \text{ where } a \in [0.14, 1.06]}{}{}{}{}}
+(-\infty, a) \cup [b, \infty), \text{ where } a \in [11, 14] \text{ and } b \in [-8, 0]}{}{}{}{}}
 \newlabel{@sageinline19}{{%
-[a, \infty), \text{ where } a \in [0.06, 0.39]}{}{}{}{}}
+(-\infty, a] \cup (b, \infty), \text{ where } a \in [12, 18] \text{ and } b \in [-5, 1]}{}{}{}{}}
 \newlabel{@sageinline20}{{%
-\text{None of the above}.}{}{}{}{}}
+\text{None of the above.}}{}{}{}{}}
 \newlabel{@sageinline21}{{%
 Solve the linear inequality below. Then, choose the constant and interval combination that describes the solution set.}{}{}{}{}}
 \newlabel{@sageinline22}{{%
--8 + 5 x < \frac{26 x - 9}{3} \leq 9 + 8 x}{}{}{}{}}
+\frac{8}{6} - \frac{9}{5} x > \frac{5}{9} x - \frac{10}{3}}{}{}{}{}}
 \newlabel{@sageinline23}{{%
-(-\infty, a) \cup [b, \infty), \text{ where } a \in [1, 7] \text{ and } b \in [-25, -14]}{}{}{}{}}
+(a, \infty), \text{ where } a \in [0, 4]}{}{}{}{}}
 \newlabel{@sageinline24}{{%
-[a, b), \text{ where } a \in [0, 2] \text{ and } b \in [-19, -16]}{}{}{}{}}
+(-\infty, a), \text{ where } a \in [0, 4]}{}{}{}{}}
 \newlabel{@sageinline25}{{%
-(-\infty, a] \cup (b, \infty), \text{ where } a \in [0, 2] \text{ and } b \in [-25, -16]}{}{}{}{}}
+(-\infty, a), \text{ where } a \in [-3, 0]}{}{}{}{}}
 \newlabel{@sageinline26}{{%
-(a, b], \text{ where } a \in [-0.2, 4.2] \text{ and } b \in [-21, -15]}{}{}{}{}}
+(a, \infty), \text{ where } a \in [-3, 1]}{}{}{}{}}
 \newlabel{@sageinline27}{{%
-\text{None of the above.}}{}{}{}{}}
+\text{None of the above}.}{}{}{}{}}
 \newlabel{@sageinline28}{{%
 Using an interval or intervals, describe all the $x$-values within or including a distance of the given values.}{}{}{}{}}
 \newlabel{@sageinline29}{{%
-\text{ No more than } 7 \text{ units from the number } -7.}{}{}{}{}}
+\text{ More than } 6 \text{ units from the number } 1.}{}{}{}{}}
 \newlabel{@sageinline30}{{%
-[-14, 0]}{}{}{}{}}
+(-\infty, 5) \cup (7, \infty)}{}{}{}{}}
 \newlabel{@sageinline31}{{%
-(-14, 0)}{}{}{}{}}
+(5, 7)}{}{}{}{}}
 \newlabel{@sageinline32}{{%
-(-\infty, -14] \cup [0, \infty)}{}{}{}{}}
+[5, 7]}{}{}{}{}}
 \newlabel{@sageinline33}{{%
-(-\infty, -14) \cup (0, \infty)}{}{}{}{}}
+(-\infty, 5] \cup [7, \infty)}{}{}{}{}}
 \newlabel{@sageinline34}{{%
 \text{None of the above}}{}{}{}{}}
-%c0418a4f21b843b20711b32151fae653% md5sum of corresponding .sage file (minus "goboom", "current_tex_line", and pause/unpause lines)
+%f0b7c94c7ec7511a2c1b819b2f9a19e9% md5sum of corresponding .sage file (minus "goboom", "current_tex_line", and pause/unpause lines)

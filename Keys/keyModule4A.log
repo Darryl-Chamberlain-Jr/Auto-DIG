@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.8.30)  30 JUL 2020 14:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.8.30)  3 AUG 2020 12:20
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -521,18 +521,35 @@ LaTeX Font Info:    Try loading font information for U+lasy on input line 21.
 (/usr/share/texlive/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-<../Figures/quadraticGraphToEquationA.png, id=6, 448.7967pt x 346.1733pt>
-File: ../Figures/quadraticGraphToEquationA.png Graphic file (type png)
-<use ../Figures/quadraticGraphToEquationA.png>
-Package pdftex.def Info: ../Figures/quadraticGraphToEquationA.png  used on inpu
-t line 22.
-(pdftex.def)             Requested size: 140.92793pt x 108.70181pt.
-<../Figures/quadraticEquationToGraphDA.png, id=8, 479.8728pt x 350.5095pt>
+<../Figures/quadraticEquationToGraphBA.png, id=6, 459.6372pt x 346.1733pt>
+File: ../Figures/quadraticEquationToGraphBA.png Graphic file (type png)
+<use ../Figures/quadraticEquationToGraphBA.png>
+Package pdftex.def Info: ../Figures/quadraticEquationToGraphBA.png  used on inp
+ut line 52.
+(pdftex.def)             Requested size: 140.92793pt x 106.13997pt.
+<../Figures/quadraticEquationToGraphAA.png, id=8, 479.8728pt x 346.1733pt>
+File: ../Figures/quadraticEquationToGraphAA.png Graphic file (type png)
+<use ../Figures/quadraticEquationToGraphAA.png>
+Package pdftex.def Info: ../Figures/quadraticEquationToGraphAA.png  used on inp
+ut line 55.
+(pdftex.def)             Requested size: 140.92793pt x 101.66068pt.
+File: ../Figures/quadraticEquationToGraphBA.png Graphic file (type png)
+<use ../Figures/quadraticEquationToGraphBA.png>
+Package pdftex.def Info: ../Figures/quadraticEquationToGraphBA.png  used on inp
+ut line 55.
+(pdftex.def)             Requested size: 140.92793pt x 106.13997pt.
+<../Figures/quadraticEquationToGraphCA.png, id=9, 459.6372pt x 346.1733pt>
+File: ../Figures/quadraticEquationToGraphCA.png Graphic file (type png)
+<use ../Figures/quadraticEquationToGraphCA.png>
+Package pdftex.def Info: ../Figures/quadraticEquationToGraphCA.png  used on inp
+ut line 58.
+(pdftex.def)             Requested size: 140.92793pt x 106.13997pt.
+<../Figures/quadraticEquationToGraphDA.png, id=10, 479.8728pt x 346.1733pt>
 File: ../Figures/quadraticEquationToGraphDA.png Graphic file (type png)
 <use ../Figures/quadraticEquationToGraphDA.png>
 Package pdftex.def Info: ../Figures/quadraticEquationToGraphDA.png  used on inp
-ut line 53.
-(pdftex.def)             Requested size: 140.92793pt x 102.9341pt.
+ut line 58.
+(pdftex.def)             Requested size: 140.92793pt x 101.66068pt.
 
 
 Package Fancyhdr Warning: \headheight is too small (0.0pt): 
@@ -542,30 +559,13 @@ Package Fancyhdr Warning: \headheight is too small (0.0pt):
 
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
- <../Figures/quadraticGraphToEquationA.png>]
-<../Figures/quadraticEquationToGraphAA.png, id=27, 479.8728pt x 350.5095pt>
-File: ../Figures/quadraticEquationToGraphAA.png Graphic file (type png)
-<use ../Figures/quadraticEquationToGraphAA.png>
-Package pdftex.def Info: ../Figures/quadraticEquationToGraphAA.png  used on inp
-ut line 56.
-(pdftex.def)             Requested size: 140.92793pt x 102.9341pt.
-<../Figures/quadraticEquationToGraphBA.png, id=28, 459.6372pt x 346.1733pt>
-File: ../Figures/quadraticEquationToGraphBA.png Graphic file (type png)
-<use ../Figures/quadraticEquationToGraphBA.png>
-Package pdftex.def Info: ../Figures/quadraticEquationToGraphBA.png  used on inp
-ut line 56.
-(pdftex.def)             Requested size: 140.92793pt x 106.13997pt.
-<../Figures/quadraticEquationToGraphCA.png, id=29, 459.6372pt x 346.1733pt>
-File: ../Figures/quadraticEquationToGraphCA.png Graphic file (type png)
-<use ../Figures/quadraticEquationToGraphCA.png>
-Package pdftex.def Info: ../Figures/quadraticEquationToGraphCA.png  used on inp
-ut line 59.
-(pdftex.def)             Requested size: 140.92793pt x 106.13997pt.
-File: ../Figures/quadraticEquationToGraphDA.png Graphic file (type png)
-<use ../Figures/quadraticEquationToGraphDA.png>
-Package pdftex.def Info: ../Figures/quadraticEquationToGraphDA.png  used on inp
-ut line 59.
-(pdftex.def)             Requested size: 140.92793pt x 102.9341pt.
+ <../Figures/quadraticEquationToGraphBA.png>]
+<../Figures/quadraticGraphToEquationA.png, id=29, 448.7967pt x 346.1733pt>
+File: ../Figures/quadraticGraphToEquationA.png Graphic file (type png)
+<use ../Figures/quadraticGraphToEquationA.png>
+Package pdftex.def Info: ../Figures/quadraticGraphToEquationA.png  used on inpu
+t line 76.
+(pdftex.def)             Requested size: 140.92793pt x 108.70181pt.
 
 
 Package Fancyhdr Warning: \headheight is too small (0.0pt): 
@@ -573,9 +573,9 @@ Package Fancyhdr Warning: \headheight is too small (0.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[2 <../Figures/quadraticEquationToGraphDA.png> <../Figures/quadraticEquationToG
-raphAA.png> <../Figures/quadraticEquationToGraphBA.png> <../Figures/quadraticEq
-uationToGraphCA.png>]
+[2 <../Figures/quadraticEquationToGraphAA.png> <../Figures/quadraticEquationToG
+raphCA.png> <../Figures/quadraticEquationToGraphDA.png> <../Figures/quadraticGr
+aphToEquationA.png>]
 
 Package Fancyhdr Warning: \headheight is too small (0.0pt): 
  Make it at least 12.0pt.
@@ -622,7 +622,7 @@ ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/
 fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/
 type1/public/amsfonts/cm/cmti10.pfb>
-Output written on keyModule4A.pdf (4 pages, 176207 bytes).
+Output written on keyModule4A.pdf (4 pages, 183098 bytes).
 PDF statistics:
  96 PDF objects out of 1000 (max. 8388607)
  72 compressed objects within 1 object stream

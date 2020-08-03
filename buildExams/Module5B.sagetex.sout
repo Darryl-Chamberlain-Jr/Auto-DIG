@@ -3,59 +3,59 @@
 \newlabel{@sageinline0}{{%
 Choose the equation of the function graphed below.}{}{}{}{}}
 \newlabel{@sageinline1}{{%
-f(x) = - \sqrt[3]{x - 6} - 7}{}{}{}{}}
+f(x) = \sqrt{x + 8} + 6}{}{}{}{}}
 \newlabel{@sageinline2}{{%
-f(x) = \sqrt[3]{x + 6} - 7}{}{}{}{}}
+f(x) = \sqrt{x - 8} + 6}{}{}{}{}}
 \newlabel{@sageinline3}{{%
-f(x) = - \sqrt[3]{x + 6} - 7}{}{}{}{}}
+f(x) = - \sqrt{x + 8} + 6}{}{}{}{}}
 \newlabel{@sageinline4}{{%
-f(x) = \sqrt[3]{x - 6} - 7}{}{}{}{}}
+f(x) = - \sqrt{x - 8} + 6}{}{}{}{}}
 \newlabel{@sageinline5}{{%
 \text{None of the above}}{}{}{}{}}
 \newlabel{@sageinline6}{{%
-Choose the graph of the equation below.}{}{}{}{}}
-\newlabel{@sageinline7}{{%
-f(x) = \sqrt[3]{x - 8} + 3}{}{}{}{}}
-\newlabel{@sageinline8}{{%
-Solve the radical equation below. Then, choose the interval(s) that the solution(s) belongs to.}{}{}{}{}}
-\newlabel{@sageinline9}{{%
-\sqrt{6 x + 3} - \sqrt{4 x + 3} = 0}{}{}{}{}}
-\newlabel{@sageinline10}{{%
-x \in [-0.27,0.27]}{}{}{}{}}
-\newlabel{@sageinline11}{{%
-\text{All solutions lead to invalid or complex values in the equation.}}{}{}{}{}}
-\newlabel{@sageinline12}{{%
-x_1 \in [-1, -0.63] \text{ and } x_2 \in [-0.66,-0.05]}{}{}{}{}}
-\newlabel{@sageinline13}{{%
-x_1 \in [-0.67, -0.47] \text{ and } x_2 \in [-0.15,0.38]}{}{}{}{}}
-\newlabel{@sageinline14}{{%
-x \in [-3.27,-2.54]}{}{}{}{}}
-\newlabel{@sageinline15}{{%
 What is the domain of the function below?}{}{}{}{}}
-\newlabel{@sageinline16}{{%
-f(x) = \sqrt[3]{-4 x - 3}}{}{}{}{}}
-\newlabel{@sageinline17}{{%
-\text{The domain is } (-\infty, a], \text{   where } a \in [-1.1, -0.6]}{}{}{}{}}
-\newlabel{@sageinline18}{{%
+\newlabel{@sageinline7}{{%
+f(x) = \sqrt[5]{3 x - 5}}{}{}{}{}}
+\newlabel{@sageinline8}{{%
+\text{The domain is } (-\infty, a], \text{   where } a \in [0.67, 3.1]}{}{}{}{}}
+\newlabel{@sageinline9}{{%
+\text{The domain is } [a, \infty), \text{   where } a \in [0.3, 0.7]}{}{}{}{}}
+\newlabel{@sageinline10}{{%
+\text{The domain is } [a, \infty), \text{   where } a \in [1.5, 3]}{}{}{}{}}
+\newlabel{@sageinline11}{{%
 (-\infty, \infty)}{}{}{}{}}
+\newlabel{@sageinline12}{{%
+\text{The domain is } (-\infty, a], \text{   where } a \in [-1.1, 0.86]}{}{}{}{}}
+\newlabel{@sageinline13}{{%
+Solve the radical equation below. Then, choose the interval(s) that the solution(s) belongs to.}{}{}{}{}}
+\newlabel{@sageinline14}{{%
+\sqrt{5 x + 5} - \sqrt{7 x - 3} = 0}{}{}{}{}}
+\newlabel{@sageinline15}{{%
+x_1 \in [-3.5, 0.5] \text{ and } x_2 \in [-3,2]}{}{}{}{}}
+\newlabel{@sageinline16}{{%
+\text{All solutions lead to invalid or complex values in the equation.}}{}{}{}{}}
+\newlabel{@sageinline17}{{%
+x_1 \in [-3.5, 0.5] \text{ and } x_2 \in [3,6]}{}{}{}{}}
+\newlabel{@sageinline18}{{%
+x \in [3.7,4.2]}{}{}{}{}}
 \newlabel{@sageinline19}{{%
-\text{The domain is } (-\infty, a], \text{   where } a \in [-3.1, -1.1]}{}{}{}{}}
+x \in [0.5,1.5]}{}{}{}{}}
 \newlabel{@sageinline20}{{%
-\text{The domain is } [a, \infty), \text{   where } a \in [-1.81, -0.76]}{}{}{}{}}
+Choose the graph of the equation below.}{}{}{}{}}
 \newlabel{@sageinline21}{{%
-\text{The domain is } [a, \infty), \text{   where } a \in [-0.91, 0.11]}{}{}{}{}}
+f(x) = - \sqrt{x - 14} - 5}{}{}{}{}}
 \newlabel{@sageinline22}{{%
 Solve the radical equation below. Then, choose the interval(s) that the solution(s) belongs to.}{}{}{}{}}
 \newlabel{@sageinline23}{{%
-\sqrt{36 x^2 - 12} - \sqrt{11 x} = 0}{}{}{}{}}
+\sqrt{-40 x^2 + 56} - \sqrt{-29 x} = 0}{}{}{}{}}
 \newlabel{@sageinline24}{{%
-x \in [-0.77,-0.27]}{}{}{}{}}
-\newlabel{@sageinline25}{{%
 \text{All solutions lead to invalid or complex values in the equation.}}{}{}{}{}}
+\newlabel{@sageinline25}{{%
+x_1 \in [0.72, 1.05] \text{ and } x_2 \in [0,5]}{}{}{}{}}
 \newlabel{@sageinline26}{{%
-x \in [0.64,0.83]}{}{}{}{}}
+x \in [-1.21,-0.39]}{}{}{}{}}
 \newlabel{@sageinline27}{{%
-x_1 \in [0.15, 0.62] \text{ and } x_2 \in [-4,2]}{}{}{}{}}
+x_1 \in [-1.21, -0.39] \text{ and } x_2 \in [0,5]}{}{}{}{}}
 \newlabel{@sageinline28}{{%
-x_1 \in [-0.77, -0.27] \text{ and } x_2 \in [-4,2]}{}{}{}{}}
-%5bcd12dd7f84a3fd771912b4f3b1fa3d% md5sum of corresponding .sage file (minus "goboom", "current_tex_line", and pause/unpause lines)
+x \in [1.07,1.68]}{}{}{}{}}
+%bac205bf6e9fa89bd841fa88723628ca% md5sum of corresponding .sage file (minus "goboom", "current_tex_line", and pause/unpause lines)

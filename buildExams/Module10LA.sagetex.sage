@@ -18,7 +18,7 @@ _st_.blockbegin()
 try:
  moduleNumber="10L"
  problemNumber=66
- load("../Code/14syntheticDivision/factorUsingSynthetic2Rationals.sage")
+ load("../Code/14syntheticDivision/syntheticDivision.sage")
 except:
  _st_.goboom(50)
 _st_.blockend()
@@ -106,7 +106,7 @@ _st_.blockbegin()
 try:
  moduleNumber="10L"
  problemNumber=68
- load("../Code/14syntheticDivision/syntheticDivision.sage")
+ load("../Code/14syntheticDivision/factorUsingSynthetic2Rationals.sage")
 except:
  _st_.goboom(86)
 _st_.blockend()

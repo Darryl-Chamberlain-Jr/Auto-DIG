@@ -18,7 +18,7 @@ _st_.blockbegin()
 try:
  moduleNumber="10M"
  problemNumber=46
- load("../Code/10modelingPower/constructJointModel.sage")
+ load("../Code/10modelingPower/constructIndirectModel.sage")
 except:
  _st_.goboom(51)
 _st_.blockend()
@@ -62,126 +62,126 @@ _st_.blockbegin()
 try:
  moduleNumber="10M"
  problemNumber=47
- load("../Code/10modelingPower/identifyModelVariation.sage")
+ load("../Code/10modelingPower/constructJointModel.sage")
 except:
  _st_.goboom(72)
 _st_.blockend()
 try:
- _st_.current_tex_line = 86
+ _st_.current_tex_line = 87
  _st_.inline(7, latex(displayStem))
 except:
- _st_.goboom(86)
+ _st_.goboom(87)
 try:
- _st_.current_tex_line = 86
+ _st_.current_tex_line = 87
  _st_.inline(8, latex(displayProblem))
 except:
- _st_.goboom(86)
+ _st_.goboom(87)
 try:
- _st_.current_tex_line = 86
+ _st_.current_tex_line = 87
  _st_.inline(9, latex(choices[0]))
 except:
- _st_.goboom(86)
+ _st_.goboom(87)
 try:
- _st_.current_tex_line = 86
+ _st_.current_tex_line = 87
  _st_.inline(10, latex(choices[1]))
 except:
- _st_.goboom(86)
+ _st_.goboom(87)
 try:
- _st_.current_tex_line = 86
+ _st_.current_tex_line = 87
  _st_.inline(11, latex(choices[2]))
 except:
- _st_.goboom(86)
+ _st_.goboom(87)
 try:
- _st_.current_tex_line = 86
+ _st_.current_tex_line = 87
  _st_.inline(12, latex(choices[3]))
 except:
- _st_.goboom(86)
-_st_.current_tex_line = 88
+ _st_.goboom(87)
+try:
+ _st_.current_tex_line = 87
+ _st_.inline(13, latex(choices[4]))
+except:
+ _st_.goboom(87)
+_st_.current_tex_line = 89
 _st_.blockbegin()
 try:
  moduleNumber="10M"
  problemNumber=48
- load("../Code/10modelingPower/constructIndirectModel.sage")
+ load("../Code/10modelingPower/constructDirectModel.sage")
 except:
- _st_.goboom(92)
+ _st_.goboom(93)
 _st_.blockend()
 try:
- _st_.current_tex_line = 107
- _st_.inline(13, latex(displayStem))
+ _st_.current_tex_line = 108
+ _st_.inline(14, latex(displayStem))
 except:
- _st_.goboom(107)
+ _st_.goboom(108)
 try:
- _st_.current_tex_line = 107
- _st_.inline(14, latex(displayProblem))
+ _st_.current_tex_line = 108
+ _st_.inline(15, latex(displayProblem))
 except:
- _st_.goboom(107)
+ _st_.goboom(108)
 try:
- _st_.current_tex_line = 107
- _st_.inline(15, latex(choices[0]))
+ _st_.current_tex_line = 108
+ _st_.inline(16, latex(choices[0]))
 except:
- _st_.goboom(107)
+ _st_.goboom(108)
 try:
- _st_.current_tex_line = 107
- _st_.inline(16, latex(choices[1]))
+ _st_.current_tex_line = 108
+ _st_.inline(17, latex(choices[1]))
 except:
- _st_.goboom(107)
+ _st_.goboom(108)
 try:
- _st_.current_tex_line = 107
- _st_.inline(17, latex(choices[2]))
+ _st_.current_tex_line = 108
+ _st_.inline(18, latex(choices[2]))
 except:
- _st_.goboom(107)
+ _st_.goboom(108)
 try:
- _st_.current_tex_line = 107
- _st_.inline(18, latex(choices[3]))
+ _st_.current_tex_line = 108
+ _st_.inline(19, latex(choices[3]))
 except:
- _st_.goboom(107)
+ _st_.goboom(108)
 try:
- _st_.current_tex_line = 107
- _st_.inline(19, latex(choices[4]))
+ _st_.current_tex_line = 108
+ _st_.inline(20, latex(choices[4]))
 except:
- _st_.goboom(107)
-_st_.current_tex_line = 109
+ _st_.goboom(108)
+_st_.current_tex_line = 110
 _st_.blockbegin()
 try:
  moduleNumber="10M"
  problemNumber=49
- load("../Code/10modelingPower/constructDirectModel.sage")
+ load("../Code/10modelingPower/identifyModelVariation.sage")
 except:
- _st_.goboom(113)
+ _st_.goboom(114)
 _st_.blockend()
 try:
  _st_.current_tex_line = 128
- _st_.inline(20, latex(displayStem))
+ _st_.inline(21, latex(displayStem))
 except:
  _st_.goboom(128)
 try:
  _st_.current_tex_line = 128
- _st_.inline(21, latex(displayProblem))
+ _st_.inline(22, latex(displayProblem))
 except:
  _st_.goboom(128)
 try:
  _st_.current_tex_line = 128
- _st_.inline(22, latex(choices[0]))
+ _st_.inline(23, latex(choices[0]))
 except:
  _st_.goboom(128)
 try:
  _st_.current_tex_line = 128
- _st_.inline(23, latex(choices[1]))
+ _st_.inline(24, latex(choices[1]))
 except:
  _st_.goboom(128)
 try:
  _st_.current_tex_line = 128
- _st_.inline(24, latex(choices[2]))
+ _st_.inline(25, latex(choices[2]))
 except:
  _st_.goboom(128)
 try:
  _st_.current_tex_line = 128
- _st_.inline(25, latex(choices[3]))
-except:
- _st_.goboom(128)
-try:
- _st_.current_tex_line = 128
- _st_.inline(26, latex(choices[4]))
+ _st_.inline(26, latex(choices[3]))
 except:
  _st_.goboom(128)
 _st_.current_tex_line = 130

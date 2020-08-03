@@ -22,7 +22,7 @@ _st_.blockbegin()
 try:
  moduleNumber="1"
  problemNumber=_sage_const_1 
- load("../Code/01realComplex/divideComplex.sage")
+ load("../Code/01realComplex/subgroupReal.sage")
 except:
  _st_.goboom(_sage_const_50 )
 _st_.blockend()
@@ -198,7 +198,7 @@ _st_.blockbegin()
 try:
  moduleNumber="1"
  problemNumber=_sage_const_5 
- load("../Code/01realComplex/subgroupReal.sage")
+ load("../Code/01realComplex/divideComplex.sage")
 except:
  _st_.goboom(_sage_const_122 )
 _st_.blockend()

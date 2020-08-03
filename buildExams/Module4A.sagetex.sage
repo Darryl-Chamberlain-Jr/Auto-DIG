@@ -13,82 +13,82 @@ try:
 except:
  _st_.goboom(41)
 _st_.blockend()
-_st_.current_tex_line = 47
+_st_.current_tex_line = 46
 _st_.blockbegin()
 try:
-   moduleNumber="4"
-   problemNumber=16
-   load("../Code/04quadratic/quadraticGraphToEquation.sage")
-   
+ moduleNumber="4"
+ problemNumber=16
+ load("../Code/04quadratic/solveQuadraticFactorComposites.sage")
 except:
- _st_.goboom(51)
+ _st_.goboom(50)
 _st_.blockend()
 try:
- _st_.current_tex_line = 66
+ _st_.current_tex_line = 63
  _st_.inline(0, latex(displayStem))
 except:
- _st_.goboom(66)
+ _st_.goboom(63)
 try:
- _st_.current_tex_line = 66
- _st_.inline(1, latex(choices[0]))
+ _st_.current_tex_line = 63
+ _st_.inline(1, latex(displayProblem))
 except:
- _st_.goboom(66)
+ _st_.goboom(63)
 try:
- _st_.current_tex_line = 66
- _st_.inline(2, latex(choices[1]))
+ _st_.current_tex_line = 63
+ _st_.inline(2, latex(choices[0]))
 except:
- _st_.goboom(66)
+ _st_.goboom(63)
 try:
- _st_.current_tex_line = 66
- _st_.inline(3, latex(choices[2]))
+ _st_.current_tex_line = 63
+ _st_.inline(3, latex(choices[1]))
 except:
- _st_.goboom(66)
+ _st_.goboom(63)
 try:
- _st_.current_tex_line = 66
- _st_.inline(4, latex(choices[3]))
+ _st_.current_tex_line = 63
+ _st_.inline(4, latex(choices[2]))
 except:
- _st_.goboom(66)
+ _st_.goboom(63)
 try:
- _st_.current_tex_line = 66
- _st_.inline(5, latex(choices[4]))
+ _st_.current_tex_line = 63
+ _st_.inline(5, latex(choices[3]))
 except:
- _st_.goboom(66)
-_st_.current_tex_line = 68
+ _st_.goboom(63)
+try:
+ _st_.current_tex_line = 63
+ _st_.inline(6, latex(choices[4]))
+except:
+ _st_.goboom(63)
+_st_.current_tex_line = 65
 _st_.blockbegin()
 try:
  moduleNumber="4"
  problemNumber=17
  load("../Code/04quadratic/quadraticEquationToGraph.sage")
 except:
- _st_.goboom(72)
+ _st_.goboom(69)
 _st_.blockend()
 try:
- _st_.current_tex_line = 87
- _st_.inline(6, latex(displayStem))
+ _st_.current_tex_line = 84
+ _st_.inline(7, latex(displayStem))
 except:
- _st_.goboom(87)
+ _st_.goboom(84)
 try:
- _st_.current_tex_line = 87
- _st_.inline(7, latex(displayProblem))
+ _st_.current_tex_line = 84
+ _st_.inline(8, latex(displayProblem))
 except:
- _st_.goboom(87)
-_st_.current_tex_line = 88
+ _st_.goboom(84)
+_st_.current_tex_line = 86
 _st_.blockbegin()
 try:
- moduleNumber="4"
- problemNumber=18
- load("../Code/04quadratic/solveQuadraticFactorComposites.sage")
+   moduleNumber="4"
+   problemNumber=18
+   load("../Code/04quadratic/quadraticGraphToEquation.sage")
+   
 except:
- _st_.goboom(92)
+ _st_.goboom(90)
 _st_.blockend()
 try:
  _st_.current_tex_line = 105
- _st_.inline(8, latex(displayStem))
-except:
- _st_.goboom(105)
-try:
- _st_.current_tex_line = 105
- _st_.inline(9, latex(displayProblem))
+ _st_.inline(9, latex(displayStem))
 except:
  _st_.goboom(105)
 try:

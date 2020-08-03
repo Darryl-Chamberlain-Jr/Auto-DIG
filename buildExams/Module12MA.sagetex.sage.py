@@ -22,7 +22,7 @@ _st_.blockbegin()
 try:
  moduleNumber="12M"
  problemNumber=_sage_const_56 
- load("../Code/12solvingWordProblems/solveModelExp.sage")
+ load("../Code/12solvingWordProblems/solveModelPower.sage")
 except:
  _st_.goboom(_sage_const_51 )
 _st_.blockend()
@@ -66,7 +66,7 @@ _st_.blockbegin()
 try:
  moduleNumber="12M"
  problemNumber=_sage_const_57 
- load("../Code/12solvingWordProblems/solveModelLinear.sage")
+ load("../Code/12solvingWordProblems/constructModelMixed.sage")
 except:
  _st_.goboom(_sage_const_72 )
 _st_.blockend()
@@ -110,7 +110,7 @@ _st_.blockbegin()
 try:
  moduleNumber="12M"
  problemNumber=_sage_const_58 
- load("../Code/12solvingWordProblems/constructModelMixed.sage")
+ load("../Code/12solvingWordProblems/solveModelExp.sage")
 except:
  _st_.goboom(_sage_const_93 )
 _st_.blockend()
@@ -194,7 +194,7 @@ _st_.blockbegin()
 try:
  moduleNumber="12M"
  problemNumber=_sage_const_60 
- load("../Code/12solvingWordProblems/solveModelPower.sage")
+ load("../Code/12solvingWordProblems/solveModelLinear.sage")
 except:
  _st_.goboom(_sage_const_135 )
 _st_.blockend()

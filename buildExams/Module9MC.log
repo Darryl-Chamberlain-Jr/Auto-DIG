@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.8.30)  30 JUL 2020 14:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.8.30)  3 AUG 2020 12:23
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -635,12 +635,12 @@ Overfull \hbox (6.79684pt too wide) in paragraph at lines 66--67
  []
 
 
-Overfull \hbox (76.06467pt too wide) in paragraph at lines 87--87
-[]$[]$ 
+Overfull \hbox (35.50723pt too wide) in paragraph at lines 89--89
+[][] 
  []
 
 
-Overfull \hbox (6.79684pt too wide) in paragraph at lines 87--88
+Overfull \hbox (6.79684pt too wide) in paragraph at lines 89--90
 | [] 
  []
 
@@ -653,13 +653,13 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 ]
-Overfull \hbox (6.79684pt too wide) in paragraph at lines 108--109
-| [] 
+Overfull \hbox (76.06467pt too wide) in paragraph at lines 110--110
+[]$[]$ 
  []
 
 
-Overfull \hbox (35.50723pt too wide) in paragraph at lines 131--131
-[][] 
+Overfull \hbox (6.79684pt too wide) in paragraph at lines 110--111
+| [] 
  []
 
 
@@ -698,18 +698,18 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 156.
 Here is how much of TeX's memory you used:
  10105 strings out of 492982
  149460 string characters out of 6134896
- 265097 words of memory out of 5000000
+ 265126 words of memory out of 5000000
  13478 multiletter control sequences out of 15000+600000
  7876 words of font info for 32 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 33i,11n,43p,454b,553s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 33i,11n,43p,455b,553s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texli
 ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on Module9MC.pdf (3 pages, 72874 bytes).
+Output written on Module9MC.pdf (3 pages, 73657 bytes).
 PDF statistics:
  81 PDF objects out of 1000 (max. 8388607)
  69 compressed objects within 1 object stream

@@ -106,7 +106,7 @@ _st_.blockbegin()
 try:
  moduleNumber="12L"
  problemNumber=_sage_const_78 
- load("../Code/16graphingRationalFunctions/identifyHAs.sage")
+ load("../Code/16graphingRationalFunctions/identifyHoles.sage")
 except:
  _st_.goboom(_sage_const_89 )
 _st_.blockend()
@@ -194,7 +194,7 @@ _st_.blockbegin()
 try:
  moduleNumber="12L"
  problemNumber=_sage_const_80 
- load("../Code/16graphingRationalFunctions/identifyHoles.sage")
+ load("../Code/16graphingRationalFunctions/identifyHAs.sage")
 except:
  _st_.goboom(_sage_const_125 )
 _st_.blockend()

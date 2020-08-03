@@ -20,10 +20,9 @@ _st_.blockend()
 _st_.current_tex_line = _sage_const_47 
 _st_.blockbegin()
 try:
-   moduleNumber="7"
-   problemNumber=_sage_const_31 
-   load("../Code/07rational/rationalGraphToEquation.sage")
-   
+ moduleNumber="7"
+ problemNumber=_sage_const_31 
+ load("../Code/07rational/rationalEquationToGraph.sage")
 except:
  _st_.goboom(_sage_const_51 )
 _st_.blockend()
@@ -34,46 +33,47 @@ except:
  _st_.goboom(_sage_const_66 )
 try:
  _st_.current_tex_line = _sage_const_66 
- _st_.inline(_sage_const_1 , latex(choices[_sage_const_0 ]))
-except:
- _st_.goboom(_sage_const_66 )
-try:
- _st_.current_tex_line = _sage_const_66 
- _st_.inline(_sage_const_2 , latex(choices[_sage_const_1 ]))
-except:
- _st_.goboom(_sage_const_66 )
-try:
- _st_.current_tex_line = _sage_const_66 
- _st_.inline(_sage_const_3 , latex(choices[_sage_const_2 ]))
-except:
- _st_.goboom(_sage_const_66 )
-try:
- _st_.current_tex_line = _sage_const_66 
- _st_.inline(_sage_const_4 , latex(choices[_sage_const_3 ]))
-except:
- _st_.goboom(_sage_const_66 )
-try:
- _st_.current_tex_line = _sage_const_66 
- _st_.inline(_sage_const_5 , latex(choices[_sage_const_4 ]))
+ _st_.inline(_sage_const_1 , latex(displayProblem))
 except:
  _st_.goboom(_sage_const_66 )
 _st_.current_tex_line = _sage_const_68 
 _st_.blockbegin()
 try:
- moduleNumber="7"
- problemNumber=_sage_const_32 
- load("../Code/07rational/rationalEquationToGraph.sage")
+   moduleNumber="7"
+   problemNumber=_sage_const_32 
+   load("../Code/07rational/rationalGraphToEquation.sage")
+   
 except:
  _st_.goboom(_sage_const_72 )
 _st_.blockend()
 try:
  _st_.current_tex_line = _sage_const_87 
- _st_.inline(_sage_const_6 , latex(displayStem))
+ _st_.inline(_sage_const_2 , latex(displayStem))
 except:
  _st_.goboom(_sage_const_87 )
 try:
  _st_.current_tex_line = _sage_const_87 
- _st_.inline(_sage_const_7 , latex(displayProblem))
+ _st_.inline(_sage_const_3 , latex(choices[_sage_const_0 ]))
+except:
+ _st_.goboom(_sage_const_87 )
+try:
+ _st_.current_tex_line = _sage_const_87 
+ _st_.inline(_sage_const_4 , latex(choices[_sage_const_1 ]))
+except:
+ _st_.goboom(_sage_const_87 )
+try:
+ _st_.current_tex_line = _sage_const_87 
+ _st_.inline(_sage_const_5 , latex(choices[_sage_const_2 ]))
+except:
+ _st_.goboom(_sage_const_87 )
+try:
+ _st_.current_tex_line = _sage_const_87 
+ _st_.inline(_sage_const_6 , latex(choices[_sage_const_3 ]))
+except:
+ _st_.goboom(_sage_const_87 )
+try:
+ _st_.current_tex_line = _sage_const_87 
+ _st_.inline(_sage_const_7 , latex(choices[_sage_const_4 ]))
 except:
  _st_.goboom(_sage_const_87 )
 _st_.current_tex_line = _sage_const_88 
@@ -125,7 +125,7 @@ _st_.blockbegin()
 try:
  moduleNumber="7"
  problemNumber=_sage_const_34 
- load("../Code/07rational/domainRational.sage")
+ load("../Code/07rational/solveRationalLinear.sage")
 except:
  _st_.goboom(_sage_const_110 )
 _st_.blockend()
@@ -169,7 +169,7 @@ _st_.blockbegin()
 try:
  moduleNumber="7"
  problemNumber=_sage_const_35 
- load("../Code/07rational/solveRationalLinear.sage")
+ load("../Code/07rational/domainRational.sage")
 except:
  _st_.goboom(_sage_const_128 )
 _st_.blockend()

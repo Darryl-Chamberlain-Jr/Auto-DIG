@@ -18,7 +18,7 @@ _st_.blockbegin()
 try:
  moduleNumber="7"
  problemNumber=31
- load("../Code/07rational/solveRationalQuadratic.sage")
+ load("../Code/07rational/domainRational.sage")
 except:
  _st_.goboom(50)
 _st_.blockend()
@@ -97,67 +97,67 @@ try:
  _st_.inline(12, latex(choices[4]))
 except:
  _st_.goboom(84)
-_st_.current_tex_line = 85
+_st_.current_tex_line = 86
 _st_.blockbegin()
 try:
  moduleNumber="7"
  problemNumber=33
- load("../Code/07rational/solveRationalLinear.sage")
+ load("../Code/07rational/rationalEquationToGraph.sage")
 except:
- _st_.goboom(89)
+ _st_.goboom(90)
 _st_.blockend()
 try:
- _st_.current_tex_line = 102
+ _st_.current_tex_line = 105
  _st_.inline(13, latex(displayStem))
 except:
- _st_.goboom(102)
+ _st_.goboom(105)
 try:
- _st_.current_tex_line = 102
+ _st_.current_tex_line = 105
  _st_.inline(14, latex(displayProblem))
 except:
- _st_.goboom(102)
-try:
- _st_.current_tex_line = 102
- _st_.inline(15, latex(choices[0]))
-except:
- _st_.goboom(102)
-try:
- _st_.current_tex_line = 102
- _st_.inline(16, latex(choices[1]))
-except:
- _st_.goboom(102)
-try:
- _st_.current_tex_line = 102
- _st_.inline(17, latex(choices[2]))
-except:
- _st_.goboom(102)
-try:
- _st_.current_tex_line = 102
- _st_.inline(18, latex(choices[3]))
-except:
- _st_.goboom(102)
-try:
- _st_.current_tex_line = 102
- _st_.inline(19, latex(choices[4]))
-except:
- _st_.goboom(102)
-_st_.current_tex_line = 104
+ _st_.goboom(105)
+_st_.current_tex_line = 106
 _st_.blockbegin()
 try:
  moduleNumber="7"
  problemNumber=34
- load("../Code/07rational/rationalEquationToGraph.sage")
+ load("../Code/07rational/solveRationalLinear.sage")
 except:
- _st_.goboom(108)
+ _st_.goboom(110)
 _st_.blockend()
 try:
  _st_.current_tex_line = 123
- _st_.inline(20, latex(displayStem))
+ _st_.inline(15, latex(displayStem))
 except:
  _st_.goboom(123)
 try:
  _st_.current_tex_line = 123
- _st_.inline(21, latex(displayProblem))
+ _st_.inline(16, latex(displayProblem))
+except:
+ _st_.goboom(123)
+try:
+ _st_.current_tex_line = 123
+ _st_.inline(17, latex(choices[0]))
+except:
+ _st_.goboom(123)
+try:
+ _st_.current_tex_line = 123
+ _st_.inline(18, latex(choices[1]))
+except:
+ _st_.goboom(123)
+try:
+ _st_.current_tex_line = 123
+ _st_.inline(19, latex(choices[2]))
+except:
+ _st_.goboom(123)
+try:
+ _st_.current_tex_line = 123
+ _st_.inline(20, latex(choices[3]))
+except:
+ _st_.goboom(123)
+try:
+ _st_.current_tex_line = 123
+ _st_.inline(21, latex(choices[4]))
 except:
  _st_.goboom(123)
 _st_.current_tex_line = 124
@@ -165,7 +165,7 @@ _st_.blockbegin()
 try:
  moduleNumber="7"
  problemNumber=35
- load("../Code/07rational/domainRational.sage")
+ load("../Code/07rational/solveRationalQuadratic.sage")
 except:
  _st_.goboom(128)
 _st_.blockend()

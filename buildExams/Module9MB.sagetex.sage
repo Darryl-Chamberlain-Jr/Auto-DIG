@@ -191,7 +191,7 @@ _st_.blockbegin()
 try:
  moduleNumber="9M"
  problemNumber=44
- load("../Code/09modelingLinear/domainLinearModel.sage")
+ load("../Code/09modelingLinear/constructLinearModelCostsProfitsRevenue.sage")
 except:
  _st_.goboom(116)
 _st_.blockend()
@@ -235,7 +235,7 @@ _st_.blockbegin()
 try:
  moduleNumber="9M"
  problemNumber=45
- load("../Code/09modelingLinear/constructLinearModelCostsProfitsRevenue.sage")
+ load("../Code/09modelingLinear/domainLinearModel.sage")
 except:
  _st_.goboom(137)
 _st_.blockend()

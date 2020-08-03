@@ -16,9 +16,10 @@ _st_.blockend()
 _st_.current_tex_line = 47
 _st_.blockbegin()
 try:
- moduleNumber="12M"
- problemNumber=56
- load("../Code/12solvingWordProblems/solveModelPower.sage")
+   moduleNumber="12M"
+   problemNumber=56
+   load("../Code/12solvingWordProblems/identifyModelGraph12.sage")
+   
 except:
  _st_.goboom(51)
 _st_.blockend()
@@ -29,32 +30,27 @@ except:
  _st_.goboom(66)
 try:
  _st_.current_tex_line = 66
- _st_.inline(1, latex(displayProblem))
+ _st_.inline(1, latex(choices[0]))
 except:
  _st_.goboom(66)
 try:
  _st_.current_tex_line = 66
- _st_.inline(2, latex(choices[0]))
+ _st_.inline(2, latex(choices[1]))
 except:
  _st_.goboom(66)
 try:
  _st_.current_tex_line = 66
- _st_.inline(3, latex(choices[1]))
+ _st_.inline(3, latex(choices[2]))
 except:
  _st_.goboom(66)
 try:
  _st_.current_tex_line = 66
- _st_.inline(4, latex(choices[2]))
+ _st_.inline(4, latex(choices[3]))
 except:
  _st_.goboom(66)
 try:
  _st_.current_tex_line = 66
- _st_.inline(5, latex(choices[3]))
-except:
- _st_.goboom(66)
-try:
- _st_.current_tex_line = 66
- _st_.inline(6, latex(choices[4]))
+ _st_.inline(5, latex(choices[4]))
 except:
  _st_.goboom(66)
 _st_.current_tex_line = 68
@@ -62,43 +58,43 @@ _st_.blockbegin()
 try:
  moduleNumber="12M"
  problemNumber=57
- load("../Code/12solvingWordProblems/solveModelExp.sage")
+ load("../Code/12solvingWordProblems/constructModelMixed.sage")
 except:
  _st_.goboom(72)
 _st_.blockend()
 try:
  _st_.current_tex_line = 87
- _st_.inline(7, latex(displayStem))
+ _st_.inline(6, latex(displayStem))
 except:
  _st_.goboom(87)
 try:
  _st_.current_tex_line = 87
- _st_.inline(8, latex(displayProblem))
+ _st_.inline(7, latex(displayProblem))
 except:
  _st_.goboom(87)
 try:
  _st_.current_tex_line = 87
- _st_.inline(9, latex(choices[0]))
+ _st_.inline(8, latex(choices[0]))
 except:
  _st_.goboom(87)
 try:
  _st_.current_tex_line = 87
- _st_.inline(10, latex(choices[1]))
+ _st_.inline(9, latex(choices[1]))
 except:
  _st_.goboom(87)
 try:
  _st_.current_tex_line = 87
- _st_.inline(11, latex(choices[2]))
+ _st_.inline(10, latex(choices[2]))
 except:
  _st_.goboom(87)
 try:
  _st_.current_tex_line = 87
- _st_.inline(12, latex(choices[3]))
+ _st_.inline(11, latex(choices[3]))
 except:
  _st_.goboom(87)
 try:
  _st_.current_tex_line = 87
- _st_.inline(13, latex(choices[4]))
+ _st_.inline(12, latex(choices[4]))
 except:
  _st_.goboom(87)
 _st_.current_tex_line = 89
@@ -106,58 +102,62 @@ _st_.blockbegin()
 try:
  moduleNumber="12M"
  problemNumber=58
- load("../Code/12solvingWordProblems/solveModelLinear.sage")
+ load("../Code/12solvingWordProblems/solveModelExp.sage")
 except:
  _st_.goboom(93)
 _st_.blockend()
 try:
  _st_.current_tex_line = 108
- _st_.inline(14, latex(displayStem))
+ _st_.inline(13, latex(displayStem))
 except:
  _st_.goboom(108)
 try:
  _st_.current_tex_line = 108
- _st_.inline(15, latex(displayProblem))
+ _st_.inline(14, latex(displayProblem))
 except:
  _st_.goboom(108)
 try:
  _st_.current_tex_line = 108
- _st_.inline(16, latex(choices[0]))
+ _st_.inline(15, latex(choices[0]))
 except:
  _st_.goboom(108)
 try:
  _st_.current_tex_line = 108
- _st_.inline(17, latex(choices[1]))
+ _st_.inline(16, latex(choices[1]))
 except:
  _st_.goboom(108)
 try:
  _st_.current_tex_line = 108
- _st_.inline(18, latex(choices[2]))
+ _st_.inline(17, latex(choices[2]))
 except:
  _st_.goboom(108)
 try:
  _st_.current_tex_line = 108
- _st_.inline(19, latex(choices[3]))
+ _st_.inline(18, latex(choices[3]))
 except:
  _st_.goboom(108)
 try:
  _st_.current_tex_line = 108
- _st_.inline(20, latex(choices[4]))
+ _st_.inline(19, latex(choices[4]))
 except:
  _st_.goboom(108)
 _st_.current_tex_line = 110
 _st_.blockbegin()
 try:
-   moduleNumber="12M"
-   problemNumber=59
-   load("../Code/12solvingWordProblems/identifyModelGraph12.sage")
-   
+ moduleNumber="12M"
+ problemNumber=59
+ load("../Code/12solvingWordProblems/solveModelPower.sage")
 except:
  _st_.goboom(114)
 _st_.blockend()
 try:
  _st_.current_tex_line = 129
- _st_.inline(21, latex(displayStem))
+ _st_.inline(20, latex(displayStem))
+except:
+ _st_.goboom(129)
+try:
+ _st_.current_tex_line = 129
+ _st_.inline(21, latex(displayProblem))
 except:
  _st_.goboom(129)
 try:
@@ -190,7 +190,7 @@ _st_.blockbegin()
 try:
  moduleNumber="12M"
  problemNumber=60
- load("../Code/12solvingWordProblems/constructModelMixed.sage")
+ load("../Code/12solvingWordProblems/solveModelLinear.sage")
 except:
  _st_.goboom(135)
 _st_.blockend()

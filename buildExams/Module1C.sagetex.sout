@@ -3,71 +3,71 @@
 \newlabel{@sageinline0}{{%
 Simplify the expression below and choose the interval the simplification is contained within.}{}{}{}{}}
 \newlabel{@sageinline1}{{%
-14 - 8^2 + 20 \div 4 * 17 \div 18}{}{}{}{}}
+2 - 14^2 + 10 \div 8 * 7 \div 15}{}{}{}{}}
 \newlabel{@sageinline2}{{%
-[79, 90]}{}{}{}{}}
+[-193.9, -192.74]}{}{}{}{}}
 \newlabel{@sageinline3}{{%
-[-46, -42]}{}{}{}{}}
+[197.02, 198.21]}{}{}{}{}}
 \newlabel{@sageinline4}{{%
-[-54, -46]}{}{}{}{}}
+[-194.43, -193.68]}{}{}{}{}}
 \newlabel{@sageinline5}{{%
-[77, 79]}{}{}{}{}}
+[198.41, 199.08]}{}{}{}{}}
 \newlabel{@sageinline6}{{%
 \text{None of the above}}{}{}{}{}}
 \newlabel{@sageinline7}{{%
 Choose the \textbf{smallest} set of Complex numbers that the number below belongs to.}{}{}{}{}}
 \newlabel{@sageinline8}{{%
-\sqrt{\frac{-630}{7}}+\sqrt{55}}{}{}{}{}}
+\frac{\sqrt{90}}{5}+\sqrt{-4}i}{}{}{}{}}
 \newlabel{@sageinline9}{{%
-\text{Not a Complex Number}}{}{}{}{}}
+\text{Rational}}{}{}{}{}}
 \newlabel{@sageinline10}{{%
-\text{Rational}}{}{}{}{}}
+\text{Not a Complex Number}}{}{}{}{}}
 \newlabel{@sageinline11}{{%
-\text{Pure Imaginary}}{}{}{}{}}
+\text{Irrational}}{}{}{}{}}
 \newlabel{@sageinline12}{{%
-\text{Nonreal Complex}}{}{}{}{}}
+\text{Pure Imaginary}}{}{}{}{}}
 \newlabel{@sageinline13}{{%
-\text{Irrational}}{}{}{}{}}
+\text{Nonreal Complex}}{}{}{}{}}
 \newlabel{@sageinline14}{{%
-Simplify the expression below into the form $a+bi$. Then, choose the intervals that $a$ and $b$ belong to.}{}{}{}{}}
-\newlabel{@sageinline15}{{%
-(-3  - 6 i)(-2  + 7 i)}{}{}{}{}}
-\newlabel{@sageinline16}{{%
-a \in [44, 55] \text{ and } b \in [-10, -2]}{}{}{}{}}
-\newlabel{@sageinline17}{{%
-a \in [-38, -35] \text{ and } b \in [27, 34]}{}{}{}{}}
-\newlabel{@sageinline18}{{%
-a \in [5, 12] \text{ and } b \in [-48, -40]}{}{}{}{}}
-\newlabel{@sageinline19}{{%
-a \in [-38, -35] \text{ and } b \in [-35, -29]}{}{}{}{}}
-\newlabel{@sageinline20}{{%
-a \in [44, 55] \text{ and } b \in [2, 14]}{}{}{}{}}
-\newlabel{@sageinline21}{{%
 Choose the \textbf{smallest} set of Real numbers that the number below belongs to.}{}{}{}{}}
-\newlabel{@sageinline22}{{%
--\sqrt{\frac{960}{12}}}{}{}{}{}}
-\newlabel{@sageinline23}{{%
-\text{Whole}}{}{}{}{}}
-\newlabel{@sageinline24}{{%
-\text{Irrational}}{}{}{}{}}
-\newlabel{@sageinline25}{{%
+\newlabel{@sageinline15}{{%
+-\sqrt{\frac{14400}{64}}}{}{}{}{}}
+\newlabel{@sageinline16}{{%
 \text{Not a Real number}}{}{}{}{}}
-\newlabel{@sageinline26}{{%
-\text{Rational}}{}{}{}{}}
-\newlabel{@sageinline27}{{%
+\newlabel{@sageinline17}{{%
+\text{Irrational}}{}{}{}{}}
+\newlabel{@sageinline18}{{%
 \text{Integer}}{}{}{}{}}
+\newlabel{@sageinline19}{{%
+\text{Whole}}{}{}{}{}}
+\newlabel{@sageinline20}{{%
+\text{Rational}}{}{}{}{}}
+\newlabel{@sageinline21}{{%
+Simplify the expression below into the form $a+bi$. Then, choose the intervals that $a$ and $b$ belong to.}{}{}{}{}}
+\newlabel{@sageinline22}{{%
+(-5  + 3 i)(9  - 6 i)}{}{}{}{}}
+\newlabel{@sageinline23}{{%
+a \in [-28, -25] \text{ and } b \in [54, 60]}{}{}{}{}}
+\newlabel{@sageinline24}{{%
+a \in [-64, -62] \text{ and } b \in [-4, 1]}{}{}{}{}}
+\newlabel{@sageinline25}{{%
+a \in [-64, -62] \text{ and } b \in [0, 6]}{}{}{}{}}
+\newlabel{@sageinline26}{{%
+a \in [-28, -25] \text{ and } b \in [-60, -55]}{}{}{}{}}
+\newlabel{@sageinline27}{{%
+a \in [-52, -43] \text{ and } b \in [-23, -16]}{}{}{}{}}
 \newlabel{@sageinline28}{{%
 Simplify the expression below into the form $a+bi$. Then, choose the intervals that $a$ and $b$ belong to.}{}{}{}{}}
 \newlabel{@sageinline29}{{%
-\frac{9  - 66 i}{-5  + 4 i}}{}{}{}{}}
+\frac{9  - 44 i}{-6  + 2 i}}{}{}{}{}}
 \newlabel{@sageinline30}{{%
-a \in [-311, -308] \text{ and } b \in [5.2, 7.2]}{}{}{}{}}
+a \in [-0.7, 2.6] \text{ and } b \in [6.5, 7.3]}{}{}{}{}}
 \newlabel{@sageinline31}{{%
-a \in [2, 11] \text{ and } b \in [7.5, 10.2]}{}{}{}{}}
+a \in [-143.2, -138.8] \text{ and } b \in [5.7, 6.9]}{}{}{}{}}
 \newlabel{@sageinline32}{{%
-a \in [-13, -6] \text{ and } b \in [291.6, 294.3]}{}{}{}{}}
+a \in [-1.6, 0.6] \text{ and } b \in [-24.8, -20.6]}{}{}{}{}}
 \newlabel{@sageinline33}{{%
-a \in [-13, -6] \text{ and } b \in [5.2, 7.2]}{}{}{}{}}
+a \in [-5, -3.2] \text{ and } b \in [5.7, 6.9]}{}{}{}{}}
 \newlabel{@sageinline34}{{%
-a \in [-3, 1] \text{ and } b \in [-17.4, -14.5]}{}{}{}{}}
-%3f56dc5bf84d8621eec8d0ad55c86ffd% md5sum of corresponding .sage file (minus "goboom", "current_tex_line", and pause/unpause lines)
+a \in [-5, -3.2] \text{ and } b \in [245.9, 248]}{}{}{}{}}
+%784cf48e8ddeed5c217c87461cb482e4% md5sum of corresponding .sage file (minus "goboom", "current_tex_line", and pause/unpause lines)

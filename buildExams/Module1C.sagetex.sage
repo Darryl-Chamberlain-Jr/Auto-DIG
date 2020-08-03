@@ -106,7 +106,7 @@ _st_.blockbegin()
 try:
  moduleNumber="1"
  problemNumber=3
- load("../Code/01realComplex/multiplyComplex.sage")
+ load("../Code/01realComplex/subgroupReal.sage")
 except:
  _st_.goboom(86)
 _st_.blockend()
@@ -150,7 +150,7 @@ _st_.blockbegin()
 try:
  moduleNumber="1"
  problemNumber=4
- load("../Code/01realComplex/subgroupReal.sage")
+ load("../Code/01realComplex/multiplyComplex.sage")
 except:
  _st_.goboom(104)
 _st_.blockend()

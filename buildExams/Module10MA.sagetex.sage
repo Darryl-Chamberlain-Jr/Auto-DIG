@@ -147,82 +147,82 @@ _st_.blockbegin()
 try:
  moduleNumber="10M"
  problemNumber=48
- load("../Code/10modelingPower/identifyModelVariation.sage")
+ load("../Code/10modelingPower/constructIndirectModel.sage")
 except:
  _st_.goboom(95)
 _st_.blockend()
 try:
- _st_.current_tex_line = 109
+ _st_.current_tex_line = 110
  _st_.inline(22, latex(displayStem))
 except:
- _st_.goboom(109)
+ _st_.goboom(110)
 try:
- _st_.current_tex_line = 109
+ _st_.current_tex_line = 110
  _st_.inline(23, latex(displayProblem))
 except:
- _st_.goboom(109)
+ _st_.goboom(110)
 try:
- _st_.current_tex_line = 109
+ _st_.current_tex_line = 110
  _st_.inline(24, latex(choices[0]))
 except:
- _st_.goboom(109)
+ _st_.goboom(110)
 try:
- _st_.current_tex_line = 109
+ _st_.current_tex_line = 110
  _st_.inline(25, latex(choices[1]))
 except:
- _st_.goboom(109)
+ _st_.goboom(110)
 try:
- _st_.current_tex_line = 109
+ _st_.current_tex_line = 110
  _st_.inline(26, latex(choices[2]))
 except:
- _st_.goboom(109)
+ _st_.goboom(110)
 try:
- _st_.current_tex_line = 109
+ _st_.current_tex_line = 110
  _st_.inline(27, latex(choices[3]))
 except:
- _st_.goboom(109)
-_st_.current_tex_line = 111
+ _st_.goboom(110)
+try:
+ _st_.current_tex_line = 110
+ _st_.inline(28, latex(choices[4]))
+except:
+ _st_.goboom(110)
+_st_.current_tex_line = 112
 _st_.blockbegin()
 try:
  moduleNumber="10M"
  problemNumber=49
- load("../Code/10modelingPower/constructIndirectModel.sage")
+ load("../Code/10modelingPower/identifyModelVariation.sage")
 except:
- _st_.goboom(115)
+ _st_.goboom(116)
 _st_.blockend()
 try:
  _st_.current_tex_line = 130
- _st_.inline(28, latex(displayStem))
+ _st_.inline(29, latex(displayStem))
 except:
  _st_.goboom(130)
 try:
  _st_.current_tex_line = 130
- _st_.inline(29, latex(displayProblem))
+ _st_.inline(30, latex(displayProblem))
 except:
  _st_.goboom(130)
 try:
  _st_.current_tex_line = 130
- _st_.inline(30, latex(choices[0]))
+ _st_.inline(31, latex(choices[0]))
 except:
  _st_.goboom(130)
 try:
  _st_.current_tex_line = 130
- _st_.inline(31, latex(choices[1]))
+ _st_.inline(32, latex(choices[1]))
 except:
  _st_.goboom(130)
 try:
  _st_.current_tex_line = 130
- _st_.inline(32, latex(choices[2]))
+ _st_.inline(33, latex(choices[2]))
 except:
  _st_.goboom(130)
 try:
  _st_.current_tex_line = 130
- _st_.inline(33, latex(choices[3]))
-except:
- _st_.goboom(130)
-try:
- _st_.current_tex_line = 130
- _st_.inline(34, latex(choices[4]))
+ _st_.inline(34, latex(choices[3]))
 except:
  _st_.goboom(130)
 _st_.current_tex_line = 132

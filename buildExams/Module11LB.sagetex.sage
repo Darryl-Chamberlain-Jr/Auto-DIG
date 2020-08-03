@@ -13,59 +13,58 @@ try:
 except:
  _st_.goboom(41)
 _st_.blockend()
-_st_.current_tex_line = 46
+_st_.current_tex_line = 47
 _st_.blockbegin()
 try:
  moduleNumber="11L"
  problemNumber=71
- load("../Code/15introToLimits/evaluateLimitAnalyticalEasy.sage")
+ load("../Code/15introToLimits/interpretLimit.sage")
 except:
- _st_.goboom(50)
+ _st_.goboom(51)
 _st_.blockend()
 try:
- _st_.current_tex_line = 63
+ _st_.current_tex_line = 66
  _st_.inline(0, latex(displayStem))
 except:
- _st_.goboom(63)
+ _st_.goboom(66)
 try:
- _st_.current_tex_line = 63
+ _st_.current_tex_line = 66
  _st_.inline(1, latex(displayProblem))
 except:
- _st_.goboom(63)
+ _st_.goboom(66)
 try:
- _st_.current_tex_line = 63
+ _st_.current_tex_line = 66
  _st_.inline(2, latex(choices[0]))
 except:
- _st_.goboom(63)
+ _st_.goboom(66)
 try:
- _st_.current_tex_line = 63
+ _st_.current_tex_line = 66
  _st_.inline(3, latex(choices[1]))
 except:
- _st_.goboom(63)
+ _st_.goboom(66)
 try:
- _st_.current_tex_line = 63
+ _st_.current_tex_line = 66
  _st_.inline(4, latex(choices[2]))
 except:
- _st_.goboom(63)
+ _st_.goboom(66)
 try:
- _st_.current_tex_line = 63
+ _st_.current_tex_line = 66
  _st_.inline(5, latex(choices[3]))
 except:
- _st_.goboom(63)
+ _st_.goboom(66)
 try:
- _st_.current_tex_line = 63
+ _st_.current_tex_line = 66
  _st_.inline(6, latex(choices[4]))
 except:
- _st_.goboom(63)
-_st_.current_tex_line = 65
+ _st_.goboom(66)
+_st_.current_tex_line = 67
 _st_.blockbegin()
 try:
-   moduleNumber="11L"
-   problemNumber=72
-   load("../Code/15introToLimits/evaluateLimitGraphically.sage")
-   
+ moduleNumber="11L"
+ problemNumber=72
+ load("../Code/15introToLimits/oneSidedLimits.sage")
 except:
- _st_.goboom(69)
+ _st_.goboom(71)
 _st_.blockend()
 try:
  _st_.current_tex_line = 84
@@ -74,46 +73,47 @@ except:
  _st_.goboom(84)
 try:
  _st_.current_tex_line = 84
- _st_.inline(8, latex(choices[0]))
+ _st_.inline(8, latex(displayProblem))
 except:
  _st_.goboom(84)
 try:
  _st_.current_tex_line = 84
- _st_.inline(9, latex(choices[1]))
+ _st_.inline(9, latex(choices[0]))
 except:
  _st_.goboom(84)
 try:
  _st_.current_tex_line = 84
- _st_.inline(10, latex(choices[2]))
+ _st_.inline(10, latex(choices[1]))
 except:
  _st_.goboom(84)
 try:
  _st_.current_tex_line = 84
- _st_.inline(11, latex(choices[3]))
+ _st_.inline(11, latex(choices[2]))
 except:
  _st_.goboom(84)
 try:
  _st_.current_tex_line = 84
- _st_.inline(12, latex(choices[4]))
+ _st_.inline(12, latex(choices[3]))
+except:
+ _st_.goboom(84)
+try:
+ _st_.current_tex_line = 84
+ _st_.inline(13, latex(choices[4]))
 except:
  _st_.goboom(84)
 _st_.current_tex_line = 86
 _st_.blockbegin()
 try:
- moduleNumber="11L"
- problemNumber=73
- load("../Code/15introToLimits/interpretLimit.sage")
+   moduleNumber="11L"
+   problemNumber=73
+   load("../Code/15introToLimits/evaluateLimitGraphically.sage")
+   
 except:
  _st_.goboom(90)
 _st_.blockend()
 try:
  _st_.current_tex_line = 105
- _st_.inline(13, latex(displayStem))
-except:
- _st_.goboom(105)
-try:
- _st_.current_tex_line = 105
- _st_.inline(14, latex(displayProblem))
+ _st_.inline(14, latex(displayStem))
 except:
  _st_.goboom(105)
 try:
@@ -146,7 +146,7 @@ _st_.blockbegin()
 try:
  moduleNumber="11L"
  problemNumber=74
- load("../Code/15introToLimits/evaluateLimitAnalyticalHard.sage")
+ load("../Code/15introToLimits/evaluateLimitAnalyticalEasy.sage")
 except:
  _st_.goboom(110)
 _st_.blockend()
@@ -190,7 +190,7 @@ _st_.blockbegin()
 try:
  moduleNumber="11L"
  problemNumber=75
- load("../Code/15introToLimits/oneSidedLimits.sage")
+ load("../Code/15introToLimits/evaluateLimitAnalyticalHard.sage")
 except:
  _st_.goboom(128)
 _st_.blockend()

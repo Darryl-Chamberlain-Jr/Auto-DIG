@@ -24,7 +24,7 @@
 \pagestyle{fancy}
 \lhead{Module\,10M\,-\,Modeling\,with\,Power\,Functions}
 \chead{}
-\rhead{Progress Exam 6}
+\rhead{Progress Exam 5}
 \lfoot{Summer\,C\,2020}
 \cfoot{}
 \rfoot{Version C}
@@ -44,23 +44,26 @@ version = "C"
 %\setcounter{enumi}{45}
 
 
-\begin{sagesilent}
-moduleNumber="10M"
-problemNumber=46
-load("../Code/10modelingPower/identifyModelVariation.sage")
-\end{sagesilent}
+  \begin{sagesilent}
+  moduleNumber="10M"
+  problemNumber=46
+  load("../Code/10modelingPower/identifyModelPopulation.sage")
+  \end{sagesilent}
 
   \litem{ \sage{displayStem}
 
-   \begin{center}
-      \textit{ \sage{displayProblem} }
-   \end{center}
+  \begin{tabular}{c|c|c|c|c|c|c|c|c|c}
+    \textbf{Year} & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 \tabularnewline
+    \hline
+    \textbf{Pop.} & \sage{populations[0]} & \sage{populations[1]} & \sage{populations[2]} & \sage{populations[3]} & \sage{populations[4]} & \sage{populations[5]} & \sage{populations[6]} & \sage{populations[7]} & \sage{populations[8]}
+  \end{tabular}
 
   	\begin{enumerate}[label=\Alph*.]
     \item \( \sage{choices[0]} \)
     \item \( \sage{choices[1]} \)
     \item \( \sage{choices[2]} \)
     \item \( \sage{choices[3]} \)
+    \item \( \sage{choices[4]} \)
   	\end{enumerate}
   }
 
@@ -88,7 +91,27 @@ load("../Code/10modelingPower/constructJointModel.sage")
 \begin{sagesilent}
 moduleNumber="10M"
 problemNumber=48
-load("../Code/10modelingPower/constructIndirectModel.sage")
+load("../Code/10modelingPower/identifyModelVariation.sage")
+\end{sagesilent}
+
+  \litem{ \sage{displayStem}
+
+   \begin{center}
+      \textit{ \sage{displayProblem} }
+   \end{center}
+
+  	\begin{enumerate}[label=\Alph*.]
+    \item \( \sage{choices[0]} \)
+    \item \( \sage{choices[1]} \)
+    \item \( \sage{choices[2]} \)
+    \item \( \sage{choices[3]} \)
+  	\end{enumerate}
+  }
+
+\begin{sagesilent}
+moduleNumber="10M"
+problemNumber=49
+load("../Code/10modelingPower/constructDirectModel.sage")
 \end{sagesilent}
 
   \litem{ \sage{displayStem}
@@ -106,33 +129,10 @@ load("../Code/10modelingPower/constructIndirectModel.sage")
   	\end{enumerate}
   }
 
-  \begin{sagesilent}
-  moduleNumber="10M"
-  problemNumber=49
-  load("../Code/10modelingPower/identifyModelPopulation.sage")
-  \end{sagesilent}
-
-  \litem{ \sage{displayStem}
-
-  \begin{tabular}{c|c|c|c|c|c|c|c|c|c}
-    \textbf{Year} & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 \tabularnewline
-    \hline
-    \textbf{Pop.} & \sage{populations[0]} & \sage{populations[1]} & \sage{populations[2]} & \sage{populations[3]} & \sage{populations[4]} & \sage{populations[5]} & \sage{populations[6]} & \sage{populations[7]} & \sage{populations[8]}
-  \end{tabular}
-
-  	\begin{enumerate}[label=\Alph*.]
-    \item \( \sage{choices[0]} \)
-    \item \( \sage{choices[1]} \)
-    \item \( \sage{choices[2]} \)
-    \item \( \sage{choices[3]} \)
-    \item \( \sage{choices[4]} \)
-  	\end{enumerate}
-  }
-
 \begin{sagesilent}
 moduleNumber="10M"
 problemNumber=50
-load("../Code/10modelingPower/constructDirectModel.sage")
+load("../Code/10modelingPower/constructIndirectModel.sage")
 \end{sagesilent}
 
   \litem{ \sage{displayStem}

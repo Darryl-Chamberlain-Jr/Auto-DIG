@@ -13,195 +13,195 @@ try:
 except:
  _st_.goboom(41)
 _st_.blockend()
-_st_.current_tex_line = 47
+_st_.current_tex_line = 46
 _st_.blockbegin()
 try:
-   moduleNumber="12L"
-   problemNumber=76
-   load("../Code/16graphingRationalFunctions/identifyGraphOfRationalFunction.sage")
-   
+ moduleNumber="12L"
+ problemNumber=76
+ load("../Code/16graphingRationalFunctions/identifyHoles.sage")
 except:
- _st_.goboom(51)
+ _st_.goboom(50)
 _st_.blockend()
 try:
- _st_.current_tex_line = 66
+ _st_.current_tex_line = 63
  _st_.inline(0, latex(displayStem))
 except:
- _st_.goboom(66)
+ _st_.goboom(63)
 try:
- _st_.current_tex_line = 66
- _st_.inline(1, latex(choices[0]))
+ _st_.current_tex_line = 63
+ _st_.inline(1, latex(displayProblem))
 except:
- _st_.goboom(66)
+ _st_.goboom(63)
 try:
- _st_.current_tex_line = 66
- _st_.inline(2, latex(choices[1]))
+ _st_.current_tex_line = 63
+ _st_.inline(2, latex(choices[0]))
 except:
- _st_.goboom(66)
+ _st_.goboom(63)
 try:
- _st_.current_tex_line = 66
- _st_.inline(3, latex(choices[2]))
+ _st_.current_tex_line = 63
+ _st_.inline(3, latex(choices[1]))
 except:
- _st_.goboom(66)
+ _st_.goboom(63)
 try:
- _st_.current_tex_line = 66
- _st_.inline(4, latex(choices[3]))
+ _st_.current_tex_line = 63
+ _st_.inline(4, latex(choices[2]))
 except:
- _st_.goboom(66)
+ _st_.goboom(63)
 try:
- _st_.current_tex_line = 66
- _st_.inline(5, latex(choices[4]))
+ _st_.current_tex_line = 63
+ _st_.inline(5, latex(choices[3]))
 except:
- _st_.goboom(66)
-_st_.current_tex_line = 67
+ _st_.goboom(63)
+try:
+ _st_.current_tex_line = 63
+ _st_.inline(6, latex(choices[4]))
+except:
+ _st_.goboom(63)
+_st_.current_tex_line = 64
 _st_.blockbegin()
 try:
  moduleNumber="12L"
  problemNumber=77
- load("../Code/16graphingRationalFunctions/identifyOAs.sage")
+ load("../Code/16graphingRationalFunctions/identifyVAs.sage")
 except:
- _st_.goboom(71)
+ _st_.goboom(68)
 _st_.blockend()
 try:
- _st_.current_tex_line = 84
- _st_.inline(6, latex(displayStem))
+ _st_.current_tex_line = 81
+ _st_.inline(7, latex(displayStem))
 except:
- _st_.goboom(84)
+ _st_.goboom(81)
 try:
- _st_.current_tex_line = 84
- _st_.inline(7, latex(displayProblem))
+ _st_.current_tex_line = 81
+ _st_.inline(8, latex(displayProblem))
 except:
- _st_.goboom(84)
+ _st_.goboom(81)
 try:
- _st_.current_tex_line = 84
- _st_.inline(8, latex(choices[0]))
+ _st_.current_tex_line = 81
+ _st_.inline(9, latex(choices[0]))
 except:
- _st_.goboom(84)
+ _st_.goboom(81)
 try:
- _st_.current_tex_line = 84
- _st_.inline(9, latex(choices[1]))
+ _st_.current_tex_line = 81
+ _st_.inline(10, latex(choices[1]))
 except:
- _st_.goboom(84)
+ _st_.goboom(81)
 try:
- _st_.current_tex_line = 84
- _st_.inline(10, latex(choices[2]))
+ _st_.current_tex_line = 81
+ _st_.inline(11, latex(choices[2]))
 except:
- _st_.goboom(84)
+ _st_.goboom(81)
 try:
- _st_.current_tex_line = 84
- _st_.inline(11, latex(choices[3]))
+ _st_.current_tex_line = 81
+ _st_.inline(12, latex(choices[3]))
 except:
- _st_.goboom(84)
+ _st_.goboom(81)
 try:
- _st_.current_tex_line = 84
- _st_.inline(12, latex(choices[4]))
+ _st_.current_tex_line = 81
+ _st_.inline(13, latex(choices[4]))
 except:
- _st_.goboom(84)
-_st_.current_tex_line = 85
+ _st_.goboom(81)
+_st_.current_tex_line = 82
 _st_.blockbegin()
 try:
  moduleNumber="12L"
  problemNumber=78
- load("../Code/16graphingRationalFunctions/identifyVAs.sage")
+ load("../Code/16graphingRationalFunctions/identifyHAs.sage")
 except:
- _st_.goboom(89)
+ _st_.goboom(86)
 _st_.blockend()
 try:
- _st_.current_tex_line = 102
- _st_.inline(13, latex(displayStem))
+ _st_.current_tex_line = 99
+ _st_.inline(14, latex(displayStem))
 except:
- _st_.goboom(102)
+ _st_.goboom(99)
 try:
- _st_.current_tex_line = 102
- _st_.inline(14, latex(displayProblem))
+ _st_.current_tex_line = 99
+ _st_.inline(15, latex(displayProblem))
 except:
- _st_.goboom(102)
+ _st_.goboom(99)
 try:
- _st_.current_tex_line = 102
- _st_.inline(15, latex(choices[0]))
+ _st_.current_tex_line = 99
+ _st_.inline(16, latex(choices[0]))
 except:
- _st_.goboom(102)
+ _st_.goboom(99)
 try:
- _st_.current_tex_line = 102
- _st_.inline(16, latex(choices[1]))
+ _st_.current_tex_line = 99
+ _st_.inline(17, latex(choices[1]))
 except:
- _st_.goboom(102)
+ _st_.goboom(99)
 try:
- _st_.current_tex_line = 102
- _st_.inline(17, latex(choices[2]))
+ _st_.current_tex_line = 99
+ _st_.inline(18, latex(choices[2]))
 except:
- _st_.goboom(102)
+ _st_.goboom(99)
 try:
- _st_.current_tex_line = 102
- _st_.inline(18, latex(choices[3]))
+ _st_.current_tex_line = 99
+ _st_.inline(19, latex(choices[3]))
 except:
- _st_.goboom(102)
+ _st_.goboom(99)
 try:
- _st_.current_tex_line = 102
- _st_.inline(19, latex(choices[4]))
+ _st_.current_tex_line = 99
+ _st_.inline(20, latex(choices[4]))
 except:
- _st_.goboom(102)
-_st_.current_tex_line = 103
+ _st_.goboom(99)
+_st_.current_tex_line = 100
 _st_.blockbegin()
 try:
  moduleNumber="12L"
  problemNumber=79
- load("../Code/16graphingRationalFunctions/identifyHAs.sage")
+ load("../Code/16graphingRationalFunctions/identifyOAs.sage")
 except:
- _st_.goboom(107)
+ _st_.goboom(104)
 _st_.blockend()
 try:
- _st_.current_tex_line = 120
- _st_.inline(20, latex(displayStem))
+ _st_.current_tex_line = 117
+ _st_.inline(21, latex(displayStem))
 except:
- _st_.goboom(120)
+ _st_.goboom(117)
 try:
- _st_.current_tex_line = 120
- _st_.inline(21, latex(displayProblem))
+ _st_.current_tex_line = 117
+ _st_.inline(22, latex(displayProblem))
 except:
- _st_.goboom(120)
+ _st_.goboom(117)
 try:
- _st_.current_tex_line = 120
- _st_.inline(22, latex(choices[0]))
+ _st_.current_tex_line = 117
+ _st_.inline(23, latex(choices[0]))
 except:
- _st_.goboom(120)
+ _st_.goboom(117)
 try:
- _st_.current_tex_line = 120
- _st_.inline(23, latex(choices[1]))
+ _st_.current_tex_line = 117
+ _st_.inline(24, latex(choices[1]))
 except:
- _st_.goboom(120)
+ _st_.goboom(117)
 try:
- _st_.current_tex_line = 120
- _st_.inline(24, latex(choices[2]))
+ _st_.current_tex_line = 117
+ _st_.inline(25, latex(choices[2]))
 except:
- _st_.goboom(120)
+ _st_.goboom(117)
 try:
- _st_.current_tex_line = 120
- _st_.inline(25, latex(choices[3]))
+ _st_.current_tex_line = 117
+ _st_.inline(26, latex(choices[3]))
 except:
- _st_.goboom(120)
+ _st_.goboom(117)
 try:
- _st_.current_tex_line = 120
- _st_.inline(26, latex(choices[4]))
+ _st_.current_tex_line = 117
+ _st_.inline(27, latex(choices[4]))
 except:
- _st_.goboom(120)
-_st_.current_tex_line = 121
+ _st_.goboom(117)
+_st_.current_tex_line = 119
 _st_.blockbegin()
 try:
- moduleNumber="12L"
- problemNumber=80
- load("../Code/16graphingRationalFunctions/identifyHoles.sage")
+   moduleNumber="12L"
+   problemNumber=80
+   load("../Code/16graphingRationalFunctions/identifyGraphOfRationalFunction.sage")
+   
 except:
- _st_.goboom(125)
+ _st_.goboom(123)
 _st_.blockend()
 try:
  _st_.current_tex_line = 138
- _st_.inline(27, latex(displayStem))
-except:
- _st_.goboom(138)
-try:
- _st_.current_tex_line = 138
- _st_.inline(28, latex(displayProblem))
+ _st_.inline(28, latex(displayStem))
 except:
  _st_.goboom(138)
 try:

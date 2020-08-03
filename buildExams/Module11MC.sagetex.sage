@@ -18,7 +18,7 @@ _st_.blockbegin()
 try:
  moduleNumber="11M"
  problemNumber=51
- load("../Code/11modelingLogExp/constructHalfLifeModel.sage")
+ load("../Code/11modelingLogExp/constructBacteriaGrowth.sage")
 except:
  _st_.goboom(51)
 _st_.blockend()
@@ -147,7 +147,7 @@ _st_.blockbegin()
 try:
  moduleNumber="11M"
  problemNumber=53
- load("../Code/11modelingLogExp/constructTemperatureModel.sage")
+ load("../Code/11modelingLogExp/constructHalfLifeModel.sage")
 except:
  _st_.goboom(95)
 _st_.blockend()
@@ -189,10 +189,9 @@ except:
 _st_.current_tex_line = 112
 _st_.blockbegin()
 try:
-   moduleNumber="11M"
-   problemNumber=54
-   load("../Code/11modelingLogExp/identifyModelGraph11.sage")
-   
+ moduleNumber="11M"
+ problemNumber=54
+ load("../Code/11modelingLogExp/constructTemperatureModel.sage")
 except:
  _st_.goboom(116)
 _st_.blockend()
@@ -203,46 +202,47 @@ except:
  _st_.goboom(131)
 try:
  _st_.current_tex_line = 131
- _st_.inline(30, latex(choices[0]))
+ _st_.inline(30, latex(displayProblem))
 except:
  _st_.goboom(131)
 try:
  _st_.current_tex_line = 131
- _st_.inline(31, latex(choices[1]))
+ _st_.inline(31, latex(choices[0]))
 except:
  _st_.goboom(131)
 try:
  _st_.current_tex_line = 131
- _st_.inline(32, latex(choices[2]))
+ _st_.inline(32, latex(choices[1]))
 except:
  _st_.goboom(131)
 try:
  _st_.current_tex_line = 131
- _st_.inline(33, latex(choices[3]))
+ _st_.inline(33, latex(choices[2]))
 except:
  _st_.goboom(131)
 try:
  _st_.current_tex_line = 131
- _st_.inline(34, latex(choices[4]))
+ _st_.inline(34, latex(choices[3]))
+except:
+ _st_.goboom(131)
+try:
+ _st_.current_tex_line = 131
+ _st_.inline(35, latex(choices[4]))
 except:
  _st_.goboom(131)
 _st_.current_tex_line = 133
 _st_.blockbegin()
 try:
- moduleNumber="11M"
- problemNumber=55
- load("../Code/11modelingLogExp/constructBacteriaGrowth.sage")
+   moduleNumber="11M"
+   problemNumber=55
+   load("../Code/11modelingLogExp/identifyModelGraph11.sage")
+   
 except:
  _st_.goboom(137)
 _st_.blockend()
 try:
  _st_.current_tex_line = 152
- _st_.inline(35, latex(displayStem))
-except:
- _st_.goboom(152)
-try:
- _st_.current_tex_line = 152
- _st_.inline(36, latex(displayProblem))
+ _st_.inline(36, latex(displayStem))
 except:
  _st_.goboom(152)
 try:

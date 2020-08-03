@@ -16,10 +16,9 @@ _st_.blockend()
 _st_.current_tex_line = 47
 _st_.blockbegin()
 try:
-   moduleNumber="7"
-   problemNumber=31
-   load("../Code/07rational/rationalGraphToEquation.sage")
-   
+ moduleNumber="7"
+ problemNumber=31
+ load("../Code/07rational/rationalEquationToGraph.sage")
 except:
  _st_.goboom(51)
 _st_.blockend()
@@ -30,46 +29,47 @@ except:
  _st_.goboom(66)
 try:
  _st_.current_tex_line = 66
- _st_.inline(1, latex(choices[0]))
-except:
- _st_.goboom(66)
-try:
- _st_.current_tex_line = 66
- _st_.inline(2, latex(choices[1]))
-except:
- _st_.goboom(66)
-try:
- _st_.current_tex_line = 66
- _st_.inline(3, latex(choices[2]))
-except:
- _st_.goboom(66)
-try:
- _st_.current_tex_line = 66
- _st_.inline(4, latex(choices[3]))
-except:
- _st_.goboom(66)
-try:
- _st_.current_tex_line = 66
- _st_.inline(5, latex(choices[4]))
+ _st_.inline(1, latex(displayProblem))
 except:
  _st_.goboom(66)
 _st_.current_tex_line = 68
 _st_.blockbegin()
 try:
- moduleNumber="7"
- problemNumber=32
- load("../Code/07rational/rationalEquationToGraph.sage")
+   moduleNumber="7"
+   problemNumber=32
+   load("../Code/07rational/rationalGraphToEquation.sage")
+   
 except:
  _st_.goboom(72)
 _st_.blockend()
 try:
  _st_.current_tex_line = 87
- _st_.inline(6, latex(displayStem))
+ _st_.inline(2, latex(displayStem))
 except:
  _st_.goboom(87)
 try:
  _st_.current_tex_line = 87
- _st_.inline(7, latex(displayProblem))
+ _st_.inline(3, latex(choices[0]))
+except:
+ _st_.goboom(87)
+try:
+ _st_.current_tex_line = 87
+ _st_.inline(4, latex(choices[1]))
+except:
+ _st_.goboom(87)
+try:
+ _st_.current_tex_line = 87
+ _st_.inline(5, latex(choices[2]))
+except:
+ _st_.goboom(87)
+try:
+ _st_.current_tex_line = 87
+ _st_.inline(6, latex(choices[3]))
+except:
+ _st_.goboom(87)
+try:
+ _st_.current_tex_line = 87
+ _st_.inline(7, latex(choices[4]))
 except:
  _st_.goboom(87)
 _st_.current_tex_line = 88
@@ -121,7 +121,7 @@ _st_.blockbegin()
 try:
  moduleNumber="7"
  problemNumber=34
- load("../Code/07rational/domainRational.sage")
+ load("../Code/07rational/solveRationalLinear.sage")
 except:
  _st_.goboom(110)
 _st_.blockend()
@@ -165,7 +165,7 @@ _st_.blockbegin()
 try:
  moduleNumber="7"
  problemNumber=35
- load("../Code/07rational/solveRationalLinear.sage")
+ load("../Code/07rational/domainRational.sage")
 except:
  _st_.goboom(128)
 _st_.blockend()

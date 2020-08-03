@@ -3,87 +3,87 @@
 \newlabel{@sageinline0}{{%
 Using the situation below, construct a linear model that describes the cost of the coffee beans $C(h)$ in terms of the weight of the high-quality coffee beans $h$.}{}{}{}{}}
 \newlabel{@sageinline1}{{%
-Veronica needs to prepare 110 of blended coffee beans selling for \$5.06 per pound. She has a high-quality bean that sells for \$5.64 a pound and a low-quality bean that sells for \$3.83 a pound.}{}{}{}{}}
+Veronica needs to prepare 80 of blended coffee beans selling for \$5.42 per pound. She has a high-quality bean that sells for \$5.93 a pound and a low-quality bean that sells for \$4.66 a pound.}{}{}{}{}}
 \newlabel{@sageinline2}{{%
-C(h) = 5.64 h}{}{}{}{}}
+C(h) = 1.27 h + 372.80}{}{}{}{}}
 \newlabel{@sageinline3}{{%
-C(h) = 1.81 h + 421.30}{}{}{}{}}
+C(h) = 5.93 h}{}{}{}{}}
 \newlabel{@sageinline4}{{%
-C(h) = 4.73 h}{}{}{}{}}
+C(h) = -1.27 h + 474.40}{}{}{}{}}
 \newlabel{@sageinline5}{{%
-C(h) = -1.81 h + 620.40}{}{}{}{}}
+C(h) = 5.29 h}{}{}{}{}}
 \newlabel{@sageinline6}{{%
 \text{None of the above.}}{}{}{}{}}
 \newlabel{@sageinline7}{{%
-For the information below, construct a linear model that describes the total time $T$ spent on the path in terms of the distance of a particular part of the path \textit{if we know that the time spent on each path was equal}.}{}{}{}{}}
+For the information below, construct a linear model that describes the total time $T$ spent on the path in terms of the distance of a particular part of the path \textit{if we know that all parts of the path are equal length}.}{}{}{}{}}
 \newlabel{@sageinline8}{{%
-A bicyclist is training for a race on a hilly path. Their bike keeps track of their speed at any time, but not the distance traveled. Their speed traveling up a hill is 4 mph, 10 mph when traveling down a hill, and 7 mph when traveling along a flat portion.}{}{}{}{}}
+A bicyclist is training for a race on a hilly path. Their bike keeps track of their speed at any time, but not the distance traveled. Their speed traveling up a hill is 4 mph, 10 mph when traveling down a hill, and 6 mph when traveling along a flat portion.}{}{}{}{}}
 \newlabel{@sageinline9}{{%
-280.000 D}{}{}{}{}}
+0.517 D}{}{}{}{}}
 \newlabel{@sageinline10}{{%
-21.000 D}{}{}{}{}}
+240.000 D}{}{}{}{}}
 \newlabel{@sageinline11}{{%
-0.493 D}{}{}{}{}}
+20.000 D}{}{}{}{}}
 \newlabel{@sageinline12}{{%
 \text{The model can be found with the information provided, but isn't options 1-3.}}{}{}{}{}}
 \newlabel{@sageinline13}{{%
 \text{The model cannot be found with the information provided.}}{}{}{}{}}
 \newlabel{@sageinline14}{{%
-A town has an initial population of 40000. The town's population for the next 10 years is provided below. Which type of function would be most appropriate to model the town's population?}{}{}{}{}}
+A town has an initial population of 50000. The town's population for the next 10 years is provided below. Which type of function would be most appropriate to model the town's population?}{}{}{}{}}
 \newlabel{@sageinline15}{{%
-40040}{}{}{}{}}
+49980}{}{}{}{}}
 \newlabel{@sageinline16}{{%
-40080}{}{}{}{}}
+49920}{}{}{}{}}
 \newlabel{@sageinline17}{{%
-40120}{}{}{}{}}
+49820}{}{}{}{}}
 \newlabel{@sageinline18}{{%
-40160}{}{}{}{}}
+49680}{}{}{}{}}
 \newlabel{@sageinline19}{{%
-40200}{}{}{}{}}
+49500}{}{}{}{}}
 \newlabel{@sageinline20}{{%
-40240}{}{}{}{}}
+49280}{}{}{}{}}
 \newlabel{@sageinline21}{{%
-40280}{}{}{}{}}
+49020}{}{}{}{}}
 \newlabel{@sageinline22}{{%
-40320}{}{}{}{}}
+48720}{}{}{}{}}
 \newlabel{@sageinline23}{{%
-40360}{}{}{}{}}
+48380}{}{}{}{}}
 \newlabel{@sageinline24}{{%
-\text{Logarithmic}}{}{}{}{}}
-\newlabel{@sageinline25}{{%
-\text{Non-Linear Power}}{}{}{}{}}
-\newlabel{@sageinline26}{{%
 \text{Exponential}}{}{}{}{}}
-\newlabel{@sageinline27}{{%
+\newlabel{@sageinline25}{{%
+\text{Logarithmic}}{}{}{}{}}
+\newlabel{@sageinline26}{{%
 \text{Linear}}{}{}{}{}}
+\newlabel{@sageinline27}{{%
+\text{Non-Linear Power}}{}{}{}{}}
 \newlabel{@sageinline28}{{%
 \text{None of the above}}{}{}{}{}}
 \newlabel{@sageinline29}{{%
-What is the \textbf{best} way to describe the domain of the scenario below?}{}{}{}{}}
-\newlabel{@sageinline30}{{%
-The rate at which a cricket chirps is a linear function of temperature. At 59 degrees F they make 76 chirps per minute and at 65 degrees F they make 100 chirps per minute.}{}{}{}{}}
-\newlabel{@sageinline31}{{%
-\text{Subset of the Natural numbers}}{}{}{}{}}
-\newlabel{@sageinline32}{{%
-\text{There is no restricted domain in this scenario}}{}{}{}{}}
-\newlabel{@sageinline33}{{%
-\text{Subset of the Rational numbers}}{}{}{}{}}
-\newlabel{@sageinline34}{{%
-\text{Subset of the Integers}}{}{}{}{}}
-\newlabel{@sageinline35}{{%
-\text{Proper subset of the Real numbers}}{}{}{}{}}
-\newlabel{@sageinline36}{{%
 For the information provided below, construct a linear model that describes her total budget, $B$, as a function of the number of months, $x$ she is at UF.}{}{}{}{}}
-\newlabel{@sageinline37}{{%
-Aubrey is a college student going into her first year at UF. She will receive Bright Futures, which covers her tuition plus a \$600 educational expense each year. Before college, Aubrey saved up \$7000. She knows she will need to pay \$1100 in rent a month, \$60 for food a week, and \$48 in other weekly expenses.}{}{}{}{}}
-\newlabel{@sageinline38}{{%
-B(x) = 7000 x + 600}{}{}{}{}}
-\newlabel{@sageinline39}{{%
-B(x) = 7600 - 1532 x}{}{}{}{}}
-\newlabel{@sageinline40}{{%
-B(x) = 600 x + 7000}{}{}{}{}}
-\newlabel{@sageinline41}{{%
-B(x) = 1208 - 7600 x}{}{}{}{}}
-\newlabel{@sageinline42}{{%
+\newlabel{@sageinline30}{{%
+Aubrey is a college student going into her first year at UF. She will receive Bright Futures, which covers her tuition plus a \$400 educational expense each year. Before college, Aubrey saved up \$5000. She knows she will need to pay \$700 in rent a month, \$70 for food a week, and \$48 in other weekly expenses.}{}{}{}{}}
+\newlabel{@sageinline31}{{%
+B(x) = 400 x + 5000}{}{}{}{}}
+\newlabel{@sageinline32}{{%
+B(x) = 818 - 5400 x}{}{}{}{}}
+\newlabel{@sageinline33}{{%
+B(x) = 5000 x + 400}{}{}{}{}}
+\newlabel{@sageinline34}{{%
+B(x) = 5400 - 1172 x}{}{}{}{}}
+\newlabel{@sageinline35}{{%
 \text{None of the above.}}{}{}{}{}}
-%5616d2c77111d593be6fcadb5d9742bd% md5sum of corresponding .sage file (minus "goboom", "current_tex_line", and pause/unpause lines)
+\newlabel{@sageinline36}{{%
+What is the \textbf{best} way to describe the domain of the scenario below?}{}{}{}{}}
+\newlabel{@sageinline37}{{%
+Hannah plans to pay off a no-interest loan from her parents. Her loan balance is \$1,000. She plans to pay \$35 at the end of every week until her balance is \$0. How many weeks will it be until she has paid off her loan?}{}{}{}{}}
+\newlabel{@sageinline38}{{%
+\text{There is no restricted domain in this scenario}}{}{}{}{}}
+\newlabel{@sageinline39}{{%
+\text{Subset of the Integers}}{}{}{}{}}
+\newlabel{@sageinline40}{{%
+\text{Subset of the Natural numbers}}{}{}{}{}}
+\newlabel{@sageinline41}{{%
+\text{Proper subset of the Real numbers}}{}{}{}{}}
+\newlabel{@sageinline42}{{%
+\text{Subset of the Rational numbers}}{}{}{}{}}
+%e7f2dcb5119325322e438377b4842365% md5sum of corresponding .sage file (minus "goboom", "current_tex_line", and pause/unpause lines)

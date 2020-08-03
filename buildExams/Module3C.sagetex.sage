@@ -18,7 +18,7 @@ _st_.blockbegin()
 try:
  moduleNumber="3"
  problemNumber=11
- load("../Code/03inequality/solveRationalInequality.sage")
+ load("../Code/03inequality/solveCompoundOR.sage")
 except:
  _st_.goboom(50)
 _st_.blockend()
@@ -62,7 +62,7 @@ _st_.blockbegin()
 try:
  moduleNumber="3"
  problemNumber=12
- load("../Code/03inequality/solveCompoundAND.sage")
+ load("../Code/03inequality/solveRationalInequality.sage")
 except:
  _st_.goboom(68)
 _st_.blockend()
@@ -106,7 +106,7 @@ _st_.blockbegin()
 try:
  moduleNumber="3"
  problemNumber=13
- load("../Code/03inequality/solveIntegerInequality.sage")
+ load("../Code/03inequality/solveCompoundAND.sage")
 except:
  _st_.goboom(86)
 _st_.blockend()
@@ -194,7 +194,7 @@ _st_.blockbegin()
 try:
  moduleNumber="3"
  problemNumber=15
- load("../Code/03inequality/solveCompoundOR.sage")
+ load("../Code/03inequality/solveIntegerInequality.sage")
 except:
  _st_.goboom(122)
 _st_.blockend()

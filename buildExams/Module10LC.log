@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.8.30)  30 JUL 2020 14:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.8.30)  3 AUG 2020 12:24
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -650,8 +650,15 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 ]
-Overfull \hbox (42.88841pt too wide) in paragraph at lines 99--99
-[]$[]$ 
+Overfull \hbox (14.00406pt too wide) in paragraph at lines 99--99
+[]$\OML/cmm/m/it/14.4 a \OMS/cmsy/m/n/14.4 2 \OT1/cmr/m/n/14.4 [15\OML/cmm/m/it
+/14.4 ; \OT1/cmr/m/n/14.4 20]\OML/cmm/m/it/14.4 ; []b \OMS/cmsy/m/n/14.4 2 \OT1
+/cmr/m/n/14.4 [\OMS/cmsy/m/n/14.4 ^^@\OT1/cmr/m/n/14.4 99\OML/cmm/m/it/14.4 ; \
+OMS/cmsy/m/n/14.4 ^^@\OT1/cmr/m/n/14.4 91]\OML/cmm/m/it/14.4 ; []c \OMS/cmsy/m/
+n/14.4 2 \OT1/cmr/m/n/14.4 [347\OML/cmm/m/it/14.4 ; \OT1/cmr/m/n/14.4 355]\OML/
+cmm/m/it/14.4 ; []r \OMS/cmsy/m/n/14.4 2 \OT1/cmr/m/n/14.4 [\OMS/cmsy/m/n/14.4 
+^^@\OT1/cmr/m/n/14.4 1112\OML/cmm/m/it/14.4 ; \OMS/cmsy/m/n/14.4 ^^@\OT1/cmr/m/
+n/14.4 1102]\OML/cmm/m/it/14.4 :$ 
  []
 
 
@@ -660,42 +667,16 @@ Overfull \hbox (6.79684pt too wide) in paragraph at lines 99--105
  []
 
 
-Overfull \hbox (14.15474pt too wide) in paragraph at lines 117--117
-[]$\OML/cmm/m/it/14.4 a \OMS/cmsy/m/n/14.4 2 \OT1/cmr/m/n/14.4 [\OMS/cmsy/m/n/1
-4.4 ^^@\OT1/cmr/m/n/14.4 27\OML/cmm/m/it/14.4 ; \OMS/cmsy/m/n/14.4 ^^@\OT1/cmr/
-m/n/14.4 22]\OML/cmm/m/it/14.4 ; b \OMS/cmsy/m/n/14.4 2 \OT1/cmr/m/n/14.4 [\OMS
-/cmsy/m/n/14.4 ^^@\OT1/cmr/m/n/14.4 21\OML/cmm/m/it/14.4 ; \OMS/cmsy/m/n/14.4 ^
-^@\OT1/cmr/m/n/14.4 17]\OML/cmm/m/it/14.4 ; c \OMS/cmsy/m/n/14.4 2 \OT1/cmr/m/n
-/14.4 [\OMS/cmsy/m/n/14.4 ^^@\OT1/cmr/m/n/14.4 43\OML/cmm/m/it/14.4 ; \OMS/cmsy
-/m/n/14.4 ^^@\OT1/cmr/m/n/14.4 39]\OML/cmm/m/it/14.4 ; []r \OMS/cmsy/m/n/14.4 2
- \OT1/cmr/m/n/14.4 [\OMS/cmsy/m/n/14.4 ^^@\OT1/cmr/m/n/14.4 101\OML/cmm/m/it/14
-.4 ; \OMS/cmsy/m/n/14.4 ^^@\OT1/cmr/m/n/14.4 92]\OML/cmm/m/it/14.4 :$ 
- []
-
-
 Overfull \hbox (6.79684pt too wide) in paragraph at lines 117--123
 | [] 
  []
 
 
-Overfull \hbox (42.2037pt too wide) in paragraph at lines 135--135
-[]$\OML/cmm/m/it/14.4 a \OMS/cmsy/m/n/14.4 2 \OT1/cmr/m/n/14.4 [\OMS/cmsy/m/n/1
-4.4 ^^@\OT1/cmr/m/n/14.4 51\OML/cmm/m/it/14.4 ; \OMS/cmsy/m/n/14.4 ^^@\OT1/cmr/
-m/n/14.4 48]\OML/cmm/m/it/14.4 ; []b \OMS/cmsy/m/n/14.4 2 \OT1/cmr/m/n/14.4 [27
-9\OML/cmm/m/it/14.4 ; \OT1/cmr/m/n/14.4 288]\OML/cmm/m/it/14.4 ; []c \OMS/cmsy/
-m/n/14.4 2 \OT1/cmr/m/n/14.4 [\OMS/cmsy/m/n/14.4 ^^@\OT1/cmr/m/n/14.4 1521\OML/
-cmm/m/it/14.4 ; \OMS/cmsy/m/n/14.4 ^^@\OT1/cmr/m/n/14.4 1518]\OML/cmm/m/it/14.4
- ; []r \OMS/cmsy/m/n/14.4 2 \OT1/cmr/m/n/14.4 [7495\OML/cmm/m/it/14.4 ; \OT1/cm
-r/m/n/14.4 7506]\OML/cmm/m/it/14.4 :$ 
+Overfull \hbox (28.59027pt too wide) in paragraph at lines 135--135
+[]$[]$ 
  []
 
 
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 17.0pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[2]
 Overfull \hbox (6.79684pt too wide) in paragraph at lines 135--136
 | [] 
  []
@@ -708,7 +689,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[3]
+[2]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 139.
  (./Module10LC.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 139.
@@ -718,22 +699,22 @@ Package rerunfilecheck Info: File `Module10LC.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 139.
  ) 
 Here is how much of TeX's memory you used:
- 10091 strings out of 492982
- 149281 string characters out of 6134896
- 266219 words of memory out of 5000000
+ 10090 strings out of 492982
+ 149275 string characters out of 6134896
+ 266157 words of memory out of 5000000
  13466 multiletter control sequences out of 15000+600000
  7217 words of font info for 30 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 33i,12n,43p,387b,553s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 33i,11n,43p,387b,551s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share
 /texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on Module10LC.pdf (3 pages, 62086 bytes).
+Output written on Module10LC.pdf (2 pages, 61710 bytes).
 PDF statistics:
- 77 PDF objects out of 1000 (max. 8388607)
- 66 compressed objects within 1 object stream
- 34 named destinations out of 1000 (max. 500000)
+ 73 PDF objects out of 1000 (max. 8388607)
+ 63 compressed objects within 1 object stream
+ 33 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

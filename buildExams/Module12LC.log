@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.8.30)  30 JUL 2020 14:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.8.30)  3 AUG 2020 12:25
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -635,7 +635,7 @@ File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 Overfull \hbox (8.70166pt too wide) in paragraph at lines 63--63
 []$[]\OML/cmm/m/it/14.4 x \OT1/cmr/m/n/14.4 = 0\OML/cmm/m/it/14.4 :\OT1/cmr/m/n
 /14.4 75[]\OML/cmm/m/it/14.4 x \OT1/cmr/m/n/14.4 = \OMS/cmsy/m/n/14.4 ^^@\OT1/c
-mr/m/n/14.4 1\OML/cmm/m/it/14.4 :\OT1/cmr/m/n/14.4 25[]\OML/cmm/m/it/14.4 x \OT
+mr/m/n/14.4 0\OML/cmm/m/it/14.4 :\OT1/cmr/m/n/14.4 75[]\OML/cmm/m/it/14.4 x \OT
 1/cmr/m/n/14.4 =
  []
 
@@ -665,8 +665,23 @@ Overfull \hbox (6.79684pt too wide) in paragraph at lines 84--90
  []
 
 
+Overfull \hbox (15.75157pt too wide) in paragraph at lines 102--102
+[]$[]\OML/cmm/m/it/14.4 x \OT1/cmr/m/n/14.4 = \OMS/cmsy/m/n/14.4 ^^@\OT1/cmr/m/
+n/14.4 0\OML/cmm/m/it/14.4 :\OT1/cmr/m/n/14.4 667[]\OML/cmm/m/it/14.4 x \OT1/cm
+r/m/n/14.4 = 0\OML/cmm/m/it/14.4 :\OT1/cmr/m/n/14.4 75[]\OML/cmm/m/it/14.4 x \O
+T1/cmr/m/n/14.4 =
+ []
+
+
 Overfull \hbox (6.79684pt too wide) in paragraph at lines 102--108
 | [] 
+ []
+
+
+Overfull \hbox (4.75925pt too wide) in paragraph at lines 120--120
+[]$[]\OML/cmm/m/it/14.4 y \OT1/cmr/m/n/14.4 = \OMS/cmsy/m/n/14.4 ^^@\OT1/cmr/m/
+n/14.4 5\OML/cmm/m/it/14.4 :\OT1/cmr/m/n/14.4 0[]\OML/cmm/m/it/14.4 y \OT1/cmr/
+m/n/14.4 =
  []
 
 
@@ -705,7 +720,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 142.
 Here is how much of TeX's memory you used:
  10099 strings out of 492982
  149553 string characters out of 6134896
- 264641 words of memory out of 5000000
+ 264677 words of memory out of 5000000
  13471 multiletter control sequences out of 15000+600000
  7217 words of font info for 30 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -715,7 +730,7 @@ r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share
 /texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on Module12LC.pdf (3 pages, 79074 bytes).
+Output written on Module12LC.pdf (3 pages, 79258 bytes).
 PDF statistics:
  78 PDF objects out of 1000 (max. 8388607)
  66 compressed objects within 1 object stream

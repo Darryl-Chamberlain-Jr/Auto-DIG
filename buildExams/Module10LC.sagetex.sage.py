@@ -22,7 +22,7 @@ _st_.blockbegin()
 try:
  moduleNumber="10L"
  problemNumber=_sage_const_66 
- load("../Code/14syntheticDivision/factorUsingSynthetic2Rationals.sage")
+ load("../Code/14syntheticDivision/syntheticDivisionMissingTerms.sage")
 except:
  _st_.goboom(_sage_const_50 )
 _st_.blockend()
@@ -66,7 +66,7 @@ _st_.blockbegin()
 try:
  moduleNumber="10L"
  problemNumber=_sage_const_67 
- load("../Code/14syntheticDivision/factorUsingSynthetic2Integers.sage")
+ load("../Code/14syntheticDivision/factorUsingSynthetic2Rationals.sage")
 except:
  _st_.goboom(_sage_const_68 )
 _st_.blockend()
@@ -110,7 +110,7 @@ _st_.blockbegin()
 try:
  moduleNumber="10L"
  problemNumber=_sage_const_68 
- load("../Code/14syntheticDivision/possibleRoots.sage")
+ load("../Code/14syntheticDivision/syntheticDivision.sage")
 except:
  _st_.goboom(_sage_const_86 )
 _st_.blockend()
@@ -154,7 +154,7 @@ _st_.blockbegin()
 try:
  moduleNumber="10L"
  problemNumber=_sage_const_69 
- load("../Code/14syntheticDivision/syntheticDivisionMissingTerms.sage")
+ load("../Code/14syntheticDivision/factorUsingSynthetic2Integers.sage")
 except:
  _st_.goboom(_sage_const_104 )
 _st_.blockend()
@@ -198,7 +198,7 @@ _st_.blockbegin()
 try:
  moduleNumber="10L"
  problemNumber=_sage_const_70 
- load("../Code/14syntheticDivision/syntheticDivision.sage")
+ load("../Code/14syntheticDivision/possibleRoots.sage")
 except:
  _st_.goboom(_sage_const_122 )
 _st_.blockend()

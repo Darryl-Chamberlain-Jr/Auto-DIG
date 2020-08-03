@@ -16,188 +16,188 @@ _st_.blockend()
 _st_.current_tex_line = 47
 _st_.blockbegin()
 try:
- moduleNumber="10M"
- problemNumber=46
- load("../Code/10modelingPower/identifyModelVariation.sage")
+   moduleNumber="10M"
+   problemNumber=46
+   load("../Code/10modelingPower/identifyModelPopulation.sage")
+   
 except:
  _st_.goboom(51)
 _st_.blockend()
 try:
- _st_.current_tex_line = 65
+ _st_.current_tex_line = 68
  _st_.inline(0, latex(displayStem))
 except:
- _st_.goboom(65)
+ _st_.goboom(68)
 try:
- _st_.current_tex_line = 65
- _st_.inline(1, latex(displayProblem))
+ _st_.current_tex_line = 68
+ _st_.inline(1, latex(populations[0]))
 except:
- _st_.goboom(65)
+ _st_.goboom(68)
 try:
- _st_.current_tex_line = 65
- _st_.inline(2, latex(choices[0]))
+ _st_.current_tex_line = 68
+ _st_.inline(2, latex(populations[1]))
 except:
- _st_.goboom(65)
+ _st_.goboom(68)
 try:
- _st_.current_tex_line = 65
- _st_.inline(3, latex(choices[1]))
+ _st_.current_tex_line = 68
+ _st_.inline(3, latex(populations[2]))
 except:
- _st_.goboom(65)
+ _st_.goboom(68)
 try:
- _st_.current_tex_line = 65
- _st_.inline(4, latex(choices[2]))
+ _st_.current_tex_line = 68
+ _st_.inline(4, latex(populations[3]))
 except:
- _st_.goboom(65)
+ _st_.goboom(68)
 try:
- _st_.current_tex_line = 65
- _st_.inline(5, latex(choices[3]))
+ _st_.current_tex_line = 68
+ _st_.inline(5, latex(populations[4]))
 except:
- _st_.goboom(65)
-_st_.current_tex_line = 67
+ _st_.goboom(68)
+try:
+ _st_.current_tex_line = 68
+ _st_.inline(6, latex(populations[5]))
+except:
+ _st_.goboom(68)
+try:
+ _st_.current_tex_line = 68
+ _st_.inline(7, latex(populations[6]))
+except:
+ _st_.goboom(68)
+try:
+ _st_.current_tex_line = 68
+ _st_.inline(8, latex(populations[7]))
+except:
+ _st_.goboom(68)
+try:
+ _st_.current_tex_line = 68
+ _st_.inline(9, latex(populations[8]))
+except:
+ _st_.goboom(68)
+try:
+ _st_.current_tex_line = 68
+ _st_.inline(10, latex(choices[0]))
+except:
+ _st_.goboom(68)
+try:
+ _st_.current_tex_line = 68
+ _st_.inline(11, latex(choices[1]))
+except:
+ _st_.goboom(68)
+try:
+ _st_.current_tex_line = 68
+ _st_.inline(12, latex(choices[2]))
+except:
+ _st_.goboom(68)
+try:
+ _st_.current_tex_line = 68
+ _st_.inline(13, latex(choices[3]))
+except:
+ _st_.goboom(68)
+try:
+ _st_.current_tex_line = 68
+ _st_.inline(14, latex(choices[4]))
+except:
+ _st_.goboom(68)
+_st_.current_tex_line = 70
 _st_.blockbegin()
 try:
  moduleNumber="10M"
  problemNumber=47
  load("../Code/10modelingPower/constructJointModel.sage")
 except:
- _st_.goboom(71)
+ _st_.goboom(74)
 _st_.blockend()
 try:
- _st_.current_tex_line = 86
- _st_.inline(6, latex(displayStem))
+ _st_.current_tex_line = 89
+ _st_.inline(15, latex(displayStem))
 except:
- _st_.goboom(86)
+ _st_.goboom(89)
 try:
- _st_.current_tex_line = 86
- _st_.inline(7, latex(displayProblem))
+ _st_.current_tex_line = 89
+ _st_.inline(16, latex(displayProblem))
 except:
- _st_.goboom(86)
+ _st_.goboom(89)
 try:
- _st_.current_tex_line = 86
- _st_.inline(8, latex(choices[0]))
+ _st_.current_tex_line = 89
+ _st_.inline(17, latex(choices[0]))
 except:
- _st_.goboom(86)
+ _st_.goboom(89)
 try:
- _st_.current_tex_line = 86
- _st_.inline(9, latex(choices[1]))
+ _st_.current_tex_line = 89
+ _st_.inline(18, latex(choices[1]))
 except:
- _st_.goboom(86)
+ _st_.goboom(89)
 try:
- _st_.current_tex_line = 86
- _st_.inline(10, latex(choices[2]))
+ _st_.current_tex_line = 89
+ _st_.inline(19, latex(choices[2]))
 except:
- _st_.goboom(86)
+ _st_.goboom(89)
 try:
- _st_.current_tex_line = 86
- _st_.inline(11, latex(choices[3]))
+ _st_.current_tex_line = 89
+ _st_.inline(20, latex(choices[3]))
 except:
- _st_.goboom(86)
+ _st_.goboom(89)
 try:
- _st_.current_tex_line = 86
- _st_.inline(12, latex(choices[4]))
+ _st_.current_tex_line = 89
+ _st_.inline(21, latex(choices[4]))
 except:
- _st_.goboom(86)
-_st_.current_tex_line = 88
+ _st_.goboom(89)
+_st_.current_tex_line = 91
 _st_.blockbegin()
 try:
  moduleNumber="10M"
  problemNumber=48
- load("../Code/10modelingPower/constructIndirectModel.sage")
+ load("../Code/10modelingPower/identifyModelVariation.sage")
 except:
- _st_.goboom(92)
+ _st_.goboom(95)
 _st_.blockend()
 try:
- _st_.current_tex_line = 107
- _st_.inline(13, latex(displayStem))
+ _st_.current_tex_line = 109
+ _st_.inline(22, latex(displayStem))
 except:
- _st_.goboom(107)
+ _st_.goboom(109)
 try:
- _st_.current_tex_line = 107
- _st_.inline(14, latex(displayProblem))
+ _st_.current_tex_line = 109
+ _st_.inline(23, latex(displayProblem))
 except:
- _st_.goboom(107)
+ _st_.goboom(109)
 try:
- _st_.current_tex_line = 107
- _st_.inline(15, latex(choices[0]))
+ _st_.current_tex_line = 109
+ _st_.inline(24, latex(choices[0]))
 except:
- _st_.goboom(107)
+ _st_.goboom(109)
 try:
- _st_.current_tex_line = 107
- _st_.inline(16, latex(choices[1]))
+ _st_.current_tex_line = 109
+ _st_.inline(25, latex(choices[1]))
 except:
- _st_.goboom(107)
+ _st_.goboom(109)
 try:
- _st_.current_tex_line = 107
- _st_.inline(17, latex(choices[2]))
+ _st_.current_tex_line = 109
+ _st_.inline(26, latex(choices[2]))
 except:
- _st_.goboom(107)
+ _st_.goboom(109)
 try:
- _st_.current_tex_line = 107
- _st_.inline(18, latex(choices[3]))
+ _st_.current_tex_line = 109
+ _st_.inline(27, latex(choices[3]))
 except:
- _st_.goboom(107)
-try:
- _st_.current_tex_line = 107
- _st_.inline(19, latex(choices[4]))
-except:
- _st_.goboom(107)
-_st_.current_tex_line = 109
+ _st_.goboom(109)
+_st_.current_tex_line = 111
 _st_.blockbegin()
 try:
-   moduleNumber="10M"
-   problemNumber=49
-   load("../Code/10modelingPower/identifyModelPopulation.sage")
-   
+ moduleNumber="10M"
+ problemNumber=49
+ load("../Code/10modelingPower/constructDirectModel.sage")
 except:
- _st_.goboom(113)
+ _st_.goboom(115)
 _st_.blockend()
 try:
  _st_.current_tex_line = 130
- _st_.inline(20, latex(displayStem))
+ _st_.inline(28, latex(displayStem))
 except:
  _st_.goboom(130)
 try:
  _st_.current_tex_line = 130
- _st_.inline(21, latex(populations[0]))
-except:
- _st_.goboom(130)
-try:
- _st_.current_tex_line = 130
- _st_.inline(22, latex(populations[1]))
-except:
- _st_.goboom(130)
-try:
- _st_.current_tex_line = 130
- _st_.inline(23, latex(populations[2]))
-except:
- _st_.goboom(130)
-try:
- _st_.current_tex_line = 130
- _st_.inline(24, latex(populations[3]))
-except:
- _st_.goboom(130)
-try:
- _st_.current_tex_line = 130
- _st_.inline(25, latex(populations[4]))
-except:
- _st_.goboom(130)
-try:
- _st_.current_tex_line = 130
- _st_.inline(26, latex(populations[5]))
-except:
- _st_.goboom(130)
-try:
- _st_.current_tex_line = 130
- _st_.inline(27, latex(populations[6]))
-except:
- _st_.goboom(130)
-try:
- _st_.current_tex_line = 130
- _st_.inline(28, latex(populations[7]))
-except:
- _st_.goboom(130)
-try:
- _st_.current_tex_line = 130
- _st_.inline(29, latex(populations[8]))
+ _st_.inline(29, latex(displayProblem))
 except:
  _st_.goboom(130)
 try:
@@ -230,7 +230,7 @@ _st_.blockbegin()
 try:
  moduleNumber="10M"
  problemNumber=50
- load("../Code/10modelingPower/constructDirectModel.sage")
+ load("../Code/10modelingPower/constructIndirectModel.sage")
 except:
  _st_.goboom(136)
 _st_.blockend()

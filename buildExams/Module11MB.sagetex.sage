@@ -18,7 +18,7 @@ _st_.blockbegin()
 try:
  moduleNumber="11M"
  problemNumber=51
- load("../Code/11modelingLogExp/constructTemperatureModel.sage")
+ load("../Code/11modelingLogExp/constructHalfLifeModel.sage")
 except:
  _st_.goboom(51)
 _st_.blockend()
@@ -62,7 +62,7 @@ _st_.blockbegin()
 try:
  moduleNumber="11M"
  problemNumber=52
- load("../Code/11modelingLogExp/constructHalfLifeModel.sage")
+ load("../Code/11modelingLogExp/constructTemperatureModel.sage")
 except:
  _st_.goboom(72)
 _st_.blockend()

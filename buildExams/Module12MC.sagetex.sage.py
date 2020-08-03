@@ -20,9 +20,10 @@ _st_.blockend()
 _st_.current_tex_line = _sage_const_47 
 _st_.blockbegin()
 try:
- moduleNumber="12M"
- problemNumber=_sage_const_56 
- load("../Code/12solvingWordProblems/solveModelPower.sage")
+   moduleNumber="12M"
+   problemNumber=_sage_const_56 
+   load("../Code/12solvingWordProblems/identifyModelGraph12.sage")
+   
 except:
  _st_.goboom(_sage_const_51 )
 _st_.blockend()
@@ -33,32 +34,27 @@ except:
  _st_.goboom(_sage_const_66 )
 try:
  _st_.current_tex_line = _sage_const_66 
- _st_.inline(_sage_const_1 , latex(displayProblem))
+ _st_.inline(_sage_const_1 , latex(choices[_sage_const_0 ]))
 except:
  _st_.goboom(_sage_const_66 )
 try:
  _st_.current_tex_line = _sage_const_66 
- _st_.inline(_sage_const_2 , latex(choices[_sage_const_0 ]))
+ _st_.inline(_sage_const_2 , latex(choices[_sage_const_1 ]))
 except:
  _st_.goboom(_sage_const_66 )
 try:
  _st_.current_tex_line = _sage_const_66 
- _st_.inline(_sage_const_3 , latex(choices[_sage_const_1 ]))
+ _st_.inline(_sage_const_3 , latex(choices[_sage_const_2 ]))
 except:
  _st_.goboom(_sage_const_66 )
 try:
  _st_.current_tex_line = _sage_const_66 
- _st_.inline(_sage_const_4 , latex(choices[_sage_const_2 ]))
+ _st_.inline(_sage_const_4 , latex(choices[_sage_const_3 ]))
 except:
  _st_.goboom(_sage_const_66 )
 try:
  _st_.current_tex_line = _sage_const_66 
- _st_.inline(_sage_const_5 , latex(choices[_sage_const_3 ]))
-except:
- _st_.goboom(_sage_const_66 )
-try:
- _st_.current_tex_line = _sage_const_66 
- _st_.inline(_sage_const_6 , latex(choices[_sage_const_4 ]))
+ _st_.inline(_sage_const_5 , latex(choices[_sage_const_4 ]))
 except:
  _st_.goboom(_sage_const_66 )
 _st_.current_tex_line = _sage_const_68 
@@ -66,43 +62,43 @@ _st_.blockbegin()
 try:
  moduleNumber="12M"
  problemNumber=_sage_const_57 
- load("../Code/12solvingWordProblems/solveModelExp.sage")
+ load("../Code/12solvingWordProblems/constructModelMixed.sage")
 except:
  _st_.goboom(_sage_const_72 )
 _st_.blockend()
 try:
  _st_.current_tex_line = _sage_const_87 
- _st_.inline(_sage_const_7 , latex(displayStem))
+ _st_.inline(_sage_const_6 , latex(displayStem))
 except:
  _st_.goboom(_sage_const_87 )
 try:
  _st_.current_tex_line = _sage_const_87 
- _st_.inline(_sage_const_8 , latex(displayProblem))
+ _st_.inline(_sage_const_7 , latex(displayProblem))
 except:
  _st_.goboom(_sage_const_87 )
 try:
  _st_.current_tex_line = _sage_const_87 
- _st_.inline(_sage_const_9 , latex(choices[_sage_const_0 ]))
+ _st_.inline(_sage_const_8 , latex(choices[_sage_const_0 ]))
 except:
  _st_.goboom(_sage_const_87 )
 try:
  _st_.current_tex_line = _sage_const_87 
- _st_.inline(_sage_const_10 , latex(choices[_sage_const_1 ]))
+ _st_.inline(_sage_const_9 , latex(choices[_sage_const_1 ]))
 except:
  _st_.goboom(_sage_const_87 )
 try:
  _st_.current_tex_line = _sage_const_87 
- _st_.inline(_sage_const_11 , latex(choices[_sage_const_2 ]))
+ _st_.inline(_sage_const_10 , latex(choices[_sage_const_2 ]))
 except:
  _st_.goboom(_sage_const_87 )
 try:
  _st_.current_tex_line = _sage_const_87 
- _st_.inline(_sage_const_12 , latex(choices[_sage_const_3 ]))
+ _st_.inline(_sage_const_11 , latex(choices[_sage_const_3 ]))
 except:
  _st_.goboom(_sage_const_87 )
 try:
  _st_.current_tex_line = _sage_const_87 
- _st_.inline(_sage_const_13 , latex(choices[_sage_const_4 ]))
+ _st_.inline(_sage_const_12 , latex(choices[_sage_const_4 ]))
 except:
  _st_.goboom(_sage_const_87 )
 _st_.current_tex_line = _sage_const_89 
@@ -110,58 +106,62 @@ _st_.blockbegin()
 try:
  moduleNumber="12M"
  problemNumber=_sage_const_58 
- load("../Code/12solvingWordProblems/solveModelLinear.sage")
+ load("../Code/12solvingWordProblems/solveModelExp.sage")
 except:
  _st_.goboom(_sage_const_93 )
 _st_.blockend()
 try:
  _st_.current_tex_line = _sage_const_108 
- _st_.inline(_sage_const_14 , latex(displayStem))
+ _st_.inline(_sage_const_13 , latex(displayStem))
 except:
  _st_.goboom(_sage_const_108 )
 try:
  _st_.current_tex_line = _sage_const_108 
- _st_.inline(_sage_const_15 , latex(displayProblem))
+ _st_.inline(_sage_const_14 , latex(displayProblem))
 except:
  _st_.goboom(_sage_const_108 )
 try:
  _st_.current_tex_line = _sage_const_108 
- _st_.inline(_sage_const_16 , latex(choices[_sage_const_0 ]))
+ _st_.inline(_sage_const_15 , latex(choices[_sage_const_0 ]))
 except:
  _st_.goboom(_sage_const_108 )
 try:
  _st_.current_tex_line = _sage_const_108 
- _st_.inline(_sage_const_17 , latex(choices[_sage_const_1 ]))
+ _st_.inline(_sage_const_16 , latex(choices[_sage_const_1 ]))
 except:
  _st_.goboom(_sage_const_108 )
 try:
  _st_.current_tex_line = _sage_const_108 
- _st_.inline(_sage_const_18 , latex(choices[_sage_const_2 ]))
+ _st_.inline(_sage_const_17 , latex(choices[_sage_const_2 ]))
 except:
  _st_.goboom(_sage_const_108 )
 try:
  _st_.current_tex_line = _sage_const_108 
- _st_.inline(_sage_const_19 , latex(choices[_sage_const_3 ]))
+ _st_.inline(_sage_const_18 , latex(choices[_sage_const_3 ]))
 except:
  _st_.goboom(_sage_const_108 )
 try:
  _st_.current_tex_line = _sage_const_108 
- _st_.inline(_sage_const_20 , latex(choices[_sage_const_4 ]))
+ _st_.inline(_sage_const_19 , latex(choices[_sage_const_4 ]))
 except:
  _st_.goboom(_sage_const_108 )
 _st_.current_tex_line = _sage_const_110 
 _st_.blockbegin()
 try:
-   moduleNumber="12M"
-   problemNumber=_sage_const_59 
-   load("../Code/12solvingWordProblems/identifyModelGraph12.sage")
-   
+ moduleNumber="12M"
+ problemNumber=_sage_const_59 
+ load("../Code/12solvingWordProblems/solveModelPower.sage")
 except:
  _st_.goboom(_sage_const_114 )
 _st_.blockend()
 try:
  _st_.current_tex_line = _sage_const_129 
- _st_.inline(_sage_const_21 , latex(displayStem))
+ _st_.inline(_sage_const_20 , latex(displayStem))
+except:
+ _st_.goboom(_sage_const_129 )
+try:
+ _st_.current_tex_line = _sage_const_129 
+ _st_.inline(_sage_const_21 , latex(displayProblem))
 except:
  _st_.goboom(_sage_const_129 )
 try:
@@ -194,7 +194,7 @@ _st_.blockbegin()
 try:
  moduleNumber="12M"
  problemNumber=_sage_const_60 
- load("../Code/12solvingWordProblems/constructModelMixed.sage")
+ load("../Code/12solvingWordProblems/solveModelLinear.sage")
 except:
  _st_.goboom(_sage_const_135 )
 _st_.blockend()

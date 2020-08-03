@@ -3,49 +3,49 @@
 \newlabel{@sageinline0}{{%
 Construct the lowest-degree polynomial given the zeros below. Then, choose the intervals that contain the coefficients of the polynomial in the form $x^3+bx^2+cx+d$.}{}{}{}{}}
 \newlabel{@sageinline1}{{%
-4 - 5i \text{ and } 1}{}{}{}{}}
+-4 + 3i \text{ and } -2}{}{}{}{}}
 \newlabel{@sageinline2}{{%
-b \in [5, 18], c \in [42, 60], \text{ and } d \in [39, 50]}{}{}{}{}}
+b \in [0, 3], c \in [0, 15], \text{ and } d \in [5, 16]}{}{}{}{}}
 \newlabel{@sageinline3}{{%
-b \in [-4, 6], c \in [-3, 7], \text{ and } d \in [-11, 1]}{}{}{}{}}
+b \in [2, 11], c \in [39, 42], \text{ and } d \in [45, 57]}{}{}{}{}}
 \newlabel{@sageinline4}{{%
-b \in [-12, 0], c \in [42, 60], \text{ and } d \in [-50, -33]}{}{}{}{}}
+b \in [-16, -5], c \in [39, 42], \text{ and } d \in [-57, -42]}{}{}{}{}}
 \newlabel{@sageinline5}{{%
-b \in [-4, 6], c \in [-9, 0], \text{ and } d \in [3, 5]}{}{}{}{}}
+b \in [0, 3], c \in [-2, 3], \text{ and } d \in [-7, -3]}{}{}{}{}}
 \newlabel{@sageinline6}{{%
 \text{None of the above.}}{}{}{}{}}
 \newlabel{@sageinline7}{{%
-Which of the following equations \textit{could} be of the graph presented below?}{}{}{}{}}
+Describe the zero behavior of the zero $x = -4$ of the polynomial below.}{}{}{}{}}
 \newlabel{@sageinline8}{{%
--8(x + 1)^{6} (x - 2)^{5} (x - 3)^{9}}{}{}{}{}}
+f(x) = 7(x - 7)^{10}(x + 7)^{9}(x + 4)^{14}(x - 4)^{9}}{}{}{}{}}
 \newlabel{@sageinline9}{{%
--18(x + 1)^{8} (x - 2)^{5} (x - 3)^{6}}{}{}{}{}}
+Which of the following equations \textit{could} be of the graph presented below?}{}{}{}{}}
 \newlabel{@sageinline10}{{%
-4(x + 1)^{6} (x - 2)^{10} (x - 3)^{8}}{}{}{}{}}
+9(x + 2)^{6} (x + 4)^{6} (x + 1)^{7}}{}{}{}{}}
 \newlabel{@sageinline11}{{%
-18(x + 1)^{4} (x - 2)^{10} (x - 3)^{11}}{}{}{}{}}
+-2(x + 2)^{4} (x + 4)^{9} (x + 1)^{9}}{}{}{}{}}
 \newlabel{@sageinline12}{{%
--12(x + 1)^{6} (x - 2)^{6} (x - 3)^{11}}{}{}{}{}}
+-5(x + 2)^{5} (x + 4)^{9} (x + 1)^{5}}{}{}{}{}}
 \newlabel{@sageinline13}{{%
-Construct the lowest-degree polynomial given the zeros below. Then, choose the intervals that contain the coefficients of the polynomial in the form $ax^3+bx^2+cx+d$.}{}{}{}{}}
+15(x + 2)^{8} (x + 4)^{9} (x + 1)^{7}}{}{}{}{}}
 \newlabel{@sageinline14}{{%
-\frac{-6}{5}, 3, \text{ and } \frac{7}{5}}{}{}{}{}}
+5(x + 2)^{5} (x + 4)^{9} (x + 1)^{11}}{}{}{}{}}
 \newlabel{@sageinline15}{{%
-a \in [19, 30], b \in [-150, -138], c \in [231, 241], \text{ and } d \in [-130, -122]}{}{}{}{}}
+Construct the lowest-degree polynomial given the zeros below. Then, choose the intervals that contain the coefficients of the polynomial in the form $ax^3+bx^2+cx+d$.}{}{}{}{}}
 \newlabel{@sageinline16}{{%
-a \in [19, 30], b \in [-90, -74], c \in [-32, -21], \text{ and } d \in [123, 132]}{}{}{}{}}
+\frac{1}{5}, \frac{-3}{5}, \text{ and } \frac{-4}{5}}{}{}{}{}}
 \newlabel{@sageinline17}{{%
-a \in [19, 30], b \in [73, 86], c \in [-32, -21], \text{ and } d \in [-130, -122]}{}{}{}{}}
+a \in [122, 131], b \in [192, 206], c \in [90, 102], \text{ and } d \in [7, 15]}{}{}{}{}}
 \newlabel{@sageinline18}{{%
-a \in [19, 30], b \in [-90, -74], c \in [-32, -21], \text{ and } d \in [-130, -122]}{}{}{}{}}
+a \in [122, 131], b \in [144, 159], c \in [24, 29], \text{ and } d \in [-17, -7]}{}{}{}{}}
 \newlabel{@sageinline19}{{%
-a \in [19, 30], b \in [5, 11], c \in [-159, -150], \text{ and } d \in [123, 132]}{}{}{}{}}
+a \in [122, 131], b \in [-154, -145], c \in [24, 29], \text{ and } d \in [7, 15]}{}{}{}{}}
 \newlabel{@sageinline20}{{%
-Describe the end behavior of the polynomial below.}{}{}{}{}}
+a \in [122, 131], b \in [144, 159], c \in [24, 29], \text{ and } d \in [7, 15]}{}{}{}{}}
 \newlabel{@sageinline21}{{%
-f(x) = -5(x + 2)^{4}(x - 2)^{5}(x - 6)^{2}(x + 6)^{2}}{}{}{}{}}
+a \in [122, 131], b \in [46, 53], c \in [-57, -51], \text{ and } d \in [-17, -7]}{}{}{}{}}
 \newlabel{@sageinline22}{{%
-Describe the zero behavior of the zero $x = 2$ of the polynomial below.}{}{}{}{}}
+Describe the end behavior of the polynomial below.}{}{}{}{}}
 \newlabel{@sageinline23}{{%
-f(x) = -6(x + 4)^{10}(x - 4)^{8}(x - 2)^{11}(x + 2)^{6}}{}{}{}{}}
-%4dd4b48dab42de14ee09cf067fbf969a% md5sum of corresponding .sage file (minus "goboom", "current_tex_line", and pause/unpause lines)
+f(x) = -3(x - 6)^{3}(x + 6)^{8}(x - 5)^{4}(x + 5)^{5}}{}{}{}{}}
+%3b171a4096710f0fa9ac6a69eed7b6b0% md5sum of corresponding .sage file (minus "goboom", "current_tex_line", and pause/unpause lines)

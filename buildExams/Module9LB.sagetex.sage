@@ -18,7 +18,7 @@ _st_.blockbegin()
 try:
  moduleNumber="9L"
  problemNumber=61
- load("../Code/13operationsOnFunctions/domainAfterOperating.sage")
+ load("../Code/13operationsOnFunctions/functionComposition.sage")
 except:
  _st_.goboom(50)
 _st_.blockend()
@@ -62,7 +62,7 @@ _st_.blockbegin()
 try:
  moduleNumber="9L"
  problemNumber=62
- load("../Code/13operationsOnFunctions/findInverseLogOrExp.sage")
+ load("../Code/13operationsOnFunctions/determine1to1.sage")
 except:
  _st_.goboom(68)
 _st_.blockend()
@@ -106,7 +106,7 @@ _st_.blockbegin()
 try:
  moduleNumber="9L"
  problemNumber=63
- load("../Code/13operationsOnFunctions/determine1to1.sage")
+ load("../Code/13operationsOnFunctions/findInverseLogOrExp.sage")
 except:
  _st_.goboom(86)
 _st_.blockend()
@@ -150,7 +150,7 @@ _st_.blockbegin()
 try:
  moduleNumber="9L"
  problemNumber=64
- load("../Code/13operationsOnFunctions/functionComposition.sage")
+ load("../Code/13operationsOnFunctions/domainAfterOperating.sage")
 except:
  _st_.goboom(104)
 _st_.blockend()

@@ -18,7 +18,7 @@ _st_.blockbegin()
 try:
  moduleNumber="9M"
  problemNumber=41
- load("../Code/09modelingLinear/constructLinearModelCostsProfitsRevenue.sage")
+ load("../Code/09modelingLinear/constructLinearModelMixture.sage")
 except:
  _st_.goboom(51)
 _st_.blockend()
@@ -60,149 +60,149 @@ except:
 _st_.current_tex_line = 68
 _st_.blockbegin()
 try:
- moduleNumber="9M"
- problemNumber=42
- load("../Code/09modelingLinear/constructLinearModelDistanceAndRate.sage")
+   moduleNumber="9M"
+   problemNumber=42
+   load("../Code/09modelingLinear/identifyModelPopulation.sage")
+   
 except:
  _st_.goboom(72)
 _st_.blockend()
 try:
- _st_.current_tex_line = 87
+ _st_.current_tex_line = 89
  _st_.inline(7, latex(displayStem))
 except:
- _st_.goboom(87)
+ _st_.goboom(89)
 try:
- _st_.current_tex_line = 87
- _st_.inline(8, latex(displayProblem))
+ _st_.current_tex_line = 89
+ _st_.inline(8, latex(populations[0]))
 except:
- _st_.goboom(87)
+ _st_.goboom(89)
 try:
- _st_.current_tex_line = 87
- _st_.inline(9, latex(choices[0]))
+ _st_.current_tex_line = 89
+ _st_.inline(9, latex(populations[1]))
 except:
- _st_.goboom(87)
+ _st_.goboom(89)
 try:
- _st_.current_tex_line = 87
- _st_.inline(10, latex(choices[1]))
+ _st_.current_tex_line = 89
+ _st_.inline(10, latex(populations[2]))
 except:
- _st_.goboom(87)
+ _st_.goboom(89)
 try:
- _st_.current_tex_line = 87
- _st_.inline(11, latex(choices[2]))
+ _st_.current_tex_line = 89
+ _st_.inline(11, latex(populations[3]))
 except:
- _st_.goboom(87)
+ _st_.goboom(89)
 try:
- _st_.current_tex_line = 87
- _st_.inline(12, latex(choices[3]))
+ _st_.current_tex_line = 89
+ _st_.inline(12, latex(populations[4]))
 except:
- _st_.goboom(87)
+ _st_.goboom(89)
 try:
- _st_.current_tex_line = 87
- _st_.inline(13, latex(choices[4]))
+ _st_.current_tex_line = 89
+ _st_.inline(13, latex(populations[5]))
 except:
- _st_.goboom(87)
-_st_.current_tex_line = 89
+ _st_.goboom(89)
+try:
+ _st_.current_tex_line = 89
+ _st_.inline(14, latex(populations[6]))
+except:
+ _st_.goboom(89)
+try:
+ _st_.current_tex_line = 89
+ _st_.inline(15, latex(populations[7]))
+except:
+ _st_.goboom(89)
+try:
+ _st_.current_tex_line = 89
+ _st_.inline(16, latex(populations[8]))
+except:
+ _st_.goboom(89)
+try:
+ _st_.current_tex_line = 89
+ _st_.inline(17, latex(choices[0]))
+except:
+ _st_.goboom(89)
+try:
+ _st_.current_tex_line = 89
+ _st_.inline(18, latex(choices[1]))
+except:
+ _st_.goboom(89)
+try:
+ _st_.current_tex_line = 89
+ _st_.inline(19, latex(choices[2]))
+except:
+ _st_.goboom(89)
+try:
+ _st_.current_tex_line = 89
+ _st_.inline(20, latex(choices[3]))
+except:
+ _st_.goboom(89)
+try:
+ _st_.current_tex_line = 89
+ _st_.inline(21, latex(choices[4]))
+except:
+ _st_.goboom(89)
+_st_.current_tex_line = 91
 _st_.blockbegin()
 try:
  moduleNumber="9M"
  problemNumber=43
- load("../Code/09modelingLinear/domainLinearModel.sage")
+ load("../Code/09modelingLinear/constructLinearModelDistanceAndRate.sage")
 except:
- _st_.goboom(93)
+ _st_.goboom(95)
 _st_.blockend()
 try:
- _st_.current_tex_line = 108
- _st_.inline(14, latex(displayStem))
+ _st_.current_tex_line = 110
+ _st_.inline(22, latex(displayStem))
 except:
- _st_.goboom(108)
+ _st_.goboom(110)
 try:
- _st_.current_tex_line = 108
- _st_.inline(15, latex(displayProblem))
+ _st_.current_tex_line = 110
+ _st_.inline(23, latex(displayProblem))
 except:
- _st_.goboom(108)
+ _st_.goboom(110)
 try:
- _st_.current_tex_line = 108
- _st_.inline(16, latex(choices[0]))
+ _st_.current_tex_line = 110
+ _st_.inline(24, latex(choices[0]))
 except:
- _st_.goboom(108)
+ _st_.goboom(110)
 try:
- _st_.current_tex_line = 108
- _st_.inline(17, latex(choices[1]))
+ _st_.current_tex_line = 110
+ _st_.inline(25, latex(choices[1]))
 except:
- _st_.goboom(108)
+ _st_.goboom(110)
 try:
- _st_.current_tex_line = 108
- _st_.inline(18, latex(choices[2]))
+ _st_.current_tex_line = 110
+ _st_.inline(26, latex(choices[2]))
 except:
- _st_.goboom(108)
+ _st_.goboom(110)
 try:
- _st_.current_tex_line = 108
- _st_.inline(19, latex(choices[3]))
+ _st_.current_tex_line = 110
+ _st_.inline(27, latex(choices[3]))
 except:
- _st_.goboom(108)
+ _st_.goboom(110)
 try:
- _st_.current_tex_line = 108
- _st_.inline(20, latex(choices[4]))
+ _st_.current_tex_line = 110
+ _st_.inline(28, latex(choices[4]))
 except:
- _st_.goboom(108)
-_st_.current_tex_line = 110
+ _st_.goboom(110)
+_st_.current_tex_line = 112
 _st_.blockbegin()
 try:
-   moduleNumber="9M"
-   problemNumber=44
-   load("../Code/09modelingLinear/identifyModelPopulation.sage")
-   
+ moduleNumber="9M"
+ problemNumber=44
+ load("../Code/09modelingLinear/constructLinearModelCostsProfitsRevenue.sage")
 except:
- _st_.goboom(114)
+ _st_.goboom(116)
 _st_.blockend()
 try:
  _st_.current_tex_line = 131
- _st_.inline(21, latex(displayStem))
+ _st_.inline(29, latex(displayStem))
 except:
  _st_.goboom(131)
 try:
  _st_.current_tex_line = 131
- _st_.inline(22, latex(populations[0]))
-except:
- _st_.goboom(131)
-try:
- _st_.current_tex_line = 131
- _st_.inline(23, latex(populations[1]))
-except:
- _st_.goboom(131)
-try:
- _st_.current_tex_line = 131
- _st_.inline(24, latex(populations[2]))
-except:
- _st_.goboom(131)
-try:
- _st_.current_tex_line = 131
- _st_.inline(25, latex(populations[3]))
-except:
- _st_.goboom(131)
-try:
- _st_.current_tex_line = 131
- _st_.inline(26, latex(populations[4]))
-except:
- _st_.goboom(131)
-try:
- _st_.current_tex_line = 131
- _st_.inline(27, latex(populations[5]))
-except:
- _st_.goboom(131)
-try:
- _st_.current_tex_line = 131
- _st_.inline(28, latex(populations[6]))
-except:
- _st_.goboom(131)
-try:
- _st_.current_tex_line = 131
- _st_.inline(29, latex(populations[7]))
-except:
- _st_.goboom(131)
-try:
- _st_.current_tex_line = 131
- _st_.inline(30, latex(populations[8]))
+ _st_.inline(30, latex(displayProblem))
 except:
  _st_.goboom(131)
 try:
@@ -235,7 +235,7 @@ _st_.blockbegin()
 try:
  moduleNumber="9M"
  problemNumber=45
- load("../Code/09modelingLinear/constructLinearModelMixture.sage")
+ load("../Code/09modelingLinear/domainLinearModel.sage")
 except:
  _st_.goboom(137)
 _st_.blockend()

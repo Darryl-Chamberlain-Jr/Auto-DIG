@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.8.30)  30 JUL 2020 14:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.8.30)  3 AUG 2020 12:21
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -521,12 +521,15 @@ LaTeX Font Info:    Try loading font information for U+lasy on input line 21.
 (/usr/share/texlive/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-<../Figures/polyGraphToFunctionC.png, id=6, 497.2176pt x 364.2408pt>
-File: ../Figures/polyGraphToFunctionC.png Graphic file (type png)
-<use ../Figures/polyGraphToFunctionC.png>
-Package pdftex.def Info: ../Figures/polyGraphToFunctionC.png  used on input lin
-e 48.
-(pdftex.def)             Requested size: 140.92793pt x 103.23724pt.
+<../Figures/polyZeroBehaviorBC.png, id=6, 133.24782pt x 161.10187pt>
+File: ../Figures/polyZeroBehaviorBC.png Graphic file (type png)
+<use ../Figures/polyZeroBehaviorBC.png>
+Package pdftex.def Info: ../Figures/polyZeroBehaviorBC.png  used on input line 
+52.
+(pdftex.def)             Requested size: 140.92793pt x 170.40334pt.
+
+Underfull \vbox (badness 3525) has occurred while \output is active []
+
 
 
 Package Fancyhdr Warning: \headheight is too small (0.0pt): 
@@ -536,13 +539,30 @@ Package Fancyhdr Warning: \headheight is too small (0.0pt):
 
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
- <../Figures/polyGraphToFunctionC.png>]
-<../Figures/polyEndBehaviorAC.png, id=27, 182.18062pt x 204.01219pt>
-File: ../Figures/polyEndBehaviorAC.png Graphic file (type png)
-<use ../Figures/polyEndBehaviorAC.png>
-Package pdftex.def Info: ../Figures/polyEndBehaviorAC.png  used on input line 1
-05.
-(pdftex.def)             Requested size: 140.92793pt x 157.82141pt.
+]
+<../Figures/polyZeroBehaviorAC.png, id=25, 90.3375pt x 103.88812pt>
+File: ../Figures/polyZeroBehaviorAC.png Graphic file (type png)
+<use ../Figures/polyZeroBehaviorAC.png>
+Package pdftex.def Info: ../Figures/polyZeroBehaviorAC.png  used on input line 
+55.
+(pdftex.def)             Requested size: 140.92793pt x 162.08224pt.
+File: ../Figures/polyZeroBehaviorBC.png Graphic file (type png)
+<use ../Figures/polyZeroBehaviorBC.png>
+Package pdftex.def Info: ../Figures/polyZeroBehaviorBC.png  used on input line 
+55.
+(pdftex.def)             Requested size: 140.92793pt x 170.40334pt.
+<../Figures/polyZeroBehaviorCC.png, id=26, 90.3375pt x 103.88812pt>
+File: ../Figures/polyZeroBehaviorCC.png Graphic file (type png)
+<use ../Figures/polyZeroBehaviorCC.png>
+Package pdftex.def Info: ../Figures/polyZeroBehaviorCC.png  used on input line 
+58.
+(pdftex.def)             Requested size: 140.92793pt x 162.08224pt.
+<../Figures/polyZeroBehaviorDC.png, id=27, 90.3375pt x 103.88812pt>
+File: ../Figures/polyZeroBehaviorDC.png Graphic file (type png)
+<use ../Figures/polyZeroBehaviorDC.png>
+Package pdftex.def Info: ../Figures/polyZeroBehaviorDC.png  used on input line 
+58.
+(pdftex.def)             Requested size: 140.92793pt x 162.08224pt.
 
 
 Package Fancyhdr Warning: \headheight is too small (0.0pt): 
@@ -550,29 +570,50 @@ Package Fancyhdr Warning: \headheight is too small (0.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[2]
-File: ../Figures/polyEndBehaviorAC.png Graphic file (type png)
-<use ../Figures/polyEndBehaviorAC.png>
-Package pdftex.def Info: ../Figures/polyEndBehaviorAC.png  used on input line 1
-08.
-(pdftex.def)             Requested size: 140.92793pt x 157.82141pt.
-<../Figures/polyEndBehaviorBC.png, id=41, 184.43906pt x 124.21407pt>
+[2 <../Figures/polyZeroBehaviorBC.png> <../Figures/polyZeroBehaviorAC.png> <../
+Figures/polyZeroBehaviorCC.png> <../Figures/polyZeroBehaviorDC.png>]
+<../Figures/polyGraphToFunctionC.png, id=37, 508.7808pt x 372.1905pt>
+File: ../Figures/polyGraphToFunctionC.png Graphic file (type png)
+<use ../Figures/polyGraphToFunctionC.png>
+Package pdftex.def Info: ../Figures/polyGraphToFunctionC.png  used on input lin
+e 76.
+(pdftex.def)             Requested size: 140.92793pt x 103.09383pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (0.0pt): 
+ Make it at least 12.0pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[3 <../Figures/polyGraphToFunctionC.png>]
+<../Figures/polyEndBehaviorBC.png, id=52, 184.43906pt x 124.21407pt>
 File: ../Figures/polyEndBehaviorBC.png Graphic file (type png)
 <use ../Figures/polyEndBehaviorBC.png>
 Package pdftex.def Info: ../Figures/polyEndBehaviorBC.png  used on input line 1
-08.
+33.
 (pdftex.def)             Requested size: 140.92793pt x 94.90971pt.
-<../Figures/polyEndBehaviorCC.png, id=42, 180.675pt x 127.22531pt>
+<../Figures/polyEndBehaviorAC.png, id=53, 182.18062pt x 204.01219pt>
+File: ../Figures/polyEndBehaviorAC.png Graphic file (type png)
+<use ../Figures/polyEndBehaviorAC.png>
+Package pdftex.def Info: ../Figures/polyEndBehaviorAC.png  used on input line 1
+36.
+(pdftex.def)             Requested size: 140.92793pt x 157.82141pt.
+File: ../Figures/polyEndBehaviorBC.png Graphic file (type png)
+<use ../Figures/polyEndBehaviorBC.png>
+Package pdftex.def Info: ../Figures/polyEndBehaviorBC.png  used on input line 1
+36.
+(pdftex.def)             Requested size: 140.92793pt x 94.90971pt.
+<../Figures/polyEndBehaviorCC.png, id=54, 180.675pt x 127.22531pt>
 File: ../Figures/polyEndBehaviorCC.png Graphic file (type png)
 <use ../Figures/polyEndBehaviorCC.png>
 Package pdftex.def Info: ../Figures/polyEndBehaviorCC.png  used on input line 1
-11.
+39.
 (pdftex.def)             Requested size: 140.92793pt x 99.23727pt.
-<../Figures/polyEndBehaviorDC.png, id=43, 179.92218pt x 213.04594pt>
+<../Figures/polyEndBehaviorDC.png, id=55, 179.92218pt x 213.04594pt>
 File: ../Figures/polyEndBehaviorDC.png Graphic file (type png)
 <use ../Figures/polyEndBehaviorDC.png>
 Package pdftex.def Info: ../Figures/polyEndBehaviorDC.png  used on input line 1
-11.
+39.
 (pdftex.def)             Requested size: 140.92793pt x 166.88708pt.
 
 
@@ -581,46 +622,8 @@ Package Fancyhdr Warning: \headheight is too small (0.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[3 <../Figures/polyEndBehaviorAC.png> <../Figures/polyEndBehaviorBC.png> <../Fi
+[4 <../Figures/polyEndBehaviorBC.png> <../Figures/polyEndBehaviorAC.png> <../Fi
 gures/polyEndBehaviorCC.png> <../Figures/polyEndBehaviorDC.png>]
-<../Figures/polyZeroBehaviorAC.png, id=56, 90.3375pt x 103.88812pt>
-File: ../Figures/polyZeroBehaviorAC.png Graphic file (type png)
-<use ../Figures/polyZeroBehaviorAC.png>
-Package pdftex.def Info: ../Figures/polyZeroBehaviorAC.png  used on input line 
-133.
-(pdftex.def)             Requested size: 140.92793pt x 162.08224pt.
-File: ../Figures/polyZeroBehaviorAC.png Graphic file (type png)
-<use ../Figures/polyZeroBehaviorAC.png>
-Package pdftex.def Info: ../Figures/polyZeroBehaviorAC.png  used on input line 
-136.
-(pdftex.def)             Requested size: 140.92793pt x 162.08224pt.
-<../Figures/polyZeroBehaviorBC.png, id=57, 133.24782pt x 161.10187pt>
-File: ../Figures/polyZeroBehaviorBC.png Graphic file (type png)
-<use ../Figures/polyZeroBehaviorBC.png>
-Package pdftex.def Info: ../Figures/polyZeroBehaviorBC.png  used on input line 
-136.
-(pdftex.def)             Requested size: 140.92793pt x 170.40334pt.
-<../Figures/polyZeroBehaviorCC.png, id=58, 90.3375pt x 103.88812pt>
-File: ../Figures/polyZeroBehaviorCC.png Graphic file (type png)
-<use ../Figures/polyZeroBehaviorCC.png>
-Package pdftex.def Info: ../Figures/polyZeroBehaviorCC.png  used on input line 
-139.
-(pdftex.def)             Requested size: 140.92793pt x 162.08224pt.
-<../Figures/polyZeroBehaviorDC.png, id=59, 90.3375pt x 103.88812pt>
-File: ../Figures/polyZeroBehaviorDC.png Graphic file (type png)
-<use ../Figures/polyZeroBehaviorDC.png>
-Package pdftex.def Info: ../Figures/polyZeroBehaviorDC.png  used on input line 
-139.
-(pdftex.def)             Requested size: 140.92793pt x 162.08224pt.
-
-
-Package Fancyhdr Warning: \headheight is too small (0.0pt): 
- Make it at least 12.0pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[4 <../Figures/polyZeroBehaviorAC.png> <../Figures/polyZeroBehaviorBC.png> <../
-Figures/polyZeroBehaviorCC.png> <../Figures/polyZeroBehaviorDC.png>]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 157.
 
 
@@ -659,7 +662,7 @@ e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texli
 ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf
 -dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/
 fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on keyModule6C.pdf (5 pages, 129301 bytes).
+Output written on keyModule6C.pdf (5 pages, 130715 bytes).
 PDF statistics:
  100 PDF objects out of 1000 (max. 8388607)
  71 compressed objects within 1 object stream
