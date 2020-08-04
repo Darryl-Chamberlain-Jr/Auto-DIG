@@ -1,0 +1,8 @@
+This starts the report on Progress Exam 1.
+
+Module 1 Version A took 15 seconds to run.
+Module 1 Version B took 16 seconds to run.
+Module 1 Version C took 5 seconds to run.
+
+The exam finished running at 17:13 on 08/03/2020. It took 0 minutes and 37 seconds.
+

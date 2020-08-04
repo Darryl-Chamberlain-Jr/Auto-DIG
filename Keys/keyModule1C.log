@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.8.30)  3 AUG 2020 12:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.8.30)  3 AUG 2020 17:13
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -537,7 +537,7 @@ Package Fancyhdr Warning: \headheight is too small (0.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [2]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 156.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 158.
 
 
 Package Fancyhdr Warning: \headheight is too small (0.0pt): 
@@ -546,10 +546,10 @@ Package Fancyhdr Warning: \headheight is too small (0.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [3]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 156.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 158.
  (./keyModule1C.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 156.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 156.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 158.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 158.
 
 
 Package rerunfilecheck Warning: File `keyModule1C.out' has changed.
@@ -559,12 +559,12 @@ Package rerunfilecheck Warning: File `keyModule1C.out' has changed.
 Package rerunfilecheck Info: Checksums for `keyModule1C.out':
 (rerunfilecheck)             Before: <no file>
 (rerunfilecheck)             After:  D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 156.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 158.
  ) 
 Here is how much of TeX's memory you used:
  7762 strings out of 492982
  114949 string characters out of 6134896
- 215473 words of memory out of 5000000
+ 214465 words of memory out of 5000000
  11204 multiletter control sequences out of 15000+600000
  6624 words of font info for 28 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -576,7 +576,7 @@ ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/
 fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/
 type1/public/amsfonts/cm/cmti10.pfb>
-Output written on keyModule1C.pdf (3 pages, 94394 bytes).
+Output written on keyModule1C.pdf (3 pages, 95365 bytes).
 PDF statistics:
  82 PDF objects out of 1000 (max. 8388607)
  69 compressed objects within 1 object stream

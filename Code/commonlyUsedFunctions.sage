@@ -18,6 +18,18 @@ def greatestCommonDenominator(a, b):
         a = temp
     return abs(a)
 
+def displayComplexFactor(complexCoefficients):
+    a, b = complexCoefficients
+    if b == -1:
+        displayFactor = "%d - i" %a
+    elif b == 1:
+        displayFactor = "%d + i" %a
+    elif b < 0:
+        displayFactor = "%d - %d i" %(a, -b)
+    else:
+        displayFactor = "%d + %d i" %(a, b)
+    return displayFactor
+
 # Takes the options available and the comments as they are assigned to each option before shuffle. *radicalEquationToGraph.sage* has a good example.
 def commentsForGraphs(unshuffledOptionList, optionList, shuffledComments):
     if len(optionList) == 4:

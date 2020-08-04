@@ -4,11 +4,11 @@ Questions are generated using *createBasicStructure* function in shell script un
 Image naming convention: ${CodeName}${OptionLetter}${Version}.png
 
 01realComplex
-1   divideComplex
-2   multiplyComplex # Include non-integers in a,b
+1   divideComplex - Revised to template
+2   multiplyComplex
 3   orderOfOperations # Include more structures targeting misconceptions.
 4   subgroupComplex
-5   subgroupReal
+5   subgroupReal - Revised to template
 
 02linear
 6   linearGraphToStandard # Revise graph
