@@ -1,12 +1,3 @@
-from sympy import *
-import numpy
-import random
-import math
-from decimal import Decimal
-import decimal
-import traceback
-import cmath
-
 ### These functions are used to automatically generate the intervals that disguise option values. Comments will be added to these in the future.
 
 def listToFloats(listOfNumbers):

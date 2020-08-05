@@ -95,5 +95,11 @@ choiceComments = [answerList[0][1], answerList[1][1], answerList[2][1], answerLi
 answerLetterIndicators = [answerList[0][2], answerList[1][2], answerList[2][2], answerList[3][2], answerList[4][2]]
 answerLetter = identifyAnswerLetter(answerLetterIndicators)
 
+### DEFINE XRONOS VARIABLES ###
+xronosSolution = complex(solutionList[0][0], solutionList[0][1])
+xronosDistractors = [displayDistractor1, displayDistractor2]
+displayXronosStem = "Simplify the expression below into the form $a+bi$."
+xronosHint="Multiply the numerator and denominator by the *conjugate* of the denominator, then simplify. For example, if we have $2+3i$, the conjugate is $2-3i$. \n \n \\textbf{Specific hints:} \n Did you get $%s$? If so, you divided the first term of the numerator by the first term of the denominator and the second term of the numerator by the second term of the denominator. Division across multiple factors does not work in this fashion, the same way that $\\frac{21x+6}{7x+3}$ does not reduce to $3x+2$. \n \n Did you get $%s$? If so, you multiplied the top and bottom by the denominator, not its conjugate, but you cancelled the imaginary parts of the denominator as if you had multiplied by the conjugate." %(xronosDistractors[0], xronosDistractors[1])
+
 ### WRITE TO KEY ###
 writeToKey(keyFileName, version, problemNumber, displayStem, "MathMode", displayProblem, "MathMode", displaySolution, answerLetter, choices, choiceComments, generalComment)

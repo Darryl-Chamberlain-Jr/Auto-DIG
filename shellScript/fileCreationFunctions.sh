@@ -74,7 +74,8 @@ function createExamHeading {
 \pagestyle{fancy}
 
 \begin{sagesilent}
-load("../Code/generalPurposeMethods.sage")
+load("../Code/pythonImports.sage")
+load("../Code/intervalMaskingMethod.sage")
 load("../Code/keyGeneration.sage")
 load("../Code/commonlyUsedFunctions.sage")
 keyFileName = "${FileName}"
@@ -127,7 +128,8 @@ function createFinalExamHeading {
 \pagestyle{fancy}
 
 \begin{sagesilent}
-load("../Code/generalPurposeMethods.sage")
+load("../Code/pythonImports.sage")
+load("../Code/intervalMaskingMethod.sage")
 load("../Code/keyGeneration.sage")
 load("../Code/commonlyUsedFunctions.sage")
 keyFileName = "${FileName}"
