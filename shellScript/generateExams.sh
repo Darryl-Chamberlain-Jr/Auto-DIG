@@ -1,7 +1,7 @@
 # This script generates exams.
 
 ### CHANGE THIS ONCE ###
-DIR="home/archdoc/git-repos/AAG-College-Algebra"
+DIR="home/dchamberlain31/git-repos/AAG-College-Algebra"
 ###############################################
 StartTime=$( date +'%s' )
 function createQuestion {
