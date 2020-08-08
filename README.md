@@ -2,7 +2,7 @@ Welcome!
 ========
 This repository is a **work-in-progress** on automatically generating assessments in a College Algebra course. By *automatically*, we mean that assessments are generated (via a combination of technology) with little input from the user. This is achieved by front-loading the creation of question structures and associated conceptions/errors that are later called by a shell script to create PDF versions of assessments for instructors to utilize in the classroom. Published and under-review articles on this project are housed [here](Articles). The related project, an open-source College Algebra online homework system, is housed [here](https://github.com/Darryl-Chamberlain-Jr/mac1105summer2020).
 
-**No coding experience is required to use this work as-is.** If you would like to generate exams through the shell scripts, here is what you will need to do **the first time**. *On subsequent assessments, you'll only need to complete steps 4 and 5.*
+**No coding experience is required to use this work as-is.** If you would like to generate exams through the shell scripts, here is what you will need to do **the first time**. *On subsequent assessments, you'll only need to complete steps 4 and 5.* This is currently available in Linux only for now, but will eventually include scripts for Windows and MacOS.
 
 Steps to generate exams for the first time.
 ------
@@ -20,9 +20,9 @@ Steps to generate exams for the first time.
     3. Modify the *DIR* to point to your local directory. Example: *home/yourUsername/git-repos/AAG-College-Algebra*
 
 4. Run the shell script *generateExams.sh*
-    1. Open your command prompt/terminal and navigate to the shellScript folder.
+    1. Open your terminal and navigate to the shellScript folder.
 
-       You can achieve this by typing *cd ./git-repos/AAG-Colege-Algebra/shellScript*
+       If you created the *git-repo* folder in your home directory as we suggested, you can navigate to the *generateExams.sh* shell script with *cd ./git-repos/Auto-DIG/shellScript*
 
     2. Run the shell script.
 
