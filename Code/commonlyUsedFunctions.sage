@@ -1,4 +1,11 @@
-# Commonly used to find the GCF of two integers.
+def findMinDiff(array):
+    minDiff = 10**10
+    n = len(array)
+    for i in range(n-1):
+        for j in range(i+1,n):
+            if abs(array[i]-array[j]) < minDiff:
+                minDiff = abs(array[i] - array[j])
+    return minDiff
 
 def identifyAnswerLetter(identifierList):
     answerIndex = 0
@@ -25,9 +32,9 @@ def displayComplexFactor(complexCoefficients):
     elif b == 1:
         displayFactor = "%d + i" %a
     elif b < 0:
-        displayFactor = "%d - %d i" %(a, -b)
+        displayFactor = "%d - %d i" %(a,-b)
     else:
-        displayFactor = "%d + %d i" %(a, b)
+        displayFactor = "%d + %d i" %(a,b)
     return displayFactor
 
 # Takes the options available and the comments as they are assigned to each option before shuffle. *radicalEquationToGraph.sage* has a good example.
@@ -48,7 +55,6 @@ def commentsForGraphs(unshuffledOptionList, optionList, shuffledComments):
 
 # Checks if the solution and distractors are "Distinct". If not, returns "Copies".
 def checkUnique(values):
-    # DARRYL COMMENT: Could this be rewritten to check that len(setInQuestion) == len(set(setInQuestion))?
     if len(values) == len(set(values)):
         return "Distinct"
     else:
@@ -63,7 +69,7 @@ def generateTerms(coefficients):
         elif coefficients[i] == -1:
             terms = ["-x"]
         else:
-            terms = ["%sx" %(coefficients[0])]
+            terms = ["%sx" %coefficients[0]]
     elif len(coefficients) == 1:
         terms = ["%s" %coefficients[0]]
     else:

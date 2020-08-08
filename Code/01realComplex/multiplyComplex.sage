@@ -25,7 +25,7 @@ def generateSolutionAndDistractors(coefficients):
     distractor3Product = complex(a1, -b1)*complex(a2, -b2)
     distractor3 = [int(distractor3Product.real), int(distractor3Product.imag)]
     distractor4Product = complex(a1*a2, b1*b2)
-    distractor4 = [distractor4Product.real, distractor4Product.imag]
+    distractor4 = [int(distractor4Product.real), int(distractor4Product.imag)]
     return [solution, distractor1, distractor2, distractor3, distractor4]
 
 ### VARIABLE DECLARATIONS ###
@@ -70,4 +70,4 @@ displayXronosStem = "Simplify the expression below into the form $a+bi$."
 xronosHint="You can treat $i$ as a variable and distribute. Just remember that $i^2=-1$, so you can continue to reduce after you distribute."
 
 ### WRITE TO KEY ###
-writeToKey(HWorEXAM, keyFileName, version, problemNumber, displayStem, "MathMode", displayProblem, "MathMode", displaySolution, answerLetter, choices, choiceComments, generalComment)
+writeToKey(keyFileName, version, problemNumber, displayStem, "MathMode", displayProblem, "MathMode", displaySolution, answerLetter, choices, choiceComments, generalComment)

@@ -34,16 +34,6 @@ def simplifyFraction(numerator, denominator):
     gcd = greatestCommonDenominator(numerator, denominator)
     return [numerator/gcd, denominator/gcd]
 
-def checkInterval(interval, solution):
-    solution = float(solution)
-    #The inputs of this function are the list of intervals for the distractor solutions and the list of solutions.
-    isPermissible = False
-    leftPoint = interval[0]
-    rightPoint = interval[1]
-    if(not (solution <= rightPoint and solution >= leftPoint)):
-        isPermissible = True
-    return isPermissible
-
 def createInterval(solution, intervalRange, precision = None):
     if(precision == None):
         leftPoint = round(solution - math.floor(abs(random.gauss(0, intervalRange/2))), 2)

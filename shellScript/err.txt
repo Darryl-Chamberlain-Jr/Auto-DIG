@@ -1,0 +1,307 @@
+Traceback (most recent call last):
+  File "/home/dchamberlain31/git-repos/AAG-College-Algebra/buildExams/Module1B.sagetex.sage.py", line 71, in <module>
+    load("../Code/01realComplex/divideComplex.sage")
+  File "sage/misc/persist.pyx", line 144, in sage.misc.persist.load (build/cythonized/sage/misc/persist.c:2538)
+    sage.repl.load.load(filename, globals())
+  File "/usr/lib/python3/dist-packages/sage/repl/load.py", line 272, in load
+    exec(preparse_file(f.read()) + "\n", globals)
+  File "<string>", line 64, in <module>
+  File "<string>", line 127, in createIntervalOptions
+  File "<string>", line 95, in createDisjointIntervalList
+  File "<string>", line 84, in createIntervalList
+  File "<string>", line 58, in createInterval
+  File "<string>", line 42, in createInterval
+  File "<string>", line 42, in createInterval
+  File "<string>", line 42, in createInterval
+  [Previous line repeated 2966 more times]
+  File "<string>", line 39, in createInterval
+  File "/usr/lib/python3.8/random.py", line 653, in gauss
+    return mu + z*sigma
+  File "/usr/lib/python3/dist-packages/sympy/core/decorators.py", line 91, in __sympifyit_wrapper
+    return func(a, b)
+  File "/usr/lib/python3/dist-packages/sympy/core/decorators.py", line 129, in binary_op_wrapper
+    return func(self, other)
+  File "/usr/lib/python3/dist-packages/sympy/core/expr.py", line 201, in __rmul__
+    return Mul(other, self)
+  File "/usr/lib/python3/dist-packages/sympy/core/cache.py", line 94, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/usr/lib/python3/dist-packages/sympy/core/operations.py", line 47, in __new__
+    c_part, nc_part, order_symbols = cls.flatten(args)
+  File "/usr/lib/python3/dist-packages/sympy/core/mul.py", line 280, in flatten
+    coeff *= o
+  File "/usr/lib/python3/dist-packages/sympy/core/numbers.py", line 2213, in __mul__
+    return Rational.__mul__(self, other)
+  File "/usr/lib/python3/dist-packages/sympy/core/decorators.py", line 91, in __sympifyit_wrapper
+    return func(a, b)
+  File "/usr/lib/python3/dist-packages/sympy/core/numbers.py", line 1746, in __mul__
+    return other*self
+  File "/usr/lib/python3/dist-packages/sympy/core/decorators.py", line 91, in __sympifyit_wrapper
+    return func(a, b)
+  File "/usr/lib/python3/dist-packages/sympy/core/numbers.py", line 1311, in __mul__
+    rhs, prec = other._as_mpf_op(self._prec)
+  File "/usr/lib/python3/dist-packages/sympy/core/numbers.py", line 671, in _as_mpf_op
+    return self._as_mpf_val(prec), prec
+  File "/usr/lib/python3/dist-packages/sympy/core/numbers.py", line 2080, in _as_mpf_val
+    return mlib.from_int(self.p, prec, rnd)
+  File "/usr/lib/python3/dist-packages/mpmath/libmp/libmpf.py", line 336, in from_int
+    return from_man_exp(n, 0, prec, rnd)
+  File "sage/libs/mpmath/utils.pyx", line 81, in sage.libs.mpmath.utils.from_man_exp (build/cythonized/sage/libs/mpmath/utils.c:3839)
+    cpdef from_man_exp(man, exp, long prec = 0, str rnd = 'd'):
+  File "sage/libs/mpmath/utils.pyx", line 100, in sage.libs.mpmath.utils.from_man_exp (build/cythonized/sage/libs/mpmath/utils.c:3611)
+    res = Integer(man)
+RecursionError: maximum recursion depth exceeded while calling a Python object
+./generateExams.sh: line 336: 1: command not found
+Traceback (most recent call last):
+  File "/home/dchamberlain31/git-repos/AAG-College-Algebra/buildExams/Module1C.sagetex.sage.py", line 159, in <module>
+    load("../Code/01realComplex/divideComplex.sage")
+  File "sage/misc/persist.pyx", line 144, in sage.misc.persist.load (build/cythonized/sage/misc/persist.c:2538)
+    sage.repl.load.load(filename, globals())
+  File "/usr/lib/python3/dist-packages/sage/repl/load.py", line 272, in load
+    exec(preparse_file(f.read()) + "\n", globals)
+  File "<string>", line 64, in <module>
+  File "<string>", line 127, in createIntervalOptions
+  File "<string>", line 95, in createDisjointIntervalList
+  File "<string>", line 84, in createIntervalList
+  File "<string>", line 58, in createInterval
+  File "<string>", line 42, in createInterval
+  File "<string>", line 42, in createInterval
+  File "<string>", line 42, in createInterval
+  [Previous line repeated 2966 more times]
+  File "<string>", line 39, in createInterval
+  File "/usr/lib/python3.8/random.py", line 653, in gauss
+    return mu + z*sigma
+  File "/usr/lib/python3/dist-packages/sympy/core/decorators.py", line 91, in __sympifyit_wrapper
+    return func(a, b)
+  File "/usr/lib/python3/dist-packages/sympy/core/decorators.py", line 129, in binary_op_wrapper
+    return func(self, other)
+  File "/usr/lib/python3/dist-packages/sympy/core/expr.py", line 201, in __rmul__
+    return Mul(other, self)
+  File "/usr/lib/python3/dist-packages/sympy/core/cache.py", line 94, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/usr/lib/python3/dist-packages/sympy/core/operations.py", line 47, in __new__
+    c_part, nc_part, order_symbols = cls.flatten(args)
+  File "/usr/lib/python3/dist-packages/sympy/core/mul.py", line 280, in flatten
+    coeff *= o
+  File "/usr/lib/python3/dist-packages/sympy/core/numbers.py", line 2213, in __mul__
+    return Rational.__mul__(self, other)
+  File "/usr/lib/python3/dist-packages/sympy/core/decorators.py", line 91, in __sympifyit_wrapper
+    return func(a, b)
+  File "/usr/lib/python3/dist-packages/sympy/core/numbers.py", line 1746, in __mul__
+    return other*self
+  File "/usr/lib/python3/dist-packages/sympy/core/decorators.py", line 91, in __sympifyit_wrapper
+    return func(a, b)
+  File "/usr/lib/python3/dist-packages/sympy/core/numbers.py", line 1311, in __mul__
+    rhs, prec = other._as_mpf_op(self._prec)
+  File "/usr/lib/python3/dist-packages/sympy/core/numbers.py", line 671, in _as_mpf_op
+    return self._as_mpf_val(prec), prec
+  File "/usr/lib/python3/dist-packages/sympy/core/numbers.py", line 2080, in _as_mpf_val
+    return mlib.from_int(self.p, prec, rnd)
+  File "/usr/lib/python3/dist-packages/mpmath/libmp/libmpf.py", line 336, in from_int
+    return from_man_exp(n, 0, prec, rnd)
+  File "sage/libs/mpmath/utils.pyx", line 81, in sage.libs.mpmath.utils.from_man_exp (build/cythonized/sage/libs/mpmath/utils.c:3839)
+    cpdef from_man_exp(man, exp, long prec = 0, str rnd = 'd'):
+  File "sage/libs/mpmath/utils.pyx", line 100, in sage.libs.mpmath.utils.from_man_exp (build/cythonized/sage/libs/mpmath/utils.c:3611)
+    res = Integer(man)
+RecursionError: maximum recursion depth exceeded while calling a Python object
+./generateExams.sh: line 336: 1: command not found
+<string>:76: MatplotlibDeprecationWarning: Adding an axes using the same arguments as a previous axes currently reuses the earlier instance.  In a future version, a new instance will always be created and returned.  Meanwhile, this warning can be suppressed, and the future behavior ensured, by passing a unique label to each axes instance.
+<string>:79: MatplotlibDeprecationWarning: Adding an axes using the same arguments as a previous axes currently reuses the earlier instance.  In a future version, a new instance will always be created and returned.  Meanwhile, this warning can be suppressed, and the future behavior ensured, by passing a unique label to each axes instance.
+<string>:76: MatplotlibDeprecationWarning: Adding an axes using the same arguments as a previous axes currently reuses the earlier instance.  In a future version, a new instance will always be created and returned.  Meanwhile, this warning can be suppressed, and the future behavior ensured, by passing a unique label to each axes instance.
+<string>:79: MatplotlibDeprecationWarning: Adding an axes using the same arguments as a previous axes currently reuses the earlier instance.  In a future version, a new instance will always be created and returned.  Meanwhile, this warning can be suppressed, and the future behavior ensured, by passing a unique label to each axes instance.
+<string>:76: MatplotlibDeprecationWarning: Adding an axes using the same arguments as a previous axes currently reuses the earlier instance.  In a future version, a new instance will always be created and returned.  Meanwhile, this warning can be suppressed, and the future behavior ensured, by passing a unique label to each axes instance.
+<string>:79: MatplotlibDeprecationWarning: Adding an axes using the same arguments as a previous axes currently reuses the earlier instance.  In a future version, a new instance will always be created and returned.  Meanwhile, this warning can be suppressed, and the future behavior ensured, by passing a unique label to each axes instance.
+<string>:36: MatplotlibDeprecationWarning: Adding an axes using the same arguments as a previous axes currently reuses the earlier instance.  In a future version, a new instance will always be created and returned.  Meanwhile, this warning can be suppressed, and the future behavior ensured, by passing a unique label to each axes instance.
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/sympy/core/compatibility.py", line 419, in as_int
+    raise TypeError
+TypeError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/dchamberlain31/git-repos/AAG-College-Algebra/buildExams/Module4A.sagetex.sage.py", line 174, in <module>
+    load("../Code/04quadratic/factorLeadingOver1Composite.sage")
+  File "sage/misc/persist.pyx", line 144, in sage.misc.persist.load (build/cythonized/sage/misc/persist.c:2538)
+    sage.repl.load.load(filename, globals())
+  File "/usr/lib/python3/dist-packages/sage/repl/load.py", line 272, in load
+    exec(preparse_file(f.read()) + "\n", globals)
+  File "<string>", line 90, in <module>
+  File "/usr/lib/python3/dist-packages/sympy/core/numbers.py", line 2248, in __eq__
+    return Rational.__eq__(self, other)
+  File "/usr/lib/python3/dist-packages/sympy/core/numbers.py", line 1906, in __eq__
+    integer_log(self.p//m, 2) == (t, True)
+  File "/usr/lib/python3/dist-packages/sympy/core/power.py", line 147, in integer_log
+    y = as_int(y)
+  File "/usr/lib/python3/dist-packages/sympy/core/compatibility.py", line 425, in as_int
+    raise ValueError('%s is not an integer' % (n,))
+ValueError: 1 is not an integer
+./generateExams.sh: line 336: 1: command not found
+<string>:36: MatplotlibDeprecationWarning: Adding an axes using the same arguments as a previous axes currently reuses the earlier instance.  In a future version, a new instance will always be created and returned.  Meanwhile, this warning can be suppressed, and the future behavior ensured, by passing a unique label to each axes instance.
+<string>:36: MatplotlibDeprecationWarning: Adding an axes using the same arguments as a previous axes currently reuses the earlier instance.  In a future version, a new instance will always be created and returned.  Meanwhile, this warning can be suppressed, and the future behavior ensured, by passing a unique label to each axes instance.
+<string>:68: DeprecationWarning: elementwise comparison failed; this will raise an error in the future.
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/sympy/core/compatibility.py", line 419, in as_int
+    raise TypeError
+TypeError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/dchamberlain31/git-repos/AAG-College-Algebra/buildExams/Module4B.sagetex.sage.py", line 155, in <module>
+    load("../Code/04quadratic/factorLeadingOver1Composite.sage")
+  File "sage/misc/persist.pyx", line 144, in sage.misc.persist.load (build/cythonized/sage/misc/persist.c:2538)
+    sage.repl.load.load(filename, globals())
+  File "/usr/lib/python3/dist-packages/sage/repl/load.py", line 272, in load
+    exec(preparse_file(f.read()) + "\n", globals)
+  File "<string>", line 108, in <module>
+  File "<string>", line 118, in generatePolynomialDisplay
+  File "<string>", line 68, in generateTerms
+  File "/usr/lib/python3/dist-packages/sympy/core/numbers.py", line 2248, in __eq__
+    return Rational.__eq__(self, other)
+  File "/usr/lib/python3/dist-packages/sympy/core/numbers.py", line 1906, in __eq__
+    integer_log(self.p//m, 2) == (t, True)
+  File "/usr/lib/python3/dist-packages/sympy/core/power.py", line 147, in integer_log
+    y = as_int(y)
+  File "/usr/lib/python3/dist-packages/sympy/core/compatibility.py", line 425, in as_int
+    raise ValueError('%s is not an integer' % (n,))
+ValueError: 1 is not an integer
+./generateExams.sh: line 336: 1: command not found
+<string>:36: MatplotlibDeprecationWarning: Adding an axes using the same arguments as a previous axes currently reuses the earlier instance.  In a future version, a new instance will always be created and returned.  Meanwhile, this warning can be suppressed, and the future behavior ensured, by passing a unique label to each axes instance.
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/sympy/core/compatibility.py", line 419, in as_int
+    raise TypeError
+TypeError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/dchamberlain31/git-repos/AAG-College-Algebra/buildExams/Module4C.sagetex.sage.py", line 27, in <module>
+    load("../Code/04quadratic/factorLeadingOver1Composite.sage")
+  File "sage/misc/persist.pyx", line 144, in sage.misc.persist.load (build/cythonized/sage/misc/persist.c:2538)
+    sage.repl.load.load(filename, globals())
+  File "/usr/lib/python3/dist-packages/sage/repl/load.py", line 272, in load
+    exec(preparse_file(f.read()) + "\n", globals)
+  File "<string>", line 90, in <module>
+  File "/usr/lib/python3/dist-packages/sympy/core/numbers.py", line 2248, in __eq__
+    return Rational.__eq__(self, other)
+  File "/usr/lib/python3/dist-packages/sympy/core/numbers.py", line 1906, in __eq__
+    integer_log(self.p//m, 2) == (t, True)
+  File "/usr/lib/python3/dist-packages/sympy/core/power.py", line 147, in integer_log
+    y = as_int(y)
+  File "/usr/lib/python3/dist-packages/sympy/core/compatibility.py", line 425, in as_int
+    raise ValueError('%s is not an integer' % (n,))
+ValueError: 1 is not an integer
+./generateExams.sh: line 336: 1: command not found
+<string>:36: MatplotlibDeprecationWarning: Adding an axes using the same arguments as a previous axes currently reuses the earlier instance.  In a future version, a new instance will always be created and returned.  Meanwhile, this warning can be suppressed, and the future behavior ensured, by passing a unique label to each axes instance.
+<string>:29: MatplotlibDeprecationWarning: Adding an axes using the same arguments as a previous axes currently reuses the earlier instance.  In a future version, a new instance will always be created and returned.  Meanwhile, this warning can be suppressed, and the future behavior ensured, by passing a unique label to each axes instance.
+<string>:25: MatplotlibDeprecationWarning: Adding an axes using the same arguments as a previous axes currently reuses the earlier instance.  In a future version, a new instance will always be created and returned.  Meanwhile, this warning can be suppressed, and the future behavior ensured, by passing a unique label to each axes instance.
+<string>:29: MatplotlibDeprecationWarning: Adding an axes using the same arguments as a previous axes currently reuses the earlier instance.  In a future version, a new instance will always be created and returned.  Meanwhile, this warning can be suppressed, and the future behavior ensured, by passing a unique label to each axes instance.
+<string>:25: MatplotlibDeprecationWarning: Adding an axes using the same arguments as a previous axes currently reuses the earlier instance.  In a future version, a new instance will always be created and returned.  Meanwhile, this warning can be suppressed, and the future behavior ensured, by passing a unique label to each axes instance.
+<string>:29: MatplotlibDeprecationWarning: Adding an axes using the same arguments as a previous axes currently reuses the earlier instance.  In a future version, a new instance will always be created and returned.  Meanwhile, this warning can be suppressed, and the future behavior ensured, by passing a unique label to each axes instance.
+<string>:25: MatplotlibDeprecationWarning: Adding an axes using the same arguments as a previous axes currently reuses the earlier instance.  In a future version, a new instance will always be created and returned.  Meanwhile, this warning can be suppressed, and the future behavior ensured, by passing a unique label to each axes instance.
+Traceback (most recent call last):
+  File "/home/dchamberlain31/git-repos/AAG-College-Algebra/buildExams/Module9LA.sagetex.sage.py", line 115, in <module>
+    load("../Code/13operationsOnFunctions/findInverseLogOrExp.sage")
+  File "sage/misc/persist.pyx", line 144, in sage.misc.persist.load (build/cythonized/sage/misc/persist.c:2538)
+    sage.repl.load.load(filename, globals())
+  File "/usr/lib/python3/dist-packages/sage/repl/load.py", line 272, in load
+    exec(preparse_file(f.read()) + "\n", globals)
+  File "<string>", line 85, in <module>
+  File "<string>", line 111, in createIntervalOptions
+  File "<string>", line 95, in createDisjointIntervalList
+  File "<string>", line 84, in createIntervalList
+  File "<string>", line 58, in createInterval
+  File "<string>", line 42, in createInterval
+  File "<string>", line 42, in createInterval
+  File "<string>", line 42, in createInterval
+  [Previous line repeated 2966 more times]
+  File "<string>", line 39, in createInterval
+  File "/usr/lib/python3.8/random.py", line 653, in gauss
+    return mu + z*sigma
+  File "/usr/lib/python3/dist-packages/sympy/core/decorators.py", line 91, in __sympifyit_wrapper
+    return func(a, b)
+  File "/usr/lib/python3/dist-packages/sympy/core/decorators.py", line 129, in binary_op_wrapper
+    return func(self, other)
+  File "/usr/lib/python3/dist-packages/sympy/core/expr.py", line 201, in __rmul__
+    return Mul(other, self)
+  File "/usr/lib/python3/dist-packages/sympy/core/cache.py", line 94, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/usr/lib/python3/dist-packages/sympy/core/operations.py", line 47, in __new__
+    c_part, nc_part, order_symbols = cls.flatten(args)
+  File "/usr/lib/python3/dist-packages/sympy/core/mul.py", line 280, in flatten
+    coeff *= o
+  File "/usr/lib/python3/dist-packages/sympy/core/numbers.py", line 2213, in __mul__
+    return Rational.__mul__(self, other)
+  File "/usr/lib/python3/dist-packages/sympy/core/decorators.py", line 91, in __sympifyit_wrapper
+    return func(a, b)
+  File "/usr/lib/python3/dist-packages/sympy/core/numbers.py", line 1746, in __mul__
+    return other*self
+  File "/usr/lib/python3/dist-packages/sympy/core/decorators.py", line 91, in __sympifyit_wrapper
+    return func(a, b)
+  File "/usr/lib/python3/dist-packages/sympy/core/numbers.py", line 1311, in __mul__
+    rhs, prec = other._as_mpf_op(self._prec)
+  File "/usr/lib/python3/dist-packages/sympy/core/numbers.py", line 671, in _as_mpf_op
+    return self._as_mpf_val(prec), prec
+  File "/usr/lib/python3/dist-packages/sympy/core/numbers.py", line 2080, in _as_mpf_val
+    return mlib.from_int(self.p, prec, rnd)
+  File "/usr/lib/python3/dist-packages/mpmath/libmp/libmpf.py", line 336, in from_int
+    return from_man_exp(n, 0, prec, rnd)
+  File "sage/libs/mpmath/utils.pyx", line 81, in sage.libs.mpmath.utils.from_man_exp (build/cythonized/sage/libs/mpmath/utils.c:3839)
+    cpdef from_man_exp(man, exp, long prec = 0, str rnd = 'd'):
+  File "sage/libs/mpmath/utils.pyx", line 100, in sage.libs.mpmath.utils.from_man_exp (build/cythonized/sage/libs/mpmath/utils.c:3611)
+    res = Integer(man)
+RecursionError: maximum recursion depth exceeded while calling a Python object
+./generateExams.sh: line 336: 1: command not found
+Traceback (most recent call last):
+  File "/home/dchamberlain31/git-repos/AAG-College-Algebra/buildExams/Module9LC.sagetex.sage.py", line 27, in <module>
+    load("../Code/13operationsOnFunctions/findInverseLogOrExp.sage")
+  File "sage/misc/persist.pyx", line 144, in sage.misc.persist.load (build/cythonized/sage/misc/persist.c:2538)
+    sage.repl.load.load(filename, globals())
+  File "/usr/lib/python3/dist-packages/sage/repl/load.py", line 272, in load
+    exec(preparse_file(f.read()) + "\n", globals)
+  File "<string>", line 85, in <module>
+  File "<string>", line 111, in createIntervalOptions
+  File "<string>", line 95, in createDisjointIntervalList
+  File "<string>", line 84, in createIntervalList
+  File "<string>", line 58, in createInterval
+  File "<string>", line 42, in createInterval
+  File "<string>", line 42, in createInterval
+  File "<string>", line 42, in createInterval
+  [Previous line repeated 2966 more times]
+  File "<string>", line 39, in createInterval
+  File "/usr/lib/python3.8/random.py", line 653, in gauss
+    return mu + z*sigma
+  File "/usr/lib/python3/dist-packages/sympy/core/decorators.py", line 91, in __sympifyit_wrapper
+    return func(a, b)
+  File "/usr/lib/python3/dist-packages/sympy/core/decorators.py", line 129, in binary_op_wrapper
+    return func(self, other)
+  File "/usr/lib/python3/dist-packages/sympy/core/expr.py", line 201, in __rmul__
+    return Mul(other, self)
+  File "/usr/lib/python3/dist-packages/sympy/core/cache.py", line 94, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/usr/lib/python3/dist-packages/sympy/core/operations.py", line 47, in __new__
+    c_part, nc_part, order_symbols = cls.flatten(args)
+  File "/usr/lib/python3/dist-packages/sympy/core/mul.py", line 280, in flatten
+    coeff *= o
+  File "/usr/lib/python3/dist-packages/sympy/core/numbers.py", line 2213, in __mul__
+    return Rational.__mul__(self, other)
+  File "/usr/lib/python3/dist-packages/sympy/core/decorators.py", line 91, in __sympifyit_wrapper
+    return func(a, b)
+  File "/usr/lib/python3/dist-packages/sympy/core/numbers.py", line 1746, in __mul__
+    return other*self
+  File "/usr/lib/python3/dist-packages/sympy/core/decorators.py", line 91, in __sympifyit_wrapper
+    return func(a, b)
+  File "/usr/lib/python3/dist-packages/sympy/core/numbers.py", line 1311, in __mul__
+    rhs, prec = other._as_mpf_op(self._prec)
+  File "/usr/lib/python3/dist-packages/sympy/core/numbers.py", line 671, in _as_mpf_op
+    return self._as_mpf_val(prec), prec
+  File "/usr/lib/python3/dist-packages/sympy/core/numbers.py", line 2080, in _as_mpf_val
+    return mlib.from_int(self.p, prec, rnd)
+  File "/usr/lib/python3/dist-packages/mpmath/libmp/libmpf.py", line 336, in from_int
+    return from_man_exp(n, 0, prec, rnd)
+  File "sage/libs/mpmath/utils.pyx", line 81, in sage.libs.mpmath.utils.from_man_exp (build/cythonized/sage/libs/mpmath/utils.c:3839)
+    cpdef from_man_exp(man, exp, long prec = 0, str rnd = 'd'):
+  File "sage/libs/mpmath/utils.pyx", line 100, in sage.libs.mpmath.utils.from_man_exp (build/cythonized/sage/libs/mpmath/utils.c:3611)
+    res = Integer(man)
+RecursionError: maximum recursion depth exceeded while calling a Python object
+./generateExams.sh: line 336: 1: command not found

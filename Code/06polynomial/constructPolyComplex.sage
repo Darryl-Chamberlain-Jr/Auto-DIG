@@ -18,11 +18,10 @@ while (complexZero[0] == complexZero[1]):
     complexZero = [maybeMakeNegative(random.randint(2, 5)), maybeMakeNegative(random.randint(2, 5))]
 displayZero1 = displayComplexFactor(complexZero)
 displayZero1Conjugate = displayComplexFactor([complexZero[0], -complexZero[1]])
-displayZero2 = generatePolynomialDisplay(1, realZero)
+displayZero2 = generatePolynomialDisplay([1, realZero])
 
 ### CREATE INTERVAL OPTIONS ###
-solution, distractor1, distractor2, distractor3 = generateDistractors(complexZero, realZero)
-displaySolution = generatePolynomialDisplay(solution)
+solution, distractor1, distractor2, distractor3 = generateSolutionAndDistractors(complexZero, realZero)
 solutionList = [solution, distractor1, distractor2, distractor3]
 intervalOptions = createIntervalOptions(solutionList, 6, 1)
 
@@ -32,6 +31,7 @@ c1 = "b \\in [%s, %s], c \\in [%s, %s], \\text{ and } d \\in [%s, %s]" %(interva
 c2 = "b \\in [%s, %s], c \\in [%s, %s], \\text{ and } d \\in [%s, %s]" %(intervalOptions[2][1][0], intervalOptions[2][1][1], intervalOptions[2][2][0], intervalOptions[2][2][1], intervalOptions[2][3][0], intervalOptions[2][3][1])
 c3 = "b \\in [%s, %s], c \\in [%s, %s], \\text{ and } d \\in [%s, %s]" %(intervalOptions[3][1][0], intervalOptions[3][1][1], intervalOptions[3][2][0], intervalOptions[3][2][1], intervalOptions[3][3][0], intervalOptions[3][3][1])
 c4 = "\\text{None of the above.}"
+displaySolution = generatePolynomialDisplay(solution)
 solutionInterval = [c0, "* $%s$, which is the correct option." %displaySolution, 1]
 distractor1Interval = [c1, "$%s$, which corresponds to multiplying out $(x-(%s))(x-(%s))(%s)$." %(generatePolynomialDisplay(distractor1), displayZero1, displayZero1Conjugate, generatePolynomialDisplay([1, realZero])), 0]
 distractor2Interval = [c2, "$%s$, which corresponds to multiplying out $(%s)(%s)$." %(generatePolynomialDisplay(distractor2), generatePolynomialDisplay([1, -complexZero[0]]), generatePolynomialDisplay([1, -realZero])), 0]

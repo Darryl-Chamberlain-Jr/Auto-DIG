@@ -1,4 +1,4 @@
-range# Objective 3 - Factor a trinomial with leading coefficient greater than 1.
+# Objective 3 - Factor a trinomial with leading coefficient greater than 1.
 # Create 3 different types - print 1 of each type
 from sympy.abc import x
 import random

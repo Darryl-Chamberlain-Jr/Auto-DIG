@@ -61,7 +61,7 @@ else:
 intervalOptions = createIntervalOptions(solutionList, 5, 1)
 
 ### DEFINE ANSWERLIST AND DISPLAYSOLUTION ###
-displaySolution = "%.3f" solutionList[0]
+displaySolution = "%.3f" %solutionList[0]
 c0 = "[%s, %s]" %(intervalOptions[0][0], intervalOptions[0][1])
 c1 = "[%s, %s]" %(intervalOptions[1][0], intervalOptions[1][1])
 c2 = "[%s, %s]" %(intervalOptions[2][0], intervalOptions[2][1])
@@ -73,8 +73,9 @@ distractor1Interval = [c1, comments[1], 0]
 distractor2Interval = [c2, comments[2], 0]
 distractor3Interval = [c3, comments[3], 0]
 distractor4Interval = [c4, comments[4], 0]
-answerList = [solutionInterval, distractor1Interval, distractor2Interval, distractor3Interval, distractor4Interval]
+answerList = [solutionInterval, distractor1Interval, distractor2Interval, distractor3Interval]
 random.shuffle(answerList)
+answerList.append(distractor4Interval)
 
 ### DEFINE STEM, PROBLEM, GENERAL COMMENT ###
 displayStem = 'Simplify the expression below and choose the interval the simplification is contained within.'

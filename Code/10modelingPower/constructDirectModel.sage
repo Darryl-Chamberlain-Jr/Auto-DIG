@@ -8,10 +8,9 @@ averageDistance = random.randint(2, 10)
 orbitTime = random.randint(50, 100)
 
 constant = float(orbitTime**timeExponent) / float(averageDistance**distanceExponent)
-homeworkConstant = float((4.0*pi**2.0) / (9.8))
+homeworkConstant = float( (4.0*pi**2) / (9.8) )
 indirectConstant = float(orbitTime**timeExponent * averageDistance**distanceExponent)
 reversePowers = float(orbitTime**(1/float(timeExponent))) / float(averageDistance**(1/float(distanceExponent)))
-
 displayStem = "For the scenario below, find the variation constant $k$ of the model (if possible)."
 displayProblem = "In an alternative galaxy, the %s of the time, $T$ (Earth years), required for a planet to orbit Sun $\\chi$ %s as the %s of the distance, $d$ (AUs), that the planet is from Sun $\\chi$ %s. For example, when Ea's average distance from Sun $\\chi$ is %d, it takes %d Earth days to complete an orbit." %(timeDescription, increasesOrDecreases, distanceDescription, increasesOrDecreases, averageDistance, orbitTime)
 

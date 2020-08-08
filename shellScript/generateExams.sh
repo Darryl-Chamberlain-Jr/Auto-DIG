@@ -1,3 +1,4 @@
+
 # This script generates exams.
 
 ### CHANGE THIS ONCE ###
@@ -10,7 +11,6 @@ function createQuestion {
   ProblemNumber=$3
   FileName=$4
   source /${DIR}/shellScript/questionCreationFunctions.sh
-
   # MODULE 1: Questions 1-5
   if [ $QuestionStructure -eq 1 ]; then
     createBasicStructure $1 $3 $4 1 '01realComplex' 'divideComplex'
@@ -333,7 +333,7 @@ function generateModuleAllVersions {
         pdflatex -file-line-error -halt-on-error /${DIR}/buildExams/${FileName}${version}.tex
         PDFresult=$?
         #This loops until the module runs without errors.
-        while [ $SAGEresult != 0 ] || [ $PDFresult != 0 ]; do
+        while [ "$SAGEresult" != 0 ] || [ "$PDFresult" != 0 ]; do
             if $SAGEresult != 0; then
                 reportOnSageError $2 $1 $version
             else:
@@ -422,8 +422,8 @@ if [ "$1" == "debug" ]; then
     fi
 else
     while [ "$1" == "" ] || [ "$2" == "" ] || [ "$3" == "" ]; do
-        echo -e "\nArguments for the exam are missing. The arguments are Semester, Password, and Exam Number. \n \nPlease put the semester in parentheses and make sure it has no spaces, such as 'Spring\,2020'. \nThe password should be a single word in parentheses, such as 'Password1'. \nThe exam number should be 1, 2, 3, 4, 5, 6, or 7 (final exam). The number of Modules generated is based on the exam number."
-        echo -e "\n If you meant to debug, make the first argument 'debug', the second argument the Semester, the third argument the exam number, and the fourth argument the single module you want to run. Modeling modules are 9-12 and Limits modules are 13-16."
+        echo -e "\nArguments for the exam are missing. The arguments are Semester, Password, and Exam Number. \n \nPlease put the semester in parentheses and make sure it has no spaces, such as 'Spring\,2020'. \n \nThe password should be a single word in parentheses, such as 'Password1'. \n \nThe exam number should be 1, 2, 3, 4, 5, 6, or 7 (final exam). The number of Modules generated is based on the exam number. \n\n\n ./generateExams.sh 'Summer\,C\,2020' 'password1' 1 > out.txt 2> err.txt"
+        echo -e "\n If you meant to debug, make the first argument 'debug', the second argument the Semester, the third argument the exam number, and the fourth argument the single module you want to run. Modeling modules are 9-12 and Limits modules are 13-16. \n\n\n ./generateExams.sh 'debug' 'Summer\,C\,2020' 1 > out.txt"
         exit -1
     done
 

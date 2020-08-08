@@ -57,7 +57,7 @@ def createFunctionAndPointOfInterest():
     else:
         xPlot = numpy.arange(pointOfInterest[0]-3, pointOfInterest[0]+3, 0.05)
         equation = [coefficient * cubeRootThis(xPlot[i] - fb) + k for i in range(len(xPlot)) ]
-    figureName = "radicalGraphToEquation%s" %version
+    figureName = "radicalGraphToEquation"
     sketchFunctionAndPoint(xPlot, equation, pointOfInterest, figureName)
     return [rootDegree, coefficient, pointOfInterest]
 
@@ -71,7 +71,7 @@ def displayEquation(rootDegree, coefficient, pointOfInterest):
                     equation = "\\sqrt{x + %d} - %d" %(-pointOfInterest[0], -pointOfInterest[1])
             else:
                 if coefficient < 0:
-                    equation = "- \\sqrt{x + %d} + %s" %(-pointOfInterest[0], pointOfInterest[1])
+                    equation = "- \\sqrt{x + %d} + %d" %(-pointOfInterest[0], pointOfInterest[1])
                 else:
                     equation = "\\sqrt{x + %d} + %d" %(-pointOfInterest[0], pointOfInterest[1])
         else:
@@ -127,7 +127,6 @@ if goodGraphOrNot == 0:
     rootDegree, coefficient, pointOfInterest = createFunctionAndPointOfInterest()
     solution = [displayEquation(rootDegree, coefficient, pointOfInterest), "* This is the correct option.", 1]
     distractor1, distractor2, distractor3 = createDistractors(rootDegree, coefficient, pointOfInterest)
-    displayProblem = "\\text{Graph of the function } f(x) = %s" %solution[0]
     displaySolution = solution[0]
     figureName = "radicalGraphToEquation"
     optionList = [solution, distractor1, distractor2, distractor3]
@@ -150,9 +149,8 @@ else:
     displaySolutionEquation = displayEquation(newRootDegree, coefficient, pointOfInterest)
     solution = [displaySolutionEquation, "This would be the correct option if the root degree was $%d$." %rootDegree, 0]
     distractor1, distractor2, distractor3 = createDistractors(newRootDegree, coefficient, pointOfInterest)
-    displayProblem = "\\text{Graph of the function } f(x) = %s" %displayEquation(rootDegree, coefficient, pointOfInterest)
     displaySolution = "\\text{None of the above}"
-    figureName = "radicalGraphToEquation" 
+    figureName = "radicalGraphToEquation"
     optionList = [solution, distractor1, distractor2, distractor3]
     random.shuffle(optionList)
     choices = ["f(x) = %s" %optionList[0][0], "f(x) = %s" %optionList[1][0], "f(x) = %s" %optionList[2][0], "f(x) = %s" %optionList[3][0], "\\text{None of the above}"]
@@ -160,6 +158,7 @@ else:
     answerLetter = "E"
 
 displayStem = "Choose the equation of the function graphed below."
+displayProblem = "radicalGraphToEquation%s" %version
 generalComment = "General Comments: Remember that the general form of a radical equation is $ f(x) = a \\sqrt[b]{x - h} + k$, where $a$ is the leading coefficient (and in this case, we assume is either $1$ or $-1$), $b$ is the root degree (in this case, either $2$ or $3$), and $(h, k)$ is the vertex."
 
-writeToKey(keyFileName, version, problemNumber, displayStem, "MathMode", displayProblem, "MathMode", displaySolution, answerLetter, choices, choiceComments, generalComment)
+writeToKey(keyFileName, version, problemNumber, displayStem, "Graph", displayProblem, "MathMode", displaySolution, answerLetter, choices, choiceComments, generalComment)

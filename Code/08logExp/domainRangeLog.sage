@@ -3,10 +3,6 @@ from sympy import solve
 from sympy.abc import x
 import random
 
-# OBJECTIVE 1 - Describe the domain/range of Logarithmic and Exponential functions.
-
-load("../Code/generalPurposeMethods.sage")
-
 def chooseDomainOrRange():
     listChoices = ["Domain", "Range"]
     random.shuffle(listChoices)

@@ -184,7 +184,13 @@ random.shuffle(answerList)
 ### DEFINE STEM, PROBLEM, GENERAL COMMENT ###
 displayStem = 'Choose the \\textbf{smallest} set of Complex numbers that the number below belongs to.'
 # displayProblem was defined previously
-generalComment = Be sure to simplify $i^2 = -1$. This may remove the imaginary portion for your number. If you are having trouble, you may want to look at the \\textit{Subgroups of the Real Numbers} section.
+generalComment = "Be sure to simplify $i^2 = -1$. This may remove the imaginary portion for your number. If you are having trouble, you may want to look at the \\textit{Subgroups of the Real Numbers} section."
+
+### DEFINE CHOICES, CHOICE COMMENTS, AND ANSWER LETTER ###
+choices = [answerList[0][0], answerList[1][0], answerList[2][0], answerList[3][0], answerList[4][0]]
+choiceComments = [answerList[0][1], answerList[1][1], answerList[2][1], answerList[3][1], answerList[4][1]]
+answerLetterIndicators = [answerList[0][2], answerList[1][2], answerList[2][2], answerList[3][2], answerList[4][2]]
+answerLetter = identifyAnswerLetter(answerLetterIndicators)
 
 ### WRITE TO KEY ###
 writeToKey(keyFileName, version, problemNumber, displayStem, "MathMode", displayProblem, "MathMode", displaySolution, answerLetter, choices, choiceComments, generalComment)
