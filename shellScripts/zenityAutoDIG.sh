@@ -1,9 +1,10 @@
 titleOfProgram="Auto-DIG v.0.1"
+DIR="home/dchamberlain31/git-repos/Auto-DIG"
+###########################################
 source ./questionCreationFunctions.sh
 source ./fileManipulationFunctions.sh
 source ./functionsForZenityAutoDIGshFile.sh
 source ./generateExams.sh
-DIR="home/dchamberlain31/git-repos/Auto-DIG"
 generationOptions
 typeOfGeneration=$(zenity \
     --title="${titleOfProgram[@]}" \
@@ -186,7 +187,7 @@ do
     fi
     break
 done
-
+xdg-open /${DIR}/CompleteExam
 EndTime=$( date +'%s' )
 currentDayTime=$( date +'%H:%M on %m/%d/%Y' )
 TotalRunTimeSeconds=$(( EndTime - StartTime ))
