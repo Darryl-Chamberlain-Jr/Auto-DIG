@@ -14,904 +14,904 @@ try:
 except:
  _st_.goboom(42)
 _st_.blockend()
-_st_.current_tex_line = 47
-_st_.blockbegin()
-try:
-   moduleNumber="6"
-   problemNumber=1
-   load("../Code/06polynomial/polyGraphToFunction.sage")
-   
-except:
- _st_.goboom(51)
-_st_.blockend()
-try:
- _st_.current_tex_line = 66
- _st_.inline(0, latex(displayStem))
-except:
- _st_.goboom(66)
-try:
- _st_.current_tex_line = 66
- _st_.inline(1, latex(choices[0]))
-except:
- _st_.goboom(66)
-try:
- _st_.current_tex_line = 66
- _st_.inline(2, latex(choices[1]))
-except:
- _st_.goboom(66)
-try:
- _st_.current_tex_line = 66
- _st_.inline(3, latex(choices[2]))
-except:
- _st_.goboom(66)
-try:
- _st_.current_tex_line = 66
- _st_.inline(4, latex(choices[3]))
-except:
- _st_.goboom(66)
-try:
- _st_.current_tex_line = 66
- _st_.inline(5, latex(choices[4]))
-except:
- _st_.goboom(66)
-_st_.current_tex_line = 68
-_st_.blockbegin()
-try:
-   moduleNumber="7"
-   problemNumber=2
-   load("../Code/07rational/rationalGraphToEquation.sage")
-   
-except:
- _st_.goboom(72)
-_st_.blockend()
-try:
- _st_.current_tex_line = 87
- _st_.inline(6, latex(displayStem))
-except:
- _st_.goboom(87)
-try:
- _st_.current_tex_line = 87
- _st_.inline(7, latex(choices[0]))
-except:
- _st_.goboom(87)
-try:
- _st_.current_tex_line = 87
- _st_.inline(8, latex(choices[1]))
-except:
- _st_.goboom(87)
-try:
- _st_.current_tex_line = 87
- _st_.inline(9, latex(choices[2]))
-except:
- _st_.goboom(87)
-try:
- _st_.current_tex_line = 87
- _st_.inline(10, latex(choices[3]))
-except:
- _st_.goboom(87)
-try:
- _st_.current_tex_line = 87
- _st_.inline(11, latex(choices[4]))
-except:
- _st_.goboom(87)
-_st_.current_tex_line = 89
-_st_.blockbegin()
-try:
- moduleNumber="6"
- problemNumber=3
- load("../Code/06polynomial/polyZeroBehavior.sage")
-except:
- _st_.goboom(93)
-_st_.blockend()
-try:
- _st_.current_tex_line = 108
- _st_.inline(12, latex(displayStem))
-except:
- _st_.goboom(108)
-try:
- _st_.current_tex_line = 108
- _st_.inline(13, latex(displayProblem))
-except:
- _st_.goboom(108)
-_st_.current_tex_line = 109
-_st_.blockbegin()
-try:
- moduleNumber="6"
- problemNumber=4
- load("../Code/06polynomial/constructPolyRationals.sage")
-except:
- _st_.goboom(113)
-_st_.blockend()
-try:
- _st_.current_tex_line = 126
- _st_.inline(14, latex(displayStem))
-except:
- _st_.goboom(126)
-try:
- _st_.current_tex_line = 126
- _st_.inline(15, latex(displayProblem))
-except:
- _st_.goboom(126)
-try:
- _st_.current_tex_line = 126
- _st_.inline(16, latex(choices[0]))
-except:
- _st_.goboom(126)
-try:
- _st_.current_tex_line = 126
- _st_.inline(17, latex(choices[1]))
-except:
- _st_.goboom(126)
-try:
- _st_.current_tex_line = 126
- _st_.inline(18, latex(choices[2]))
-except:
- _st_.goboom(126)
-try:
- _st_.current_tex_line = 126
- _st_.inline(19, latex(choices[3]))
-except:
- _st_.goboom(126)
-try:
- _st_.current_tex_line = 126
- _st_.inline(20, latex(choices[4]))
-except:
- _st_.goboom(126)
-_st_.current_tex_line = 128
-_st_.blockbegin()
-try:
-   moduleNumber="4"
-   problemNumber=5
-   load("../Code/04quadratic/quadraticGraphToEquation.sage")
-   
-except:
- _st_.goboom(132)
-_st_.blockend()
-try:
- _st_.current_tex_line = 147
- _st_.inline(21, latex(displayStem))
-except:
- _st_.goboom(147)
-try:
- _st_.current_tex_line = 147
- _st_.inline(22, latex(choices[0]))
-except:
- _st_.goboom(147)
-try:
- _st_.current_tex_line = 147
- _st_.inline(23, latex(choices[1]))
-except:
- _st_.goboom(147)
-try:
- _st_.current_tex_line = 147
- _st_.inline(24, latex(choices[2]))
-except:
- _st_.goboom(147)
-try:
- _st_.current_tex_line = 147
- _st_.inline(25, latex(choices[3]))
-except:
- _st_.goboom(147)
-try:
- _st_.current_tex_line = 147
- _st_.inline(26, latex(choices[4]))
-except:
- _st_.goboom(147)
-_st_.current_tex_line = 148
-_st_.blockbegin()
-try:
- moduleNumber="5"
- problemNumber=6
- load("../Code/05radical/solveRadicalLinear.sage")
-except:
- _st_.goboom(152)
-_st_.blockend()
-try:
- _st_.current_tex_line = 165
- _st_.inline(27, latex(displayStem))
-except:
- _st_.goboom(165)
-try:
- _st_.current_tex_line = 165
- _st_.inline(28, latex(displayProblem))
-except:
- _st_.goboom(165)
-try:
- _st_.current_tex_line = 165
- _st_.inline(29, latex(choices[0]))
-except:
- _st_.goboom(165)
-try:
- _st_.current_tex_line = 165
- _st_.inline(30, latex(choices[1]))
-except:
- _st_.goboom(165)
-try:
- _st_.current_tex_line = 165
- _st_.inline(31, latex(choices[2]))
-except:
- _st_.goboom(165)
-try:
- _st_.current_tex_line = 165
- _st_.inline(32, latex(choices[3]))
-except:
- _st_.goboom(165)
-try:
- _st_.current_tex_line = 165
- _st_.inline(33, latex(choices[4]))
-except:
- _st_.goboom(165)
-_st_.current_tex_line = 166
+_st_.current_tex_line = 46
 _st_.blockbegin()
 try:
  moduleNumber="1"
- problemNumber=7
- load("../Code/01realComplex/subgroupReal.sage")
+ problemNumber=1
+ load("../Code/01realComplex/divideComplex.sage")
 except:
- _st_.goboom(170)
+ _st_.goboom(50)
 _st_.blockend()
 try:
- _st_.current_tex_line = 183
- _st_.inline(34, latex(displayStem))
+ _st_.current_tex_line = 63
+ _st_.inline(0, latex(displayStem))
 except:
- _st_.goboom(183)
+ _st_.goboom(63)
 try:
- _st_.current_tex_line = 183
- _st_.inline(35, latex(displayProblem))
+ _st_.current_tex_line = 63
+ _st_.inline(1, latex(displayProblem))
 except:
- _st_.goboom(183)
+ _st_.goboom(63)
 try:
- _st_.current_tex_line = 183
- _st_.inline(36, latex(choices[0]))
+ _st_.current_tex_line = 63
+ _st_.inline(2, latex(choices[0]))
 except:
- _st_.goboom(183)
+ _st_.goboom(63)
 try:
- _st_.current_tex_line = 183
- _st_.inline(37, latex(choices[1]))
+ _st_.current_tex_line = 63
+ _st_.inline(3, latex(choices[1]))
 except:
- _st_.goboom(183)
+ _st_.goboom(63)
 try:
- _st_.current_tex_line = 183
- _st_.inline(38, latex(choices[2]))
+ _st_.current_tex_line = 63
+ _st_.inline(4, latex(choices[2]))
 except:
- _st_.goboom(183)
+ _st_.goboom(63)
 try:
- _st_.current_tex_line = 183
- _st_.inline(39, latex(choices[3]))
+ _st_.current_tex_line = 63
+ _st_.inline(5, latex(choices[3]))
 except:
- _st_.goboom(183)
+ _st_.goboom(63)
 try:
- _st_.current_tex_line = 183
- _st_.inline(40, latex(choices[4]))
+ _st_.current_tex_line = 63
+ _st_.inline(6, latex(choices[4]))
 except:
- _st_.goboom(183)
-_st_.current_tex_line = 184
-_st_.blockbegin()
-try:
- moduleNumber="3"
- problemNumber=8
- load("../Code/03inequality/solveCompoundAND.sage")
-except:
- _st_.goboom(188)
-_st_.blockend()
-try:
- _st_.current_tex_line = 201
- _st_.inline(41, latex(displayStem))
-except:
- _st_.goboom(201)
-try:
- _st_.current_tex_line = 201
- _st_.inline(42, latex(displayProblem))
-except:
- _st_.goboom(201)
-try:
- _st_.current_tex_line = 201
- _st_.inline(43, latex(choices[0]))
-except:
- _st_.goboom(201)
-try:
- _st_.current_tex_line = 201
- _st_.inline(44, latex(choices[1]))
-except:
- _st_.goboom(201)
-try:
- _st_.current_tex_line = 201
- _st_.inline(45, latex(choices[2]))
-except:
- _st_.goboom(201)
-try:
- _st_.current_tex_line = 201
- _st_.inline(46, latex(choices[3]))
-except:
- _st_.goboom(201)
-try:
- _st_.current_tex_line = 201
- _st_.inline(47, latex(choices[4]))
-except:
- _st_.goboom(201)
-_st_.current_tex_line = 202
+ _st_.goboom(63)
+_st_.current_tex_line = 64
 _st_.blockbegin()
 try:
  moduleNumber="2"
- problemNumber=9
- load("../Code/02linear/solveRationalLinear.sage")
+ problemNumber=2
+ load("../Code/02linear/linearParOrPer.sage")
 except:
- _st_.goboom(206)
+ _st_.goboom(68)
 _st_.blockend()
 try:
- _st_.current_tex_line = 219
- _st_.inline(48, latex(displayStem))
+ _st_.current_tex_line = 81
+ _st_.inline(7, latex(displayStem))
 except:
- _st_.goboom(219)
+ _st_.goboom(81)
 try:
- _st_.current_tex_line = 219
- _st_.inline(49, latex(displayProblem))
+ _st_.current_tex_line = 81
+ _st_.inline(8, latex(displayProblem))
 except:
- _st_.goboom(219)
+ _st_.goboom(81)
 try:
- _st_.current_tex_line = 219
- _st_.inline(50, latex(choices[0]))
+ _st_.current_tex_line = 81
+ _st_.inline(9, latex(choices[0]))
 except:
- _st_.goboom(219)
+ _st_.goboom(81)
 try:
- _st_.current_tex_line = 219
- _st_.inline(51, latex(choices[1]))
+ _st_.current_tex_line = 81
+ _st_.inline(10, latex(choices[1]))
 except:
- _st_.goboom(219)
+ _st_.goboom(81)
 try:
- _st_.current_tex_line = 219
- _st_.inline(52, latex(choices[2]))
+ _st_.current_tex_line = 81
+ _st_.inline(11, latex(choices[2]))
 except:
- _st_.goboom(219)
+ _st_.goboom(81)
 try:
- _st_.current_tex_line = 219
- _st_.inline(53, latex(choices[3]))
+ _st_.current_tex_line = 81
+ _st_.inline(12, latex(choices[3]))
 except:
- _st_.goboom(219)
+ _st_.goboom(81)
 try:
- _st_.current_tex_line = 219
- _st_.inline(54, latex(choices[4]))
+ _st_.current_tex_line = 81
+ _st_.inline(13, latex(choices[4]))
 except:
- _st_.goboom(219)
-_st_.current_tex_line = 220
+ _st_.goboom(81)
+_st_.current_tex_line = 82
+_st_.blockbegin()
+try:
+ moduleNumber="1"
+ problemNumber=3
+ load("../Code/01realComplex/orderOfOperations.sage")
+except:
+ _st_.goboom(86)
+_st_.blockend()
+try:
+ _st_.current_tex_line = 99
+ _st_.inline(14, latex(displayStem))
+except:
+ _st_.goboom(99)
+try:
+ _st_.current_tex_line = 99
+ _st_.inline(15, latex(displayProblem))
+except:
+ _st_.goboom(99)
+try:
+ _st_.current_tex_line = 99
+ _st_.inline(16, latex(choices[0]))
+except:
+ _st_.goboom(99)
+try:
+ _st_.current_tex_line = 99
+ _st_.inline(17, latex(choices[1]))
+except:
+ _st_.goboom(99)
+try:
+ _st_.current_tex_line = 99
+ _st_.inline(18, latex(choices[2]))
+except:
+ _st_.goboom(99)
+try:
+ _st_.current_tex_line = 99
+ _st_.inline(19, latex(choices[3]))
+except:
+ _st_.goboom(99)
+try:
+ _st_.current_tex_line = 99
+ _st_.inline(20, latex(choices[4]))
+except:
+ _st_.goboom(99)
+_st_.current_tex_line = 100
+_st_.blockbegin()
+try:
+ moduleNumber="2"
+ problemNumber=4
+ load("../Code/02linear/solveRationalLinear.sage")
+except:
+ _st_.goboom(104)
+_st_.blockend()
+try:
+ _st_.current_tex_line = 117
+ _st_.inline(21, latex(displayStem))
+except:
+ _st_.goboom(117)
+try:
+ _st_.current_tex_line = 117
+ _st_.inline(22, latex(displayProblem))
+except:
+ _st_.goboom(117)
+try:
+ _st_.current_tex_line = 117
+ _st_.inline(23, latex(choices[0]))
+except:
+ _st_.goboom(117)
+try:
+ _st_.current_tex_line = 117
+ _st_.inline(24, latex(choices[1]))
+except:
+ _st_.goboom(117)
+try:
+ _st_.current_tex_line = 117
+ _st_.inline(25, latex(choices[2]))
+except:
+ _st_.goboom(117)
+try:
+ _st_.current_tex_line = 117
+ _st_.inline(26, latex(choices[3]))
+except:
+ _st_.goboom(117)
+try:
+ _st_.current_tex_line = 117
+ _st_.inline(27, latex(choices[4]))
+except:
+ _st_.goboom(117)
+_st_.current_tex_line = 118
+_st_.blockbegin()
+try:
+ moduleNumber="4"
+ problemNumber=5
+ load("../Code/04quadratic/quadraticFormula.sage")
+except:
+ _st_.goboom(122)
+_st_.blockend()
+try:
+ _st_.current_tex_line = 135
+ _st_.inline(28, latex(displayStem))
+except:
+ _st_.goboom(135)
+try:
+ _st_.current_tex_line = 135
+ _st_.inline(29, latex(displayProblem))
+except:
+ _st_.goboom(135)
+try:
+ _st_.current_tex_line = 135
+ _st_.inline(30, latex(choices[0]))
+except:
+ _st_.goboom(135)
+try:
+ _st_.current_tex_line = 135
+ _st_.inline(31, latex(choices[1]))
+except:
+ _st_.goboom(135)
+try:
+ _st_.current_tex_line = 135
+ _st_.inline(32, latex(choices[2]))
+except:
+ _st_.goboom(135)
+try:
+ _st_.current_tex_line = 135
+ _st_.inline(33, latex(choices[3]))
+except:
+ _st_.goboom(135)
+try:
+ _st_.current_tex_line = 135
+ _st_.inline(34, latex(choices[4]))
+except:
+ _st_.goboom(135)
+_st_.current_tex_line = 136
+_st_.blockbegin()
+try:
+ moduleNumber="8"
+ problemNumber=6
+ load("../Code/08logExp/domainRangeExp.sage")
+except:
+ _st_.goboom(140)
+_st_.blockend()
+try:
+ _st_.current_tex_line = 153
+ _st_.inline(35, latex(displayStem))
+except:
+ _st_.goboom(153)
+try:
+ _st_.current_tex_line = 153
+ _st_.inline(36, latex(displayProblem))
+except:
+ _st_.goboom(153)
+try:
+ _st_.current_tex_line = 153
+ _st_.inline(37, latex(choices[0]))
+except:
+ _st_.goboom(153)
+try:
+ _st_.current_tex_line = 153
+ _st_.inline(38, latex(choices[1]))
+except:
+ _st_.goboom(153)
+try:
+ _st_.current_tex_line = 153
+ _st_.inline(39, latex(choices[2]))
+except:
+ _st_.goboom(153)
+try:
+ _st_.current_tex_line = 153
+ _st_.inline(40, latex(choices[3]))
+except:
+ _st_.goboom(153)
+try:
+ _st_.current_tex_line = 153
+ _st_.inline(41, latex(choices[4]))
+except:
+ _st_.goboom(153)
+_st_.current_tex_line = 155
+_st_.blockbegin()
+try:
+ moduleNumber="4"
+ problemNumber=7
+ load("../Code/04quadratic/quadraticEquationToGraph.sage")
+except:
+ _st_.goboom(159)
+_st_.blockend()
+try:
+ _st_.current_tex_line = 174
+ _st_.inline(42, latex(displayStem))
+except:
+ _st_.goboom(174)
+try:
+ _st_.current_tex_line = 174
+ _st_.inline(43, latex(displayProblem))
+except:
+ _st_.goboom(174)
+_st_.current_tex_line = 175
+_st_.blockbegin()
+try:
+ moduleNumber="2"
+ problemNumber=8
+ load("../Code/02linear/solveRationalLinear.sage")
+except:
+ _st_.goboom(179)
+_st_.blockend()
+try:
+ _st_.current_tex_line = 192
+ _st_.inline(44, latex(displayStem))
+except:
+ _st_.goboom(192)
+try:
+ _st_.current_tex_line = 192
+ _st_.inline(45, latex(displayProblem))
+except:
+ _st_.goboom(192)
+try:
+ _st_.current_tex_line = 192
+ _st_.inline(46, latex(choices[0]))
+except:
+ _st_.goboom(192)
+try:
+ _st_.current_tex_line = 192
+ _st_.inline(47, latex(choices[1]))
+except:
+ _st_.goboom(192)
+try:
+ _st_.current_tex_line = 192
+ _st_.inline(48, latex(choices[2]))
+except:
+ _st_.goboom(192)
+try:
+ _st_.current_tex_line = 192
+ _st_.inline(49, latex(choices[3]))
+except:
+ _st_.goboom(192)
+try:
+ _st_.current_tex_line = 192
+ _st_.inline(50, latex(choices[4]))
+except:
+ _st_.goboom(192)
+_st_.current_tex_line = 193
+_st_.blockbegin()
+try:
+ moduleNumber="6"
+ problemNumber=9
+ load("../Code/06polynomial/constructPolyRationals.sage")
+except:
+ _st_.goboom(197)
+_st_.blockend()
+try:
+ _st_.current_tex_line = 210
+ _st_.inline(51, latex(displayStem))
+except:
+ _st_.goboom(210)
+try:
+ _st_.current_tex_line = 210
+ _st_.inline(52, latex(displayProblem))
+except:
+ _st_.goboom(210)
+try:
+ _st_.current_tex_line = 210
+ _st_.inline(53, latex(choices[0]))
+except:
+ _st_.goboom(210)
+try:
+ _st_.current_tex_line = 210
+ _st_.inline(54, latex(choices[1]))
+except:
+ _st_.goboom(210)
+try:
+ _st_.current_tex_line = 210
+ _st_.inline(55, latex(choices[2]))
+except:
+ _st_.goboom(210)
+try:
+ _st_.current_tex_line = 210
+ _st_.inline(56, latex(choices[3]))
+except:
+ _st_.goboom(210)
+try:
+ _st_.current_tex_line = 210
+ _st_.inline(57, latex(choices[4]))
+except:
+ _st_.goboom(210)
+_st_.current_tex_line = 211
 _st_.blockbegin()
 try:
  moduleNumber="2"
  problemNumber=10
- load("../Code/02linear/solveRationalLinear.sage")
+ load("../Code/02linear/linearTwoPoints.sage")
 except:
- _st_.goboom(224)
+ _st_.goboom(215)
 _st_.blockend()
 try:
- _st_.current_tex_line = 237
- _st_.inline(55, latex(displayStem))
+ _st_.current_tex_line = 228
+ _st_.inline(58, latex(displayStem))
 except:
- _st_.goboom(237)
+ _st_.goboom(228)
 try:
- _st_.current_tex_line = 237
- _st_.inline(56, latex(displayProblem))
+ _st_.current_tex_line = 228
+ _st_.inline(59, latex(displayProblem))
 except:
- _st_.goboom(237)
+ _st_.goboom(228)
 try:
- _st_.current_tex_line = 237
- _st_.inline(57, latex(choices[0]))
+ _st_.current_tex_line = 228
+ _st_.inline(60, latex(choices[0]))
 except:
- _st_.goboom(237)
+ _st_.goboom(228)
 try:
- _st_.current_tex_line = 237
- _st_.inline(58, latex(choices[1]))
+ _st_.current_tex_line = 228
+ _st_.inline(61, latex(choices[1]))
 except:
- _st_.goboom(237)
+ _st_.goboom(228)
 try:
- _st_.current_tex_line = 237
- _st_.inline(59, latex(choices[2]))
+ _st_.current_tex_line = 228
+ _st_.inline(62, latex(choices[2]))
 except:
- _st_.goboom(237)
+ _st_.goboom(228)
 try:
- _st_.current_tex_line = 237
- _st_.inline(60, latex(choices[3]))
+ _st_.current_tex_line = 228
+ _st_.inline(63, latex(choices[3]))
 except:
- _st_.goboom(237)
+ _st_.goboom(228)
 try:
- _st_.current_tex_line = 237
- _st_.inline(61, latex(choices[4]))
+ _st_.current_tex_line = 228
+ _st_.inline(64, latex(choices[4]))
 except:
- _st_.goboom(237)
-_st_.current_tex_line = 239
+ _st_.goboom(228)
+_st_.current_tex_line = 229
+_st_.blockbegin()
+try:
+ moduleNumber="3"
+ problemNumber=11
+ load("../Code/03inequality/solveRationalInequality.sage")
+except:
+ _st_.goboom(233)
+_st_.blockend()
+try:
+ _st_.current_tex_line = 246
+ _st_.inline(65, latex(displayStem))
+except:
+ _st_.goboom(246)
+try:
+ _st_.current_tex_line = 246
+ _st_.inline(66, latex(displayProblem))
+except:
+ _st_.goboom(246)
+try:
+ _st_.current_tex_line = 246
+ _st_.inline(67, latex(choices[0]))
+except:
+ _st_.goboom(246)
+try:
+ _st_.current_tex_line = 246
+ _st_.inline(68, latex(choices[1]))
+except:
+ _st_.goboom(246)
+try:
+ _st_.current_tex_line = 246
+ _st_.inline(69, latex(choices[2]))
+except:
+ _st_.goboom(246)
+try:
+ _st_.current_tex_line = 246
+ _st_.inline(70, latex(choices[3]))
+except:
+ _st_.goboom(246)
+try:
+ _st_.current_tex_line = 246
+ _st_.inline(71, latex(choices[4]))
+except:
+ _st_.goboom(246)
+_st_.current_tex_line = 247
 _st_.blockbegin()
 try:
  moduleNumber="5"
- problemNumber=11
- load("../Code/05radical/radicalEquationToGraph.sage")
-except:
- _st_.goboom(243)
-_st_.blockend()
-try:
- _st_.current_tex_line = 258
- _st_.inline(62, latex(displayStem))
-except:
- _st_.goboom(258)
-try:
- _st_.current_tex_line = 258
- _st_.inline(63, latex(displayProblem))
-except:
- _st_.goboom(258)
-_st_.current_tex_line = 259
-_st_.blockbegin()
-try:
- moduleNumber="2"
  problemNumber=12
- load("../Code/02linear/linearParOrPer.sage")
+ load("../Code/05radical/domainRadical.sage")
 except:
- _st_.goboom(263)
+ _st_.goboom(251)
 _st_.blockend()
 try:
- _st_.current_tex_line = 276
- _st_.inline(64, latex(displayStem))
+ _st_.current_tex_line = 264
+ _st_.inline(72, latex(displayStem))
 except:
- _st_.goboom(276)
+ _st_.goboom(264)
 try:
- _st_.current_tex_line = 276
- _st_.inline(65, latex(displayProblem))
+ _st_.current_tex_line = 264
+ _st_.inline(73, latex(displayProblem))
 except:
- _st_.goboom(276)
+ _st_.goboom(264)
 try:
- _st_.current_tex_line = 276
- _st_.inline(66, latex(choices[0]))
+ _st_.current_tex_line = 264
+ _st_.inline(74, latex(choices[0]))
 except:
- _st_.goboom(276)
+ _st_.goboom(264)
 try:
- _st_.current_tex_line = 276
- _st_.inline(67, latex(choices[1]))
+ _st_.current_tex_line = 264
+ _st_.inline(75, latex(choices[1]))
 except:
- _st_.goboom(276)
+ _st_.goboom(264)
 try:
- _st_.current_tex_line = 276
- _st_.inline(68, latex(choices[2]))
+ _st_.current_tex_line = 264
+ _st_.inline(76, latex(choices[2]))
 except:
- _st_.goboom(276)
+ _st_.goboom(264)
 try:
- _st_.current_tex_line = 276
- _st_.inline(69, latex(choices[3]))
+ _st_.current_tex_line = 264
+ _st_.inline(77, latex(choices[3]))
 except:
- _st_.goboom(276)
+ _st_.goboom(264)
 try:
- _st_.current_tex_line = 276
- _st_.inline(70, latex(choices[4]))
+ _st_.current_tex_line = 264
+ _st_.inline(78, latex(choices[4]))
 except:
- _st_.goboom(276)
-_st_.current_tex_line = 277
+ _st_.goboom(264)
+_st_.current_tex_line = 266
 _st_.blockbegin()
 try:
- moduleNumber="2"
+ moduleNumber="6"
  problemNumber=13
- load("../Code/02linear/linearTwoPoints.sage")
+ load("../Code/06polynomial/polyZeroBehavior.sage")
 except:
- _st_.goboom(281)
+ _st_.goboom(270)
 _st_.blockend()
 try:
- _st_.current_tex_line = 294
- _st_.inline(71, latex(displayStem))
+ _st_.current_tex_line = 285
+ _st_.inline(79, latex(displayStem))
 except:
- _st_.goboom(294)
+ _st_.goboom(285)
 try:
- _st_.current_tex_line = 294
- _st_.inline(72, latex(displayProblem))
+ _st_.current_tex_line = 285
+ _st_.inline(80, latex(displayProblem))
 except:
- _st_.goboom(294)
-try:
- _st_.current_tex_line = 294
- _st_.inline(73, latex(choices[0]))
-except:
- _st_.goboom(294)
-try:
- _st_.current_tex_line = 294
- _st_.inline(74, latex(choices[1]))
-except:
- _st_.goboom(294)
-try:
- _st_.current_tex_line = 294
- _st_.inline(75, latex(choices[2]))
-except:
- _st_.goboom(294)
-try:
- _st_.current_tex_line = 294
- _st_.inline(76, latex(choices[3]))
-except:
- _st_.goboom(294)
-try:
- _st_.current_tex_line = 294
- _st_.inline(77, latex(choices[4]))
-except:
- _st_.goboom(294)
-_st_.current_tex_line = 295
+ _st_.goboom(285)
+_st_.current_tex_line = 286
 _st_.blockbegin()
 try:
- moduleNumber="1"
+ moduleNumber="3"
  problemNumber=14
- load("../Code/01realComplex/orderOfOperations.sage")
+ load("../Code/03inequality/solveCompoundAND.sage")
 except:
- _st_.goboom(299)
+ _st_.goboom(290)
 _st_.blockend()
 try:
- _st_.current_tex_line = 312
- _st_.inline(78, latex(displayStem))
+ _st_.current_tex_line = 303
+ _st_.inline(81, latex(displayStem))
 except:
- _st_.goboom(312)
+ _st_.goboom(303)
 try:
- _st_.current_tex_line = 312
- _st_.inline(79, latex(displayProblem))
+ _st_.current_tex_line = 303
+ _st_.inline(82, latex(displayProblem))
 except:
- _st_.goboom(312)
+ _st_.goboom(303)
 try:
- _st_.current_tex_line = 312
- _st_.inline(80, latex(choices[0]))
+ _st_.current_tex_line = 303
+ _st_.inline(83, latex(choices[0]))
 except:
- _st_.goboom(312)
+ _st_.goboom(303)
 try:
- _st_.current_tex_line = 312
- _st_.inline(81, latex(choices[1]))
+ _st_.current_tex_line = 303
+ _st_.inline(84, latex(choices[1]))
 except:
- _st_.goboom(312)
+ _st_.goboom(303)
 try:
- _st_.current_tex_line = 312
- _st_.inline(82, latex(choices[2]))
+ _st_.current_tex_line = 303
+ _st_.inline(85, latex(choices[2]))
 except:
- _st_.goboom(312)
+ _st_.goboom(303)
 try:
- _st_.current_tex_line = 312
- _st_.inline(83, latex(choices[3]))
+ _st_.current_tex_line = 303
+ _st_.inline(86, latex(choices[3]))
 except:
- _st_.goboom(312)
+ _st_.goboom(303)
 try:
- _st_.current_tex_line = 312
- _st_.inline(84, latex(choices[4]))
+ _st_.current_tex_line = 303
+ _st_.inline(87, latex(choices[4]))
 except:
- _st_.goboom(312)
-_st_.current_tex_line = 314
+ _st_.goboom(303)
+_st_.current_tex_line = 305
 _st_.blockbegin()
 try:
- moduleNumber="4"
- problemNumber=15
- load("../Code/04quadratic/quadraticEquationToGraph.sage")
+   moduleNumber="6"
+   problemNumber=15
+   load("../Code/06polynomial/polyGraphToFunction.sage")
+   
 except:
- _st_.goboom(318)
+ _st_.goboom(309)
 _st_.blockend()
 try:
- _st_.current_tex_line = 333
- _st_.inline(85, latex(displayStem))
+ _st_.current_tex_line = 324
+ _st_.inline(88, latex(displayStem))
 except:
- _st_.goboom(333)
+ _st_.goboom(324)
 try:
- _st_.current_tex_line = 333
- _st_.inline(86, latex(displayProblem))
+ _st_.current_tex_line = 324
+ _st_.inline(89, latex(choices[0]))
 except:
- _st_.goboom(333)
-_st_.current_tex_line = 334
+ _st_.goboom(324)
+try:
+ _st_.current_tex_line = 324
+ _st_.inline(90, latex(choices[1]))
+except:
+ _st_.goboom(324)
+try:
+ _st_.current_tex_line = 324
+ _st_.inline(91, latex(choices[2]))
+except:
+ _st_.goboom(324)
+try:
+ _st_.current_tex_line = 324
+ _st_.inline(92, latex(choices[3]))
+except:
+ _st_.goboom(324)
+try:
+ _st_.current_tex_line = 324
+ _st_.inline(93, latex(choices[4]))
+except:
+ _st_.goboom(324)
+_st_.current_tex_line = 326
 _st_.blockbegin()
 try:
  moduleNumber="5"
  problemNumber=16
- load("../Code/05radical/domainRadical.sage")
+ load("../Code/05radical/radicalEquationToGraph.sage")
 except:
- _st_.goboom(338)
+ _st_.goboom(330)
 _st_.blockend()
 try:
- _st_.current_tex_line = 351
- _st_.inline(87, latex(displayStem))
-except:
- _st_.goboom(351)
-try:
- _st_.current_tex_line = 351
- _st_.inline(88, latex(displayProblem))
-except:
- _st_.goboom(351)
-try:
- _st_.current_tex_line = 351
- _st_.inline(89, latex(choices[0]))
-except:
- _st_.goboom(351)
-try:
- _st_.current_tex_line = 351
- _st_.inline(90, latex(choices[1]))
-except:
- _st_.goboom(351)
-try:
- _st_.current_tex_line = 351
- _st_.inline(91, latex(choices[2]))
-except:
- _st_.goboom(351)
-try:
- _st_.current_tex_line = 351
- _st_.inline(92, latex(choices[3]))
-except:
- _st_.goboom(351)
-try:
- _st_.current_tex_line = 351
- _st_.inline(93, latex(choices[4]))
-except:
- _st_.goboom(351)
-_st_.current_tex_line = 352
-_st_.blockbegin()
-try:
- moduleNumber="3"
- problemNumber=17
- load("../Code/03inequality/solveRationalInequality.sage")
-except:
- _st_.goboom(356)
-_st_.blockend()
-try:
- _st_.current_tex_line = 369
+ _st_.current_tex_line = 345
  _st_.inline(94, latex(displayStem))
 except:
- _st_.goboom(369)
+ _st_.goboom(345)
 try:
- _st_.current_tex_line = 369
+ _st_.current_tex_line = 345
  _st_.inline(95, latex(displayProblem))
 except:
- _st_.goboom(369)
-try:
- _st_.current_tex_line = 369
- _st_.inline(96, latex(choices[0]))
-except:
- _st_.goboom(369)
-try:
- _st_.current_tex_line = 369
- _st_.inline(97, latex(choices[1]))
-except:
- _st_.goboom(369)
-try:
- _st_.current_tex_line = 369
- _st_.inline(98, latex(choices[2]))
-except:
- _st_.goboom(369)
-try:
- _st_.current_tex_line = 369
- _st_.inline(99, latex(choices[3]))
-except:
- _st_.goboom(369)
-try:
- _st_.current_tex_line = 369
- _st_.inline(100, latex(choices[4]))
-except:
- _st_.goboom(369)
-_st_.current_tex_line = 370
+ _st_.goboom(345)
+_st_.current_tex_line = 347
 _st_.blockbegin()
 try:
- moduleNumber="4"
- problemNumber=18
- load("../Code/04quadratic/quadraticFormula.sage")
+   moduleNumber="4"
+   problemNumber=17
+   load("../Code/04quadratic/quadraticGraphToEquation.sage")
+   
 except:
- _st_.goboom(374)
+ _st_.goboom(351)
 _st_.blockend()
 try:
- _st_.current_tex_line = 387
- _st_.inline(101, latex(displayStem))
+ _st_.current_tex_line = 366
+ _st_.inline(96, latex(displayStem))
 except:
- _st_.goboom(387)
+ _st_.goboom(366)
 try:
- _st_.current_tex_line = 387
- _st_.inline(102, latex(displayProblem))
+ _st_.current_tex_line = 366
+ _st_.inline(97, latex(choices[0]))
 except:
- _st_.goboom(387)
+ _st_.goboom(366)
 try:
- _st_.current_tex_line = 387
- _st_.inline(103, latex(choices[0]))
+ _st_.current_tex_line = 366
+ _st_.inline(98, latex(choices[1]))
 except:
- _st_.goboom(387)
+ _st_.goboom(366)
 try:
- _st_.current_tex_line = 387
- _st_.inline(104, latex(choices[1]))
+ _st_.current_tex_line = 366
+ _st_.inline(99, latex(choices[2]))
 except:
- _st_.goboom(387)
+ _st_.goboom(366)
 try:
- _st_.current_tex_line = 387
- _st_.inline(105, latex(choices[2]))
+ _st_.current_tex_line = 366
+ _st_.inline(100, latex(choices[3]))
 except:
- _st_.goboom(387)
+ _st_.goboom(366)
 try:
- _st_.current_tex_line = 387
- _st_.inline(106, latex(choices[3]))
+ _st_.current_tex_line = 366
+ _st_.inline(101, latex(choices[4]))
 except:
- _st_.goboom(387)
+ _st_.goboom(366)
+_st_.current_tex_line = 367
+_st_.blockbegin()
 try:
- _st_.current_tex_line = 387
- _st_.inline(107, latex(choices[4]))
+ moduleNumber="8"
+ problemNumber=18
+ load("../Code/08logExp/domainRangeLog.sage")
 except:
- _st_.goboom(387)
-_st_.current_tex_line = 388
+ _st_.goboom(371)
+_st_.blockend()
+try:
+ _st_.current_tex_line = 384
+ _st_.inline(102, latex(displayStem))
+except:
+ _st_.goboom(384)
+try:
+ _st_.current_tex_line = 384
+ _st_.inline(103, latex(displayProblem))
+except:
+ _st_.goboom(384)
+try:
+ _st_.current_tex_line = 384
+ _st_.inline(104, latex(choices[0]))
+except:
+ _st_.goboom(384)
+try:
+ _st_.current_tex_line = 384
+ _st_.inline(105, latex(choices[1]))
+except:
+ _st_.goboom(384)
+try:
+ _st_.current_tex_line = 384
+ _st_.inline(106, latex(choices[2]))
+except:
+ _st_.goboom(384)
+try:
+ _st_.current_tex_line = 384
+ _st_.inline(107, latex(choices[3]))
+except:
+ _st_.goboom(384)
+try:
+ _st_.current_tex_line = 384
+ _st_.inline(108, latex(choices[4]))
+except:
+ _st_.goboom(384)
+_st_.current_tex_line = 385
 _st_.blockbegin()
 try:
  moduleNumber="1"
  problemNumber=19
- load("../Code/01realComplex/divideComplex.sage")
+ load("../Code/01realComplex/subgroupReal.sage")
 except:
- _st_.goboom(392)
+ _st_.goboom(389)
 _st_.blockend()
 try:
- _st_.current_tex_line = 405
- _st_.inline(108, latex(displayStem))
+ _st_.current_tex_line = 402
+ _st_.inline(109, latex(displayStem))
 except:
- _st_.goboom(405)
+ _st_.goboom(402)
 try:
- _st_.current_tex_line = 405
- _st_.inline(109, latex(displayProblem))
+ _st_.current_tex_line = 402
+ _st_.inline(110, latex(displayProblem))
 except:
- _st_.goboom(405)
+ _st_.goboom(402)
 try:
- _st_.current_tex_line = 405
- _st_.inline(110, latex(choices[0]))
+ _st_.current_tex_line = 402
+ _st_.inline(111, latex(choices[0]))
 except:
- _st_.goboom(405)
+ _st_.goboom(402)
 try:
- _st_.current_tex_line = 405
- _st_.inline(111, latex(choices[1]))
+ _st_.current_tex_line = 402
+ _st_.inline(112, latex(choices[1]))
 except:
- _st_.goboom(405)
+ _st_.goboom(402)
 try:
- _st_.current_tex_line = 405
- _st_.inline(112, latex(choices[2]))
+ _st_.current_tex_line = 402
+ _st_.inline(113, latex(choices[2]))
 except:
- _st_.goboom(405)
+ _st_.goboom(402)
 try:
- _st_.current_tex_line = 405
- _st_.inline(113, latex(choices[3]))
+ _st_.current_tex_line = 402
+ _st_.inline(114, latex(choices[3]))
 except:
- _st_.goboom(405)
+ _st_.goboom(402)
 try:
- _st_.current_tex_line = 405
- _st_.inline(114, latex(choices[4]))
+ _st_.current_tex_line = 402
+ _st_.inline(115, latex(choices[4]))
 except:
- _st_.goboom(405)
-_st_.current_tex_line = 406
+ _st_.goboom(402)
+_st_.current_tex_line = 403
 _st_.blockbegin()
 try:
  moduleNumber="8"
  problemNumber=20
- load("../Code/08logExp/domainRangeExp.sage")
+ load("../Code/08logExp/solveExpDifferentBases.sage")
 except:
- _st_.goboom(410)
+ _st_.goboom(407)
 _st_.blockend()
 try:
- _st_.current_tex_line = 423
- _st_.inline(115, latex(displayStem))
+ _st_.current_tex_line = 420
+ _st_.inline(116, latex(displayStem))
 except:
- _st_.goboom(423)
+ _st_.goboom(420)
 try:
- _st_.current_tex_line = 423
- _st_.inline(116, latex(displayProblem))
+ _st_.current_tex_line = 420
+ _st_.inline(117, latex(displayProblem))
 except:
- _st_.goboom(423)
+ _st_.goboom(420)
 try:
- _st_.current_tex_line = 423
- _st_.inline(117, latex(choices[0]))
+ _st_.current_tex_line = 420
+ _st_.inline(118, latex(choices[0]))
 except:
- _st_.goboom(423)
+ _st_.goboom(420)
 try:
- _st_.current_tex_line = 423
- _st_.inline(118, latex(choices[1]))
+ _st_.current_tex_line = 420
+ _st_.inline(119, latex(choices[1]))
 except:
- _st_.goboom(423)
+ _st_.goboom(420)
 try:
- _st_.current_tex_line = 423
- _st_.inline(119, latex(choices[2]))
+ _st_.current_tex_line = 420
+ _st_.inline(120, latex(choices[2]))
 except:
- _st_.goboom(423)
+ _st_.goboom(420)
 try:
- _st_.current_tex_line = 423
- _st_.inline(120, latex(choices[3]))
+ _st_.current_tex_line = 420
+ _st_.inline(121, latex(choices[3]))
 except:
- _st_.goboom(423)
+ _st_.goboom(420)
 try:
- _st_.current_tex_line = 423
- _st_.inline(121, latex(choices[4]))
+ _st_.current_tex_line = 420
+ _st_.inline(122, latex(choices[4]))
 except:
- _st_.goboom(423)
-_st_.current_tex_line = 424
-_st_.blockbegin()
-try:
- moduleNumber="7"
- problemNumber=21
- load("../Code/07rational/solveRationalQuadratic.sage")
-except:
- _st_.goboom(428)
-_st_.blockend()
-try:
- _st_.current_tex_line = 441
- _st_.inline(122, latex(displayStem))
-except:
- _st_.goboom(441)
-try:
- _st_.current_tex_line = 441
- _st_.inline(123, latex(displayProblem))
-except:
- _st_.goboom(441)
-try:
- _st_.current_tex_line = 441
- _st_.inline(124, latex(choices[0]))
-except:
- _st_.goboom(441)
-try:
- _st_.current_tex_line = 441
- _st_.inline(125, latex(choices[1]))
-except:
- _st_.goboom(441)
-try:
- _st_.current_tex_line = 441
- _st_.inline(126, latex(choices[2]))
-except:
- _st_.goboom(441)
-try:
- _st_.current_tex_line = 441
- _st_.inline(127, latex(choices[3]))
-except:
- _st_.goboom(441)
-try:
- _st_.current_tex_line = 441
- _st_.inline(128, latex(choices[4]))
-except:
- _st_.goboom(441)
-_st_.current_tex_line = 442
+ _st_.goboom(420)
+_st_.current_tex_line = 421
 _st_.blockbegin()
 try:
  moduleNumber="3"
- problemNumber=22
+ problemNumber=21
  load("../Code/03inequality/solveIntegerInequality.sage")
 except:
- _st_.goboom(446)
+ _st_.goboom(425)
 _st_.blockend()
 try:
- _st_.current_tex_line = 459
- _st_.inline(129, latex(displayStem))
+ _st_.current_tex_line = 438
+ _st_.inline(123, latex(displayStem))
 except:
- _st_.goboom(459)
+ _st_.goboom(438)
 try:
- _st_.current_tex_line = 459
- _st_.inline(130, latex(displayProblem))
+ _st_.current_tex_line = 438
+ _st_.inline(124, latex(displayProblem))
 except:
- _st_.goboom(459)
+ _st_.goboom(438)
 try:
- _st_.current_tex_line = 459
- _st_.inline(131, latex(choices[0]))
+ _st_.current_tex_line = 438
+ _st_.inline(125, latex(choices[0]))
 except:
- _st_.goboom(459)
+ _st_.goboom(438)
 try:
- _st_.current_tex_line = 459
- _st_.inline(132, latex(choices[1]))
+ _st_.current_tex_line = 438
+ _st_.inline(126, latex(choices[1]))
 except:
- _st_.goboom(459)
+ _st_.goboom(438)
 try:
- _st_.current_tex_line = 459
- _st_.inline(133, latex(choices[2]))
+ _st_.current_tex_line = 438
+ _st_.inline(127, latex(choices[2]))
 except:
- _st_.goboom(459)
+ _st_.goboom(438)
 try:
- _st_.current_tex_line = 459
- _st_.inline(134, latex(choices[3]))
+ _st_.current_tex_line = 438
+ _st_.inline(128, latex(choices[3]))
 except:
- _st_.goboom(459)
+ _st_.goboom(438)
 try:
- _st_.current_tex_line = 459
- _st_.inline(135, latex(choices[4]))
+ _st_.current_tex_line = 438
+ _st_.inline(129, latex(choices[4]))
 except:
- _st_.goboom(459)
-_st_.current_tex_line = 460
+ _st_.goboom(438)
+_st_.current_tex_line = 439
 _st_.blockbegin()
 try:
- moduleNumber="8"
- problemNumber=23
- load("../Code/08logExp/domainRangeLog.sage")
+ moduleNumber="5"
+ problemNumber=22
+ load("../Code/05radical/solveRadicalLinear.sage")
 except:
- _st_.goboom(464)
+ _st_.goboom(443)
+_st_.blockend()
+try:
+ _st_.current_tex_line = 456
+ _st_.inline(130, latex(displayStem))
+except:
+ _st_.goboom(456)
+try:
+ _st_.current_tex_line = 456
+ _st_.inline(131, latex(displayProblem))
+except:
+ _st_.goboom(456)
+try:
+ _st_.current_tex_line = 456
+ _st_.inline(132, latex(choices[0]))
+except:
+ _st_.goboom(456)
+try:
+ _st_.current_tex_line = 456
+ _st_.inline(133, latex(choices[1]))
+except:
+ _st_.goboom(456)
+try:
+ _st_.current_tex_line = 456
+ _st_.inline(134, latex(choices[2]))
+except:
+ _st_.goboom(456)
+try:
+ _st_.current_tex_line = 456
+ _st_.inline(135, latex(choices[3]))
+except:
+ _st_.goboom(456)
+try:
+ _st_.current_tex_line = 456
+ _st_.inline(136, latex(choices[4]))
+except:
+ _st_.goboom(456)
+_st_.current_tex_line = 458
+_st_.blockbegin()
+try:
+   moduleNumber="7"
+   problemNumber=23
+   load("../Code/07rational/rationalGraphToEquation.sage")
+   
+except:
+ _st_.goboom(462)
 _st_.blockend()
 try:
  _st_.current_tex_line = 477
- _st_.inline(136, latex(displayStem))
-except:
- _st_.goboom(477)
-try:
- _st_.current_tex_line = 477
- _st_.inline(137, latex(displayProblem))
+ _st_.inline(137, latex(displayStem))
 except:
  _st_.goboom(477)
 try:
@@ -942,9 +942,9 @@ except:
 _st_.current_tex_line = 478
 _st_.blockbegin()
 try:
- moduleNumber="8"
+ moduleNumber="7"
  problemNumber=24
- load("../Code/08logExp/solveExpDifferentBases.sage")
+ load("../Code/07rational/solveRationalQuadratic.sage")
 except:
  _st_.goboom(482)
 _st_.blockend()

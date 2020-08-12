@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.8.4)  11 AUG 2020 20:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.8.4)  12 AUG 2020 11:57
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -665,39 +665,32 @@ e
 \ST@sf=\write5
 \openout5 = `FinalExamA.sagetex.sage'.
 
-<../Figures/polyGraphToFunctionA.png, id=4, 494.3268pt x 361.35pt>
-File: ../Figures/polyGraphToFunctionA.png Graphic file (type png)
-<use ../Figures/polyGraphToFunctionA.png>
-Package pdftex.def Info: ../Figures/polyGraphToFunctionA.png  used on input lin
-e 66.
-(pdftex.def)             Requested size: 234.8775pt x 171.69817pt.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 66.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 63.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 66.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 63.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+lasy on input line 66
+LaTeX Font Info:    Trying to load font information for U+lasy on input line 63
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-Overfull \hbox (6.79684pt too wide) in paragraph at lines 66--67
+Overfull \hbox (6.79684pt too wide) in paragraph at lines 63--69
 | [] 
  []
 
-<../Figures/rationalGraphToEquationA.png, id=6, 432.8973pt x 323.0469pt>
-File: ../Figures/rationalGraphToEquationA.png Graphic file (type png)
-<use ../Figures/rationalGraphToEquationA.png>
-Package pdftex.def Info: ../Figures/rationalGraphToEquationA.png  used on input
- line 87.
-(pdftex.def)             Requested size: 234.8775pt x 175.27577pt.
+
+Overfull \hbox (6.79684pt too wide) in paragraph at lines 81--87
+| [] 
+ []
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
 Make it at least 17.0pt.
@@ -706,197 +699,214 @@ This may cause the page layout to be inconsistent, however.
 
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
- <../Figures/polyGraphToFunctionA.png> <../Figures/rationalGraphToEquationA.png
->]
-Overfull \hbox (6.79684pt too wide) in paragraph at lines 87--88
-| [] 
- []
-
-<../Figures/polyZeroBehaviorAA.png, id=28, 90.3375pt x 103.88812pt>
-File: ../Figures/polyZeroBehaviorAA.png Graphic file (type png)
-<use ../Figures/polyZeroBehaviorAA.png>
-Package pdftex.def Info: ../Figures/polyZeroBehaviorAA.png  used on input line 
-108.
-(pdftex.def)             Requested size: 140.92793pt x 162.08224pt.
-<../Figures/polyZeroBehaviorBA.png, id=29, 133.24782pt x 161.10187pt>
-File: ../Figures/polyZeroBehaviorBA.png Graphic file (type png)
-<use ../Figures/polyZeroBehaviorBA.png>
-Package pdftex.def Info: ../Figures/polyZeroBehaviorBA.png  used on input line 
-108.
-(pdftex.def)             Requested size: 140.92793pt x 170.40334pt.
-<../Figures/polyZeroBehaviorCA.png, id=30, 90.3375pt x 103.88812pt>
-File: ../Figures/polyZeroBehaviorCA.png Graphic file (type png)
-<use ../Figures/polyZeroBehaviorCA.png>
-Package pdftex.def Info: ../Figures/polyZeroBehaviorCA.png  used on input line 
-108.
-(pdftex.def)             Requested size: 140.92793pt x 162.08224pt.
-<../Figures/polyZeroBehaviorDA.png, id=31, 90.3375pt x 103.88812pt>
-File: ../Figures/polyZeroBehaviorDA.png Graphic file (type png)
-<use ../Figures/polyZeroBehaviorDA.png>
-Package pdftex.def Info: ../Figures/polyZeroBehaviorDA.png  used on input line 
-108.
-(pdftex.def)             Requested size: 140.92793pt x 162.08224pt.
-
-Overfull \hbox (6.79684pt too wide) in paragraph at lines 108--114
-| [] 
- []
-
-[2 <../Figures/polyZeroBehaviorAA.png> <../Figures/polyZeroBehaviorBA.png> <../
-Figures/polyZeroBehaviorCA.png> <../Figures/polyZeroBehaviorDA.png>]
-Overfull \hbox (6.79684pt too wide) in paragraph at lines 126--127
-| [] 
- []
-
-<../Figures/quadraticGraphToEquationA.png, id=47, 461.8053pt x 343.2825pt>
-File: ../Figures/quadraticGraphToEquationA.png Graphic file (type png)
-<use ../Figures/quadraticGraphToEquationA.png>
-Package pdftex.def Info: ../Figures/quadraticGraphToEquationA.png  used on inpu
-t line 147.
-(pdftex.def)             Requested size: 234.8775pt x 174.59508pt.
-
-Overfull \hbox (6.79684pt too wide) in paragraph at lines 147--153
-| [] 
- []
-
-[3 <../Figures/quadraticGraphToEquationA.png>]
-Overfull \hbox (6.79684pt too wide) in paragraph at lines 165--171
+]
+Overfull \hbox (6.79684pt too wide) in paragraph at lines 99--105
 | [] 
  []
 
 
-Overfull \hbox (6.79684pt too wide) in paragraph at lines 183--189
+Overfull \hbox (6.79684pt too wide) in paragraph at lines 117--123
+| [] 
+ []
+
+
+Overfull \hbox (6.79684pt too wide) in paragraph at lines 135--141
+| [] 
+ []
+
+[2]
+Overfull \hbox (6.79684pt too wide) in paragraph at lines 153--154
+| [] 
+ []
+
+<../Figures/quadraticEquationToGraphAA.png, id=49, 457.4691pt x 343.2825pt>
+File: ../Figures/quadraticEquationToGraphAA.png Graphic file (type png)
+<use ../Figures/quadraticEquationToGraphAA.png>
+Package pdftex.def Info: ../Figures/quadraticEquationToGraphAA.png  used on inp
+ut line 174.
+(pdftex.def)             Requested size: 140.92793pt x 105.75124pt.
+<../Figures/quadraticEquationToGraphBA.png, id=51, 476.982pt x 343.2825pt>
+File: ../Figures/quadraticEquationToGraphBA.png Graphic file (type png)
+<use ../Figures/quadraticEquationToGraphBA.png>
+Package pdftex.def Info: ../Figures/quadraticEquationToGraphBA.png  used on inp
+ut line 174.
+(pdftex.def)             Requested size: 140.92793pt x 101.42459pt.
+<../Figures/quadraticEquationToGraphCA.png, id=52, 457.4691pt x 343.2825pt>
+File: ../Figures/quadraticEquationToGraphCA.png Graphic file (type png)
+<use ../Figures/quadraticEquationToGraphCA.png>
+Package pdftex.def Info: ../Figures/quadraticEquationToGraphCA.png  used on inp
+ut line 174.
+(pdftex.def)             Requested size: 140.92793pt x 105.75124pt.
+<../Figures/quadraticEquationToGraphDA.png, id=53, 476.982pt x 343.2825pt>
+File: ../Figures/quadraticEquationToGraphDA.png Graphic file (type png)
+<use ../Figures/quadraticEquationToGraphDA.png>
+Package pdftex.def Info: ../Figures/quadraticEquationToGraphDA.png  used on inp
+ut line 174.
+(pdftex.def)             Requested size: 140.92793pt x 101.42459pt.
+
+Overfull \hbox (6.79684pt too wide) in paragraph at lines 174--180
+| [] 
+ []
+
+[3 <../Figures/quadraticEquationToGraphAA.png> <../Figures/quadraticEquationToG
+raphBA.png> <../Figures/quadraticEquationToGraphCA.png> <../Figures/quadraticEq
+uationToGraphDA.png>]
+Overfull \hbox (6.79684pt too wide) in paragraph at lines 192--198
+| [] 
+ []
+
+
+Overfull \hbox (6.79684pt too wide) in paragraph at lines 210--216
+| [] 
+ []
+
+
+Overfull \hbox (6.79684pt too wide) in paragraph at lines 228--234
 | [] 
  []
 
 [4]
-Overfull \hbox (6.79684pt too wide) in paragraph at lines 201--207
+Overfull \hbox (6.79684pt too wide) in paragraph at lines 246--252
 | [] 
  []
 
 
-Overfull \hbox (6.79684pt too wide) in paragraph at lines 219--225
+Overfull \hbox (6.79684pt too wide) in paragraph at lines 264--265
+| [] 
+ []
+
+<../Figures/polyZeroBehaviorAA.png, id=95, 90.3375pt x 103.88812pt>
+File: ../Figures/polyZeroBehaviorAA.png Graphic file (type png)
+<use ../Figures/polyZeroBehaviorAA.png>
+Package pdftex.def Info: ../Figures/polyZeroBehaviorAA.png  used on input line 
+285.
+(pdftex.def)             Requested size: 140.92793pt x 162.08224pt.
+<../Figures/polyZeroBehaviorBA.png, id=96, 133.24782pt x 161.10187pt>
+File: ../Figures/polyZeroBehaviorBA.png Graphic file (type png)
+<use ../Figures/polyZeroBehaviorBA.png>
+Package pdftex.def Info: ../Figures/polyZeroBehaviorBA.png  used on input line 
+285.
+(pdftex.def)             Requested size: 140.92793pt x 170.40334pt.
+
+Overfull \vbox (49.8516pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (49.8516pt too high) has occurred while \output is active []
+
+
+[5 <../Figures/polyZeroBehaviorAA.png>]
+<../Figures/polyZeroBehaviorCA.png, id=116, 90.3375pt x 103.88812pt>
+File: ../Figures/polyZeroBehaviorCA.png Graphic file (type png)
+<use ../Figures/polyZeroBehaviorCA.png>
+Package pdftex.def Info: ../Figures/polyZeroBehaviorCA.png  used on input line 
+285.
+(pdftex.def)             Requested size: 140.92793pt x 162.08224pt.
+<../Figures/polyZeroBehaviorDA.png, id=117, 90.3375pt x 103.88812pt>
+File: ../Figures/polyZeroBehaviorDA.png Graphic file (type png)
+<use ../Figures/polyZeroBehaviorDA.png>
+Package pdftex.def Info: ../Figures/polyZeroBehaviorDA.png  used on input line 
+285.
+(pdftex.def)             Requested size: 140.92793pt x 162.08224pt.
+
+Overfull \hbox (6.79684pt too wide) in paragraph at lines 285--291
 | [] 
  []
 
 
-Overfull \hbox (6.79684pt too wide) in paragraph at lines 237--238
+Overfull \hbox (6.79684pt too wide) in paragraph at lines 303--304
 | [] 
  []
 
-[5]
-<../Figures/radicalEquationToGraphAA.png, id=106, 452.4102pt x 346.896pt>
+[6 <../Figures/polyZeroBehaviorBA.png> <../Figures/polyZeroBehaviorCA.png> <../
+Figures/polyZeroBehaviorDA.png>]
+<../Figures/polyGraphToFunctionA.png, id=134, 426.393pt x 343.2825pt>
+File: ../Figures/polyGraphToFunctionA.png Graphic file (type png)
+<use ../Figures/polyGraphToFunctionA.png>
+Package pdftex.def Info: ../Figures/polyGraphToFunctionA.png  used on input lin
+e 324.
+(pdftex.def)             Requested size: 234.8775pt x 189.09404pt.
+
+Overfull \hbox (6.79684pt too wide) in paragraph at lines 324--325
+| [] 
+ []
+
+<../Figures/radicalEquationToGraphAA.png, id=135, 434.3427pt x 347.6187pt>
 File: ../Figures/radicalEquationToGraphAA.png Graphic file (type png)
 <use ../Figures/radicalEquationToGraphAA.png>
 Package pdftex.def Info: ../Figures/radicalEquationToGraphAA.png  used on input
- line 258.
-(pdftex.def)             Requested size: 140.92793pt x 108.05537pt.
-<../Figures/radicalEquationToGraphBA.png, id=107, 452.4102pt x 346.896pt>
+ line 345.
+(pdftex.def)             Requested size: 140.92793pt x 112.78908pt.
+<../Figures/radicalEquationToGraphBA.png, id=136, 437.2335pt x 347.6187pt>
 File: ../Figures/radicalEquationToGraphBA.png Graphic file (type png)
 <use ../Figures/radicalEquationToGraphBA.png>
 Package pdftex.def Info: ../Figures/radicalEquationToGraphBA.png  used on input
- line 258.
-(pdftex.def)             Requested size: 140.92793pt x 108.05537pt.
-<../Figures/radicalEquationToGraphCA.png, id=108, 452.4102pt x 346.896pt>
+ line 345.
+(pdftex.def)             Requested size: 140.92793pt x 112.0465pt.
+<../Figures/radicalEquationToGraphCA.png, id=137, 437.2335pt x 346.896pt>
 File: ../Figures/radicalEquationToGraphCA.png Graphic file (type png)
 <use ../Figures/radicalEquationToGraphCA.png>
 Package pdftex.def Info: ../Figures/radicalEquationToGraphCA.png  used on input
- line 258.
-(pdftex.def)             Requested size: 140.92793pt x 108.05537pt.
-<../Figures/radicalEquationToGraphDA.png, id=109, 452.4102pt x 346.896pt>
+ line 345.
+(pdftex.def)             Requested size: 140.92793pt x 111.81354pt.
+<../Figures/radicalEquationToGraphDA.png, id=138, 434.3427pt x 346.896pt>
 File: ../Figures/radicalEquationToGraphDA.png Graphic file (type png)
 <use ../Figures/radicalEquationToGraphDA.png>
 Package pdftex.def Info: ../Figures/radicalEquationToGraphDA.png  used on input
- line 258.
-(pdftex.def)             Requested size: 140.92793pt x 108.05537pt.
+ line 345.
+(pdftex.def)             Requested size: 140.92793pt x 112.5546pt.
+[7 <../Figures/polyGraphToFunctionA.png> <../Figures/radicalEquationToGraphAA.p
+ng> <../Figures/radicalEquationToGraphBA.png>]
+Overfull \hbox (6.79684pt too wide) in paragraph at lines 345--346
+| [] 
+ []
 
-Overfull \hbox (6.79684pt too wide) in paragraph at lines 258--264
+<../Figures/quadraticGraphToEquationA.png, id=157, 446.6286pt x 343.2825pt>
+File: ../Figures/quadraticGraphToEquationA.png Graphic file (type png)
+<use ../Figures/quadraticGraphToEquationA.png>
+Package pdftex.def Info: ../Figures/quadraticGraphToEquationA.png  used on inpu
+t line 366.
+(pdftex.def)             Requested size: 234.8775pt x 180.5298pt.
+
+Overfull \hbox (6.79684pt too wide) in paragraph at lines 366--372
+| [] 
+ []
+
+[8 <../Figures/radicalEquationToGraphCA.png> <../Figures/radicalEquationToGraph
+DA.png> <../Figures/quadraticGraphToEquationA.png>]
+Overfull \hbox (6.79684pt too wide) in paragraph at lines 384--390
 | [] 
  []
 
 
-Overfull \hbox (6.79684pt too wide) in paragraph at lines 276--282
-| [] 
- []
-
-[6 <../Figures/radicalEquationToGraphAA.png> <../Figures/radicalEquationToGraph
-BA.png> <../Figures/radicalEquationToGraphCA.png> <../Figures/radicalEquationTo
-GraphDA.png>]
-Overfull \hbox (6.79684pt too wide) in paragraph at lines 294--300
+Overfull \hbox (6.79684pt too wide) in paragraph at lines 402--408
 | [] 
  []
 
 
-Overfull \hbox (6.79684pt too wide) in paragraph at lines 312--313
-| [] 
- []
-
-<../Figures/quadraticEquationToGraphAA.png, id=130, 457.4691pt x 343.2825pt>
-File: ../Figures/quadraticEquationToGraphAA.png Graphic file (type png)
-<use ../Figures/quadraticEquationToGraphAA.png>
-Package pdftex.def Info: ../Figures/quadraticEquationToGraphAA.png  used on inp
-ut line 333.
-(pdftex.def)             Requested size: 140.92793pt x 105.75124pt.
-<../Figures/quadraticEquationToGraphBA.png, id=131, 476.982pt x 343.2825pt>
-File: ../Figures/quadraticEquationToGraphBA.png Graphic file (type png)
-<use ../Figures/quadraticEquationToGraphBA.png>
-Package pdftex.def Info: ../Figures/quadraticEquationToGraphBA.png  used on inp
-ut line 333.
-(pdftex.def)             Requested size: 140.92793pt x 101.42459pt.
-<../Figures/quadraticEquationToGraphCA.png, id=132, 476.982pt x 343.2825pt>
-File: ../Figures/quadraticEquationToGraphCA.png Graphic file (type png)
-<use ../Figures/quadraticEquationToGraphCA.png>
-Package pdftex.def Info: ../Figures/quadraticEquationToGraphCA.png  used on inp
-ut line 333.
-(pdftex.def)             Requested size: 140.92793pt x 101.42459pt.
-<../Figures/quadraticEquationToGraphDA.png, id=133, 457.4691pt x 343.2825pt>
-File: ../Figures/quadraticEquationToGraphDA.png Graphic file (type png)
-<use ../Figures/quadraticEquationToGraphDA.png>
-Package pdftex.def Info: ../Figures/quadraticEquationToGraphDA.png  used on inp
-ut line 333.
-(pdftex.def)             Requested size: 140.92793pt x 105.75124pt.
-[7 <../Figures/quadraticEquationToGraphAA.png> <../Figures/quadraticEquationToG
-raphBA.png>]
-Overfull \hbox (6.79684pt too wide) in paragraph at lines 333--339
-| [] 
- []
-
-
-Overfull \hbox (6.79684pt too wide) in paragraph at lines 351--357
-| [] 
- []
-
-
-Overfull \hbox (6.79684pt too wide) in paragraph at lines 369--375
-| [] 
- []
-
-[8 <../Figures/quadraticEquationToGraphCA.png> <../Figures/quadraticEquationToG
-raphDA.png>]
-Overfull \hbox (6.79684pt too wide) in paragraph at lines 387--393
-| [] 
- []
-
-
-Overfull \hbox (6.79684pt too wide) in paragraph at lines 405--411
+Overfull \hbox (6.79684pt too wide) in paragraph at lines 420--426
 | [] 
  []
 
 [9]
-Overfull \hbox (6.79684pt too wide) in paragraph at lines 423--429
+Overfull \hbox (6.79684pt too wide) in paragraph at lines 438--444
 | [] 
  []
 
 
-Overfull \hbox (6.79684pt too wide) in paragraph at lines 441--447
+Overfull \hbox (6.79684pt too wide) in paragraph at lines 456--457
 | [] 
  []
 
+<../Figures/rationalGraphToEquationA.png, id=198, 394.5942pt x 312.2064pt>
+File: ../Figures/rationalGraphToEquationA.png Graphic file (type png)
+<use ../Figures/rationalGraphToEquationA.png>
+Package pdftex.def Info: ../Figures/rationalGraphToEquationA.png  used on input
+ line 477.
+(pdftex.def)             Requested size: 234.8775pt x 185.84372pt.
 
-Overfull \hbox (6.79684pt too wide) in paragraph at lines 459--465
-| [] 
- []
+Underfull \vbox (badness 3312) has occurred while \output is active []
 
-[10]
+ [10]
 Overfull \hbox (6.79684pt too wide) in paragraph at lines 477--483
 | [] 
  []
@@ -908,7 +918,7 @@ Overfull \hbox (6.79684pt too wide) in paragraph at lines 495--496
 
 *********************************************************************
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 499.
-[11]
+[11 <../Figures/rationalGraphToEquationA.png>]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 499.
  (./FinalExamA.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 499.
@@ -920,7 +930,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 499.
 Here is how much of TeX's memory you used:
  11405 strings out of 483183
  170583 string characters out of 5966293
- 458820 words of memory out of 5000000
+ 460786 words of memory out of 5000000
  26021 multiletter control sequences out of 15000+600000
  536222 words of font info for 41 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
@@ -934,7 +944,7 @@ t/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts
 /type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
 ublic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
 amsfonts/cm/cmti12.pfb>
-Output written on FinalExamA.pdf (11 pages, 299550 bytes).
+Output written on FinalExamA.pdf (11 pages, 288494 bytes).
 PDF statistics:
  296 PDF objects out of 1000 (max. 8388607)
  244 compressed objects within 3 object streams

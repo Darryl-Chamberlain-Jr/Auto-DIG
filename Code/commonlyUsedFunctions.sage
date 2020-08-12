@@ -15,6 +15,7 @@ def identifyAnswerLetter(identifierList):
             answerLetter = checkLetter
             break
         answerIndex = answerIndex+1
+    return answerLetter
 
 def greatestCommonDenominator(a, b):
     if(not (isinstance(a, int) and isinstance(b, int))):

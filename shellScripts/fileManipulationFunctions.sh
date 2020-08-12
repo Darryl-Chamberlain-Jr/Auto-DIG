@@ -2,12 +2,9 @@
 
 function copyKeys {
     FileName=$1
-    versionList=$2
-    cp /${DIR}/Keys/*.pdf /${DIR}/CompleteExam/Keys/
-    for version in $versionList
-    do
-        cp /${DIR}/Keys/lettersAnswerKey${FileName}${version}.csv /${DIR}/CompleteExam/Keys/
-    done
+    version=$2
+    cp /${DIR}/Keys/key${FileName}${version}.pdf /${DIR}/CompleteExam/Keys/
+    cp /${DIR}/Keys/lettersAnswerKey${FileName}${version}.csv /${DIR}/CompleteExam/Keys/
 }
 
 function clearOldVersions {

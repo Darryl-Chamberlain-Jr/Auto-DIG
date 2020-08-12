@@ -171,7 +171,7 @@ do
             do
                 echo "$counter" ; sleep 0
                 generatePDFsAndKeys $fileNamePrefix "$examLongName" "$footnoteLeft" $version
-                copyKeys $fileNamePrefix ${versionList[@]}
+                copyKeys $fileNamePrefix $version
                 counter=$(( counter+step ))
             done
         done
@@ -181,7 +181,7 @@ do
             echo "$counter" ; sleep 0
             echo "# Creating "$examLongName" Version $version. Progress: $counter%"
             generatePDFsAndKeys $fileNamePrefix "$examLongName" "$footnoteLeft" $version
-            copyKeys $fileNamePrefix ${versionList[@]}
+            copyKeys $fileNamePrefix $version
             counter=$(( counter+step ))
         done
     fi

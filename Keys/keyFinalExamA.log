@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.8.4)  11 AUG 2020 20:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.8.4)  12 AUG 2020 11:57
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -559,36 +559,23 @@ Package graphics Info: Driver file: pdftex.def on input line 105.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-<../Figures/polyGraphToFunctionA.png, id=6, 494.3268pt x 361.35pt>
-File: ../Figures/polyGraphToFunctionA.png Graphic file (type png)
-<use ../Figures/polyGraphToFunctionA.png>
-Package pdftex.def Info: ../Figures/polyGraphToFunctionA.png  used on input lin
-e 23.
-(pdftex.def)             Requested size: 140.92793pt x 103.01889pt.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 25.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 22.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 25.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 22.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+lasy on input line 25
+LaTeX Font Info:    Trying to load font information for U+lasy on input line 22
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-<../Figures/rationalGraphToEquationA.png, id=8, 432.8973pt x 323.0469pt>
-File: ../Figures/rationalGraphToEquationA.png Graphic file (type png)
-<use ../Figures/rationalGraphToEquationA.png>
-Package pdftex.def Info: ../Figures/rationalGraphToEquationA.png  used on input
- line 50.
-(pdftex.def)             Requested size: 140.92793pt x 105.16644pt.
-
 
 Package Fancyhdr Warning: \headheight is too small (0.0pt): 
 Make it at least 12.0pt.
@@ -597,116 +584,125 @@ This may cause the page layout to be inconsistent, however.
 
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
- <../Figures/polyGraphToFunctionA.png> <../Figures/rationalGraphToEquationA.png
->]
-<../Figures/polyZeroBehaviorAA.png, id=28, 90.3375pt x 103.88812pt>
-File: ../Figures/polyZeroBehaviorAA.png Graphic file (type png)
-<use ../Figures/polyZeroBehaviorAA.png>
-Package pdftex.def Info: ../Figures/polyZeroBehaviorAA.png  used on input line 
-81.
-(pdftex.def)             Requested size: 140.92793pt x 162.08224pt.
-File: ../Figures/polyZeroBehaviorAA.png Graphic file (type png)
-<use ../Figures/polyZeroBehaviorAA.png>
-Package pdftex.def Info: ../Figures/polyZeroBehaviorAA.png  used on input line 
-84.
-(pdftex.def)             Requested size: 140.92793pt x 162.08224pt.
-<../Figures/polyZeroBehaviorBA.png, id=29, 133.24782pt x 161.10187pt>
-File: ../Figures/polyZeroBehaviorBA.png Graphic file (type png)
-<use ../Figures/polyZeroBehaviorBA.png>
-Package pdftex.def Info: ../Figures/polyZeroBehaviorBA.png  used on input line 
-84.
-(pdftex.def)             Requested size: 140.92793pt x 170.40334pt.
-<../Figures/polyZeroBehaviorCA.png, id=30, 90.3375pt x 103.88812pt>
-File: ../Figures/polyZeroBehaviorCA.png Graphic file (type png)
-<use ../Figures/polyZeroBehaviorCA.png>
-Package pdftex.def Info: ../Figures/polyZeroBehaviorCA.png  used on input line 
-87.
-(pdftex.def)             Requested size: 140.92793pt x 162.08224pt.
-<../Figures/polyZeroBehaviorDA.png, id=31, 90.3375pt x 103.88812pt>
-File: ../Figures/polyZeroBehaviorDA.png Graphic file (type png)
-<use ../Figures/polyZeroBehaviorDA.png>
-Package pdftex.def Info: ../Figures/polyZeroBehaviorDA.png  used on input line 
-87.
-(pdftex.def)             Requested size: 140.92793pt x 162.08224pt.
-
-Underfull \vbox (badness 2495) has occurred while \output is active []
-
- [2 <../Figures/polyZeroBehaviorAA.png>] [3 <../Figures/polyZeroBehaviorBA.png>
- <../Figures/polyZeroBehaviorCA.png> <../Figures/polyZeroBehaviorDA.png>]
-<../Figures/quadraticGraphToEquationA.png, id=53, 461.8053pt x 343.2825pt>
-File: ../Figures/quadraticGraphToEquationA.png Graphic file (type png)
-<use ../Figures/quadraticGraphToEquationA.png>
-Package pdftex.def Info: ../Figures/quadraticGraphToEquationA.png  used on inpu
-t line 131.
-(pdftex.def)             Requested size: 140.92793pt x 104.756pt.
- [4 <../Figures/quadraticGraphToEquationA.png>] [5] [6]
-<../Figures/radicalEquationToGraphBA.png, id=96, 452.4102pt x 346.896pt>
-File: ../Figures/radicalEquationToGraphBA.png Graphic file (type png)
-<use ../Figures/radicalEquationToGraphBA.png>
-Package pdftex.def Info: ../Figures/radicalEquationToGraphBA.png  used on input
- line 298.
-(pdftex.def)             Requested size: 140.92793pt x 108.05537pt.
-File: ../Figures/radicalEquationToGraphBA.png Graphic file (type png)
-<use ../Figures/radicalEquationToGraphBA.png>
-Package pdftex.def Info: ../Figures/radicalEquationToGraphBA.png  used on input
- line 301.
-(pdftex.def)             Requested size: 140.92793pt x 108.05537pt.
-<../Figures/radicalEquationToGraphDA.png, id=97, 452.4102pt x 346.896pt>
-File: ../Figures/radicalEquationToGraphDA.png Graphic file (type png)
-<use ../Figures/radicalEquationToGraphDA.png>
-Package pdftex.def Info: ../Figures/radicalEquationToGraphDA.png  used on input
- line 301.
-(pdftex.def)             Requested size: 140.92793pt x 108.05537pt.
-<../Figures/radicalEquationToGraphAA.png, id=98, 452.4102pt x 346.896pt>
-File: ../Figures/radicalEquationToGraphAA.png Graphic file (type png)
-<use ../Figures/radicalEquationToGraphAA.png>
-Package pdftex.def Info: ../Figures/radicalEquationToGraphAA.png  used on input
- line 304.
-(pdftex.def)             Requested size: 140.92793pt x 108.05537pt.
-<../Figures/radicalEquationToGraphCA.png, id=99, 452.4102pt x 346.896pt>
-File: ../Figures/radicalEquationToGraphCA.png Graphic file (type png)
-<use ../Figures/radicalEquationToGraphCA.png>
-Package pdftex.def Info: ../Figures/radicalEquationToGraphCA.png  used on input
- line 304.
-(pdftex.def)             Requested size: 140.92793pt x 108.05537pt.
-
-Underfull \vbox (badness 4036) has occurred while \output is active []
-
- [7 <../Figures/radicalEquationToGraphBA.png>] [8 <../Figures/radicalEquationTo
-GraphDA.png> <../Figures/radicalEquationToGraphAA.png> <../Figures/radicalEquat
-ionToGraphCA.png>] [9]
-<../Figures/quadraticEquationToGraphDA.png, id=144, 457.4691pt x 343.2825pt>
-File: ../Figures/quadraticEquationToGraphDA.png Graphic file (type png)
-<use ../Figures/quadraticEquationToGraphDA.png>
-Package pdftex.def Info: ../Figures/quadraticEquationToGraphDA.png  used on inp
-ut line 404.
-(pdftex.def)             Requested size: 140.92793pt x 105.75124pt.
-<../Figures/quadraticEquationToGraphAA.png, id=145, 457.4691pt x 343.2825pt>
-File: ../Figures/quadraticEquationToGraphAA.png Graphic file (type png)
-<use ../Figures/quadraticEquationToGraphAA.png>
-Package pdftex.def Info: ../Figures/quadraticEquationToGraphAA.png  used on inp
-ut line 407.
-(pdftex.def)             Requested size: 140.92793pt x 105.75124pt.
-<../Figures/quadraticEquationToGraphBA.png, id=146, 476.982pt x 343.2825pt>
-File: ../Figures/quadraticEquationToGraphBA.png Graphic file (type png)
-<use ../Figures/quadraticEquationToGraphBA.png>
-Package pdftex.def Info: ../Figures/quadraticEquationToGraphBA.png  used on inp
-ut line 407.
-(pdftex.def)             Requested size: 140.92793pt x 101.42459pt.
-<../Figures/quadraticEquationToGraphCA.png, id=147, 476.982pt x 343.2825pt>
+] [2] [3]
+<../Figures/quadraticEquationToGraphCA.png, id=57, 457.4691pt x 343.2825pt>
 File: ../Figures/quadraticEquationToGraphCA.png Graphic file (type png)
 <use ../Figures/quadraticEquationToGraphCA.png>
 Package pdftex.def Info: ../Figures/quadraticEquationToGraphCA.png  used on inp
-ut line 410.
+ut line 183.
+(pdftex.def)             Requested size: 140.92793pt x 105.75124pt.
+<../Figures/quadraticEquationToGraphAA.png, id=59, 457.4691pt x 343.2825pt>
+File: ../Figures/quadraticEquationToGraphAA.png Graphic file (type png)
+<use ../Figures/quadraticEquationToGraphAA.png>
+Package pdftex.def Info: ../Figures/quadraticEquationToGraphAA.png  used on inp
+ut line 186.
+(pdftex.def)             Requested size: 140.92793pt x 105.75124pt.
+<../Figures/quadraticEquationToGraphBA.png, id=60, 476.982pt x 343.2825pt>
+File: ../Figures/quadraticEquationToGraphBA.png Graphic file (type png)
+<use ../Figures/quadraticEquationToGraphBA.png>
+Package pdftex.def Info: ../Figures/quadraticEquationToGraphBA.png  used on inp
+ut line 186.
 (pdftex.def)             Requested size: 140.92793pt x 101.42459pt.
+File: ../Figures/quadraticEquationToGraphCA.png Graphic file (type png)
+<use ../Figures/quadraticEquationToGraphCA.png>
+Package pdftex.def Info: ../Figures/quadraticEquationToGraphCA.png  used on inp
+ut line 189.
+(pdftex.def)             Requested size: 140.92793pt x 105.75124pt.
+<../Figures/quadraticEquationToGraphDA.png, id=61, 476.982pt x 343.2825pt>
 File: ../Figures/quadraticEquationToGraphDA.png Graphic file (type png)
 <use ../Figures/quadraticEquationToGraphDA.png>
 Package pdftex.def Info: ../Figures/quadraticEquationToGraphDA.png  used on inp
-ut line 410.
-(pdftex.def)             Requested size: 140.92793pt x 105.75124pt.
- [10 <../Figures/quadraticEquationToGraphDA.png> <../Figures/quadraticEquationT
-oGraphAA.png> <../Figures/quadraticEquationToGraphBA.png> <../Figures/quadratic
-EquationToGraphCA.png>] [11] [12] [13] [14]
+ut line 189.
+(pdftex.def)             Requested size: 140.92793pt x 101.42459pt.
+ [4 <../Figures/quadraticEquationToGraphCA.png> <../Figures/quadraticEquationTo
+GraphAA.png> <../Figures/quadraticEquationToGraphBA.png> <../Figures/quadraticE
+quationToGraphDA.png>] [5] [6]
+<../Figures/polyZeroBehaviorCA.png, id=104, 90.3375pt x 103.88812pt>
+File: ../Figures/polyZeroBehaviorCA.png Graphic file (type png)
+<use ../Figures/polyZeroBehaviorCA.png>
+Package pdftex.def Info: ../Figures/polyZeroBehaviorCA.png  used on input line 
+341.
+(pdftex.def)             Requested size: 140.92793pt x 162.08224pt.
+<../Figures/polyZeroBehaviorAA.png, id=105, 90.3375pt x 103.88812pt>
+File: ../Figures/polyZeroBehaviorAA.png Graphic file (type png)
+<use ../Figures/polyZeroBehaviorAA.png>
+Package pdftex.def Info: ../Figures/polyZeroBehaviorAA.png  used on input line 
+344.
+(pdftex.def)             Requested size: 140.92793pt x 162.08224pt.
+<../Figures/polyZeroBehaviorBA.png, id=106, 133.24782pt x 161.10187pt>
+File: ../Figures/polyZeroBehaviorBA.png Graphic file (type png)
+<use ../Figures/polyZeroBehaviorBA.png>
+Package pdftex.def Info: ../Figures/polyZeroBehaviorBA.png  used on input line 
+344.
+(pdftex.def)             Requested size: 140.92793pt x 170.40334pt.
+File: ../Figures/polyZeroBehaviorCA.png Graphic file (type png)
+<use ../Figures/polyZeroBehaviorCA.png>
+Package pdftex.def Info: ../Figures/polyZeroBehaviorCA.png  used on input line 
+347.
+(pdftex.def)             Requested size: 140.92793pt x 162.08224pt.
+<../Figures/polyZeroBehaviorDA.png, id=107, 90.3375pt x 103.88812pt>
+File: ../Figures/polyZeroBehaviorDA.png Graphic file (type png)
+<use ../Figures/polyZeroBehaviorDA.png>
+Package pdftex.def Info: ../Figures/polyZeroBehaviorDA.png  used on input line 
+347.
+(pdftex.def)             Requested size: 140.92793pt x 162.08224pt.
+ [7 <../Figures/polyZeroBehaviorCA.png>] [8 <../Figures/polyZeroBehaviorAA.png>
+ <../Figures/polyZeroBehaviorBA.png> <../Figures/polyZeroBehaviorDA.png>]
+<../Figures/polyGraphToFunctionA.png, id=130, 426.393pt x 343.2825pt>
+File: ../Figures/polyGraphToFunctionA.png Graphic file (type png)
+<use ../Figures/polyGraphToFunctionA.png>
+Package pdftex.def Info: ../Figures/polyGraphToFunctionA.png  used on input lin
+e 391.
+(pdftex.def)             Requested size: 140.92793pt x 113.45642pt.
+<../Figures/radicalEquationToGraphAA.png, id=131, 434.3427pt x 347.6187pt>
+File: ../Figures/radicalEquationToGraphAA.png Graphic file (type png)
+<use ../Figures/radicalEquationToGraphAA.png>
+Package pdftex.def Info: ../Figures/radicalEquationToGraphAA.png  used on input
+ line 422.
+(pdftex.def)             Requested size: 140.92793pt x 112.78908pt.
+ [9 <../Figures/polyGraphToFunctionA.png>]
+File: ../Figures/radicalEquationToGraphAA.png Graphic file (type png)
+<use ../Figures/radicalEquationToGraphAA.png>
+Package pdftex.def Info: ../Figures/radicalEquationToGraphAA.png  used on input
+ line 425.
+(pdftex.def)             Requested size: 140.92793pt x 112.78908pt.
+<../Figures/radicalEquationToGraphDA.png, id=146, 434.3427pt x 346.896pt>
+File: ../Figures/radicalEquationToGraphDA.png Graphic file (type png)
+<use ../Figures/radicalEquationToGraphDA.png>
+Package pdftex.def Info: ../Figures/radicalEquationToGraphDA.png  used on input
+ line 425.
+(pdftex.def)             Requested size: 140.92793pt x 112.5546pt.
+<../Figures/radicalEquationToGraphBA.png, id=147, 437.2335pt x 347.6187pt>
+File: ../Figures/radicalEquationToGraphBA.png Graphic file (type png)
+<use ../Figures/radicalEquationToGraphBA.png>
+Package pdftex.def Info: ../Figures/radicalEquationToGraphBA.png  used on input
+ line 428.
+(pdftex.def)             Requested size: 140.92793pt x 112.0465pt.
+<../Figures/radicalEquationToGraphCA.png, id=148, 437.2335pt x 346.896pt>
+File: ../Figures/radicalEquationToGraphCA.png Graphic file (type png)
+<use ../Figures/radicalEquationToGraphCA.png>
+Package pdftex.def Info: ../Figures/radicalEquationToGraphCA.png  used on input
+ line 428.
+(pdftex.def)             Requested size: 140.92793pt x 111.81354pt.
+<../Figures/quadraticGraphToEquationA.png, id=149, 446.6286pt x 343.2825pt>
+File: ../Figures/quadraticGraphToEquationA.png Graphic file (type png)
+<use ../Figures/quadraticGraphToEquationA.png>
+Package pdftex.def Info: ../Figures/quadraticGraphToEquationA.png  used on inpu
+t line 446.
+(pdftex.def)             Requested size: 140.92793pt x 108.31789pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [10 <../Figures/radicalEquationToGraphAA.png> <../Figures/radicalEquationToGra
+phDA.png> <../Figures/radicalEquationToGraphBA.png> <../Figures/radicalEquation
+ToGraphCA.png>] [11 <../Figures/quadraticGraphToEquationA.png>] [12] [13]
+<../Figures/rationalGraphToEquationA.png, id=206, 394.5942pt x 312.2064pt>
+File: ../Figures/rationalGraphToEquationA.png Graphic file (type png)
+<use ../Figures/rationalGraphToEquationA.png>
+Package pdftex.def Info: ../Figures/rationalGraphToEquationA.png  used on input
+ line 609.
+(pdftex.def)             Requested size: 140.92793pt x 111.50337pt.
+ [14 <../Figures/rationalGraphToEquationA.png>]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 662.
  [15]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 662.
@@ -727,11 +723,11 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 662.
 Here is how much of TeX's memory you used:
  8790 strings out of 483183
  132794 string characters out of 5966293
- 403917 words of memory out of 5000000
+ 403931 words of memory out of 5000000
  23494 multiletter control sequences out of 15000+600000
  535322 words of font info for 38 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 34i,12n,45p,986b,433s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 34i,12n,45p,986b,435s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texl
@@ -743,7 +739,7 @@ blic/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
 fonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
 cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti
 10.pfb>
-Output written on keyFinalExamA.pdf (15 pages, 354451 bytes).
+Output written on keyFinalExamA.pdf (15 pages, 343499 bytes).
 PDF statistics:
  293 PDF objects out of 1000 (max. 8388607)
  235 compressed objects within 3 object streams
