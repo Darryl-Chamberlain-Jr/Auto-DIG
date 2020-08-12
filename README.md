@@ -17,7 +17,7 @@ Steps to generate exams for the first time.
 3. Modify the shell script file *generateExams.sh* to point to your local directory.
     1. Navigate to the *generateExams.sh* file found in the shellScript folder.
     2. Open the file with a text editor. We suggest [Atom](https://atom.io/).
-    3. Modify the *DIR* to point to your local directory. Example: *home/yourUsername/git-repos/AAG-College-Algebra*
+    3. Modify the *DIR* to point to your local directory. Example: *home/yourUsername/git-repos/Auto-DIG*
 
 4. Run the shell script *generateExams.sh*
     1. Open your terminal and navigate to the shellScript folder.
@@ -26,7 +26,7 @@ Steps to generate exams for the first time.
 
     2. Run the shell script.
 
-       You can achieve this by typing *./generateExams.sh "Semester" "Password" examNumber* The current version of the script will then generate the PDFs of the assessment and label the PDF with the Semester and Exam Number you input. In this version, it creates the number of Modules currently needed for each assessment, but this can be easily modified for your own uses. Password-protected PDFs are also generated.
+       You can achieve this by typing *./generateExams.sh "Semester" "Password" examNumber*. The current version of the script will then generate the PDFs of the assessment and label the PDF with the Semester and Exam Number you input. In this version, it creates the number of Modules currently needed for each assessment, but this can be easily modified for your own uses. Password-protected PDFs are also generated.
 
 5. Check the folder *CompleteExam* for the PDFs, locked PDFs, and keys.
 

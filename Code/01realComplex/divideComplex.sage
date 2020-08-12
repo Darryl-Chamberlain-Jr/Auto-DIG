@@ -58,10 +58,11 @@ def generateProblemCoefficientsAndSolution():
 ### VARIABLE DECLARATIONS ###
 coefficients, solution = generateProblemCoefficientsAndSolution()
 distractors = generateDistractors(coefficients)
+# In the future, I need to do something to check if the distractors are far enough apart.
 
 ### CREATE INTERVAL OPTIONS ###
 solutionList = [solution, distractors[0], distractors[1], distractors[2], distractors[3]]
-intervalOptions = createIntervalOptions(solutionList, 5, 1)
+intervalOptions = createIntervalOptions(solutionList, 1, 0.5)
 
 ### DEFINE ANSWERLIST AND DISPLAYSOLUTION ###
 displaySolution = displayComplexFloat([round(solution[0], 2), round(solution[1], 2)])

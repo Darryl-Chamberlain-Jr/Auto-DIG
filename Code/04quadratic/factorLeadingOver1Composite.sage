@@ -49,7 +49,7 @@ def distractorLumpedCFactors(solution, factors):
     a, b, c, d = solution
     index = random.randint(0,len(aFactors)-1)
 
-    a = a/(aFactors[index][0])
+    a = int(a/(aFactors[index][0]))
     c = c*aFactors[index][0]
     if(b <= d):
         return [a, b, c, d]
@@ -60,19 +60,12 @@ def distractorLumpedAFactors(solution, factors):
     cFactors = factors[1]
     a, b, c, d = solution
     index = random.randint(0,len(aFactors)-1)
-    c = c/(cFactors[index][0])
+    c = int(c/(cFactors[index][0]))
     a = a*cFactors[index][0]
     if(b <= d):
         return [a, b, c, d]
     else:
         return [c, d, a, b]
-
-def displayFactor(a, b):
-    if b < 0:
-        display = "%s x - %s" %(a, -b)
-    else:
-        display = "%s x + %s" %(a, b)
-    return display
 
 # Type 3 - a and c are fairly composite (ac has at least 6 factors)
 intervalRange = 5
