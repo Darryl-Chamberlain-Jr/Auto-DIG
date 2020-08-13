@@ -1,6 +1,6 @@
-source ./fileManipulationFunctions.sh
-source ./questionCreationFunctions.sh
-source ./fileCreationFunctions.sh
+source /${DIR}/shellScripts/./fileManipulationFunctions.sh
+source /${DIR}/shellScripts/./questionCreationFunctions.sh
+source /${DIR}/shellScripts/./fileCreationFunctions.sh
 function defineModuleLongName {
     moduleNumber=$1
     if [ "$moduleNumber" -eq "1" ]; then

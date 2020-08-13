@@ -1,12 +1,13 @@
+#!/bin/bash
 titleOfProgram="Auto-DIG v.0.1"
 DIR="home/dchamberlain31/git-repos/Auto-DIG"
 ###########################################
-source ./questionCreationFunctions.sh
-source ./fileManipulationFunctions.sh
-source ./functionsForZenityAutoDIGshFile.sh
-source ./generateExams.sh
+source /${DIR}/shellScripts/./questionCreationFunctions.sh
+source /${DIR}/shellScripts/./fileManipulationFunctions.sh
+source /${DIR}/shellScripts/./functionsForZenityAutoDIGshFile.sh
+source /${DIR}/shellScripts/./generateExams.sh
 generationOptions
-eog --fullscreen tempStartUpImage.jpg & sleep 3 && pkill eog 
+eog --fullscreen /${DIR}/ImagesForApp/tempStartupImage.jpg & sleep 3 && pkill eog
 typeOfGeneration=$(zenity \
     --title="${titleOfProgram[@]}" \
     --height=250 \
