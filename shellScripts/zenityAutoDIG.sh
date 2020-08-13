@@ -6,6 +6,7 @@ source ./fileManipulationFunctions.sh
 source ./functionsForZenityAutoDIGshFile.sh
 source ./generateExams.sh
 generationOptions
+eog --fullscreen tempStartUpImage.jpg & sleep 3 && pkill eog 
 typeOfGeneration=$(zenity \
     --title="${titleOfProgram[@]}" \
     --height=250 \
