@@ -18,7 +18,7 @@ while (complexZero[0] == complexZero[1]):
     complexZero = [maybeMakeNegative(random.randint(2, 5)), maybeMakeNegative(random.randint(2, 5))]
 displayZero1 = displayComplexFactor(complexZero)
 displayZero1Conjugate = displayComplexFactor([complexZero[0], -complexZero[1]])
-displayZero2 = generatePolynomialDisplay([1, realZero])
+displayZero2 = realZero
 
 ### CREATE INTERVAL OPTIONS ###
 solution, distractor1, distractor2, distractor3 = generateSolutionAndDistractors(complexZero, realZero)

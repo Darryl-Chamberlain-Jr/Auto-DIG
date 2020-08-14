@@ -1,6 +1,4 @@
-#!/bin/bash
 titleOfProgram="Auto-DIG v.0.1"
-DIR="home/dchamberlain31/git-repos/Auto-DIG"
 ###########################################
 source /${DIR}/shellScripts/./questionCreationFunctions.sh
 source /${DIR}/shellScripts/./fileManipulationFunctions.sh

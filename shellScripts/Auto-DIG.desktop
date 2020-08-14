@@ -1,6 +1,6 @@
 #!/usr/bin/env xdg-open
 [Desktop Entry]
-Exec=/bin/zenityAutoDIG.sh
+Exec=/bin/startAutoDIG.sh
 Name=Auto-DIG
 GenericName=Exam Generation App
 Comment=Starts the shell script that contains GUI
