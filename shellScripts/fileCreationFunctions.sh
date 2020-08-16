@@ -1,3 +1,12 @@
+#### FULLY CONVERTED TO PYTHON
+
+
+
+
+
+
+
+
 # This file contains all functions to create the initial .tex file for a module or key.
 
 ### Creates the initial answer key file. Edit this to change the display of the answer keys.
