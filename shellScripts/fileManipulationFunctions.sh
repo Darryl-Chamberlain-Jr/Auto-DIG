@@ -1,4 +1,5 @@
-# This file contains all functions used to manipulate the files in some way.
+
+### CONVERTED TO PYTHON
 
 function copyKeys {
     FileName=$1

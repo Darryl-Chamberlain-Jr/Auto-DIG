@@ -1,5 +1,31 @@
 from pathlib import Path # To touch files within python
 
+# fileNamePrefix should be student last name
+def createFeedbackFile(fileNamePrefix, examLongName, footnoteLeft, version, rootDirectory):
+    Path('/' + str(rootDirectory) + '/Feedback/feedback' + str(fileNamePrefix) + '.tex').touch()
+    feedbackFile = open('/' + str(rootDirectory) + '/Feedback/feedback' + str(fileNamePrefix) + '.tex', 'a')
+    feedbackFile.write(r"""\documentclass{extbook}[14pt]
+\usepackage{multicol, enumerate, enumitem, hyperref, color, soul, setspace, parskip, fancyhdr, amssymb, amsthm, amsmath, bbm, latexsym, units, mathtools}
+\everymath{\displaystyle}
+\usepackage[headsep=0.5cm,headheight=0cm, left=1 in,right= 1 in,top= 1 in,bottom= 1 in]{geometry}
+\usepackage{dashrule}  %% Package to use the command below to create lines between items
+\newcommand{\litem}[1]{\item#1\hspace*{-1cm}\rule{\textwidth}{0.4pt}}
+\pagestyle{fancy}
+\lhead{}
+\chead{Feedback for %s on %s}
+\rhead{}
+\lfoot{%s}
+\cfoot{}
+\rfoot{}
+\begin{document}
+\textbf{This feedback should allow you to understand why you choose the option you did (beyond just getting a question right or wrong) and how to improve. It is generated based on the way you answered.}
+
+\textit{Note: This feedback is auto-generated and may contain issues and/or errors. This feedback is a work-in-progress to give students as many resources to improve as possible.}
+
+\rule{\textwidth}{0.4pt}
+
+\begin{enumerate}""" %(fileNamePrefix, examLongName, version, footnoteLeft)   )
+    feedbackFile.close()
 def createKeyFile(fileNamePrefix, examLongName, footnoteLeft, version, rootDirectory):
     Path('/' + str(rootDirectory) + '/Keys/key' + str(fileNamePrefix) + str(version)+ '.tex').touch()
     keyFile = open('/' + str(rootDirectory) + '/Keys/key' + str(fileNamePrefix) + str(version)+ '.tex', 'a')
@@ -72,14 +98,19 @@ def finishExamFile(fileNamePrefix, version, rootDirectory):
 
 \end{document}""")
     examFile.close()
+def finishFeedbackFile(fileNamePrefix, rootDirectory):
+    feedbackFile = open('/' + str(rootDirectory) + '/Feedback/feedback' + str(fileNamePrefix) + '.tex', 'a')
+    feedbackFile.write(r"""\end{enumerate}
 
+\end{document}""")
+    feedbackFile.close()
 # USED FOR TESTING FUNCTIONS - DELETE WHEN DONE
-fileNamePrefix="Test"
-examLongName="Testing creation of a file"
-footnoteLeft="Dead"
-version="A"
-rootDirectory="home/dchamberlain31/git-repos/Auto-DIG"
-createKeyFile(fileNamePrefix, examLongName, footnoteLeft, version, rootDirectory)
-createExamFile(fileNamePrefix, examLongName, footnoteLeft, version, rootDirectory)
-finishKeyFile(fileNamePrefix, version, rootDirectory)
-finishExamFile(fileNamePrefix, version, rootDirectory)
+#fileNamePrefix="Test"
+#examLongName="Testing creation of a file"
+#footnoteLeft="Dead"
+#version="A"
+#rootDirectory="home/dchamberlain31/git-repos/Auto-DIG"
+#createKeyFile(fileNamePrefix, examLongName, footnoteLeft, version, rootDirectory)
+#createExamFile(fileNamePrefix, examLongName, footnoteLeft, version, rootDirectory)
+#finishKeyFile(fileNamePrefix, version, rootDirectory)
+#finishExamFile(fileNamePrefix, version, rootDirectory)
