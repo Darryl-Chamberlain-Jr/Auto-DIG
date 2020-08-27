@@ -13,10 +13,10 @@ typeOfGeneration=$(zenity \
     --list \
     --text '<b> What do you want to do?</b>' \
     --column 'Generate...' \
-    "$generationOption1" \
-    "$generationOption2" \
-    "$generationOption3" \
-    "$generationOption4"
+    "A Progress Quiz" \
+    "A Single Module" \
+    "A MAC 1105 Final Exam" \
+    "A Flexible Assessment"
 )
 escape=$?
 checkForEscape $escape

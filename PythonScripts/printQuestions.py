@@ -32,8 +32,9 @@ import random
     # choiceSpecificComments
     # solution
     # answerLetter
-    # studentAnswerLetter
 
+# We can remove moduleNumber - unnecessary with fileNamePrefix
+# We can store codeFolderName in the database based on the codeName
 def printQuestionToExam(moduleNumber, version, questionNumber, codeFolderName, codeName, fileNamePrefix, rootDirectory):
     examFile = open('/' + str(rootDirectory) + '/buildExams/' + str(fileNamePrefix) + str(version)+ '.tex', 'a')
     examFile.write(r"""
@@ -173,7 +174,7 @@ def printQuestionToKey(version, codeName, fileNamePrefix, rootDirectory):
     lettersAnswerKey = open('../Keys/lettersAnswerKey' + str(keyFileName) + str(version) + '.csv', 'a')
     lettersAnswerKey.write("%s," %answerLetter)
     lettersAnswerKey.close()
-def printQuestionToFeedback(version, codeName, fileNamePrefix, rootDirectory):
+def printQuestionToFeedback(studentAnswerLetter, version, codeName, fileNamePrefix, rootDirectory):
         feedbackFile = open('../Feedback/feedback' + str(fileNamePrefix) + '.tex', 'a')
         feedbackFile.write(r"\litem{")
         # displayStemType: String, Math Mode, or Graph
