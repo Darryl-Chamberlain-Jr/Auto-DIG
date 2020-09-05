@@ -1,0 +1,9 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Exec=/bin/startAutoDIG.sh
+Name=Auto-DIG
+GenericName=Exam Generation App
+Comment=Starts the shell script that contains GUI
+Terminal=false
+Type=Application
+Icon=autoDIG
