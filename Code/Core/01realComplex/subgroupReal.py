@@ -146,7 +146,7 @@ answerLetterIndicators = [answerList[0][2], answerList[1][2], answerList[2][2], 
 answerLetter = identifyAnswerLetter(answerLetterIndicators)
 
 thisQuestion="subgroupReal"
-displayStemType="Math Mode"
+displayStemType="String"
 displayProblemType="Math Mode"
 displayOptionsType="Math Mode"
 writeToDatabase(DIR, database_name, question_list, thisQuestion, displayStemType, displayStem, displayProblemType, displayProblem, displayOptionsType, choices, choiceComments, displaySolution, answerLetter, generalComment)

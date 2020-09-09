@@ -87,7 +87,7 @@ displayXronosStem = "Simplify the expression below into the form $a+bi$."
 xronosHint="You can treat $i$ as a variable and distribute. Just remember that $i^2=-1$, so you can continue to reduce after you distribute."
 
 thisQuestion="multiplyComplex"
-displayStemType="Math Mode"
+displayStemType="String"
 displayProblemType="Math Mode"
 displayOptionsType="Math Mode"
 writeToDatabase(DIR, database_name, question_list, thisQuestion, displayStemType, displayStem, displayProblemType, displayProblem, displayOptionsType, choices, choiceComments, displaySolution, answerLetter, generalComment)

@@ -5,8 +5,8 @@ gimme=sys.argv[1]
 # Variables for Shell Script
 if gimme in generalForm.keys():
     for question in masterQuestionList:
-        print(question.get(gimme))
-elif gimme=="length":
+        print(f"{question.get(gimme)};")
+elif gimme=="Length":
     print(len(masterQuestionList))
 else:
     print("I didn't give you anything.")

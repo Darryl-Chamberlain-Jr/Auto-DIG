@@ -10,15 +10,15 @@ typeOfGeneration=$(zenity \
     --list \
     --text '<b> What do you want to do?</b>' \
     --column 'Generate...' \
+    "A Flexible Assessment" \
     "A Progress Quiz" \
     "A Single Module" \
     "A MAC 1105 Final Exam" \
-    "A Flexible Assessment"
 )
 escape=$?
 checkForEscape $escape
 #
-footnoteRight=$(zenity \
+footnote_right=$(zenity \
     --title="${titleOfProgram[@]}" \
     --entry \
     --text 'What do you want to print on the bottom-right of the page?'
@@ -26,7 +26,7 @@ footnoteRight=$(zenity \
 escape=$?
 checkForEscape $escape
 db_name="$(( 1000 + RANDOM % 9000 ))-$(( 1000 + RANDOM % 9000 ))"
-footnoteLeft=$(zenity \
+footnote_left=$(zenity \
     --title="${titleOfProgram[@]}" \
     --height=100 \
     --width=400 \
@@ -35,7 +35,7 @@ footnoteLeft=$(zenity \
 )
 escape=$?
 checkForEscape $escape
-numberOfVersions=$(zenity \
+number_of_versions=$(zenity \
     --title="${titleOfProgram[@]}" \
     --scale \
     --text="How many versions do you want to create?" \
@@ -49,93 +49,82 @@ checkForEscape $escape
 defineVersionList
 ###
 if [ "$typeOfGeneration" == "A Progress Quiz" ]; then
-    source /${DIR}/ShellScripts/./generateProgressQuiz.sh
+    source /${DIR}/ShellScripts/Types_of_Generation/./generateProgressQuiz.sh
 elif [ "$typeOfGeneration" == "A Single Module" ]; then
-    source /${DIR}/ShellScripts/./generateSingleModule.sh
+    source /${DIR}/ShellScripts/Types_of_Generation/./generateSingleModule.sh
 elif [ "$typeOfGeneration" == "A MAC 1105 Final Exam" ]; then
-    source /${DIR}/ShellScripts/./generateMAC1105FinalExam.sh
+    source /${DIR}/ShellScripts/Types_of_Generation/./generateMAC1105FinalExam.sh
 elif [ "$typeOfGeneration" == "A Flexible Assessment" ]; then
-    source /${DIR}/ShellScripts/./generateFlexibleAssessment.sh
+    source /${DIR}/ShellScripts/Types_of_Generation/./generateFlexibleAssessment.sh
 fi
 (
-#clearOldVersions
+# Clears old keys and pdfs
+rm -rf /${DIR}/Keys/*
+rm -rf /${DIR}/BuildExams/*
 StartTime=$( date +'%s' )
-# question_step is= 50 / (#_of_questions)*(#_of_versions)
-# generation_step is the total number of PDFs being created= 50 / (2*(#_of_assessments)*(#_of_versions))
+number_of_questions=${#question_list[@]}
+question_step=$(( 50 / (number_of_questions*number_of_versions) ))
 counter=0
-while :
-### NEW DO ### FOR GENERATING PYTHON QUESTIONS
-# With a defined list of assessment titles and list of questions to print per title
-    # list_of_assessment_titles=( first_title second_title third_title ... )
-    # question_list_1 = ( first_question_code ... )
-        # 1 is associated to first title
 END=${#list_of_assessment_titles[@]}
+while true
 do
-    for ((index=0;index<=END;index++)); do
+    mkdir /$DIR/CompleteExam/"$exam_display_name"
+    mkdir /$DIR/CompleteExam/"$exam_display_name"/PDFs
+    mkdir /$DIR/CompleteExam/"$exam_display_name"/Keys
+    for ((index=0;index<END;index++))
+    do
         title=${list_of_assessment_titles[index]}
-        question_list_name="title_$index"
-        question_list="${!question_list_name}"
-        for version in ${versionList[@]}; do
+        question_list_name=$title
+        #question_list_name="$title$index"
+        #question_list="${!question_list_name}"
+        for version in ${version_list[@]}
+        do
+            full_db_name="$db_name-Ver$version"
             echo "$counter" ; sleep 0
-            for question in ${question_list}; do
-                echo "Running ${question} for version ${version}."
-                full_db_name="$db_name-Ver$version"
-                echo $full_db_name
+            ##### DEBUGGING REMOVE WHEN DONE
+            counter=$(( counter+question_step ))
+            #################################
+            python3 /$DIR/PythonScripts/ScriptsForPDFs/createFiles.py "Create Exam File" $title "$exam_display_name" "$footnote_left" "$footnote_right" $version $DIR
+            python3 /$DIR/PythonScripts/ScriptsForPDFs/createFiles.py "Create Key File" $title "$exam_display_name" "$footnote_left" "$footnote_right" $version $DIR
+            for question in ${question_list[@]}
+            do
+                echo "#Running ${question} for version ${version}."
                 run_save_metadata="/$DIR/PythonScripts/ScriptsForDatabases/saveMetadataToNewDatabase.py"
-                echo $DIR
-                echo $question
-                echo $full_db_name
-                echo $question_list_name
-                python3 $run_save_metadata $DIR $question $full_db_name $question_list_name
+                python3 $run_save_metadata $DIR $question "$full_db_name" $title
                 return_error=1
-                while [ return_error -ne 0 ]; do
+                error_counter=0
+                while [ $return_error -ne 0 ]
+                do
+                    if [ $error_counter -ne 0 ]; then
+                        echo "#An error occured while running ${question} for version ${version}. Don't worry - we will continue to try again. Attempt: ${error_counter}"
+                    fi
                     run_return_key_value_from_db="/$DIR/PythonScripts/ScriptsForDatabases/return_key_value_from_db.py"
                     code_folder=$( python3 $run_return_key_value_from_db $DIR $full_db_name $question_list_name $question "Folder" )
                     code_subfolder=$( python3 $run_return_key_value_from_db $DIR $full_db_name $question_list_name $question "Subfolder" )
                     question_py="/$DIR/Code/$code_folder/$code_subfolder/$question.py"
                     python3 $question_py $DIR $full_db_name $question_list_name
+                    # Question data has now been saved with the metadata.
                     return_error=$?
+                    error_counter=$(( error_counter+1 ))
+                python3 /$DIR/PythonScripts/ScriptsForPDFs/printQuestions.py "Print questions to exam" $DIR $title $full_db_name $question_list_name $question $version
+                python3 /$DIR/PythonScripts/ScriptsForPDFs/printQuestions.py "Print questions to key" $DIR $title $full_db_name $question_list_name $question $version
                 counter=$(( counter+question_step ))
+                done
             done
-            # Generate student LaTeX file for title version
-            # Run LaTeX file
-            # Generate key LaTeX file for title verison
-            # Run LaTeX file
-            # Create folder for Master Assessment in CompleteExam
-            # Copy PDFs to correct folders in CompleteExam/MasterAssessmentName
+            python3 /$DIR/PythonScripts/ScriptsForPDFs/createFiles.py "Finish Exam File" $title "$exam_display_name" "$footnote_left" "$footnote_right" $version $DIR
+            python3 /$DIR/PythonScripts/ScriptsForPDFs/createFiles.py "Finish Key File" $title "$exam_display_name" "$footnote_left" "$footnote_right" $version $DIR
+            cd /$DIR/BuildExams/
+            pdflatex -file-line-error -halt-on-error ${title}${version}.tex
+            cp ${title}${version}.pdf /$DIR/CompleteExam/"$exam_display_name"/PDFs
+            cd /$DIR/Keys/
+            pdflatex -file-line-error -halt-on-error key${title}${version}.tex
+            cp key${title}${version}.pdf /$DIR/CompleteExam/"$exam_display_name"/Keys
+            cd /$DIR/ShellScripts/
         done
     done
+    break
 done
-### NEW DONE ###
-### OLD DO ###
-#do
-#    if [ "$typeOfGeneration" == "A Progress Quiz" ] || [ "$typeOfGeneration" == "A Single Module" ] ; then
-#        for module in ${moduleList[@]}
-#        do
-#            presetQuestionList $module # This defines the question list for the module
-#            fileNamePrefix="Module${module}"
-#            for version in ${versionList[@]}
-#            do
-#                echo "$counter" ; sleep 0
-#                generatePDFsAndKeys $fileNamePrefix "$examLongName" "$footnoteRight" $version
-#                copyKeys $fileNamePrefix $version
-#                counter=$(( counter+step ))
-#            done
-#        done
-#    else
-#        for version in ${versionList[@]}
-#        do
-#            echo "$counter" ; sleep 0
-#            echo "# Creating "$examLongName" Version $version. Progress: $counter%"
-#            generatePDFsAndKeys $fileNamePrefix "$examLongName" "$footnoteRight" $version
-#            copyKeys $fileNamePrefix $version
-#            counter=$(( counter+step ))
-#        done
-#    fi
-#    break
-#done
-### OLD DONE ###
-xdg-open /${DIR}/CompleteExam
+xdg-open /${DIR}/CompleteExam/"$exam_display_name"
 EndTime=$( date +'%s' )
 currentDayTime=$( date +'%H:%M on %m/%d/%Y' )
 TotalRunTimeSeconds=$(( EndTime - StartTime ))

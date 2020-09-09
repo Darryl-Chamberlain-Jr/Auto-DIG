@@ -1,14 +1,23 @@
 from pathlib import Path # To touch files within python
+import sys
 
-# fileNamePrefix should be student last name
-def createFeedbackFile(fileNamePrefix, examLongName, footnoteLeft, version, rootDirectory):
-    Path('/' + str(rootDirectory) + '/Feedback/feedback' + str(fileNamePrefix) + '.tex').touch()
-    feedbackFile = open('/' + str(rootDirectory) + '/Feedback/feedback' + str(fileNamePrefix) + '.tex', 'a')
+to_do = sys.argv[1]
+file_name = sys.argv[2]
+exam_display_name = sys.argv[3]
+footnote_left = sys.argv[4]
+footnote_right = sys.argv[5]
+version = sys.argv[6]
+DIR = sys.argv[7]
+
+# file_name should be student last name
+def createFeedbackFile(file_name, exam_name, footnote_left, footnote_right, version, DIR):
+    Path('/' + str(DIR) + '/Feedback/feedback' + str(file_name) + '.tex').touch()
+    feedbackFile = open('/' + str(DIR) + '/Feedback/feedback' + str(file_name) + '.tex', 'a')
     feedbackFile.write(r"""\documentclass{extbook}[14pt]
 \usepackage{multicol, enumerate, enumitem, hyperref, color, soul, setspace, parskip, fancyhdr, amssymb, amsthm, amsmath, bbm, latexsym, units, mathtools}
 \everymath{\displaystyle}
 \usepackage[headsep=0.5cm,headheight=0cm, left=1 in,right= 1 in,top= 1 in,bottom= 1 in]{geometry}
-\usepackage{dashrule}  %% Package to use the command below to create lines between items
+\usepackage{dashrule}
 \newcommand{\litem}[1]{\item#1\hspace*{-1cm}\rule{\textwidth}{0.4pt}}
 \pagestyle{fancy}
 \lhead{}
@@ -16,7 +25,7 @@ def createFeedbackFile(fileNamePrefix, examLongName, footnoteLeft, version, root
 \rhead{}
 \lfoot{%s}
 \cfoot{}
-\rfoot{}
+\rfoot{%s}
 \begin{document}
 \textbf{This feedback should allow you to understand why you choose the option you did (beyond just getting a question right or wrong) and how to improve. It is generated based on the way you answered.}
 
@@ -24,11 +33,11 @@ def createFeedbackFile(fileNamePrefix, examLongName, footnoteLeft, version, root
 
 \rule{\textwidth}{0.4pt}
 
-\begin{enumerate}""" %(fileNamePrefix, examLongName, version, footnoteLeft)   )
+\begin{enumerate}""" %(exam_name, version, footnote_left, footnote_right)   )
     feedbackFile.close()
-def createKeyFile(fileNamePrefix, examLongName, footnoteLeft, version, rootDirectory):
-    Path('/' + str(rootDirectory) + '/Keys/key' + str(fileNamePrefix) + str(version)+ '.tex').touch()
-    keyFile = open('/' + str(rootDirectory) + '/Keys/key' + str(fileNamePrefix) + str(version)+ '.tex', 'a')
+def createKeyFile(file_name, exam_name, footnote_left, footnote_right, version, DIR):
+    Path('/' + str(DIR) + '/Keys/key' + str(file_name) + str(version)+ '.tex').touch()
+    keyFile = open('/' + str(DIR) + '/Keys/key' + str(file_name) + str(version)+ '.tex', 'a')
     keyFile.write(r"""\documentclass{extbook}[14pt]
 \usepackage{multicol, enumerate, enumitem, hyperref, color, soul, setspace, parskip, fancyhdr, amssymb, amsthm, amsmath, bbm, latexsym, units, mathtools}
 \everymath{\displaystyle}
@@ -41,7 +50,7 @@ def createKeyFile(fileNamePrefix, examLongName, footnoteLeft, version, rootDirec
 \rhead{}
 \lfoot{%s}
 \cfoot{}
-\rfoot{}
+\rfoot{%s}
 \begin{document}
 \textbf{This key should allow you to understand why you choose the option you did (beyond just getting a question right or wrong). \href{https://xronos.clas.ufl.edu/mac1105spring2020/courseDescriptionAndMisc/Exams/LearningFromResults}{More instructions on how to use this key can be found here}.}
 
@@ -51,11 +60,11 @@ def createKeyFile(fileNamePrefix, examLongName, footnoteLeft, version, rootDirec
 
 \rule{\textwidth}{0.4pt}
 
-\begin{enumerate}""" %(examLongName, version, footnoteLeft)   )
+\begin{enumerate}""" %(exam_name, version, footnote_left, footnote_right)   )
     keyFile.close()
-def createExamFile(fileNamePrefix, examLongName, footnoteLeft, version, rootDirectory):
-    Path('/' + str(rootDirectory) + '/buildExams/' + str(fileNamePrefix) + str(version)+ '.tex').touch()
-    examFile = open('/' + str(rootDirectory) + '/buildExams/' + str(fileNamePrefix) + str(version)+ '.tex', 'a')
+def createExamFile(file_name, exam_name, footnote_left, footnote_right, version, DIR):
+    Path('/' + str(DIR) + '/BuildExams/' + str(file_name) + str(version)+ '.tex').touch()
+    examFile = open('/' + str(DIR) + '/BuildExams/' + str(file_name) + str(version)+ '.tex', 'a')
     examFile.write(r"""\documentclass[14pt]{extbook}
 \usepackage{multicol, enumerate, enumitem, hyperref, color, soul, setspace, parskip, fancyhdr} %%General Packages
 \usepackage{amssymb, amsthm, amsmath, bbm, latexsym, units, mathtools} %%Math Packages
@@ -66,51 +75,53 @@ def createExamFile(fileNamePrefix, examLongName, footnoteLeft, version, rootDire
 \usepackage{dashrule}  %% Package to use the command below to create lines between items
 \newcommand{\litem}[1]{\item#1\hspace*{-1cm}\rule{\textwidth}{0.4pt}}
 \pagestyle{fancy}
-\lhead{}
-\chead{%s}
-\rhead{}
+\lhead{%s}
+\chead{}
+\rhead{Version %s}
 \lfoot{%s}
 \cfoot{}
-\rfoot{Version %s}
+\rfoot{%s}
 \begin{document}
 
-\begin{sagesilent}
-load("../PythonScripts/pythonImports.py")
-load("../PythonScripts/intervalMaskingMethod.sage")
-load("../PythonScripts/keyGeneration.sage")
-load("../PythonScripts/commonlyUsedFunctions.sage")
-keyFileName = "%s"
-version = "%s"
-\end{sagesilent}
-
 \begin{enumerate}
-""" %(examLongName, footnoteLeft, version, fileNamePrefix, version))
+""" %(exam_name, version, footnote_left, footnote_right))
     examFile.close()
-def finishKeyFile(fileNamePrefix, version, rootDirectory):
-    keyFile = open('/' + str(rootDirectory) + '/Keys/key' + str(fileNamePrefix) + str(version)+ '.tex', 'a')
+def finishKeyFile(file_name, version, DIR):
+    keyFile = open('/' + str(DIR) + '/Keys/key' + str(file_name) + str(version)+ '.tex', 'a')
     keyFile.write(r"""\end{enumerate}
 
 \end{document}""")
     keyFile.close()
-def finishExamFile(fileNamePrefix, version, rootDirectory):
-    examFile = open('/' + str(rootDirectory) + '/buildExams/' + str(fileNamePrefix) + str(version)+ '.tex', 'a')
+def finishExamFile(file_name, version, DIR):
+    examFile = open('/' + str(DIR) + '/BuildExams/' + str(file_name) + str(version)+ '.tex', 'a')
     examFile.write(r"""\end{enumerate}
 
 \end{document}""")
     examFile.close()
-def finishFeedbackFile(fileNamePrefix, rootDirectory):
-    feedbackFile = open('/' + str(rootDirectory) + '/Feedback/feedback' + str(fileNamePrefix) + '.tex', 'a')
+def finishFeedbackFile(file_name, DIR):
+    feedbackFile = open('/' + str(DIR) + '/Feedback/feedback' + str(file_name) + '.tex', 'a')
     feedbackFile.write(r"""\end{enumerate}
 
 \end{document}""")
     feedbackFile.close()
-# USED FOR TESTING FUNCTIONS - DELETE WHEN DONE
-#fileNamePrefix="Test"
-#examLongName="Testing creation of a file"
-#footnoteLeft="Dead"
-#version="A"
-#rootDirectory="home/dchamberlain31/git-repos/Auto-DIG"
-#createKeyFile(fileNamePrefix, examLongName, footnoteLeft, version, rootDirectory)
-#createExamFile(fileNamePrefix, examLongName, footnoteLeft, version, rootDirectory)
-#finishKeyFile(fileNamePrefix, version, rootDirectory)
-#finishExamFile(fileNamePrefix, version, rootDirectory)
+if to_do == "Create Feedback File":
+    createFeedbackFile(file_name, exam_display_name, footnote_left, footnote_right, version, DIR)
+    print("Created feedback file")
+elif to_do == "Create Key File":
+    createKeyFile(file_name, exam_display_name, footnote_left, footnote_right, version, DIR)
+    print("Created key file")
+elif to_do == "Create Exam File":
+    createExamFile(file_name, exam_display_name, footnote_left, footnote_right, version, DIR)
+    print("Created exam file")
+elif to_do == "Finish Feedback File":
+    finishFeedbackFile(file_name, DIR)
+    print("Finished feedback file")
+elif to_do == "Finish Key File":
+    finishKeyFile(file_name, version, DIR)
+    print("Finished key file")
+elif to_do == "Finish Exam File":
+    finishExamFile(file_name, version, DIR)
+    print("Finished exam file")
+else:
+    print("Check the command you submitted.")
+    exit(1)
