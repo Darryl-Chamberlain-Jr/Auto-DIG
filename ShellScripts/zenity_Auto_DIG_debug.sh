@@ -3,13 +3,16 @@ titleOfProgram="Auto-DIG v.0.2"
 ###########################################
 source /${DIR}/ShellScripts/./functionsForZenityScript.sh
 footnote_right="Fall 2020"
-db_name="$(( 1000 + RANDOM % 9000 ))-$(( 1000 + RANDOM % 9000 ))"
+#db_name="$(( 1000 + RANDOM % 9000 ))-$(( 1000 + RANDOM % 9000 ))"
+db_name="1269-8776"
 footnote_left=$db_name
 number_of_versions=3
 version_list=( "A" "B" "C" )
-question_list=( "divideComplex" "multiplyComplex")
+#question_list=( "divideComplex" "multiplyComplex" "orderOfOperations" "subgroupComplex" "subgroupReal" )
+question_list=( "linearGraphToStandard" "linearParOrPer" "linearTwoPoints" "solveIntegerLinear" "solveRationalLinear" )
 exam_display_name="Progress Quiz 1"
-file_name="PQ1"
+#file_name="Module1"
+file_name="Module2"
 list_of_assessment_titles=( $file_name )
 (
 # Clears old keys and pdfs
@@ -56,7 +59,7 @@ do
                     code_folder=$( python3 $run_return_key_value_from_db $DIR $full_db_name $question_list_name $question "Folder" )
                     code_subfolder=$( python3 $run_return_key_value_from_db $DIR $full_db_name $question_list_name $question "Subfolder" )
                     question_py="/$DIR/Code/$code_folder/$code_subfolder/$question.py"
-                    python3 $question_py $DIR $full_db_name $question_list_name
+                    python3 $question_py $DIR $full_db_name $question_list_name $version
                     # Question data has now been saved with the metadata.
                     return_error=$?
                     error_counter=$(( error_counter+1 ))

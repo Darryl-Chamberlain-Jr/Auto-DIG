@@ -1,5 +1,25 @@
-# Module 2 - Linear Functions
-# Objective - Solve linear functions with rational coefficients
+import sys
+from sympy import *
+import numpy
+import random
+import math
+from decimal import Decimal
+import decimal
+import traceback
+import cmath
+import matplotlib.pyplot as plt
+from sympy.abc import x, y
+
+DIR=sys.argv[1]
+database_name=sys.argv[2]
+question_list=sys.argv[3]
+version=sys.argv[4]
+sys.path.insert(1, f"/{DIR}/PythonScripts/ScriptsForQuestionCode")
+from commonlyUsedFunctions import *
+from intervalMaskingMethod import *
+sys.path.insert(1, f"/{DIR}/PythonScripts/ScriptsForDatabases")
+from storeQuestionData import *
+
 def createThreeRandomIntegers():
     a = maybeMakeNegative(random.randint(3, 9))
     b = maybeMakeNegative(random.randint(3, 9))
@@ -83,5 +103,9 @@ answerLetter = identifyAnswerLetter(answerLetterIndicators)
 displayStem = 'Solve the linear equation below. Then, choose the interval that contains the solution.'
 displayProblem = "\\frac{%s}{%s} - \\frac{%s}{%s} = \\frac{%s}{%s}" %(generatePolynomialDisplay(  [constants[0], constants[3]]  ), constants[6], generatePolynomialDisplay(  [constants[1], constants[4]]  ), constants[7], generatePolynomialDisplay(  [constants[2], constants[5]]  ), constants[8]    )
 generalComment = "If you are having trouble with this problem, try to remove a fraction at a time by multiplying each term by the denominator."
-### WRITE TO KEY ###
-writeToKey(keyFileName, version, problemNumber, displayStem, "MathMode", displayProblem, "MathMode", displaySolution, answerLetter, choices, choiceComments, generalComment)
+
+thisQuestion="solveRationalLinear"
+displayStemType="String"
+displayProblemType="Math Mode"
+displayOptionsType="Math Mode"
+writeToDatabase(DIR, database_name, question_list, thisQuestion, displayStemType, displayStem, displayProblemType, displayProblem, displayOptionsType, choices, choiceComments, displaySolution, answerLetter, generalComment)

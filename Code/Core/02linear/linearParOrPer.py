@@ -1,5 +1,24 @@
-# Module 2 - Linear Functions
-# Objective - Construct a linear function given a point and a line parallel or perpendicular.
+import sys
+from sympy import *
+import numpy
+import random
+import math
+from decimal import Decimal
+import decimal
+import traceback
+import cmath
+import matplotlib.pyplot as plt
+
+DIR=sys.argv[1]
+database_name=sys.argv[2]
+question_list=sys.argv[3]
+version=sys.argv[4]
+sys.path.insert(1, f"/{DIR}/PythonScripts/ScriptsForQuestionCode")
+from commonlyUsedFunctions import *
+from intervalMaskingMethod import *
+sys.path.insert(1, f"/{DIR}/PythonScripts/ScriptsForDatabases")
+from storeQuestionData import *
+
 def generateLineType():
     typeList = ['Parallel', 'Perpendicular']
     lineType = typeList[random.randint(0, len(typeList)-1)]
@@ -76,5 +95,9 @@ else:
     standardFormParOrPer = "%s x + %s y" %(A, B)
 displayProblem = '\\text{%s to } %s = %d \\text{ and passing through the point } (%s, %s).' %(lineType, standardFormParOrPer, C, point[0], point[1])
 generalComment = "Parallel slope is the same and perpendicular slope is opposite reciprocal. Opposite reciprocal means flipping the fraction and changing the sign (positive to negative or negative to positive)."
-### WRITE TO KEY ###
-writeToKey(keyFileName, version, problemNumber, displayStem, "MathMode", displayProblem, "MathMode", displaySolution, answerLetter, choices, choiceComments, generalComment)
+
+thisQuestion="linearParOrPer"
+displayStemType="String"
+displayProblemType="Math Mode"
+displayOptionsType="Math Mode"
+writeToDatabase(DIR, database_name, question_list, thisQuestion, displayStemType, displayStem, displayProblemType, displayProblem, displayOptionsType, choices, choiceComments, displaySolution, answerLetter, generalComment)

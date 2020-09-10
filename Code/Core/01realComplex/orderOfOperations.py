@@ -12,6 +12,7 @@ import matplotlib.pyplot as plt
 DIR=sys.argv[1]
 database_name=sys.argv[2]
 question_list=sys.argv[3]
+version=sys.argv[4]
 sys.path.insert(1, f"/{DIR}/PythonScripts/ScriptsForQuestionCode")
 from commonlyUsedFunctions import *
 from intervalMaskingMethod import *

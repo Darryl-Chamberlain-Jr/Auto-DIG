@@ -1,5 +1,24 @@
-# Module 2 -  Linear Functions
-# Objective - Transition between different representations of a linear function.
+import sys
+from sympy import *
+import numpy
+import random
+import math
+from decimal import Decimal
+import decimal
+import traceback
+import cmath
+import matplotlib.pyplot as plt
+
+DIR=sys.argv[1]
+database_name=sys.argv[2]
+question_list=sys.argv[3]
+version=sys.argv[4]
+sys.path.insert(1, f"/{DIR}/PythonScripts/ScriptsForQuestionCode")
+from commonlyUsedFunctions import *
+from intervalMaskingMethod import *
+sys.path.insert(1, f"/{DIR}/PythonScripts/ScriptsForDatabases")
+from storeQuestionData import *
+
 ### DEFINITIONS ###
 def simplifySolution(A, B, C):
     if(A < 0):
@@ -125,5 +144,9 @@ answerLetter = identifyAnswerLetter(answerLetterIndicators)
 displayStem = 'Write the equation of the line in the graph below in Standard form $Ax+By=C$. Then, choose the intervals that contain $A, B, \\text{ and } C$.'
 displayProblem = "\\text{Equation that was graphed:} f(x)= %s" %generatePolynomialDisplay(slopeInt)
 generalComment = "Standard form is supposed to have $A > 0$ and all fractions removed."
-### WRITE TO KEY ###
-writeToKey(keyFileName, version, problemNumber, displayStem, "MathMode", displayProblem, "MathMode", displaySolution, answerLetter, choices, choiceComments, generalComment)
+
+thisQuestion="linearGraphToStandard"
+displayStemType="String"
+displayProblemType="Graph"
+displayOptionsType="Math Mode"
+writeToDatabase(DIR, database_name, question_list, thisQuestion, displayStemType, displayStem, displayProblemType, displayProblem, displayOptionsType, choices, choiceComments, displaySolution, answerLetter, generalComment)

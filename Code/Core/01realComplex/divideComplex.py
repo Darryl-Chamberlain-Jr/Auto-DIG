@@ -12,6 +12,7 @@ import matplotlib.pyplot as plt
 DIR=sys.argv[1]
 database_name=sys.argv[2]
 question_list=sys.argv[3]
+version=sys.argv[4]
 sys.path.insert(1, f"/{DIR}/PythonScripts/ScriptsForQuestionCode")
 from commonlyUsedFunctions import *
 from intervalMaskingMethod import *
@@ -118,4 +119,4 @@ this_question="divideComplex"
 display_stem_type="String"
 display_problem_type="Math Mode"
 display_options_type="Math Mode"
-writeToDatabase(DIR, database_name, question_list, this_question, display_stem_type, display_stem, display_problem_type, display_problem, display_options_type, choices, choice_comments, solution, answer_letter, general_comment)
+writeToDatabase(DIR, database_name, question_list, this_question, display_stem_type, display_stem, display_problem_type, display_problem, display_options_type, choices, choice_comments, display_solution, answer_letter, general_comment)

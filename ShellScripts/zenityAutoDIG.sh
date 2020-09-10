@@ -63,7 +63,7 @@ rm -rf /${DIR}/Keys/*
 rm -rf /${DIR}/BuildExams/*
 StartTime=$( date +'%s' )
 number_of_questions=${#question_list[@]}
-question_step=$(( 50 / (number_of_questions*number_of_versions) ))
+question_step=$(( 100 / (number_of_questions*number_of_versions) ))
 counter=0
 END=${#list_of_assessment_titles[@]}
 while true
@@ -81,9 +81,7 @@ do
         do
             full_db_name="$db_name-Ver$version"
             echo "$counter" ; sleep 0
-            ##### DEBUGGING REMOVE WHEN DONE
             counter=$(( counter+question_step ))
-            #################################
             python3 /$DIR/PythonScripts/ScriptsForPDFs/createFiles.py "Create Exam File" $title "$exam_display_name" "$footnote_left" "$footnote_right" $version $DIR
             python3 /$DIR/PythonScripts/ScriptsForPDFs/createFiles.py "Create Key File" $title "$exam_display_name" "$footnote_left" "$footnote_right" $version $DIR
             for question in ${question_list[@]}
@@ -102,7 +100,8 @@ do
                     code_folder=$( python3 $run_return_key_value_from_db $DIR $full_db_name $question_list_name $question "Folder" )
                     code_subfolder=$( python3 $run_return_key_value_from_db $DIR $full_db_name $question_list_name $question "Subfolder" )
                     question_py="/$DIR/Code/$code_folder/$code_subfolder/$question.py"
-                    python3 $question_py $DIR $full_db_name $question_list_name
+                    # Runs python code to generate question data
+                    python3 $question_py $DIR $full_db_name $question_list_name $version
                     # Question data has now been saved with the metadata.
                     return_error=$?
                     error_counter=$(( error_counter+1 ))
