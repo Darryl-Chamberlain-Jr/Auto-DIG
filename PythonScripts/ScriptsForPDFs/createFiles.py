@@ -43,7 +43,9 @@ def createKeyFile(file_name, exam_name, footnote_left, footnote_right, version, 
 \everymath{\displaystyle}
 \usepackage[headsep=0.5cm,headheight=0cm, left=1 in,right= 1 in,top= 1 in,bottom= 1 in]{geometry}
 \usepackage{dashrule}  %% Package to use the command below to create lines between items
-\newcommand{\litem}[1]{\item#1\hspace*{-1cm}\rule{\textwidth}{0.4pt}}
+\newcommand{\litem}[1]{\item #1
+
+\rule{\textwidth}{0.4pt}}
 \pagestyle{fancy}
 \lhead{}
 \chead{Answer Key for %s Version %s}

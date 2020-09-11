@@ -1,7 +1,6 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.8.4)  10 SEP 2020 16:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.8.4)  10 SEP 2020 21:44
 entering extended mode
  restricted \write18 enabled.
- file:line:error style messages enabled.
  %&-line parsing enabled.
 **keyModule2A.tex
 (./keyModule2A.tex
@@ -464,27 +463,28 @@ File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
 \l__kernel_color_stack_int=\count286
 \l__pdf_internal_box=\box94
 )
-No file keyModule2A.aux.
+(./keyModule2A.aux)
 \openout1 = `keyModule2A.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
 \AtBeginShipoutBox=\box95
-Package hyperref Info: Link coloring OFF on input line 14.
+Package hyperref Info: Link coloring OFF on input line 16.
+
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
 
@@ -496,9 +496,11 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count287
 )
-LaTeX Info: Redefining \ref on input line 14.
-LaTeX Info: Redefining \pageref on input line 14.
-LaTeX Info: Redefining \nameref on input line 14.
+LaTeX Info: Redefining \ref on input line 16.
+LaTeX Info: Redefining \pageref on input line 16.
+LaTeX Info: Redefining \nameref on input line 16.
+
+(./keyModule2A.out) (./keyModule2A.out)
 \@outlinefile=\write3
 \openout3 = `keyModule2A.out'.
 
@@ -567,34 +569,32 @@ Package graphics Info: Driver file: pdftex.def on input line 105.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 39.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 46.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 39.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 46.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+lasy on input line 39
+LaTeX Font Info:    Trying to load font information for U+lasy on input line 46
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-<../Figures/linearGraphToStandardA.png, id=6, 446.6286pt x 343.2825pt>
+<../Figures/linearGraphToStandardA.png, id=6, 516.0078pt x 353.4003pt>
 File: ../Figures/linearGraphToStandardA.png Graphic file (type png)
 <use ../Figures/linearGraphToStandardA.png>
 Package pdftex.def Info: ../Figures/linearGraphToStandardA.png  used on input l
-ine 39.
-(pdftex.def)             Requested size: 234.8775pt x 180.5298pt.
+ine 46.
+(pdftex.def)             Requested size: 234.8775pt x 160.86208pt.
 
-Overfull \hbox (385.78795pt too wide) in paragraph at lines 39--52
-[]\OT1/cmr/bx/n/10 General Com-ment: \OT1/cmr/m/n/10 Stan-dard form is sup-pose
-d to have $\OML/cmm/m/it/10 A > \OT1/cmr/m/n/10 0$ and all frac-tions re-moved.
- | [] 
+Overfull \hbox (25.00003pt too wide) in paragraph at lines 46--64
+[][] 
  []
 
 
@@ -606,428 +606,104 @@ This may cause the page layout to be inconsistent, however.
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
  <../Figures/linearGraphToStandardA.png>]
-Overfull \hbox (23.3992pt too wide) in paragraph at lines 52--58
-\OT1/cmr/m/n/10 tive). | [] 
+Overfull \hbox (25.00003pt too wide) in paragraph at lines 64--82
+[][] 
  []
 
 
-Overfull \hbox (119.43571pt too wide) in paragraph at lines 58--64
-[]\OT1/cmr/bx/n/10 General Com-ment: \OT1/cmr/m/n/10 None | [] 
+Overfull \hbox (2.052pt too wide) in paragraph at lines 82--82
+[]$\OML/cmm/m/it/10 m \OMS/cmsy/m/n/10 2 \OT1/cmr/m/n/10 [0\OML/cmm/m/it/10 :\O
+T1/cmr/m/n/10 31\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 1\OML/cmm/m/it/10 :\OT1/cmr/
+m/n/10 9]| \OML/cmm/m/it/10 b \OMS/cmsy/m/n/10 2 \OT1/cmr/m/n/10 [5\OML/cmm/m/i
+t/10 :\OT1/cmr/m/n/10 78\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 6\OML/cmm/m/it/10 :\
+OT1/cmr/m/n/10 11]$ $\OML/cmm/m/it/10 y \OT1/cmr/m/n/10 = 0\OML/cmm/m/it/10 :\O
+T1/cmr/m/n/10 92\OML/cmm/m/it/10 x \OT1/cmr/m/n/10 + 6$, which cor-re-sponds to
+ us-ing the cor-rect slope/equation
  []
 
 
-Overfull \hbox (119.43571pt too wide) in paragraph at lines 64--70
-[]\OT1/cmr/bx/n/10 General Com-ment: \OT1/cmr/m/n/10 None | [] 
+Overfull \hbox (2.052pt too wide) in paragraph at lines 82--82
+[]$\OML/cmm/m/it/10 m \OMS/cmsy/m/n/10 2 \OT1/cmr/m/n/10 [0\OML/cmm/m/it/10 :\O
+T1/cmr/m/n/10 31\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 1\OML/cmm/m/it/10 :\OT1/cmr/
+m/n/10 9]| \OML/cmm/m/it/10 b \OMS/cmsy/m/n/10 2 \OT1/cmr/m/n/10 [6\OML/cmm/m/i
+t/10 :\OT1/cmr/m/n/10 61\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 7\OML/cmm/m/it/10 :\
+OT1/cmr/m/n/10 18]$ $\OML/cmm/m/it/10 y \OT1/cmr/m/n/10 = 0\OML/cmm/m/it/10 :\O
+T1/cmr/m/n/10 92\OML/cmm/m/it/10 x \OT1/cmr/m/n/10 + 7$, which cor-re-sponds to
+ us-ing the cor-rect slope/equation
  []
 
 
-Overfull \hbox (119.43571pt too wide) in paragraph at lines 70--76
-[]\OT1/cmr/bx/n/10 General Com-ment: \OT1/cmr/m/n/10 None | [] 
+Overfull \hbox (25.00003pt too wide) in paragraph at lines 82--100
+[][] 
  []
 
 
-Overfull \hbox (119.43571pt too wide) in paragraph at lines 76--82
-[]\OT1/cmr/bx/n/10 General Com-ment: \OT1/cmr/m/n/10 None | [] 
- []
-
-
-Overfull \hbox (119.43571pt too wide) in paragraph at lines 82--88
-[]\OT1/cmr/bx/n/10 General Com-ment: \OT1/cmr/m/n/10 None | [] 
- []
-
-
-Overfull \hbox (119.43571pt too wide) in paragraph at lines 88--94
-[]\OT1/cmr/bx/n/10 General Com-ment: \OT1/cmr/m/n/10 None | [] 
- []
-
-
-Overfull \hbox (119.43571pt too wide) in paragraph at lines 94--100
-[]\OT1/cmr/bx/n/10 General Com-ment: \OT1/cmr/m/n/10 None | [] 
- []
-
-
-Overfull \hbox (119.43571pt too wide) in paragraph at lines 100--106
-[]\OT1/cmr/bx/n/10 General Com-ment: \OT1/cmr/m/n/10 None | [] 
- []
-
-
-Overfull \hbox (119.43571pt too wide) in paragraph at lines 106--112
-[]\OT1/cmr/bx/n/10 General Com-ment: \OT1/cmr/m/n/10 None | [] 
- []
-
-
-Overfull \hbox (119.43571pt too wide) in paragraph at lines 112--118
-[]\OT1/cmr/bx/n/10 General Com-ment: \OT1/cmr/m/n/10 None | [] 
- []
-
-
-Overfull \hbox (119.43571pt too wide) in paragraph at lines 118--124
-[]\OT1/cmr/bx/n/10 General Com-ment: \OT1/cmr/m/n/10 None | [] 
- []
-
-
-Overfull \hbox (119.43571pt too wide) in paragraph at lines 124--130
-[]\OT1/cmr/bx/n/10 General Com-ment: \OT1/cmr/m/n/10 None | [] 
- []
-
-
-Overfull \hbox (119.43571pt too wide) in paragraph at lines 130--136
-[]\OT1/cmr/bx/n/10 General Com-ment: \OT1/cmr/m/n/10 None | [] 
- []
-
-
-Overfull \hbox (119.43571pt too wide) in paragraph at lines 136--142
-[]\OT1/cmr/bx/n/10 General Com-ment: \OT1/cmr/m/n/10 None | [] 
- []
-
-
-Overfull \hbox (119.43571pt too wide) in paragraph at lines 142--148
-[]\OT1/cmr/bx/n/10 General Com-ment: \OT1/cmr/m/n/10 None | [] 
- []
-
-
-Overfull \hbox (119.43571pt too wide) in paragraph at lines 148--154
-[]\OT1/cmr/bx/n/10 General Com-ment: \OT1/cmr/m/n/10 None | [] 
- []
-
-
-Overfull \hbox (119.43571pt too wide) in paragraph at lines 154--160
-[]\OT1/cmr/bx/n/10 General Com-ment: \OT1/cmr/m/n/10 None | [] 
- []
-
-
-Overfull \hbox (119.43571pt too wide) in paragraph at lines 160--166
-[]\OT1/cmr/bx/n/10 General Com-ment: \OT1/cmr/m/n/10 None | [] 
- []
-
-
-Overfull \hbox (119.43571pt too wide) in paragraph at lines 166--172
-[]\OT1/cmr/bx/n/10 General Com-ment: \OT1/cmr/m/n/10 None | [] 
- []
-
-
-Overfull \hbox (119.43571pt too wide) in paragraph at lines 172--178
-[]\OT1/cmr/bx/n/10 General Com-ment: \OT1/cmr/m/n/10 None | [] 
- []
-
-
-Overfull \hbox (119.43571pt too wide) in paragraph at lines 178--184
-[]\OT1/cmr/bx/n/10 General Com-ment: \OT1/cmr/m/n/10 None | [] 
- []
-
-
-Overfull \hbox (119.43571pt too wide) in paragraph at lines 184--190
-[]\OT1/cmr/bx/n/10 General Com-ment: \OT1/cmr/m/n/10 None | [] 
- []
-
-
-Overfull \hbox (119.43571pt too wide) in paragraph at lines 190--196
-[]\OT1/cmr/bx/n/10 General Com-ment: \OT1/cmr/m/n/10 None | [] 
- []
-
-
-Overfull \hbox (119.43571pt too wide) in paragraph at lines 196--202
-[]\OT1/cmr/bx/n/10 General Com-ment: \OT1/cmr/m/n/10 None | [] 
- []
-
-
-Overfull \hbox (119.43571pt too wide) in paragraph at lines 202--208
-[]\OT1/cmr/bx/n/10 General Com-ment: \OT1/cmr/m/n/10 None | [] 
- []
-
-
-Overfull \hbox (119.43571pt too wide) in paragraph at lines 208--214
-[]\OT1/cmr/bx/n/10 General Com-ment: \OT1/cmr/m/n/10 None | [] 
- []
-
-
-Overfull \hbox (119.43571pt too wide) in paragraph at lines 214--220
-[]\OT1/cmr/bx/n/10 General Com-ment: \OT1/cmr/m/n/10 None | [] 
- []
-
-
-Overfull \hbox (119.43571pt too wide) in paragraph at lines 220--226
-[]\OT1/cmr/bx/n/10 General Com-ment: \OT1/cmr/m/n/10 None | [] 
- []
-
-
-Overfull \hbox (119.43571pt too wide) in paragraph at lines 226--232
-[]\OT1/cmr/bx/n/10 General Com-ment: \OT1/cmr/m/n/10 None | [] 
- []
-
-
-Overfull \hbox (119.43571pt too wide) in paragraph at lines 232--238
-[]\OT1/cmr/bx/n/10 General Com-ment: \OT1/cmr/m/n/10 None | [] 
- []
-
-
-Overfull \hbox (119.43571pt too wide) in paragraph at lines 238--244
-[]\OT1/cmr/bx/n/10 General Com-ment: \OT1/cmr/m/n/10 None | [] 
+Overfull \hbox (25.00003pt too wide) in paragraph at lines 100--101
+[][] 
  []
 
 [2]
-Overfull \hbox (119.43571pt too wide) in paragraph at lines 244--250
-[]\OT1/cmr/bx/n/10 General Com-ment: \OT1/cmr/m/n/10 None | [] 
+Overfull \hbox (25.00003pt too wide) in paragraph at lines 119--141
+[][] 
+ []
+
+<../Figures/linearGraphToStandardCopyA.png, id=49, 479.1501pt x 343.2825pt>
+File: ../Figures/linearGraphToStandardCopyA.png Graphic file (type png)
+<use ../Figures/linearGraphToStandardCopyA.png>
+Package pdftex.def Info: ../Figures/linearGraphToStandardCopyA.png  used on inp
+ut line 141.
+(pdftex.def)             Requested size: 234.8775pt x 168.27798pt.
+
+Overfull \hbox (25.00003pt too wide) in paragraph at lines 141--159
+[][] 
+ []
+
+[3 <../Figures/linearGraphToStandardCopyA.png>]
+Overfull \hbox (25.00003pt too wide) in paragraph at lines 159--177
+[][] 
  []
 
 
-Overfull \hbox (119.43571pt too wide) in paragraph at lines 250--256
-[]\OT1/cmr/bx/n/10 General Com-ment: \OT1/cmr/m/n/10 None | [] 
+Overfull \hbox (4.82979pt too wide) in paragraph at lines 177--177
+[]$\OML/cmm/m/it/10 m \OMS/cmsy/m/n/10 2 \OT1/cmr/m/n/10 [1\OML/cmm/m/it/10 :\O
+T1/cmr/m/n/10 57\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 4\OML/cmm/m/it/10 :\OT1/cmr/
+m/n/10 57]| \OML/cmm/m/it/10 b \OMS/cmsy/m/n/10 2 \OT1/cmr/m/n/10 [\OMS/cmsy/m/
+n/10 ^^@\OT1/cmr/m/n/10 6\OML/cmm/m/it/10 ; \OMS/cmsy/m/n/10 ^^@\OT1/cmr/m/n/10
+ 3\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 8]$ $\OML/cmm/m/it/10 y \OT1/cmr/m/n/10 = 1
+\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 57\OML/cmm/m/it/10 x \OMS/cmsy/m/n/10 ^^@ \OT
+1/cmr/m/n/10 4$, which cor-re-sponds to us-ing the cor-rect slope/equation
  []
 
 
-Overfull \hbox (119.43571pt too wide) in paragraph at lines 256--262
-[]\OT1/cmr/bx/n/10 General Com-ment: \OT1/cmr/m/n/10 None | [] 
- []
-
-
-Overfull \hbox (119.43571pt too wide) in paragraph at lines 262--268
-[]\OT1/cmr/bx/n/10 General Com-ment: \OT1/cmr/m/n/10 None | [] 
- []
-
-
-Overfull \hbox (119.43571pt too wide) in paragraph at lines 268--274
-[]\OT1/cmr/bx/n/10 General Com-ment: \OT1/cmr/m/n/10 None | [] 
- []
-
-
-Overfull \hbox (119.43571pt too wide) in paragraph at lines 274--280
-[]\OT1/cmr/bx/n/10 General Com-ment: \OT1/cmr/m/n/10 None | [] 
- []
-
-
-Overfull \hbox (119.43571pt too wide) in paragraph at lines 280--286
-[]\OT1/cmr/bx/n/10 General Com-ment: \OT1/cmr/m/n/10 None | [] 
- []
-
-
-Overfull \hbox (119.43571pt too wide) in paragraph at lines 286--292
-[]\OT1/cmr/bx/n/10 General Com-ment: \OT1/cmr/m/n/10 None | [] 
- []
-
-
-Overfull \hbox (119.43571pt too wide) in paragraph at lines 292--298
-[]\OT1/cmr/bx/n/10 General Com-ment: \OT1/cmr/m/n/10 None | [] 
- []
-
-
-Overfull \hbox (119.43571pt too wide) in paragraph at lines 298--304
-[]\OT1/cmr/bx/n/10 General Com-ment: \OT1/cmr/m/n/10 None | [] 
- []
-
-
-Overfull \hbox (119.43571pt too wide) in paragraph at lines 304--310
-[]\OT1/cmr/bx/n/10 General Com-ment: \OT1/cmr/m/n/10 None | [] 
- []
-
-
-Overfull \hbox (119.43571pt too wide) in paragraph at lines 310--316
-[]\OT1/cmr/bx/n/10 General Com-ment: \OT1/cmr/m/n/10 None | [] 
- []
-
-
-Overfull \hbox (119.43571pt too wide) in paragraph at lines 316--322
-[]\OT1/cmr/bx/n/10 General Com-ment: \OT1/cmr/m/n/10 None | [] 
- []
-
-
-Overfull \hbox (119.43571pt too wide) in paragraph at lines 322--328
-[]\OT1/cmr/bx/n/10 General Com-ment: \OT1/cmr/m/n/10 None | [] 
- []
-
-
-Overfull \hbox (119.43571pt too wide) in paragraph at lines 328--334
-[]\OT1/cmr/bx/n/10 General Com-ment: \OT1/cmr/m/n/10 None | [] 
- []
-
-
-Overfull \hbox (119.43571pt too wide) in paragraph at lines 334--340
-[]\OT1/cmr/bx/n/10 General Com-ment: \OT1/cmr/m/n/10 None | [] 
- []
-
-
-Overfull \hbox (119.43571pt too wide) in paragraph at lines 340--346
-[]\OT1/cmr/bx/n/10 General Com-ment: \OT1/cmr/m/n/10 None | [] 
- []
-
-
-Overfull \hbox (119.43571pt too wide) in paragraph at lines 346--352
-[]\OT1/cmr/bx/n/10 General Com-ment: \OT1/cmr/m/n/10 None | [] 
- []
-
-
-Overfull \hbox (119.43571pt too wide) in paragraph at lines 352--358
-[]\OT1/cmr/bx/n/10 General Com-ment: \OT1/cmr/m/n/10 None | [] 
- []
-
-
-Overfull \hbox (119.43571pt too wide) in paragraph at lines 358--364
-[]\OT1/cmr/bx/n/10 General Com-ment: \OT1/cmr/m/n/10 None | [] 
- []
-
-
-Overfull \hbox (119.43571pt too wide) in paragraph at lines 364--377
-[]\OT1/cmr/bx/n/10 General Com-ment: \OT1/cmr/m/n/10 None | [] 
- []
-
-
-Overfull \hbox (119.43571pt too wide) in paragraph at lines 383--389
-[]\OT1/cmr/bx/n/10 General Com-ment: \OT1/cmr/m/n/10 None | [] 
- []
-
-
-Overfull \hbox (119.43571pt too wide) in paragraph at lines 389--395
-[]\OT1/cmr/bx/n/10 General Com-ment: \OT1/cmr/m/n/10 None | [] 
- []
-
-[3]
-Overfull \hbox (119.43571pt too wide) in paragraph at lines 395--401
-[]\OT1/cmr/bx/n/10 General Com-ment: \OT1/cmr/m/n/10 None | [] 
- []
-
-
-Overfull \hbox (119.43571pt too wide) in paragraph at lines 401--407
-[]\OT1/cmr/bx/n/10 General Com-ment: \OT1/cmr/m/n/10 None | [] 
- []
-
-
-Overfull \hbox (119.43571pt too wide) in paragraph at lines 407--413
-[]\OT1/cmr/bx/n/10 General Com-ment: \OT1/cmr/m/n/10 None | [] 
- []
-
-
-Overfull \hbox (119.43571pt too wide) in paragraph at lines 413--419
-[]\OT1/cmr/bx/n/10 General Com-ment: \OT1/cmr/m/n/10 None | [] 
- []
-
-
-Overfull \hbox (119.43571pt too wide) in paragraph at lines 419--425
-[]\OT1/cmr/bx/n/10 General Com-ment: \OT1/cmr/m/n/10 None | [] 
- []
-
-
-Overfull \hbox (119.43571pt too wide) in paragraph at lines 425--431
-[]\OT1/cmr/bx/n/10 General Com-ment: \OT1/cmr/m/n/10 None | [] 
- []
-
-
-Overfull \hbox (119.43571pt too wide) in paragraph at lines 431--437
-[]\OT1/cmr/bx/n/10 General Com-ment: \OT1/cmr/m/n/10 None | [] 
- []
-
-
-Overfull \hbox (119.43571pt too wide) in paragraph at lines 437--443
-[]\OT1/cmr/bx/n/10 General Com-ment: \OT1/cmr/m/n/10 None | [] 
- []
-
-
-Overfull \hbox (119.43571pt too wide) in paragraph at lines 443--449
-[]\OT1/cmr/bx/n/10 General Com-ment: \OT1/cmr/m/n/10 None | [] 
- []
-
-
-Overfull \hbox (119.43571pt too wide) in paragraph at lines 449--455
-[]\OT1/cmr/bx/n/10 General Com-ment: \OT1/cmr/m/n/10 None | [] 
- []
-
-
-Overfull \hbox (119.43571pt too wide) in paragraph at lines 455--461
-[]\OT1/cmr/bx/n/10 General Com-ment: \OT1/cmr/m/n/10 None | [] 
- []
-
-
-Overfull \hbox (119.43571pt too wide) in paragraph at lines 461--467
-[]\OT1/cmr/bx/n/10 General Com-ment: \OT1/cmr/m/n/10 None | [] 
- []
-
-
-Overfull \hbox (119.43571pt too wide) in paragraph at lines 467--473
-[]\OT1/cmr/bx/n/10 General Com-ment: \OT1/cmr/m/n/10 None | [] 
- []
-
-
-Overfull \hbox (119.43571pt too wide) in paragraph at lines 473--479
-[]\OT1/cmr/bx/n/10 General Com-ment: \OT1/cmr/m/n/10 None | [] 
- []
-
-
-Overfull \hbox (119.43571pt too wide) in paragraph at lines 479--485
-[]\OT1/cmr/bx/n/10 General Com-ment: \OT1/cmr/m/n/10 None | [] 
- []
-
-
-Overfull \hbox (119.43571pt too wide) in paragraph at lines 485--491
-[]\OT1/cmr/bx/n/10 General Com-ment: \OT1/cmr/m/n/10 None | [] 
- []
-
-
-Overfull \hbox (119.43571pt too wide) in paragraph at lines 491--497
-[]\OT1/cmr/bx/n/10 General Com-ment: \OT1/cmr/m/n/10 None | [] 
- []
-
-
-Overfull \hbox (119.43571pt too wide) in paragraph at lines 497--503
-[]\OT1/cmr/bx/n/10 General Com-ment: \OT1/cmr/m/n/10 None | [] 
- []
-
-
-Overfull \hbox (119.43571pt too wide) in paragraph at lines 503--516
-[]\OT1/cmr/bx/n/10 General Com-ment: \OT1/cmr/m/n/10 None | [] 
- []
-
-
-Overfull \hbox (297.53848pt too wide) in paragraph at lines 516--522
-\OT1/cmr/m/n/10 ses, which will help you re-mem-ber to dis-tribute the neg-a-ti
-ve cor-rectly. | [] 
- []
-
-
-Overfull \hbox (119.43571pt too wide) in paragraph at lines 522--528
-[]\OT1/cmr/bx/n/10 General Com-ment: \OT1/cmr/m/n/10 None | [] 
- []
-
-
-Overfull \hbox (119.43571pt too wide) in paragraph at lines 528--534
-[]\OT1/cmr/bx/n/10 General Com-ment: \OT1/cmr/m/n/10 None | [] 
- []
-
-
-Overfull \hbox (119.43571pt too wide) in paragraph at lines 534--540
-[]\OT1/cmr/bx/n/10 General Com-ment: \OT1/cmr/m/n/10 None | [] 
- []
-
-
-Overfull \hbox (119.43571pt too wide) in paragraph at lines 540--553
-[]\OT1/cmr/bx/n/10 General Com-ment: \OT1/cmr/m/n/10 None | [] 
+Overfull \hbox (25.00003pt too wide) in paragraph at lines 177--178
+[][] 
  []
 
 [4]
-Overfull \hbox (183.73286pt too wide) in paragraph at lines 553--554
-\OT1/cmr/m/n/10 mul-ti-ply-ing each term by the de-nom-i-na-tor. | [] 
+Overfull \hbox (25.00003pt too wide) in paragraph at lines 196--197
+[][] 
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 556.
+
+Overfull \hbox (25.00003pt too wide) in paragraph at lines 215--216
+[][] 
+ []
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 218.
 [5]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 556.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 218.
  (./keyModule2A.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 556.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 556.
-
-
-Package rerunfilecheck Warning: File `keyModule2A.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `keyModule2A.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 556.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 218.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 218.
+Package rerunfilecheck Info: File `keyModule2A.out' has not changed.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 218.
  ) 
 Here is how much of TeX's memory you used:
- 8718 strings out of 483183
- 129895 string characters out of 5966293
- 406406 words of memory out of 5000000
- 23449 multiletter control sequences out of 15000+600000
+ 8683 strings out of 483183
+ 129908 string characters out of 5966293
+ 405485 words of memory out of 5000000
+ 23454 multiletter control sequences out of 15000+600000
  535322 words of font info for 38 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  34i,12n,45p,939b,539s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1036,10 +712,10 @@ r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texli
 ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on keyModule2A.pdf (5 pages, 101841 bytes).
+Output written on keyModule2A.pdf (5 pages, 121260 bytes).
 PDF statistics:
- 186 PDF objects out of 1000 (max. 8388607)
- 170 compressed objects within 2 object streams
- 113 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 131 PDF objects out of 1000 (max. 8388607)
+ 113 compressed objects within 2 object streams
+ 66 named destinations out of 1000 (max. 500000)
+ 11 words of extra memory for PDF output out of 10000 (max. 10000000)
 

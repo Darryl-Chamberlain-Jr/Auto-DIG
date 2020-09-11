@@ -8,8 +8,8 @@ db_name="1269-8776"
 footnote_left=$db_name
 number_of_versions=3
 version_list=( "A" "B" "C" )
-#question_list=( "divideComplex" "multiplyComplex" "orderOfOperations" "subgroupComplex" "subgroupReal" )
-question_list=( "linearGraphToStandard" "linearParOrPer" "linearTwoPoints" "solveIntegerLinear" "solveRationalLinear" )
+#question_list=( "divideComplex" "multiplyComplex" "orderOfOperations" "subgroupComplex" "subgroupReal" "divideComplexCopy" "multiplyComplexCopy" "orderOfOperationsCopy" "subgroupComplexCopy" "subgroupRealCopy" )
+question_list=( "linearGraphToStandard" "linearParOrPer" "linearTwoPoints" "solveIntegerLinear" "solveRationalLinear" "linearGraphToStandardCopy" "linearParOrPerCopy" "linearTwoPointsCopy" "solveIntegerLinearCopy" "solveRationalLinearCopy" )
 exam_display_name="Progress Quiz 1"
 #file_name="Module1"
 file_name="Module2"
@@ -28,6 +28,8 @@ do
     mkdir /$DIR/CompleteExam/"$exam_display_name"
     mkdir /$DIR/CompleteExam/"$exam_display_name"/PDFs
     mkdir /$DIR/CompleteExam/"$exam_display_name"/Keys
+    mkdir /$DIR/CompleteExam/"$exam_display_name"/TeXs
+    mkdir /$DIR/CompleteExam/"$exam_display_name"/Databases
     for ((index=0;index<END;index++))
     do
         title=${list_of_assessment_titles[index]}
@@ -38,13 +40,12 @@ do
         do
             full_db_name="$db_name-Ver$version"
             echo "$counter" ; sleep 0
-            ##### DEBUGGING REMOVE WHEN DONE
             counter=$(( counter+question_step ))
-            #################################
             python3 /$DIR/PythonScripts/ScriptsForPDFs/createFiles.py "Create Exam File" $title "$exam_display_name" "$footnote_left" "$footnote_right" $version $DIR
             python3 /$DIR/PythonScripts/ScriptsForPDFs/createFiles.py "Create Key File" $title "$exam_display_name" "$footnote_left" "$footnote_right" $version $DIR
             for question in ${question_list[@]}
             do
+                echo "$counter" ; sleep 0
                 echo "#Running ${question} for version ${version}."
                 run_save_metadata="/$DIR/PythonScripts/ScriptsForDatabases/saveMetadataToNewDatabase.py"
                 python3 $run_save_metadata $DIR $question "$full_db_name" $title
@@ -73,10 +74,13 @@ do
             cd /$DIR/BuildExams/
             pdflatex -file-line-error -halt-on-error ${title}${version}.tex
             cp ${title}${version}.pdf /$DIR/CompleteExam/"$exam_display_name"/PDFs
+            cp ${title}${version}.tex /$DIR/CompleteExam/"$exam_display_name"/TeXs
             cd /$DIR/Keys/
             pdflatex -file-line-error -halt-on-error key${title}${version}.tex
             cp key${title}${version}.pdf /$DIR/CompleteExam/"$exam_display_name"/Keys
+            cp key${title}${version}.tex /$DIR/CompleteExam/"$exam_display_name"/TeXs
             cd /$DIR/ShellScripts/
+            cp /$DIR/Databases/${full_db_name} /$DIR/CompleteExam/"$exam_display_name"/Databases
         done
     done
     break

@@ -1,7 +1,6 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.8.4)  10 SEP 2020 16:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.8.4)  10 SEP 2020 21:42
 entering extended mode
  restricted \write18 enabled.
- file:line:error style messages enabled.
  %&-line parsing enabled.
 **Module2C.tex
 (./Module2C.tex
@@ -486,7 +485,7 @@ File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
 \l__kernel_color_stack_int=\count286
 \l__pdf_internal_box=\box94
 )
-No file Module2C.aux.
+(./Module2C.aux)
 \openout1 = `Module2C.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
@@ -507,7 +506,7 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 17.
 LaTeX Font Info:    ... okay on input line 17.
 \AtBeginShipoutBox=\box95
 Package hyperref Info: Link coloring OFF on input line 17.
-(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+ (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
 
 (/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty
@@ -521,6 +520,8 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 17.
 LaTeX Info: Redefining \pageref on input line 17.
 LaTeX Info: Redefining \nameref on input line 17.
+
+(./Module2C.out) (./Module2C.out)
 \@outlinefile=\write3
 \openout3 = `Module2C.out'.
 
@@ -606,23 +607,15 @@ LaTeX Font Info:    Trying to load font information for U+lasy on input line 32
 (/usr/share/texlive/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-<../Figures/linearGraphToStandardC.png, id=4, 452.4102pt x 353.4003pt>
+<../Figures/linearGraphToStandardC.png, id=4, 461.8053pt x 343.2825pt>
 File: ../Figures/linearGraphToStandardC.png Graphic file (type png)
 <use ../Figures/linearGraphToStandardC.png>
 Package pdftex.def Info: ../Figures/linearGraphToStandardC.png  used on input l
 ine 32.
-(pdftex.def)             Requested size: 234.8775pt x 183.47261pt.
+(pdftex.def)             Requested size: 234.8775pt x 174.59508pt.
 
 Overfull \hbox (6.79684pt too wide) in paragraph at lines 32--41
 | [] 
- []
-
-
-Overfull \hbox (0.46036pt too wide) detected at line 41
-[]\OT1/cmr/m/n/14.4 5\OML/cmm/m/it/14.4 x \OMS/cmsy/m/n/14.4 ^^@ \OT1/cmr/m/n/1
-4.4 9\OML/cmm/m/it/14.4 y \OT1/cmr/m/n/14.4 = 10[](\OMS/cmsy/m/n/14.4 ^^@\OT1/c
-mr/m/n/14.4 4\OML/cmm/m/it/14.4 ; \OMS/cmsy/m/n/14.4 ^^@\OT1/cmr/m/n/14.4 9)\OM
-L/cmm/m/it/14.4 :
  []
 
 
@@ -644,53 +637,72 @@ Overfull \hbox (6.79684pt too wide) in paragraph at lines 50--59
  []
 
 
-Overfull \hbox (6.79684pt too wide) in paragraph at lines 59--63
+Overfull \hbox (6.79684pt too wide) in paragraph at lines 59--68
 | [] 
  []
 
 
-Overfull \hbox (6.79684pt too wide) in paragraph at lines 63--72
-[]| [] 
- []
-
-
-Overfull \hbox (6.79684pt too wide) in paragraph at lines 72--73
+Overfull \hbox (6.79684pt too wide) in paragraph at lines 68--81
 | [] 
  []
 
 [2]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 75.
- [3]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 75.
+<../Figures/linearGraphToStandardCopyC.png, id=49, 446.6286pt x 343.2825pt>
+File: ../Figures/linearGraphToStandardCopyC.png Graphic file (type png)
+<use ../Figures/linearGraphToStandardCopyC.png>
+Package pdftex.def Info: ../Figures/linearGraphToStandardCopyC.png  used on inp
+ut line 81.
+(pdftex.def)             Requested size: 234.8775pt x 180.5298pt.
+
+Overfull \hbox (6.79684pt too wide) in paragraph at lines 81--90
+| [] 
+ []
+
+
+Overfull \hbox (6.79684pt too wide) in paragraph at lines 90--99
+| [] 
+ []
+
+[3 <../Figures/linearGraphToStandardCopyC.png>]
+Overfull \hbox (6.79684pt too wide) in paragraph at lines 99--108
+| [] 
+ []
+
+
+Overfull \hbox (6.79684pt too wide) in paragraph at lines 108--109
+| [] 
+ []
+
+
+Overfull \hbox (6.79684pt too wide) in paragraph at lines 118--119
+| [] 
+ []
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 121.
+[4]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 121.
  (./Module2C.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 75.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 75.
-
-
-Package rerunfilecheck Warning: File `Module2C.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `Module2C.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 75.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 121.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 121.
+Package rerunfilecheck Info: File `Module2C.out' has not changed.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 121.
  ) 
 Here is how much of TeX's memory you used:
- 9110 strings out of 483183
- 135133 string characters out of 5966293
- 415825 words of memory out of 5000000
- 23913 multiletter control sequences out of 15000+600000
+ 9152 strings out of 483183
+ 135674 string characters out of 5966293
+ 415904 words of memory out of 5000000
+ 23918 multiletter control sequences out of 15000+600000
  535568 words of font info for 39 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 34i,12n,45p,996b,438s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 34i,12n,45p,996b,482s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share
 /texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on Module2C.pdf (3 pages, 56021 bytes).
+Output written on Module2C.pdf (4 pages, 77920 bytes).
 PDF statistics:
- 73 PDF objects out of 1000 (max. 8388607)
- 62 compressed objects within 1 object stream
- 35 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 116 PDF objects out of 1000 (max. 8388607)
+ 101 compressed objects within 2 object streams
+ 65 named destinations out of 1000 (max. 500000)
+ 11 words of extra memory for PDF output out of 10000 (max. 10000000)
 

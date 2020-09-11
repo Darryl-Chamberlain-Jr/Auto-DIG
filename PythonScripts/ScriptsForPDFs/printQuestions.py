@@ -108,10 +108,12 @@ def print_question_to_key(database_info, version, code_name, file_name, DIR):
     keyFile.write('\n')
     if display_options_type=="String":
         keyFile.write("The solution is %s, which is option %s." %(solution, answer_letter))
+        keyFile.write('\n')
         keyFile.write(r"\begin{enumerate}[label=\Alph*.]")
         keyFile.write('\n')
         for i in range(len(choices)):
             keyFile.write(r"\item %s" %choices[i])
+            keyFile.write('\n')
             keyFile.write(choice_comments[i])
             keyFile.write('\n')
         keyFile.write(r"\end{enumerate}")
@@ -122,6 +124,7 @@ def print_question_to_key(database_info, version, code_name, file_name, DIR):
         keyFile.write('\n')
         for i in range(len(choices)):
             keyFile.write(r"\item \( %s \)" %choices[i])
+            keyFile.write('\n')
             keyFile.write(choice_comments[i])
             keyFile.write('\n')
         keyFile.write(r"\end{enumerate}")
@@ -242,9 +245,6 @@ try:
             answer_letter=question_dict.get("Answer Letter")
             general_comment=question_dict.get("General Comment")
             database_info = [display_stem_type, display_stem, display_problem_type, display_problem, display_options_type, choices, choice_comments, solution, answer_letter, general_comment]
-            print()
-            print(database_info)
-            print()
             ql.close()
             if to_do == "Print questions to exam":
                 print_question_to_exam(database_info, version, file_name, DIR)
