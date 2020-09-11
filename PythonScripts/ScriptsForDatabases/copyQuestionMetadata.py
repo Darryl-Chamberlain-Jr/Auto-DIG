@@ -117,8 +117,8 @@ solveIntegerLinearCopy = {
     "Author": "Darryl Chamberlain Jr.",
     "Date": "August 2020"
 }
-solveRationalLinearCopy = {
-    "Code Name": "solveRationalLinearCopy",
+solveLinearRationalCopy = {
+    "Code Name": "solveLinearRationalCopy",
     "Folder": "Core",
     "Subfolder": "02linear",
     "Topic": "Linear Functions",
@@ -134,5 +134,5 @@ solveRationalLinearCopy = {
 masterQuestionList = [
     # Core questions
     divideComplexCopy, multiplyComplexCopy, orderOfOperationsCopy, subgroupComplexCopy, subgroupRealCopy, # M1
-    linearGraphToStandardCopy, linearParOrPerCopy, linearTwoPointsCopy, solveIntegerLinearCopy, solveRationalLinearCopy # M2
+    linearGraphToStandardCopy, linearParOrPerCopy, linearTwoPointsCopy, solveIntegerLinearCopy, solveLinearRationalCopy # M2
 ]

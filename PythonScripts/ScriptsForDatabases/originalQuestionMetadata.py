@@ -135,8 +135,8 @@ solveIntegerLinear = {
     "Author": "Darryl Chamberlain Jr.",
     "Date": "August 2020"
 }
-solveRationalLinear = {
-    "Code Name": "solveRationalLinear",
+solveLinearRational = {
+    "Code Name": "solveLinearRational",
     "Folder": "Core",
     "Subfolder": "02linear",
     "Topic": "Linear Functions",
@@ -1092,7 +1092,7 @@ identifyVAs = {
 masterQuestionList = [
     # Core questions
     divideComplex, multiplyComplex, orderOfOperations, subgroupComplex, subgroupReal, # M1
-    linearGraphToStandard, linearParOrPer, linearTwoPoints, solveIntegerLinear, solveRationalLinear, # M2
+    linearGraphToStandard, linearParOrPer, linearTwoPoints, solveIntegerLinear, solveLinearRational, # M2
     describeSet, solveCompoundAND, solveCompoundOR, solveIntegerInequality, solveRationalInequality, # M3
     factorLeadingOver1Composite, quadraticEquationToGraph, quadraticFormula, quadraticGraphToEquation, solveQuadraticFactorComposites, # M4
     domainRadical, radicalEquationToGraph, radicalGraphToEquation, solveRadicalLinear, solveRadicalQuadratic, # M5
@@ -1115,7 +1115,7 @@ MAC1105ExamQuestions=[
 # M1
 subgroupReal, divideComplex, orderOfOperations,
 # M2
-linearTwoPoints, linearParOrPer, solveRationalLinear,
+linearTwoPoints, linearParOrPer, solveLinearRational,
 # M3
 solveIntegerInequality, solveRationalInequality, solveCompoundAND,
 # M4

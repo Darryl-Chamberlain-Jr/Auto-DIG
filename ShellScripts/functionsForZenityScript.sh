@@ -98,6 +98,7 @@ function checkForEscape {
         --height=100 \
         --width=200 \
         --text="You canceled the assessment generation early."
+    pkill eog
     exit 0
     fi
 }
@@ -120,4 +121,21 @@ function defineMAC1105FinalExamQuestionsList {
     # M8
     'domainRangeExp' 'domainRangeLog' 'solveExpDifferentBases' \
     )
+}
+function defineAllQuestionsDynamically {
+    OIFS=$IFS;
+    IFS=";";
+    Length=$(python3 /${DIR}/PythonScripts/ScriptsForDatabases/return_all_values_of_key.py "Length" $DIR)
+    CodeNames=($(python3 /${DIR}/PythonScripts/ScriptsForDatabases/return_all_values_of_key.py "Code Name" $DIR))
+    Folder=($(python3 /${DIR}/PythonScripts/ScriptsForDatabases/return_all_values_of_key.py "Folder" $DIR))
+    Subfolder=($(python3 /${DIR}/PythonScripts/ScriptsForDatabases/return_all_values_of_key.py "Subfolder" $DIR))
+    TopicNumber=($(python3 /${DIR}/PythonScripts/ScriptsForDatabases/return_all_values_of_key.py "Topic Number" $DIR))
+    ObjectiveNumber=($(python3 /${DIR}/PythonScripts/ScriptsForDatabases/return_all_values_of_key.py "Objective Number" $DIR))
+    Topic=($(python3 /${DIR}/PythonScripts/ScriptsForDatabases/return_all_values_of_key.py "Topic" $DIR))
+    ShortDescription=($(python3 /${DIR}/PythonScripts/ScriptsForDatabases/return_all_values_of_key.py "Short Description" $DIR))
+    LongDescription=($(python3 /${DIR}/PythonScripts/ScriptsForDatabases/return_all_values_of_key.py "Long Description" $DIR))
+    Notes=($(python3 /${DIR}/PythonScripts/ScriptsForDatabases/return_all_values_of_key.py "Notes" $DIR))
+    Author=($(python3 /${DIR}/PythonScripts/ScriptsForDatabases/return_all_values_of_key.py "Author" $DIR))
+    Date=($(python3 /${DIR}/PythonScripts/ScriptsForDatabases/return_all_values_of_key.py "Date" $DIR))
+    IFS=$OIFS
 }
