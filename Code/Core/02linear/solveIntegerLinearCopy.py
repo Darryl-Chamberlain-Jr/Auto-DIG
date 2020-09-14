@@ -9,6 +9,7 @@ import traceback
 import cmath
 import matplotlib.pyplot as plt
 from sympy.abc import x, y
+from sympy.solvers import solve
 
 DIR=sys.argv[1]
 database_name=sys.argv[2]
@@ -37,7 +38,7 @@ def generateBlocks():    # Create an array of 6 distinct naturals, then make som
     return blocks
 def generateSolution(blocks):
     a, b, c, d, e, f = blocks
-    basicLinearEquation = a * (b + c * x) - d * ( x * e - f)
+    basicLinearEquation = a * (b * x + c) - d * ( x * e + f)
     solution = solve(basicLinearEquation, x)
     if len(solution) == 0:
         solution=[0]
@@ -58,9 +59,9 @@ intervalOptions = createIntervalOptions(solutionList, 3, 1)
 ### DEFINE ANSWER LIST AND DISPLAY SOLUTION ###
 displaySolution = "x = %.3f" %solution
 option1 = ["x \\in [%s, %s]" %(intervalOptions[0][0], intervalOptions[0][1]), "* $x = %.3f$, which is the correct option." %solution, 1]
-option2 = ["x \\in [%s, %s]" %(intervalOptions[1][0], intervalOptions[1][1]), "* $x = %.3f$, which corresponds to not distributing the negative in front of the first parentheses correctly." %distractor1, 0]
-option3 = ["x \\in [%s, %s]" %(intervalOptions[2][0], intervalOptions[2][1]), "* $x = %.3f$, which corresponds to not distributing the negative in front of the second parentheses correctly." %distractor2, 0]
-option4 = ["x \\in [%s, %s]" %(intervalOptions[3][0], intervalOptions[3][1]), "* $x = %.3f$, which corresponds to getting the negative of the actual solution." %distractor3, 0]
+option2 = ["x \\in [%s, %s]" %(intervalOptions[1][0], intervalOptions[1][1]), "$x = %.3f$, which corresponds to not distributing the negative in front of the first parentheses correctly." %distractor1, 0]
+option3 = ["x \\in [%s, %s]" %(intervalOptions[2][0], intervalOptions[2][1]), "$x = %.3f$, which corresponds to not distributing the negative in front of the second parentheses correctly." %distractor2, 0]
+option4 = ["x \\in [%s, %s]" %(intervalOptions[3][0], intervalOptions[3][1]), "$x = %.3f$, which corresponds to getting the negative of the actual solution." %distractor3, 0]
 option5 = ["\\text{There are no real solutions.}", "Corresponds to students thinking a fraction means there is no solution to the equation.", 0]
 answerList = [option1, option2, option3, option4]
 random.shuffle(answerList)

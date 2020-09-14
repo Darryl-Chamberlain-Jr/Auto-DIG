@@ -1,4 +1,4 @@
-DIR="home/dchamberlain31/git-repos/Auto-DIG"
+#DIR="home/dchamberlain31/git-repos/Auto-DIG"
 titleOfProgram="Auto-DIG v.0.2"
 ###########################################
 source /${DIR}/ShellScripts/./functionsForZenityScript.sh
@@ -114,10 +114,8 @@ elif [ "$typeOfGeneration" == "One or more flexible assessments" ]; then
         --text '<b> Which questions would you like to include?</b>' \
         --column 'Choose' --column 'File name' --column 'Obj. #' --column 'Short Description' --column 'Long Description' --column 'Notes' --column 'Author' --column 'Date'
         )
+        checkForEscape $?
         eval "question_list_${index}=( ${temp_question_list[@]} )"
-        escape=$?
-        zenity --question --text="Is this a complete list? ${question_list_0[@]}"
-        checkForEscape $escape
         # APPEND ASSESSMENT NAME TO list_of_assessment_titles
         list_of_assessment_titles=( "${list_of_assessment_titles[@]}" "${exam_display_name}" )
         # APPEND SHORT FILE NAME TO list_of_file_names
@@ -145,6 +143,7 @@ do
             mkdir "$completed_directory_root"/Keys
             mkdir "$completed_directory_root"/TeXs
             mkdir "$completed_directory_root"/Databases
+            mkdir "$completed_directory_root"/Figures
         fi
         file_name=${list_of_file_names[index]}
         question_list_name="question_list_${index}"
@@ -152,8 +151,6 @@ do
         for version in ${version_list[@]}
         do
             full_db_name="$db_name-Ver$version"
-            echo "$counter" ; sleep 0
-            counter=$(( counter+question_step ))
             python3 /$DIR/PythonScripts/ScriptsForPDFs/createFiles.py "Create Exam File" $file_name "$exam_display_name" "$footnote_left" "$footnote_right" $version $DIR
             python3 /$DIR/PythonScripts/ScriptsForPDFs/createFiles.py "Create Key File" $file_name "$exam_display_name" "$footnote_left" "$footnote_right" $version $DIR
             for question in ${question_list[@]}
@@ -174,9 +171,9 @@ do
                     code_subfolder=$( python3 $run_return_key_value_from_db $DIR $full_db_name $question_list_name $question "Subfolder" )
                     question_py="/$DIR/Code/$code_folder/$code_subfolder/$question.py"
                     python3 $question_py $DIR $full_db_name $question_list_name $version
-                    # Question data has now been saved with the metadata.
                     return_error=$?
                     error_counter=$(( error_counter+1 ))
+                # Question data has now been saved with the metadata.
                 python3 /$DIR/PythonScripts/ScriptsForPDFs/printQuestions.py "Print questions to exam" $DIR $file_name $full_db_name $question_list_name $question $version
                 python3 /$DIR/PythonScripts/ScriptsForPDFs/printQuestions.py "Print questions to key" $DIR $file_name $full_db_name $question_list_name $question $version
                 counter=$(( counter+question_step ))
@@ -193,7 +190,8 @@ do
             cp key${file_name}${version}.pdf /$DIR/CompleteExam/"$exam_display_name"/Keys
             cp key${file_name}${version}.tex /$DIR/CompleteExam/"$exam_display_name"/TeXs
             cd /$DIR/ShellScripts/
-            cp /$DIR/Databases/${full_db_name} /$DIR/CompleteExam/"$exam_display_name"/Databases
+            cp /$DIR/Databases/${full_db_name}.db /$DIR/CompleteExam/"$exam_display_name"/Databases
+            cp -r /$DIR/Figures/. /$DIR/CompleteExam/"$exam_display_name"/Figures
         done
     done
     break

@@ -113,7 +113,7 @@ def print_question_to_key(database_info, version, code_name, file_name, DIR):
         keyFile.write('\n')
         for i in range(len(choices)):
             keyFile.write(r"\item %s" %choices[i])
-            keyFile.write('\n')
+            keyFile.write('\n\n')
             keyFile.write(choice_comments[i])
             keyFile.write('\n')
         keyFile.write(r"\end{enumerate}")
@@ -124,7 +124,7 @@ def print_question_to_key(database_info, version, code_name, file_name, DIR):
         keyFile.write('\n')
         for i in range(len(choices)):
             keyFile.write(r"\item \( %s \)" %choices[i])
-            keyFile.write('\n')
+            keyFile.write('\n\n')
             keyFile.write(choice_comments[i])
             keyFile.write('\n')
         keyFile.write(r"\end{enumerate}")

@@ -9,6 +9,7 @@ import traceback
 import cmath
 import matplotlib.pyplot as plt
 from sympy.abc import x, y
+from sympy.solvers import solve
 
 DIR=sys.argv[1]
 database_name=sys.argv[2]

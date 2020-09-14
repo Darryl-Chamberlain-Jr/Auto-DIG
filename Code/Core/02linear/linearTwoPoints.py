@@ -23,11 +23,12 @@ from storeQuestionData import *
 def generateProblem():
     numerator=0
     denominator=0
-    while (numerator==0 or denominator==0):
+    while (numerator==0 or denominator==0 or slope==1):
         pointOne = [maybeMakeNegative(random.randint(2, 11)), maybeMakeNegative(random.randint(2, 11))]
         pointTwo = [maybeMakeNegative(random.randint(2, 11)), maybeMakeNegative(random.randint(2, 11))]
         numerator = float(pointTwo[1]-pointOne[1])
         denominator = float(pointTwo[0]-pointOne[0])
+        slope = numerator/denominator
     return [pointOne, pointTwo]
 def generateSolutionAndDistractors(problem):
     pointOne, pointTwo = problem
