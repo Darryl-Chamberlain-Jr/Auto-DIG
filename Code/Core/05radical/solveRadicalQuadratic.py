@@ -1,15 +1,27 @@
-# Module 5 - Radical Equations
-    # Objective 1 - Identify the domain on which a radical function is not defined.
-    # Objective 2 - Identify the graph of a radical function.
-        # Two types of questions:
-            # Graph to equation
-            # Equation to graph
-    # Objective 3 - Solve radical equations that lead to linear equations.
-    # Objective 4 - Solve radical equations that lead to quadratic equations.
-
+import sys
+from sympy import *
+import numpy
 import random
-from sympy.abc import x
-from sympy import solve
+import math
+from decimal import Decimal
+import decimal
+import traceback
+import cmath
+import matplotlib.pyplot as plt
+from sympy.abc import x, y
+from sympy.solvers import solve
+
+DIR=sys.argv[1]
+database_name=sys.argv[2]
+question_list=sys.argv[3]
+version=sys.argv[4]
+sys.path.insert(1, f"/{DIR}/PythonScripts/ScriptsForQuestionCode")
+from commonlyUsedFunctions import *
+from intervalMaskingMethod import *
+sys.path.insert(1, f"/{DIR}/PythonScripts/ScriptsForDatabases")
+from storeQuestionData import *
+
+thisQuestion="solveRadicalQuadratic"
 
 def smallerFirst(twoValuesToCompare):
     if twoValuesToCompare[0] < twoValuesToCompare[1]:
@@ -213,4 +225,7 @@ for checkLetter in letters:
         break
     answerIndex = answerIndex+1
 
-writeToKey(keyFileName, version, problemNumber, displayStem, "MathMode", displayProblem, "MathMode", displaySolution, answerLetter, choices, choiceComments, generalComment)
+displayStemType="String"
+displayProblemType="Math Mode"
+displayOptionsType="Math Mode"
+writeToDatabase(DIR, database_name, question_list, thisQuestion, displayStemType, displayStem, displayProblemType, displayProblem, displayOptionsType, choices, choiceComments, displaySolution, answerLetter, generalComment)

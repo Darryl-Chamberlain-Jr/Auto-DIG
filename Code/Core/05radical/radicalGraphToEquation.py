@@ -1,7 +1,27 @@
+import sys
+from sympy import *
 import numpy
-import math
 import random
+import math
+from decimal import Decimal
+import decimal
+import traceback
+import cmath
 import matplotlib.pyplot as plt
+from sympy.abc import x, y
+from sympy.solvers import solve
+
+DIR=sys.argv[1]
+database_name=sys.argv[2]
+question_list=sys.argv[3]
+version=sys.argv[4]
+sys.path.insert(1, f"/{DIR}/PythonScripts/ScriptsForQuestionCode")
+from commonlyUsedFunctions import *
+from intervalMaskingMethod import *
+sys.path.insert(1, f"/{DIR}/PythonScripts/ScriptsForDatabases")
+from storeQuestionData import *
+
+thisQuestion="radicalGraphToEquation"
 
 def cubeRootThis(value):
     if value > 0:
@@ -34,7 +54,6 @@ def sketchFunctionAndPoint(graphX, graphY, pointOfInterest, figureName):
     plt.grid(True)
     plt.savefig('../Figures/' + str(figureName) + str(version) + '.png', bbox_inches='tight')
     plt.close()
-
 def createFunctionAndPointOfInterest():
     rootDegree = random.randint(2, 3)
     #rootDegree = 2
@@ -57,10 +76,9 @@ def createFunctionAndPointOfInterest():
     else:
         xPlot = numpy.arange(pointOfInterest[0]-3, pointOfInterest[0]+3, 0.05)
         equation = [coefficient * cubeRootThis(xPlot[i] - fb) + k for i in range(len(xPlot)) ]
-    figureName = "radicalGraphToEquation"
+    figureName = thisQuestion
     sketchFunctionAndPoint(xPlot, equation, pointOfInterest, figureName)
     return [rootDegree, coefficient, pointOfInterest]
-
 def displayEquation(rootDegree, coefficient, pointOfInterest):
     if rootDegree == 2:
         if pointOfInterest[0] < 0:
@@ -109,7 +127,6 @@ def displayEquation(rootDegree, coefficient, pointOfInterest):
                 else:
                     equation = "\\sqrt[3]{x - %d} + %d" %(pointOfInterest[0], pointOfInterest[1])
     return equation
-
 def createDistractors(rootDegree, coefficient, pointOfInterest):
     displayDistractor1 = displayEquation(rootDegree, -coefficient, [pointOfInterest[0], pointOfInterest[1]])
     distractor1 = [ displayDistractor1, "This corresponds to switching the coefficient and having the correct vertex with the root degree as $%d$." %rootDegree, 0]
@@ -128,7 +145,7 @@ if goodGraphOrNot == 0:
     solution = [displayEquation(rootDegree, coefficient, pointOfInterest), "* This is the correct option.", 1]
     distractor1, distractor2, distractor3 = createDistractors(rootDegree, coefficient, pointOfInterest)
     displaySolution = solution[0]
-    figureName = "radicalGraphToEquation"
+    figureName = thisQuestion
     optionList = [solution, distractor1, distractor2, distractor3]
     random.shuffle(optionList)
     choices = ["f(x) = %s" %optionList[0][0], "f(x) = %s" %optionList[1][0], "f(x) = %s" %optionList[2][0], "f(x) = %s" %optionList[3][0], "\\text{None of the above}"]
@@ -150,7 +167,7 @@ else:
     solution = [displaySolutionEquation, "This would be the correct option if the root degree was $%d$." %rootDegree, 0]
     distractor1, distractor2, distractor3 = createDistractors(newRootDegree, coefficient, pointOfInterest)
     displaySolution = "\\text{None of the above}"
-    figureName = "radicalGraphToEquation"
+    figureName = thisQuestion
     optionList = [solution, distractor1, distractor2, distractor3]
     random.shuffle(optionList)
     choices = ["f(x) = %s" %optionList[0][0], "f(x) = %s" %optionList[1][0], "f(x) = %s" %optionList[2][0], "f(x) = %s" %optionList[3][0], "\\text{None of the above}"]
@@ -158,7 +175,10 @@ else:
     answerLetter = "E"
 
 displayStem = "Choose the equation of the function graphed below."
-displayProblem = "radicalGraphToEquation%s" %version
-generalComment = "General Comments: Remember that the general form of a radical equation is $ f(x) = a \\sqrt[b]{x - h} + k$, where $a$ is the leading coefficient (and in this case, we assume is either $1$ or $-1$), $b$ is the root degree (in this case, either $2$ or $3$), and $(h, k)$ is the vertex."
+displayProblem = f"{thisQuestion}{version}"
+generalComment = "Remember that the general form of a radical equation is $ f(x) = a \\sqrt[b]{x - h} + k$, where $a$ is the leading coefficient (and in this case, we assume is either $1$ or $-1$), $b$ is the root degree (in this case, either $2$ or $3$), and $(h, k)$ is the vertex."
 
-writeToKey(keyFileName, version, problemNumber, displayStem, "Graph", displayProblem, "MathMode", displaySolution, answerLetter, choices, choiceComments, generalComment)
+displayStemType="String"
+displayProblemType="Graph"
+displayOptionsType="Math Mode"
+writeToDatabase(DIR, database_name, question_list, thisQuestion, displayStemType, displayStem, displayProblemType, displayProblem, displayOptionsType, choices, choiceComments, displaySolution, answerLetter, generalComment)

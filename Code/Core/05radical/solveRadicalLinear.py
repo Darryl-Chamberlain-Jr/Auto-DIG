@@ -1,17 +1,27 @@
-# Module 5 - Radical Equations
-    # Objective 1 - Identify the domain on which a radical function is not defined.
-    # Objective 2 - Identify the graph of a radical function.
-        # Two types of questions:
-            # Graph to equation
-            # Equation to graph
-    # Objective 3 - Solve radical equations that lead to linear equations.
-    # Objective 4 - Solve radical equations that lead to quadratic equations.
-
+import sys
+from sympy import *
+import numpy
 import random
-from sympy.abc import x
-from sympy import solve
+import math
+from decimal import Decimal
+import decimal
+import traceback
+import cmath
+import matplotlib.pyplot as plt
+from sympy.abc import x, y
+from sympy.solvers import solve
 
-#This question should be updated. The most common mistake, squaring both sides, results in the same answer as the correct method.
+DIR=sys.argv[1]
+database_name=sys.argv[2]
+question_list=sys.argv[3]
+version=sys.argv[4]
+sys.path.insert(1, f"/{DIR}/PythonScripts/ScriptsForQuestionCode")
+from commonlyUsedFunctions import *
+from intervalMaskingMethod import *
+sys.path.insert(1, f"/{DIR}/PythonScripts/ScriptsForDatabases")
+from storeQuestionData import *
+
+thisQuestion="solveRadicalLinear"
 
 def radicalCheck(coefficients):
     a, b, c, d = coefficients
@@ -38,7 +48,7 @@ def generateCoefficients(numberOfSolutions):
         c = maybeMakeNegative(random.randint(2, 9))
     b = maybeMakeNegative(random.randint(2, 9))
     d = maybeMakeNegative(random.randint(2, 9))
-    
+
     check = radicalCheck([a, b, c, d])
     if (numberOfSolutions==0):
         while (check[0]*check[1] > 0):
@@ -189,6 +199,9 @@ for checkLetter in letters:
         break
     answerIndex = answerIndex+1
 
-generalComment = "General Comments: Distractors are different based on the number of solutions. For example, if the question is designed to have 0 options, then the distractors are solving the equation and not checking that the solution leads to complex numbers (because plugging them in makes the value under the square root negative). Remember that after solving, we need to make sure our solution does not make the original equation take the square root of a negative number!"
+generalComment = "Distractors are different based on the number of solutions. For example, if the question is designed to have 0 options, then the distractors are solving the equation and not checking that the solution leads to complex numbers (because plugging them in makes the value under the square root negative). Remember that after solving, we need to make sure our solution does not make the original equation take the square root of a negative number!"
 
-writeToKey(keyFileName, version, problemNumber, displayStem, "MathMode", displayProblem, "MathMode", displaySolution, answerLetter, choices, choiceComments, generalComment)
+displayStemType="String"
+displayProblemType="Math Mode"
+displayOptionsType="Math Mode"
+writeToDatabase(DIR, database_name, question_list, thisQuestion, displayStemType, displayStem, displayProblemType, displayProblem, displayOptionsType, choices, choiceComments, displaySolution, answerLetter, generalComment)

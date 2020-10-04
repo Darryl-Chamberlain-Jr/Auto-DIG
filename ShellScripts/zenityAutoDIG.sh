@@ -1,143 +1,83 @@
-#DIR="home/dchamberlain31/git-repos/Auto-DIG"
+DIR="home/dchamberlain31/git-repos/Auto-DIG"
 titleOfProgram="Auto-DIG v.0.2"
+# cd to ShellScripts included to make python graphing work. Not sure why at this point.
+cd /$DIR/ShellScripts/
 ###########################################
 source /${DIR}/ShellScripts/./functionsForZenityScript.sh
-eog --fullscreen /${DIR}/ImagesForApp/NewAutoDIGimage.png & sleep 1 && espeak "Welcome back doctor" & sleep 3 && espeak "Initiating diagnostic procedures" && pkill eog
+#eog --fullscreen /${DIR}/ImagesForApp/NewAutoDIGimage.png & espeak "Initiating diagnostic procedures" && pkill eog
+eog --fullscreen /${DIR}/ImagesForApp/NewAutoDIGimage.png & sleep 1 && espeak "Welcome back doctor" & sleep 5 && espeak "Initiating diagnostic procedures" && pkill eog
 eog --fullscreen /${DIR}/ImagesForApp/Auto-DIG_background.jpg </dev/null &>/dev/null &
 sleep 3
-# Allows user to choose what type of assessment they want to generate. Uses preset question lists to create assessments.
-typeOfGeneration=$(zenity \
-    --title="${titleOfProgram[@]}" \
-    --height=250 \
-    --width=300 \
-    --list \
-    --text '<b> What do you want to do?</b>' \
-    --column 'Generate...' \
-    "One or more flexible assessments" \
-    "A Progress Quiz" \
-    "A Single Module" \
-    "A MAC 1105 Final Exam" \
-)
-checkForEscape $?
-#
-footnote_right=$(zenity \
-    --title="${titleOfProgram[@]}" \
-    --entry \
-    --text 'What do you want to print on the bottom-right of the page? I normally print the semester.'
-)
-escape=$?
-checkForEscape $escape
-db_name="$(( 1000 + RANDOM % 9000 ))-$(( 1000 + RANDOM % 9000 ))"
-footnote_left=$(zenity \
-    --title="${titleOfProgram[@]}" \
-    --height=100 \
-    --width=400 \
-    --info \
-    --text="You have been assigned ${db_name}. You'll need this to provide students specific feedback. Don't worry - it will be printed on each pdf."
-)
-escape=$?
-checkForEscape $escape
-number_of_versions=$(zenity \
-    --title="${titleOfProgram[@]}" \
-    --scale \
-    --text="How many versions do you want to create?" \
-    --value=3 \
-    --min-value=1 \
-    --max-value=26 \
-    --step=1
-)
-escape=$?
-checkForEscape $escape
-defineVersionList
-###
-if [ "$typeOfGeneration" == "A Progress Quiz" ]; then
-    source /${DIR}/ShellScripts/Types_of_Generation/./generateProgressQuiz.sh
-elif [ "$typeOfGeneration" == "A Single Module" ]; then
-    source /${DIR}/ShellScripts/Types_of_Generation/./generateSingleModule.sh
-elif [ "$typeOfGeneration" == "A MAC 1105 Final Exam" ]; then
-    source /${DIR}/ShellScripts/Types_of_Generation/./generateMAC1105FinalExam.sh
-elif [ "$typeOfGeneration" == "One or more flexible assessments" ]; then
-    # Zenity - HOW MANY ASSESSMENTS?
-    number_of_assessments=$(zenity \
+while true
+do
+    # Allows user to choose what type of assessment they want to generate. Uses preset question lists to create assessments.
+    typeOfGeneration=$(zenity \
+        --title="${titleOfProgram[@]}" \
+        --height=250 \
+        --width=300 \
+        --list \
+        --text '<b> What do you want to do?</b>' \
+        --column 'Generate...' \
+        "One or more flexible assessments" \
+        "MAC 1105 progress quiz" \
+        "MAC 1105 single module" \
+        "MAC 1105 final exam" \
+    )
+    checkForEscape $?
+    footnote_right=$(zenity \
+        --title="${titleOfProgram[@]}" \
+        --entry \
+        --text 'What do you want to print on the bottom-right of the page?'
+    )
+    escape=$?
+    checkForEscape $escape
+    db_name="$(( 1000 + RANDOM % 9000 ))-$(( 1000 + RANDOM % 9000 ))"
+    footnote_left=$db_name
+    #zenity \
+    #    --title="${titleOfProgram[@]}" \
+    #    --height=100 \
+    #    --width=400 \
+    #    --info \
+    #    --text="You have been assigned ${db_name}. You'll need this to provide students specific feedback. Don't worry - it will be printed on each pdf."
+    #escape=$?
+    #checkForEscape $escape
+    number_of_versions=$(zenity \
         --title="${titleOfProgram[@]}" \
         --scale \
-        --text="How many assessments do you want to create?" \
-        --value=1 \
+        --text="How many versions do you want to create?" \
+        --value=3 \
         --min-value=1 \
-        --max-value=30 \
+        --max-value=26 \
         --step=1
     )
     escape=$?
-    number_of_questions=0
     checkForEscape $escape
-    for ((index=0;index<number_of_assessments;index++))
-    do
-        # Zenity - NAME YOUR ASSESSMENT - exam_display_name
-        exam_display_name=$(zenity \
-            --title="${titleOfProgram[@]}" \
-            --entry \
-            --text 'What do you want to call this assessment?'
-        )
-        escape=$?
-        checkForEscape $escape
-        # Zenity - SHORT FILE NAME - file_name
-        file_name=$(zenity \
-            --title="${titleOfProgram[@]}" \
-            --entry \
-            --text 'Give a short, NO SPACES, name to your assessment.'
-        )
-        escape=$?
-        checkForEscape $escape
-        question_list_name="question_list_${index}"
-        # Zenity - CHOOSE YOUR QUESTIONS - question_list_index
-        defineAllQuestionsDynamically
-        ### THIS IS UNTESTED
-        temp_question_list=$(
-        for i in $(seq 0 $((  Length - 1 )) )
-        do
-            echo "FALSE"
-            echo ${CodeNames[i]}
-            echo ${ObjectiveNumber[i]}
-            echo ${ShortDescription[i]}
-            echo ${LongDescription[i]}
-            echo ${Notes[i]}
-            echo ${Author[i]}
-            echo ${Date[i]}
-        done | zenity \
-        --title="Auto-DIG v.0.2" \
-        --height=600 \
-        --width=1000 \
-        --list \
-        --checklist \
-        --separator=" " \
-        --multiple \
-        --text '<b> Which questions would you like to include?</b>' \
-        --column 'Choose' --column 'File name' --column 'Obj. #' --column 'Short Description' --column 'Long Description' --column 'Notes' --column 'Author' --column 'Date'
-        )
-        checkForEscape $?
-        eval "question_list_${index}=( ${temp_question_list[@]} )"
-        # APPEND ASSESSMENT NAME TO list_of_assessment_titles
-        list_of_assessment_titles=( "${list_of_assessment_titles[@]}" "${exam_display_name}" )
-        # APPEND SHORT FILE NAME TO list_of_file_names
-        list_of_file_names=( "${list_of_file_names[@]}" "$file_name" )
-        number_of_questions=$(( number_of_questions + ${#question_list_name[@]} ))
-    done
-fi
-(
-# Clears old keys and pdfs
-rm -rf /${DIR}/Keys/*
-rm -rf /${DIR}/BuildExams/*
-StartTime=$( date +'%s' )
-question_step=$(( 100 / (number_of_questions*number_of_versions) ))
-counter=0
-while true
-do
+    defineVersionList
+    ###
+    if [ "$typeOfGeneration" == "MAC 1105 progress quiz" ]; then
+        source /${DIR}/ShellScripts/Types_of_Generation/./generateProgressQuiz.sh
+    elif [ "$typeOfGeneration" == "MAC 1105 single module" ]; then
+        source /${DIR}/ShellScripts/Types_of_Generation/./generateSingleModule.sh
+    elif [ "$typeOfGeneration" == "MAC 1105 final exam" ]; then
+        source /${DIR}/ShellScripts/Types_of_Generation/./generateMAC1105FinalExam.sh
+    elif [ "$typeOfGeneration" == "One or more flexible assessments" ]; then
+        source /${DIR}/ShellScripts/Types_of_Generation/./generateFlexibleAssessment.sh
+    fi
+    StartTime=$( date +'%s' )
+    estimated_run_time=$( echo "scale=2;(5.5*$number_of_questions*$number_of_versions)/60" | bc )
+    (
+    # Clears old keys and pdfs
+    rm -rf /${DIR}/Keys/*
+    rm -rf /${DIR}/BuildExams/*
+    # Estimated run time calculated as 5 seconds per question, with 1 error per 10 questions run.
+    echo "#Estimated run time for ${number_of_questions} questions and ${number_of_versions} version: ${estimated_run_time} minutes"; sleep 3
+    question_step=$( echo "scale=2;100/ ($number_of_questions*$number_of_versions)" | bc )
+    counter=0
     for ((index=0;index<number_of_assessments;index++))
     do
         exam_display_name=${list_of_assessment_titles[index]}
         completed_directory_root="/$DIR/CompleteExam/${exam_display_name}"
-        if [ ! -d "$completed_directory_root" ]
-        then
+        if [ ! -d "$completed_directory_root" ]; then
             mkdir "$completed_directory_root"
             mkdir "$completed_directory_root"/PDFs
             mkdir "$completed_directory_root"/Keys
@@ -153,10 +93,11 @@ do
             full_db_name="$db_name-Ver$version"
             python3 /$DIR/PythonScripts/ScriptsForPDFs/createFiles.py "Create Exam File" $file_name "$exam_display_name" "$footnote_left" "$footnote_right" $version $DIR
             python3 /$DIR/PythonScripts/ScriptsForPDFs/createFiles.py "Create Key File" $file_name "$exam_display_name" "$footnote_left" "$footnote_right" $version $DIR
+            question_list=( $(shuf -e "${question_list[@]}") )
             for question in ${question_list[@]}
             do
-                echo "$counter" ; sleep 0
-                echo "#Running ${question} for version ${version}."
+                echo "$counter"
+                echo "#Running '${question}' for Version ${version}."
                 run_save_metadata="/$DIR/PythonScripts/ScriptsForDatabases/saveMetadataToNewDatabase.py"
                 python3 $run_save_metadata $DIR $question "$full_db_name" $question_list_name
                 return_error=1
@@ -173,42 +114,62 @@ do
                     python3 $question_py $DIR $full_db_name $question_list_name $version
                     return_error=$?
                     error_counter=$(( error_counter+1 ))
+                done
                 # Question data has now been saved with the metadata.
                 python3 /$DIR/PythonScripts/ScriptsForPDFs/printQuestions.py "Print questions to exam" $DIR $file_name $full_db_name $question_list_name $question $version
                 python3 /$DIR/PythonScripts/ScriptsForPDFs/printQuestions.py "Print questions to key" $DIR $file_name $full_db_name $question_list_name $question $version
-                counter=$(( counter+question_step ))
-                done
+                counter=$( echo "scale=2;$counter+$question_step" | bc )
+                #counter=$(( counter+question_step ))
             done
             python3 /$DIR/PythonScripts/ScriptsForPDFs/createFiles.py "Finish Exam File" $file_name "$exam_display_name" "$footnote_left" "$footnote_right" $version $DIR
             python3 /$DIR/PythonScripts/ScriptsForPDFs/createFiles.py "Finish Key File" $file_name "$exam_display_name" "$footnote_left" "$footnote_right" $version $DIR
             cd /$DIR/BuildExams/
-            pdflatex -file-line-error -halt-on-error ${file_name}${version}.tex
+            #pdflatex -file-line-error -halt-on-error ${file_name}${version}.tex
+            while [[ ! -f ${file_name}${version}.pdf ]]
+            do
+                pdflatex -synctex=1 -interaction=nonstopmode ${file_name}${version}.tex
+            done
             cp ${file_name}${version}.pdf /$DIR/CompleteExam/"$exam_display_name"/PDFs
             cp ${file_name}${version}.tex /$DIR/CompleteExam/"$exam_display_name"/TeXs
             cd /$DIR/Keys/
-            pdflatex -file-line-error -halt-on-error key${file_name}${version}.tex
+            while [[ ! -f key${file_name}${version}.pdf ]]
+            do
+                pdflatex -synctex=1 -interaction=nonstopmode key${file_name}${version}.tex
+            done
             cp key${file_name}${version}.pdf /$DIR/CompleteExam/"$exam_display_name"/Keys
+            cp lettersAnswerKey${file_name}${version}.csv /$DIR/CompleteExam/"$exam_display_name"/Keys
             cp key${file_name}${version}.tex /$DIR/CompleteExam/"$exam_display_name"/TeXs
             cd /$DIR/ShellScripts/
             cp /$DIR/Databases/${full_db_name}.db /$DIR/CompleteExam/"$exam_display_name"/Databases
             cp -r /$DIR/Figures/. /$DIR/CompleteExam/"$exam_display_name"/Figures
         done
     done
-    break
+    xdg-open /${DIR}/CompleteExam/"$exam_display_name"; sleep 3
+    echo "100"
+    echo "#Done! Click 'Ok' to see the time results."
+    ) |
+    zenity --progress \
+      --title="${titleOfProgram[@]}" \
+      --text="Initializing parameters..." \
+      --percentage=0 \
+      --width=350 \
+    #  --auto-close
+    # DO NOT USE AUTO-CLOSE! There is currently an echo somewhere with a value over 100, which is signaling zenity to close the process early while the process wants to continue, causing a broken pipe.
+    checkForEscape $?
+    EndTime=$( date +'%s' )
+    currentDayTime=$( date +'%H:%M on %m/%d/%Y' )
+    TotalRunTimeSeconds=$(( EndTime-StartTime ))
+    RunTimeMinutes=$(( (EndTime-StartTime) / 60 ))
+    RunTimeSecondsRemainder=$(( TotalRunTimeSeconds-(RunTimeMinutes*60) ))
+    estimated_run_time_seconds_float=$( echo "scale=0;(60*$estimated_run_time)" | bc )
+    estimated_run_time_seconds=${estimated_run_time_seconds_float%.*}
+    #off_by_seconds=$( echo "scale=0;($estimate_run_time_seconds-$TotalRunTimeSeconds)" | bc )
+    off_by_seconds=$(( estimated_run_time_seconds-TotalRunTimeSeconds ))
+    zenity \
+        --title="${titleOfProgram[@]}" \
+        --height=100 \
+        --width=400 \
+        --info \
+        --text="Auto-DIG has finished running at ${currentDayTime}. It took ${RunTimeMinutes} minutes and ${RunTimeSecondsRemainder} seconds. We estimated it would take ${estimated_run_time} minutes so our estimate was off by ${off_by_seconds} seconds."
 done
-xdg-open /${DIR}/CompleteExam/"$exam_display_name"
-EndTime=$( date +'%s' )
-currentDayTime=$( date +'%H:%M on %m/%d/%Y' )
-TotalRunTimeSeconds=$(( EndTime - StartTime ))
-RunTimeMinutes=$(( (EndTime - StartTime) / 60 ))
-RunTimeSecondsRemainder=$(( TotalRunTimeSeconds - (RunTimeMinutes * 60) ))
-echo "100"
-echo "# Auto-DIG has finished running at ${currentDayTime}. It took $RunTimeMinutes minutes and $RunTimeSecondsRemainder seconds. Not bad!"
-) |
-zenity --progress \
-  --title="${titleOfProgram[@]}" \
-  --text="Initializing parameters..." \
-  --percentage=0 \
-  --width=350
-checkForEscape $?
 pkill eog

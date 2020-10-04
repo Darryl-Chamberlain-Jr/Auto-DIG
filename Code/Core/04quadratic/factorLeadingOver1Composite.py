@@ -1,10 +1,28 @@
-# Objective 3 - Factor a trinomial with leading coefficient greater than 1.
-# Create 3 different types - print 1 of each type
-from sympy.abc import x
+import sys
+from sympy import *
+import numpy
 import random
+import math
+from decimal import Decimal
+import decimal
+import traceback
+import cmath
+import matplotlib.pyplot as plt
+from sympy.abc import x, y
+from sympy.solvers import solve
+
+DIR=sys.argv[1]
+database_name=sys.argv[2]
+question_list=sys.argv[3]
+version=sys.argv[4]
+sys.path.insert(1, f"/{DIR}/PythonScripts/ScriptsForQuestionCode")
+from commonlyUsedFunctions import *
+from intervalMaskingMethod import *
+sys.path.insert(1, f"/{DIR}/PythonScripts/ScriptsForDatabases")
+from storeQuestionData import *
 
 def generateFactors(minimumPrime, maximumPrime, numberOfFactors):
-    listPrimes = prime_range(minimum, maximum)
+    listPrimes = list(primerange(minimumPrime, maximumPrime))
     aFactors = [random.sample(listPrimes, 1) for i in range(numberOfFactors)]
     cFactors = [random.sample(listPrimes, 1) for i in range(numberOfFactors)]
     return [aFactors, cFactors]
@@ -100,7 +118,7 @@ displayDistractor1 = '(%s)(%s)' %(generatePolynomialDisplay([distractor1[0], dis
 displayDistractor2 = '(%s)(%s)' %(generatePolynomialDisplay([distractor2[0], distractor2[1]]), generatePolynomialDisplay([distractor2[2], distractor2[3]]))
 displayDistractor3 = '(%s)(%s)' %(generatePolynomialDisplay([distractor3[0], distractor3[1]]), generatePolynomialDisplay([distractor3[2], distractor3[3]]))
 
-generalComment = "General Comments: $ac$ had many factors in this problem. It is best to list out the possible pairs in order to make sure you don't miss any."
+generalComment = "$ac$ had many factors in this problem. It is best to list out the possible pairs in order to make sure you don't miss any."
 
 solutionInterval = [intervalOptions[0], "* $%s$, which is the correct option." %displaySolution, 1]
 distractor1Interval = [intervalOptions[1], " $%s$, which corresponds to factoring $%s$." %(displayDistractor1, generatePolynomialDisplay([1, problem[1], problem[0]*problem[2]])), 0]
@@ -127,4 +145,8 @@ for checkLetter in letters:
         break
     answerIndex = answerIndex+1
 
-writeToKey(keyFileName, version, problemNumber, displayStem, "MathMode", displayProblem, "MathMode", displaySolution, answerLetter, choices, choiceComments, generalComment)
+thisQuestion="factorLeadingOver1Composite"
+displayStemType="String"
+displayProblemType="Math Mode"
+displayOptionsType="Math Mode"
+writeToDatabase(DIR, database_name, question_list, thisQuestion, displayStemType, displayStem, displayProblemType, displayProblem, displayOptionsType, choices, choiceComments, displaySolution, answerLetter, generalComment)

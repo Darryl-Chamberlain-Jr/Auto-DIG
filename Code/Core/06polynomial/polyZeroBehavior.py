@@ -1,11 +1,27 @@
-import random
+import sys
 from sympy import *
 import numpy
+import random
+import math
+from decimal import Decimal
+import decimal
+import traceback
+import cmath
+import matplotlib.pyplot as plt
+from sympy.abc import x, y
+from sympy.solvers import solve
 
-# OBJECTIVE 2 - Identify the end behavior and zero behavior of a polynomial equation
+DIR=sys.argv[1]
+database_name=sys.argv[2]
+question_list=sys.argv[3]
+version=sys.argv[4]
+sys.path.insert(1, f"/{DIR}/PythonScripts/ScriptsForQuestionCode")
+from commonlyUsedFunctions import *
+from intervalMaskingMethod import *
+sys.path.insert(1, f"/{DIR}/PythonScripts/ScriptsForDatabases")
+from storeQuestionData import *
 
-# behaviorOfPolynomial = a*(factor1[0]*x+factor1[1])**factor1[2] *(factor1[0]*x-factor1[1])**(factor1[2]+1) *(factor2[0]*x+factor2[1])**factor2[2]*(factor2[0]*x+factor2[1])**(factor2[2]+1)
-# This allows us to see if they know which factor is correct.
+thisQuestion="polyZeroBehavior"
 
 def generateFactor():
     a = 1
@@ -105,22 +121,26 @@ zeros = [-factor1[1], factor1[1], -factor2[1], factor2[1]]
 exponents = [e0, e1, e2, e3]
 behavior = determineZeroBehavior(leadingCoefficient, zeros, exponents, zeroOnDisplay)
 if behavior == "positiveEven":
-    displaySolution = "polyZeroBehaviorC%s" %version
+    displaySolution = f"{thisQuestion}C{version}"
     answerLetter="C"
 elif behavior == "negativeEven":
-    displaySolution = "polyZeroBehaviorB%s" %version
+    displaySolution = f"{thisQuestion}B{version}"
     answerLetter="B"
 elif behavior == "positiveOdd":
-    displaySolution = "polyZeroBehaviorD%s" %version
+    displaySolution = f"{thisQuestion}D{version}"
     answerLetter="D"
 else:
-    displaySolution = "polyZeroBehaviorA%s" %version
+    displaySolution = f"{thisQuestion}A{version}"
     answerLetter="A"
 
-choices = ["polyZeroBehaviorA%s" %version, "polyZeroBehaviorB%s" %version, "polyZeroBehaviorC%s" %version, "polyZeroBehaviorD%s" %version]
+choices = [f"{thisQuestion}A{version}", f"{thisQuestion}B{version}", f"{thisQuestion}C{version}", f"{thisQuestion}D{version}"]
 
 displayStem = 'Describe the zero behavior of the zero $x = %s$ of the polynomial below.' %zeroOnDisplay
-generalComment = "\\textbf{General Comments:} You will need to sketch the entire graph, then zoom in on the zero the question asks about."
+generalComment = "You will need to sketch the entire graph, then zoom in on the zero the question asks about."
 choiceComments = ["", "", "", ""]
 
-writeToKey(keyFileName, version, problemNumber, displayStem, "MathMode", displayProblem, "Graphs", displaySolution, answerLetter, choices, choiceComments, generalComment)
+# String, Math Mode, or Graph
+displayStemType="String"
+displayProblemType="Math Mode"
+displayOptionsType="Graph"
+writeToDatabase(DIR, database_name, question_list, thisQuestion, displayStemType, displayStem, displayProblemType, displayProblem, displayOptionsType, choices, choiceComments, displaySolution, answerLetter, generalComment)

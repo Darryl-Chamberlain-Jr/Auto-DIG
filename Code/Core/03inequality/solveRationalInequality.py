@@ -1,15 +1,25 @@
+import sys
+from sympy import *
+import numpy
 import random
-from sympy.abc import x
-from sympy import solve
-from sympy import Symbol
+import math
+from decimal import Decimal
+import decimal
+import traceback
+import cmath
+import matplotlib.pyplot as plt
+from sympy.abc import x, y
+from sympy.solvers import solve
 
-# OBJECTIVE 2 - Solve single linear inequalities
-# Types: Basic (no fractions, no division by negative) and Advanced
-
-# TYPE 1 - Advanced (fractions)
-# For now, these can just use >
-# block[0] + block[1] * x > block[2] * x + block[3]
-    # If we make block[1] < block[2], we can get students to divide by a negative
+DIR=sys.argv[1]
+database_name=sys.argv[2]
+question_list=sys.argv[3]
+version=sys.argv[4]
+sys.path.insert(1, f"/{DIR}/PythonScripts/ScriptsForQuestionCode")
+from commonlyUsedFunctions import *
+from intervalMaskingMethod import *
+sys.path.insert(1, f"/{DIR}/PythonScripts/ScriptsForDatabases")
+from storeQuestionData import *
 
 def createIntervalToDisplay(direction, inclusion, value):
     if direction == "left" and inclusion == "yes":
@@ -183,7 +193,7 @@ else:
     else:
         displayProblem = "\\frac{%d}{%d} + \\frac{%d}{%d} x \\geq \\frac{%d}{%d} x + \\frac{%d}{%d}" %(n0, d0, n1, d1, n2, d2, n3, d3)
 
-generalComment = "General Comments: Remember that less/greater than or equal to includes the endpoint, while less/greater do not. Also, remember that you need to flip the inequality when you multiply or divide by a negative."
+generalComment = "Remember that less/greater than or equal to includes the endpoint, while less/greater do not. Also, remember that you need to flip the inequality when you multiply or divide by a negative."
 
 answerList = [solution, distractor1, distractor2, distractor3]
 random.shuffle(answerList)
@@ -205,4 +215,8 @@ for checkLetter in letters:
         break
     answerIndex = answerIndex+1
 
-writeToKey(keyFileName, version, problemNumber, displayStem, "MathMode", displayProblem, "MathMode", displaySolution, answerLetter, choices, choiceComments, generalComment)
+thisQuestion="solveRationalInequality"
+displayStemType="String"
+displayProblemType="Math Mode"
+displayOptionsType="Math Mode"
+writeToDatabase(DIR, database_name, question_list, thisQuestion, displayStemType, displayStem, displayProblemType, displayProblem, displayOptionsType, choices, choiceComments, displaySolution, answerLetter, generalComment)

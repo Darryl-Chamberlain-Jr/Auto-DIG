@@ -1,6 +1,26 @@
-from sympy.abc import x
+import sys
+from sympy import *
 import numpy
+import random
+import math
+from decimal import Decimal
+import decimal
+import traceback
+import cmath
 import matplotlib.pyplot as plt
+from sympy.abc import x, y
+from sympy.solvers import solve
+import matplotlib.pyplot as plt
+
+DIR=sys.argv[1]
+database_name=sys.argv[2]
+question_list=sys.argv[3]
+version=sys.argv[4]
+sys.path.insert(1, f"/{DIR}/PythonScripts/ScriptsForQuestionCode")
+from commonlyUsedFunctions import *
+from intervalMaskingMethod import *
+sys.path.insert(1, f"/{DIR}/PythonScripts/ScriptsForDatabases")
+from storeQuestionData import *
 
 x = var("x")
 # Type 2 - Function to graph
@@ -111,7 +131,7 @@ else:
             displayProblem = 'f(x) = (x-%s)^2 + %s' %(vertexFtG[0], vertexFtG[1])
 
 displaySolution = "quadraticEquationToGraph%s%s" %(figureAnswerList[0][0], version)
-generalComment = "General Comments: Remember that Vertex Form is $y = a(x-h)^2+k$, where the vertex is $(h, k)$."
+generalComment = "Remember that Vertex Form is $y = a(x-h)^2+k$, where the vertex is $(h, k)$."
 
 c0 = "quadraticEquationToGraphA%s" %version
 c1 = "quadraticEquationToGraphB%s" %version
@@ -134,4 +154,8 @@ choiceComments[placement2] = figureAnswerList[2][1]
 choiceComments[placement3] = figureAnswerList[3][1]
 choiceComments[4] = "You likely thought the vertex did not correspond to the equation."
 
-writeToKey(keyFileName, version, problemNumber, displayStem, "MathMode", displayProblem, "Graphs", displaySolution, answerLetter, choices, choiceComments, generalComment)
+thisQuestion="quadraticEquationToGraph"
+displayStemType="String"
+displayProblemType="Math Mode"
+displayOptionsType="Graph"
+writeToDatabase(DIR, database_name, question_list, thisQuestion, displayStemType, displayStem, displayProblemType, displayProblem, displayOptionsType, choices, choiceComments, displaySolution, answerLetter, generalComment)

@@ -1,9 +1,27 @@
+import sys
+from sympy import *
+import numpy
 import random
-from sympy.abc import x
-from sympy import solve
+import math
+from decimal import Decimal
+import decimal
+import traceback
+import cmath
+import matplotlib.pyplot as plt
+from sympy.abc import x, y
+from sympy.solvers import solve
 
-# Leads to 0, 1, or 2 solutions.
-# Structure: (a*x)/(b*x+c) + (d*x**2)/(b*f*x**2 + (b*g+c*f)*x+c*g) = e/(f*x+g)
+DIR=sys.argv[1]
+database_name=sys.argv[2]
+question_list=sys.argv[3]
+version=sys.argv[4]
+sys.path.insert(1, f"/{DIR}/PythonScripts/ScriptsForQuestionCode")
+from commonlyUsedFunctions import *
+from intervalMaskingMethod import *
+sys.path.insert(1, f"/{DIR}/PythonScripts/ScriptsForDatabases")
+from storeQuestionData import *
+
+thisQuestion="solveRationalQuadratic"
 
 def generate1SolutionCoefficients():
     whichFactor = random.randint(0,1)
@@ -239,11 +257,11 @@ elif (numberOfSolutions==2):
     distractor2Interval = [intervalToString(intervalOptionsFirstSet[2]), "", 0]
     distractor3Interval = [stringForAnswersWithTwoIntervals(intervalOptionsFirstSet[3], intervalOptionsSecondSet[1]), "", 0]
     distractor4Interval = [["\\text{All solutions lead to invalid or complex values in the equation.}"], "", 0]
-else:
-    print("Something went wrong, please try again.")
+#else:
+#    print("Something went wrong, please try again.")
 displayStem = 'Solve the rational equation below. Then, choose the interval(s) that the solution(s) belongs to.'
 displayProblem = '%s + %s = %s' %(firstTerm, secondTerm, thirdTerm)
-generalComment = "General Comments: Distractors are different based on the number of solutions. Remember that after solving, we need to make sure our solution does not make the original equation divide by zero!"
+generalComment = "Distractors are different based on the number of solutions. Remember that after solving, we need to make sure our solution does not make the original equation divide by zero!"
 
 answerList = [solutionInterval, distractor1Interval, distractor2Interval, distractor3Interval, distractor4Interval]
 random.shuffle(answerList)
@@ -259,4 +277,8 @@ for checkLetter in letters:
         break
     answerIndex = answerIndex+1
 
-writeToKey(keyFileName, version, problemNumber, displayStem, "MathMode", displayProblem, "MathMode", displaySolution, answerLetter, choices, choiceComments, generalComment)
+# String, Math Mode, or Graph
+displayStemType="String"
+displayProblemType="Math Mode"
+displayOptionsType="Math Mode"
+writeToDatabase(DIR, database_name, question_list, thisQuestion, displayStemType, displayStem, displayProblemType, displayProblem, displayOptionsType, choices, choiceComments, displaySolution, answerLetter, generalComment)

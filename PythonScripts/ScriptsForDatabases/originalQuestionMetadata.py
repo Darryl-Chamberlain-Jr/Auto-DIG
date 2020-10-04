@@ -1,4 +1,3 @@
-import shelve
 # General Form
 generalForm = {
     "Code Name": "",

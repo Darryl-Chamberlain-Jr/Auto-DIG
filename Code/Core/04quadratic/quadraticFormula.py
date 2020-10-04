@@ -1,9 +1,25 @@
-# OBJECTIVE 3 - Solve quadratic equations using the Quadratic Formula
-
-from sympy.abc import x
-from sympy.solvers import solve
+import sys
+from sympy import *
+import numpy
 import random
 import math
+from decimal import Decimal
+import decimal
+import traceback
+import cmath
+import matplotlib.pyplot as plt
+from sympy.abc import x, y
+from sympy.solvers import solve
+
+DIR=sys.argv[1]
+database_name=sys.argv[2]
+question_list=sys.argv[3]
+version=sys.argv[4]
+sys.path.insert(1, f"/{DIR}/PythonScripts/ScriptsForQuestionCode")
+from commonlyUsedFunctions import *
+from intervalMaskingMethod import *
+sys.path.insert(1, f"/{DIR}/PythonScripts/ScriptsForDatabases")
+from storeQuestionData import *
 
 def generateSolution(coefficients):
     a, b, c = coefficients
@@ -67,7 +83,7 @@ distractor4Interval = ["\\text{There are no Real solutions}", "Corresponds to ge
 displayStem = 'Solve the quadratic equation below. Then, choose the intervals that the solutions belong to, with $x_1 \\leq x_2$ (if they exist).'
 displayProblem = "%s = 0" %generatePolynomialDisplay(coefficients)
 displaySolution = "x_1 = %.3f \\text{ and } x_2 = %.3f" %(float(solution[0]),  float(solution[1]))
-generalComment = "General Comments: This requires Quadratic Formula. Just be sure to use the correct formula and watch your signs."
+generalComment = "This requires Quadratic Formula. Just be sure to use the correct formula and watch your signs."
 
 answerList = [solutionInterval, distractor1Interval, distractor2Interval, distractor3Interval]
 random.shuffle(answerList)
@@ -90,4 +106,8 @@ for checkLetter in letters:
         break
     answerIndex = answerIndex+1
 
-writeToKey(keyFileName, version, problemNumber, displayStem, "MathMode", displayProblem, "MathMode", displaySolution, answerLetter, choices, choiceComments, generalComment)
+thisQuestion="quadraticFormula"
+displayStemType="String"
+displayProblemType="Math Mode"
+displayOptionsType="Math Mode"
+writeToDatabase(DIR, database_name, question_list, thisQuestion, displayStemType, displayStem, displayProblemType, displayProblem, displayOptionsType, choices, choiceComments, displaySolution, answerLetter, generalComment)

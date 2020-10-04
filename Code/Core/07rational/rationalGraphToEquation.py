@@ -1,7 +1,27 @@
-import numpy as np
-import math
+import sys
+from sympy import *
+import numpy
 import random
+import math
+from decimal import Decimal
+import decimal
+import traceback
+import cmath
 import matplotlib.pyplot as plt
+from sympy.abc import x, y
+from sympy.solvers import solve
+
+DIR=sys.argv[1]
+database_name=sys.argv[2]
+question_list=sys.argv[3]
+version=sys.argv[4]
+sys.path.insert(1, f"/{DIR}/PythonScripts/ScriptsForQuestionCode")
+from commonlyUsedFunctions import *
+from intervalMaskingMethod import *
+sys.path.insert(1, f"/{DIR}/PythonScripts/ScriptsForDatabases")
+from storeQuestionData import *
+
+thisQuestion="rationalGraphToEquation"
 
 def sketchRationalFunction(vertAsy, leadingCoeff, power, horShift, figureName):
     ### Defines x-values to avoid asymptote
@@ -12,9 +32,9 @@ def sketchRationalFunction(vertAsy, leadingCoeff, power, horShift, figureName):
     xRightMin = vertAsy + stepSize
     xRightMax = vertAsy + 2.5
     ### x-values for graphing
-    xLeft = np.arange(xLeftMin, xLeftMax, stepSize)
+    xLeft = numpy.arange(xLeftMin, xLeftMax, stepSize)
     xPlotLeft = leadingCoeff/(xLeft-vertAsy)**power + horShift
-    xRight = np.arange(xRightMin, xRightMax, stepSize)
+    xRight = numpy.arange(xRightMin, xRightMax, stepSize)
     xPlotRight = leadingCoeff/(xRight-vertAsy)**power + horShift
     ### Lines to plot
     plt.plot(xLeft, xPlotLeft, linewidth=5, color='blue')
@@ -37,7 +57,7 @@ def createFunction():
     leadingCoeff = (-1)**random.randint(0, 1)
     power = random.randint(1, 2)
     #
-    figureName = "rationalGraphToEquation"
+    figureName = thisQuestion
     sketchRationalFunction(vertAsy, leadingCoeff, power, horShift, figureName)
     return [vertAsy, leadingCoeff, power, horShift]
 
@@ -135,8 +155,8 @@ else:
     distractor1, distractor2, distractor3 = createDistractors(vertAsy, leadingCoeff, power, horShift, vertAsyOrHorAsyWrong)
 
 displayStem = "Choose the equation of the function graphed below."
-displayProblem = "rationalGraphToEquation%s" %(version)
-generalComment = "General Comments: Remember that the general form of a basic rational equation is $ f(x) = \\frac{a}{(x-h)^n} + k$, where $a$ is the leading coefficient (and in this case, we assume is either $1$ or $-1$), $n$ is the degree (in this case, either $1$ or $2$), and $(h, k)$ is the intersection of the asymptotes."
+displayProblem = f"{thisQuestion}{version}"
+generalComment = "Remember that the general form of a basic rational equation is $ f(x) = \\frac{a}{(x-h)^n} + k$, where $a$ is the leading coefficient (and in this case, we assume is either $1$ or $-1$), $n$ is the degree (in this case, either $1$ or $2$), and $(h, k)$ is the intersection of the asymptotes."
 
 optionList = [solution, distractor1, distractor2, distractor3]
 random.shuffle(optionList)
@@ -156,4 +176,8 @@ else:
             break
         answerIndex = answerIndex+1
 
-writeToKey(keyFileName, version, problemNumber, displayStem, "Graph", displayProblem, "MathMode", displaySolution, answerLetter, choices, choiceComments, generalComment)
+# String, Math Mode, or Graph
+displayStemType="String"
+displayProblemType="Graph"
+displayOptionsType="Math Mode"
+writeToDatabase(DIR, database_name, question_list, thisQuestion, displayStemType, displayStem, displayProblemType, displayProblem, displayOptionsType, choices, choiceComments, displaySolution, answerLetter, generalComment)

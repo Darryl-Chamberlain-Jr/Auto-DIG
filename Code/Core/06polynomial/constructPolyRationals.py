@@ -1,9 +1,27 @@
-import random
+import sys
 from sympy import *
 import numpy
-from sympy import Symbol
+import random
+import math
+from decimal import Decimal
+import decimal
+import traceback
+import cmath
+import matplotlib.pyplot as plt
+from sympy.abc import x, y
+from sympy.solvers import solve
 
-# OBJECTIVE 3 - Construct lowest-degree polynomials given the zeros of the polynomial.
+DIR=sys.argv[1]
+database_name=sys.argv[2]
+question_list=sys.argv[3]
+version=sys.argv[4]
+sys.path.insert(1, f"/{DIR}/PythonScripts/ScriptsForQuestionCode")
+from commonlyUsedFunctions import *
+from intervalMaskingMethod import *
+sys.path.insert(1, f"/{DIR}/PythonScripts/ScriptsForDatabases")
+from storeQuestionData import *
+
+thisQuestion="constructPolyRationals"
 
 def generateFactor():
     a = random.randint(1, 5)
@@ -152,7 +170,7 @@ random.shuffle(answerList)
 displayFactor1 = generatePolynomialDisplay([factor1[0], -factor1[1] ])
 displayFactor2 = generatePolynomialDisplay([factor2[0], -factor2[1] ])
 displayFactor3 = generatePolynomialDisplay([factor3[0], -factor3[1] ])
-generalComment = "General Comments: To construct the lowest-degree polynomial, you want to multiply out $(%s)(%s)(%s)$" %(displayFactor1, displayFactor2, displayFactor3)
+generalComment = "To construct the lowest-degree polynomial, you want to multiply out $(%s)(%s)(%s)$" %(displayFactor1, displayFactor2, displayFactor3)
 c0 = "a \\in [%s, %s], b \\in [%s, %s], c \\in [%s, %s], \\text{ and } d \\in [%s, %s]" %(answerList[0][0][0][0], answerList[0][0][0][1], answerList[0][0][1][0], answerList[0][0][1][1], answerList[0][0][2][0], answerList[0][0][2][1], answerList[0][0][3][0], answerList[0][0][3][1])
 c1 = "a \\in [%s, %s], b \\in [%s, %s], c \\in [%s, %s], \\text{ and } d \\in [%s, %s]" %(answerList[1][0][0][0], answerList[1][0][0][1], answerList[1][0][1][0], answerList[1][0][1][1], answerList[1][0][2][0], answerList[1][0][2][1], answerList[1][0][3][0], answerList[1][0][3][1])
 c2 = "a \\in [%s, %s], b \\in [%s, %s], c \\in [%s, %s], \\text{ and } d \\in [%s, %s]" %(answerList[2][0][0][0], answerList[2][0][0][1], answerList[2][0][1][0], answerList[2][0][1][1], answerList[2][0][2][0], answerList[2][0][2][1], answerList[2][0][3][0], answerList[2][0][3][1])
@@ -169,4 +187,8 @@ for checkLetter in letters:
         break
     answerIndex = answerIndex+1
 
-writeToKey(keyFileName, version, problemNumber, displayStem, "MathMode", displayProblem, "MathMode", displaySolution, answerLetter, choices, choiceComments, generalComment)
+# String, Math Mode, or Graph
+displayStemType="String"
+displayProblemType="Math Mode"
+displayOptionsType="Math Mode"
+writeToDatabase(DIR, database_name, question_list, thisQuestion, displayStemType, displayStem, displayProblemType, displayProblem, displayOptionsType, choices, choiceComments, displaySolution, answerLetter, generalComment)

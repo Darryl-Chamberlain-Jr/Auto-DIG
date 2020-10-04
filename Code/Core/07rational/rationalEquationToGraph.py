@@ -1,7 +1,27 @@
+import sys
+from sympy import *
 import numpy
-import math
 import random
+import math
+from decimal import Decimal
+import decimal
+import traceback
+import cmath
 import matplotlib.pyplot as plt
+from sympy.abc import x, y
+from sympy.solvers import solve
+
+DIR=sys.argv[1]
+database_name=sys.argv[2]
+question_list=sys.argv[3]
+version=sys.argv[4]
+sys.path.insert(1, f"/{DIR}/PythonScripts/ScriptsForQuestionCode")
+from commonlyUsedFunctions import *
+from intervalMaskingMethod import *
+sys.path.insert(1, f"/{DIR}/PythonScripts/ScriptsForDatabases")
+from storeQuestionData import *
+
+thisQuestion="rationalEquationToGraph"
 
 def sketchRationalFunction(vertAsy, leadingCoeff, power, horShift, figureName, optionLetter):
     ### Defines x-values to avoid asymptote
@@ -30,14 +50,12 @@ def sketchRationalFunction(vertAsy, leadingCoeff, power, horShift, figureName, o
     plt.grid(True)
     plt.savefig('../Figures/' + str(figureName) + str(optionLetter) + str(version) + '.png', bbox_inches='tight')
     plt.close()
-
 def createFunction():
     vertAsy = random.randint(1, 3)*(-1)**random.randint(0, 1)
     horShift = random.randint(1, 3)*(-1)**random.randint(0, 1)
     leadingCoeff = (-1)**random.randint(0, 1)
     power = random.randint(1, 2)
     return [vertAsy, leadingCoeff, power, horShift]
-
 def displayEquation(vertAsy, leadingCoeff, power, horShift):
     if power == 1:
         if vertAsy < 0:
@@ -62,7 +80,6 @@ def displayEquation(vertAsy, leadingCoeff, power, horShift):
             else:
                 equation = "f(x) = \\frac{%s}{(x - %s)^2} + %s" %(leadingCoeff, vertAsy, horShift)
     return equation
-
 def createDistractors(vertAsy, leadingCoeff, power, horShift, figureName, optionList):
     if power == 1:
         distractor1 = [displayEquation(-vertAsy, -leadingCoeff, power, horShift), "Corresponds to using the general form $f(x) = \\frac{a}{x+h}+k$ and the opposite leading coefficient."]
@@ -82,7 +99,7 @@ def createDistractors(vertAsy, leadingCoeff, power, horShift, figureName, option
 
 ##### END OF DEFINITIONS #####
 graphedRightOrWrong = random.randint(0, 1)
-figureName = "rationalEquationToGraph"
+figureName = thisQuestion
 optionList = ["A", "B", "C", "D"]
 unshuffledOptionList = optionList
 random.shuffle(optionList)
@@ -92,15 +109,18 @@ vertAsy, leadingCoeff, power, horShift = createFunction()
 
 if graphedRightOrWrong == 0:
     sketchRationalFunction(vertAsy, leadingCoeff, power, horShift, figureName, "E")
-    displaySolution = "rationalEquationToGraphE%s" %(version)
+    displaySolution = f"{thisQuestion}E{version}"
     otherWrongThings = random.randint(0, 2)
     if otherWrongThings == 0:
+        sketchRationalFunction(-vertAsy, leadingCoeff, power, horShift, figureName, optionList[0])
         solution = [displayEquation(-vertAsy, leadingCoeff, power, horShift), "Incorrect due to $x$-value."]
         distractor1, distractor2, distractor3 = createDistractors(-vertAsy, leadingCoeff, power, horShift, figureName, optionList)
     elif otherWrongThings == 1:
+        sketchRationalFunction(vertAsy, leadingCoeff, power, -horShift, figureName, optionList[0])
         solution = [displayEquation(vertAsy, leadingCoeff, power, -horShift), "Incorrect due to $y$-value."]
         distractor1, distractor2, distractor3 = createDistractors(vertAsy, leadingCoeff, power, -horShift, figureName, optionList)
     else:
+        sketchRationalFunction(-vertAsy, leadingCoeff, power, -horShift, figureName, optionList[0])
         solution = [displayEquation(-vertAsy, leadingCoeff, power, -horShift), "Incorrect due to $x$- and $y$-value."]
         distractor1, distractor2, distractor3 = createDistractors(-vertAsy, leadingCoeff, power, -horShift, figureName, optionList)
     answerLetter = "E"
@@ -108,7 +128,7 @@ if graphedRightOrWrong == 0:
 else:
     sketchRationalFunction(vertAsy, leadingCoeff, power, horShift, figureName, optionList[0])
     solution = [displayEquation(vertAsy, leadingCoeff, power, horShift), "This is the correct option."]
-    displaySolution = "rationalEquationToGraph%s%s" %(version, optionList[0])
+    displaySolution = f"{thisQuestion}{version}{optionList[0]}"
     distractor1, distractor2, distractor3 = createDistractors(vertAsy, leadingCoeff, power, horShift, figureName, optionList)
     shuffledCommentsList = [solution[1], distractor1[1], distractor2[1], distractor3[1]]
     answerLetter = optionList[0]
@@ -121,5 +141,10 @@ else:
 
 displayStem = "Choose the graph of the equation below."
 displayProblem = displayEquation(vertAsy, leadingCoeff, power, horShift)
-generalComment = "General Comments: Remember that the general form of a basic rational equation is $ f(x) = \\frac{a}{(x-h)^n} + k$, where $a$ is the leading coefficient (and in this case, we assume is either $1$ or $-1$), $n$ is the degree (in this case, either $1$ or $2$), and $(h, k)$ is the intersection of the asymptotes."
-writeToKey(keyFileName, version, problemNumber, displayStem, "MathMode", displayProblem, "Graphs", displaySolution, answerLetter, choices, choiceComments, generalComment)
+generalComment = "Remember that the general form of a basic rational equation is $ f(x) = \\frac{a}{(x-h)^n} + k$, where $a$ is the leading coefficient (and in this case, we assume is either $1$ or $-1$), $n$ is the degree (in this case, either $1$ or $2$), and $(h, k)$ is the intersection of the asymptotes."
+
+# String, Math Mode, or Graph
+displayStemType="String"
+displayProblemType="Math Mode"
+displayOptionsType="Graph"
+writeToDatabase(DIR, database_name, question_list, thisQuestion, displayStemType, displayStem, displayProblemType, displayProblem, displayOptionsType, choices, choiceComments, displaySolution, answerLetter, generalComment)

@@ -1,11 +1,28 @@
-# OBJECTIVE 2 - Solve quadratic equations using the zero-factor principle
-    # [if $ab=0$, then either $a=0$ or $b=0$].
-
-from sympy.abc import x
+import sys
+from sympy import *
+import numpy
 import random
+import math
+from decimal import Decimal
+import decimal
+import traceback
+import cmath
+import matplotlib.pyplot as plt
+from sympy.abc import x, y
+from sympy.solvers import solve
+
+DIR=sys.argv[1]
+database_name=sys.argv[2]
+question_list=sys.argv[3]
+version=sys.argv[4]
+sys.path.insert(1, f"/{DIR}/PythonScripts/ScriptsForQuestionCode")
+from commonlyUsedFunctions import *
+from intervalMaskingMethod import *
+sys.path.insert(1, f"/{DIR}/PythonScripts/ScriptsForDatabases")
+from storeQuestionData import *
 
 def generateFactors(minimumPrime, maximumPrime, numberOfFactors):
-    listPrimes = prime_range(minimum, maximum)
+    listPrimes = list(primerange(minimumPrime, maximumPrime))
     bFactors = [random.sample(listPrimes, 1) for i in range(numberOfFactors)]
     dFactors = [random.sample(listPrimes, 1) for i in range(numberOfFactors)]
     return [bFactors, dFactors]
@@ -164,7 +181,7 @@ intervalOptions = createIntervalOptions(solutionList, intervalRange, precision)
 displayStem = 'Solve the quadratic equation below. Then, choose the intervals that the solutions $x_1$ and $x_2$ belong to, with $x_1 \\leq x_2$.'
 displayProblem = "%s = 0" %generatePolynomialDisplay(problem)
 displaySolution = "x_1 = %.3f \\text{ and } x_2 = %.3f" %(answer[0], answer[1])
-generalComment = "General Comments: This question can be factored, but it may be faster to find the solutions via the Quadratic Equation."
+generalComment = "This question can be factored, but it may be faster to find the solutions via the Quadratic Equation."
 
 solutionInterval = [intervalOptions[0], "* $x_1 = %.3f \\text{ and } x_2 = %.3f$, which is the correct option. Obtained by solving the factored version $%s$" %(answer[0], answer[1], answer[2]), 1]
 distractor1Interval = [intervalOptions[1], "$x_1 = %.3f \\text{ and } x_2 = %.3f$, which corresponds to solving the factored version $%s$" %(distractor1[0], distractor1[1], distractor1[2]), 0]
@@ -191,4 +208,8 @@ for checkLetter in letters:
         break
     answerIndex = answerIndex+1
 
-writeToKey(keyFileName, version, problemNumber, displayStem, "MathMode", displayProblem, "MathMode", displaySolution, answerLetter, choices, choiceComments, generalComment)
+thisQuestion="solveQuadraticFactorComposites"
+displayStemType="String"
+displayProblemType="Math Mode"
+displayOptionsType="Math Mode"
+writeToDatabase(DIR, database_name, question_list, thisQuestion, displayStemType, displayStem, displayProblemType, displayProblem, displayOptionsType, choices, choiceComments, displaySolution, answerLetter, generalComment)

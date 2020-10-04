@@ -1,5 +1,27 @@
-# OBJECTIVE 3 - Utilize the properties of logaritmic functions to simplify expressions
+import sys
+from sympy import *
+import numpy
+import random
 import math
+from decimal import Decimal
+import decimal
+import traceback
+import cmath
+import matplotlib.pyplot as plt
+from sympy.abc import x, y
+from sympy.solvers import solve
+
+DIR=sys.argv[1]
+database_name=sys.argv[2]
+question_list=sys.argv[3]
+version=sys.argv[4]
+sys.path.insert(1, f"/{DIR}/PythonScripts/ScriptsForQuestionCode")
+from commonlyUsedFunctions import *
+from intervalMaskingMethod import *
+sys.path.insert(1, f"/{DIR}/PythonScripts/ScriptsForDatabases")
+from storeQuestionData import *
+
+thisQuestion="solveByLogProperties"
 
 def generateSolutionAndDistractorsType1(rootDegree, numerator, coefficient, a):
     solution = float(ln(numerator) - rootDegree*a) / float(coefficient)
@@ -117,4 +139,8 @@ for checkLetter in letters:
 displayStem = ' Solve the equation for $x$ and choose the interval that contains $x$ (if it exists).'
 generalComment = "\\textbf{General Comments}: After using the properties of logarithmic functions to break up the right-hand side, use $\\ln(e) = 1$ to reduce the question to a linear function to solve. You can put $\\ln(%d)$ into a calculator if you are having trouble." %numerator
 
-writeToKey(keyFileName, version, problemNumber, displayStem, "MathMode", displayProblem, "MathMode", displaySolution, answerLetter, choices, choiceComments, generalComment)
+# String, Math Mode, or Graph
+displayStemType="String"
+displayProblemType="Math Mode"
+displayOptionsType="Math Mode"
+writeToDatabase(DIR, database_name, question_list, thisQuestion, displayStemType, displayStem, displayProblemType, displayProblem, displayOptionsType, choices, choiceComments, displaySolution, answerLetter, generalComment)

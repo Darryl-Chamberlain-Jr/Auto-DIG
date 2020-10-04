@@ -31,34 +31,34 @@ if stemType == 0:
 elif stemType == 1:
     limit = random.choice([0, 3, -8])
     if limit == -8:
-        displayStem = "For the graph below, find the value(s) $a$ that makes the limit true: $ \\displaystyle \\lim_{x \\rightarrow a} f(x) = -\\infty$."
+        displayStem = "For the graph below, find the value(s) $a$ that makes the statement true: $ \\displaystyle \\lim_{x \\rightarrow a} f(x) = -\\infty$."
         option1 = ["3", "", 0]
         option2 = ["-2", "", 0]
         option3 = ["-\\infty", "", 0]
-        option4 = ["\\text{Multiple } a \\text{ make the limit true}.", "", 1]
-        option5 = ["\\text{No } a \\text{ make the limit true}.", "", 0]
+        option4 = ["\\text{Multiple } a \\text{ make the statement true}.", "", 1]
+        option5 = ["\\text{No } a \\text{ make the statement true}.", "", 0]
     else:
-        displayStem = "For the graph below, find the value(s) $a$ that makes the limit true: $ \\displaystyle \\lim_{x \\rightarrow a} f(x) = %d$." %limit
+        displayStem = "For the graph below, find the value(s) $a$ that makes the statement true: $ \\displaystyle \\lim_{x \\rightarrow a} f(x) = %d$." %limit
         if limit == 0:
             option1 = ["3", "", 0]
             option2 = ["0", "", 0]
             option3 = ["-4", "", 0]
-            option4 = ["\\text{Multiple } a \\text{ make the limit true}.", "", 1]
-            option5 = ["\\text{No } a \\text{ make the limit true}.", "", 0]
+            option4 = ["\\text{Multiple } a \\text{ make the statement true}.", "", 1]
+            option5 = ["\\text{No } a \\text{ make the statement true}.", "", 0]
         else:
             option1 = ["-2", "", 0]
             option2 = ["-\\infty", "", 0]
             option3 = ["1", "", 0]
-            option4 = ["\\text{Multiple } a \\text{ make the limit true}.", "", 1]
-            option5 = ["\\text{No } a \\text{ make the limit true}.", "", 0]
-    generalComment = "\\textbf{General Comments:} There can be multiple $a$ values that make the limit true! For the limit, draw a horizontal line and determine if an $x$ value makes the limit true."
+            option4 = ["\\text{Multiple } a \\text{ make the statement true}.", "", 1]
+            option5 = ["\\text{No } a \\text{ make the statement true}.", "", 0]
+    generalComment = "\\textbf{General Comments:} There can be multiple $a$ values that make the statement true! For the limit, draw a horizontal line and determine if an $x$ value makes the limit exist."
 else:
-    displayStem = "For the graph below, find the value(s) $a$ that makes the limit true: $ \\displaystyle \\lim_{x \\rightarrow a} f(x)$ does not exist."
+    displayStem = "For the graph below, find the value(s) $a$ that makes the statement true: $ \\displaystyle \\lim_{x \\rightarrow a} f(x)$ does not exist."
     option1 = ["-2", "", 0]
     option2 = ["1", "", 1]
     option3 = ["3", "", 0]
-    option4 = ["\\text{Multiple } a \\text{ make the limit true}.", "", 0]
-    option5 = ["\\text{No } a \\text{ make the limit true}.", "", 0]
+    option4 = ["\\text{Multiple } a \\text{ make the statement true}.", "", 0]
+    option5 = ["\\text{No } a \\text{ make the statement true}.", "", 0]
     generalComment = "\\textbf{General Comments:} Remember that the limit does not exist if the left-hand and right-hand limits do not match."
 
 displayProblem = "evaluateLimitGraphically%s" %version

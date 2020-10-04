@@ -1,22 +1,27 @@
-from sympy.abc import x
+import sys
 from sympy import *
-import random
-import matplotlib.pyplot as plt
 import numpy
+import random
+import math
+from decimal import Decimal
+import decimal
+import traceback
+import cmath
+import matplotlib.pyplot as plt
+from sympy.abc import x, y
+from sympy.solvers import solve
 
-# OBJECTIVE 1 - Convert between a polynomial function and its graph.
-# Types of problems
-    # Type 1 - Function to graph
-    # Type 2 - Graph to function
+DIR=sys.argv[1]
+database_name=sys.argv[2]
+question_list=sys.argv[3]
+version=sys.argv[4]
+sys.path.insert(1, f"/{DIR}/PythonScripts/ScriptsForQuestionCode")
+from commonlyUsedFunctions import *
+from intervalMaskingMethod import *
+sys.path.insert(1, f"/{DIR}/PythonScripts/ScriptsForDatabases")
+from storeQuestionData import *
 
-# We only need one type for this test. It might be easier to do
-    # Graph to function
-
-# In the future: Plot zeros and where derivative is zero.
-
-# Type 2 - Graph to function
-    # Students should be able to determine the graph based on
-        # the end behavior and degree of the polynomial.
+thisQuestion="polyGraphToFunction"
 
 checkMax = 1000
 checkMin = 1000
@@ -79,7 +84,7 @@ if degree == 6:
     plt.xlabel('x')
     plt.ylabel('y')
     plt.grid(True)
-    plt.savefig('../Figures/polyGraphToFunction' + str(version) + '.png', bbox_inches='tight')
+    plt.savefig('../Figures/' + str(thisQuestion) + str(version) + '.png', bbox_inches='tight')
     plt.close()
     # Distractors #
     negativeEquation = -aCoeff*(x-randomZeros[0])**2 * (x-randomZeros[1])**2 * (x-randomZeros[2])**2
@@ -109,7 +114,7 @@ elif degree ==5:
     plt.xlabel('x')
     plt.ylabel('y')
     plt.grid(True)
-    plt.savefig('../Figures/polyGraphToFunction' + str(version) + '.png', bbox_inches='tight')
+    plt.savefig('../Figures/' +  str(thisQuestion) + str(version) + '.png', bbox_inches='tight')
     plt.close()
     # Distractors #
     negativeEquation = -aCoeff*(x-randomZeros[0])**2 * (x-randomZeros[1])**2 * (x-randomZeros[2])
@@ -139,7 +144,7 @@ elif degree ==4:
     plt.xlabel('x')
     plt.ylabel('y')
     plt.grid(True)
-    plt.savefig('../Figures/polyGraphToFunction' + str(version) + '.png', bbox_inches='tight')
+    plt.savefig('../Figures/' +  str(thisQuestion) + str(version) + '.png', bbox_inches='tight')
     plt.close()
     # Distractors #
     negativeEquation = -aCoeff*(x-randomZeros[0])**2 * (x-randomZeros[1]) * (x-randomZeros[2])
@@ -169,7 +174,7 @@ else:
     plt.xlabel('x')
     plt.ylabel('y')
     plt.grid(True)
-    plt.savefig('../Figures/polyGraphToFunction' + str(version) + '.png', bbox_inches='tight')
+    plt.savefig('../Figures/' +  str(thisQuestion) + str(version) + '.png', bbox_inches='tight')
     plt.close()
     # Distractors #
     negativeEquation = -aCoeff*(x-randomZeros[0]) * (x-randomZeros[1]) * (x-randomZeros[2])
@@ -189,7 +194,7 @@ else:
     #####
 
 displayStem = 'Which of the following equations \\textit{could} be of the graph presented below?'
-displayProblem = "polyGraphToFunction%s" %version
+displayProblem = f"{thisQuestion}{version}"
 displaySolution = displayEquationOfGraph
 generalComment = "General Comments: Draw the x-axis to determine which zeros are touching (and so have even multiplicity) or cross (and have odd multiplicity)."
 
@@ -216,4 +221,8 @@ for checkLetter in letters:
         break
     answerIndex = answerIndex+1
 
-writeToKey(keyFileName, version, problemNumber, displayStem, "Graph", displayProblem, "MathMode", displaySolution, answerLetter, choices, choiceComments, generalComment)
+# String, Math Mode, or Graph
+displayStemType="String"
+displayProblemType="Graph"
+displayOptionsType="Math Mode"
+writeToDatabase(DIR, database_name, question_list, thisQuestion, displayStemType, displayStem, displayProblemType, displayProblem, displayOptionsType, choices, choiceComments, displaySolution, answerLetter, generalComment)

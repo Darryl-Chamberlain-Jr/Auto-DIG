@@ -1,11 +1,25 @@
+import sys
+from sympy import *
 import numpy
 import random
-import sympy
-from sympy import Symbol
-from sympy.abc import x
+import math
+from decimal import Decimal
+import decimal
+import traceback
+import cmath
+import matplotlib.pyplot as plt
+from sympy.abc import x, y
+from sympy.solvers import solve
 
-# TYPE 1 - Basic (no fractions)
-# block[0] + block[1] * x "l/leq/g/geq" block[2] * x + block[3]. If we make block[1] < block[2], we can get students to divide by a negative
+DIR=sys.argv[1]
+database_name=sys.argv[2]
+question_list=sys.argv[3]
+version=sys.argv[4]
+sys.path.insert(1, f"/{DIR}/PythonScripts/ScriptsForQuestionCode")
+from commonlyUsedFunctions import *
+from intervalMaskingMethod import *
+sys.path.insert(1, f"/{DIR}/PythonScripts/ScriptsForDatabases")
+from storeQuestionData import *
 
 def createCoefficients():
     coefficients = [0, 0, 0, 0]
@@ -104,7 +118,7 @@ elif problemType == "greater":
 else:
     displayProblem = "%s \\geq %s" %(leftBlock, rightBlock)
 
-generalComment = "General Comments: Remember that less/greater than or equal to includes the endpoint, while less/greater do not. Also, remember that you need to flip the inequality when you multiply or divide by a negative."
+generalComment = "Remember that less/greater than or equal to includes the endpoint, while less/greater do not. Also, remember that you need to flip the inequality when you multiply or divide by a negative."
 
 answerList = [solution, distractor1, distractor2, distractor3]
 random.shuffle(answerList)
@@ -126,4 +140,8 @@ for checkLetter in letters:
         break
     answerIndex = answerIndex+1
 
-writeToKey(keyFileName, version, problemNumber, displayStem, "MathMode", displayProblem, "MathMode", displaySolution, answerLetter, choices, choiceComments, generalComment)
+thisQuestion="solveIntegerInequality"
+displayStemType="String"
+displayProblemType="Math Mode"
+displayOptionsType="Math Mode"
+writeToDatabase(DIR, database_name, question_list, thisQuestion, displayStemType, displayStem, displayProblemType, displayProblem, displayOptionsType, choices, choiceComments, displaySolution, answerLetter, generalComment)

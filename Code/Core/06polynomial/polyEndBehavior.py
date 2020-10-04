@@ -1,11 +1,27 @@
-import random
+import sys
 from sympy import *
 import numpy
+import random
+import math
+from decimal import Decimal
+import decimal
+import traceback
+import cmath
+import matplotlib.pyplot as plt
+from sympy.abc import x, y
+from sympy.solvers import solve
 
-# OBJECTIVE 2 - Identify the end behavior and zero behavior of a polynomial equation
+DIR=sys.argv[1]
+database_name=sys.argv[2]
+question_list=sys.argv[3]
+version=sys.argv[4]
+sys.path.insert(1, f"/{DIR}/PythonScripts/ScriptsForQuestionCode")
+from commonlyUsedFunctions import *
+from intervalMaskingMethod import *
+sys.path.insert(1, f"/{DIR}/PythonScripts/ScriptsForDatabases")
+from storeQuestionData import *
 
-# behaviorOfPolynomial = a*(factor1[0]*x+factor1[1])**factor1[2] *(factor1[0]*x-factor1[1])**(factor1[2]+1) *(factor2[0]*x+factor2[1])**factor2[2]*(factor2[0]*x+factor2[1])**(factor2[2]+1)
-# This allows us to see if they know which factor is correct.
+thisQuestion="polyEndBehavior"
 
 def generateFactor():
     a = 1
@@ -50,22 +66,26 @@ displayProblem = "f(x) = %s(%s)^{%d}(%s)^{%d}(%s)^{%d}(%s)^{%d}" %(leadingCoeffi
 sumOfExponents = e0 + e1 + e2 + e3
 
 if leadingCoefficient < 0 and sumOfExponents % 2 == 0:
-    displaySolution = "polyEndBehaviorB%s" %version
+    displaySolution = f"{thisQuestion}B{version}"
     answerLetter="B"
 elif leadingCoefficient > 0 and sumOfExponents % 2 == 0:
-    displaySolution = "polyEndBehaviorC%s" %version
+    displaySolution = f"{thisQuestion}C{version}"
     answerLetter="C"
 elif leadingCoefficient > 0 and sumOfExponents % 2 == 1:
-    displaySolution = "polyEndBehaviorD%s" %version
+    displaySolution = f"{thisQuestion}D{version}"
     answerLetter="D"
 else:
-    displaySolution = "polyEndBehaviorA%s" %version
+    displaySolution = f"{thisQuestion}A{version}"
     answerLetter="A"
 
-choices = ["polyEndBehaviorA%s" %version, "polyEndBehaviorB%s" %version, "polyEndBehaviorC%s" %version, "polyEndBehaviorD%s" %version]
+choices = [f"{thisQuestion}A{version}", f"{thisQuestion}B{version}", f"{thisQuestion}C{version}", f"{thisQuestion}D{version}"]
 choiceComments = ["The function is above the $x$-axis, then passes through.", "The function is below the $x$-axis, then touches.", "The function is above the $x$-axis, then touches.", "The function is below the $x$-axis, then passes through."]
 
 displayStem = 'Describe the end behavior of the polynomial below.'
-generalComment = "\\textbf{General Comments:} Remember that end behavior is determined by the leading coefficient AND whether the \\textbf{sum} of the multiplicities is positive or negative."
+generalComment = "Remember that end behavior is determined by the leading coefficient AND whether the \\textbf{sum} of the multiplicities is positive or negative."
 
-writeToKey(keyFileName, version, problemNumber, displayStem, "MathMode", displayProblem, "Graphs", displaySolution, answerLetter, choices, choiceComments, generalComment)
+# String, Math Mode, or Graph
+displayStemType="String"
+displayProblemType="Math Mode"
+displayOptionsType="Graph"
+writeToDatabase(DIR, database_name, question_list, thisQuestion, displayStemType, displayStem, displayProblemType, displayProblem, displayOptionsType, choices, choiceComments, displaySolution, answerLetter, generalComment)

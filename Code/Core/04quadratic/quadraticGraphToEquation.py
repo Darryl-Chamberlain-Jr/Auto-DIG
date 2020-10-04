@@ -1,7 +1,28 @@
-from sympy.abc import x
+import sys
+from sympy import *
 import numpy
+import random
+import math
+from decimal import Decimal
+import decimal
+import traceback
+import cmath
+import matplotlib.pyplot as plt
+from sympy.abc import x, y
+from sympy.solvers import solve
 import matplotlib.pyplot as plt
 
+DIR=sys.argv[1]
+database_name=sys.argv[2]
+question_list=sys.argv[3]
+version=sys.argv[4]
+sys.path.insert(1, f"/{DIR}/PythonScripts/ScriptsForQuestionCode")
+from commonlyUsedFunctions import *
+from intervalMaskingMethod import *
+sys.path.insert(1, f"/{DIR}/PythonScripts/ScriptsForDatabases")
+from storeQuestionData import *
+
+thisQuestion="quadraticGraphToEquation"
 x = var("x")
 
 def generateSolutionAndDistractors(coefficients, vertex):
@@ -19,7 +40,6 @@ def graphTheFunctionAndReturnCoefficients(a, vertex):
     SMALL_SIZE = 24
     MEDIUM_SIZE = 28
     BIGGER_SIZE = 32
-
     plt.rc('font', size=SMALL_SIZE)          # controls default text sizes
     plt.rc('axes', titlesize=SMALL_SIZE)     # fontsize of the axes title
     plt.rc('axes', labelsize=MEDIUM_SIZE)    # fontsize of the x and y labels
@@ -37,9 +57,9 @@ def graphTheFunctionAndReturnCoefficients(a, vertex):
     plt.xlabel('x')
     plt.ylabel('y')
     plt.grid(True)
-    plt.savefig('../Figures/quadraticGraphToEquation' + str(version) + '.png', bbox_inches='tight')
+    plt.savefig('../Figures/' + str(thisQuestion) + str(version) + '.png', bbox_inches='tight')
     plt.close()
-    return [a, -2*vertex[0]*a, a*vertex[0]^2 +vertex[1]]
+    return [a, -2*vertex[0]*a, a*(vertex[0]**2) +vertex[1]]
 
 a = maybeMakeNegative(1)
 vertex = [maybeMakeNegative(random.randint(1, 2))*2, maybeMakeNegative(random.randint(1, 5))*2]
@@ -53,9 +73,9 @@ answerList = [ [intervalOptions[0], solution[1], solution[2]], [intervalOptions[
 random.shuffle(answerList)
 
 displayStem = 'Write the equation of the graph presented below in the form $f(x)=ax^2+bx+c$, assuming  $a=1$ or $a=-1$. Then, choose the intervals that $a, b,$ and $c$ belong to.'
-displayProblem = "quadraticGraphToEquation%s" %version
+displayProblem = f"{thisQuestion}{version}"
 displaySolution = "f(x) = %s" %generatePolynomialDisplay(solution[0])
-generalComment = "General Comments: When the graph is pointing up, $a=1$. When the graph is pointing down, $a=-1$. Be sure to use Vertex Form: $y = a(x-h)^2+k$."
+generalComment = "When the graph is pointing up, $a=1$. When the graph is pointing down, $a=-1$. Be sure to use Vertex Form: $y = a(x-h)^2+k$."
 
 c0 = "a \\in [%s, %s], \\hspace*{5mm} b \\in [%s, %s], \\text{ and } \\hspace*{5mm} c \\in [%s, %s]" %(answerList[0][0][0][0], answerList[0][0][0][1], answerList[0][0][1][0], answerList[0][0][1][1], answerList[0][0][2][0], answerList[0][0][2][1])
 c1 = "a \\in [%s, %s], \\hspace*{5mm} b \\in [%s, %s], \\text{ and } \\hspace*{5mm} c \\in [%s, %s]" %(answerList[1][0][0][0], answerList[1][0][0][1], answerList[1][0][1][0], answerList[1][0][1][1], answerList[1][0][2][0], answerList[1][0][2][1])
@@ -73,4 +93,7 @@ for checkLetter in letters:
         break
     answerIndex = answerIndex+1
 
-writeToKey(keyFileName, version, problemNumber, displayStem, "Graph", displayProblem, "MathMode", displaySolution, answerLetter, choices, choiceComments, generalComment)
+displayStemType="String"
+displayProblemType="Graph"
+displayOptionsType="Math Mode"
+writeToDatabase(DIR, database_name, question_list, thisQuestion, displayStemType, displayStem, displayProblemType, displayProblem, displayOptionsType, choices, choiceComments, displaySolution, answerLetter, generalComment)

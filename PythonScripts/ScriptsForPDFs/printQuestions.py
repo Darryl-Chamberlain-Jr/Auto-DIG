@@ -18,8 +18,8 @@ def print_question_to_exam(database_info, version, file_name, DIR):
     \includegraphics[width=0.5\textwidth]{../Figures/%s%s.png}
 \end{center}
 """ %(code_name, version))
-    else:
-        print(f"You input {display_stem_type}, which was not a valid option.")
+#    else:
+#        print(f"You input {display_stem_type}, which was not a valid option.")
     # display_problem_type: String, Math Mode, Graph, or Table
     if display_problem_type=="String":
         examFile.write(r"""
@@ -98,6 +98,7 @@ def print_question_to_key(database_info, version, code_name, file_name, DIR):
     \includegraphics[width=0.5\textwidth]{../Figures/%s%s.png}
 \end{center}
 """ %(code_name, version))
+        keyFile.write('\n\n')
     elif display_problem_type=="Table":
         keyFile.write(r"""
 \begin{tabular}{c|c|c|c|c|c|c|c|c|c}
@@ -109,14 +110,17 @@ def print_question_to_key(database_info, version, code_name, file_name, DIR):
     if display_options_type=="String":
         keyFile.write("The solution is %s, which is option %s." %(solution, answer_letter))
         keyFile.write('\n')
+        keyFile.write('\n')
         keyFile.write(r"\begin{enumerate}[label=\Alph*.]")
         keyFile.write('\n')
         for i in range(len(choices)):
             keyFile.write(r"\item %s" %choices[i])
-            keyFile.write('\n\n')
+            keyFile.write('\n')
+            keyFile.write('\n')
             keyFile.write(choice_comments[i])
             keyFile.write('\n')
         keyFile.write(r"\end{enumerate}")
+        keyFile.write('\n')
         keyFile.write('\n')
     elif display_options_type=="Math Mode":
         keyFile.write("The solution is \( %s \), which is option %s." %(solution, answer_letter))
@@ -124,18 +128,20 @@ def print_question_to_key(database_info, version, code_name, file_name, DIR):
         keyFile.write('\n')
         for i in range(len(choices)):
             keyFile.write(r"\item \( %s \)" %choices[i])
-            keyFile.write('\n\n')
+            keyFile.write('\n')
+            keyFile.write('\n')
             keyFile.write(choice_comments[i])
             keyFile.write('\n')
         keyFile.write(r"\end{enumerate}")
         keyFile.write('\n')
     elif display_options_type=="Graph":
-        keyFile.write(r"\begin{multicols}{2}")
         keyFile.write(r"""The solution is the graph below, which is option %s.
-\\begin{center}
-    \\includegraphics[width=0.3\\textwidth]{../Figures/%s%s%s.png}
-\\end{center}""" %(answer_letter, code_name, answer_letter, version) )
+\begin{center}
+    \includegraphics[width=0.3\textwidth]{../Figures/%s%s%s.png}
+\end{center}""" %(answer_letter, code_name, answer_letter, version) )
         keyFile.write(r"\begin{enumerate}[label=\Alph*.]")
+        keyFile.write('\n')
+        keyFile.write(r"\begin{multicols}{2}")
         keyFile.write('\n')
         for i in range(len(choices)):
             options=["A", "B", "C", "D", "E", "F", "G", "H"]
@@ -143,7 +149,7 @@ def print_question_to_key(database_info, version, code_name, file_name, DIR):
             keyFile.write('\n')
         keyFile.write(r"\end{multicols}")
         keyFile.write(r"\item None of the above.")
-        keyFile.write(r"\begin{enumerate}[label=\Alph*.]")
+        keyFile.write(r"\end{enumerate}")
     keyFile.write('\n')
     keyFile.write(r"\textbf{General Comment:} %s" %general_comment)
     keyFile.write('\n')

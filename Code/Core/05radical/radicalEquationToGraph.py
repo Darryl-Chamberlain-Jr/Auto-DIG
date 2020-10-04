@@ -1,14 +1,33 @@
+import sys
+from sympy import *
 import numpy
-import math
 import random
+import math
+from decimal import Decimal
+import decimal
+import traceback
+import cmath
 import matplotlib.pyplot as plt
+from sympy.abc import x, y
+from sympy.solvers import solve
+
+DIR=sys.argv[1]
+database_name=sys.argv[2]
+question_list=sys.argv[3]
+version=sys.argv[4]
+sys.path.insert(1, f"/{DIR}/PythonScripts/ScriptsForQuestionCode")
+from commonlyUsedFunctions import *
+from intervalMaskingMethod import *
+sys.path.insert(1, f"/{DIR}/PythonScripts/ScriptsForDatabases")
+from storeQuestionData import *
+
+thisQuestion="radicalEquationToGraph"
 
 def cubeRootThis(value):
     if value > 0:
         return (value)**(1./3.)
     else:
         return -(-value)**(1./3.)
-
 def sketchFunctionAndPoint(rootDegree, coefficient, pointOfInterest, figureName, optionLetter):
     if rootDegree == 2:
         graphX = numpy.arange(pointOfInterest[0], pointOfInterest[0]+4, 0.05)
@@ -16,18 +35,14 @@ def sketchFunctionAndPoint(rootDegree, coefficient, pointOfInterest, figureName,
     else:
         graphX = numpy.arange(pointOfInterest[0]-3, pointOfInterest[0]+3, 0.05)
         graphY = [coefficient * cubeRootThis(graphX[i] - pointOfInterest[0]) + pointOfInterest[1] for i in range(len(graphX)) ]
-
     plt.figure(1)
     plt.subplot(111)
     plt.plot(graphX, graphY, linewidth = 5)
-
     plt.subplot(111)
     plt.plot( [ pointOfInterest[0] ], [ pointOfInterest[1] ], 'bs')
-
     SMALL_SIZE = 24
     MEDIUM_SIZE = 28
     BIGGER_SIZE = 32
-
     plt.rc('font', size=MEDIUM_SIZE)          # controls default text sizes
     plt.rc('axes', titlesize=MEDIUM_SIZE)     # fontsize of the axes title
     plt.rc('axes', labelsize=MEDIUM_SIZE)    # fontsize of the x and y labels
@@ -40,7 +55,6 @@ def sketchFunctionAndPoint(rootDegree, coefficient, pointOfInterest, figureName,
     plt.grid(True)
     plt.savefig('../Figures/' + str(figureName) + str(optionLetter) + str(version) + '.png', bbox_inches='tight')
     plt.close()
-
 def createFunctionAndPointOfInterest():
     rootDegree = random.randint(2, 3)
     coefficient = maybeMakeNegative(1)
@@ -49,7 +63,6 @@ def createFunctionAndPointOfInterest():
     fb = float(b)
     pointOfInterest = [fb, k]
     return [rootDegree, coefficient, pointOfInterest]
-
 def displayEquation(rootDegree, coefficient, pointOfInterest):
     if rootDegree == 2:
         if pointOfInterest[0] < 0:
@@ -98,7 +111,6 @@ def displayEquation(rootDegree, coefficient, pointOfInterest):
                 else:
                     equation = "\\sqrt[3]{x - %d} + %d" %(pointOfInterest[0], pointOfInterest[1])
     return equation
-
 def createGraphs(rootDegree, coefficient, pointOfInterest, optionList, figureName):
     # Solution
     solution = [displayEquation(rootDegree, coefficient, pointOfInterest), "This is the correct option."]
@@ -119,9 +131,8 @@ def createGraphs(rootDegree, coefficient, pointOfInterest, optionList, figureNam
     sketchFunctionAndPoint(rootDegree, -coefficient, [-pointOfInterest[0], pointOfInterest[1]], figureName, optionList[3])
 
     return [solution, distractor1, distractor2, distractor3]
-
 ##### END OF DEFINITIONS #####
-figureName = "radicalEquationToGraph"
+figureName = thisQuestion
 optionList = ["A", "B", "C", "D"]
 unshuffledOptionList = optionList
 shuffledComments = [ "* This is the correct option.", "Corresponds to switching the coefficient and having the correct vertex.", "Corresponds to the correct coefficient and switching the $x$-value of the vertex.", "Corresponds to switching the coefficient AND switching the $x$-value of the vertex." ]
@@ -135,7 +146,10 @@ solution, distractor1, distractor2, distractor3 = createGraphs(rootDegree, coeff
 
 displayStem = "Choose the graph of the equation below."
 displayProblem = "f(x) = %s" %solution[0]
-generalComment = "General Comments: Remember that the general form of a radical equation is $ f(x) = a \\sqrt[b]{x - h} + k $, where $a$ is the leading coefficient (and in this case, we assume is either 1 or -1), $b$ is the root degree (in this case, either 2 or 3), and $(h, k)$ is the vertex."
+generalComment = "Remember that the general form of a radical equation is $ f(x) = a \\sqrt[b]{x - h} + k $, where $a$ is the leading coefficient (and in this case, we assume is either 1 or -1), $b$ is the root degree (in this case, either 2 or 3), and $(h, k)$ is the vertex."
 answerLetter = optionList[0]
 
-writeToKey(keyFileName, version, problemNumber, displayStem, "MathMode", displayProblem, "Graphs", displaySolution, answerLetter, choices, choiceComments, generalComment)
+displayStemType="String"
+displayProblemType="Math Mode"
+displayOptionsType="Graph"
+writeToDatabase(DIR, database_name, question_list, thisQuestion, displayStemType, displayStem, displayProblemType, displayProblem, displayOptionsType, choices, choiceComments, displaySolution, answerLetter, generalComment)

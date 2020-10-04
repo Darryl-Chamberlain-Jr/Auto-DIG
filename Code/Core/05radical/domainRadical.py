@@ -1,15 +1,27 @@
-# Module 6 - Radical Equations
-    # Objective 1 - Identify the domain of a radical function.
-    # Objective 2 - Identify the graph of a radical function.
-        # Two types of questions:
-            # Graph to equation
-            # Equation to graph
-    # Objective 3 - Solve radical equations that lead to linear equations.
-    # Objective 4 - Solve radical equations that lead to quadratic equations.
-
-# version and problemNumber defined in .tex file
-
+import sys
+from sympy import *
+import numpy
 import random
+import math
+from decimal import Decimal
+import decimal
+import traceback
+import cmath
+import matplotlib.pyplot as plt
+from sympy.abc import x, y
+from sympy.solvers import solve
+
+DIR=sys.argv[1]
+database_name=sys.argv[2]
+question_list=sys.argv[3]
+version=sys.argv[4]
+sys.path.insert(1, f"/{DIR}/PythonScripts/ScriptsForQuestionCode")
+from commonlyUsedFunctions import *
+from intervalMaskingMethod import *
+sys.path.insert(1, f"/{DIR}/PythonScripts/ScriptsForDatabases")
+from storeQuestionData import *
+
+thisQuestion="domainRadical"
 
 precision = 1
 intervalRange = 5
@@ -145,4 +157,7 @@ displayStem = "What is the domain of the function below?"
 displayProblem = "f(x) = \\sqrt[%d]{%s}" %(rootDegree, factor)
 generalComment = "Remember that we cannot take the even root of a negative number - this is why the domain is only sometimes restricted! If we have an even root, we solve $%s \\geq 0$. Since this is an inequality, remember to flip the inequality if we divide by a negative number." %factor
 
-writeToKey(keyFileName, version, problemNumber, displayStem, "MathMode", displayProblem, "MathMode", displaySolution, answerLetter, choices, choiceComments, generalComment)
+displayStemType="String"
+displayProblemType="Math Mode"
+displayOptionsType="Math Mode"
+writeToDatabase(DIR, database_name, question_list, thisQuestion, displayStemType, displayStem, displayProblemType, displayProblem, displayOptionsType, choices, choiceComments, displaySolution, answerLetter, generalComment)

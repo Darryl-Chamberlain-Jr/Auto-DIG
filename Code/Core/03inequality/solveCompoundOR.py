@@ -1,20 +1,25 @@
+import sys
+from sympy import *
+import numpy
 import random
-from sympy.abc import x
-from sympy import solve
-from sympy import Symbol
 import math
+from decimal import Decimal
+import decimal
+import traceback
+import cmath
+import matplotlib.pyplot as plt
+from sympy.abc import x, y
+from sympy.solvers import solve
 
-#load("../Code/generalPurposeMethods.sage")
-
-# OBJECTIVE 3 - Solve Compound Inequalities
-# Types: "or" and "and" Inequalities
-
-# Type 1 - "or"
-# block[0] + block[1]*x > block[2]*x "or" block[3] + block[4]*x < block[5]*x
-# For a non (-infty, infty) solution, we want:
-    # orBlocks[1] - orBlocks[2] < 0
-    # orBlocks[4] - orBlocks[5] < 0
-    # - orBlocks[3]/(orBlocks[4]-orBlocks[5]) > -orBlocks[0]/(orBlocks[1]-orBlocks[2])
+DIR=sys.argv[1]
+database_name=sys.argv[2]
+question_list=sys.argv[3]
+version=sys.argv[4]
+sys.path.insert(1, f"/{DIR}/PythonScripts/ScriptsForQuestionCode")
+from commonlyUsedFunctions import *
+from intervalMaskingMethod import *
+sys.path.insert(1, f"/{DIR}/PythonScripts/ScriptsForDatabases")
+from storeQuestionData import *
 
 def createAllCoefficients():
     coefficients = [0, 0, 0, 0, 0, 0]
@@ -153,7 +158,7 @@ display0 = round(solution[0], 3)
 display1 = round(solution[1], 3)
 displaySolution = "(-\\infty, %s) \\text{ or } (%s, \\infty)" %(display0, display1)
 
-generalComment = "General Comments: When multiplying or dividing by a negative, flip the sign."
+generalComment = "When multiplying or dividing by a negative, flip the sign."
 
 solutionInterval.append(' * Correct option.')
 distractor1Interval.append("Corresponds to inverting the inequality and negating the solution.")
@@ -187,4 +192,8 @@ for checkLetter in letters:
         break
     answerIndex = answerIndex+1
 
-writeToKey(keyFileName, version, problemNumber, displayStem, "MathMode", displayProblem, "MathMode", displaySolution, answerLetter, choices, choiceComments, generalComment)
+thisQuestion="solveCompoundOR"
+displayStemType="String"
+displayProblemType="Math Mode"
+displayOptionsType="Math Mode"
+writeToDatabase(DIR, database_name, question_list, thisQuestion, displayStemType, displayStem, displayProblemType, displayProblem, displayOptionsType, choices, choiceComments, displaySolution, answerLetter, generalComment)
