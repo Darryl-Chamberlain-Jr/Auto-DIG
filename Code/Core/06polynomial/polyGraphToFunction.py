@@ -69,8 +69,7 @@ def randomPower(type):
     elif type == 2:
         power = random.randint(2, 5)*2
     else:
-        power=0
-        print("You input an invalid type. Use 1 for odd power and 2 for even power.")
+        power = 0
     return power
 
 if degree == 6:
@@ -84,7 +83,7 @@ if degree == 6:
     plt.xlabel('x')
     plt.ylabel('y')
     plt.grid(True)
-    plt.savefig('../Figures/' + str(thisQuestion) + str(version) + '.png', bbox_inches='tight')
+    plt.savefig('/' + str(DIR) + '/Figures/' + str(thisQuestion) + str(version) + '.png', bbox_inches='tight')
     plt.close()
     # Distractors #
     negativeEquation = -aCoeff*(x-randomZeros[0])**2 * (x-randomZeros[1])**2 * (x-randomZeros[2])**2
