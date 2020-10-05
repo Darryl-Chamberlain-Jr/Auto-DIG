@@ -12,11 +12,19 @@ Steps to create the desktop app.
 
 2. Clone the repository.
 
-   We suggest downloading the repository to a folder in your home directory. As we use many git repositories, we have a git-repos folder in the home directory that we put any downloaded repositories (like this one) in. Instructions on how to clone a repository can be found [here](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository).
+   We suggest downloading the repository to a folder in your home directory. As we use many git repositories, we have a git-repos folder in the home directory that we put any downloaded repositories (like this one) in. Instructions on how to clone a repository can be found [here](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository). **If you choose not to do this, remove "git-repos" from the next instructions.**
 
-3. Run the installer shell script *install_AutoDIG*.
+3. Run the installer shell script *install_AutoDIG* via terminal.
+    1. Navigate to the *ShellScripts* folder. If you took our suggestion, this can be done with:
+        *cd ./git-repos/Auto-DIG/ShellScripts/*
+    2. Make the installer shell script executable.
+        *sudo chmod +x ./git-repos/Auto-DIG/ShellScripts/install_AutoDIG.sh*
+    3. Run the installer.
+        *./git-repos/Auto-DIG/ShellScripts/./install_AutoDIG.sh*
 
-    *./git-repos/Auto-DIG/ShellScripts/./install_AutoDIG*
+    The first step is necessary just in case you have a different directory structure where you downloaded the Auto-DIG folder.
+
+4. Right-click desktop app and *Trust this executable*.
 
 ------
 

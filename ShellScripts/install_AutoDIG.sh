@@ -3,6 +3,7 @@ cd ../
 temp_dir=$PWD
 DIR="${temp_dir:1}"
 # Copy Auto-DIG.desktop to /home/dchamberlain31/Desktop
+cd ./ShellScripts
 sudo cp Auto-DIG.desktop /home/$USER/Desktop
 # Make executable and trusted
 chmod +x Auto-DIG.desktop
