@@ -19,6 +19,8 @@ from intervalMaskingMethod import *
 sys.path.insert(1, f"/{DIR}/PythonScripts/ScriptsForDatabases")
 from storeQuestionData import *
 
+thisQuestion="linearGraphToStandardCopy"
+
 ### DEFINITIONS ###
 def simplifySolution(A, B, C):
     if(A < 0):
@@ -109,7 +111,7 @@ def plotGraph(slopeGraph, yInt, point2, point3):
     plt.xlabel('x')
     plt.ylabel('y')
     plt.grid(True)
-    plt.savefig('../Figures/linearGraphToStandardCopy' + str(version) + '.png', bbox_inches='tight')
+    plt.savefig('/' + str(DIR) + '/Figures/' + str(thisQuestion) + str(version) + '.png', bbox_inches='tight')
     plt.close()
     return
 ### VARIABLE DECLARATIONS ###
@@ -145,7 +147,6 @@ displayStem = 'Write the equation of the line in the graph below in Standard for
 displayProblem = "\\text{Equation that was graphed:} f(x)= %s" %generatePolynomialDisplay(slopeInt)
 generalComment = "Standard form is supposed to have $A > 0$ and all fractions removed."
 
-thisQuestion="linearGraphToStandardCopy"
 displayStemType="String"
 displayProblemType="Graph"
 displayOptionsType="Math Mode"

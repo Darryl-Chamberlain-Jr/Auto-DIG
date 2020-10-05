@@ -22,6 +22,7 @@ from intervalMaskingMethod import *
 sys.path.insert(1, f"/{DIR}/PythonScripts/ScriptsForDatabases")
 from storeQuestionData import *
 
+thisQuestion="quadraticEquationToGraph"
 x = var("x")
 # Type 2 - Function to graph
 
@@ -66,7 +67,7 @@ def generateGraphs(aCoeffFtG, vertexFtG):
     plt.xlabel('x')
     plt.ylabel('y')
     plt.grid(True)
-    plt.savefig('../Figures/quadraticEquationToGraph' + figureAnswerList[0][0] + str(version) + '.png', bbox_inches='tight')
+    plt.savefig('/' + str(DIR) + '/Figures/' + str(thisQuestion) + figureAnswerList[0][0] + str(version) + '.png', bbox_inches='tight')
     plt.close()
     figureAnswerList[0][1] = "This is the correct option."
     answerLetter = figureAnswerList[0][0]
@@ -77,7 +78,7 @@ def generateGraphs(aCoeffFtG, vertexFtG):
     plt.xlabel('x')
     plt.ylabel('y')
     plt.grid(True)
-    plt.savefig('../Figures/quadraticEquationToGraph' + figureAnswerList[1][0] + str(version) + '.png', bbox_inches='tight')
+    plt.savefig('/' + str(DIR) + '/Figures/' + str(thisQuestion) + figureAnswerList[1][0] + str(version) + '.png', bbox_inches='tight')
     plt.close()
     figureAnswerList[1][1] = "Used the incorrect general form $f(x) = a(x+h)^2 + k$"
 
@@ -87,7 +88,7 @@ def generateGraphs(aCoeffFtG, vertexFtG):
     plt.xlabel('x')
     plt.ylabel('y')
     plt.grid(True)
-    plt.savefig('../Figures/quadraticEquationToGraph' + figureAnswerList[2][0] + str(version) + '.png', bbox_inches='tight')
+    plt.savefig('/' + str(DIR) + '/Figures/' + str(thisQuestion) + figureAnswerList[2][0] + str(version) + '.png', bbox_inches='tight')
     plt.close()
     figureAnswerList[2][1] = "Used the incorrect general form $f(x) = -a(x-h)^2 + k$"
 
@@ -97,7 +98,7 @@ def generateGraphs(aCoeffFtG, vertexFtG):
     plt.xlabel('x')
     plt.ylabel('y')
     plt.grid(True)
-    plt.savefig('../Figures/quadraticEquationToGraph' + figureAnswerList[3][0] + str(version) + '.png', bbox_inches='tight')
+    plt.savefig('/' + str(DIR) + '/Figures/' + str(thisQuestion) + figureAnswerList[3][0] + str(version) + '.png', bbox_inches='tight')
     plt.close()
     figureAnswerList[3][1] = "Used the incorrect general form $f(x) = -a(x+h)^2 + k$"
     #
@@ -130,13 +131,13 @@ else:
         else:
             displayProblem = 'f(x) = (x-%s)^2 + %s' %(vertexFtG[0], vertexFtG[1])
 
-displaySolution = "quadraticEquationToGraph%s%s" %(figureAnswerList[0][0], version)
+displaySolution = f"{thisQuestion}{figureAnswerList[0][0]}{version}" 
 generalComment = "Remember that Vertex Form is $y = a(x-h)^2+k$, where the vertex is $(h, k)$."
 
-c0 = "quadraticEquationToGraphA%s" %version
-c1 = "quadraticEquationToGraphB%s" %version
-c2 = "quadraticEquationToGraphC%s" %version
-c3 = "quadraticEquationToGraphD%s" %version
+c0 = f"{thisQuestion}A{version}"
+c1 = f"{thisQuestion}B{version}"
+c2 = f"{thisQuestion}C{version}"
+c3 = f"{thisQuestion}D{version}"
 c4 = "None of the above"
 choices = [c0, c1, c2, c3]
 
@@ -154,7 +155,6 @@ choiceComments[placement2] = figureAnswerList[2][1]
 choiceComments[placement3] = figureAnswerList[3][1]
 choiceComments[4] = "You likely thought the vertex did not correspond to the equation."
 
-thisQuestion="quadraticEquationToGraph"
 displayStemType="String"
 displayProblemType="Math Mode"
 displayOptionsType="Graph"

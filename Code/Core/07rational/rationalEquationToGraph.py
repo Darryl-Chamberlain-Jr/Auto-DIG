@@ -48,7 +48,7 @@ def sketchRationalFunction(vertAsy, leadingCoeff, power, horShift, figureName, o
     plt.ylim([float(yMin),float(yMax)])
     ### Saves and closes picture
     plt.grid(True)
-    plt.savefig('../Figures/' + str(figureName) + str(optionLetter) + str(version) + '.png', bbox_inches='tight')
+    plt.savefig('/' + str(DIR) + '/Figures/' + str(figureName) + str(optionLetter) + str(version) + '.png', bbox_inches='tight')
     plt.close()
 def createFunction():
     vertAsy = random.randint(1, 3)*(-1)**random.randint(0, 1)

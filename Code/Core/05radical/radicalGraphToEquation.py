@@ -52,7 +52,7 @@ def sketchFunctionAndPoint(graphX, graphY, pointOfInterest, figureName):
     plt.xlabel('x')
     plt.ylabel('y')
     plt.grid(True)
-    plt.savefig('../Figures/' + str(figureName) + str(version) + '.png', bbox_inches='tight')
+    plt.savefig('/' + str(DIR) + '/Figures/' + str(thisQuestion) + str(version) + '.png', bbox_inches='tight')
     plt.close()
 def createFunctionAndPointOfInterest():
     rootDegree = random.randint(2, 3)

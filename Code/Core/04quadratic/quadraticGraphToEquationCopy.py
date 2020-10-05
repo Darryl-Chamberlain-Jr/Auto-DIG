@@ -58,7 +58,7 @@ def graphTheFunctionAndReturnCoefficients(a, vertex):
     plt.xlabel('x')
     plt.ylabel('y')
     plt.grid(True)
-    plt.savefig('../Figures/' +str(thisQuestion) + str(version) + '.png', bbox_inches='tight')
+    plt.savefig('/' + str(DIR) + '/Figures/' + str(thisQuestion) + str(version) + '.png', bbox_inches='tight')
     plt.close()
     return [a, -2*vertex[0]*a, a*(vertex[0])**2 +vertex[1]]
 
