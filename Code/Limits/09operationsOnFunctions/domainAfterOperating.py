@@ -1,13 +1,28 @@
-import random
+import sys
+from sympy import *
 import numpy
+import random
 import math
+from decimal import Decimal
+import decimal
+import traceback
+import cmath
+import matplotlib.pyplot as plt
+from sympy.abc import x, y
 from sympy.solvers import solve
-from sympy.abc import x
-from sympy import Symbol
 
-# OBJECTIVE 1 - Identify the domain after operating (+/-/x/div) on two functions.
+DIR=sys.argv[1]
+database_name=sys.argv[2]
+question_list=sys.argv[3]
+version=sys.argv[4]
+sys.path.insert(1, f"/{DIR}/PythonScripts/ScriptsForQuestionCode")
+from commonlyUsedFunctions import *
+from intervalMaskingMethod import *
+sys.path.insert(1, f"/{DIR}/PythonScripts/ScriptsForDatabases")
+from storeQuestionData import *
 
-#x = Symbol('x')
+thisQuestion="domainAfterOperating"
+
 intervalRange = 5
 precision = 1
 
@@ -298,7 +313,7 @@ displayFunction2 = function2[0]
 # In the future, this should have 10 options
 displayStem = "%s the following functions, then choose the domain of the resulting function from the list below." %operation
 displayProblem = "f(x) = %s \\text{ and } g(x) = %s" %(displayFunction1, displayFunction2)
-generalComment = "General Comments: The new domain is the intersection of the previous domains."
+generalComment = "The new domain is the intersection of the previous domains."
 
 c0 = "%s, \\text{ where } a \\in [%s, %s]" %(answerList[0][0], answerList[0][2][0][0], answerList[0][2][0][1])
 c1 = "%s, \\text{ where } a \\in [%s, %s]" %(answerList[1][0], answerList[1][2][0][0], answerList[1][2][0][1])
@@ -308,4 +323,8 @@ c4 = "%s" %answerList[4][0]
 choices = [c0, c1, c2, c3, c4]
 choiceComments = ["", "", "", "", ""]
 
-writeToKey(keyFileName, version, problemNumber, displayStem, "MathMode", displayProblem, "MathMode", displaySolution, answerLetter, choices, choiceComments, generalComment)
+# String, Math Mode, or Graph
+displayStemType="String"
+displayProblemType="Math Mode"
+displayOptionsType="Math Mode"
+writeToDatabase(DIR, database_name, question_list, thisQuestion, displayStemType, displayStem, displayProblemType, displayProblem, displayOptionsType, choices, choiceComments, displaySolution, answerLetter, generalComment)

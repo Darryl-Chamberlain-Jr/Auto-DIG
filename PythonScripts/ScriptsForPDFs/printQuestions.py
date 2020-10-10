@@ -36,12 +36,14 @@ def print_question_to_exam(database_info, version, file_name, DIR):
 \end{center}
 """ %(code_name, version))
     elif display_problem_type=="Table":
+        examFile.write('\n')
+        examFile.write('\n')
         examFile.write(r"""
 \begin{tabular}{c|c|c|c|c|c|c|c|c|c}
 \textbf{Year} & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 \tabularnewline
 \hline
 \textbf{Pop.} & %s & %s & %s & %s & %s & %s & %s & %s & %s
-\end{tabular} """ %(populations[0], populations[1], populations[2], populations[3], populations[4], populations[5], populations[6], populations[7], populations[8]) )
+\end{tabular} """ %(display_problem[0], display_problem[1], display_problem[2], display_problem[3], display_problem[4], display_problem[5], display_problem[6], display_problem[7], display_problem[8]) )
     # Begins enumerate for options
     examFile.write(r"\begin{enumerate}[label=\Alph*.]")
     examFile.write('\n')
@@ -100,12 +102,14 @@ def print_question_to_key(database_info, version, code_name, file_name, DIR):
 """ %(code_name, version))
         keyFile.write('\n\n')
     elif display_problem_type=="Table":
+        keyFile.write('\n')
+        keyFile.write('\n')
         keyFile.write(r"""
 \begin{tabular}{c|c|c|c|c|c|c|c|c|c}
 \textbf{Year} & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 \tabularnewline
 \hline
 \textbf{Pop.} & %s & %s & %s & %s & %s & %s & %s & %s & %s
-\end{tabular} """ %(populations[0], populations[1], populations[2], populations[3], populations[4], populations[5], populations[6], populations[7], populations[8]) )
+\end{tabular} """ %(display_problem[0], display_problem[1], display_problem[2], display_problem[3], display_problem[4], display_problem[5], display_problem[6], display_problem[7], display_problem[8]) )
     keyFile.write('\n')
     if display_options_type=="String":
         keyFile.write("The solution is %s, which is option %s." %(solution, answer_letter))

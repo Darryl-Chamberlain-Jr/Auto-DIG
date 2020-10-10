@@ -1,13 +1,27 @@
-import random
+import sys
+from sympy import *
 import numpy
+import random
 import math
+from decimal import Decimal
+import decimal
+import traceback
+import cmath
+import matplotlib.pyplot as plt
+from sympy.abc import x, y
 from sympy.solvers import solve
-from sympy.abc import x
-from sympy import Symbol
-x = Symbol('x')
 
-# OBJECTIVE 3 - Factor completely using Synthetic Division
-    # Type 1 - 1 integer, 2 rational roots
+DIR=sys.argv[1]
+database_name=sys.argv[2]
+question_list=sys.argv[3]
+version=sys.argv[4]
+sys.path.insert(1, f"/{DIR}/PythonScripts/ScriptsForQuestionCode")
+from commonlyUsedFunctions import *
+from intervalMaskingMethod import *
+sys.path.insert(1, f"/{DIR}/PythonScripts/ScriptsForDatabases")
+from storeQuestionData import *
+
+thisQuestion="factorUsingSynthetic2Integers"
 
 def generateDisplayAndZeros():
     #Goal: (a0*x+b0)*(a1*x+b1)*(x-z)
@@ -120,7 +134,7 @@ random.shuffle(answerList)
 displayStem = "Factor the polynomial below completely. Then, choose the intervals the zeros of the polynomial belong to, where $z_1 \\leq z_2 \\leq z_3$. \\textit{To make the problem easier, all zeros are between -5 and 5.}"
 displayProblem = "f(x) = %s" %displayPolynomial
 displaySolution = solution
-generalComment = "General Comments: Remember to try the middle-most integers first as these normally are the zeros. Also, once you get it to a quadratic, you can use your other factoring techniques to finish factoring."
+generalComment = "Remember to try the middle-most integers first as these normally are the zeros. Also, once you get it to a quadratic, you can use your other factoring techniques to finish factoring."
 
 c0 = "z_1 \\in [%s, %s], \\text{   }  z_2 \\in [%s, %s], \\text{   and   } z_3 \\in [%s, %s]" %(answerList[0][0][0], answerList[0][0][1], answerList[0][1][0], answerList[0][1][1], answerList[0][2][0], answerList[0][2][1])
 c1 = "z_1 \\in [%s, %s], \\text{   }  z_2 \\in [%s, %s], \\text{   and   } z_3 \\in [%s, %s]" %(answerList[1][0][0], answerList[1][0][1], answerList[1][1][0], answerList[1][1][1], answerList[1][2][0], answerList[1][2][1])
@@ -138,4 +152,8 @@ for checkLetter in letters:
         break
     answerIndex = answerIndex+1
 
-writeToKey(keyFileName, version, problemNumber, displayStem, "MathMode", displayProblem, "MathMode", displaySolution, answerLetter, choices, choiceComments, generalComment)
+# String, Math Mode, or Graph
+displayStemType="String"
+displayProblemType="Math Mode"
+displayOptionsType="Math Mode"
+writeToDatabase(DIR, database_name, question_list, thisQuestion, displayStemType, displayStem, displayProblemType, displayProblem, displayOptionsType, choices, choiceComments, displaySolution, answerLetter, generalComment)

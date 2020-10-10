@@ -1,13 +1,27 @@
-import random
+import sys
+from sympy import *
 import numpy
+import random
 import math
+from decimal import Decimal
+import decimal
+import traceback
+import cmath
+import matplotlib.pyplot as plt
+from sympy.abc import x, y
 from sympy.solvers import solve
-from sympy.abc import x
-from sympy import Symbol
-x = Symbol('x')
 
-# OBJECTIVE 1 - Divide two polynomials using Synthetic Division.
-    # Type 2 - Missing terms
+DIR=sys.argv[1]
+database_name=sys.argv[2]
+question_list=sys.argv[3]
+version=sys.argv[4]
+sys.path.insert(1, f"/{DIR}/PythonScripts/ScriptsForQuestionCode")
+from commonlyUsedFunctions import *
+from intervalMaskingMethod import *
+sys.path.insert(1, f"/{DIR}/PythonScripts/ScriptsForDatabases")
+from storeQuestionData import *
+
+thisQuestion="syntheticDivisionMissingTerms"
 
 def generateDisplayAndSolution():
     #Goal: (a0*x+b0)*(a1*x+b1)*(x-z)+r
@@ -126,7 +140,7 @@ random.shuffle(answerList)
 displayStem = "Perform the division below. Then, find the intervals that correspond to the quotient in the form $ax^2+bx+c$ and remainder $r$."
 displayProblem = "\\frac{%s}{%s}" %(displayNumerator, displayDenominator)
 displaySolution = "%s + \\frac{%s}{%s}" %(displayQuotient, coefficients[5], displayDenominator)
-generalComment = "General Comments: Be sure to synthetically divide by the zero of the denominator! Also, make sure to include 0 placeholders for missing terms."
+generalComment = "Be sure to synthetically divide by the zero of the denominator! Also, make sure to include 0 placeholders for missing terms."
 
 c0 = "a \\in [%s, %s], b \\in [%s, %s], c \\in [%s, %s], \\text{ and } r \\in [%s, %s]." %(answerList[0][0][0], answerList[0][0][1], answerList[0][1][0], answerList[0][1][1], answerList[0][2][0], answerList[0][2][1], answerList[0][3][0], answerList[0][3][1])
 c1 = "a \\in [%s, %s], b \\in [%s, %s], c \\in [%s, %s], \\text{ and } r \\in [%s, %s]." %(answerList[1][0][0], answerList[1][0][1], answerList[1][1][0], answerList[1][1][1], answerList[1][2][0], answerList[1][2][1], answerList[1][3][0], answerList[1][3][1])
@@ -144,4 +158,8 @@ for checkLetter in letters:
         break
     answerIndex = answerIndex+1
 
-writeToKey(keyFileName, version, problemNumber, displayStem, "MathMode", displayProblem, "MathMode", displaySolution, answerLetter, choices, choiceComments, generalComment)
+# String, Math Mode, or Graph
+displayStemType="String"
+displayProblemType="Math Mode"
+displayOptionsType="Math Mode"
+writeToDatabase(DIR, database_name, question_list, thisQuestion, displayStemType, displayStem, displayProblemType, displayProblem, displayOptionsType, choices, choiceComments, displaySolution, answerLetter, generalComment)

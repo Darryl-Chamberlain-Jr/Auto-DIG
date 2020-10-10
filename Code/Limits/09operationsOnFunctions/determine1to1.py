@@ -1,18 +1,28 @@
-from sympy import Symbol
-x = Symbol('x')
+import sys
+from sympy import *
+import numpy
+import random
+import math
+from decimal import Decimal
+import decimal
+import traceback
+import cmath
+import matplotlib.pyplot as plt
+from sympy.abc import x, y
+from sympy.solvers import solve
 
-# Objective 3 - Determine whether a function is 1-1.
-    # In the future, we can determine whether a function is 1-1 in a few different representations. For now, we focus on algebraic.
+DIR=sys.argv[1]
+database_name=sys.argv[2]
+question_list=sys.argv[3]
+version=sys.argv[4]
+sys.path.insert(1, f"/{DIR}/PythonScripts/ScriptsForQuestionCode")
+from commonlyUsedFunctions import *
+from intervalMaskingMethod import *
+sys.path.insert(1, f"/{DIR}/PythonScripts/ScriptsForDatabases")
+from storeQuestionData import *
 
-# Four types of functions that go to two categories: the function is 1-1 and the function is not 1-1.
-    # Type 1 function: Radical (1-1)
-    # Type 2 function: Polynomial with 1 unique zero, even degree (not 1-1)
-    # Type 3 function: Polynomial with 1 unique zero, odd degree (1-1)
-    # Type 4 function: Polynomial with 2+ unique zeros (not 1-1)
+thisQuestion="determine1to1"
 
-# CODE TO WRITE:
-    # 1. Randomly choose one of 4 types and generate a function of that type.
-    # 2. Tag correct answer.
 intervalRange = 5
 precision = 1
 
@@ -122,7 +132,7 @@ answerList =  [response1, response2, response3, response4, response5]
 displayStem = "Determine whether the function below is 1-1."
 displayProblem = "f(x) = %s" %functionAndSolution[2]
 displaySolution = "\\text{%s}" %functionAndSolution[1]
-generalComment = "\\textbf{General Comments:} There are only two valid options: The function is 1-1 OR No because there is a $y$-value that goes to 2 different $x$-values."
+generalComment = "There are only two valid options: The function is 1-1 OR No because there is a $y$-value that goes to 2 different $x$-values."
 random.shuffle(answerList)
 
 c0 = "%s" %answerList[0][0]
@@ -141,4 +151,8 @@ for checkLetter in letters:
         break
     answerIndex = answerIndex+1
 
-writeToKey(keyFileName, version, problemNumber, displayStem, "MathMode", displayProblem, "MathMode", displaySolution, answerLetter, choices, choiceComments, generalComment)
+# String, Math Mode, or Graph
+displayStemType="String"
+displayProblemType="Math Mode"
+displayOptionsType="Math Mode"
+writeToDatabase(DIR, database_name, question_list, thisQuestion, displayStemType, displayStem, displayProblemType, displayProblem, displayOptionsType, choices, choiceComments, displaySolution, answerLetter, generalComment)

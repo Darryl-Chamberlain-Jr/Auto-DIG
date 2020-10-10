@@ -1,4 +1,4 @@
-#DIR="home/dchamberlain31/git-repos/Auto-DIG"
+DIR="home/dchamberlain31/git-repos/Auto-DIG"
 titleOfProgram="Auto-DIG v.0.2"
 # cd to ShellScripts included to make python graphing work. Not sure why at this point.
 cd /$DIR/ShellScripts/
@@ -140,7 +140,7 @@ do
             cp lettersAnswerKey${file_name}${version}.csv /$DIR/CompleteExam/"$exam_display_name"/Keys
             cp key${file_name}${version}.tex /$DIR/CompleteExam/"$exam_display_name"/TeXs
             cd /$DIR/ShellScripts/
-            cp /$DIR/Databases/${full_db_name}.db /$DIR/CompleteExam/"$exam_display_name"/Databases
+            mv /$DIR/Databases/${full_db_name}.db /$DIR/CompleteExam/"$exam_display_name"/Databases
             cp -r /$DIR/Figures/. /$DIR/CompleteExam/"$exam_display_name"/Figures
         done
     done

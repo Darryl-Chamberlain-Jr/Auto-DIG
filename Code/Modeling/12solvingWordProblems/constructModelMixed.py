@@ -1,11 +1,38 @@
+import sys
+from sympy import *
+import numpy
+import random
+import math
+from decimal import Decimal
+import decimal
+import traceback
+import cmath
+import matplotlib.pyplot as plt
+from sympy.abc import x, y
+from sympy.solvers import solve
+
+DIR=sys.argv[1]
+database_name=sys.argv[2]
+question_list=sys.argv[3]
+version=sys.argv[4]
+sys.path.insert(1, f"/{DIR}/PythonScripts/ScriptsForQuestionCode")
+from commonlyUsedFunctions import *
+from intervalMaskingMethod import *
+sys.path.insert(1, f"/{DIR}/PythonScripts/ScriptsForDatabases")
+from storeQuestionData import *
+
+thisQuestion="constructModelMixed.py"
+
 typesOfModels = ["linear", "power", "logExp"]
 chooseModel = random.choice(typesOfModels)
 chooseQuestion = random.randint(1, 3)
 if chooseModel == "linear":
     if chooseQuestion == 1:
-        load("../Code/09modelingLinear/constructLinearModelDistanceAndRate.sage")
+        from constructLinearModelDistanceAndRate import *
+        #load("../Code/09modelingLinear/constructLinearModelDistanceAndRate.sage")
     elif chooseQuestion == 2:
-        load("../Code/09modelingLinear/constructLinearModelCostsProfitsRevenue.sage")
+        from constructLinearModelCostsProfitsRevenue import *
+        #load("../Code/09modelingLinear/constructLinearModelCostsProfitsRevenue.sage")
     else:
         load("../Code/09modelingLinear/constructLinearModelMixture.sage")
 elif chooseModel == "power":

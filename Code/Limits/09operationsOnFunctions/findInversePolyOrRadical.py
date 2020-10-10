@@ -1,13 +1,27 @@
-from sympy import Symbol
-x = Symbol('x')
-#load("../Code/generalPurposeMethods.sage")
+import sys
+from sympy import *
+import numpy
+import random
+import math
+from decimal import Decimal
+import decimal
+import traceback
+import cmath
+import matplotlib.pyplot as plt
+from sympy.abc import x, y
+from sympy.solvers import solve
 
-# Objective 4 - Find the inverse of a function, if it exists.
-    # Type 1 - Polynomial (degree 2 or 3 with a shift) or Radical Functions
-    # Type 2 - Log/Exp functions
+DIR=sys.argv[1]
+database_name=sys.argv[2]
+question_list=sys.argv[3]
+version=sys.argv[4]
+sys.path.insert(1, f"/{DIR}/PythonScripts/ScriptsForQuestionCode")
+from commonlyUsedFunctions import *
+from intervalMaskingMethod import *
+sys.path.insert(1, f"/{DIR}/PythonScripts/ScriptsForDatabases")
+from storeQuestionData import *
 
-# Question: Find the inverse of the function below (if it exists).
-    # Then, evaluate the inverse at $x = a$ and choose the interval the $f^{-1}(a)$ belongs to.
+thisQuestion="findInversePolyOrRadical"
 
 intervalRange = 5
 precision = 1
@@ -169,7 +183,7 @@ else:
     random.shuffle(answerList)
     answerList.append(distractor4Interval)
 
-generalComment = "General Comments: Be sure you check that the function is 1-1 before trying to find the inverse!"
+generalComment = "Be sure you check that the function is 1-1 before trying to find the inverse!"
 
 c0 = "f^{-1}(%d) \\in [%s, %s]" %(evaluateAt, answerList[0][0][0], answerList[0][0][1])
 c1 = "f^{-1}(%d) \\in [%s, %s]" %(evaluateAt, answerList[1][0][0], answerList[1][0][1])
@@ -187,4 +201,8 @@ for checkLetter in letters:
         break
     answerIndex = answerIndex+1
 
-writeToKey(keyFileName, version, problemNumber, displayStem, "MathMode", displayProblem, "MathMode", displaySolution, answerLetter, choices, choiceComments, generalComment)
+# String, Math Mode, or Graph
+displayStemType="String"
+displayProblemType="Math Mode"
+displayOptionsType="Math Mode"
+writeToDatabase(DIR, database_name, question_list, thisQuestion, displayStemType, displayStem, displayProblemType, displayProblem, displayOptionsType, choices, choiceComments, displaySolution, answerLetter, generalComment)

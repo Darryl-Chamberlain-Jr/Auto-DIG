@@ -1022,7 +1022,7 @@ oneSidedLimitsCopy = {
 identifyGraphOfRationalFunctionCopy = {
     "Code Name": "identifyGraphOfRationalFunctionCopy",
     "Folder": "Limits", # Core, Limits, or Modeling
-    "Subfolder": "12",
+    "Subfolder": "12graphingRationalFunctions",
     "Topic": "Graphing Rational Functions with Limits",
     "Topic Number": "12L",
     "Objective Number": "L.12.05", # format: X.0X.0X, where the first entry is C for Core, M for Modeling, or L for Limits
@@ -1035,7 +1035,7 @@ identifyGraphOfRationalFunctionCopy = {
 identifyHAsCopy = {
     "Code Name": "identifyHAsCopy",
     "Folder": "Limits", # Core, Limits, or Modeling
-    "Subfolder": "12",
+    "Subfolder": "12graphingRationalFunctions",
     "Topic": "Graphing Rational Functions with Limits",
     "Topic Number": "12L",
     "Objective Number": "L.12.03", # format: X.0X.0X, where the first entry is C for Core, M for Modeling, or L for Limits
@@ -1048,7 +1048,7 @@ identifyHAsCopy = {
 identifyHolesCopy = {
     "Code Name": "identifyHolesCopy",
     "Folder": "Limits", # Core, Limits, or Modeling
-    "Subfolder": "12",
+    "Subfolder": "12graphingRationalFunctions",
     "Topic": "Graphing Rational Functions with Limits",
     "Topic Number": "12L",
     "Objective Number": "L.12.01", # format: X.0X.0X, where the first entry is C for Core, M for Modeling, or L for Limits
@@ -1061,7 +1061,7 @@ identifyHolesCopy = {
 identifyOAsCopy = {
     "Code Name": "identifyOAsCopy",
     "Folder": "Limits", # Core, Limits, or Modeling
-    "Subfolder": "12",
+    "Subfolder": "12graphingRationalFunctions",
     "Topic": "Graphing Rational Functions with Limits",
     "Topic Number": "12L",
     "Objective Number": "L.12.04", # format: X.0X.0X, where the first entry is C for Core, M for Modeling, or L for Limits
@@ -1074,7 +1074,7 @@ identifyOAsCopy = {
 identifyVAsCopy = {
     "Code Name": "identifyVAsCopy",
     "Folder": "Limits", # Core, Limits, or Modeling
-    "Subfolder": "12",
+    "Subfolder": "12graphingRationalFunctions",
     "Topic": "Graphing Rational Functions with Limits",
     "Topic Number": "12L",
     "Objective Number": "L.12.02", # format: X.0X.0X, where the first entry is C for Core, M for Modeling, or L for Limits

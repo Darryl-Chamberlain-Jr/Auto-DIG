@@ -1024,7 +1024,7 @@ oneSidedLimits = {
 identifyGraphOfRationalFunction = {
     "Code Name": "identifyGraphOfRationalFunction",
     "Folder": "Limits", # Core, Limits, or Modeling
-    "Subfolder": "12",
+    "Subfolder": "12graphingRationalFunctions",
     "Topic": "Graphing Rational Functions with Limits",
     "Topic Number": "12L",
     "Objective Number": "L.12.05", # format: X.0X.0X, where the first entry is C for Core, M for Modeling, or L for Limits
@@ -1037,7 +1037,7 @@ identifyGraphOfRationalFunction = {
 identifyHAs = {
     "Code Name": "identifyHAs",
     "Folder": "Limits", # Core, Limits, or Modeling
-    "Subfolder": "12",
+    "Subfolder": "12graphingRationalFunctions",
     "Topic": "Graphing Rational Functions with Limits",
     "Topic Number": "12L",
     "Objective Number": "L.12.03", # format: X.0X.0X, where the first entry is C for Core, M for Modeling, or L for Limits
@@ -1050,7 +1050,7 @@ identifyHAs = {
 identifyHoles = {
     "Code Name": "identifyHoles",
     "Folder": "Limits", # Core, Limits, or Modeling
-    "Subfolder": "12",
+    "Subfolder": "12graphingRationalFunctions",
     "Topic": "Graphing Rational Functions with Limits",
     "Topic Number": "12L",
     "Objective Number": "L.12.01", # format: X.0X.0X, where the first entry is C for Core, M for Modeling, or L for Limits
@@ -1063,7 +1063,7 @@ identifyHoles = {
 identifyOAs = {
     "Code Name": "identifyOAs",
     "Folder": "Limits", # Core, Limits, or Modeling
-    "Subfolder": "12",
+    "Subfolder": "12graphingRationalFunctions",
     "Topic": "Graphing Rational Functions with Limits",
     "Topic Number": "12L",
     "Objective Number": "L.12.04", # format: X.0X.0X, where the first entry is C for Core, M for Modeling, or L for Limits
@@ -1076,7 +1076,7 @@ identifyOAs = {
 identifyVAs = {
     "Code Name": "identifyVAs",
     "Folder": "Limits", # Core, Limits, or Modeling
-    "Subfolder": "12",
+    "Subfolder": "12graphingRationalFunctions",
     "Topic": "Graphing Rational Functions with Limits",
     "Topic Number": "12L",
     "Objective Number": "L.12.02", # format: X.0X.0X, where the first entry is C for Core, M for Modeling, or L for Limits

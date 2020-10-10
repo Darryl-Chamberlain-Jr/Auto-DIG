@@ -1,3 +1,28 @@
+import sys
+from sympy import *
+import numpy
+import random
+import math
+from decimal import Decimal
+import decimal
+import traceback
+import cmath
+import matplotlib.pyplot as plt
+from sympy.abc import x, y
+from sympy.solvers import solve
+
+DIR=sys.argv[1]
+database_name=sys.argv[2]
+question_list=sys.argv[3]
+version=sys.argv[4]
+sys.path.insert(1, f"/{DIR}/PythonScripts/ScriptsForQuestionCode")
+from commonlyUsedFunctions import *
+from intervalMaskingMethod import *
+sys.path.insert(1, f"/{DIR}/PythonScripts/ScriptsForDatabases")
+from storeQuestionData import *
+
+thisQuestion="identifyModelVariation"
+
 direct1 = ["A used-car company has just offered their best candidate, Nicole, a position in sales. The position offers 16\\% commission on her sales. Her earnings depend on the amount of her sales. For instance, if she sells a vehicle for \\$4,600, she will earn \\$736. She wants to evaluate the offer, but she is not sure how, so she needs to model her total payment based on the average commission of the company in the past year.", "Model: $P = 0.16C$. This is direct variation as \\textit{the amount Nicole makes in the previous month does not affect her amount in the next month}."]
 direct2 = ["In 1905, Albert Einstein determined that the speed of a light is constant in a vacuum. With it, he published the famous equation of relativity: $E = mc^2$, where $E$ represents the energy of the object, $m$ represents the mass of the object, and $c$ represents the speed of light in a vacuum.", "Model: $E = mc^2$. This is \\textbf{not} joint variation since $c$ is a constant!"]
 direct3 = ["The formal definition of the number $\\pi$ is the ratio of the circumference of any circle, $C$, to its diameter $d$. In other words, $\\pi = \\frac{C}{d}$.", "Model: $\\pi = \\frac{C}{d}$. This may look odd, so we can solve it for circumference: $C = \\pi d$. Here we can see circumference and diameter vary directly - as one increases, the other increases (and not at log or exp speeds)."]
@@ -78,6 +103,8 @@ for checkLetter in letters:
         answerLetter = letters[answerIndex]
         break
     answerIndex = answerIndex+1
-######
-### moduleNumber, version, problemNumber are defined in the tex file ###
-writeToKey(keyFileName, version, problemNumber, displayStem, "NoMathMode", displayProblem, "MathMode", displaySolution, answerLetter, choices, choiceComments, generalComment)
+# String, Math Mode, or Graph
+displayStemType="String"
+displayProblemType="String"
+displayOptionsType="Math Mode"
+writeToDatabase(DIR, database_name, question_list, thisQuestion, displayStemType, displayStem, displayProblemType, displayProblem, displayOptionsType, choices, choiceComments, displaySolution, answerLetter, generalComment)

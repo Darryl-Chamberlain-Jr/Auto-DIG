@@ -1,4 +1,27 @@
-# IDEA - Create lists for each type.
+import sys
+from sympy import *
+import numpy
+import random
+import math
+from decimal import Decimal
+import decimal
+import traceback
+import cmath
+import matplotlib.pyplot as plt
+from sympy.abc import x, y
+from sympy.solvers import solve
+
+DIR=sys.argv[1]
+database_name=sys.argv[2]
+question_list=sys.argv[3]
+version=sys.argv[4]
+sys.path.insert(1, f"/{DIR}/PythonScripts/ScriptsForQuestionCode")
+from commonlyUsedFunctions import *
+from intervalMaskingMethod import *
+sys.path.insert(1, f"/{DIR}/PythonScripts/ScriptsForDatabases")
+from storeQuestionData import *
+
+thisQuestion="identifyModelPopulationPower"
 
 def generateStem(type):
     initialPop = random.randint(2, 10)*10000
@@ -31,9 +54,9 @@ typesToChooseFrom=["linear", "direct", "exponential", "logarithmic"]
 problemType = typesToChooseFrom[random.randint(0, 3)]
 initialPop, populations = generateStem(problemType)
 displayStem = "A town has an initial population of %d. The town's population for the next 10 years is provided below. Which type of function would be most appropriate to model the town's population?" %initialPop
-displayProblem = "Check for table in main PDF."
+displayProblem = populations
 
-generalComment = "\\textbf{General Comments:} We are trying to compare the growth rate of the population. Growth rates can be characterized from slowest to fastest as: logarithmic, indirect, linear, direct, exponential. The best way to approach this is to first compare it to linear (is it linear, faster than linear, or slower than linear)? If faster, is it as fast as exponential? If slower, is it as slow as logarithmic?"
+generalComment = "We are trying to compare the growth rate of the population. Growth rates can be characterized from slowest to fastest as: logarithmic, indirect, linear, direct, exponential. The best way to approach this is to first compare it to linear (is it linear, faster than linear, or slower than linear)? If faster, is it as fast as exponential? If slower, is it as slow as logarithmic?"
 
 linearAnswer = 0
 directAnswer = 0
@@ -79,6 +102,9 @@ for checkLetter in letters:
         displaySolution = choiceAndCommentList[answerIndex][0]
         break
     answerIndex = answerIndex+1
-######
-### moduleNumber, version, problemNumber are defined in the tex file ###
-writeToKey(keyFileName, version, problemNumber, displayStem, "NoMathMode", displayProblem, "MathMode", displaySolution, answerLetter, choices, choiceComments, generalComment)
+
+# String, Math Mode, or Graph
+displayStemType="String"
+displayProblemType="Table"
+displayOptionsType="Math Mode"
+writeToDatabase(DIR, database_name, question_list, thisQuestion, displayStemType, displayStem, displayProblemType, displayProblem, displayOptionsType, choices, choiceComments, displaySolution, answerLetter, generalComment)

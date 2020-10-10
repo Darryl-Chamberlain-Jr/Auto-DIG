@@ -1,3 +1,28 @@
+import sys
+from sympy import *
+import numpy
+import random
+import math
+from decimal import Decimal
+import decimal
+import traceback
+import cmath
+import matplotlib.pyplot as plt
+from sympy.abc import x, y
+from sympy.solvers import solve
+
+DIR=sys.argv[1]
+database_name=sys.argv[2]
+question_list=sys.argv[3]
+version=sys.argv[4]
+sys.path.insert(1, f"/{DIR}/PythonScripts/ScriptsForQuestionCode")
+from commonlyUsedFunctions import *
+from intervalMaskingMethod import *
+sys.path.insert(1, f"/{DIR}/PythonScripts/ScriptsForDatabases")
+from storeQuestionData import *
+
+thisQuestion="constructIndirectModel"
+
 increasesOrDecreases = random.choice(["increases", "decreases"])
 lengthExponent = random.randint(2, 4)
 exponentDescriptions = ["square", "cube", "quartic"]
@@ -13,7 +38,7 @@ wrongModelNoConversion = float(vibrationRate) / float( ((stringLength)**lengthEx
 
 displayStem = "For the scenario below, model the rate of vibration (cm/s) of the string in terms of the length of the string. Then determine the variation constant $k$ of the model (if possible). The constant should be in terms of cm and s."
 displayProblem = "The rate of vibration of a string under constant tension varies based on the type of string and the length of the string. The rate of vibration of string $\\omega$ %s as the %s length of the string %s. For example, when string $\\omega$ is %d mm long, the rate of vibration is %d cm/s." %(increasesOrDecreases, lengthDescription, increasesOrDecreases, stringLength, vibrationRate)
-generalComment = "\\textbf{General comments:} The most common mistake on this question is to not convert mm to cm! When modeling, you need to make sure all of the units for your variables are compatible."
+generalComment = "The most common mistake on this question is to not convert mm to cm! When modeling, you need to make sure all of the units for your variables are compatible."
 
 option1 = ["k = %.2f" %constant, "* This is the correct option, which corresponds to the model $R = \\frac{k}{l^{%d}}$ AND converts from mm to cm."%lengthExponent, 1]
 option2 = ["k = %.2f" %noConversion, "This option uses the correct model, $R = \\frac{k}{l^{%d}}$, but does not convert from mm to cm so that the units match." %lengthExponent, 0]
@@ -39,4 +64,8 @@ for checkLetter in letters:
         break
     answerIndex = answerIndex+1
 
-writeToKey(keyFileName, version, problemNumber, displayStem, "NoMathMode", displayProblem, "MathMode", displaySolution, answerLetter, choices, choiceComments, generalComment)
+# String, Math Mode, or Graph
+displayStemType="String"
+displayProblemType="String"
+displayOptionsType="Math Mode"
+writeToDatabase(DIR, database_name, question_list, thisQuestion, displayStemType, displayStem, displayProblemType, displayProblem, displayOptionsType, choices, choiceComments, displaySolution, answerLetter, generalComment)

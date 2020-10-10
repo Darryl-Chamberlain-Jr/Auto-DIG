@@ -1,3 +1,28 @@
+import sys
+from sympy import *
+import numpy
+import random
+import math
+from decimal import Decimal
+import decimal
+import traceback
+import cmath
+import matplotlib.pyplot as plt
+from sympy.abc import x, y
+from sympy.solvers import solve
+
+DIR=sys.argv[1]
+database_name=sys.argv[2]
+question_list=sys.argv[3]
+version=sys.argv[4]
+sys.path.insert(1, f"/{DIR}/PythonScripts/ScriptsForQuestionCode")
+from commonlyUsedFunctions import *
+from intervalMaskingMethod import *
+sys.path.insert(1, f"/{DIR}/PythonScripts/ScriptsForDatabases")
+from storeQuestionData import *
+
+thisQuestion="constructLinearModelCostsProfitsRevenue"
+
 # Costs, Profit, Revenue
 
 savings = random.randint(5, 11)*1000
@@ -66,7 +91,7 @@ else:
 
 displayProblem = "Aubrey is a college student going into her first year at UF. She will receive Bright Futures, which covers her tuition plus a \\$%d educational expense each year. Before college, Aubrey saved up \\$%d. She knows she will need to pay \\$%d in rent a month, \\$%d for food a week, and \\$%d in other weekly expenses." %(edExpense, savings, rent, food, misc)
 
-generalComment = "\\textbf{General Comments:} This is a Costs, Profit, Revenue question! The most common issues here are: (1) not converting the weekly costs to monthly costs, (2) treating the one-time values like savings and educational expense as happening per month, and (3) not checking that your model is for cost, profit [income], or revenue [budget]."
+generalComment = "This is a Costs, Profit, Revenue question! The most common issues here are: (1) not converting the weekly costs to monthly costs, (2) treating the one-time values like savings and educational expense as happening per month, and (3) not checking that your model is for cost, profit [income], or revenue [budget]."
 
 answerList = [option1, option2, option3, option4]
 random.shuffle(answerList)
@@ -85,4 +110,8 @@ for checkLetter in letters:
 
 # THREE types of questions: Cost equation, Profit equation, Revenue Equation, None of the above for each type.
 
-writeToKey(keyFileName, version, problemNumber, displayStem, "NoMathMode", displayProblem, "MathMode", displaySolution, answerLetter, choices, choiceComments, generalComment)
+# String, Math Mode, or Graph
+displayStemType="String"
+displayProblemType="String"
+displayOptionsType="Math Mode"
+writeToDatabase(DIR, database_name, question_list, thisQuestion, displayStemType, displayStem, displayProblemType, displayProblem, displayOptionsType, choices, choiceComments, displaySolution, answerLetter, generalComment)

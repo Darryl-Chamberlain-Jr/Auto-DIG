@@ -1,12 +1,27 @@
-import random
+import sys
+from sympy import *
 import numpy
+import random
 import math
+from decimal import Decimal
+import decimal
+import traceback
+import cmath
+import matplotlib.pyplot as plt
+from sympy.abc import x, y
 from sympy.solvers import solve
-from sympy.abc import x
-from sympy import Symbol
-x = Symbol('x')
 
-# OBJECTIVE 2 - Possible rational/integers roots.
+DIR=sys.argv[1]
+database_name=sys.argv[2]
+question_list=sys.argv[3]
+version=sys.argv[4]
+sys.path.insert(1, f"/{DIR}/PythonScripts/ScriptsForQuestionCode")
+from commonlyUsedFunctions import *
+from intervalMaskingMethod import *
+sys.path.insert(1, f"/{DIR}/PythonScripts/ScriptsForDatabases")
+from storeQuestionData import *
+
+thisQuestion="possibleRoots"
 
 def generateFunctionAndImportantCoefficients():
     degree = int(random.randint(2, 4))
@@ -73,12 +88,12 @@ while (info[1]==info[2]):
     info = generateFunctionAndImportantCoefficients()
 displayPolynomial = info[0]
 rationalOrIntegerList = ["Rational", "Integer"]
-rationalOrInteger = rationalOrIntegerList[randint(0, 1)]
+rationalOrInteger = rationalOrIntegerList[random.randint(0, 1)]
 answerList, displaySolution = generateSolutionAndDistractors(rationalOrInteger, info[1], info[2])
 
 displayStem = "What are the \\textit{possible %s} roots of the polynomial below?" %rationalOrInteger
 displayProblem = "f(x) = %s" %displayPolynomial
-generalComment = "General Comments: We have a way to find the possible Rational roots. The possible Integer roots are the Integers in this list."
+generalComment = "We have a way to find the possible Rational roots. The possible Integer roots are the Integers in this list."
 
 c0 = answerList[0][0]
 c1 = answerList[1][0]
@@ -96,4 +111,8 @@ for checkLetter in letters:
         break
     answerIndex = answerIndex+1
 
-writeToKey(keyFileName, version, problemNumber, displayStem, "MathMode", displayProblem, "MathMode", displaySolution, answerLetter, choices, choiceComments, generalComment)
+# String, Math Mode, or Graph
+displayStemType="String"
+displayProblemType="Math Mode"
+displayOptionsType="Math Mode"
+writeToDatabase(DIR, database_name, question_list, thisQuestion, displayStemType, displayStem, displayProblemType, displayProblem, displayOptionsType, choices, choiceComments, displaySolution, answerLetter, generalComment)

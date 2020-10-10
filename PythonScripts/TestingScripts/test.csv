@@ -1,2 +1,4 @@
-name,Q1,Q2,Q3,Q4,Q5,Q6,Q7,Q8,Q9,Q10
-Version_A,C,B,C,E,C,C,D,D,A,C
+Version,Q1,Q2,Q3,Q4,Q5,Q6,Q7,Q8,Q9,Q10
+A,E,A,D,E,B,B,A,C,E,C
+B,A,E,E,A,D,B,D,E,B,E
+C,D,C,C,A,E,A,B,A,E,E
