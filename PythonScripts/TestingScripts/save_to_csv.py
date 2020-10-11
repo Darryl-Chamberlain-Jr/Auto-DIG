@@ -15,13 +15,6 @@ import random
 #   Student Grading csv
 #       Print randomize answers for each version
 
-# Testing
-#with open('test.csv', newline='') as csvfile:
-#    reader = csv.DictReader(csvfile)
-#    for row in reader:
-        # Keys are the column titles
-#        print(row['name'])
-
 ############################
 
 def random_option():
@@ -47,26 +40,22 @@ version_A=version_dict('A')
 version_B=version_dict('B')
 version_C=version_dict('C')
 
-with open('test.csv', 'w', newline='') as csvfile:
+# Write into CSV
+with open('test.csv', 'w', newline='') as csv_file:
     fieldnames = ['Version', 'Q1', 'Q2', 'Q3', 'Q4', 'Q5', 'Q6', 'Q7', 'Q8', 'Q9', 'Q10']
-    writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+    writer = csv.DictWriter(csv_file, fieldnames=fieldnames)
     writer.writeheader()
     writer.writerow(version_A)
     writer.writerow(version_B)
     writer.writerow(version_C)
 
-# IDEA - Read all values in a row. Apppend a new value at the end of the row.
-# First row: fieldnames as written above
-# Second row: name of code file
-# Third row: correct answer letter
-# Fourth row: minor error answer letter
-# Fifth, Sixth, Seventh row: major error answer
-
-#row_index=3
-#col_index=0
-#row=[]
-#for version in ['Version_A', 'Version_B', 'Version_C']:
-#    temp_new_row=[version]
-#    for i in range(1, 10):
-#        temp_new_row.append(random.choice(options))
-#    row.append(temp_new_row)
+# Read the files that are in the CSV
+with open('test.csv', mode='r') as csv_file:
+    csv_reader = csv.DictReader(csv_file)
+    line_count = 0
+    for row in csv_reader:
+        if line_count == 0:
+            print(f'The field names are {", ".join(row)}')
+            line_count += 1
+        print(f'Ver {row["Version"]}: Q1 is {row["Q1"]}, Q2 is {row["Q2"]}, Q3 is {row["Q3"]}, Q4 is {row["Q4"]}')
+        line_count += 1

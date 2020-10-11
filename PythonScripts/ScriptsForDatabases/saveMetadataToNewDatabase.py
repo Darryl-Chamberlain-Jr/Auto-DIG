@@ -24,6 +24,8 @@ finally:
 
 # Now we can open a new database and save the info there.
 newDB = shelve.open(f"/{DIR}/Databases/{assessmentDB}.db")
+list_of_keys=list(newDB.keys())
+# Checks if there are no lists
 try:
     tempQuestionList = newDB[f"{questionList}"]
     tempQuestionList.append(this_question_dict)

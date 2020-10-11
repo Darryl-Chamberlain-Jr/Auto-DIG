@@ -88,12 +88,13 @@ do
         file_name=${list_of_file_names[index]}
         question_list_name="question_list_${index}"
         eval question_list=( \"\${question_list_${index}[@]}\" )
+        # Shuffled and used in the same order for each version to make data analysis easier.
+        question_list=( $(shuf -e "${question_list[@]}") )
         for version in ${version_list[@]}
         do
             full_db_name="$db_name-Ver$version"
             python3 /$DIR/PythonScripts/ScriptsForPDFs/createFiles.py "Create Exam File" $file_name "$exam_display_name" "$footnote_left" "$footnote_right" $version $DIR
             python3 /$DIR/PythonScripts/ScriptsForPDFs/createFiles.py "Create Key File" $file_name "$exam_display_name" "$footnote_left" "$footnote_right" $version $DIR
-            question_list=( $(shuf -e "${question_list[@]}") )
             for question in ${question_list[@]}
             do
                 echo "$counter"
@@ -139,10 +140,12 @@ do
             cp key${file_name}${version}.pdf /$DIR/CompleteExam/"$exam_display_name"/Keys
             cp lettersAnswerKey${file_name}${version}.csv /$DIR/CompleteExam/"$exam_display_name"/Keys
             cp key${file_name}${version}.tex /$DIR/CompleteExam/"$exam_display_name"/TeXs
-            cd /$DIR/ShellScripts/
-            mv /$DIR/Databases/${full_db_name}.db /$DIR/CompleteExam/"$exam_display_name"/Databases
-            cp -r /$DIR/Figures/. /$DIR/CompleteExam/"$exam_display_name"/Figures
         done
+        cd /$DIR/ShellScripts/
+        for version in ${version_list[@]}
+            full_db_name="$db_name-Ver$version"
+            mv /$DIR/Databases/${full_db_name}.db /$DIR/CompleteExam/"$exam_display_name"/Databases
+        cp -r /$DIR/Figures/. /$DIR/CompleteExam/"$exam_display_name"/Figures
     done
     xdg-open /${DIR}/CompleteExam/"$exam_display_name"; sleep 3
     echo "100"

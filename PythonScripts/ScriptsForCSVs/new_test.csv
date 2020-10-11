@@ -1,0 +1,4 @@
+Version,divideComplex,multiplyComplex,orderOfOperations,linearGraphToStandard,linearParOrPer,solveLinearRational
+A,A,B,A,A,E,C
+B,E,A,C,A,D,B
+C,A,A,D,C,C,C
