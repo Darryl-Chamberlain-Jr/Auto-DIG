@@ -4,38 +4,42 @@ import shelve
 import numpy
 import csv
 
-#fieldnames need to be 'Version' then all question code names
+# INPUT from bash
+DIR=sys.argv[1]
+database_name=sys.argv[2]
+version_list_length=int(sys.argv[3])
+version_list=[]
+for i in range(4, 4+version_list_length):
+    version_list.append(sys.argv[i])
+code_name_array_length=int(sys.argv[4+version_list_length])
+code_name_array=[]
+for j in range(5+version_list_length, 5+version_list_length+code_name_array_length):
+    code_name_array.append(sys.argv[j])
+question_list_names=[]
+for k in range(5+version_list_length+code_name_array_length, 5+version_list_length+code_name_array_length+code_name_array_length):
+    question_list_names.append(sys.argv[k])
+
 list_of_dicts=[]
 temp_dict={}
-version_list=['A', 'B', 'C']
-array1=['divideComplex', 'multiplyComplex', 'orderOfOperations']
-array2=['linearGraphToStandard', 'linearParOrPer', 'solveLinearRational']
-#array3=['describeSet', 'solveCompoundOR', 'solveCompoundAND']
-
-master_array = [ array1, array2 ]
-question_list_names = ['question_list_0', 'question_list_1']
-list_index=0
 field_names= ['Version']
-for array in master_array:
-    field_names = numpy.concatenate((field_names, array))
-DIR="home/dchamberlain31/git-repos/Auto-DIG"
-database_name='3114-1073'
+field_names = numpy.concatenate((field_names, code_name_array))
+# Take in array of code_names and array of corresponding question_list_names
 
-for array in master_array:
-    for version in version_list:
-        ql = shelve.open(f'/{DIR}/Databases/{database_name}-Ver{version}.db')
-        temp_dict={'Version': version}
-        for code_name in array:
-            master_list = ql[question_list_names[list_index]]
-            total=len(master_list)
-            for index in range(0, total):
-                question_dict=master_list[index]
-                if question_dict.get("Code Name") == code_name:
-                    temp_dict[code_name]=question_dict.get("Answer Letter")
-                    break
-        list_of_dicts.append(temp_dict)
-        ql.close()
-    list_index += 1
+for version in version_list:
+    question_list_index=0
+    ql = shelve.open(f'/{DIR}/Databases/{database_name}-Ver{version}.db')
+    temp_dict={'Version': version}
+    for code_name in code_name_array:
+        master_list = ql[question_list_names[question_list_index]]
+        total=len(master_list)
+        for index in range(0, total):
+            question_dict=master_list[index]
+            if question_dict.get("Code Name") == code_name:
+                temp_dict[code_name]=question_dict.get("Answer Letter")
+                break
+        question_list_index += 1
+    list_of_dicts.append(temp_dict)
+    ql.close()
 
 # Merge dicts with same version
 version_A={}
@@ -125,7 +129,7 @@ for dict in list_of_dicts:
         version_Y.update(dict)
     elif dict.get('Version')=="Z":
         version_Z.update(dict)
-with open('new_test.csv', 'w', newline='') as csv_file:
+with open(f'/{DIR}/Keys/master_key_{database_name}.csv', 'w', newline='') as csv_file:
     writer = csv.DictWriter(csv_file, fieldnames=field_names)
     writer.writeheader()
     for dict in [version_A, version_B, version_C, version_D, version_E, version_F, version_G, version_H, version_I, version_J, version_K, version_L, version_M, version_N, version_O, version_P, version_Q, version_R, version_S, version_T, version_U, version_V, version_W, version_X, version_Y, version_Z]:

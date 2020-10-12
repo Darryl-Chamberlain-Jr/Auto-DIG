@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.8.4)  10 OCT 2020 22:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.8.4)  11 OCT 2020 19:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -601,37 +601,37 @@ Overfull \hbox (25.00003pt too wide) in paragraph at lines 70--93
  []
 
 
-Overfull \hbox (25.00003pt too wide) in paragraph at lines 93--116
+Overfull \hbox (25.00003pt too wide) in paragraph at lines 93--122
 [][] 
  []
 
 [2]
-Overfull \hbox (25.00003pt too wide) in paragraph at lines 116--139
+Overfull \hbox (25.00003pt too wide) in paragraph at lines 122--145
 [][] 
  []
 
 
-Overfull \hbox (25.00003pt too wide) in paragraph at lines 139--162
-[][] 
- []
-
-
-Overfull \hbox (25.00003pt too wide) in paragraph at lines 162--185
+Overfull \hbox (25.00003pt too wide) in paragraph at lines 145--168
 [][] 
  []
 
 [3]
-Overfull \hbox (25.00003pt too wide) in paragraph at lines 185--214
+Overfull \hbox (25.00003pt too wide) in paragraph at lines 168--197
+[][] 
+ []
+
+
+Overfull \hbox (25.00003pt too wide) in paragraph at lines 197--220
 [][] 
  []
 
 [4]
-Overfull \hbox (25.00003pt too wide) in paragraph at lines 214--237
+Overfull \hbox (25.00003pt too wide) in paragraph at lines 220--243
 [][] 
  []
 
 
-Overfull \hbox (25.00003pt too wide) in paragraph at lines 237--266
+Overfull \hbox (25.00003pt too wide) in paragraph at lines 243--266
 [][] 
  []
 
@@ -664,7 +664,7 @@ Here is how much of TeX's memory you used:
  23444 multiletter control sequences out of 15000+600000
  535322 words of font info for 38 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 34i,11n,45p,939b,539s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 34i,12n,45p,939b,539s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texl
@@ -672,7 +672,7 @@ ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/
 fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/
 type1/public/amsfonts/cm/cmti10.pfb>
-Output written on keyModule1A.pdf (6 pages, 102537 bytes).
+Output written on keyModule1A.pdf (6 pages, 102993 bytes).
 PDF statistics:
  139 PDF objects out of 1000 (max. 8388607)
  122 compressed objects within 2 object streams

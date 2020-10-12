@@ -73,6 +73,8 @@ do
     echo "#Estimated run time for ${number_of_questions} questions and ${number_of_versions} version: ${estimated_run_time} minutes"; sleep 3
     question_step=$( echo "scale=2;100/ ($number_of_questions*$number_of_versions)" | bc )
     counter=0
+    question_list_name_array=()
+    code_name_array=()
     for ((index=0;index<number_of_assessments;index++))
     do
         exam_display_name=${list_of_assessment_titles[index]}
@@ -88,8 +90,15 @@ do
         file_name=${list_of_file_names[index]}
         question_list_name="question_list_${index}"
         eval question_list=( \"\${question_list_${index}[@]}\" )
+        # Creates array to associate each code_name with the correct question_list name for database recovery.
+        for question in ${question_list[@]}
+        do
+            question_list_name_array=( ${question_list_name_array[@]} ${question_list_name} )
+        done
         # Shuffled and used in the same order for each version to make data analysis easier.
         question_list=( $(shuf -e "${question_list[@]}") )
+        # Creates master code_name array.
+        code_name_array=( ${code_name_array[@]} ${question_list[@]} )
         for version in ${version_list[@]}
         do
             full_db_name="$db_name-Ver$version"
@@ -138,15 +147,20 @@ do
                 pdflatex -synctex=1 -interaction=nonstopmode key${file_name}${version}.tex
             done
             cp key${file_name}${version}.pdf /$DIR/CompleteExam/"$exam_display_name"/Keys
-            cp lettersAnswerKey${file_name}${version}.csv /$DIR/CompleteExam/"$exam_display_name"/Keys
+            #cp lettersAnswerKey${file_name}${version}.csv /$DIR/CompleteExam/"$exam_display_name"/Keys
             cp key${file_name}${version}.tex /$DIR/CompleteExam/"$exam_display_name"/TeXs
         done
-        cd /$DIR/ShellScripts/
-        for version in ${version_list[@]}
-            full_db_name="$db_name-Ver$version"
-            mv /$DIR/Databases/${full_db_name}.db /$DIR/CompleteExam/"$exam_display_name"/Databases
-        cp -r /$DIR/Figures/. /$DIR/CompleteExam/"$exam_display_name"/Figures
     done
+    # Create master key
+    python3 /$DIR/PythonScripts/ScriptsForCSVs/create_grading_CSVs.py $DIR $db_name ${#version_list[@]} "${version_list[@]}" ${#code_name_array[@]} "${code_name_array[@]}" "${question_list_name_array[@]}"
+    cp -r /$DIR/Keys/master_key_${db_name}.csv /$DIR/CompleteExam/"$exam_display_name"/Keys
+    cd /$DIR/ShellScripts/
+    for version in ${version_list[@]}
+    do
+        full_db_name="${db_name}-Ver${version}"
+        mv /$DIR/Databases/${full_db_name}.db /$DIR/CompleteExam/"$exam_display_name"/Databases
+    done
+    cp -r /$DIR/Figures/. /$DIR/CompleteExam/"$exam_display_name"/Figures
     xdg-open /${DIR}/CompleteExam/"$exam_display_name"; sleep 3
     echo "100"
     echo "#Done! Click 'Ok' to see the time results."

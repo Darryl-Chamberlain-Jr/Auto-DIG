@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.8.4)  10 OCT 2020 22:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.8.4)  11 OCT 2020 19:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -616,12 +616,12 @@ Overfull \hbox (25.00003pt too wide) in paragraph at lines 145--168
  []
 
 [3]
-Overfull \hbox (25.00003pt too wide) in paragraph at lines 168--191
+Overfull \hbox (25.00003pt too wide) in paragraph at lines 168--197
 [][] 
  []
 
 
-Overfull \hbox (25.00003pt too wide) in paragraph at lines 191--220
+Overfull \hbox (25.00003pt too wide) in paragraph at lines 197--220
 [][] 
  []
 
@@ -672,7 +672,7 @@ ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/
 fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/
 type1/public/amsfonts/cm/cmti10.pfb>
-Output written on keyModule1B.pdf (6 pages, 102276 bytes).
+Output written on keyModule1B.pdf (6 pages, 102942 bytes).
 PDF statistics:
  139 PDF objects out of 1000 (max. 8388607)
  122 compressed objects within 2 object streams
