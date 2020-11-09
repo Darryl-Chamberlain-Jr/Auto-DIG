@@ -15,16 +15,12 @@ DIR=sys.argv[1]
 database_name=sys.argv[2]
 question_list=sys.argv[3]
 version=sys.argv[4]
+thisQuestion=sys.argv[5]
 sys.path.insert(1, f"/{DIR}/PythonScripts/ScriptsForQuestionCode")
 from commonlyUsedFunctions import *
 from intervalMaskingMethod import *
 sys.path.insert(1, f"/{DIR}/PythonScripts/ScriptsForDatabases")
 from storeQuestionData import *
-
-thisQuestion="solveByConvertingCopy"
-
-
-#x = Symbol('x')
 
 # Ideas for forms of this question:
     # math.log(x, b) = \frac{a0}{a1}, solve for x

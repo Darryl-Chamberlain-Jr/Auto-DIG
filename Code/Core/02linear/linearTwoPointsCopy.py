@@ -13,6 +13,7 @@ DIR=sys.argv[1]
 database_name=sys.argv[2]
 question_list=sys.argv[3]
 version=sys.argv[4]
+thisQuestion=sys.argv[5]
 sys.path.insert(1, f"/{DIR}/PythonScripts/ScriptsForQuestionCode")
 from commonlyUsedFunctions import *
 from intervalMaskingMethod import *
@@ -74,7 +75,6 @@ displayStem = 'First, find the equation of the line containing the two points be
 displayProblem = "(%s, %s) \\text{ and } (%s, %s)" %(pointOne[0], pointOne[1], pointTwo[0], pointTwo[1])
 generalComment = "Remember to keep your points in order when plugging in to the slope formula."
 
-thisQuestion="linearTwoPointsCopy"
 displayStemType="String"
 displayProblemType="Math Mode"
 displayOptionsType="Math Mode"

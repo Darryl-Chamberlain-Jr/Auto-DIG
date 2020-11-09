@@ -15,15 +15,18 @@ DIR=sys.argv[1]
 database_name=sys.argv[2]
 question_list=sys.argv[3]
 version=sys.argv[4]
+thisQuestion=sys.argv[5]
 sys.path.insert(1, f"/{DIR}/PythonScripts/ScriptsForQuestionCode")
 from commonlyUsedFunctions import *
 from intervalMaskingMethod import *
 sys.path.insert(1, f"/{DIR}/PythonScripts/ScriptsForDatabases")
 from storeQuestionData import *
 
-thisQuestion="constructIndirectModel"
-
 increasesOrDecreases = random.choice(["increases", "decreases"])
+if increasesOrDecreases == "increases":
+    decreasesOrIncreases="decreases"
+else:
+    decreasesOrIncreases="increases"
 lengthExponent = random.randint(2, 4)
 exponentDescriptions = ["square", "cube", "quartic"]
 lengthDescription = exponentDescriptions[lengthExponent - 2]
@@ -37,7 +40,7 @@ wrongModel = float(vibrationRate) / float( (((stringLength)/10.0)**lengthExponen
 wrongModelNoConversion = float(vibrationRate) / float( ((stringLength)**lengthExponent) )
 
 displayStem = "For the scenario below, model the rate of vibration (cm/s) of the string in terms of the length of the string. Then determine the variation constant $k$ of the model (if possible). The constant should be in terms of cm and s."
-displayProblem = "The rate of vibration of a string under constant tension varies based on the type of string and the length of the string. The rate of vibration of string $\\omega$ %s as the %s length of the string %s. For example, when string $\\omega$ is %d mm long, the rate of vibration is %d cm/s." %(increasesOrDecreases, lengthDescription, increasesOrDecreases, stringLength, vibrationRate)
+displayProblem = "The rate of vibration of a string under constant tension varies based on the type of string and the length of the string. The rate of vibration of string $\\omega$ %s as the %s length of the string %s. For example, when string $\\omega$ is %d mm long, the rate of vibration is %d cm/s." %(increasesOrDecreases, lengthDescription, decreasesOrIncreases, stringLength, vibrationRate)
 generalComment = "The most common mistake on this question is to not convert mm to cm! When modeling, you need to make sure all of the units for your variables are compatible."
 
 option1 = ["k = %.2f" %constant, "* This is the correct option, which corresponds to the model $R = \\frac{k}{l^{%d}}$ AND converts from mm to cm."%lengthExponent, 1]

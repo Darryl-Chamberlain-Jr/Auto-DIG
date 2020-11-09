@@ -15,15 +15,12 @@ DIR=sys.argv[1]
 database_name=sys.argv[2]
 question_list=sys.argv[3]
 version=sys.argv[4]
+thisQuestion=sys.argv[5]
 sys.path.insert(1, f"/{DIR}/PythonScripts/ScriptsForQuestionCode")
 from commonlyUsedFunctions import *
 from intervalMaskingMethod import *
 sys.path.insert(1, f"/{DIR}/PythonScripts/ScriptsForDatabases")
 from storeQuestionData import *
-
-thisQuestion="constructLinearModelDistanceAndRate"
-
-# Training path for a bike
 
 speedFlat = random.randint(5, 8)
 speedUp = speedFlat - random.randint(1, 3)
@@ -95,7 +92,6 @@ for checkLetter in letters:
         answerLetter = letters[answerIndex]
         break
     answerIndex = answerIndex+1
-
 
 # String, Math Mode, or Graph
 displayStemType="String"

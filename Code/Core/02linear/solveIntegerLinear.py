@@ -15,6 +15,7 @@ DIR=sys.argv[1]
 database_name=sys.argv[2]
 question_list=sys.argv[3]
 version=sys.argv[4]
+thisQuestion=sys.argv[5]
 sys.path.insert(1, f"/{DIR}/PythonScripts/ScriptsForQuestionCode")
 from commonlyUsedFunctions import *
 from intervalMaskingMethod import *
@@ -76,7 +77,6 @@ displayStem = 'Solve the equation below. Then, choose the interval that contains
 displayProblem = "%d(%s) = %d(%s)" %(blocks[0], generatePolynomialDisplay([blocks[1], blocks[2]]), blocks[3], generatePolynomialDisplay([blocks[4], blocks[5]]))
 generalComment = "The most common mistake on this question is to not distribute the negative in front of the second fraction correctly. The best way to avoid this is putting the numerator in parentheses, which will help you remember to distribute the negative correctly."
 
-thisQuestion="solveIntegerLinear"
 displayStemType="String"
 displayProblemType="Math Mode"
 displayOptionsType="Math Mode"

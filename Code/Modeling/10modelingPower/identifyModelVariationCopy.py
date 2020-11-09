@@ -15,13 +15,12 @@ DIR=sys.argv[1]
 database_name=sys.argv[2]
 question_list=sys.argv[3]
 version=sys.argv[4]
+thisQuestion=sys.argv[5]
 sys.path.insert(1, f"/{DIR}/PythonScripts/ScriptsForQuestionCode")
 from commonlyUsedFunctions import *
 from intervalMaskingMethod import *
 sys.path.insert(1, f"/{DIR}/PythonScripts/ScriptsForDatabases")
 from storeQuestionData import *
-
-thisQuestion="identifyModelVariationCopy"
 
 direct1 = ["A used-car company has just offered their best candidate, Nicole, a position in sales. The position offers 16\\% commission on her sales. Her earnings depend on the amount of her sales. For instance, if she sells a vehicle for \\$4,600, she will earn \\$736. She wants to evaluate the offer, but she is not sure how, so she needs to model her total payment based on the average commission of the company in the past year.", "Model: $P = 0.16C$. This is direct variation as \\textit{the amount Nicole makes in the previous month does not affect her amount in the next month}."]
 direct2 = ["In 1905, Albert Einstein determined that the speed of a light is constant in a vacuum. With it, he published the famous equation of relativity: $E = mc^2$, where $E$ represents the energy of the object, $m$ represents the mass of the object, and $c$ represents the speed of light in a vacuum.", "Model: $E = mc^2$. This is \\textbf{not} joint variation since $c$ is a constant!"]

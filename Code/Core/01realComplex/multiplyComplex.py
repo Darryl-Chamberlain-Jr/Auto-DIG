@@ -13,6 +13,7 @@ DIR=sys.argv[1]
 database_name=sys.argv[2]
 question_list=sys.argv[3]
 version=sys.argv[4]
+thisQuestion=sys.argv[5]
 sys.path.insert(1, f"/{DIR}/PythonScripts/ScriptsForQuestionCode")
 from commonlyUsedFunctions import *
 from intervalMaskingMethod import *
@@ -87,7 +88,6 @@ xronosDistractors = [solutionList[1], solutionList[2], solutionList[3], solution
 displayXronosStem = "Simplify the expression below into the form $a+bi$."
 xronosHint="You can treat $i$ as a variable and distribute. Just remember that $i^2=-1$, so you can continue to reduce after you distribute."
 
-thisQuestion="multiplyComplex"
 displayStemType="String"
 displayProblemType="Math Mode"
 displayOptionsType="Math Mode"

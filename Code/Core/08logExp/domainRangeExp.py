@@ -15,16 +15,13 @@ DIR=sys.argv[1]
 database_name=sys.argv[2]
 question_list=sys.argv[3]
 version=sys.argv[4]
+thisQuestion=sys.argv[5]
 sys.path.insert(1, f"/{DIR}/PythonScripts/ScriptsForQuestionCode")
 from commonlyUsedFunctions import *
 from intervalMaskingMethod import *
 sys.path.insert(1, f"/{DIR}/PythonScripts/ScriptsForDatabases")
 from storeQuestionData import *
 
-thisQuestion="domainRangeExp"
-
-# OBJECTIVE 1 - Describe the domain/range of Logarithmic and Exponential functions.
-#load("../Code/generalPurposeMethods.sage")
 def chooseDomainOrRange():
     #shuffle wasn't working...
     listChoices = ["Domain", "Range"]

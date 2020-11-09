@@ -15,15 +15,12 @@ DIR=sys.argv[1]
 database_name=sys.argv[2]
 question_list=sys.argv[3]
 version=sys.argv[4]
+thisQuestion=sys.argv[5]
 sys.path.insert(1, f"/{DIR}/PythonScripts/ScriptsForQuestionCode")
 from commonlyUsedFunctions import *
 from intervalMaskingMethod import *
 sys.path.insert(1, f"/{DIR}/PythonScripts/ScriptsForDatabases")
 from storeQuestionData import *
-
-thisQuestion="constructLinearModelCostsProfitsRevenue"
-
-# Costs, Profit, Revenue
 
 savings = random.randint(5, 11)*1000
 rent = random.randint(7, 12)*100
@@ -76,15 +73,15 @@ else:
     displayStem = "For the information provided below, construct a linear model that describes her total budget, $B$, as a function of the number of months, $x$ she is at UF."
     if correctOrNoneOfTheAbove == 0:
         displaySolution = "\\text{none of the above.}"
-        option1 = ["B(x) = %d - %d x" %(badCosts, profits), "This treats weekly expenses as month expenses rather than multiplying each weekly expense.", 0]
+        option1 = ["B(x) = %d - %d x" %(profits, badCosts), "This treats weekly expenses as month expenses rather than multiplying each weekly expense.", 0]
         option2 = ["B(x) = %d - %d x" %(profits, costs), "", 0]
         option3 = ["B(x) = %d x + %d" %(edExpense, savings), "This treats the educational expense as something you get every month rather than a 1-time payment and is modeling Income, not Budget.", 0]
         option4 = ["B(x) = %d x + %d" %(savings, edExpense), "This treats the savings as something you get every month rather than a 1-time payment and is modeling Income, not Budget.", 0]
         option5 = ["\\text{None of the above.}", "* This is the correct option as the model should be $B(x) = %d - %d x$." %(costs, profits), 1]
     else:
-        displaySolution = "B(x) = %d - %d x" %(costs, profits)
-        option1 = ["B(x) = %d - %d x" %(costs, profits), "* This is the correct option.", 1]
-        option2 = ["B(x) = %d - %d x" %(badCosts, profits), "This treats weekly expenses as month expenses rather than multiplying each weekly expense.", 0]
+        displaySolution = "B(x) = %d - %d x" %(profits, costs)
+        option1 = ["B(x) = %d - %d x" %(profits, costs), "* This is the correct option.", 1]
+        option2 = ["B(x) = %d - %d x" %(profits, badCosts), "This treats weekly expenses as month expenses rather than multiplying each weekly expense.", 0]
         option3 = ["B(x) = %d x" %(profits - costs), "This treats the educational expense and savings as something you get every month rather than a 1-time payment.", 0]
         option4 = ["B(x) = %d x" %(profits - badCosts), "This treats the educational expense and savings as something you get every month rather than a 1-time payment AND treats weekly expenses as month expenses rather than multiplying each weekly expense by 4.", 0]
         option5 = ["\\text{None of the above.}", "You may have chosen this if you thought you were modeling total costs or income.", 0]

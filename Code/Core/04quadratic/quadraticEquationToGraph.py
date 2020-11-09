@@ -16,13 +16,13 @@ DIR=sys.argv[1]
 database_name=sys.argv[2]
 question_list=sys.argv[3]
 version=sys.argv[4]
+thisQuestion=sys.argv[5]
 sys.path.insert(1, f"/{DIR}/PythonScripts/ScriptsForQuestionCode")
 from commonlyUsedFunctions import *
 from intervalMaskingMethod import *
 sys.path.insert(1, f"/{DIR}/PythonScripts/ScriptsForDatabases")
 from storeQuestionData import *
 
-thisQuestion="quadraticEquationToGraph"
 x = var("x")
 # Type 2 - Function to graph
 
@@ -131,7 +131,7 @@ else:
         else:
             displayProblem = 'f(x) = (x-%s)^2 + %s' %(vertexFtG[0], vertexFtG[1])
 
-displaySolution = f"{thisQuestion}{figureAnswerList[0][0]}{version}" 
+displaySolution = f"{thisQuestion}{figureAnswerList[0][0]}{version}"
 generalComment = "Remember that Vertex Form is $y = a(x-h)^2+k$, where the vertex is $(h, k)$."
 
 c0 = f"{thisQuestion}A{version}"

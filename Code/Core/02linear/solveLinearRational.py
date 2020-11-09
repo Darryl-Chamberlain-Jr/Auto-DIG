@@ -15,6 +15,7 @@ DIR=sys.argv[1]
 database_name=sys.argv[2]
 question_list=sys.argv[3]
 version=sys.argv[4]
+thisQuestion=sys.argv[5]
 sys.path.insert(1, f"/{DIR}/PythonScripts/ScriptsForQuestionCode")
 from commonlyUsedFunctions import *
 from intervalMaskingMethod import *
@@ -105,7 +106,6 @@ displayStem = 'Solve the linear equation below. Then, choose the interval that c
 displayProblem = "\\frac{%s}{%s} - \\frac{%s}{%s} = \\frac{%s}{%s}" %(generatePolynomialDisplay(  [constants[0], constants[3]]  ), constants[6], generatePolynomialDisplay(  [constants[1], constants[4]]  ), constants[7], generatePolynomialDisplay(  [constants[2], constants[5]]  ), constants[8]    )
 generalComment = "If you are having trouble with this problem, try to remove a fraction at a time by multiplying each term by the denominator."
 
-thisQuestion="solveLinearRational"
 displayStemType="String"
 displayProblemType="Math Mode"
 displayOptionsType="Math Mode"

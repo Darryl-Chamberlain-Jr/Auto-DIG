@@ -110,7 +110,7 @@ def print_question_to_key(database_info, version, code_name, file_name, DIR):
 \hline
 \textbf{Pop.} & %s & %s & %s & %s & %s & %s & %s & %s & %s
 \end{tabular} """ %(display_problem[0], display_problem[1], display_problem[2], display_problem[3], display_problem[4], display_problem[5], display_problem[6], display_problem[7], display_problem[8]) )
-    keyFile.write('\n')
+    keyFile.write('\n\n')
     if display_options_type=="String":
         keyFile.write("The solution is %s, which is option %s." %(solution, answer_letter))
         keyFile.write('\n')

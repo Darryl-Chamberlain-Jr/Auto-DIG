@@ -60,6 +60,18 @@ elif [ $quiz_number -eq 4 ]; then
     number_of_questions=$(( 10 * ${#module_names[@]} ))
     list_of_assessment_titles=( "${exam_display_name}" "${exam_display_name}" "${exam_display_name}" "${exam_display_name}" "${exam_display_name}" "${exam_display_name}" "${exam_display_name}" "${exam_display_name}")
     list_of_file_names=( "Module1" "Module2" "Module3" "Module4" "Module5" "Module6" "Module7" "Module8")
+elif [ $quiz_number -eq 5 ]; then
+    module_names=( "1" "2" "3" "4" "5" "6" "7" "8" "9M" "10M" "9L" "10L")
+    number_of_assessments=${#module_names[@]}
+    number_of_questions=$(( 10 * ${#module_names[@]} ))
+    list_of_assessment_titles=( "${exam_display_name}" "${exam_display_name}" "${exam_display_name}" "${exam_display_name}" "${exam_display_name}" "${exam_display_name}" "${exam_display_name}" "${exam_display_name}" "${exam_display_name}" "${exam_display_name}" "${exam_display_name}" "${exam_display_name}")
+    list_of_file_names=( "Module1" "Module2" "Module3" "Module4" "Module5" "Module6" "Module7" "Module8" "Module9M" "Module10M" "Module9L" "Module10L")
+else
+    module_names=( "1" "2" "3" "4" "5" "6" "7" "8" "9M" "10M" "11M" "12M" "9L" "10L" "11L" "12L")
+    number_of_assessments=${#module_names[@]}
+    number_of_questions=$(( 10 * ${#module_names[@]} ))
+    list_of_assessment_titles=( "${exam_display_name}" "${exam_display_name}" "${exam_display_name}" "${exam_display_name}" "${exam_display_name}" "${exam_display_name}" "${exam_display_name}" "${exam_display_name}" "${exam_display_name}" "${exam_display_name}" "${exam_display_name}" "${exam_display_name}" "${exam_display_name}" "${exam_display_name}" "${exam_display_name}" "${exam_display_name}")
+    list_of_file_names=( "Module1" "Module2" "Module3" "Module4" "Module5" "Module6" "Module7" "Module8" "Module9M" "Module10M" "Module11M" "Module12M" "Module9L" "Module10L" "Module11L" "Module12L")
 fi
 #####
 # Defines the question_list_index needed for the modules.

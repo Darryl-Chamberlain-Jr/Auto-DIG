@@ -13,6 +13,7 @@ DIR=sys.argv[1]
 database_name=sys.argv[2]
 question_list=sys.argv[3]
 version=sys.argv[4]
+thisQuestion=sys.argv[5]
 sys.path.insert(1, f"/{DIR}/PythonScripts/ScriptsForQuestionCode")
 from commonlyUsedFunctions import *
 from intervalMaskingMethod import *
@@ -25,6 +26,10 @@ def generateDistinctCoefficients():
     constants = random.sample(listIntegers, 4)
     constants = [maybeMakeNegative(i) for i in constants]
     return constants
+
+def round_set_of_floats(pairs_of_floats, round_to):
+    return [[round(value[0], round_to), round(value[1], round_to)] for value in pairs_of_floats]
+
 def generateDistractors(coefficients):
     a1, b1, a2, b2 = coefficients
     # Divide like terms
@@ -79,7 +84,8 @@ distractors = generateDistractors(coefficients)
 # In the future, I need to do something to check if the distractors are far enough apart.
 
 ### CREATE INTERVAL OPTIONS ###
-solutionList = [solution, distractors[0], distractors[1], distractors[2], distractors[3]]
+round_to=2
+solutionList = round_set_of_floats([solution, distractors[0], distractors[1], distractors[2], distractors[3]], round_to)
 intervalOptions = createIntervalOptions(solutionList, 1, 0.5)
 
 ### DEFINE ANSWERLIST AND DISPLAYSOLUTION ###
@@ -115,8 +121,7 @@ answer_letter_indicators = [answerList[0][2], answerList[1][2], answerList[2][2]
 answer_letter = identifyAnswerLetter(answer_letter_indicators)
 
 # NEW!!!!!
-this_question="divideComplex"
 display_stem_type="String"
 display_problem_type="Math Mode"
 display_options_type="Math Mode"
-writeToDatabase(DIR, database_name, question_list, this_question, display_stem_type, display_stem, display_problem_type, display_problem, display_options_type, choices, choice_comments, display_solution, answer_letter, general_comment)
+writeToDatabase(DIR, database_name, question_list, thisQuestion, display_stem_type, display_stem, display_problem_type, display_problem, display_options_type, choices, choice_comments, display_solution, answer_letter, general_comment)

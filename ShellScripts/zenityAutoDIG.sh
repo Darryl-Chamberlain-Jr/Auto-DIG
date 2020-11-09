@@ -1,5 +1,5 @@
 DIR="home/dchamberlain31/git-repos/Auto-DIG"
-titleOfProgram="Auto-DIG v.0.2"
+titleOfProgram="Auto-DIG v.0.3"
 # cd to ShellScripts included to make python graphing work. Not sure why at this point.
 cd /$DIR/ShellScripts/
 ###########################################
@@ -22,8 +22,13 @@ do
         "MAC 1105 progress quiz" \
         "MAC 1105 single module" \
         "MAC 1105 final exam" \
+        "Exit the program"
     )
     checkForEscape $?
+    if [ "$typeOfGeneration" == "Exit the program" ]; then
+        zenity --info --width=200 --title="${titleOfProgram[@]}" --text="Exiting now. Have a great day!"
+        break
+    fi
     footnote_right=$(zenity \
         --title="${titleOfProgram[@]}" \
         --entry \
@@ -64,12 +69,12 @@ do
         source /${DIR}/ShellScripts/Types_of_Generation/./generateFlexibleAssessment.sh
     fi
     StartTime=$( date +'%s' )
+    # Estimated run time calculated as 5 seconds per question, with 1 error per 10 questions run.
     estimated_run_time=$( echo "scale=2;(5.5*$number_of_questions*$number_of_versions)/60" | bc )
     (
     # Clears old keys and pdfs
     rm -rf /${DIR}/Keys/*
     rm -rf /${DIR}/BuildExams/*
-    # Estimated run time calculated as 5 seconds per question, with 1 error per 10 questions run.
     echo "#Estimated run time for ${number_of_questions} questions and ${number_of_versions} version: ${estimated_run_time} minutes"; sleep 3
     question_step=$( echo "scale=2;100/ ($number_of_questions*$number_of_versions)" | bc )
     counter=0
@@ -109,6 +114,7 @@ do
                 echo "$counter"
                 echo "#Running '${question}' for Version ${version}."
                 run_save_metadata="/$DIR/PythonScripts/ScriptsForDatabases/saveMetadataToNewDatabase.py"
+                cd /$DIR/Code
                 python3 $run_save_metadata $DIR $question "$full_db_name" $question_list_name
                 return_error=1
                 error_counter=0
@@ -121,7 +127,7 @@ do
                     code_folder=$( python3 $run_return_key_value_from_db $DIR $full_db_name $question_list_name $question "Folder" )
                     code_subfolder=$( python3 $run_return_key_value_from_db $DIR $full_db_name $question_list_name $question "Subfolder" )
                     question_py="/$DIR/Code/$code_folder/$code_subfolder/$question.py"
-                    python3 $question_py $DIR $full_db_name $question_list_name $version
+                    python3 $question_py $DIR $full_db_name $question_list_name $version $question
                     return_error=$?
                     error_counter=$(( error_counter+1 ))
                 done
@@ -171,7 +177,7 @@ do
       --percentage=0 \
       --width=350 \
     #  --auto-close
-    # DO NOT USE AUTO-CLOSE! There is currently an echo somewhere with a value over 100, which is signaling zenity to close the process early while the process wants to continue, causing a broken pipe.
+    # DO NOT USE AUTO-CLOSE! There is currently at least one echo somewhere with a value over 100, which is signaling zenity to close the process early while the process wants to continue, causing a broken pipe.
     checkForEscape $?
     EndTime=$( date +'%s' )
     currentDayTime=$( date +'%H:%M on %m/%d/%Y' )
@@ -180,13 +186,27 @@ do
     RunTimeSecondsRemainder=$(( TotalRunTimeSeconds-(RunTimeMinutes*60) ))
     estimated_run_time_seconds_float=$( echo "scale=0;(60*$estimated_run_time)" | bc )
     estimated_run_time_seconds=${estimated_run_time_seconds_float%.*}
-    #off_by_seconds=$( echo "scale=0;($estimate_run_time_seconds-$TotalRunTimeSeconds)" | bc )
+    estimated_run_time_minutes=$(( (estimated_run_time_seconds) / 60 ))
+    estimated_run_time_seconds_remainder=$(( estimated_run_time_seconds - (estimated_run_time_minutes*60) ))
     off_by_seconds=$(( estimated_run_time_seconds-TotalRunTimeSeconds ))
+    if [[  $off_by_seconds -lt 0 ]]; then
+        off_by_seconds=$(( -1*off_by_seconds ))
+        over_or_under="over"
+    else
+        over_or_under="under"
+    fi
+    off_by_seconds_minutes=$(( (off_by_seconds) / 60 ))
+    off_by_seconds_remainder=$(( off_by_seconds - (off_by_seconds_minutes*60) ))
+    if [[ $off_by_seconds_minutes -eq 0 ]]; then
+        comparison_statement="${off_by_seconds_remainder} seconds"
+    else
+        comparison_statement="${off_by_seconds_minutes} minutes and ${off_by_seconds_remainder} seconds"
+    fi
     zenity \
         --title="${titleOfProgram[@]}" \
         --height=100 \
         --width=400 \
         --info \
-        --text="Auto-DIG has finished running at ${currentDayTime}. It took ${RunTimeMinutes} minutes and ${RunTimeSecondsRemainder} seconds. We estimated it would take ${estimated_run_time} minutes so our estimate was off by ${off_by_seconds} seconds."
+        --text="Auto-DIG has finished running at ${currentDayTime}. It took ${RunTimeMinutes} minutes and ${RunTimeSecondsRemainder} seconds. We estimated it would take ${estimated_run_time_minutes} minutes and ${estimated_run_time_seconds_remainder} so our estimate was ${over_or_under} by ${comparison_statement}."
 done
 pkill eog

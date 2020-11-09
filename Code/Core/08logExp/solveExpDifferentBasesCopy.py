@@ -15,24 +15,18 @@ DIR=sys.argv[1]
 database_name=sys.argv[2]
 question_list=sys.argv[3]
 version=sys.argv[4]
+thisQuestion=sys.argv[5]
 sys.path.insert(1, f"/{DIR}/PythonScripts/ScriptsForQuestionCode")
 from commonlyUsedFunctions import *
 from intervalMaskingMethod import *
 sys.path.insert(1, f"/{DIR}/PythonScripts/ScriptsForDatabases")
 from storeQuestionData import *
 
-thisQuestion="solveExpDifferentBasesCopy"
-
-
-#x = Symbol('x')
-
 # Ideas for forms of this question [gcd(b0, b1)=1]:
     # b0**(a0*x+a1) = b1**(c0*x+c1)
     # b0**(a0*x+a1) = (b1**(\frac{1}{power}))**(c0*x+c1)
     # FUTURE: b0**(a0*x+a1) = - (b1**power)**(c0*x+c1)
 
-
-# OBJECTIVE 1 - Solving Exponential Equations (with different bases)
 intervalRange = 3
 precision = 1
 

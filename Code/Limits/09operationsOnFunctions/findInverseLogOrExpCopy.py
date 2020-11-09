@@ -15,14 +15,12 @@ DIR=sys.argv[1]
 database_name=sys.argv[2]
 question_list=sys.argv[3]
 version=sys.argv[4]
+thisQuestion=sys.argv[5]
 sys.path.insert(1, f"/{DIR}/PythonScripts/ScriptsForQuestionCode")
 from commonlyUsedFunctions import *
 from intervalMaskingMethod import *
 sys.path.insert(1, f"/{DIR}/PythonScripts/ScriptsForDatabases")
 from storeQuestionData import *
-
-thisQuestion="findInverseLogOrExpCopy"
-
 
 intervalRange = 5
 precision = 1
@@ -46,7 +44,7 @@ def defineFunctionAndInverse():
                 lnFunc = "\\ln{(x-%d)}-%d" %(h, -k)
             else:
                 lnFunc = "\\ln{(x-%d)}+%d" %(h, k)
-        lnInv = e**(x-k)+h
+        lnInv = math.exp(1)**(x-k)+h
         return [lnFunc, lnInv, h, k, "ln"]
     else:
         h = maybeMakeNegative(random.randint(2, 5))

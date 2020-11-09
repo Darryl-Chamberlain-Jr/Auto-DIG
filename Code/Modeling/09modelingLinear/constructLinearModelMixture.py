@@ -15,15 +15,13 @@ DIR=sys.argv[1]
 database_name=sys.argv[2]
 question_list=sys.argv[3]
 version=sys.argv[4]
+thisQuestion=sys.argv[5]
 sys.path.insert(1, f"/{DIR}/PythonScripts/ScriptsForQuestionCode")
 from commonlyUsedFunctions import *
 from intervalMaskingMethod import *
 sys.path.insert(1, f"/{DIR}/PythonScripts/ScriptsForDatabases")
 from storeQuestionData import *
 
-thisQuestion="constructLinearModelMixture"
-
-# Mixture
 lowPrice = round(random.uniform(2, 5), 2)
 highPrice = round(random.uniform(lowPrice+1, lowPrice+3), 2)
 midPrice = round((lowPrice+highPrice)/2, 2)

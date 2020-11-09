@@ -15,13 +15,12 @@ DIR=sys.argv[1]
 database_name=sys.argv[2]
 question_list=sys.argv[3]
 version=sys.argv[4]
+thisQuestion=sys.argv[5]
 sys.path.insert(1, f"/{DIR}/PythonScripts/ScriptsForQuestionCode")
 from commonlyUsedFunctions import *
 from intervalMaskingMethod import *
 sys.path.insert(1, f"/{DIR}/PythonScripts/ScriptsForDatabases")
 from storeQuestionData import *
-
-thisQuestion="domainLinearModelCopy"
 
 ### NATURAL ###
 natural0 = "Hannah plans to pay off a no-interest loan from her parents. Her loan balance is \\$1,000. She plans to pay \\$35 at the end of every week until her balance is \\$0. How many weeks will it be until she has paid off her loan?"

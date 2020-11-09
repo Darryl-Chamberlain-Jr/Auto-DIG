@@ -15,21 +15,20 @@ DIR=sys.argv[1]
 database_name=sys.argv[2]
 question_list=sys.argv[3]
 version=sys.argv[4]
+thisQuestion=sys.argv[5]
 sys.path.insert(1, f"/{DIR}/PythonScripts/ScriptsForQuestionCode")
 from commonlyUsedFunctions import *
 from intervalMaskingMethod import *
 sys.path.insert(1, f"/{DIR}/PythonScripts/ScriptsForDatabases")
 from storeQuestionData import *
 
-thisQuestion="identifyHAsCopy"
-
 # \\frac{(a0*x-b0)(a1*x-b1)(x-b3)}{(a0*x-b0)(a2*x-b2)}
 
 def generateRationalFactor():
-    a = random.randint(2, 4)
+    a = random.randint(2, 6)
     b = maybeMakeNegative(random.randint(2, 5))
     while (gcd(abs(a), abs(b)) > 1):
-        a = random.randint(2, 4)
+        a = random.randint(2, 6)
         b = maybeMakeNegative(random.randint(2, 5))
     return [a, b]
 
@@ -106,7 +105,7 @@ def createNumAndDenomNon0():
 HA = random.randint(0, 1)
 
 if HA == 0:
-    denominator, numerator, obliqueAsy, verticalAsy, hole, falseHorizontalAsy = createNumAndDenom0()
+    numerator, denominator, obliqueAsy, verticalAsy, hole, falseHorizontalAsy = createNumAndDenom0()
     option1 = ["\\text{Oblique Asymptote of } y = %s." %(obliqueAsy), "This corresponds to flipping the numerator and denominator, then using synthetic division to find the oblique asymptote.", 0]
     option2 = ["\\text{Horizontal Asymptote of } y = %.3f " %falseHorizontalAsy, "This corresponds to using rule for Horizontal Asymptote when degree of numerator and denominator match.", 0]
     option3 = ["\\text{Horizontal Asymptote at } y = %.3f" %verticalAsy, "This corresponds to considering where the denominator is equal to 0 as horizontal asymptote.", 0]
@@ -114,7 +113,7 @@ if HA == 0:
     option5 = ["\\text{Horizontal Asymptote of } y = 0", "* This is the correct option.", 1]
     displaySolution = option5[0]
 else:
-    denominator, numerator, verticalAsy1, verticalAsy2, hole, horizontalAsy = createNumAndDenomNon0()
+    numerator, denominator, verticalAsy1, verticalAsy2, hole, horizontalAsy = createNumAndDenomNon0()
     option1 = ["\\text{Horizontal Asymptote of } y = %.3f " %horizontalAsy, "* This is the correct option.", 1]
     option2 = ["\\text{Horizontal Asymptote of } y = 0 ", "This corresponds to using the rule for Horizontal Asymptote when the degree of the denominator is larger than the numerator.", 0]
     option3 = ["\\text{Vertical Asymptote of } y = %.3f " %verticalAsy1, "This corresponds to the hole at $x = %.3f$." %verticalAsy1, 0]

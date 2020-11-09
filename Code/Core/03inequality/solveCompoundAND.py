@@ -15,6 +15,7 @@ DIR=sys.argv[1]
 database_name=sys.argv[2]
 question_list=sys.argv[3]
 version=sys.argv[4]
+thisQuestion=sys.argv[5]
 sys.path.insert(1, f"/{DIR}/PythonScripts/ScriptsForQuestionCode")
 from commonlyUsedFunctions import *
 from intervalMaskingMethod import *
@@ -179,7 +180,6 @@ for checkLetter in letters:
         break
     answerIndex = answerIndex+1
 
-thisQuestion="solveCompoundAND"
 displayStemType="String"
 displayProblemType="Math Mode"
 displayOptionsType="Math Mode"

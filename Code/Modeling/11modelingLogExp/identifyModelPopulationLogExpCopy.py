@@ -15,13 +15,12 @@ DIR=sys.argv[1]
 database_name=sys.argv[2]
 question_list=sys.argv[3]
 version=sys.argv[4]
+thisQuestion=sys.argv[5]
 sys.path.insert(1, f"/{DIR}/PythonScripts/ScriptsForQuestionCode")
 from commonlyUsedFunctions import *
 from intervalMaskingMethod import *
 sys.path.insert(1, f"/{DIR}/PythonScripts/ScriptsForDatabases")
 from storeQuestionData import *
-
-thisQuestion="identifyModelPopulationLogExpCopy"
 
 def generateStem(type):
     initialPop = random.randint(2, 10)*10000
@@ -32,7 +31,7 @@ def generateStem(type):
         for k in range(0, 9):
             populations[k] = max(initialPop+posOrNegSlope*(k+1)*constant, 0)
     elif type == "direct":
-        randomPower = random.randint(2, 4)
+        randomPower = random.randint(4, 6)
         for k in range(0, 9):
             populations[k] = max(initialPop+posOrNegSlope*constant*(k+1)^(randomPower), 0)
     elif type == "indirect":

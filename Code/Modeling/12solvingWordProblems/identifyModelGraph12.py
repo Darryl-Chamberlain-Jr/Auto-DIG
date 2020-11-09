@@ -15,13 +15,12 @@ DIR=sys.argv[1]
 database_name=sys.argv[2]
 question_list=sys.argv[3]
 version=sys.argv[4]
+thisQuestion=sys.argv[5]
 sys.path.insert(1, f"/{DIR}/PythonScripts/ScriptsForQuestionCode")
 from commonlyUsedFunctions import *
 from intervalMaskingMethod import *
 sys.path.insert(1, f"/{DIR}/PythonScripts/ScriptsForDatabases")
 from storeQuestionData import *
-
-thisQuestion=""
 
 # SCATTERPLOT
 def generate20randomPoints(type):
@@ -87,14 +86,14 @@ else:
     displaySolution = option5[0]
 
 displayStem = "Determine the appropriate model for the graph of points below."
-displayProblem = "identifyModelGraph12%s" %version
+displayProblem = f"{thisQuestion}{version}"
 
 answerList = [option1, option2, option3, option4]
 random.shuffle(answerList)
 choices = [answerList[0][0], answerList[1][0], answerList[2][0], answerList[3][0], option5[0]]
 choiceComments = [answerList[0][1], answerList[1][1], answerList[2][1], answerList[3][1], option5[1]]
 potentialAnswers = [answerList[0][2], answerList[1][2], answerList[2][2], answerList[3][2], option5[2]]
-generalComment = "\\textbf{General comments:} This question is testing if you can associate the models with their graphical representation. If you are having trouble, go back to the corresponding Core module to learn about the specific function you are having trouble recognizing."
+generalComment = "This question is testing if you can associate the models with their graphical representation. If you are having trouble, go back to the corresponding Core module to learn about the specific function you are having trouble recognizing."
 
 answerIndex = 0
 letters = ["A", "B", "C", "D", "E"]
@@ -104,4 +103,8 @@ for checkLetter in letters:
         break
     answerIndex = answerIndex+1
 
-writeToKey(keyFileName, version, problemNumber, displayStem, "Graph", displayProblem, "MathMode", displaySolution, answerLetter, choices, choiceComments, generalComment)
+# String, Math Mode, or Graph
+displayStemType="String"
+displayProblemType="Graph"
+displayOptionsType="Math Mode"
+writeToDatabase(DIR, database_name, question_list, thisQuestion, displayStemType, displayStem, displayProblemType, displayProblem, displayOptionsType, choices, choiceComments, displaySolution, answerLetter, generalComment)
