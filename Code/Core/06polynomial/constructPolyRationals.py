@@ -142,8 +142,8 @@ intervalOptions = createIntervalOptions(solutionList, intervalRange, precision)
 solutionInterval = [intervalOptions[0], "* $%s$, which is the correct option." %displaySolution, 1]
 distractor1Interval = [intervalOptions[1],"$%s$, which corresponds to multiplying out $(%s)(%s)(%s)$." %( generatePolynomialDisplay(distractor1), generatePolynomialDisplay([factor1[0], factor1[1]]), generatePolynomialDisplay([factor2[0], factor2[1]]), generatePolynomialDisplay([factor3[0], factor3[1]]) ), 0]
 distractor2Interval = [intervalOptions[2], "$%s$, which corresponds to multiplying everything correctly except the constant term." %generatePolynomialDisplay(distractor2), 0]
-distractor3Interval = [intervalOptions[3], "$%s$, which corresponds to multiplying out $(%s)(%s)(%s)$." %(generatePolynomialDisplay(distractor3), generatePolynomialDisplay([factor1[0], factor1[0]]), generatePolynomialDisplay([factor2[0], -factor2[0]]),generatePolynomialDisplay([factor3[0], -factor3[0]])), 0]
-distractor4Interval = [intervalOptions[4], "$%s$, which corresponds to multiplying out $(%s)(%s)(%s)$." %(generatePolynomialDisplay(distractor4), generatePolynomialDisplay([factor1[0], factor1[0]]), generatePolynomialDisplay([factor2[0], factor2[0]]),generatePolynomialDisplay([factor3[0], -factor3[0]])), 0]
+distractor3Interval = [intervalOptions[3], "$%s$, which corresponds to multiplying out $(%s)(%s)(%s)$." %(generatePolynomialDisplay(distractor3), generatePolynomialDisplay([factor1[0], factor1[1]]), generatePolynomialDisplay([factor2[0], -factor2[1]]),generatePolynomialDisplay([factor3[0], -factor3[1]])), 0]
+distractor4Interval = [intervalOptions[4], "$%s$, which corresponds to multiplying out $(%s)(%s)(%s)$." %(generatePolynomialDisplay(distractor4), generatePolynomialDisplay([factor1[0], factor1[1]]), generatePolynomialDisplay([factor2[0], factor2[1]]),generatePolynomialDisplay([factor3[0], -factor3[1]])), 0]
 
 displayStem = 'Construct the lowest-degree polynomial given the zeros below. Then, choose the intervals that contain the coefficients of the polynomial in the form $ax^3+bx^2+cx+d$.'
 

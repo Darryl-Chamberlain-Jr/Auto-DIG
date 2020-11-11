@@ -25,33 +25,26 @@ sys.path.insert(1, f"/{DIR}/PythonScripts/ScriptsForDatabases")
 from storeQuestionData import *
 
 typesOfModels = ["linear", "power", "logExp"]
-#chooseModel = random.choice(typesOfModels)
-#chooseQuestion = random.randint(1, 3)
-chooseModel="linear"
-chooseQuestion=1
+chooseModel = random.choice(typesOfModels)
+chooseQuestion = random.randint(1, 3)
 if chooseModel == "linear":
-    #sys.path.insert(1, f"/{DIR}/Code/Modeling/09modelingLinear")
     if chooseQuestion == 1:
-        #from constructLinearModelDistanceAndRate import *
-        #subprocess.Popen(f"/{DIR}/Code/Modeling/09modelingLinear/constructLinearModelDistanceAndRate.py" f"{DIR}" f"{database_name}" f"{question_list}" f"{version}", shell=True)
-        subprocess.call(['python3', f"/{DIR}/Code/Modeling/09modelingLinear/constructLinearModelDistanceAndRate.py", f"{DIR}", f"{database_name}", f"{question_list}", f"{version}"])
+        subprocess.call(['python3', f"/{DIR}/Code/Modeling/09modelingLinear/constructLinearModelDistanceAndRate.py", f"{DIR}", f"{database_name}", f"{question_list}", f"{version}", f"{thisQuestion}"])
     elif chooseQuestion == 2:
-        from constructLinearModelCostsProfitsRevenue import *
+        subprocess.call(['python3', f"/{DIR}/Code/Modeling/09modelingLinear/constructLinearModelCostsProfitsRevenue.py", f"{DIR}", f"{database_name}", f"{question_list}", f"{version}", f"{thisQuestion}"])
     else:
-        from constructLinearModelMixture import *
+        subprocess.call(['python3', f"/{DIR}/Code/Modeling/09modelingLinear/constructLinearModelMixture.py", f"{DIR}", f"{database_name}", f"{question_list}", f"{version}", f"{thisQuestion}"])
 elif chooseModel == "power":
-    sys.path.insert(1, f"/{DIR}/Code/Modeling/10modelingPower")
     if chooseQuestion == 1:
-        from constructDirectModel import *
+        subprocess.call(['python3', f"/{DIR}/Code/Modeling/10modelingPower/constructDirectModel.py", f"{DIR}", f"{database_name}", f"{question_list}", f"{version}", f"{thisQuestion}"])
     elif chooseQuestion == 2:
-        from constructIndirectModel import *
+        subprocess.call(['python3', f"/{DIR}/Code/Modeling/10modelingPower/constructIndirectModel.py", f"{DIR}", f"{database_name}", f"{question_list}", f"{version}", f"{thisQuestion}"])
     else:
-        from constructJointModel import *
+        subprocess.call(['python3', f"/{DIR}/Code/Modeling/10modelingPower/constructJointModel.py", f"{DIR}", f"{database_name}", f"{question_list}", f"{version}", f"{thisQuestion}"])
 else:
-    sys.path.insert(1, f"/{DIR}/Code/Modeling/11modelingLogExp")
     if chooseQuestion == 1:
-        from constructBacteriaGrowth import *
+        subprocess.call(['python3', f"/{DIR}/Code/Modeling/11modelingLogExp/constructBacteriaGrowth.py", f"{DIR}", f"{database_name}", f"{question_list}", f"{version}", f"{thisQuestion}"])
     elif chooseQuestion == 2:
-        from constructHalfLifeModel import *
+        subprocess.call(['python3', f"/{DIR}/Code/Modeling/11modelingLogExp/constructHalfLifeModel.py", f"{DIR}", f"{database_name}", f"{question_list}", f"{version}", f"{thisQuestion}"])
     else:
-        from constructTemperatureModel import *
+        subprocess.call(['python3', f"/{DIR}/Code/Modeling/11modelingLogExp/constructTemperatureModel.py", f"{DIR}", f"{database_name}", f"{question_list}", f"{version}", f"{thisQuestion}"])

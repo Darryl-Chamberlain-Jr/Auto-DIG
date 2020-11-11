@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.8.4)  9 NOV 2020 17:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.8.4)  11 NOV 2020 10:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -583,10 +583,18 @@ LaTeX Font Info:    Trying to load font information for U+lasy on input line 48
 (/usr/share/texlive/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-Overfull \hbox (25.00003pt too wide) in paragraph at lines 48--72
+Overfull \hbox (25.00003pt too wide) in paragraph at lines 48--78
 [][] 
  []
 
+<../Figures/identifyGraphOfRationalFunctionCopyB.png, id=6, 479.1501pt x 323.04
+69pt>
+File: ../Figures/identifyGraphOfRationalFunctionCopyB.png Graphic file (type pn
+g)
+<use ../Figures/identifyGraphOfRationalFunctionCopyB.png>
+Package pdftex.def Info: ../Figures/identifyGraphOfRationalFunctionCopyB.png  u
+sed on input line 78.
+(pdftex.def)             Requested size: 234.8775pt x 158.35844pt.
 
 Package Fancyhdr Warning: \headheight is too small (0.0pt): 
 Make it at least 12.0pt.
@@ -595,24 +603,17 @@ This may cause the page layout to be inconsistent, however.
 
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
-]
-Overfull \hbox (25.00003pt too wide) in paragraph at lines 72--102
+ <../Figures/identifyGraphOfRationalFunctionCopyB.png>]
+Overfull \hbox (25.00003pt too wide) in paragraph at lines 78--102
 [][] 
  []
 
-<../Figures/identifyGraphOfRationalFunctionB.png, id=27, 466.1415pt x 323.0469p
-t>
-File: ../Figures/identifyGraphOfRationalFunctionB.png Graphic file (type png)
-<use ../Figures/identifyGraphOfRationalFunctionB.png>
-Package pdftex.def Info: ../Figures/identifyGraphOfRationalFunctionB.png  used 
-on input line 102.
-(pdftex.def)             Requested size: 234.8775pt x 162.78001pt.
-[2 <../Figures/identifyGraphOfRationalFunctionB.png>]
+
 Overfull \hbox (25.00003pt too wide) in paragraph at lines 102--126
 [][] 
  []
 
-
+[2]
 Overfull \hbox (25.00003pt too wide) in paragraph at lines 126--150
 [][] 
  []
@@ -623,29 +624,28 @@ Overfull \hbox (25.00003pt too wide) in paragraph at lines 150--174
  []
 
 [3]
-Overfull \hbox (25.00003pt too wide) in paragraph at lines 174--198
+Overfull \hbox (25.00003pt too wide) in paragraph at lines 174--204
 [][] 
  []
 
-[4]
-Overfull \hbox (25.00003pt too wide) in paragraph at lines 198--228
-[][] 
- []
-
-<../Figures/identifyGraphOfRationalFunctionCopyB.png, id=75, 479.1501pt x 323.0
-469pt>
-File: ../Figures/identifyGraphOfRationalFunctionCopyB.png Graphic file (type pn
-g)
-<use ../Figures/identifyGraphOfRationalFunctionCopyB.png>
-Package pdftex.def Info: ../Figures/identifyGraphOfRationalFunctionCopyB.png  u
-sed on input line 228.
+<../Figures/identifyGraphOfRationalFunctionB.png, id=59, 479.1501pt x 323.0469p
+t>
+File: ../Figures/identifyGraphOfRationalFunctionB.png Graphic file (type png)
+<use ../Figures/identifyGraphOfRationalFunctionB.png>
+Package pdftex.def Info: ../Figures/identifyGraphOfRationalFunctionB.png  used 
+on input line 204.
 (pdftex.def)             Requested size: 234.8775pt x 158.35844pt.
+[4 <../Figures/identifyGraphOfRationalFunctionB.png>]
+Overfull \hbox (25.00003pt too wide) in paragraph at lines 204--228
+[][] 
+ []
+
 
 Overfull \hbox (25.00003pt too wide) in paragraph at lines 228--252
 [][] 
  []
 
-[5 <../Figures/identifyGraphOfRationalFunctionCopyB.png>]
+[5]
 Overfull \hbox (25.00003pt too wide) in paragraph at lines 252--276
 [][] 
  []
@@ -675,7 +675,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 279.
 Here is how much of TeX's memory you used:
  8678 strings out of 483183
  129956 string characters out of 5966293
- 403398 words of memory out of 5000000
+ 404404 words of memory out of 5000000
  23454 multiletter control sequences out of 15000+600000
  535322 words of font info for 38 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
@@ -686,7 +686,7 @@ e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texli
 ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf
 -dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/
 fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on keyModule12LB.pdf (6 pages, 121264 bytes).
+Output written on keyModule12LB.pdf (6 pages, 125263 bytes).
 PDF statistics:
  140 PDF objects out of 1000 (max. 8388607)
  120 compressed objects within 2 object streams

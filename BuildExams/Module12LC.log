@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.8.4)  9 NOV 2020 17:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.8.4)  11 NOV 2020 10:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -605,32 +605,28 @@ LaTeX Font Info:    Trying to load font information for U+lasy on input line 28
 (/usr/share/texlive/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-Overfull \hbox (6.79684pt too wide) in paragraph at lines 28--37
+Overfull \hbox (7.65904pt too wide) in paragraph at lines 28--28
+[]$[]\OML/cmm/m/it/14.4 y \OT1/cmr/m/n/14.4 = 3\OML/cmm/m/it/14.4 :\OT1/cmr/m/n
+/14.4 000[]\OML/cmm/m/it/14.4 y \OT1/cmr/m/n/14.4 =
+ []
+
+
+Overfull \hbox (6.79684pt too wide) in paragraph at lines 28--41
 | [] 
  []
 
-
-Overfull \hbox (4.75925pt too wide) in paragraph at lines 37--37
-[]$[]\OML/cmm/m/it/14.4 y \OT1/cmr/m/n/14.4 = \OMS/cmsy/m/n/14.4 ^^@\OT1/cmr/m/
-n/14.4 5\OML/cmm/m/it/14.4 :\OT1/cmr/m/n/14.4 0[]\OML/cmm/m/it/14.4 y \OT1/cmr/
-m/n/14.4 =
- []
-
-
-Overfull \hbox (6.79684pt too wide) in paragraph at lines 37--50
-| [] 
- []
-
-<../Figures/identifyGraphOfRationalFunctionC.png, id=4, 479.1501pt x 323.0469pt
->
-File: ../Figures/identifyGraphOfRationalFunctionC.png Graphic file (type png)
-<use ../Figures/identifyGraphOfRationalFunctionC.png>
-Package pdftex.def Info: ../Figures/identifyGraphOfRationalFunctionC.png  used 
-on input line 50.
+<../Figures/identifyGraphOfRationalFunctionCopyC.png, id=4, 479.1501pt x 323.04
+69pt>
+File: ../Figures/identifyGraphOfRationalFunctionCopyC.png Graphic file (type pn
+g)
+<use ../Figures/identifyGraphOfRationalFunctionCopyC.png>
+Package pdftex.def Info: ../Figures/identifyGraphOfRationalFunctionCopyC.png  u
+sed on input line 41.
 (pdftex.def)             Requested size: 234.8775pt x 158.35844pt.
 
-Underfull \vbox (badness 3942) has occurred while \output is active []
-
+Overfull \hbox (6.79684pt too wide) in paragraph at lines 41--50
+| [] 
+ []
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -640,17 +636,41 @@ This may cause the page layout to be inconsistent, however.
 
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
-]
+ <../Figures/identifyGraphOfRationalFunctionCopyC.png>]
+Overfull \hbox (8.70166pt too wide) in paragraph at lines 50--50
+[]$[]\OML/cmm/m/it/14.4 x \OT1/cmr/m/n/14.4 = \OMS/cmsy/m/n/14.4 ^^@\OT1/cmr/m/
+n/14.4 0\OML/cmm/m/it/14.4 :\OT1/cmr/m/n/14.4 75[]\OML/cmm/m/it/14.4 x \OT1/cmr
+/m/n/14.4 = 1\OML/cmm/m/it/14.4 :\OT1/cmr/m/n/14.4 25[]\OML/cmm/m/it/14.4 x \OT
+1/cmr/m/n/14.4 =
+ []
+
+
 Overfull \hbox (6.79684pt too wide) in paragraph at lines 50--59
 | [] 
  []
 
 
-Overfull \hbox (1.65175pt too wide) in paragraph at lines 59--59
-[]$[]\OML/cmm/m/it/14.4 x \OT1/cmr/m/n/14.4 = 1\OML/cmm/m/it/14.4 :\OT1/cmr/m/n
-/14.4 25[]\OML/cmm/m/it/14.4 x \OT1/cmr/m/n/14.4 = \OMS/cmsy/m/n/14.4 ^^@\OT1/c
-mr/m/n/14.4 1\OML/cmm/m/it/14.4 :\OT1/cmr/m/n/14.4 5[]\OML/cmm/m/it/14.4 x \OT1
-/cmr/m/n/14.4 =
+Overfull \hbox (15.75157pt too wide) in paragraph at lines 59--59
+[]$[]\OML/cmm/m/it/14.4 x \OT1/cmr/m/n/14.4 = \OMS/cmsy/m/n/14.4 ^^@\OT1/cmr/m/
+n/14.4 0\OML/cmm/m/it/14.4 :\OT1/cmr/m/n/14.4 667[]\OML/cmm/m/it/14.4 x \OT1/cm
+r/m/n/14.4 = 0\OML/cmm/m/it/14.4 :\OT1/cmr/m/n/14.4 75[]\OML/cmm/m/it/14.4 x \O
+T1/cmr/m/n/14.4 =
+ []
+
+
+Overfull \hbox (6.40102pt too wide) in paragraph at lines 59--59
+[]$[]\OML/cmm/m/it/14.4 x \OT1/cmr/m/n/14.4 = \OMS/cmsy/m/n/14.4 ^^@\OT1/cmr/m/
+n/14.4 0\OML/cmm/m/it/14.4 :\OT1/cmr/m/n/14.4 667[]\OML/cmm/m/it/14.4 x \OT1/cm
+r/m/n/14.4 = \OMS/cmsy/m/n/14.4 ^^@\OT1/cmr/m/n/14.4 1\OML/cmm/m/it/14.4 :\OT1/
+cmr/m/n/14.4 333[]$ 
+ []
+
+
+Overfull \hbox (4.44768pt too wide) in paragraph at lines 59--59
+[]$[]\OML/cmm/m/it/14.4 x \OT1/cmr/m/n/14.4 = \OMS/cmsy/m/n/14.4 ^^@\OT1/cmr/m/
+n/14.4 0\OML/cmm/m/it/14.4 :\OT1/cmr/m/n/14.4 667[]\OML/cmm/m/it/14.4 x \OT1/cm
+r/m/n/14.4 = \OMS/cmsy/m/n/14.4 ^^@\OT1/cmr/m/n/14.4 1\OML/cmm/m/it/14.4 :\OT1/
+cmr/m/n/14.4 333[]$ 
  []
 
 
@@ -658,73 +678,50 @@ Overfull \hbox (6.79684pt too wide) in paragraph at lines 59--68
 | [] 
  []
 
-[2 <../Figures/identifyGraphOfRationalFunctionC.png>]
-Overfull \hbox (7.65904pt too wide) in paragraph at lines 68--68
-[]$[]\OML/cmm/m/it/14.4 y \OT1/cmr/m/n/14.4 = 2\OML/cmm/m/it/14.4 :\OT1/cmr/m/n
-/14.4 000[]\OML/cmm/m/it/14.4 y \OT1/cmr/m/n/14.4 =
- []
-
-
+[2]
 Overfull \hbox (6.79684pt too wide) in paragraph at lines 68--77
 | [] 
  []
 
 
-Overfull \hbox (8.70166pt too wide) in paragraph at lines 77--77
-[]$[]\OML/cmm/m/it/14.4 x \OT1/cmr/m/n/14.4 = \OMS/cmsy/m/n/14.4 ^^@\OT1/cmr/m/
-n/14.4 1\OML/cmm/m/it/14.4 :\OT1/cmr/m/n/14.4 333[]\OML/cmm/m/it/14.4 x \OT1/cm
-r/m/n/14.4 = 2\OML/cmm/m/it/14.4 :\OT1/cmr/m/n/14.4 5[]\OML/cmm/m/it/14.4 x \OT
+Overfull \hbox (6.79684pt too wide) in paragraph at lines 77--90
+| [] 
+ []
+
+<../Figures/identifyGraphOfRationalFunctionC.png, id=49, 456.0237pt x 323.0469p
+t>
+File: ../Figures/identifyGraphOfRationalFunctionC.png Graphic file (type png)
+<use ../Figures/identifyGraphOfRationalFunctionC.png>
+Package pdftex.def Info: ../Figures/identifyGraphOfRationalFunctionC.png  used 
+on input line 90.
+(pdftex.def)             Requested size: 234.8775pt x 166.38826pt.
+[3 <../Figures/identifyGraphOfRationalFunctionC.png>]
+Overfull \hbox (6.79684pt too wide) in paragraph at lines 90--99
+| [] 
+ []
+
+
+Overfull \hbox (8.70166pt too wide) in paragraph at lines 99--99
+[]$[]\OML/cmm/m/it/14.4 x \OT1/cmr/m/n/14.4 = 2\OML/cmm/m/it/14.4 :\OT1/cmr/m/n
+/14.4 5[]\OML/cmm/m/it/14.4 x \OT1/cmr/m/n/14.4 = \OMS/cmsy/m/n/14.4 ^^@\OT1/cm
+r/m/n/14.4 0\OML/cmm/m/it/14.4 :\OT1/cmr/m/n/14.4 667[]\OML/cmm/m/it/14.4 x \OT
 1/cmr/m/n/14.4 =
  []
 
-
-Overfull \hbox (6.79684pt too wide) in paragraph at lines 77--86
-| [] 
- []
-
-
-Overfull \hbox (7.65904pt too wide) in paragraph at lines 86--86
-[]$[]\OML/cmm/m/it/14.4 y \OT1/cmr/m/n/14.4 = 4\OML/cmm/m/it/14.4 :\OT1/cmr/m/n
-/14.4 000[]\OML/cmm/m/it/14.4 y \OT1/cmr/m/n/14.4 =
- []
-
-[3]
-Overfull \hbox (6.79684pt too wide) in paragraph at lines 86--99
-| [] 
- []
-
-<../Figures/identifyGraphOfRationalFunctionCopyC.png, id=65, 479.1501pt x 323.0
-469pt>
-File: ../Figures/identifyGraphOfRationalFunctionCopyC.png Graphic file (type pn
-g)
-<use ../Figures/identifyGraphOfRationalFunctionCopyC.png>
-Package pdftex.def Info: ../Figures/identifyGraphOfRationalFunctionCopyC.png  u
-sed on input line 99.
-(pdftex.def)             Requested size: 234.8775pt x 158.35844pt.
 
 Overfull \hbox (6.79684pt too wide) in paragraph at lines 99--108
 | [] 
  []
 
 
-Overfull \hbox (15.75157pt too wide) in paragraph at lines 108--108
-[]$[]\OML/cmm/m/it/14.4 x \OT1/cmr/m/n/14.4 = 1\OML/cmm/m/it/14.4 :\OT1/cmr/m/n
-/14.4 667[]\OML/cmm/m/it/14.4 x \OT1/cmr/m/n/14.4 = \OMS/cmsy/m/n/14.4 ^^@\OT1/
-cmr/m/n/14.4 0\OML/cmm/m/it/14.4 :\OT1/cmr/m/n/14.4 75[]\OML/cmm/m/it/14.4 x \O
-T1/cmr/m/n/14.4 =
- []
-
-[4 <../Figures/identifyGraphOfRationalFunctionCopyC.png>]
 Overfull \hbox (6.79684pt too wide) in paragraph at lines 108--117
 | [] 
  []
 
-
-Overfull \hbox (34.00151pt too wide) in paragraph at lines 117--117
-[]$[]\OML/cmm/m/it/14.4 x \OT1/cmr/m/n/14.4 = \OMS/cmsy/m/n/14.4 ^^@\OT1/cmr/m/
-n/14.4 1\OML/cmm/m/it/14.4 :\OT1/cmr/m/n/14.4 333[]\OML/cmm/m/it/14.4 x \OT1/cm
-r/m/n/14.4 = \OMS/cmsy/m/n/14.4 ^^@\OT1/cmr/m/n/14.4 1\OML/cmm/m/it/14.4 :\OT1/
-cmr/m/n/14.4 667[]\OML/cmm/m/it/14.4 x \OT1/cmr/m/n/14.4 =
+[4]
+Overfull \hbox (7.65904pt too wide) in paragraph at lines 117--117
+[]$[]\OML/cmm/m/it/14.4 y \OT1/cmr/m/n/14.4 = 2\OML/cmm/m/it/14.4 :\OT1/cmr/m/n
+/14.4 000[]\OML/cmm/m/it/14.4 y \OT1/cmr/m/n/14.4 =
  []
 
 
@@ -752,17 +749,17 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 120.
 Here is how much of TeX's memory you used:
  9149 strings out of 483183
  135763 string characters out of 5966293
- 415823 words of memory out of 5000000
+ 416829 words of memory out of 5000000
  23919 multiletter control sequences out of 15000+600000
  535915 words of font info for 40 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 34i,12n,45p,998b,541s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 34i,12n,45p,998b,543s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share
 /texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on Module12LC.pdf (5 pages, 93088 bytes).
+Output written on Module12LC.pdf (5 pages, 90172 bytes).
 PDF statistics:
  128 PDF objects out of 1000 (max. 8388607)
  110 compressed objects within 2 object streams
