@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.8.4)  11 NOV 2020 09:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.8.4)  18 NOV 2020 10:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -605,26 +605,26 @@ LaTeX Font Info:    Trying to load font information for U+lasy on input line 28
 (/usr/share/texlive/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-Overfull \hbox (59.36855pt too wide) in paragraph at lines 28--28
-[]$[]\OML/cmm/m/it/14.4 x \OT1/cmr/m/n/14.4 = \OML/cmm/m/it/14.4 a[]x \OT1/cmr/
-m/n/14.4 = \OML/cmm/m/it/14.4 b; []a \OMS/cmsy/m/n/14.4 2 \OT1/cmr/m/n/14.4 [13
-\OML/cmm/m/it/14.4 :\OT1/cmr/m/n/14.4 79\OML/cmm/m/it/14.4 ; \OT1/cmr/m/n/14.4 
-15\OML/cmm/m/it/14.4 :\OT1/cmr/m/n/14.4 39][]\OML/cmm/m/it/14.4 b \OMS/cmsy/m/n
-/14.4 2
- []
-
-
-Overfull \hbox (45.26872pt too wide) in paragraph at lines 28--28
-[]$[]\OML/cmm/m/it/14.4 x \OT1/cmr/m/n/14.4 = \OML/cmm/m/it/14.4 a[]x \OT1/cmr/
-m/n/14.4 = \OML/cmm/m/it/14.4 b; []a \OMS/cmsy/m/n/14.4 2 \OT1/cmr/m/n/14.4 [0\
-OML/cmm/m/it/14.4 :\OT1/cmr/m/n/14.4 09\OML/cmm/m/it/14.4 ; \OT1/cmr/m/n/14.4 1
-\OML/cmm/m/it/14.4 :\OT1/cmr/m/n/14.4 33][]\OML/cmm/m/it/14.4 b \OMS/cmsy/m/n/1
-4.4 2
- []
-
-
 Overfull \hbox (6.79684pt too wide) in paragraph at lines 28--37
 | [] 
+ []
+
+
+Overfull \hbox (67.66878pt too wide) in paragraph at lines 37--37
+[]$[]\OML/cmm/m/it/14.4 x \OT1/cmr/m/n/14.4 = \OML/cmm/m/it/14.4 a[]x \OT1/cmr/
+m/n/14.4 = \OML/cmm/m/it/14.4 b; []a \OMS/cmsy/m/n/14.4 2 \OT1/cmr/m/n/14.4 [\O
+MS/cmsy/m/n/14.4 ^^@\OT1/cmr/m/n/14.4 1\OML/cmm/m/it/14.4 :\OT1/cmr/m/n/14.4 04
+\OML/cmm/m/it/14.4 ; \OMS/cmsy/m/n/14.4 ^^@\OT1/cmr/m/n/14.4 0\OML/cmm/m/it/14.
+4 :\OT1/cmr/m/n/14.4 84][]\OML/cmm/m/it/14.4 b \OMS/cmsy/m/n/14.4 2
+ []
+
+
+Overfull \hbox (81.7686pt too wide) in paragraph at lines 37--37
+[]$[]\OML/cmm/m/it/14.4 x \OT1/cmr/m/n/14.4 = \OML/cmm/m/it/14.4 a[]x \OT1/cmr/
+m/n/14.4 = \OML/cmm/m/it/14.4 b; []a \OMS/cmsy/m/n/14.4 2 \OT1/cmr/m/n/14.4 [\O
+MS/cmsy/m/n/14.4 ^^@\OT1/cmr/m/n/14.4 20\OML/cmm/m/it/14.4 :\OT1/cmr/m/n/14.4 0
+9\OML/cmm/m/it/14.4 ; \OMS/cmsy/m/n/14.4 ^^@\OT1/cmr/m/n/14.4 19\OML/cmm/m/it/1
+4.4 :\OT1/cmr/m/n/14.4 99][]\OML/cmm/m/it/14.4 b \OMS/cmsy/m/n/14.4 2
  []
 
 
@@ -641,117 +641,122 @@ This may cause the page layout to be inconsistent, however.
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 ]
-Overfull \hbox (6.79684pt too wide) in paragraph at lines 46--50
+Overfull \hbox (6.79684pt too wide) in paragraph at lines 46--55
 | [] 
  []
 
-<../Figures/rationalEquationToGraphCopyAB.png, id=29, 432.8973pt x 323.0469pt>
+
+Overfull \hbox (6.79684pt too wide) in paragraph at lines 55--59
+| [] 
+ []
+
+<../Figures/rationalEquationToGraphCopyAB.png, id=29, 402.5439pt x 323.0469pt>
 File: ../Figures/rationalEquationToGraphCopyAB.png Graphic file (type png)
 <use ../Figures/rationalEquationToGraphCopyAB.png>
 Package pdftex.def Info: ../Figures/rationalEquationToGraphCopyAB.png  used on 
-input line 50.
-(pdftex.def)             Requested size: 140.92793pt x 105.16644pt.
-<../Figures/rationalEquationToGraphCopyBB.png, id=31, 432.8973pt x 323.0469pt>
+input line 59.
+(pdftex.def)             Requested size: 140.92793pt x 113.09767pt.
+<../Figures/rationalEquationToGraphCopyBB.png, id=31, 402.5439pt x 323.0469pt>
 File: ../Figures/rationalEquationToGraphCopyBB.png Graphic file (type png)
 <use ../Figures/rationalEquationToGraphCopyBB.png>
 Package pdftex.def Info: ../Figures/rationalEquationToGraphCopyBB.png  used on 
-input line 50.
-(pdftex.def)             Requested size: 140.92793pt x 105.16644pt.
-<../Figures/rationalEquationToGraphCopyCB.png, id=32, 432.8973pt x 323.0469pt>
+input line 59.
+(pdftex.def)             Requested size: 140.92793pt x 113.09767pt.
+<../Figures/rationalEquationToGraphCopyCB.png, id=32, 402.5439pt x 323.0469pt>
 File: ../Figures/rationalEquationToGraphCopyCB.png Graphic file (type png)
 <use ../Figures/rationalEquationToGraphCopyCB.png>
 Package pdftex.def Info: ../Figures/rationalEquationToGraphCopyCB.png  used on 
-input line 50.
-(pdftex.def)             Requested size: 140.92793pt x 105.16644pt.
-<../Figures/rationalEquationToGraphCopyDB.png, id=33, 432.8973pt x 323.0469pt>
+input line 59.
+(pdftex.def)             Requested size: 140.92793pt x 113.09767pt.
+<../Figures/rationalEquationToGraphCopyDB.png, id=33, 402.5439pt x 323.0469pt>
 File: ../Figures/rationalEquationToGraphCopyDB.png Graphic file (type png)
 <use ../Figures/rationalEquationToGraphCopyDB.png>
 Package pdftex.def Info: ../Figures/rationalEquationToGraphCopyDB.png  used on 
-input line 50.
-(pdftex.def)             Requested size: 140.92793pt x 105.16644pt.
+input line 59.
+(pdftex.def)             Requested size: 140.92793pt x 113.09767pt.
 
-Overfull \hbox (6.79684pt too wide) in paragraph at lines 50--63
+Overfull \hbox (6.79684pt too wide) in paragraph at lines 59--68
 | [] 
  []
 
-<../Figures/rationalGraphToEquationB.png, id=34, 432.8973pt x 323.0469pt>
-File: ../Figures/rationalGraphToEquationB.png Graphic file (type png)
-<use ../Figures/rationalGraphToEquationB.png>
-Package pdftex.def Info: ../Figures/rationalGraphToEquationB.png  used on input
- line 63.
-(pdftex.def)             Requested size: 234.8775pt x 175.27577pt.
 [2 <../Figures/rationalEquationToGraphCopyAB.png> <../Figures/rationalEquationT
 oGraphCopyBB.png> <../Figures/rationalEquationToGraphCopyCB.png> <../Figures/ra
-tionalEquationToGraphCopyDB.png> <../Figures/rationalGraphToEquationB.png>]
-Overfull \hbox (6.79684pt too wide) in paragraph at lines 63--67
+tionalEquationToGraphCopyDB.png>]
+Overfull \hbox (45.73573pt too wide) in paragraph at lines 68--68
+[]$[]\OML/cmm/m/it/14.4 x \OT1/cmr/m/n/14.4 = \OML/cmm/m/it/14.4 a[]x \OT1/cmr/
+m/n/14.4 = \OML/cmm/m/it/14.4 b; []a \OMS/cmsy/m/n/14.4 2 \OT1/cmr/m/n/14.4 [\O
+MS/cmsy/m/n/14.4 ^^@\OT1/cmr/m/n/14.4 19\OML/cmm/m/it/14.4 ; \OMS/cmsy/m/n/14.4
+ ^^@\OT1/cmr/m/n/14.4 16][]\OML/cmm/m/it/14.4 b \OMS/cmsy/m/n/14.4 2
+ []
+
+
+Overfull \hbox (20.43588pt too wide) in paragraph at lines 68--68
+[]$[]\OML/cmm/m/it/14.4 x \OT1/cmr/m/n/14.4 = \OML/cmm/m/it/14.4 a[]x \OT1/cmr/
+m/n/14.4 = \OML/cmm/m/it/14.4 b; []a \OMS/cmsy/m/n/14.4 2 \OT1/cmr/m/n/14.4 [\O
+MS/cmsy/m/n/14.4 ^^@\OT1/cmr/m/n/14.4 2\OML/cmm/m/it/14.4 ; \OT1/cmr/m/n/14.4 0
+][]\OML/cmm/m/it/14.4 b \OMS/cmsy/m/n/14.4 2
+ []
+
+
+Overfull \hbox (6.79684pt too wide) in paragraph at lines 68--81
 | [] 
  []
 
-<../Figures/rationalEquationToGraphAB.png, id=53, 402.5439pt x 323.0469pt>
-File: ../Figures/rationalEquationToGraphAB.png Graphic file (type png)
-<use ../Figures/rationalEquationToGraphAB.png>
-Package pdftex.def Info: ../Figures/rationalEquationToGraphAB.png  used on inpu
-t line 67.
-(pdftex.def)             Requested size: 140.92793pt x 113.09767pt.
-<../Figures/rationalEquationToGraphBB.png, id=54, 402.5439pt x 323.0469pt>
-File: ../Figures/rationalEquationToGraphBB.png Graphic file (type png)
-<use ../Figures/rationalEquationToGraphBB.png>
-Package pdftex.def Info: ../Figures/rationalEquationToGraphBB.png  used on inpu
-t line 67.
-(pdftex.def)             Requested size: 140.92793pt x 113.09767pt.
-<../Figures/rationalEquationToGraphCB.png, id=55, 402.5439pt x 323.0469pt>
-File: ../Figures/rationalEquationToGraphCB.png Graphic file (type png)
-<use ../Figures/rationalEquationToGraphCB.png>
-Package pdftex.def Info: ../Figures/rationalEquationToGraphCB.png  used on inpu
-t line 67.
-(pdftex.def)             Requested size: 140.92793pt x 113.09767pt.
-<../Figures/rationalEquationToGraphDB.png, id=56, 402.5439pt x 323.0469pt>
-File: ../Figures/rationalEquationToGraphDB.png Graphic file (type png)
-<use ../Figures/rationalEquationToGraphDB.png>
-Package pdftex.def Info: ../Figures/rationalEquationToGraphDB.png  used on inpu
-t line 67.
-(pdftex.def)             Requested size: 140.92793pt x 113.09767pt.
-
-Overfull \hbox (6.79684pt too wide) in paragraph at lines 67--76
-| [] 
- []
-
-[3 <../Figures/rationalEquationToGraphAB.png> <../Figures/rationalEquationToGra
-phBB.png> <../Figures/rationalEquationToGraphCB.png> <../Figures/rationalEquati
-onToGraphDB.png>]
-Overfull \hbox (6.79684pt too wide) in paragraph at lines 76--89
-| [] 
- []
-
-<../Figures/rationalGraphToEquationCopyB.png, id=77, 432.8973pt x 323.0469pt>
+<../Figures/rationalGraphToEquationCopyB.png, id=56, 432.8973pt x 323.0469pt>
 File: ../Figures/rationalGraphToEquationCopyB.png Graphic file (type png)
 <use ../Figures/rationalGraphToEquationCopyB.png>
 Package pdftex.def Info: ../Figures/rationalGraphToEquationCopyB.png  used on i
-nput line 89.
+nput line 81.
 (pdftex.def)             Requested size: 234.8775pt x 175.27577pt.
-
-Overfull \hbox (6.79684pt too wide) in paragraph at lines 89--98
+[3 <../Figures/rationalGraphToEquationCopyB.png>]
+Overfull \hbox (6.79684pt too wide) in paragraph at lines 81--94
 | [] 
  []
 
+<../Figures/rationalGraphToEquationB.png, id=73, 402.5439pt x 323.0469pt>
+File: ../Figures/rationalGraphToEquationB.png Graphic file (type png)
+<use ../Figures/rationalGraphToEquationB.png>
+Package pdftex.def Info: ../Figures/rationalGraphToEquationB.png  used on input
+ line 94.
+(pdftex.def)             Requested size: 234.8775pt x 188.49614pt.
 
-Overfull \hbox (59.36855pt too wide) in paragraph at lines 98--98
-[]$[]\OML/cmm/m/it/14.4 x \OT1/cmr/m/n/14.4 = \OML/cmm/m/it/14.4 a[]x \OT1/cmr/
-m/n/14.4 = \OML/cmm/m/it/14.4 b; []a \OMS/cmsy/m/n/14.4 2 \OT1/cmr/m/n/14.4 [19
-\OML/cmm/m/it/14.4 :\OT1/cmr/m/n/14.4 93\OML/cmm/m/it/14.4 ; \OT1/cmr/m/n/14.4 
-20\OML/cmm/m/it/14.4 :\OT1/cmr/m/n/14.4 12][]\OML/cmm/m/it/14.4 b \OMS/cmsy/m/n
-/14.4 2
+Overfull \hbox (6.79684pt too wide) in paragraph at lines 94--98
+| [] 
  []
 
-[4 <../Figures/rationalGraphToEquationCopyB.png>]
-Overfull \hbox (45.26872pt too wide) in paragraph at lines 98--98
-[]$[]\OML/cmm/m/it/14.4 x \OT1/cmr/m/n/14.4 = \OML/cmm/m/it/14.4 a[]x \OT1/cmr/
-m/n/14.4 = \OML/cmm/m/it/14.4 b; []a \OMS/cmsy/m/n/14.4 2 \OT1/cmr/m/n/14.4 [1\
-OML/cmm/m/it/14.4 :\OT1/cmr/m/n/14.4 17\OML/cmm/m/it/14.4 ; \OT1/cmr/m/n/14.4 1
-\OML/cmm/m/it/14.4 :\OT1/cmr/m/n/14.4 21][]\OML/cmm/m/it/14.4 b \OMS/cmsy/m/n/1
-4.4 2
- []
+<../Figures/rationalEquationToGraphAB.png, id=74, 432.8973pt x 323.0469pt>
+File: ../Figures/rationalEquationToGraphAB.png Graphic file (type png)
+<use ../Figures/rationalEquationToGraphAB.png>
+Package pdftex.def Info: ../Figures/rationalEquationToGraphAB.png  used on inpu
+t line 98.
+(pdftex.def)             Requested size: 140.92793pt x 105.16644pt.
+<../Figures/rationalEquationToGraphBB.png, id=75, 432.8973pt x 323.0469pt>
+File: ../Figures/rationalEquationToGraphBB.png Graphic file (type png)
+<use ../Figures/rationalEquationToGraphBB.png>
+Package pdftex.def Info: ../Figures/rationalEquationToGraphBB.png  used on inpu
+t line 98.
+(pdftex.def)             Requested size: 140.92793pt x 105.16644pt.
+<../Figures/rationalEquationToGraphCB.png, id=76, 432.8973pt x 323.0469pt>
+File: ../Figures/rationalEquationToGraphCB.png Graphic file (type png)
+<use ../Figures/rationalEquationToGraphCB.png>
+Package pdftex.def Info: ../Figures/rationalEquationToGraphCB.png  used on inpu
+t line 98.
+(pdftex.def)             Requested size: 140.92793pt x 105.16644pt.
 
+Overfull \vbox (7.95161pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (7.95161pt too high) has occurred while \output is active []
+
+
+[4 <../Figures/rationalGraphToEquationB.png> <../Figures/rationalEquationToGrap
+hAB.png>]
+<../Figures/rationalEquationToGraphDB.png, id=92, 432.8973pt x 323.0469pt>
+File: ../Figures/rationalEquationToGraphDB.png Graphic file (type png)
+<use ../Figures/rationalEquationToGraphDB.png>
+Package pdftex.def Info: ../Figures/rationalEquationToGraphDB.png  used on inpu
+t line 98.
+(pdftex.def)             Requested size: 140.92793pt x 105.16644pt.
 
 Overfull \hbox (6.79684pt too wide) in paragraph at lines 98--107
 | [] 
@@ -763,7 +768,8 @@ Overfull \hbox (6.79684pt too wide) in paragraph at lines 107--108
  []
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 110.
-[5]
+[5 <../Figures/rationalEquationToGraphBB.png> <../Figures/rationalEquationToGra
+phCB.png> <../Figures/rationalEquationToGraphDB.png>]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 110.
  (./Module7B.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 110.
@@ -782,16 +788,16 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 110.
 Here is how much of TeX's memory you used:
  9195 strings out of 483183
  137706 string characters out of 5966293
- 416825 words of memory out of 5000000
+ 415825 words of memory out of 5000000
  23958 multiletter control sequences out of 15000+600000
  535568 words of font info for 39 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 34i,11n,45p,996b,539s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 34i,11n,45p,996b,658s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share
 /texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on Module7B.pdf (5 pages, 182143 bytes).
+Output written on Module7B.pdf (5 pages, 182795 bytes).
 PDF statistics:
  140 PDF objects out of 1000 (max. 8388607)
  107 compressed objects within 2 object streams

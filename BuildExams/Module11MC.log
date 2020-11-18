@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.8.4)  11 NOV 2020 09:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.8.4)  18 NOV 2020 10:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -588,35 +588,40 @@ Package graphics Info: Driver file: pdftex.def on input line 105.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-<../Figures/identifyModelGraph11C.png, id=4, 462.528pt x 346.896pt>
-File: ../Figures/identifyModelGraph11C.png Graphic file (type png)
-<use ../Figures/identifyModelGraph11C.png>
-Package pdftex.def Info: ../Figures/identifyModelGraph11C.png  used on input li
-ne 32.
-(pdftex.def)             Requested size: 234.8775pt x 176.15768pt.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 32.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 35.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 32.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 35.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+lasy on input line 32
+LaTeX Font Info:    Trying to load font information for U+lasy on input line 35
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-Overfull \hbox (6.79684pt too wide) in paragraph at lines 32--45
-| [] 
+Overfull \hbox (35.50739pt too wide) in paragraph at lines 35--35
+[][] 
  []
 
 
-Overfull \hbox (6.79684pt too wide) in paragraph at lines 45--61
+Overfull \hbox (6.79684pt too wide) in paragraph at lines 35--48
+| [] 
+ []
+
+<../Figures/identifyModelGraph11CopyC.png, id=4, 462.528pt x 346.896pt>
+File: ../Figures/identifyModelGraph11CopyC.png Graphic file (type png)
+<use ../Figures/identifyModelGraph11CopyC.png>
+Package pdftex.def Info: ../Figures/identifyModelGraph11CopyC.png  used on inpu
+t line 48.
+(pdftex.def)             Requested size: 234.8775pt x 176.15768pt.
+
+Overfull \hbox (6.79684pt too wide) in paragraph at lines 48--61
 | [] 
  []
 
@@ -628,55 +633,50 @@ This may cause the page layout to be inconsistent, however.
 
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
- <../Figures/identifyModelGraph11C.png>]
-Overfull \hbox (35.50739pt too wide) in paragraph at lines 61--61
-[][] 
- []
-
-
+ <../Figures/identifyModelGraph11CopyC.png>]
 Overfull \hbox (6.79684pt too wide) in paragraph at lines 61--74
 | [] 
  []
 
+<../Figures/identifyModelGraph11C.png, id=28, 462.528pt x 346.896pt>
+File: ../Figures/identifyModelGraph11C.png Graphic file (type png)
+<use ../Figures/identifyModelGraph11C.png>
+Package pdftex.def Info: ../Figures/identifyModelGraph11C.png  used on input li
+ne 74.
+(pdftex.def)             Requested size: 234.8775pt x 176.15768pt.
 
 Overfull \hbox (6.79684pt too wide) in paragraph at lines 74--87
 | [] 
  []
 
-[2]
+[2 <../Figures/identifyModelGraph11C.png>]
 Overfull \hbox (6.79684pt too wide) in paragraph at lines 87--100
 | [] 
  []
 
 
-Overfull \hbox (6.79684pt too wide) in paragraph at lines 100--113
+Overfull \hbox (6.79684pt too wide) in paragraph at lines 100--116
 | [] 
  []
 
 [3]
-Overfull \hbox (6.79684pt too wide) in paragraph at lines 113--126
-| [] 
- []
-
-<../Figures/identifyModelGraph11CopyC.png, id=63, 462.528pt x 346.896pt>
-File: ../Figures/identifyModelGraph11CopyC.png Graphic file (type png)
-<use ../Figures/identifyModelGraph11CopyC.png>
-Package pdftex.def Info: ../Figures/identifyModelGraph11CopyC.png  used on inpu
-t line 126.
-(pdftex.def)             Requested size: 234.8775pt x 176.15768pt.
-
-Overfull \hbox (6.79684pt too wide) in paragraph at lines 126--139
-| [] 
- []
-
-[4 <../Figures/identifyModelGraph11CopyC.png>]
-Overfull \hbox (6.79684pt too wide) in paragraph at lines 139--155
-| [] 
- []
-
-
-Overfull \hbox (35.50739pt too wide) in paragraph at lines 155--155
+Overfull \hbox (35.50739pt too wide) in paragraph at lines 116--116
 [][] 
+ []
+
+
+Overfull \hbox (6.79684pt too wide) in paragraph at lines 116--129
+| [] 
+ []
+
+
+Overfull \hbox (6.79684pt too wide) in paragraph at lines 129--142
+| [] 
+ []
+
+[4]
+Overfull \hbox (6.79684pt too wide) in paragraph at lines 142--155
+| [] 
  []
 
 
@@ -715,7 +715,7 @@ e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texl
 ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on Module11MC.pdf (5 pages, 96161 bytes).
+Output written on Module11MC.pdf (5 pages, 92913 bytes).
 PDF statistics:
  132 PDF objects out of 1000 (max. 8388607)
  113 compressed objects within 2 object streams

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.8.4)  11 NOV 2020 10:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.8.4)  18 NOV 2020 10:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -583,18 +583,10 @@ LaTeX Font Info:    Trying to load font information for U+lasy on input line 48
 (/usr/share/texlive/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-Overfull \hbox (25.00003pt too wide) in paragraph at lines 48--78
+Overfull \hbox (25.00003pt too wide) in paragraph at lines 48--72
 [][] 
  []
 
-<../Figures/identifyGraphOfRationalFunctionCopyC.png, id=6, 479.1501pt x 323.04
-69pt>
-File: ../Figures/identifyGraphOfRationalFunctionCopyC.png Graphic file (type pn
-g)
-<use ../Figures/identifyGraphOfRationalFunctionCopyC.png>
-Package pdftex.def Info: ../Figures/identifyGraphOfRationalFunctionCopyC.png  u
-sed on input line 78.
-(pdftex.def)             Requested size: 234.8775pt x 158.35844pt.
 
 Package Fancyhdr Warning: \headheight is too small (0.0pt): 
 Make it at least 12.0pt.
@@ -603,65 +595,72 @@ This may cause the page layout to be inconsistent, however.
 
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
- <../Figures/identifyGraphOfRationalFunctionCopyC.png>]
-Overfull \hbox (25.00003pt too wide) in paragraph at lines 78--102
+]
+Overfull \hbox (25.00003pt too wide) in paragraph at lines 72--96
 [][] 
  []
 
 
-Overfull \hbox (25.00003pt too wide) in paragraph at lines 102--126
+Overfull \hbox (25.00003pt too wide) in paragraph at lines 96--120
 [][] 
  []
 
 [2]
-Overfull \hbox (25.00003pt too wide) in paragraph at lines 126--150
+Overfull \hbox (25.00003pt too wide) in paragraph at lines 120--150
 [][] 
  []
 
+<../Figures/identifyGraphOfRationalFunctionC.png, id=45, 479.1501pt x 323.0469p
+t>
+File: ../Figures/identifyGraphOfRationalFunctionC.png Graphic file (type png)
+<use ../Figures/identifyGraphOfRationalFunctionC.png>
+Package pdftex.def Info: ../Figures/identifyGraphOfRationalFunctionC.png  used 
+on input line 150.
+(pdftex.def)             Requested size: 234.8775pt x 158.35844pt.
 
 Overfull \hbox (25.00003pt too wide) in paragraph at lines 150--174
 [][] 
  []
 
-[3]
-Overfull \hbox (25.00003pt too wide) in paragraph at lines 174--204
-[][] 
- []
-
-<../Figures/identifyGraphOfRationalFunctionC.png, id=59, 456.0237pt x 323.0469p
-t>
-File: ../Figures/identifyGraphOfRationalFunctionC.png Graphic file (type png)
-<use ../Figures/identifyGraphOfRationalFunctionC.png>
-Package pdftex.def Info: ../Figures/identifyGraphOfRationalFunctionC.png  used 
-on input line 204.
-(pdftex.def)             Requested size: 234.8775pt x 166.38826pt.
-[4 <../Figures/identifyGraphOfRationalFunctionC.png>]
-Overfull \hbox (25.00003pt too wide) in paragraph at lines 204--228
+[3 <../Figures/identifyGraphOfRationalFunctionC.png>]
+Overfull \hbox (25.00003pt too wide) in paragraph at lines 174--198
 [][] 
  []
 
 
-Overfull \hbox (25.00003pt too wide) in paragraph at lines 228--252
+Overfull \hbox (25.00003pt too wide) in paragraph at lines 198--222
 [][] 
  []
 
+[4]
+Overfull \hbox (25.00003pt too wide) in paragraph at lines 222--246
+[][] 
+ []
+
+
+Overfull \hbox (25.00003pt too wide) in paragraph at lines 246--276
+[][] 
+ []
+
+<../Figures/identifyGraphOfRationalFunctionCopyC.png, id=76, 489.2679pt x 323.0
+469pt>
+File: ../Figures/identifyGraphOfRationalFunctionCopyC.png Graphic file (type pn
+g)
+<use ../Figures/identifyGraphOfRationalFunctionCopyC.png>
+Package pdftex.def Info: ../Figures/identifyGraphOfRationalFunctionCopyC.png  u
+sed on input line 276.
+(pdftex.def)             Requested size: 234.8775pt x 155.08046pt.
 [5]
-Overfull \hbox (25.00003pt too wide) in paragraph at lines 252--276
-[][] 
- []
-
-
 Overfull \hbox (25.00003pt too wide) in paragraph at lines 276--277
 [][] 
  []
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 279.
-[6]
+[6 <../Figures/identifyGraphOfRationalFunctionCopyC.png>]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 279.
  (./keyModule12LC.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 279.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 279.
-
 
 Package rerunfilecheck Warning: File `keyModule12LC.out' has changed.
 (rerunfilecheck)                Rerun to get outlines right
@@ -675,7 +674,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 279.
 Here is how much of TeX's memory you used:
  8678 strings out of 483183
  129956 string characters out of 5966293
- 404404 words of memory out of 5000000
+ 403404 words of memory out of 5000000
  23454 multiletter control sequences out of 15000+600000
  535322 words of font info for 38 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
@@ -686,7 +685,7 @@ e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texli
 ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf
 -dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/
 fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on keyModule12LC.pdf (6 pages, 122740 bytes).
+Output written on keyModule12LC.pdf (6 pages, 124488 bytes).
 PDF statistics:
  140 PDF objects out of 1000 (max. 8388607)
  120 compressed objects within 2 object streams

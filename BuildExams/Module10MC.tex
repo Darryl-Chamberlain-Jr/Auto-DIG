@@ -8,25 +8,63 @@
 \usepackage{dashrule}  % Package to use the command below to create lines between items
 \newcommand{\litem}[1]{\item#1\hspace*{-1cm}\rule{\textwidth}{0.4pt}}
 \pagestyle{fancy}
-\lhead{Progress Quiz 8}
+\lhead{Progress Quiz 9}
 \chead{}
 \rhead{Version C}
-\lfoot{4553-3922}
+\lfoot{8590-6105}
 \cfoot{}
 \rfoot{Fall 2020}
 \begin{document}
 
 \begin{enumerate}
 \litem{
-For the scenario below, find the variation constant $k$ of the model (if possible).
+Choose the model type that would best describe the scenario below.
 \begin{center}
-    \textit{ In an alternative galaxy, the cube of the time, $T$ (Earth years), required for a planet to orbit Sun $\chi$ increases as the square of the distance, $d$ (AUs), that the planet is from Sun $\chi$ increases. For example, when Ea's average distance from Sun $\chi$ is 5, it takes 75 Earth days to complete an orbit. }
+    \textit{ Big O notation is common in computer science to describe how fast a program can solve a particular problem. Big O notation categorizes functions according to their growth rates, the same way we have categorized modeling real-world problems by certain types of functions. When analyzing a particular program, a student found the computer to need $x^x$ time to complete, where $x$ was the number of inputs into the program. }
 \end{center}
 \begin{enumerate}[label=\Alph*.]
-\item \( k = 10546875.000 \)
+\item \( \text{Direct variation} \)
+\item \( \text{Indirect variation} \)
+\item \( \text{Joint variation} \)
+\item \( \text{None of the above} \)
+
+\end{enumerate} }
+\litem{
+For the scenario below, model the rate of vibration (cm/s) of the string in terms of the length of the string. Then determine the variation constant $k$ of the model (if possible). The constant should be in terms of cm and s.
+\begin{center}
+    \textit{ The rate of vibration of a string under constant tension varies based on the type of string and the length of the string. The rate of vibration of string $\omega$ increases as the cube length of the string decreases. For example, when string $\omega$ is 4 mm long, the rate of vibration is 21 cm/s. }
+\end{center}
+\begin{enumerate}[label=\Alph*.]
+\item \( k = 328.12 \)
+\item \( k = 1.34 \)
+\item \( k = 1344.00 \)
+\item \( k = 0.33 \)
+\item \( \text{None of the above.} \)
+
+\end{enumerate} }
+\litem{
+For the scenario below, use the model for the volume of a cylinder as $V = \pi r^2 h$ to find the coefficient for the model of the new volume $V_{	ext{new}} = k r^2 h$.
+\begin{center}
+    \textit{ Pepsi wants to increase the volume of soda in their cans. They've decided to decrease the radius by 14 percent and increase the height by 16 percent. They want to model the new volume based on the radius and height of the original cans. }
+\end{center}
+\begin{enumerate}[label=\Alph*.]
+\item \( k = 0.85794 \)
+\item \( k = 2.69529 \)
+\item \( k = 0.00314 \)
+\item \( k = 0.00985 \)
+\item \( \text{None of the above.} \)
+
+\end{enumerate} }
+\litem{
+For the scenario below, find the variation constant $k$ of the model (if possible).
+\begin{center}
+    \textit{ In an alternative galaxy, the cube of the time, $T$ (Earth years), required for a planet to orbit Sun $\chi$ decreases as the quartic of the distance, $d$ (AUs), that the planet is from Sun $\chi$ decreases. For example, when Ea's average distance from Sun $\chi$ is 5, it takes 99 Earth days to complete an orbit. }
+\end{center}
+\begin{enumerate}[label=\Alph*.]
+\item \( k = 606436875.000 \)
+\item \( k = 1552.478 \)
 \item \( k = 4.028 \)
-\item \( k = 1.886 \)
-\item \( k = 16875.000 \)
+\item \( k = 3.094 \)
 \item \( \text{Unable to compute the constant based on the information given.} \)
 
 \end{enumerate} }
@@ -37,118 +75,80 @@ A town has an initial population of 70000. The town's population for the next 10
 \begin{tabular}{c|c|c|c|c|c|c|c|c|c}
 \textbf{Year} & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 \tabularnewline
 \hline
-\textbf{Pop.} & 70016 & 70044 & 70056 & 70084 & 70096 & 70124 & 70136 & 70164 & 70176
+\textbf{Pop.} & 70000 & 70020 & 70032 & 70041 & 70048 & 70053 & 70058 & 70062 & 70065
 \end{tabular} \begin{enumerate}[label=\Alph*.]
+\item \( \text{Linear} \)
 \item \( \text{Non-Linear Power} \)
 \item \( \text{Exponential} \)
-\item \( \text{Linear} \)
 \item \( \text{Logarithmic} \)
 \item \( \text{None of the above} \)
 
 \end{enumerate} }
 \litem{
-For the scenario below, use the model for the volume of a cylinder as $V = \pi r^2 h$ to find the coefficient for the model of the new volume $V_{	ext{new}} = k r^2 h$.
-\begin{center}
-    \textit{ Pepsi wants to increase the volume of soda in their cans. They've decided to decrease the radius by 15 percent and increase the height by 18 percent. They want to model the new volume based on the radius and height of the original cans. }
-\end{center}
-\begin{enumerate}[label=\Alph*.]
-\item \( k = 0.85255 \)
-\item \( k = 2.67836 \)
-\item \( k = 0.01272 \)
-\item \( k = 0.00405 \)
-\item \( \text{None of the above.} \)
-
-\end{enumerate} }
-\litem{
-A town has an initial population of 80000. The town's population for the next 10 years is provided below. Which type of function would be most appropriate to model the town's population?
+A town has an initial population of 60000. The town's population for the next 10 years is provided below. Which type of function would be most appropriate to model the town's population?
 
 
 \begin{tabular}{c|c|c|c|c|c|c|c|c|c}
 \textbf{Year} & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 \tabularnewline
 \hline
-\textbf{Pop.} & 79946 & 79896 & 79854 & 79804 & 79746 & 79696 & 79654 & 79604 & 79546
+\textbf{Pop.} & 59910 & 59730 & 59190 & 57570 & 52710 & 38130 & 0 & 0 & 0
 \end{tabular} \begin{enumerate}[label=\Alph*.]
-\item \( \text{Linear} \)
-\item \( \text{Non-Linear Power} \)
 \item \( \text{Logarithmic} \)
 \item \( \text{Exponential} \)
+\item \( \text{Non-Linear Power} \)
+\item \( \text{Linear} \)
 \item \( \text{None of the above} \)
-
-\end{enumerate} }
-\litem{
-For the scenario below, model the rate of vibration (cm/s) of the string in terms of the length of the string. Then determine the variation constant $k$ of the model (if possible). The constant should be in terms of cm and s.
-\begin{center}
-    \textit{ The rate of vibration of a string under constant tension varies based on the type of string and the length of the string. The rate of vibration of string $\omega$ increases as the cube length of the string decreases. For example, when string $\omega$ is 5 mm long, the rate of vibration is 34 cm/s. }
-\end{center}
-\begin{enumerate}[label=\Alph*.]
-\item \( k = 272.00 \)
-\item \( k = 4250.00 \)
-\item \( k = 4.25 \)
-\item \( k = 0.27 \)
-\item \( \text{None of the above.} \)
-
-\end{enumerate} }
-\litem{
-For the scenario below, model the rate of vibration (cm/s) of the string in terms of the length of the string. Then determine the variation constant $k$ of the model (if possible). The constant should be in terms of cm and s.
-\begin{center}
-    \textit{ The rate of vibration of a string under constant tension varies based on the type of string and the length of the string. The rate of vibration of string $\omega$ increases as the cube length of the string decreases. For example, when string $\omega$ is 4 mm long, the rate of vibration is 32 cm/s. }
-\end{center}
-\begin{enumerate}[label=\Alph*.]
-\item \( k = 2.05 \)
-\item \( k = 500.00 \)
-\item \( k = 0.50 \)
-\item \( k = 2048.00 \)
-\item \( \text{None of the above.} \)
 
 \end{enumerate} }
 \litem{
 For the scenario below, find the variation constant $k$ of the model (if possible).
 \begin{center}
-    \textit{ In an alternative galaxy, the cube of the time, $T$ (Earth years), required for a planet to orbit Sun $\chi$ increases as the cube of the distance, $d$ (AUs), that the planet is from Sun $\chi$ increases. For example, when Ea's average distance from Sun $\chi$ is 2, it takes 86 Earth days to complete an orbit. }
+    \textit{ In an alternative galaxy, the quartic of the time, $T$ (Earth years), required for a planet to orbit Sun $\chi$ decreases as the square of the distance, $d$ (AUs), that the planet is from Sun $\chi$ decreases. For example, when Ea's average distance from Sun $\chi$ is 3, it takes 54 Earth days to complete an orbit. }
 \end{center}
 \begin{enumerate}[label=\Alph*.]
-\item \( k = 3.503 \)
-\item \( k = 5088448.000 \)
-\item \( k = 79507.000 \)
+\item \( k = 944784.000 \)
+\item \( k = 1.565 \)
 \item \( k = 4.028 \)
+\item \( k = 76527504.000 \)
 \item \( \text{Unable to compute the constant based on the information given.} \)
-
-\end{enumerate} }
-\litem{
-Choose the model type that would best describe the scenario below.
-\begin{center}
-    \textit{ Big O notation is common in computer science to describe how fast a program can solve a particular problem. Big O notation categorizes functions according to their growth rates, the same way we have categorized modeling real-world problems by certain types of functions. When analyzing a particular program, a student found the computer to need $x^x$ time to complete, where $x$ was the number of inputs into the program. }
-\end{center}
-\begin{enumerate}[label=\Alph*.]
-\item \( \text{Indirect variation} \)
-\item \( \text{Direct variation} \)
-\item \( \text{Joint variation} \)
-\item \( \text{None of the above} \)
 
 \end{enumerate} }
 \litem{
 For the scenario below, use the model for the volume of a cylinder as $V = \pi r^2 h$ to find the coefficient for the model of the new volume $V_{	ext{new}} = k r^2 h$.
 \begin{center}
-    \textit{ Pepsi wants to increase the volume of soda in their cans. They've decided to decrease the radius by 10 percent and decrease the height by 18 percent. They want to model the new volume based on the radius and height of the original cans. }
+    \textit{ Pepsi wants to increase the volume of soda in their cans. They've decided to decrease the radius by 14 percent and decrease the height by 15 percent. They want to model the new volume based on the radius and height of the original cans. }
 \end{center}
 \begin{enumerate}[label=\Alph*.]
-\item \( k = 0.00565 \)
-\item \( k = 0.66420 \)
-\item \( k = 2.08665 \)
-\item \( k = 0.00180 \)
+\item \( k = 1.97499 \)
+\item \( k = 0.62866 \)
+\item \( k = 0.00294 \)
+\item \( k = 0.00924 \)
 \item \( \text{None of the above.} \)
 
 \end{enumerate} }
 \litem{
 Choose the model type that would best describe the scenario below.
 \begin{center}
-    \textit{ Big O notation is common in computer science to describe how fast a program can solve a particular problem. Big O notation categorizes functions according to their growth rates, the same way we have categorized modeling real-world problems by certain types of functions. When analyzing a particular program, a student found the computer to need $x^x$ time to complete, where $x$ was the number of inputs into the program. }
+    \textit{ In economics, there are two common equations to model interest earned. The compound interest formula is $A = P (1 + \frac{r}{n})^{nt}$, where $A$ is the amount of money you end up with, $P$ is your starting money, $r$ is the interest rate, $n$ is the number of times compounded in a year, and $t$ is the total number of years. For example, if you were a parent and wanted to save \$10,000 in 3 years-time at 3.5\% interest compounded monthly, you would need to invest about \$9,000. }
 \end{center}
 \begin{enumerate}[label=\Alph*.]
 \item \( \text{Direct variation} \)
-\item \( \text{Joint variation} \)
 \item \( \text{Indirect variation} \)
+\item \( \text{Joint variation} \)
 \item \( \text{None of the above} \)
+
+\end{enumerate} }
+\litem{
+For the scenario below, model the rate of vibration (cm/s) of the string in terms of the length of the string. Then determine the variation constant $k$ of the model (if possible). The constant should be in terms of cm and s.
+\begin{center}
+    \textit{ The rate of vibration of a string under constant tension varies based on the type of string and the length of the string. The rate of vibration of string $\omega$ decreases as the square length of the string increases. For example, when string $\omega$ is 2 mm long, the rate of vibration is 25 cm/s. }
+\end{center}
+\begin{enumerate}[label=\Alph*.]
+\item \( k = 625.00 \)
+\item \( k = 6.25 \)
+\item \( k = 100.00 \)
+\item \( k = 1.00 \)
+\item \( \text{None of the above.} \)
 
 \end{enumerate} }
 \end{enumerate}

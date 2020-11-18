@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.8.4)  11 NOV 2020 09:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.8.4)  18 NOV 2020 10:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -637,12 +637,12 @@ Overfull \hbox (6.79684pt too wide) in paragraph at lines 64--73
 | [] 
  []
 
-[2]
+
 Overfull \hbox (6.79684pt too wide) in paragraph at lines 73--82
 | [] 
  []
 
-
+[2]
 Overfull \hbox (6.79684pt too wide) in paragraph at lines 82--91
 | [] 
  []
@@ -690,7 +690,7 @@ Here is how much of TeX's memory you used:
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share
 /texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on Module3B.pdf (4 pages, 42261 bytes).
+Output written on Module3B.pdf (4 pages, 41899 bytes).
 PDF statistics:
  110 PDF objects out of 1000 (max. 8388607)
  100 compressed objects within 1 object stream

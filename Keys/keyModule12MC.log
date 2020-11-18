@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.8.4)  11 NOV 2020 09:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.8.4)  18 NOV 2020 10:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -566,37 +566,39 @@ Package graphics Info: Driver file: pdftex.def on input line 105.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 52.
+<../Figures/identifyModelGraph12C.png, id=6, 462.528pt x 346.896pt>
+File: ../Figures/identifyModelGraph12C.png Graphic file (type png)
+<use ../Figures/identifyModelGraph12C.png>
+Package pdftex.def Info: ../Figures/identifyModelGraph12C.png  used on input li
+ne 54.
+(pdftex.def)             Requested size: 234.8775pt x 176.15768pt.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 54.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 52.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 54.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+lasy on input line 52
+LaTeX Font Info:    Trying to load font information for U+lasy on input line 54
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-Overfull \hbox (25.00003pt too wide) in paragraph at lines 52--82
+Overfull \hbox (25.00003pt too wide) in paragraph at lines 54--84
 [][] 
  []
 
-<../Figures/identifyModelGraph12C.png, id=6, 462.528pt x 346.896pt>
-File: ../Figures/identifyModelGraph12C.png Graphic file (type png)
-<use ../Figures/identifyModelGraph12C.png>
-Package pdftex.def Info: ../Figures/identifyModelGraph12C.png  used on input li
-ne 82.
+<../Figures/identifyModelGraph12CopyC.png, id=8, 462.528pt x 346.896pt>
+File: ../Figures/identifyModelGraph12CopyC.png Graphic file (type png)
+<use ../Figures/identifyModelGraph12CopyC.png>
+Package pdftex.def Info: ../Figures/identifyModelGraph12CopyC.png  used on inpu
+t line 84.
 (pdftex.def)             Requested size: 234.8775pt x 176.15768pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
 
 Package Fancyhdr Warning: \headheight is too small (0.0pt): 
 Make it at least 12.0pt.
@@ -605,59 +607,53 @@ This may cause the page layout to be inconsistent, however.
 
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
-]
-Overfull \hbox (25.00003pt too wide) in paragraph at lines 82--110
+ <../Figures/identifyModelGraph12C.png>]
+Overfull \hbox (25.00003pt too wide) in paragraph at lines 84--112
 [][] 
  []
 
-[2 <../Figures/identifyModelGraph12C.png>]
-Overfull \hbox (25.00003pt too wide) in paragraph at lines 110--140
+[2 <../Figures/identifyModelGraph12CopyC.png>]
+Overfull \hbox (25.00003pt too wide) in paragraph at lines 112--140
 [][] 
  []
 
-<../Figures/identifyModelGraph12CopyC.png, id=39, 462.528pt x 346.896pt>
-File: ../Figures/identifyModelGraph12CopyC.png Graphic file (type png)
-<use ../Figures/identifyModelGraph12CopyC.png>
-Package pdftex.def Info: ../Figures/identifyModelGraph12CopyC.png  used on inpu
-t line 140.
-(pdftex.def)             Requested size: 234.8775pt x 176.15768pt.
-[3 <../Figures/identifyModelGraph12CopyC.png>]
+
 Overfull \hbox (25.00003pt too wide) in paragraph at lines 140--168
 [][] 
  []
 
-
+[3]
 Overfull \hbox (25.00003pt too wide) in paragraph at lines 168--196
 [][] 
  []
 
-[4]
+
 Overfull \hbox (25.00003pt too wide) in paragraph at lines 196--224
 [][] 
  []
 
-
+[4]
 Overfull \hbox (25.00003pt too wide) in paragraph at lines 224--252
 [][] 
  []
 
-[5]
+
 Overfull \hbox (25.00003pt too wide) in paragraph at lines 252--280
 [][] 
  []
 
-
+[5]
 Overfull \hbox (25.00003pt too wide) in paragraph at lines 280--308
 [][] 
  []
 
-[6]
+
 Overfull \hbox (25.00003pt too wide) in paragraph at lines 308--309
 [][] 
  []
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 311.
-[7]
+[6]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 311.
  (./keyModule12MC.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 311.
@@ -674,8 +670,8 @@ Package rerunfilecheck Info: Checksums for `keyModule12MC.out':
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 311.
  ) 
 Here is how much of TeX's memory you used:
- 8679 strings out of 483183
- 129830 string characters out of 5966293
+ 8678 strings out of 483183
+ 129824 string characters out of 5966293
  403404 words of memory out of 5000000
  23454 multiletter control sequences out of 15000+600000
  535322 words of font info for 38 fonts, out of 8000000 for 9000
@@ -689,10 +685,10 @@ f-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/f
 onts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/t
 ype1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
 blic/amsfonts/cm/cmti10.pfb>
-Output written on keyModule12MC.pdf (7 pages, 132560 bytes).
+Output written on keyModule12MC.pdf (6 pages, 131512 bytes).
 PDF statistics:
- 154 PDF objects out of 1000 (max. 8388607)
- 131 compressed objects within 2 object streams
- 68 named destinations out of 1000 (max. 500000)
+ 148 PDF objects out of 1000 (max. 8388607)
+ 126 compressed objects within 2 object streams
+ 67 named destinations out of 1000 (max. 500000)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 

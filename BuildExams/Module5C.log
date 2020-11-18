@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.8.4)  11 NOV 2020 09:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.8.4)  18 NOV 2020 10:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -610,15 +610,28 @@ Overfull \hbox (6.79684pt too wide) in paragraph at lines 28--37
  []
 
 
-Overfull \hbox (6.79684pt too wide) in paragraph at lines 37--46
+Overfull \hbox (6.79684pt too wide) in paragraph at lines 37--41
 | [] 
  []
 
-
-Overfull \hbox (6.79684pt too wide) in paragraph at lines 46--55
-| [] 
- []
-
+<../Figures/radicalEquationToGraphAC.png, id=4, 452.4102pt x 346.896pt>
+File: ../Figures/radicalEquationToGraphAC.png Graphic file (type png)
+<use ../Figures/radicalEquationToGraphAC.png>
+Package pdftex.def Info: ../Figures/radicalEquationToGraphAC.png  used on input
+ line 41.
+(pdftex.def)             Requested size: 140.92793pt x 108.05537pt.
+<../Figures/radicalEquationToGraphBC.png, id=6, 452.4102pt x 346.896pt>
+File: ../Figures/radicalEquationToGraphBC.png Graphic file (type png)
+<use ../Figures/radicalEquationToGraphBC.png>
+Package pdftex.def Info: ../Figures/radicalEquationToGraphBC.png  used on input
+ line 41.
+(pdftex.def)             Requested size: 140.92793pt x 108.05537pt.
+<../Figures/radicalEquationToGraphCC.png, id=7, 452.4102pt x 346.896pt>
+File: ../Figures/radicalEquationToGraphCC.png Graphic file (type png)
+<use ../Figures/radicalEquationToGraphCC.png>
+Package pdftex.def Info: ../Figures/radicalEquationToGraphCC.png  used on input
+ line 41.
+(pdftex.def)             Requested size: 140.92793pt x 108.05537pt.
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
 Make it at least 17.0pt.
@@ -627,107 +640,99 @@ This may cause the page layout to be inconsistent, however.
 
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
-]
-Overfull \hbox (6.79684pt too wide) in paragraph at lines 55--59
-| [] 
- []
-
-<../Figures/radicalEquationToGraphAC.png, id=33, 461.0826pt x 346.896pt>
-File: ../Figures/radicalEquationToGraphAC.png Graphic file (type png)
-<use ../Figures/radicalEquationToGraphAC.png>
-Package pdftex.def Info: ../Figures/radicalEquationToGraphAC.png  used on input
- line 59.
-(pdftex.def)             Requested size: 140.92793pt x 106.02278pt.
-<../Figures/radicalEquationToGraphBC.png, id=35, 458.1918pt x 346.896pt>
-File: ../Figures/radicalEquationToGraphBC.png Graphic file (type png)
-<use ../Figures/radicalEquationToGraphBC.png>
-Package pdftex.def Info: ../Figures/radicalEquationToGraphBC.png  used on input
- line 59.
-(pdftex.def)             Requested size: 140.92793pt x 106.69502pt.
-<../Figures/radicalEquationToGraphCC.png, id=36, 458.1918pt x 347.6187pt>
-File: ../Figures/radicalEquationToGraphCC.png Graphic file (type png)
-<use ../Figures/radicalEquationToGraphCC.png>
-Package pdftex.def Info: ../Figures/radicalEquationToGraphCC.png  used on input
- line 59.
-(pdftex.def)             Requested size: 140.92793pt x 106.9173pt.
-<../Figures/radicalEquationToGraphDC.png, id=37, 461.0826pt x 347.6187pt>
+ <../Figures/radicalEquationToGraphAC.png> <../Figures/radicalEquationToGraphBC
+.png>]
+<../Figures/radicalEquationToGraphDC.png, id=36, 452.4102pt x 346.896pt>
 File: ../Figures/radicalEquationToGraphDC.png Graphic file (type png)
 <use ../Figures/radicalEquationToGraphDC.png>
 Package pdftex.def Info: ../Figures/radicalEquationToGraphDC.png  used on input
- line 59.
-(pdftex.def)             Requested size: 140.92793pt x 106.24367pt.
+ line 41.
+(pdftex.def)             Requested size: 140.92793pt x 108.05537pt.
 
-Overfull \hbox (6.79684pt too wide) in paragraph at lines 59--72
+Overfull \hbox (6.79684pt too wide) in paragraph at lines 41--54
 | [] 
  []
 
-<../Figures/radicalGraphToEquationC.png, id=38, 452.4102pt x 343.2825pt>
+<../Figures/radicalGraphToEquationC.png, id=37, 452.4102pt x 343.2825pt>
 File: ../Figures/radicalGraphToEquationC.png Graphic file (type png)
 <use ../Figures/radicalGraphToEquationC.png>
 Package pdftex.def Info: ../Figures/radicalGraphToEquationC.png  used on input 
-line 72.
+line 54.
 (pdftex.def)             Requested size: 234.8775pt x 178.21982pt.
-[2 <../Figures/radicalEquationToGraphAC.png> <../Figures/radicalEquationToGraph
-BC.png> <../Figures/radicalEquationToGraphCC.png> <../Figures/radicalEquationTo
-GraphDC.png>]
-Overfull \hbox (6.79684pt too wide) in paragraph at lines 72--81
+
+Overfull \hbox (6.79684pt too wide) in paragraph at lines 54--67
 | [] 
  []
 
-
-Overfull \hbox (6.79684pt too wide) in paragraph at lines 81--94
-| [] 
- []
-
-<../Figures/radicalGraphToEquationCopyC.png, id=60, 446.6286pt x 343.2825pt>
+<../Figures/radicalGraphToEquationCopyC.png, id=38, 426.393pt x 343.2825pt>
 File: ../Figures/radicalGraphToEquationCopyC.png Graphic file (type png)
 <use ../Figures/radicalGraphToEquationCopyC.png>
 Package pdftex.def Info: ../Figures/radicalGraphToEquationCopyC.png  used on in
-put line 94.
-(pdftex.def)             Requested size: 234.8775pt x 180.5298pt.
-[3 <../Figures/radicalGraphToEquationC.png>]
-Overfull \hbox (6.79684pt too wide) in paragraph at lines 94--98
+put line 67.
+(pdftex.def)             Requested size: 234.8775pt x 189.09404pt.
+
+Underfull \vbox (badness 3471) has occurred while \output is active []
+
+ [2 <../Figures/radicalEquationToGraphCC.png> <../Figures/radicalEquationToGrap
+hDC.png> <../Figures/radicalGraphToEquationC.png>]
+Overfull \hbox (6.79684pt too wide) in paragraph at lines 67--76
 | [] 
  []
 
-<../Figures/radicalEquationToGraphCopyAC.png, id=78, 429.2838pt x 346.896pt>
+
+Overfull \hbox (6.79684pt too wide) in paragraph at lines 76--85
+| [] 
+ []
+
+[3 <../Figures/radicalGraphToEquationCopyC.png>]
+Overfull \hbox (6.79684pt too wide) in paragraph at lines 85--94
+| [] 
+ []
+
+
+Overfull \hbox (6.79684pt too wide) in paragraph at lines 94--103
+| [] 
+ []
+
+
+Overfull \hbox (6.79684pt too wide) in paragraph at lines 103--107
+| [] 
+ []
+
+[4]
+<../Figures/radicalEquationToGraphCopyAC.png, id=95, 452.4102pt x 346.896pt>
 File: ../Figures/radicalEquationToGraphCopyAC.png Graphic file (type png)
 <use ../Figures/radicalEquationToGraphCopyAC.png>
 Package pdftex.def Info: ../Figures/radicalEquationToGraphCopyAC.png  used on i
-nput line 98.
-(pdftex.def)             Requested size: 140.92793pt x 113.8779pt.
-<../Figures/radicalEquationToGraphCopyBC.png, id=79, 429.2838pt x 346.896pt>
+nput line 107.
+(pdftex.def)             Requested size: 140.92793pt x 108.05537pt.
+<../Figures/radicalEquationToGraphCopyBC.png, id=96, 452.4102pt x 346.896pt>
 File: ../Figures/radicalEquationToGraphCopyBC.png Graphic file (type png)
 <use ../Figures/radicalEquationToGraphCopyBC.png>
 Package pdftex.def Info: ../Figures/radicalEquationToGraphCopyBC.png  used on i
-nput line 98.
-(pdftex.def)             Requested size: 140.92793pt x 113.8779pt.
-<../Figures/radicalEquationToGraphCopyCC.png, id=80, 429.2838pt x 346.896pt>
+nput line 107.
+(pdftex.def)             Requested size: 140.92793pt x 108.05537pt.
+<../Figures/radicalEquationToGraphCopyCC.png, id=97, 452.4102pt x 346.896pt>
 File: ../Figures/radicalEquationToGraphCopyCC.png Graphic file (type png)
 <use ../Figures/radicalEquationToGraphCopyCC.png>
 Package pdftex.def Info: ../Figures/radicalEquationToGraphCopyCC.png  used on i
-nput line 98.
-(pdftex.def)             Requested size: 140.92793pt x 113.8779pt.
-<../Figures/radicalEquationToGraphCopyDC.png, id=81, 429.2838pt x 346.896pt>
+nput line 107.
+(pdftex.def)             Requested size: 140.92793pt x 108.05537pt.
+<../Figures/radicalEquationToGraphCopyDC.png, id=98, 452.4102pt x 346.896pt>
 File: ../Figures/radicalEquationToGraphCopyDC.png Graphic file (type png)
 <use ../Figures/radicalEquationToGraphCopyDC.png>
 Package pdftex.def Info: ../Figures/radicalEquationToGraphCopyDC.png  used on i
-nput line 98.
-(pdftex.def)             Requested size: 140.92793pt x 113.8779pt.
-[4 <../Figures/radicalGraphToEquationCopyC.png> <../Figures/radicalEquationToGr
-aphCopyAC.png> <../Figures/radicalEquationToGraphCopyBC.png> <../Figures/radica
-lEquationToGraphCopyCC.png> <../Figures/radicalEquationToGraphCopyDC.png>]
-Overfull \hbox (6.79684pt too wide) in paragraph at lines 98--107
-| [] 
- []
-
+nput line 107.
+(pdftex.def)             Requested size: 140.92793pt x 108.05537pt.
 
 Overfull \hbox (6.79684pt too wide) in paragraph at lines 107--108
 | [] 
  []
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 110.
-[5]
+[5 <../Figures/radicalEquationToGraphCopyAC.png> <../Figures/radicalEquationToG
+raphCopyBC.png> <../Figures/radicalEquationToGraphCopyCC.png> <../Figures/radic
+alEquationToGraphCopyDC.png>]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 110.
  (./Module5C.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 110.
@@ -746,18 +751,18 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 110.
 Here is how much of TeX's memory you used:
  9195 strings out of 483183
  137646 string characters out of 5966293
- 415825 words of memory out of 5000000
+ 416825 words of memory out of 5000000
  23958 multiletter control sequences out of 15000+600000
  535568 words of font info for 39 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 34i,12n,45p,996b,546s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 34i,11n,45p,996b,658s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texli
 ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/f
 onts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on Module5C.pdf (5 pages, 214256 bytes).
+Output written on Module5C.pdf (5 pages, 215850 bytes).
 PDF statistics:
  148 PDF objects out of 1000 (max. 8388607)
  113 compressed objects within 2 object streams

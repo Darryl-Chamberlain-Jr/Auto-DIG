@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.8.4)  11 NOV 2020 09:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.8.4)  18 NOV 2020 10:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -588,6 +588,12 @@ Package graphics Info: Driver file: pdftex.def on input line 105.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
+<../Figures/identifyModelGraph12B.png, id=4, 462.528pt x 346.896pt>
+File: ../Figures/identifyModelGraph12B.png Graphic file (type png)
+<use ../Figures/identifyModelGraph12B.png>
+Package pdftex.def Info: ../Figures/identifyModelGraph12B.png  used on input li
+ne 32.
+(pdftex.def)             Requested size: 234.8775pt x 176.15768pt.
 LaTeX Font Info:    Trying to load font information for U+msa on input line 32.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
@@ -609,17 +615,12 @@ Overfull \hbox (6.79684pt too wide) in paragraph at lines 32--45
 | [] 
  []
 
-<../Figures/identifyModelGraph12B.png, id=4, 462.528pt x 346.896pt>
-File: ../Figures/identifyModelGraph12B.png Graphic file (type png)
-<use ../Figures/identifyModelGraph12B.png>
-Package pdftex.def Info: ../Figures/identifyModelGraph12B.png  used on input li
-ne 45.
+<../Figures/identifyModelGraph12CopyB.png, id=6, 462.528pt x 346.896pt>
+File: ../Figures/identifyModelGraph12CopyB.png Graphic file (type png)
+<use ../Figures/identifyModelGraph12CopyB.png>
+Package pdftex.def Info: ../Figures/identifyModelGraph12CopyB.png  used on inpu
+t line 45.
 (pdftex.def)             Requested size: 234.8775pt x 176.15768pt.
-
-Overfull \hbox (6.79684pt too wide) in paragraph at lines 45--58
-| [] 
- []
-
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
 Make it at least 17.0pt.
@@ -628,28 +629,23 @@ This may cause the page layout to be inconsistent, however.
 
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
- <../Figures/identifyModelGraph12B.png>]
+ <../Figures/identifyModelGraph12B.png> <../Figures/identifyModelGraph12CopyB.p
+ng>]
+Overfull \hbox (6.79684pt too wide) in paragraph at lines 45--58
+| [] 
+ []
+
+
 Overfull \hbox (6.79684pt too wide) in paragraph at lines 58--71
 | [] 
  []
 
-<../Figures/identifyModelGraph12CopyB.png, id=27, 462.528pt x 346.896pt>
-File: ../Figures/identifyModelGraph12CopyB.png Graphic file (type png)
-<use ../Figures/identifyModelGraph12CopyB.png>
-Package pdftex.def Info: ../Figures/identifyModelGraph12CopyB.png  used on inpu
-t line 71.
-(pdftex.def)             Requested size: 234.8775pt x 176.15768pt.
 
 Overfull \hbox (6.79684pt too wide) in paragraph at lines 71--84
 | [] 
  []
 
-[2 <../Figures/identifyModelGraph12CopyB.png>]
-Overfull \hbox (76.06467pt too wide) in paragraph at lines 84--84
-[]$[]$ 
- []
-
-
+[2]
 Overfull \hbox (6.79684pt too wide) in paragraph at lines 84--97
 | [] 
  []
@@ -703,15 +699,17 @@ Here is how much of TeX's memory you used:
  23919 multiletter control sequences out of 15000+600000
  535915 words of font info for 40 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 34i,11n,45p,998b,543s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share
-/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on Module12MB.pdf (5 pages, 75419 bytes).
+ 34i,11n,45p,998b,539s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on Module12MB.pdf (5 pages, 92638 bytes).
 PDF statistics:
- 124 PDF objects out of 1000 (max. 8388607)
- 107 compressed objects within 2 object streams
+ 132 PDF objects out of 1000 (max. 8388607)
+ 113 compressed objects within 2 object streams
  66 named destinations out of 1000 (max. 500000)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -47,18 +47,19 @@ def createNumAndDenom0():
         z1 = float(b1)/float(a1)
         z2 = float(b2)/float(a2)
     b3 = maybeMakeNegative(random.randint(1, 4))
-    coeffNumA = a0*a1
-    coeffNumB = -a0*b1 - a1*b0 - a0*a1*b3
-    coeffNumC = b0*b1 + a0*b1*b3 + a1*b0*b3
-    coeffNumD = -b0*b1*b3
-    numerator = generatePolynomialDisplay([coeffNumA, coeffNumB, coeffNumC, coeffNumD])
-    #(a0*x-b0)(a2*x-b2)
-    coeffDenA = a0*a2
-    coeffDenB = -a0*b2 - a2*b0
-    coeffDenC = b0*b2
-    denominator = generatePolynomialDisplay([coeffDenA, coeffDenB, coeffDenC])
+    # (a0*x-b0)(a2*x-b2) / (a0*x-b0)(a1*x-b1)(x-b3)
+    coeffDenomA = a0*a1
+    coeffDenomB = -a0*b1 - a1*b0 - a0*a1*b3
+    coeffDenomC = b0*b1 + a0*b1*b3 + a1*b0*b3
+    coeffDenomD = -b0*b1*b3
+    denominator = generatePolynomialDisplay([coeffDenomA, coeffDenomB, coeffDenomC, coeffDenomD])
     #
-    falseHorizontalAsy = float(a1) / float(a2)
+    coeffNumA = a0*a2
+    coeffNumB = -a0*b2 - a2*b0
+    coeffNumC = b0*b2
+    numerator = generatePolynomialDisplay([coeffNumA, coeffNumB, coeffNumC])
+    #
+    falseHorizontalAsy = float(a2) / float(a1)
     hole = z0
     verticalAsy = z2
     obliqueAsyA = a1
@@ -83,12 +84,13 @@ def createNumAndDenomNon0():
         z1 = float(b1)/float(a1)
         z2 = float(b2)/float(a2)
         b3 = maybeMakeNegative(random.randint(1, 4))
+    # (a0*x-b0)(a1*x-b1)(x-b3) / (a0*x-b0)(a2*x-b2)
     coeffNumA = a0*a1
     coeffNumB = -a0*b1 - a1*b0 - a0*a1*b3
     coeffNumC = b0*b1 + a0*b1*b3 + a1*b0*b3
     coeffNumD = -b0*b1*b3
     numerator = generatePolynomialDisplay([coeffNumA, coeffNumB, coeffNumC, coeffNumD])
-    #(a0*x-b0)(a2*x-b2)(x-b3)
+    #
     coeffDenA = a0*a2
     coeffDenB = -a0*b2 - a2*b0 - a2*b0
     coeffDenC = b0*b2 + a0*b2*b3 + a2*b0*b3
