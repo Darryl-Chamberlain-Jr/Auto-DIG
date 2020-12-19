@@ -11,11 +11,11 @@ source /${DIR}/ShellScripts/./functionsForZenityScript.sh
 
 number_of_assessments=1
 number_of_questions=24
-question_list=( \
+question_list_0=( \
 # M1
 'subgroupReal' 'divideComplex' 'orderOfOperations' \
 # M2
-'linearTwoPoints' 'linearParOrPer' 'solveRationalLinear' \
+'linearTwoPoints' 'linearParOrPer' 'solveLinearRational' \
 # M3
 'solveIntegerInequality' 'solveRationalInequality' 'solveCompoundAND' \
 # M4
@@ -29,8 +29,8 @@ question_list=( \
 # M8
 'domainRangeExp' 'domainRangeLog' 'solveExpDifferentBases' \
 )
-question_list_name="FinalExamVer"
+file_name="FinalExam"
+question_list_name=$file_name
 exam_display_name="MAC 1105 Final Exam"
-file_name="FinalExamVer"
-list_of_assessment_titles=( "Final Exam" )
+list_of_assessment_titles=( $file_name )
 list_of_file_names=( $file_name )

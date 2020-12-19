@@ -67,10 +67,10 @@ elif typeOfValues == 1:
         option5 = ["\\text{None of the above are always true.}", "", 0]
     else:
         # x infinity - None of the above
-        option1 = ["f(x) \\text{ is close to or exactly } %s \\text{ when } x \\text{ is large enough}." %x_0, "", 0]
-        option2 = ["f(x) \\text{ is close to or exactly } %s \\text{ when } x \\text{ is large enough}." %y_0, "", 0]
-        option3 = ["f(x) \\text{ is undefined when } x \\text{ is large enough}.", "", 0]
-        option4 = ["f(x) \\text{ is undefined when } f(x) \\text{ is large enough}.", "", 0]
+        option1 = ["f(%d) \\text{ is close to or exactly } %d" %(x_0, y_0), "", 0]
+        option2 = ["f(%d) \\text{ is close to or exactly } %d" %(y_0, x_0), "", 0]
+        option3 = ["f(%d) \\text{ is undefined }" %(x_0), "", 0]
+        option4 = ["f(%d) \\text{ is undefined }" %(y_0), "", 0]
         option5 = ["\\text{None of the above are always true.}", "", 1]
 else:
     if noneOfTheAboveOrNot == 0:
@@ -82,13 +82,13 @@ else:
         option5 = ["\\text{None of the above are always true.}", "", 0]
     else:
         # y infinity - None of the above
-        option1 = ["f(x) \\text{ is close to or exactly } %s \\text{ when } x \\text{ is large enough}." %x_0, "", 0]
-        option2 = ["f(x) \\text{ is close to or exactly } %s \\text{ when } x \\text{ is large enough}." %y_0, "", 0]
-        option3 = ["f(x) \\text{ is undefined when } x \\text{ is large enough}.", "", 0]
-        option4 = ["x \\text{ is undefined when } f(x) \\text{ is large enough}.", "", 0]
+        option1 = ["f(%d) \\text{ is close to or exactly } %d" %(x_0, y_0), "", 0]
+        option2 = ["f(%d) \\text{ is close to or exactly } %d" %(y_0, x_0), "", 0]
+        option3 = ["f(%d) \\text{ is undefined }" %(x_0), "", 0]
+        option4 = ["f(%d) \\text{ is undefined }" %(y_0), "", 0]
         option5 = ["\\text{None of the above are always true.}", "", 1]
 
-generalComment = "\\textbf{General comments:} The limit tells you what happens as the $x$-values approach $%s$. It says \\textbf{absolutely nothing} about what is happening exactly at $f(x)$!" %x_0
+generalComment = "The limit tells you what happens as the $x$-values approach $%s$. It says \\textbf{absolutely nothing} about what is happening exactly at $f(%s)$!" %(x_0, x_0)
 
 answerList = [option1, option2, option3, option4]
 random.shuffle(answerList)
@@ -108,6 +108,6 @@ for checkLetter in letters:
 
 # String, Math Mode, or Graph
 displayStemType="String"
-displayProblemType="Math Mode"
+displayProblemType="String"
 displayOptionsType="Math Mode"
 writeToDatabase(DIR, database_name, question_list, thisQuestion, displayStemType, displayStem, displayProblemType, displayProblem, displayOptionsType, choices, choiceComments, displaySolution, answerLetter, generalComment)

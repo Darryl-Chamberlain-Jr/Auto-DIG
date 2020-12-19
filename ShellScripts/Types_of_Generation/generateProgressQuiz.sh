@@ -19,22 +19,36 @@ choose_quiz_number=$(zenity \
     "1 - This creates Modules 1-2." \
     "2 - This creates Modules 1-4." \
     "3 - This creates Modules 1-6" \
-    "4 - This creates Modules 1-8" \
-    "5 - This creates Modules 1-8, 9M-10M, and 9L-10L" \
+    "Makeup 1 - This creates Modules 1-8." \
+    "4 - This creates Modules 1-8, 9M-10M, and 9L-10L" \
+    "5 - This creates Modules 1-8, 9M-12M, and 9L-12L" \
     "6 - This creates Modules 1-8, 9M-12M, and 9L-12L" \
+    "Makeup 2 - This creates Modules 1-8, 9M-12M, and 9L-12L" \
     "7 - This creates Modules 1-8, 9M-12M, and 9L-12L" \
     "8 - This creates Modules 1-8, 9M-12M, and 9L-12L" \
     "9 - This creates Modules 1-8, 9M-12M, and 9L-12L" \
+    "Makeup 3 - This creates Modules 1-8, 9M-12M, and 9L-12L" \
     "10 - This creates Modules 1-8, 9M-12M, and 9L-12L" \
 )
 escape=$?
 checkForEscape $escape
 if [ "$choose_quiz_number" == "10 - This creates Modules 1-8, 9M-12M, and 9L-12L" ]; then
     quiz_number=10
+elif [ "$choose_quiz_number" == "Makeup 1 - This creates Modules 1-8." ]; then
+    quiz_number=11
+elif [ "$choose_quiz_number" == "Makeup 2 - This creates Modules 1-8, 9M-12M, and 9L-12L" ]; then
+    quiz_number=12
+elif [ "$choose_quiz_number" == "Makeup 3 - This creates Modules 1-8, 9M-12M, and 9L-12L" ]; then
+    quiz_number=13
 else
     quiz_number=$(( ${choose_quiz_number:0:1} ))
 fi
-exam_display_name="Progress Quiz ${quiz_number}"
+if [ $quiz_number -lt 11 ]; then
+    exam_display_name="Progress Quiz ${quiz_number}"
+else
+    makeup_number=$(( $quiz_number-10 ))
+    exam_display_name="Makeup Progress Quiz ${makeup_number}"
+fi
 question_list_by_module
 if [ $quiz_number -eq 1 ]; then
     module_names=( "1" "2" )
@@ -54,13 +68,13 @@ elif [ $quiz_number -eq 3 ]; then
     number_of_questions=$(( 10 * ${#module_names[@]} ))
     list_of_assessment_titles=( "${exam_display_name}" "${exam_display_name}" "${exam_display_name}" "${exam_display_name}" "${exam_display_name}" "${exam_display_name}")
     list_of_file_names=( "Module1" "Module2" "Module3" "Module4" "Module5" "Module6")
-elif [ $quiz_number -eq 4 ]; then
+elif [ $quiz_number -eq 11 ]; then
     module_names=( "1" "2" "3" "4" "5" "6" "7" "8")
     number_of_assessments=${#module_names[@]}
     number_of_questions=$(( 10 * ${#module_names[@]} ))
     list_of_assessment_titles=( "${exam_display_name}" "${exam_display_name}" "${exam_display_name}" "${exam_display_name}" "${exam_display_name}" "${exam_display_name}" "${exam_display_name}" "${exam_display_name}")
     list_of_file_names=( "Module1" "Module2" "Module3" "Module4" "Module5" "Module6" "Module7" "Module8")
-elif [ $quiz_number -eq 5 ]; then
+elif [ $quiz_number -eq 4 ]; then
     module_names=( "1" "2" "3" "4" "5" "6" "7" "8" "9M" "10M" "9L" "10L")
     number_of_assessments=${#module_names[@]}
     number_of_questions=$(( 10 * ${#module_names[@]} ))

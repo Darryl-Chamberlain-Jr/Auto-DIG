@@ -58,5 +58,3 @@ question_list_by_module
 eval question_list_0=( \"\${module${singleModule}questionList[@]}\" )
 list_of_assessment_titles=( $file_name )
 list_of_file_names=( $file_name )
-
-echo ${question_list[@]}

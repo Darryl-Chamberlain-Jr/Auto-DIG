@@ -14,9 +14,10 @@ try:
     total=len(master_list)
     for index in range(0, total):
         question_dict=master_list[index]
-        if [question_dict.get("Code Name") == code_name]:
+        if question_dict.get("Code Name") == code_name:
             print(question_dict.get(key))
             break
+        index+=1
 except:
     print("Question does not appear.")
 finally:
