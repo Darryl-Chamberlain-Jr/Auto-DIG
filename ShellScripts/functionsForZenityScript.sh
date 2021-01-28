@@ -1,13 +1,18 @@
-function defineVersionList {
-    fullVersionList=( "A" "B" "C" "D" "E" "F" "G" "H" "I" "J" "K" "L" "M" "N" "O" "P" "Q" "R" "S" "T" "U" "V" "W" "X" "Y" "Z")
-    version_counter=0
-    version_list=()
-    while [ $version_counter -lt $number_of_versions ]
-    do
-        version_list=( "${version_list[@]}" "${fullVersionList[$version_counter]}" )
-        version_counter=$(( version_counter+1 ))
-    done
+# function checkForEscape determines whether the user canceled rather than answered a prompt or canceled while the exam was generating.
+function checkForEscape {
+    escape=$1
+    if [ $escape -eq 1 ]; then
+    zenity \
+        --error \
+        --height=100 \
+        --width=200 \
+        --text="You canceled the assessment generation early."
+    pkill eog
+    exit 0
+    fi
 }
+
+# function question_list_by_module lists usable code question structure by module. Generating a MAC 1105 single module or Progress Quiz [from ${typeOfGeneration} in zenityAutoDIG.sh] uses these arrays.
 function question_list_by_module {
     ### List of all questions for each module
     module1questionList=( "divideComplex" "multiplyComplex" "orderOfOperations" "subgroupComplex" "subgroupReal" "divideComplexCopy" "multiplyComplexCopy" "orderOfOperationsCopy" "subgroupComplexCopy" "subgroupRealCopy" )
@@ -28,18 +33,8 @@ function question_list_by_module {
     module11LquestionList=( 'evaluateLimitAnalyticalEasy' 'evaluateLimitAnalyticalHard' 'evaluateLimitGraphically' 'interpretLimit' 'oneSidedLimits' 'evaluateLimitAnalyticalEasyCopy' 'evaluateLimitAnalyticalHardCopy' 'evaluateLimitGraphicallyCopy' 'interpretLimitCopy' 'oneSidedLimitsCopy' )
     module12LquestionList=( 'identifyGraphOfRationalFunction' 'identifyHAs' 'identifyHoles' 'identifyOAs' 'identifyVAs' 'identifyGraphOfRationalFunctionCopy' 'identifyHAsCopy' 'identifyHolesCopy' 'identifyOAsCopy' 'identifyVAsCopy' )
 }
-function checkForEscape {
-    escape=$1
-    if [ $escape -eq 1 ]; then
-    zenity \
-        --error \
-        --height=100 \
-        --width=200 \
-        --text="You canceled the assessment generation early."
-    pkill eog
-    exit 0
-    fi
-}
+
+# Used when creating a flexible assessment. Converts master database info to be displayed for the user using zenity.
 function defineAllQuestionsDynamically {
     OIFS=$IFS;
     IFS=";";
