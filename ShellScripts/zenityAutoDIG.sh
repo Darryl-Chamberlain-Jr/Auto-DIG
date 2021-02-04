@@ -2,12 +2,41 @@ DIR="home/dchamberlain31/git-repos/Auto-DIG"
 titleOfProgram="Auto-DIG v.0.3"
 # cd to ShellScripts included to make python graphing work. Not sure why at this point.
 cd /$DIR/ShellScripts/
-# Call to use functions defined in functionsForZenityScript.sh
-source /${DIR}/ShellScripts/./functionsForZenityScript.sh
-# Fun way to start program. Practice with espeak and eog. Not necessary to carry over to standalone app.
-eog --fullscreen /${DIR}/ImagesForApp/NewAutoDIGimage.png & sleep 1 && espeak "Welcome back doctor" & sleep 5 && espeak "Initiating diagnostic procedures" && pkill eog
-eog --fullscreen /${DIR}/ImagesForApp/Auto-DIG_background.jpg </dev/null &>/dev/null &
-sleep 3
+
+### BEGIN DEFINING ALL FUNCTIONS ###
+# function checkForEscape determines whether the user canceled rather than answered a prompt or canceled while the exam was generating.
+function checkForEscape {
+    escape=$1
+    if [ $escape -eq 1 ]; then
+    zenity \
+        --error \
+        --height=100 \
+        --width=200 \
+        --text="You canceled the assessment generation early."
+    pkill eog
+    exit 0
+    fi
+}
+# Used when creating a flexible assessment. Converts master database info to be displayed for the user using zenity.
+function defineAllQuestionsDynamically {
+    OIFS=$IFS;
+    IFS=";";
+    Length=$(python3 /${DIR}/PythonScripts/return_all_values_of_key.py "Length" $DIR)
+    CodeNames=($(python3 /${DIR}/PythonScripts/return_all_values_of_key.py "Code Name" $DIR))
+    Folder=($(python3 /${DIR}/PythonScripts/return_all_values_of_key.py "Folder" $DIR))
+    Subfolder=($(python3 /${DIR}/PythonScripts/return_all_values_of_key.py "Subfolder" $DIR))
+    TopicNumber=($(python3 /${DIR}/PythonScripts/return_all_values_of_key.py "Topic Number" $DIR))
+    ObjectiveNumber=($(python3 /${DIR}/PythonScripts/return_all_values_of_key.py "Objective Number" $DIR))
+    Topic=($(python3 /${DIR}/PythonScripts/return_all_values_of_key.py "Topic" $DIR))
+    ShortDescription=($(python3 /${DIR}/PythonScripts/return_all_values_of_key.py "Short Description" $DIR))
+    LongDescription=($(python3 /${DIR}/PythonScripts/return_all_values_of_key.py "Long Description" $DIR))
+    Notes=($(python3 /${DIR}/PythonScripts/return_all_values_of_key.py "Notes" $DIR))
+    Author=($(python3 /${DIR}/PythonScripts/return_all_values_of_key.py "Author" $DIR))
+    Date=($(python3 /${DIR}/PythonScripts/return_all_values_of_key.py "Date" $DIR))
+    IFS=$OIFS
+}
+### END DEFINING ALL FUNCTIONS ###
+
 # Keeps program running until the user exists.
 while true
 do
@@ -20,9 +49,6 @@ do
         --text '<b> What do you want to do?</b>' \
         --column 'Generate...' \
         "One or more flexible assessments" \
-        "MAC 1105 progress quiz" \
-        "MAC 1105 single module" \
-        "MAC 1105 final exam" \
         "Exit the program"
     )
     checkForEscape $?
@@ -62,26 +88,71 @@ do
         version_counter=$(( version_counter+1 ))
     done
     # Takes user input to either generate a preset assessment or prompts the user toward creating an assessment of their creation.
-    if [ "$typeOfGeneration" == "MAC 1105 progress quiz" ]; then
-        source /${DIR}/ShellScripts/Types_of_Generation/./generateProgressQuiz.sh
-    elif [ "$typeOfGeneration" == "MAC 1105 single module" ]; then
-        source /${DIR}/ShellScripts/Types_of_Generation/./generateSingleModule.sh
-    elif [ "$typeOfGeneration" == "MAC 1105 final exam" ]; then
-        source /${DIR}/ShellScripts/Types_of_Generation/./generateMAC1105FinalExam.sh
-    elif [ "$typeOfGeneration" == "One or more flexible assessments" ]; then
-        source /${DIR}/ShellScripts/Types_of_Generation/./generateFlexibleAssessment.sh
-    fi
-    # Start time and estimated_run_time are used to estimate how long the program ran for. Not necessary for standalone app.
-    StartTime=$( date +'%s' )
-    # Estimated run time calculated as 5 seconds per question, with 1 error per 10 questions run.
-    estimated_run_time=$( echo "scale=2;(5.5*$number_of_questions*$number_of_versions)/60" | bc )
+    number_of_assessments=$(zenity \
+        --title="${titleOfProgram[@]}" \
+        --scale \
+        --text="How many assessments do you want to create?" \
+        --value=1 \
+        --min-value=1 \
+        --max-value=30 \
+        --step=1
+    )
+    checkForEscape $?
+    number_of_questions=0
+    for ((index=0;index<number_of_assessments;index++))
+    do
+        # Zenity - NAME YOUR ASSESSMENT - exam_display_name
+        exam_display_name=$(zenity \
+            --title="${titleOfProgram[@]}" \
+            --entry \
+            --text 'What do you want to call this assessment?'
+        )
+        checkForEscape $?
+        # Zenity - SHORT FILE NAME - file_name
+        file_name=$(zenity \
+            --title="${titleOfProgram[@]}" \
+            --entry \
+            --text 'Give a short, NO SPACES, name to your assessment.'
+        )
+        checkForEscape $?
+        question_list_name="question_list_${index}"
+        # Zenity - CHOOSE YOUR QUESTIONS - question_list_index
+        defineAllQuestionsDynamically
+        temp_question_list=$(
+        for i in $(seq 0 $((  Length - 1 )) )
+        do
+            echo "FALSE"
+            echo ${CodeNames[i]}
+            echo ${ObjectiveNumber[i]}
+            echo ${ShortDescription[i]}
+            echo ${LongDescription[i]}
+            echo ${Notes[i]}
+            echo ${Author[i]}
+            echo ${Date[i]}
+        done | zenity \
+        --title="Auto-DIG v.0.2" \
+        --height=600 \
+        --width=1000 \
+        --list \
+        --checklist \
+        --separator=" " \
+        --multiple \
+        --text '<b> Which questions would you like to include?</b>' \
+        --column 'Choose' --column 'File name' --column 'Obj. #' --column 'Short Description' --column 'Long Description' --column 'Notes' --column 'Author' --column 'Date'
+        )
+        checkForEscape $?
+        eval "question_list_${index}=( ${temp_question_list[@]} )"
+        # APPEND ASSESSMENT NAME TO list_of_assessment_titles
+        list_of_assessment_titles=( "${list_of_assessment_titles[@]}" "${exam_display_name}" )
+        # APPEND SHORT FILE NAME TO list_of_file_names
+        list_of_file_names=( "${list_of_file_names[@]}" "$file_name" )
+        number_of_questions=$(( number_of_questions + ${#temp_question_list[@]} ))
+    done
     # BEGINS zenity pipe to create assessments.
     (
     # Clears old keys and pdfs
     rm -rf /${DIR}/Keys/*
     rm -rf /${DIR}/BuildExams/*
-    # Alerts user to the estimated run time. Waits 3 seconds before continuing.
-    echo "#Estimated run time for ${number_of_questions} questions and ${number_of_versions} version: ${estimated_run_time} minutes"; sleep 3
     # ${question_step} defines the step used in the progress bar display. Increases step after each question data is saved in the database.
     question_step=$( echo "scale=2;100/ ($number_of_questions*$number_of_versions)" | bc )
     # ${counter} to track progress bar. Starts at 0 and increases by question_step.
@@ -124,8 +195,8 @@ do
             # Name for the database based on the version of the exam. This can later be collapsed into a single database but was easier to separate for now.
             full_db_name="$db_name-Ver$version"
             # Python script to create .tex file portions depending on the phrase declaration.
-            python3 /$DIR/PythonScripts/ScriptsForPDFs/createFiles.py "Create Exam File" $file_name "$exam_display_name" "$footnote_left" "$footnote_right" $version $DIR
-            python3 /$DIR/PythonScripts/ScriptsForPDFs/createFiles.py "Create Key File" $file_name "$exam_display_name" "$footnote_left" "$footnote_right" $version $DIR
+            python3 /$DIR/PythonScripts/createFiles.py "Create Exam File" $file_name "$exam_display_name" "$footnote_left" "$footnote_right" $version $DIR
+            python3 /$DIR/PythonScripts/createFiles.py "Create Key File" $file_name "$exam_display_name" "$footnote_left" "$footnote_right" $version $DIR
             # for loop to create and save question data.
             for question in ${question_list[@]}
             do
@@ -133,7 +204,7 @@ do
                 echo "$counter"
                 echo "#Running '${question}' for Version ${version}."
                 # Defines name of python script to be called later. Saves all metadata for question to the new database ${full_db_name}.
-                run_save_metadata="/$DIR/PythonScripts/ScriptsForDatabases/saveMetadataToNewDatabase.py"
+                run_save_metadata="/$DIR/PythonScripts/saveMetadataToNewDatabase.py"
                 # Unclear why this is needed. Will need to investigate. saveMetadataToNewDatabase.py uses absolute calls.
                 cd /$DIR/Code
                 python3 $run_save_metadata $DIR $question "$full_db_name" $question_list_name
@@ -147,7 +218,7 @@ do
                         echo "#An error occured while running ${question} for version ${version}. Don't worry - we will continue to try again. Attempt: ${error_counter}"
                     fi
                     # This python script is used to dynamically define the corresponding folder and subfolder the code is housed in based on a question's metadata.
-                    run_return_key_value_from_db="/$DIR/PythonScripts/ScriptsForDatabases/return_key_value_from_db.py"
+                    run_return_key_value_from_db="/$DIR/PythonScripts/return_key_value_from_db.py"
                     code_folder=$( python3 $run_return_key_value_from_db $DIR $full_db_name $question_list_name $question "Folder" )
                     code_subfolder=$( python3 $run_return_key_value_from_db $DIR $full_db_name $question_list_name $question "Subfolder" )
                     # Easier-to-read script name.
@@ -159,15 +230,15 @@ do
                 done # Question data has now been saved with the metadata.
 
                 # Python script to import question data saved in the database into a latex file.
-                python3 /$DIR/PythonScripts/ScriptsForPDFs/printQuestions.py "Print questions to exam" $DIR $file_name $full_db_name $question_list_name $question $version
-                python3 /$DIR/PythonScripts/ScriptsForPDFs/printQuestions.py "Print questions to key" $DIR $file_name $full_db_name $question_list_name $question $version
+                python3 /$DIR/PythonScripts/printQuestions.py "Print questions to exam" $DIR $file_name $full_db_name $question_list_name $question $version
+                python3 /$DIR/PythonScripts/printQuestions.py "Print questions to key" $DIR $file_name $full_db_name $question_list_name $question $version
                 # Increments the ${counter} by ${question_step} to display progress to user.
                 counter=$( echo "scale=2;$counter+$question_step" | bc )
             done
 
             # Python script to cap latex files.
-            python3 /$DIR/PythonScripts/ScriptsForPDFs/createFiles.py "Finish Exam File" $file_name "$exam_display_name" "$footnote_left" "$footnote_right" $version $DIR
-            python3 /$DIR/PythonScripts/ScriptsForPDFs/createFiles.py "Finish Key File" $file_name "$exam_display_name" "$footnote_left" "$footnote_right" $version $DIR
+            python3 /$DIR/PythonScripts/createFiles.py "Finish Exam File" $file_name "$exam_display_name" "$footnote_left" "$footnote_right" $version $DIR
+            python3 /$DIR/PythonScripts/createFiles.py "Finish Key File" $file_name "$exam_display_name" "$footnote_left" "$footnote_right" $version $DIR
 
             # Points to where latex files will be built. This keeps aux latex files separate from .tex and .pdfs associated to the assessment.
             cd /$DIR/BuildExams/
@@ -195,7 +266,7 @@ do
         done
     done
     # Creates master key which includes ALL answers for ALL versions. Order of question structures was kept static earlier to ensure question structures for each version correspond by number.
-    python3 /$DIR/PythonScripts/ScriptsForCSVs/create_grading_CSVs.py $DIR $db_name ${#version_list[@]} "${version_list[@]}" ${#code_name_array[@]} "${code_name_array[@]}" "${question_list_name_array[@]}"
+    python3 /$DIR/PythonScripts/create_grading_CSVs.py $DIR $db_name ${#version_list[@]} "${version_list[@]}" ${#code_name_array[@]} "${code_name_array[@]}" "${question_list_name_array[@]}"
     # Copies master key to the keys folder for the user.
     cp -r /$DIR/Keys/master_key_${db_name}.csv /$DIR/CompleteExam/"$exam_display_name"/Keys
 
@@ -213,7 +284,7 @@ do
     cp -r /$DIR/Figures/. /$DIR/CompleteExam/"$exam_display_name"/Figures
 
     # Final declaration to user that exam has been completed.
-    xdg-open /${DIR}/CompleteExam/"$exam_display_name"; sleep 3
+    xdg-open /${DIR}/CompleteExam/"$exam_display_name"; sleep 1
     echo "100"
     echo "#Done! Click 'Ok' to see the time results."
     ) |
@@ -226,38 +297,11 @@ do
     #  --auto-close
     # DO NOT USE AUTO-CLOSE! There is currently at least one echo somewhere with a value over 100, which is signaling zenity to close the process early while the process wants to continue, causing a broken pipe.
     checkForEscape $?
-    # Checks the time that the program ran for. In the future, it would be smarter to move both the begin/end time into the pipe and save it somewhere so it can be called after the pipe is complete. Currently the end time doesn't happen until AFTER the user clicks OK and so isn't perfectly accurate.
-    EndTime=$( date +'%s' )
-    # Defines times variables used to calculate how long the exam ran for and how that compared with the estimate. Not necessary going forward but was interesting for reporting usefulness of program.
-    currentDayTime=$( date +'%H:%M on %m/%d/%Y' )
-    TotalRunTimeSeconds=$(( EndTime-StartTime ))
-    RunTimeMinutes=$(( (EndTime-StartTime) / 60 ))
-    RunTimeSecondsRemainder=$(( TotalRunTimeSeconds-(RunTimeMinutes*60) ))
-    estimated_run_time_seconds_float=$( echo "scale=0;(60*$estimated_run_time)" | bc )
-    estimated_run_time_seconds=${estimated_run_time_seconds_float%.*}
-    estimated_run_time_minutes=$(( (estimated_run_time_seconds) / 60 ))
-    estimated_run_time_seconds_remainder=$(( estimated_run_time_seconds - (estimated_run_time_minutes*60) ))
-    off_by_seconds=$(( estimated_run_time_seconds-TotalRunTimeSeconds ))
-    if [[  $off_by_seconds -lt 0 ]]; then
-        off_by_seconds=$(( -1*off_by_seconds ))
-        over_or_under="over"
-    else
-        over_or_under="under"
-    fi
-    off_by_seconds_minutes=$(( (off_by_seconds) / 60 ))
-    off_by_seconds_remainder=$(( off_by_seconds - (off_by_seconds_minutes*60) ))
-    if [[ $off_by_seconds_minutes -eq 0 ]]; then
-        comparison_statement="${off_by_seconds_remainder} seconds"
-    else
-        comparison_statement="${off_by_seconds_minutes} minutes and ${off_by_seconds_remainder} seconds"
-    fi
     # Alerts user to the amount of time that passed and how that compares with estimates.
     zenity \
         --title="${titleOfProgram[@]}" \
         --height=100 \
         --width=400 \
         --info \
-        --text="Auto-DIG has finished running at ${currentDayTime}. It took ${RunTimeMinutes} minutes and ${RunTimeSecondsRemainder} seconds. We estimated it would take ${estimated_run_time_minutes} minutes and ${estimated_run_time_seconds_remainder} so our estimate was ${over_or_under} by ${comparison_statement}."
+        --text="Auto-DIG has finished running."
 done
-# Kills the background now that the program is done.
-pkill eog
