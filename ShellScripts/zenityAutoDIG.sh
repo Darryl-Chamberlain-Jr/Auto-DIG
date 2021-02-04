@@ -1,4 +1,4 @@
-#DIR="home/dchamberlain31/git-repos/Auto-DIG"
+DIR="home/dchamberlain31/git-repos/Auto-DIG"
 titleOfProgram="Auto-DIG v.0.3"
 # cd to ShellScripts included to make python graphing work. Not sure why at this point.
 cd /$DIR/ShellScripts/

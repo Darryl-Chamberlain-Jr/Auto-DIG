@@ -53,8 +53,11 @@ typesToChooseFrom=["linear", "direct", "exponential", "logarithmic"]
 problemType = typesToChooseFrom[random.randint(0, 3)]
 initialPop, populations = generateStem(problemType)
 displayStem = "A town has an initial population of %d. The town's population for the next 10 years is provided below. Which type of function would be most appropriate to model the town's population?" %initialPop
-displayProblem = populations
-
+#header for the table
+header_row = ['\\textbf{Year}', 1, 2, 3, 4, 5, 6, 7, 8, 9]
+populations.insert(0, '\\textbf{Pop}')
+population_row = populations
+displayProblem = [header_row, population_row]
 generalComment = "We are trying to compare the growth rate of the population. Growth rates can be characterized from slowest to fastest as: logarithmic, indirect, linear, direct, exponential. The best way to approach this is to first compare it to linear (is it linear, faster than linear, or slower than linear)? If faster, is it as fast as exponential? If slower, is it as slow as logarithmic?"
 
 linearAnswer = 0

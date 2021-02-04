@@ -36,14 +36,31 @@ def print_question_to_exam(database_info, version, file_name, DIR):
 \end{center}
 """ %(code_name, version))
     elif display_problem_type=="Table":
+        # display_problem is now an array. Organize as [ row_1, row_2, row_3, ..., row_m ]
+            # len(display_problem) is number of rows
+            # len(display_problem[0]) is number of columns
+        num_rows=len(display_problem)
+        num_cols=len(display_problem[0])
         examFile.write('\n')
         examFile.write('\n')
-        examFile.write(r"""
-\begin{tabular}{c|c|c|c|c|c|c|c|c|c}
-\textbf{Year} & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 \tabularnewline
-\hline
-\textbf{Pop.} & %s & %s & %s & %s & %s & %s & %s & %s & %s
-\end{tabular} """ %(display_problem[0], display_problem[1], display_problem[2], display_problem[3], display_problem[4], display_problem[5], display_problem[6], display_problem[7], display_problem[8]) )
+        examFile.write('\\begin{tabular}{')
+        for j in range(num_cols-1):
+            examFile.write('c|')
+        # Ends begin tabular and doesn't have a bar at the end.
+        examFile.write('c}')
+        examFile.write('\n')
+        # Iterate through the rows and print and & between with a \tabularnewline at the end. Since last row doesn't need one it is done at the end after the loop finishes
+        for i in range(num_rows-1):
+            for j in range(num_cols-1):
+                examFile.write(r"%s &" %display_problem[i][j])
+            # Last item in row does not have an &
+            examFile.write(r"%s" %display_problem[i][num_cols-1])
+            examFile.write('\\tabularnewline \\hline')
+            examFile.write('\n')
+        for j in range(num_cols-1):
+            examFile.write(r"%s &" %display_problem[num_rows-1][j])
+        examFile.write(r"%s" %display_problem[num_rows-1][num_cols-1])
+        examFile.write('\end{tabular}')
     # Begins enumerate for options
     examFile.write(r"\begin{enumerate}[label=\Alph*.]")
     examFile.write('\n')
@@ -102,15 +119,31 @@ def print_question_to_key(database_info, version, code_name, file_name, DIR):
 """ %(code_name, version))
         keyFile.write('\n\n')
     elif display_problem_type=="Table":
+        # display_problem is now an array. Organize as [ row_1, row_2, row_3, ..., row_m ]
+            # len(display_problem) is number of rows
+            # len(display_problem[0]) is number of columns
+        num_rows=len(display_problem)
+        num_cols=len(display_problem[0])
         keyFile.write('\n')
         keyFile.write('\n')
-        keyFile.write(r"""
-\begin{tabular}{c|c|c|c|c|c|c|c|c|c}
-\textbf{Year} & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 \tabularnewline
-\hline
-\textbf{Pop.} & %s & %s & %s & %s & %s & %s & %s & %s & %s
-\end{tabular} """ %(display_problem[0], display_problem[1], display_problem[2], display_problem[3], display_problem[4], display_problem[5], display_problem[6], display_problem[7], display_problem[8]) )
-    keyFile.write('\n\n')
+        keyFile.write('\\begin{tabular}{')
+        for j in range(num_cols-1):
+            keyFile.write('c|')
+        # Ends begin tabular and doesn't have a bar at the end.
+        keyFile.write('c}')
+        keyFile.write('\n')
+        # Iterate through the rows and print and & between with a \tabularnewline at the end. Since last row doesn't need one it is done at the end after the loop finishes
+        for i in range(num_rows-1):
+            for j in range(num_cols-1):
+                keyFile.write(r"%s &" %display_problem[i][j])
+            # Last item in row does not have an &
+            keyFile.write(r"%s" %display_problem[i][num_cols-1])
+            keyFile.write('\\tabularnewline \\hline')
+            keyFile.write('\n')
+        for j in range(num_cols-1):
+            keyFile.write(r"%s &" %display_problem[num_rows-1][j])
+        keyFile.write(r"%s" %display_problem[num_rows-1][num_cols-1])
+        keyFile.write('\end{tabular}')
     if display_options_type=="String":
         keyFile.write("The solution is %s, which is option %s." %(solution, answer_letter))
         keyFile.write('\n')
@@ -195,12 +228,31 @@ def print_question_to_feedback(database_info, student_answer_letter, version, co
 \end{center}
 """ %(code_name, version))
     elif display_problem_type=="Table":
-        feedbackFile.write(r"""
-\begin{tabular}{c|c|c|c|c|c|c|c|c|c}
-\textbf{Year} & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 \tabularnewline
-\hline
-\textbf{Pop.} & %s & %s & %s & %s & %s & %s & %s & %s & %s
-\end{tabular} """ %(populations[0], populations[1], populations[2], populations[3], populations[4], populations[5], populations[6], populations[7], populations[8]) )
+        # display_problem is now an array. Organize as [ row_1, row_2, row_3, ..., row_m ]
+            # len(display_problem) is number of rows
+            # len(display_problem[0]) is number of columns
+        num_rows=len(display_problem)
+        num_cols=len(display_problem[0])
+        feedbackFile.write('\n')
+        feedbackFile.write('\n')
+        feedbackFile.write('\\begin{tabular}{')
+        for j in range(num_cols-1):
+            feedbackFile.write('c|')
+        # Ends begin tabular and doesn't have a bar at the end.
+        feedbackFile.write('c}')
+        feedbackFile.write('\n')
+        # Iterate through the rows and print and & between with a \tabularnewline at the end. Since last row doesn't need one it is done at the end after the loop finishes
+        for i in range(num_rows-1):
+            for j in range(num_cols-1):
+                feedbackFile.write(r"%s &" %display_problem[i][j])
+            # Last item in row does not have an &
+            feedbackFile.write(r"%s" %display_problem[i][num_cols-1])
+            feedbackFile.write('\\tabularnewline \\hline')
+            feedbackFile.write('\n')
+        for j in range(num_cols-1):
+            feedbackFile.write(r"%s &" %display_problem[num_rows-1][j])
+        feedbackFile.write(r"%s" %display_problem[num_rows-1][num_cols-1])
+        feedbackFile.write('\end{tabular}')
     # displayCorrectSolution
         # display_options_type: String, Math Mode, or Graph
         if display_options_type=="String":
