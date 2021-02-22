@@ -4,6 +4,7 @@ Exec=/bin/startAutoDIG.sh
 Name=Auto-DIG
 GenericName=Exam Generation App
 Comment=Starts the shell script that contains GUI
+Encoding=UTF-8
 Terminal=false
 Type=Application
 Icon=autoDIG

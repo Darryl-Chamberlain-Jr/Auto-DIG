@@ -236,7 +236,7 @@ question_list = sys.argv[5]
 code_name = sys.argv[6]
 version = sys.argv[7]
 
-ql = shelve.open(f'/{DIR}/Databases/{database_name}.db')
+ql = shelve.open(f'/{DIR}/Databases/{database_name}')
 try:
     master_list = ql[f'{question_list}']
     total=len(master_list)
@@ -267,7 +267,7 @@ try:
                 exit(1)
             break
 except:
-    print(f"{code_name} has not been loaded into database {database_name}.db.")
+    print(f"{code_name} has not been loaded into database {database_name}.")
     exit(1)
 finally:
     print(f"The question list {question_list} has been printed into {file_name}{version}.tex.")

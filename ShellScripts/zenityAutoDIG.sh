@@ -1,13 +1,13 @@
-DIR="home/dchamberlain31/git-repos/Auto-DIG"
+DIR="home/pi/git-repos/Auto-DIG"
 titleOfProgram="Auto-DIG v.0.3"
+# Create a fresh questionMetadata.db
+rm /$DIR/Databases/questionMetadata.db
+python3 /$DIR/PythonScripts/ScriptsForDatabases/store_original_metadata.py $DIR
+python3 /$DIR/PythonScripts/ScriptsForDatabases/store_copy_metadata.py $DIR
 # cd to ShellScripts included to make python graphing work. Not sure why at this point.
 cd /$DIR/ShellScripts/
-###########################################
+###
 source /${DIR}/ShellScripts/./functionsForZenityScript.sh
-#eog --fullscreen /${DIR}/ImagesForApp/NewAutoDIGimage.png & espeak "Initiating diagnostic procedures" && pkill eog
-eog --fullscreen /${DIR}/ImagesForApp/NewAutoDIGimage.png & sleep 1 && espeak "Welcome back doctor" & sleep 5 && espeak "Initiating diagnostic procedures" && pkill eog
-eog --fullscreen /${DIR}/ImagesForApp/Auto-DIG_background.jpg </dev/null &>/dev/null &
-sleep 3
 while true
 do
     # Allows user to choose what type of assessment they want to generate. Uses preset question lists to create assessments.
@@ -38,14 +38,6 @@ do
     checkForEscape $escape
     db_name="$(( 1000 + RANDOM % 9000 ))-$(( 1000 + RANDOM % 9000 ))"
     footnote_left=$db_name
-    #zenity \
-    #    --title="${titleOfProgram[@]}" \
-    #    --height=100 \
-    #    --width=400 \
-    #    --info \
-    #    --text="You have been assigned ${db_name}. You'll need this to provide students specific feedback. Don't worry - it will be printed on each pdf."
-    #escape=$?
-    #checkForEscape $escape
     number_of_versions=$(zenity \
         --title="${titleOfProgram[@]}" \
         --scale \
@@ -115,7 +107,7 @@ do
                 echo "#Running '${question}' for Version ${version}."
                 run_save_metadata="/$DIR/PythonScripts/ScriptsForDatabases/saveMetadataToNewDatabase.py"
                 cd /$DIR/Code
-                python3 $run_save_metadata $DIR $question "$full_db_name" $question_list_name
+                python3 $run_save_metadata "save" $DIR $question "$full_db_name" $question_list_name
                 return_error=1
                 error_counter=0
                 while [ $return_error -ne 0 ]

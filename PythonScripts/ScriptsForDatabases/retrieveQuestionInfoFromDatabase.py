@@ -4,7 +4,7 @@ import sys
 DIR = sys.argv[1]
 database_name = sys.argv[2]
 
-ql = shelve.open(f'/{DIR}/Databases/{database_name}.db')
+ql = shelve.open(f'/{DIR}/Databases/{database_name}')
 for dict_item in list(ql.keys()):
     try:
         dict = ql[f'{dict_item}']

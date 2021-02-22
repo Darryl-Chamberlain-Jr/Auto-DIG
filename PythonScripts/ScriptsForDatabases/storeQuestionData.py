@@ -1,7 +1,7 @@
 import shelve
 
 def writeToDatabase(DIR, database_name, question_list, this_question, display_stem_type, display_stem, display_problem_type, display_problem, display_options_type, choices, choice_comments, solution, answer_letter, general_comment):
-    qdb=shelve.open(f"/{DIR}/Databases/{database_name}.db")
+    qdb=shelve.open(f"/{DIR}/Databases/{database_name}")
     temp_question_list=qdb[f"{question_list}"]
     total=len(temp_question_list)
     for index in range(0, total):

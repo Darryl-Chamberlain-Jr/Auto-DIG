@@ -39,11 +39,11 @@ def generateBlocks():    # Create an array of 6 distinct naturals, then make som
     return blocks
 def generateSolution(blocks):
     a, b, c, d, e, f = blocks
-    basicLinearEquation = a * (b * x + c) - d * ( x * e + f)
-    solution = solve(basicLinearEquation, x)
-    if len(solution) == 0:
-        solution=[0]
-    return solution[0]
+    linear_1 = numpy.poly1d([a*b, a*c])
+    linear_2 = numpy.poly1d([d*e, d*f])
+    difference_of_linear_functions = linear_1 - linear_2
+    solution = difference_of_linear_functions.r[0]
+    return solution
 def generateDistractors(blocks):
     a, b, c, d, e, f = blocks
     distractor1 = generateSolution([a, b, -c, d, e, f])    # not distributing the negative in front of the first parentheses correctly

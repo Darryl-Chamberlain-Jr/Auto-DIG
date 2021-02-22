@@ -19,7 +19,7 @@ generalForm = {
 gimme=sys.argv[1]
 DIR=sys.argv[2]
 
-ql = shelve.open(f'/{DIR}/Databases/questionMetadata.db')
+ql = shelve.open(f'/{DIR}/Databases/questionMetadata')
 try:
     masterList = ql['masterMetadata']
     if gimme=="Length":

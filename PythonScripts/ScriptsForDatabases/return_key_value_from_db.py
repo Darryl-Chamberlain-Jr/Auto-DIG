@@ -7,7 +7,7 @@ question_list = sys.argv[3]
 code_name = sys.argv[4]
 key = sys.argv[5]
 
-ql = shelve.open(f'/{DIR}/Databases/{database_name}.db')
+ql = shelve.open(f'/{DIR}/Databases/{database_name}')
 
 try:
     master_list = ql[f'{question_list}']

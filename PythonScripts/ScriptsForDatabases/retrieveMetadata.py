@@ -4,7 +4,7 @@ import sys
 database_name = sys.argv[1]
 question_list = sys.argv[2]
 
-ql = shelve.open(f'../../Databases/{database_name}.db')
+ql = shelve.open(f'../../Databases/{database_name}')
 
 try:
     print(list(ql.keys()))

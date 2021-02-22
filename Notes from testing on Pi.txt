@@ -1,0 +1,15 @@
+Code doesn't work out of the gate. Need to generalize the directory definition. 
+
+Desktop icon created but does not run script. Need to look in to this. 
+
+Database seems to be unusable. May need the startup script to create the master database to start. 
+
+"eog" needs to be installed in startup script.
+
+"zenity" needs to be installed in startup script
+
+Needed to install sympy and matplotlib
+	sudo apt install python3-sympy
+	sudo pip3 install matplotlib
+
+".db" needed to be deleted from all database python scripts.

@@ -1,4 +1,4 @@
-#DIR="home/dchamberlain31/git-repos/Auto-DIG"
+#DIR="home/pi/git-repos/Auto-DIG"
 source /${DIR}/ShellScripts/./functionsForZenityScript.sh
 # NEED TO DEFINE
     # number_of_assessments

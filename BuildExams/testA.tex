@@ -1,0 +1,31 @@
+\documentclass[14pt]{extbook}
+\usepackage{multicol, enumerate, enumitem, hyperref, color, soul, setspace, parskip, fancyhdr} %General Packages
+\usepackage{amssymb, amsthm, amsmath, bbm, latexsym, units, mathtools} %Math Packages
+\everymath{\displaystyle} %All math in Display Style
+% Packages with additional options
+\usepackage[headsep=0.5cm,headheight=12pt, left=1 in,right= 1 in,top= 1 in,bottom= 1 in]{geometry}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{dashrule}  % Package to use the command below to create lines between items
+\newcommand{\litem}[1]{\item#1\hspace*{-1cm}\rule{\textwidth}{0.4pt}}
+\pagestyle{fancy}
+\lhead{test}
+\chead{}
+\rhead{Version A}
+\lfoot{1466-9383}
+\cfoot{}
+\rfoot{testing}
+\begin{document}
+
+\begin{enumerate}
+\litem{
+First, find the equation of the line containing the two points below. Then, write the equation as $ y=mx+b $ and choose the intervals that contain $m$ and $b$.\[ (-5, -10) \text{ and } (-8, 5) \]\begin{enumerate}[label=\Alph*.]
+\item \( m \in [-8, -4] \hspace*{3mm} b \in [32, 37] \)
+\item \( m \in [-8, -4] \hspace*{3mm} b \in [7, 20] \)
+\item \( m \in [-8, -4] \hspace*{3mm} b \in [-6, -3] \)
+\item \( m \in [2, 7] \hspace*{3mm} b \in [42, 46] \)
+\item \( m \in [-8, -4] \hspace*{3mm} b \in [-35, -29] \)
+
+\end{enumerate} }
+\end{enumerate}
+
+\end{document}

@@ -154,3 +154,21 @@ def maybeMakeNegative(rational):
     maybeNegative = int((-1)**random.randint(0, 1))
     rational = maybeNegative * rational
     return rational
+
+# Takes in values that would be saved in a database and prints them instead
+def print_for_debugger(displayStemType, displayStem, displayProblemType, displayProblem, displayOptionsType, choices, choiceComments, displaySolution, answerLetter, generalComment):
+    print(f'Display stem type: {displayStemType}\n')
+    print(f'Display stem: {displayStem}\n')
+    print(f'Display problem type: {displayProblemType}\n')
+    print(f'Display problem: {displayProblem}\n')
+    print(f'Display options type: {displayOptionsType}\n')
+    print(f'Choices:')
+    for i in range(len(choices)):
+        print(f'{choices[i]}')
+    print('\n')
+    print(f'Comments')
+    for i in range(len(choiceComments)):
+        print(f'{choiceComments[i]}')
+    print('\n')
+    print(f'Display solution: {displaySolution}\n')
+    print(f'Display answer letter: {answerLetter}\n')

@@ -4,7 +4,7 @@ import sys
 DIR=sys.argv[1]
 from originalQuestionMetadata import *
 
-ql = shelve.open(f'/{DIR}/Databases/questionMetadata.db')
+ql = shelve.open(f'/{DIR}/Databases/questionMetadata')
 try:
     tempMasterData = ql['masterMetadata']
     for new_dict in masterQuestionList:
