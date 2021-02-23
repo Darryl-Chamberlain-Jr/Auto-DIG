@@ -1,0 +1,128 @@
+\documentclass[14pt]{extbook}
+\usepackage{multicol, enumerate, enumitem, hyperref, color, soul, setspace, parskip, fancyhdr} %General Packages
+\usepackage{amssymb, amsthm, amsmath, bbm, latexsym, units, mathtools} %Math Packages
+\everymath{\displaystyle} %All math in Display Style
+% Packages with additional options
+\usepackage[headsep=0.5cm,headheight=12pt, left=1 in,right= 1 in,top= 1 in,bottom= 1 in]{geometry}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{dashrule}  % Package to use the command below to create lines between items
+\newcommand{\litem}[1]{\item#1\hspace*{-1cm}\rule{\textwidth}{0.4pt}}
+\pagestyle{fancy}
+\lhead{Progress Quiz 5}
+\chead{}
+\rhead{Version C}
+\lfoot{9912-2038}
+\cfoot{}
+\rfoot{Spring 2021}
+\begin{document}
+
+\begin{enumerate}
+\litem{
+To estimate the one-sided limit of the function below as $x$ approaches 6 from the right, which of the following sets of numbers should you use?\[ \frac{\frac{6}{x} - 1}{x - 6} \]\begin{enumerate}[label=\Alph*.]
+\item \( \{ 6.1000, 6.0100, 6.0010, 6.0001 \} \)
+\item \( \{ 5.9000, 5.9900, 5.9990, 5.9999 \} \)
+\item \( \{ 5.9000, 5.9900, 6.0100, 6.1000 \} \)
+\item \( \{ 6.0000, 5.9000, 5.9900, 5.9990 \} \)
+\item \( \{ 6.0000, 6.1000, 6.0100, 6.0010 \} \)
+
+\end{enumerate} }
+\litem{
+Based on the information below, which of the following statements is always true?
+\begin{center}
+    \textit{ As $x$ approaches $\infty$, $f(x)$ approaches $19.245$. }
+\end{center}
+\begin{enumerate}[label=\Alph*.]
+\item \( f(x) \text{ is undefined when } x \text{ is large enough}. \)
+\item \( x \text{ is undefined when } f(x) \text{ is large enough}. \)
+\item \( f(x) \text{ is close to or exactly } 19.245 \text{ when } x \text{ is large enough}. \)
+\item \( f(x) \text{ is close to or exactly } \infty \text{ when } x \text{ is large enough}. \)
+\item \( \text{None of the above are always true.} \)
+
+\end{enumerate} }
+\litem{
+To estimate the one-sided limit of the function below as $x$ approaches 3 from the left, which of the following sets of numbers should you use?\[ \frac{\frac{3}{x} - 1}{x - 3} \]\begin{enumerate}[label=\Alph*.]
+\item \( \{ 2.9000, 2.9900, 2.9990, 2.9999 \} \)
+\item \( \{ 2.9000, 2.9900, 3.0100, 3.1000 \} \)
+\item \( \{ 3.0000, 2.9000, 2.9900, 2.9990 \} \)
+\item \( \{ 3.0000, 3.1000, 3.0100, 3.0010 \} \)
+\item \( \{ 3.1000, 3.0100, 3.0010, 3.0001 \} \)
+
+\end{enumerate} }
+\litem{
+Evaluate the limit below, if possible.\[ \lim_{x \rightarrow 8} \frac{\sqrt{8x - 48} - 4}{4x - 32} \]\begin{enumerate}[label=\Alph*.]
+\item \( 0.125 \)
+\item \( \infty \)
+\item \( 0.707 \)
+\item \( 0.031 \)
+\item \( \text{None of the above} \)
+
+\end{enumerate} }
+\litem{
+For the graph below, find the value(s) $a$ that makes the statement true: $ \displaystyle \lim_{x \rightarrow a} f(x)$ does not exist.
+\begin{center}
+    \includegraphics[width=0.5\textwidth]{../Figures/evaluateLimitGraphicallyC.png}
+\end{center}
+\begin{enumerate}[label=\Alph*.]
+\item \( 3 \)
+\item \( 1 \)
+\item \( -2 \)
+\item \( \text{Multiple } a \text{ make the statement true}. \)
+\item \( \text{No } a \text{ make the statement true}. \)
+
+\end{enumerate} }
+\litem{
+For the graph below, find the value(s) $a$ that makes the statement true: $ \displaystyle \lim_{x \rightarrow a} f(x)$ does not exist.
+\begin{center}
+    \includegraphics[width=0.5\textwidth]{../Figures/evaluateLimitGraphicallyCopyC.png}
+\end{center}
+\begin{enumerate}[label=\Alph*.]
+\item \( 1 \)
+\item \( 3 \)
+\item \( -2 \)
+\item \( \text{Multiple } a \text{ make the statement true}. \)
+\item \( \text{No } a \text{ make the statement true}. \)
+
+\end{enumerate} }
+\litem{
+Based on the information below, which of the following statements is always true?
+\begin{center}
+    \textit{ As $x$ approaches $\infty$, $f(x)$ approaches $14.925$. }
+\end{center}
+\begin{enumerate}[label=\Alph*.]
+\item \( f(x) \text{ is close to or exactly } \infty \text{ when } x \text{ is large enough}. \)
+\item \( x \text{ is undefined when } f(x) \text{ is large enough}. \)
+\item \( f(x) \text{ is close to or exactly } 14.925 \text{ when } x \text{ is large enough}. \)
+\item \( f(x) \text{ is undefined when } x \text{ is large enough}. \)
+\item \( \text{None of the above are always true.} \)
+
+\end{enumerate} }
+\litem{
+Evaluate the limit below, if possible.\[ \lim_{x \rightarrow 9} \frac{\sqrt{6x - 29} - 5}{2x - 18} \]\begin{enumerate}[label=\Alph*.]
+\item \( 1.225 \)
+\item \( 0.050 \)
+\item \( 0.100 \)
+\item \( \infty \)
+\item \( \text{None of the above} \)
+
+\end{enumerate} }
+\litem{
+Evaluate the one-sided limit of the function $f(x)$ below, if possible.\[ \lim_{x \rightarrow 8^-} \frac{9}{(x-8)^4}+7 \]\begin{enumerate}[label=\Alph*.]
+\item \( \infty \)
+\item \( -\infty \)
+\item \( f(8) \)
+\item \( \text{The limit does not exist} \)
+\item \( \text{None of the above} \)
+
+\end{enumerate} }
+\litem{
+Evaluate the one-sided limit of the function $f(x)$ below, if possible.\[ \lim_{x \rightarrow 5^+} \frac{1}{(x-5)^8}+7 \]\begin{enumerate}[label=\Alph*.]
+\item \( f(5) \)
+\item \( -\infty \)
+\item \( \infty \)
+\item \( \text{The limit does not exist} \)
+\item \( \text{None of the above} \)
+
+\end{enumerate} }
+\end{enumerate}
+
+\end{document}
