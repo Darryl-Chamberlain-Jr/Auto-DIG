@@ -14,10 +14,17 @@ from sympy.solvers import solve
 import subprocess
 
 DIR=sys.argv[1]
-database_name=sys.argv[2]
-question_list=sys.argv[3]
-version=sys.argv[4]
-thisQuestion=sys.argv[5]
+debug=sys.argv[2]
+if debug == "save":
+    database_name=sys.argv[3]
+    question_list=sys.argv[4]
+    version=sys.argv[5]
+    thisQuestion=sys.argv[6]
+else:
+    database_name="empty"
+    question_list="empty"
+    version="Z"
+    thisQuestion="debug_image"
 sys.path.insert(1, f"/{DIR}/PythonScripts/ScriptsForQuestionCode")
 from commonlyUsedFunctions import *
 from intervalMaskingMethod import *
@@ -29,22 +36,22 @@ chooseModel = random.choice(typesOfModels)
 chooseQuestion = random.randint(1, 3)
 if chooseModel == "linear":
     if chooseQuestion == 1:
-        subprocess.call(['python3', f"/{DIR}/Code/Modeling/09modelingLinear/constructLinearModelDistanceAndRate.py", f"{DIR}", f"{database_name}", f"{question_list}", f"{version}", f"{thisQuestion}"])
+        subprocess.call(['python3', f"{debug}", f"/{DIR}/Code/Modeling/09modelingLinear/constructLinearModelDistanceAndRate.py", f"{DIR}", f"{database_name}", f"{question_list}", f"{version}", f"{thisQuestion}"])
     elif chooseQuestion == 2:
-        subprocess.call(['python3', f"/{DIR}/Code/Modeling/09modelingLinear/constructLinearModelCostsProfitsRevenue.py", f"{DIR}", f"{database_name}", f"{question_list}", f"{version}", f"{thisQuestion}"])
+        subprocess.call(['python3', f"{debug}", f"/{DIR}/Code/Modeling/09modelingLinear/constructLinearModelCostsProfitsRevenue.py", f"{DIR}", f"{database_name}", f"{question_list}", f"{version}", f"{thisQuestion}"])
     else:
-        subprocess.call(['python3', f"/{DIR}/Code/Modeling/09modelingLinear/constructLinearModelMixture.py", f"{DIR}", f"{database_name}", f"{question_list}", f"{version}", f"{thisQuestion}"])
+        subprocess.call(['python3', f"{debug}", f"/{DIR}/Code/Modeling/09modelingLinear/constructLinearModelMixture.py", f"{DIR}", f"{database_name}", f"{question_list}", f"{version}", f"{thisQuestion}"])
 elif chooseModel == "power":
     if chooseQuestion == 1:
-        subprocess.call(['python3', f"/{DIR}/Code/Modeling/10modelingPower/constructDirectModel.py", f"{DIR}", f"{database_name}", f"{question_list}", f"{version}", f"{thisQuestion}"])
+        subprocess.call(['python3', f"{debug}", f"/{DIR}/Code/Modeling/10modelingPower/constructDirectModel.py", f"{DIR}", f"{database_name}", f"{question_list}", f"{version}", f"{thisQuestion}"])
     elif chooseQuestion == 2:
-        subprocess.call(['python3', f"/{DIR}/Code/Modeling/10modelingPower/constructIndirectModel.py", f"{DIR}", f"{database_name}", f"{question_list}", f"{version}", f"{thisQuestion}"])
+        subprocess.call(['python3', f"{debug}", f"/{DIR}/Code/Modeling/10modelingPower/constructIndirectModel.py", f"{DIR}", f"{database_name}", f"{question_list}", f"{version}", f"{thisQuestion}"])
     else:
-        subprocess.call(['python3', f"/{DIR}/Code/Modeling/10modelingPower/constructJointModel.py", f"{DIR}", f"{database_name}", f"{question_list}", f"{version}", f"{thisQuestion}"])
+        subprocess.call(['python3', f"{debug}", f"/{DIR}/Code/Modeling/10modelingPower/constructJointModel.py", f"{DIR}", f"{database_name}", f"{question_list}", f"{version}", f"{thisQuestion}"])
 else:
     if chooseQuestion == 1:
-        subprocess.call(['python3', f"/{DIR}/Code/Modeling/11modelingLogExp/constructBacteriaGrowth.py", f"{DIR}", f"{database_name}", f"{question_list}", f"{version}", f"{thisQuestion}"])
+        subprocess.call(['python3', f"{debug}", f"/{DIR}/Code/Modeling/11modelingLogExp/constructBacteriaGrowth.py", f"{DIR}", f"{database_name}", f"{question_list}", f"{version}", f"{thisQuestion}"])
     elif chooseQuestion == 2:
-        subprocess.call(['python3', f"/{DIR}/Code/Modeling/11modelingLogExp/constructHalfLifeModel.py", f"{DIR}", f"{database_name}", f"{question_list}", f"{version}", f"{thisQuestion}"])
+        subprocess.call(['python3', f"{debug}", f"/{DIR}/Code/Modeling/11modelingLogExp/constructHalfLifeModel.py", f"{DIR}", f"{database_name}", f"{question_list}", f"{version}", f"{thisQuestion}"])
     else:
-        subprocess.call(['python3', f"/{DIR}/Code/Modeling/11modelingLogExp/constructTemperatureModel.py", f"{DIR}", f"{database_name}", f"{question_list}", f"{version}", f"{thisQuestion}"])
+        subprocess.call(['python3', f"{debug}", f"/{DIR}/Code/Modeling/11modelingLogExp/constructTemperatureModel.py", f"{DIR}", f"{database_name}", f"{question_list}", f"{version}", f"{thisQuestion}"])

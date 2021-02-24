@@ -12,10 +12,15 @@ from sympy.abc import x, y
 from sympy.solvers import solve
 
 DIR=sys.argv[1]
-database_name=sys.argv[2]
-question_list=sys.argv[3]
-version=sys.argv[4]
-thisQuestion=sys.argv[5]
+debug=sys.argv[2]
+if debug == "save":
+    database_name=sys.argv[3]
+    question_list=sys.argv[4]
+    version=sys.argv[5]
+    thisQuestion=sys.argv[6]
+else:
+    version="Z"
+    thisQuestion="debug_image"
 sys.path.insert(1, f"/{DIR}/PythonScripts/ScriptsForQuestionCode")
 from commonlyUsedFunctions import *
 from intervalMaskingMethod import *
@@ -203,7 +208,7 @@ else:
     displaySolution = '\\text{that there are two solutions and they are } x = %.3f \\text{ and } x = %.3f.' %(solution[0], solution[1])
 displayStem = 'Solve the radical equation below. Then, choose the interval(s) that the solution(s) belongs to.'
 displayProblem = '\\sqrt{%s} - \\sqrt{%s} = 0' %(displayFactor1, displayFactor2)
-generalComment = "General Comments: Distractors are different based on the number of solutions. For example, if the question is designed to have 0 options, then the distractors are solving the equation and not checking that the solutions lead to complex numbers (because plugging them in makes the value under the square root negative). Remember that after solving, we need to make sure our solution does not make the original equation take the square root of a negative number!"
+generalComment = "Distractors are different based on the number of solutions. For example, if the question is designed to have 0 options, then the distractors are solving the equation and not checking that the solutions lead to complex numbers (because plugging them in makes the value under the square root negative). Remember that after solving, we need to make sure our solution does not make the original equation take the square root of a negative number!"
 
 answerList = [solutionInterval, distractor1Interval, distractor2Interval, distractor3Interval, distractor4Interval]
 random.shuffle(answerList)
@@ -227,4 +232,7 @@ for checkLetter in letters:
 displayStemType="String"
 displayProblemType="Math Mode"
 displayOptionsType="Math Mode"
-writeToDatabase(DIR, database_name, question_list, thisQuestion, displayStemType, displayStem, displayProblemType, displayProblem, displayOptionsType, choices, choiceComments, displaySolution, answerLetter, generalComment)
+if debug=="save":
+    writeToDatabase(DIR, database_name, question_list, thisQuestion, displayStemType, displayStem, displayProblemType, displayProblem, displayOptionsType, choices, choiceComments, displaySolution, answerLetter, generalComment)
+else:
+    print_for_debugger(displayStemType, displayStem, displayProblemType, displayProblem, displayOptionsType, choices, choiceComments, displaySolution, answerLetter, generalComment)

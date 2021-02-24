@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.8.4)  22 FEB 2021 20:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.8.4)  23 FEB 2021 17:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -616,16 +616,26 @@ Overfull \hbox (25.00003pt too wide) in paragraph at lines 134--156
  []
 
 
+Overfull \hbox (18.13628pt too wide) in paragraph at lines 156--156
+[]$[]\OML/cmm/m/it/10 x \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 a[]x \OT1/cmr/m/n/10
+ = \OML/cmm/m/it/10 b; []a \OMS/cmsy/m/n/10 2 \OT1/cmr/m/n/10 [\OMS/cmsy/m/n/10
+ ^^@\OT1/cmr/m/n/10 6\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 75\OML/cmm/m/it/10 ; \OT
+1/cmr/m/n/10 5\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 25][]\OML/cmm/m/it/10 b \OMS/cm
+sy/m/n/10 2 \OT1/cmr/m/n/10 [1\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 33\OML/cmm/m/it
+/10 ; \OT1/cmr/m/n/10 8\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 33]$ 
+ []
+
+
 Overfull \hbox (25.00003pt too wide) in paragraph at lines 156--178
 [][] 
  []
 
-[3]
+
 Overfull \hbox (25.00003pt too wide) in paragraph at lines 178--200
 [][] 
  []
 
-
+[3]
 Overfull \hbox (25.00003pt too wide) in paragraph at lines 200--222
 [][] 
  []
@@ -660,7 +670,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 247.
 Here is how much of TeX's memory you used:
  8663 strings out of 483183
  129322 string characters out of 5966293
- 404404 words of memory out of 5000000
+ 404393 words of memory out of 5000000
  23444 multiletter control sequences out of 15000+600000
  535322 words of font info for 38 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
@@ -674,7 +684,7 @@ onts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/typ
 e1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
 lic/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
 fonts/cm/cmti10.pfb>
-Output written on keyModule9LA.pdf (5 pages, 112798 bytes).
+Output written on keyModule9LA.pdf (5 pages, 112675 bytes).
 PDF statistics:
  142 PDF objects out of 1000 (max. 8388607)
  124 compressed objects within 2 object streams

@@ -13,10 +13,15 @@ from sympy.solvers import solve
 import matplotlib.pyplot as plt
 
 DIR=sys.argv[1]
-database_name=sys.argv[2]
-question_list=sys.argv[3]
-version=sys.argv[4]
-thisQuestion=sys.argv[5]
+debug=sys.argv[2]
+if debug == "save":
+    database_name=sys.argv[3]
+    question_list=sys.argv[4]
+    version=sys.argv[5]
+    thisQuestion=sys.argv[6]
+else:
+    version="Z"
+    thisQuestion="debug_image"
 sys.path.insert(1, f"/{DIR}/PythonScripts/ScriptsForQuestionCode")
 from commonlyUsedFunctions import *
 from intervalMaskingMethod import *
@@ -48,11 +53,9 @@ def graphTheFunctionAndReturnCoefficients(a, vertex):
     plt.rc('legend', fontsize=SMALL_SIZE)    # legend fontsize
     plt.rc('figure', titlesize=BIGGER_SIZE)  # fontsize of the figure title
     plt.figure(1)
-    plt.subplot(111)
     graphX = numpy.arange(vertex[0] - 3, vertex[0] + 3, 0.01)
     graphY = a * (graphX-vertex[0])**2 + vertex[1]
     plt.plot(graphX, graphY, linewidth = 5, color = 	'#02325f')
-    plt.subplot(111)
     plt.plot( [ vertex[0] ], [ vertex[1] ], 'bs')
     plt.xlabel('x')
     plt.ylabel('y')
@@ -96,4 +99,7 @@ for checkLetter in letters:
 displayStemType="String"
 displayProblemType="Graph"
 displayOptionsType="Math Mode"
-writeToDatabase(DIR, database_name, question_list, thisQuestion, displayStemType, displayStem, displayProblemType, displayProblem, displayOptionsType, choices, choiceComments, displaySolution, answerLetter, generalComment)
+if debug=="save":
+    writeToDatabase(DIR, database_name, question_list, thisQuestion, displayStemType, displayStem, displayProblemType, displayProblem, displayOptionsType, choices, choiceComments, displaySolution, answerLetter, generalComment)
+else:
+    print_for_debugger(displayStemType, displayStem, displayProblemType, displayProblem, displayOptionsType, choices, choiceComments, displaySolution, answerLetter, generalComment)

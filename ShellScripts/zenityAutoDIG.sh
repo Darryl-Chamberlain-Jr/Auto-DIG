@@ -153,7 +153,7 @@ do
                     # Easier-to-read script name.
                     question_py="/$DIR/Code/$code_folder/$code_subfolder/$question.py"
                     # Actual python script to generate and save question information to the corresponding database.
-                    python3 $question_py $DIR $full_db_name $question_list_name $version $question
+                    python3 $question_py $DIR "save" $full_db_name $question_list_name $version $question
                     return_error=$?
                     error_counter=$(( error_counter+1 ))
                 done # Question data has now been saved with the metadata.

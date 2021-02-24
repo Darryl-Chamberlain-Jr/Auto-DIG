@@ -10,10 +10,15 @@ import cmath
 import matplotlib.pyplot as plt
 
 DIR=sys.argv[1]
-database_name=sys.argv[2]
-question_list=sys.argv[3]
-version=sys.argv[4]
-thisQuestion=sys.argv[5]
+debug=sys.argv[2]
+if debug == "save":
+    database_name=sys.argv[3]
+    question_list=sys.argv[4]
+    version=sys.argv[5]
+    thisQuestion=sys.argv[6]
+else:
+    version="Z"
+    thisQuestion="debug_image"
 sys.path.insert(1, f"/{DIR}/PythonScripts/ScriptsForQuestionCode")
 from commonlyUsedFunctions import *
 from intervalMaskingMethod import *
@@ -100,4 +105,7 @@ generalComment = "Parallel slope is the same and perpendicular slope is opposite
 displayStemType="String"
 displayProblemType="Math Mode"
 displayOptionsType="Math Mode"
-writeToDatabase(DIR, database_name, question_list, thisQuestion, displayStemType, displayStem, displayProblemType, displayProblem, displayOptionsType, choices, choiceComments, displaySolution, answerLetter, generalComment)
+if debug=="save":
+    writeToDatabase(DIR, database_name, question_list, thisQuestion, displayStemType, displayStem, displayProblemType, displayProblem, displayOptionsType, choices, choiceComments, displaySolution, answerLetter, generalComment)
+else:
+    print_for_debugger(displayStemType, displayStem, displayProblemType, displayProblem, displayOptionsType, choices, choiceComments, displaySolution, answerLetter, generalComment)

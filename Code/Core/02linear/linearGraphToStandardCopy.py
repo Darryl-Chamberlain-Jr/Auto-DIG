@@ -10,10 +10,15 @@ import cmath
 import matplotlib.pyplot as plt
 
 DIR=sys.argv[1]
-database_name=sys.argv[2]
-question_list=sys.argv[3]
-version=sys.argv[4]
-thisQuestion=sys.argv[5]
+debug=sys.argv[2]
+if debug == "save":
+    database_name=sys.argv[3]
+    question_list=sys.argv[4]
+    version=sys.argv[5]
+    thisQuestion=sys.argv[6]
+else:
+    version="Z"
+    thisQuestion="debug_image"
 sys.path.insert(1, f"/{DIR}/PythonScripts/ScriptsForQuestionCode")
 from commonlyUsedFunctions import *
 from intervalMaskingMethod import *
@@ -87,16 +92,8 @@ def plotGraph(slopeGraph, yInt, point2, point3):
     plt.rc('legend', fontsize=SMALL_SIZE)    # legend fontsize
     plt.rc('figure', titlesize=BIGGER_SIZE)  # fontsize of the figure title
     plt.figure(1)
-    plt.subplot(111)
     plt.plot(graphX, graphY, linewidth = 5, color = '#02325f')
-    #
-    #plt.subplot(111)
-    #plt.plot([0], [yInt], 'bo')
-    #
-    plt.subplot(111)
     plt.plot([point2[0]], [point2[1]], 'bo', markersize=20)
-    #
-    plt.subplot(111)
     plt.plot([point3[0]], [point3[1]], 'bo', markersize=20)
     #
     if slopeGraph > 0:
@@ -149,4 +146,7 @@ generalComment = "Standard form is supposed to have $A > 0$ and all fractions re
 displayStemType="String"
 displayProblemType="Graph"
 displayOptionsType="Math Mode"
-writeToDatabase(DIR, database_name, question_list, thisQuestion, displayStemType, displayStem, displayProblemType, displayProblem, displayOptionsType, choices, choiceComments, displaySolution, answerLetter, generalComment)
+if debug=="save":
+    writeToDatabase(DIR, database_name, question_list, thisQuestion, displayStemType, displayStem, displayProblemType, displayProblem, displayOptionsType, choices, choiceComments, displaySolution, answerLetter, generalComment)
+else:
+    print_for_debugger(displayStemType, displayStem, displayProblemType, displayProblem, displayOptionsType, choices, choiceComments, displaySolution, answerLetter, generalComment)

@@ -12,10 +12,15 @@ from sympy.abc import x, y
 from sympy.solvers import solve
 
 DIR=sys.argv[1]
-database_name=sys.argv[2]
-question_list=sys.argv[3]
-version=sys.argv[4]
-thisQuestion=sys.argv[5]
+debug=sys.argv[2]
+if debug == "save":
+    database_name=sys.argv[3]
+    question_list=sys.argv[4]
+    version=sys.argv[5]
+    thisQuestion=sys.argv[6]
+else:
+    version="Z"
+    thisQuestion="debug_image"
 sys.path.insert(1, f"/{DIR}/PythonScripts/ScriptsForQuestionCode")
 from commonlyUsedFunctions import *
 from intervalMaskingMethod import *
@@ -41,13 +46,8 @@ def sketchFunctionAndPoint(graphX, graphY, pointOfInterest, figureName):
     plt.rc('legend', fontsize=SMALL_SIZE)    # legend fontsize
     plt.rc('figure', titlesize=BIGGER_SIZE)  # fontsize of the figure title
     plt.figure(1)
-    plt.subplot(111)
     plt.plot(graphX, graphY, linewidth = 5)
-
-    plt.subplot(111)
     plt.plot( [ pointOfInterest[0] ], [ pointOfInterest[1] ], 'bs')
-
-    #plt.rcParams.update({'font.size': 22})
     plt.xlabel('x')
     plt.ylabel('y')
     plt.grid(True)
@@ -180,4 +180,7 @@ generalComment = "Remember that the general form of a radical equation is $ f(x)
 displayStemType="String"
 displayProblemType="Graph"
 displayOptionsType="Math Mode"
-writeToDatabase(DIR, database_name, question_list, thisQuestion, displayStemType, displayStem, displayProblemType, displayProblem, displayOptionsType, choices, choiceComments, displaySolution, answerLetter, generalComment)
+if debug=="save":
+    writeToDatabase(DIR, database_name, question_list, thisQuestion, displayStemType, displayStem, displayProblemType, displayProblem, displayOptionsType, choices, choiceComments, displaySolution, answerLetter, generalComment)
+else:
+    print_for_debugger(displayStemType, displayStem, displayProblemType, displayProblem, displayOptionsType, choices, choiceComments, displaySolution, answerLetter, generalComment)
