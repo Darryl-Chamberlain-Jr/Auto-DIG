@@ -1,13 +1,5 @@
 import sys
-from sympy import *
-import numpy
 import random
-import math
-from decimal import Decimal
-import decimal
-import traceback
-import cmath
-import matplotlib.pyplot as plt
 
 DIR=sys.argv[1]
 debug=sys.argv[2]
