@@ -4,7 +4,7 @@ This repository is a **work-in-progress** on automatically generating assessment
 
 **No coding experience is required to use this work as-is.** The GUI is currently written using Zenity and thus works best on Linux. This project will eventually move to a cross-platform application for widespread use.
 
-Steps to create the desktop app.
+Steps to create the desktop app for Ubuntu.
 ------
 1. Download the necessary open-source programs: Python and LaTeX.
 

@@ -14,7 +14,7 @@ def createFeedbackFile(file_name, exam_name, footnote_left, footnote_right, vers
     Path('/' + str(DIR) + '/Feedback/feedback' + str(file_name) + '.tex').touch()
     feedbackFile = open('/' + str(DIR) + '/Feedback/feedback' + str(file_name) + '.tex', 'a')
     feedbackFile.write(r"""\documentclass{extbook}[14pt]
-\usepackage{multicol, enumerate, enumitem, hyperref, color, soul, setspace, parskip, fancyhdr, amssymb, amsthm, amsmath, bbm, latexsym, units, mathtools}
+\usepackage{multicol, enumerate, enumitem, hyperref, color, soul, setspace, parskip, fancyhdr, amssymb, amsthm, amsmath, latexsym, units, mathtools}
 \everymath{\displaystyle}
 \usepackage[headsep=0.5cm,headheight=0cm, left=1 in,right= 1 in,top= 1 in,bottom= 1 in]{geometry}
 \usepackage{dashrule}
@@ -39,7 +39,7 @@ def createKeyFile(file_name, exam_name, footnote_left, footnote_right, version, 
     Path('/' + str(DIR) + '/Keys/key' + str(file_name) + str(version)+ '.tex').touch()
     keyFile = open('/' + str(DIR) + '/Keys/key' + str(file_name) + str(version)+ '.tex', 'a')
     keyFile.write(r"""\documentclass{extbook}[14pt]
-\usepackage{multicol, enumerate, enumitem, hyperref, color, soul, setspace, parskip, fancyhdr, amssymb, amsthm, amsmath, bbm, latexsym, units, mathtools}
+\usepackage{multicol, enumerate, enumitem, hyperref, color, soul, setspace, parskip, fancyhdr, amssymb, amsthm, amsmath, latexsym, units, mathtools}
 \everymath{\displaystyle}
 \usepackage[headsep=0.5cm,headheight=0cm, left=1 in,right= 1 in,top= 1 in,bottom= 1 in]{geometry}
 \usepackage{dashrule}  %% Package to use the command below to create lines between items
@@ -69,7 +69,7 @@ def createExamFile(file_name, exam_name, footnote_left, footnote_right, version,
     examFile = open('/' + str(DIR) + '/BuildExams/' + str(file_name) + str(version)+ '.tex', 'a')
     examFile.write(r"""\documentclass[14pt]{extbook}
 \usepackage{multicol, enumerate, enumitem, hyperref, color, soul, setspace, parskip, fancyhdr} %%General Packages
-\usepackage{amssymb, amsthm, amsmath, bbm, latexsym, units, mathtools} %%Math Packages
+\usepackage{amssymb, amsthm, amsmath, latexsym, units, mathtools} %%Math Packages
 \everymath{\displaystyle} %%All math in Display Style
 %% Packages with additional options
 \usepackage[headsep=0.5cm,headheight=12pt, left=1 in,right= 1 in,top= 1 in,bottom= 1 in]{geometry}

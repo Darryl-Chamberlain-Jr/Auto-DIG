@@ -1,14 +1,16 @@
 import sys
 import shelve
 
-#DIR="home/dchamberlain31/git-repos/Auto-DIG"
 DIR=sys.argv[1]
 thisQuestion = sys.argv[2]
 assessmentDB = sys.argv[3]
 questionList = sys.argv[4]
+OS_type=sys.argv[5]
 
-# Retrieves metadata about question
-ql = shelve.open(f"/{DIR}/Databases/questionMetadata.db")
+if "linux-gnu" in OS_type:
+    ql = shelve.open(f'/{DIR}/Databases/questionMetadata')
+else: 
+    ql = shelve.open(f'/{DIR}/Databases/questionMetadata.db')
 try:
     masterList = ql['masterMetadata']
     total=len(masterList)
@@ -23,7 +25,10 @@ finally:
     ql.close()
 
 # Now we can open a new database and save the info there.
-newDB = shelve.open(f"/{DIR}/Databases/{assessmentDB}.db")
+if "linux-gnu" in OS_type:
+    newDB = shelve.open(f'/{DIR}/Databases/{assessmentDB}')
+else: 
+    newDB = shelve.open(f'/{DIR}/Databases/{assessmentDB}.db')
 list_of_keys=list(newDB.keys())
 # Checks if there are no lists
 try:

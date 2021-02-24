@@ -18,8 +18,12 @@ generalForm = {
 # Export question info to bash env
 gimme=sys.argv[1]
 DIR=sys.argv[2]
+OS_type=sys.argv[3]
 
-ql = shelve.open(f'/{DIR}/Databases/questionMetadata.db')
+if "linux-gnu" in OS_type:
+    ql = shelve.open(f'/{DIR}/Databases/questionMetadata')
+else: 
+    ql = shelve.open(f'/{DIR}/Databases/questionMetadata.db')
 try:
     masterList = ql['masterMetadata']
     if gimme=="Length":

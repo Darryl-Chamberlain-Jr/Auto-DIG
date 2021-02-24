@@ -287,8 +287,13 @@ database_name = sys.argv[4]
 question_list = sys.argv[5]
 code_name = sys.argv[6]
 version = sys.argv[7]
+OS_type = sys.argv[8]
 
-ql = shelve.open(f'/{DIR}/Databases/{database_name}.db')
+if "linux-gnu" in OS_type:
+    ql=shelve.open(f"/{DIR}/Databases/{database_name}")
+else:
+    ql=shelve.open(f"/{DIR}/Databases/{database_name}.db")
+
 try:
     master_list = ql[f'{question_list}']
     total=len(master_list)

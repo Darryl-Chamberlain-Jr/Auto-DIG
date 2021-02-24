@@ -3,8 +3,12 @@ import sys
 
 database_name = sys.argv[1]
 question_list = sys.argv[2]
+OS_type=sys.argv[3]
 
-ql = shelve.open(f'../../Databases/{database_name}.db')
+if "linux-gnu" in OS_type:
+    ql = shelve.open(f'../../Databases/{database_name}')
+else: 
+    ql = shelve.open(f'../../Databases/{database_name}.db')
 
 try:
     print(list(ql.keys()))

@@ -18,6 +18,7 @@ if debug == "save":
     question_list=sys.argv[4]
     version=sys.argv[5]
     thisQuestion=sys.argv[6]
+    OS_type=sys.argv[7]
 else:
     version="Z"
     thisQuestion="debug_image"
@@ -90,6 +91,6 @@ displayStemType="String"
 displayProblemType="Math Mode"
 displayOptionsType="Math Mode"
 if debug=="save":
-    writeToDatabase(DIR, database_name, question_list, thisQuestion, displayStemType, displayStem, displayProblemType, displayProblem, displayOptionsType, choices, choiceComments, displaySolution, answerLetter, generalComment)
+    writeToDatabase(OS_type, DIR, database_name, question_list, thisQuestion, displayStemType, displayStem, displayProblemType, displayProblem, displayOptionsType, choices, choiceComments, displaySolution, answerLetter, generalComment)
 else:
     print_for_debugger(displayStemType, displayStem, displayProblemType, displayProblem, displayOptionsType, choices, choiceComments, displaySolution, answerLetter, generalComment)

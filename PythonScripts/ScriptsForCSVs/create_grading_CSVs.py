@@ -5,18 +5,19 @@ import numpy
 import csv
 
 # INPUT from bash
-DIR=sys.argv[1]
-database_name=sys.argv[2]
-version_list_length=int(sys.argv[3])
+OS_type=sys.argv[1]
+DIR=sys.argv[2]
+database_name=sys.argv[3]
+version_list_length=int(sys.argv[4])
 version_list=[]
-for i in range(4, 4+version_list_length):
+for i in range(5, 5+version_list_length):
     version_list.append(sys.argv[i])
-code_name_array_length=int(sys.argv[4+version_list_length])
+code_name_array_length=int(sys.argv[5+version_list_length])
 code_name_array=[]
-for j in range(5+version_list_length, 5+version_list_length+code_name_array_length):
+for j in range(6+version_list_length, 6+version_list_length+code_name_array_length):
     code_name_array.append(sys.argv[j])
 question_list_names=[]
-for k in range(5+version_list_length+code_name_array_length, 5+version_list_length+code_name_array_length+code_name_array_length):
+for k in range(6+version_list_length+code_name_array_length, 6+version_list_length+code_name_array_length+code_name_array_length):
     question_list_names.append(sys.argv[k])
 
 list_of_dicts=[]
@@ -27,7 +28,10 @@ field_names = numpy.concatenate((field_names, code_name_array))
 
 for version in version_list:
     question_list_index=0
-    ql = shelve.open(f'/{DIR}/Databases/{database_name}-Ver{version}.db')
+    if "linux-gnu" in OS_type:
+        ql = shelve.open(f'/{DIR}/Databases/{database_name}-Ver{version}')
+    else: 
+        ql = shelve.open(f'/{DIR}/Databases/{database_name}-Ver{version}.db')
     temp_dict={'Version': version}
     for code_name in code_name_array:
         master_list = ql[question_list_names[question_list_index]]

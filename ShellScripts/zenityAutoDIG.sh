@@ -1,13 +1,19 @@
-DIR="home/dchamberlain31/git-repos/Auto-DIG"
+DIR="home/${USER}/git-repos/Auto-DIG"
 titleOfProgram="Auto-DIG v.0.3"
 # cd to ShellScripts included to make python graphing work. Not sure why at this point.
 cd /$DIR/ShellScripts/
 # Call to use functions defined in functionsForZenityScript.sh
 source /${DIR}/ShellScripts/./functionsForZenityScript.sh
+
+# Recreates base metadata
+rm /$DIR/Databases/questionMetadata.db
+python3 /$DIR/PythonScripts/ScriptsForDatabases/store_original_metadata.py $DIR $OSTYPE
+python3 /$DIR/PythonScripts/ScriptsForDatabases/store_copy_metadata.py $DIR $OSTYPE
+
 # Fun way to start program. Practice with espeak and eog. Not necessary to carry over to standalone app.
-eog --fullscreen /${DIR}/ImagesForApp/NewAutoDIGimage.png & sleep 1 && espeak "Welcome back doctor" & sleep 5 && espeak "Initiating diagnostic procedures" && pkill eog
-eog --fullscreen /${DIR}/ImagesForApp/Auto-DIG_background.jpg </dev/null &>/dev/null &
-sleep 3
+#eog --fullscreen /${DIR}/ImagesForApp/NewAutoDIGimage.png & sleep 1 && espeak "Welcome back doctor" & sleep 5 && espeak "Initiating diagnostic procedures" && pkill eog
+#eog --fullscreen /${DIR}/ImagesForApp/Auto-DIG_background.jpg </dev/null &>/dev/null &
+#sleep 3
 # Keeps program running until the user exists.
 while true
 do
@@ -136,7 +142,7 @@ do
                 run_save_metadata="/$DIR/PythonScripts/ScriptsForDatabases/saveMetadataToNewDatabase.py"
                 # Unclear why this is needed. Will need to investigate. saveMetadataToNewDatabase.py uses absolute calls.
                 cd /$DIR/Code
-                python3 $run_save_metadata $DIR $question "$full_db_name" $question_list_name
+                python3 $run_save_metadata $DIR $question "$full_db_name" $question_list_name $OSTYPE
                 # Defines two variables for the next while loop. ${return_error} is set to 1 as no errors. Defined in while loop as error return after running python script for a question. ${error_counter} announces to the user how many times the code has needed to rerun.
                 return_error=1
                 error_counter=0
@@ -148,19 +154,19 @@ do
                     fi
                     # This python script is used to dynamically define the corresponding folder and subfolder the code is housed in based on a question's metadata.
                     run_return_key_value_from_db="/$DIR/PythonScripts/ScriptsForDatabases/return_key_value_from_db.py"
-                    code_folder=$( python3 $run_return_key_value_from_db $DIR $full_db_name $question_list_name $question "Folder" )
-                    code_subfolder=$( python3 $run_return_key_value_from_db $DIR $full_db_name $question_list_name $question "Subfolder" )
+                    code_folder=$( python3 $run_return_key_value_from_db $DIR $full_db_name $question_list_name $question "Folder" $OSTYPE )
+                    code_subfolder=$( python3 $run_return_key_value_from_db $DIR $full_db_name $question_list_name $question "Subfolder" $OSTYPE )
                     # Easier-to-read script name.
                     question_py="/$DIR/Code/$code_folder/$code_subfolder/$question.py"
                     # Actual python script to generate and save question information to the corresponding database.
-                    python3 $question_py $DIR "save" $full_db_name $question_list_name $version $question
+                    python3 $question_py $DIR "save" $full_db_name $question_list_name $version $question $OSTYPE
                     return_error=$?
                     error_counter=$(( error_counter+1 ))
                 done # Question data has now been saved with the metadata.
 
                 # Python script to import question data saved in the database into a latex file.
-                python3 /$DIR/PythonScripts/ScriptsForPDFs/printQuestions.py "Print questions to exam" $DIR $file_name $full_db_name $question_list_name $question $version
-                python3 /$DIR/PythonScripts/ScriptsForPDFs/printQuestions.py "Print questions to key" $DIR $file_name $full_db_name $question_list_name $question $version
+                python3 /$DIR/PythonScripts/ScriptsForPDFs/printQuestions.py "Print questions to exam" $DIR $file_name $full_db_name $question_list_name $question $version $OSTYPE
+                python3 /$DIR/PythonScripts/ScriptsForPDFs/printQuestions.py "Print questions to key" $DIR $file_name $full_db_name $question_list_name $question $version $OSTYPE
                 # Increments the ${counter} by ${question_step} to display progress to user.
                 counter=$( echo "scale=2;$counter+$question_step" | bc )
             done
@@ -195,7 +201,7 @@ do
         done
     done
     # Creates master key which includes ALL answers for ALL versions. Order of question structures was kept static earlier to ensure question structures for each version correspond by number.
-    python3 /$DIR/PythonScripts/ScriptsForCSVs/create_grading_CSVs.py $DIR $db_name ${#version_list[@]} "${version_list[@]}" ${#code_name_array[@]} "${code_name_array[@]}" "${question_list_name_array[@]}"
+    python3 /$DIR/PythonScripts/ScriptsForCSVs/create_grading_CSVs.py $OSTYPE $DIR $db_name ${#version_list[@]} "${version_list[@]}" ${#code_name_array[@]} "${code_name_array[@]}" "${question_list_name_array[@]}"
     # Copies master key to the keys folder for the user.
     cp -r /$DIR/Keys/master_key_${db_name}.csv /$DIR/CompleteExam/"$exam_display_name"/Keys
 

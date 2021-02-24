@@ -20,6 +20,7 @@ if debug == "save":
     question_list=sys.argv[4]
     version=sys.argv[5]
     thisQuestion=sys.argv[6]
+    OS_type=sys.argv[7]
 else:
     database_name="empty"
     question_list="empty"
