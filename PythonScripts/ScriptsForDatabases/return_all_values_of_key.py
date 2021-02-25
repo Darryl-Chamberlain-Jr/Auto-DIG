@@ -20,10 +20,10 @@ gimme=sys.argv[1]
 DIR=sys.argv[2]
 OS_type=sys.argv[3]
 
-if "linux-gnu" in OS_type:
-    ql = shelve.open(f'/{DIR}/Databases/questionMetadata')
-else: 
+if "linux-gnu" == OS_type:
     ql = shelve.open(f'/{DIR}/Databases/questionMetadata.db')
+else:
+    ql = shelve.open(f'/{DIR}/Databases/questionMetadata')
 try:
     masterList = ql['masterMetadata']
     if gimme=="Length":

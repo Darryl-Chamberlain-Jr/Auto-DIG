@@ -1,7 +1,7 @@
-Version,subgroupRealCopy,multiplyComplex,divideComplexCopy,orderOfOperations,subgroupComplex,divideComplex,subgroupReal,multiplyComplexCopy,subgroupComplexCopy,orderOfOperationsCopy
-A,A,C,E,A,E,C,D,D,B,C
-B,C,A,C,B,A,A,E,A,A,C
-C,E,E,C,A,E,E,A,A,E,D
+Version,subgroupComplexCopy,divideComplexCopy,multiplyComplexCopy,divideComplex,orderOfOperationsCopy,subgroupRealCopy,subgroupComplex,multiplyComplex,subgroupReal,orderOfOperations
+A,E,C,E,B,B,A,C,B,E,D
+B,E,E,D,D,A,B,B,E,E,B
+C,E,C,C,B,B,B,A,D,D,D
 ,,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,

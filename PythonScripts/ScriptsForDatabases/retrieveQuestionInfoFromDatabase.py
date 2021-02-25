@@ -5,11 +5,11 @@ DIR = sys.argv[1]
 database_name = sys.argv[2]
 OS_type=sys.argv[3]
 
-if "linux-gnu" in OS_type:
-    ql = shelve.open(f'/{DIR}/Databases/{database_name}')
-else: 
+if "linux-gnu" == OS_type:
     ql = shelve.open(f'/{DIR}/Databases/{database_name}.db')
-    
+else:
+    ql = shelve.open(f'/{DIR}/Databases/{database_name}')
+
 for dict_item in list(ql.keys()):
     try:
         dict = ql[f'{dict_item}']

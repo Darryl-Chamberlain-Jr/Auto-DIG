@@ -5,10 +5,10 @@ DIR=sys.argv[1]
 OS_type=sys.argv[2]
 from originalQuestionMetadata import *
 
-if "linux-gnu" in OS_type:
-    ql = shelve.open(f'/{DIR}/Databases/questionMetadata')
-else: 
+if "linux-gnu" == OS_type:
     ql = shelve.open(f'/{DIR}/Databases/questionMetadata.db')
+else:
+    ql = shelve.open(f'/{DIR}/Databases/questionMetadata')
 try:
     tempMasterData = ql['masterMetadata']
     for new_dict in masterQuestionList:

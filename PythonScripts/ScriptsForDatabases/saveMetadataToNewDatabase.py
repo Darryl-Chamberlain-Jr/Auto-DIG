@@ -7,10 +7,10 @@ assessmentDB = sys.argv[3]
 questionList = sys.argv[4]
 OS_type=sys.argv[5]
 
-if "linux-gnu" in OS_type:
-    ql = shelve.open(f'/{DIR}/Databases/questionMetadata')
-else: 
+if "linux-gnu" == OS_type:
     ql = shelve.open(f'/{DIR}/Databases/questionMetadata.db')
+else:
+    ql = shelve.open(f'/{DIR}/Databases/questionMetadata')
 try:
     masterList = ql['masterMetadata']
     total=len(masterList)
@@ -25,10 +25,10 @@ finally:
     ql.close()
 
 # Now we can open a new database and save the info there.
-if "linux-gnu" in OS_type:
-    newDB = shelve.open(f'/{DIR}/Databases/{assessmentDB}')
-else: 
+if "linux-gnu" == OS_type:
     newDB = shelve.open(f'/{DIR}/Databases/{assessmentDB}.db')
+else:
+    newDB = shelve.open(f'/{DIR}/Databases/{assessmentDB}')
 list_of_keys=list(newDB.keys())
 # Checks if there are no lists
 try:

@@ -28,10 +28,10 @@ field_names = numpy.concatenate((field_names, code_name_array))
 
 for version in version_list:
     question_list_index=0
-    if "linux-gnu" in OS_type:
-        ql = shelve.open(f'/{DIR}/Databases/{database_name}-Ver{version}')
-    else: 
+    if "linux-gnu" == OS_type:
         ql = shelve.open(f'/{DIR}/Databases/{database_name}-Ver{version}.db')
+    else:
+        ql = shelve.open(f'/{DIR}/Databases/{database_name}-Ver{version}')
     temp_dict={'Version': version}
     for code_name in code_name_array:
         master_list = ql[question_list_names[question_list_index]]
