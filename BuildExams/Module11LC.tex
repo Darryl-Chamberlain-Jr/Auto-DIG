@@ -1,0 +1,128 @@
+\documentclass[14pt]{extbook}
+\usepackage{multicol, enumerate, enumitem, hyperref, color, soul, setspace, parskip, fancyhdr} %General Packages
+\usepackage{amssymb, amsthm, amsmath, latexsym, units, mathtools} %Math Packages
+\everymath{\displaystyle} %All math in Display Style
+% Packages with additional options
+\usepackage[headsep=0.5cm,headheight=12pt, left=1 in,right= 1 in,top= 1 in,bottom= 1 in]{geometry}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{dashrule}  % Package to use the command below to create lines between items
+\newcommand{\litem}[1]{\item#1\hspace*{-1cm}\rule{\textwidth}{0.4pt}}
+\pagestyle{fancy}
+\lhead{Progress Quiz 6}
+\chead{}
+\rhead{Version C}
+\lfoot{9689-6866}
+\cfoot{}
+\rfoot{Spring 2021}
+\begin{document}
+
+\begin{enumerate}
+\litem{
+Evaluate the limit below, if possible.\[ \lim_{x \rightarrow 9} \frac{\sqrt{5x - 20} - 5}{3x - 27} \]\begin{enumerate}[label=\Alph*.]
+\item \( 0.167 \)
+\item \( \infty \)
+\item \( 0.745 \)
+\item \( 0.100 \)
+\item \( \text{None of the above} \)
+
+\end{enumerate} }
+\litem{
+Evaluate the one-sided limit of the function $f(x)$ below, if possible.\[ \lim_{x \rightarrow -7^-} \frac{-8}{(x-7)^3}+3 \]\begin{enumerate}[label=\Alph*.]
+\item \( f(-7) \)
+\item \( -\infty \)
+\item \( \infty \)
+\item \( \text{The limit does not exist} \)
+\item \( \text{None of the above} \)
+
+\end{enumerate} }
+\litem{
+Based on the information below, which of the following statements is always true?
+\begin{center}
+    \textit{ $f(x)$ approaches $\infty$ as $x$ approaches $5$. }
+\end{center}
+\begin{enumerate}[label=\Alph*.]
+\item \( x \text{ is undefined when } f(x) \text{ is close to or exactly } \infty. \)
+\item \( f(x) \text{ is close to or exactly } \infty \text{ when } x \text{ is large enough}. \)
+\item \( f(x) \text{ is undefined when } x \text{ is close to or exactly } 5. \)
+\item \( f(x) \text{ is close to or exactly } 5 \text{ when } x \text{ is large enough}. \)
+\item \( \text{None of the above are always true.} \)
+
+\end{enumerate} }
+\litem{
+Based on the information below, which of the following statements is always true?
+\begin{center}
+    \textit{ As $x$ approaches $4$, $f(x)$ approaches $\infty$. }
+\end{center}
+\begin{enumerate}[label=\Alph*.]
+\item \( f(x) \text{ is undefined when } x \text{ is close to or exactly } 4. \)
+\item \( f(x) \text{ is close to or exactly } 4 \text{ when } x \text{ is large enough}. \)
+\item \( f(x) \text{ is close to or exactly } \infty \text{ when } x \text{ is large enough}. \)
+\item \( x \text{ is undefined when } f(x) \text{ is close to or exactly } \infty. \)
+\item \( \text{None of the above are always true.} \)
+
+\end{enumerate} }
+\litem{
+To estimate the one-sided limit of the function below as $x$ approaches 4 from the right, which of the following sets of numbers should you use?\[ \frac{\frac{4}{x} - 1}{x - 4} \]\begin{enumerate}[label=\Alph*.]
+\item \( \{ 4.0000, 3.9000, 3.9900, 3.9990 \} \)
+\item \( \{ 4.1000, 4.0100, 4.0010, 4.0001 \} \)
+\item \( \{ 3.9000, 3.9900, 4.0100, 4.1000 \} \)
+\item \( \{ 3.9000, 3.9900, 3.9990, 3.9999 \} \)
+\item \( \{ 4.0000, 4.1000, 4.0100, 4.0010 \} \)
+
+\end{enumerate} }
+\litem{
+Evaluate the limit below, if possible.\[ \lim_{x \rightarrow 7} \frac{\sqrt{7x - 24} - 5}{5x - 35} \]\begin{enumerate}[label=\Alph*.]
+\item \( \infty \)
+\item \( 0.100 \)
+\item \( 0.020 \)
+\item \( 0.529 \)
+\item \( \text{None of the above} \)
+
+\end{enumerate} }
+\litem{
+For the graph below, find the value(s) $a$ that makes the statement true: $ \displaystyle \lim_{x \rightarrow a} f(x) = 0$.
+\begin{center}
+    \includegraphics[width=0.5\textwidth]{../Figures/evaluateLimitGraphicallyCopyC.png}
+\end{center}
+\begin{enumerate}[label=\Alph*.]
+\item \( -4 \)
+\item \( 3 \)
+\item \( 0 \)
+\item \( \text{Multiple } a \text{ make the statement true}. \)
+\item \( \text{No } a \text{ make the statement true}. \)
+
+\end{enumerate} }
+\litem{
+For the graph below, evaluate the limit: $ \displaystyle \lim_{x \rightarrow 1} f(x)$.
+\begin{center}
+    \includegraphics[width=0.5\textwidth]{../Figures/evaluateLimitGraphicallyC.png}
+\end{center}
+\begin{enumerate}[label=\Alph*.]
+\item \( 3 \)
+\item \( 6 \)
+\item \( -\infty \)
+\item \( \text{The limit does not exist} \)
+\item \( \text{None of the above} \)
+
+\end{enumerate} }
+\litem{
+To estimate the one-sided limit of the function below as $x$ approaches 5 from the left, which of the following sets of numbers should you use?\[ \frac{\frac{5}{x} - 1}{x - 5} \]\begin{enumerate}[label=\Alph*.]
+\item \( \{ 5.1000, 5.0100, 5.0010, 5.0001 \} \)
+\item \( \{ 4.9000, 4.9900, 4.9990, 4.9999 \} \)
+\item \( \{ 5.0000, 4.9000, 4.9900, 4.9990 \} \)
+\item \( \{ 4.9000, 4.9900, 5.0100, 5.1000 \} \)
+\item \( \{ 5.0000, 5.1000, 5.0100, 5.0010 \} \)
+
+\end{enumerate} }
+\litem{
+Evaluate the one-sided limit of the function $f(x)$ below, if possible.\[ \lim_{x \rightarrow 3^+} \frac{6}{(x-3)^6}+5 \]\begin{enumerate}[label=\Alph*.]
+\item \( f(3) \)
+\item \( \infty \)
+\item \( -\infty \)
+\item \( \text{The limit does not exist} \)
+\item \( \text{None of the above} \)
+
+\end{enumerate} }
+\end{enumerate}
+
+\end{document}

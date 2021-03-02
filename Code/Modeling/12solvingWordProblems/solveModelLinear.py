@@ -37,11 +37,11 @@ if float(concentrationA+concentrationB)/2.0 == totalConcentration:
     totalConcentration = random.randint(concentrationA, concentrationB)
 totalVolume = random.randint(15, 30)
 volumeA = round(float(  float(totalConcentration*totalVolume - concentrationB*totalVolume) / float(concentrationA - concentrationB)    ), 2)
-volumeB = round(float(totalVolume), 2) - volumeA
+volumeB = round(float(totalVolume) - volumeA , 2)
 treatedEqual = round( float(totalVolume) / 2.0 , 2)
-randomValue = random.uniform(   int(min(volumeA, volumeB, treatedEqual)), int(max(volumeA, volumeB, treatedEqual))   )
+randomValue = round(random.uniform(   int(min(volumeA, volumeB, treatedEqual)), int(max(volumeA, volumeB, treatedEqual))   ), 2)
 while (randomValue == volumeA) or (randomValue == volumeB) or (randomValue == treatedEqual):
-    randomValue = random.randint(   int(min(volumeA, volumeB, treatedEqual)), int(max(volumeA, volumeB, treatedEqual))   )
+    randomValue = round(random.randint(   int(min(volumeA, volumeB, treatedEqual)), int(max(volumeA, volumeB, treatedEqual))   ), 2)
 test_list = [volumeA, volumeB, treatedEqual, randomValue]
 while len(set(test_list)) != len(test_list):
     concentrationA = random.randint(5, 20)
@@ -100,6 +100,9 @@ for checkLetter in letters:
     answerIndex = answerIndex+1
 
 # String, Math Mode, or Graph
+displayStemType="String"
+displayProblemType="String"
+displayOptionsType="Math Mode"
 if debug=="save":
     writeToDatabase(OS_type, DIR, database_name, question_list, thisQuestion, displayStemType, displayStem, displayProblemType, displayProblem, displayOptionsType, choices, choiceComments, displaySolution, answerLetter, generalComment)
 else:
