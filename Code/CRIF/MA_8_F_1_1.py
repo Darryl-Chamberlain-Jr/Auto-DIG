@@ -30,9 +30,6 @@ from intervalMaskingMethod import *
 sys.path.insert(1, f"/{DIR}/PythonScripts/ScriptsForDatabases")
 from storeQuestionData import *
 
-### Define as name of the file. This will be used for any images generated. ###
-#thisQuestion="MA_8_F_1_1"
-
 ### DEFINITIONS ###
 # This should list all definitions used. Be sure to check the commonly used functions file before creating a new one.
 def generate_sqrt_value(value, a, h, k):
@@ -64,22 +61,63 @@ def generate_relation(parent):
         for i in range(7):
             relation.append([counter, cubic_equation(counter)])
             counter += 1
-    elif (parent == "square root"):
-        a = maybeMakeNegative(random.randint(1, 5))
-        h = maybeMakeNegative(random.randint(1, 5))
-        k = maybeMakeNegative(random.randint(1, 5))
-        # Uses this as the base, then does (x-sqrt_equation)**
-        sqrt_equation = numpy.poly1d([-h])
-        counter = maybeMakeNegative(random.randint(1, 4))
+    elif (parent == "absolute value"): 
+        m = 0; b = 0; counter = 0
+        while (counter < float(-b/m) ):
+            m = maybeMakeNegative(random.randint(2, 7))
+            b = maybeMakeNegative(random.randint(1, 9))
+            counter = maybeMakeNegative(random.randint(1, 4))
+        linear_equation = numpy.poly1d([m, b])
         relation = []
         for i in range(7):
-            relation.append([counter, sqrt_equation(counter)])
+            relation.append([counter, abs(linear_equation(counter))])
             counter += 1
-
+    elif (parent == "exponential base 2"): 
+        a = maybeMakeNegative(random.randint(1, 5))
+        counter = random.randint(1, 4)
+        relation = []
+        for i in range(7):
+            relation.append([counter, a*numpy.exp2(counter)])
+            counter += 1
+    elif (parent == "square root"):
+        a = maybeMakeNegative(random.randint(1, 5))
+        counter = random.randint(1, 4)
+        relation = []
+        for i in range(7):
+            relation.append([counter, round(a*(counter)**0.5, 2)])
+            counter += 1
+    elif (parent == "cube root"):
+        a = maybeMakeNegative(random.randint(1, 5))
+        counter = random.randint(1, 4)
+        relation = []
+        for i in range(7):
+            relation.append([counter, round(a*(counter)**(1./3.), 2)])
+            counter += 1
+    elif (parent == "exponential base 1/2"): 
+        a = maybeMakeNegative(random.randint(1, 5))
+        counter = random.randint(1, 4)
+        relation = []
+        for i in range(7):
+            relation.append([counter, round(a*(1/2)**(counter), 2)])
+            counter += 1
+    elif (parent == "x=y^2"): 
+        a = maybeMakeNegative(random.randint(1, 5))
+        counter = random.randint(1, 4)
+        relation = []
+        # THIS IS NOT FINISHED. It should shift and print some negative and some positive. Maybe use another index to shift it instead of the 4.
+        for i in range(4):
+            relation.append([counter, -round(a*(counter)**0.5, 2)])
+            counter += 1 
+        relation.append([counter, ])
+        counter += 1
+        for i in range(4):
+            relation.append([counter, round(a*(counter)**0.5, 2)])
+            counter += 1 
 ### VARIABLE DECLARATIONS ###
 # Declare the necessary variables.
 function_switch_variable = ["function", "nonfunction"]
-function_parents = ["linear", "quadratic", "cubic", "square root", "cube root", "absolute value", "exponential base 2" "exponential base 1/2"]
+function_parents_integers = ["linear", "quadratic", "cubic", "absolute value", "exponential base 2"]
+function_parents_irrational = ["linear irrational", "square root", "cube root", "exponential base 1/2"]
 nonfunction_parents = ["x=y^2", "x=sqrt(y)", "x=|y|", "x^2+y^2=1", "y=sqrt(1-x^2)"]
 
 # Graph and mapping diagram will be completed at a later time
