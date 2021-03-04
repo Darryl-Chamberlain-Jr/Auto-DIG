@@ -58,7 +58,7 @@ from storeQuestionData import *
     # answerLetter = identifyAnswerLetter(answerLetterIndicators)
 
 ### Define display variables ###
-# Options are: "String", "Math Mode", or "Graph"
+# Options are: "String", "Math Mode", "Graph", or "Table"
 displayStemType="String"
 displayProblemType="Math Mode"
 displayOptionsType="Math Mode"
