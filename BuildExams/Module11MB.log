@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.8.4)  2 MAR 2021 11:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.8.4)  9 MAR 2021 14:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -581,12 +581,6 @@ Package graphics Info: Driver file: pdftex.def on input line 105.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-<../Figures/identifyModelGraph11B.png, id=4, 462.528pt x 346.896pt>
-File: ../Figures/identifyModelGraph11B.png Graphic file (type png)
-<use ../Figures/identifyModelGraph11B.png>
-Package pdftex.def Info: ../Figures/identifyModelGraph11B.png  used on input li
-ne 32.
-(pdftex.def)             Requested size: 234.8775pt x 176.15768pt.
 LaTeX Font Info:    Trying to load font information for U+msa on input line 32.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
@@ -604,10 +598,21 @@ LaTeX Font Info:    Trying to load font information for U+lasy on input line 32
 (/usr/share/texlive/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
+Overfull \hbox (35.50739pt too wide) in paragraph at lines 32--32
+[][] 
+ []
+
+
 Overfull \hbox (6.79684pt too wide) in paragraph at lines 32--45
 | [] 
  []
 
+<../Figures/identifyModelGraph11CopyB.png, id=4, 462.528pt x 346.896pt>
+File: ../Figures/identifyModelGraph11CopyB.png Graphic file (type png)
+<use ../Figures/identifyModelGraph11CopyB.png>
+Package pdftex.def Info: ../Figures/identifyModelGraph11CopyB.png  used on inpu
+t line 45.
+(pdftex.def)             Requested size: 234.8775pt x 176.15768pt.
 
 Overfull \hbox (6.79684pt too wide) in paragraph at lines 45--58
 | [] 
@@ -621,7 +626,7 @@ This may cause the page layout to be inconsistent, however.
 
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
- <../Figures/identifyModelGraph11B.png>]
+ <../Figures/identifyModelGraph11CopyB.png>]
 Overfull \hbox (6.79684pt too wide) in paragraph at lines 58--71
 | [] 
  []
@@ -631,15 +636,14 @@ Overfull \hbox (6.79684pt too wide) in paragraph at lines 71--84
 | [] 
  []
 
-<../Figures/identifyModelGraph11CopyB.png, id=27, 462.528pt x 346.896pt>
-File: ../Figures/identifyModelGraph11CopyB.png Graphic file (type png)
-<use ../Figures/identifyModelGraph11CopyB.png>
-Package pdftex.def Info: ../Figures/identifyModelGraph11CopyB.png  used on inpu
-t line 84.
-(pdftex.def)             Requested size: 234.8775pt x 176.15768pt.
 [2]
 Overfull \hbox (6.79684pt too wide) in paragraph at lines 84--97
 | [] 
+ []
+
+
+Overfull \hbox (35.50739pt too wide) in paragraph at lines 97--97
+[][] 
  []
 
 
@@ -647,7 +651,16 @@ Overfull \hbox (6.79684pt too wide) in paragraph at lines 97--110
 | [] 
  []
 
-[3 <../Figures/identifyModelGraph11CopyB.png>]
+<../Figures/identifyModelGraph11B.png, id=45, 462.528pt x 346.896pt>
+File: ../Figures/identifyModelGraph11B.png Graphic file (type png)
+<use ../Figures/identifyModelGraph11B.png>
+Package pdftex.def Info: ../Figures/identifyModelGraph11B.png  used on input li
+ne 110.
+(pdftex.def)             Requested size: 234.8775pt x 176.15768pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [3]
 Overfull \hbox (6.79684pt too wide) in paragraph at lines 110--123
 | [] 
  []
@@ -657,14 +670,9 @@ Overfull \hbox (6.79684pt too wide) in paragraph at lines 123--136
 | [] 
  []
 
-[4]
+[4 <../Figures/identifyModelGraph11B.png>]
 Overfull \hbox (6.79684pt too wide) in paragraph at lines 136--149
 | [] 
- []
-
-
-Overfull \hbox (35.50739pt too wide) in paragraph at lines 149--149
-[][] 
  []
 
 
@@ -692,18 +700,18 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 152.
 Here is how much of TeX's memory you used:
  9132 strings out of 483183
  135337 string characters out of 5966293
- 415640 words of memory out of 5000000
+ 415647 words of memory out of 5000000
  23905 multiletter control sequences out of 15000+600000
  536222 words of font info for 41 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 34i,11n,45p,993b,496s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 34i,11n,45p,993b,500s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texl
 ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on Module11MB.pdf (5 pages, 93790 bytes).
+Output written on Module11MB.pdf (5 pages, 95386 bytes).
 PDF statistics:
  132 PDF objects out of 1000 (max. 8388607)
  113 compressed objects within 2 object streams

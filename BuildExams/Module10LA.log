@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.8.4)  2 MAR 2021 11:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.8.4)  9 MAR 2021 14:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -616,22 +616,21 @@ This may cause the page layout to be inconsistent, however.
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 ]
-Overfull \hbox (4.52707pt too wide) in paragraph at lines 46--46
-[]$\OML/cmm/m/it/14.4 z[] \OMS/cmsy/m/n/14.4 2 \OT1/cmr/m/n/14.4 [\OMS/cmsy/m/n
-/14.4 ^^@\OT1/cmr/m/n/14.4 4\OML/cmm/m/it/14.4 :\OT1/cmr/m/n/14.4 27\OML/cmm/m/
-it/14.4 ; \OMS/cmsy/m/n/14.4 ^^@\OT1/cmr/m/n/14.4 3\OML/cmm/m/it/14.4 :\OT1/cmr
-/m/n/14.4 21]\OML/cmm/m/it/14.4 ; []z[] \OMS/cmsy/m/n/14.4 2 \OT1/cmr/m/n/14.4 
-[\OMS/cmsy/m/n/14.4 ^^@\OT1/cmr/m/n/14.4 1\OML/cmm/m/it/14.4 :\OT1/cmr/m/n/14.4
- 93\OML/cmm/m/it/14.4 ; \OMS/cmsy/m/n/14.4 ^^@\OT1/cmr/m/n/14.4 1\OML/cmm/m/it/
-14.4 :\OT1/cmr/m/n/14.4 36]\OML/cmm/m/it/14.4 ; z[] \OMS/cmsy/m/n/14.4 2 \OT1/c
-mr/m/n/14.4 [2\OML/cmm/m/it/14.4 :\OT1/cmr/m/n/14.4 41\OML/cmm/m/it/14.4 ; \OT1
-/cmr/m/n/14.4 2\OML/cmm/m/it/14.4 :\OT1/cmr/m/n/14.4 88]\OML/cmm/m/it/14.4 ; []
-z[] \OMS/cmsy/m/n/14.4 2
+Overfull \hbox (6.79684pt too wide) in paragraph at lines 46--55
+| [] 
  []
 
 
-Overfull \hbox (6.79684pt too wide) in paragraph at lines 46--55
-| [] 
+Overfull \hbox (21.20465pt too wide) in paragraph at lines 55--55
+[]$\OML/cmm/m/it/14.4 a \OMS/cmsy/m/n/14.4 2 \OT1/cmr/m/n/14.4 [\OMS/cmsy/m/n/1
+4.4 ^^@\OT1/cmr/m/n/14.4 30\OML/cmm/m/it/14.4 ; \OMS/cmsy/m/n/14.4 ^^@\OT1/cmr/
+m/n/14.4 27]\OML/cmm/m/it/14.4 ; b \OMS/cmsy/m/n/14.4 2 \OT1/cmr/m/n/14.4 [\OMS
+/cmsy/m/n/14.4 ^^@\OT1/cmr/m/n/14.4 26\OML/cmm/m/it/14.4 ; \OMS/cmsy/m/n/14.4 ^
+^@\OT1/cmr/m/n/14.4 21]\OML/cmm/m/it/14.4 ; c \OMS/cmsy/m/n/14.4 2 \OT1/cmr/m/n
+/14.4 [\OMS/cmsy/m/n/14.4 ^^@\OT1/cmr/m/n/14.4 55\OML/cmm/m/it/14.4 ; \OMS/cmsy
+/m/n/14.4 ^^@\OT1/cmr/m/n/14.4 49]\OML/cmm/m/it/14.4 ; []r \OMS/cmsy/m/n/14.4 2
+ \OT1/cmr/m/n/14.4 [\OMS/cmsy/m/n/14.4 ^^@\OT1/cmr/m/n/14.4 115\OML/cmm/m/it/14
+.4 ; \OMS/cmsy/m/n/14.4 ^^@\OT1/cmr/m/n/14.4 112]\OML/cmm/m/it/14.4 :$ 
  []
 
 
@@ -640,8 +639,28 @@ Overfull \hbox (6.79684pt too wide) in paragraph at lines 55--64
  []
 
 
-Overfull \hbox (42.88841pt too wide) in paragraph at lines 64--64
-[]$[]$ 
+Overfull \hbox (28.10388pt too wide) in paragraph at lines 64--64
+[]$\OML/cmm/m/it/14.4 a \OMS/cmsy/m/n/14.4 2 \OT1/cmr/m/n/14.4 [\OMS/cmsy/m/n/1
+4.4 ^^@\OT1/cmr/m/n/14.4 41\OML/cmm/m/it/14.4 ; \OMS/cmsy/m/n/14.4 ^^@\OT1/cmr/
+m/n/14.4 27]\OML/cmm/m/it/14.4 ; []b \OMS/cmsy/m/n/14.4 2 \OT1/cmr/m/n/14.4 [14
+6\OML/cmm/m/it/14.4 ; \OT1/cmr/m/n/14.4 153]\OML/cmm/m/it/14.4 ; []c \OMS/cmsy/
+m/n/14.4 2 \OT1/cmr/m/n/14.4 [\OMS/cmsy/m/n/14.4 ^^@\OT1/cmr/m/n/14.4 456\OML/c
+mm/m/it/14.4 ; \OMS/cmsy/m/n/14.4 ^^@\OT1/cmr/m/n/14.4 449]\OML/cmm/m/it/14.4 ;
+ []r \OMS/cmsy/m/n/14.4 2 \OT1/cmr/m/n/14.4 [1295\OML/cmm/m/it/14.4 ; \OT1/cmr/
+m/n/14.4 1303]\OML/cmm/m/it/14.4 :$ 
+ []
+
+
+Overfull \hbox (44.70435pt too wide) in paragraph at lines 64--64
+[]$\OML/cmm/m/it/14.4 a \OMS/cmsy/m/n/14.4 2 \OT1/cmr/m/n/14.4 [\OMS/cmsy/m/n/1
+4.4 ^^@\OT1/cmr/m/n/14.4 41\OML/cmm/m/it/14.4 ; \OMS/cmsy/m/n/14.4 ^^@\OT1/cmr/
+m/n/14.4 27]\OML/cmm/m/it/14.4 ; []b \OMS/cmsy/m/n/14.4 2 \OT1/cmr/m/n/14.4 [\O
+MS/cmsy/m/n/14.4 ^^@\OT1/cmr/m/n/14.4 65\OML/cmm/m/it/14.4 ; \OMS/cmsy/m/n/14.4
+ ^^@\OT1/cmr/m/n/14.4 61]\OML/cmm/m/it/14.4 ; []c \OMS/cmsy/m/n/14.4 2 \OT1/cmr
+/m/n/14.4 [\OMS/cmsy/m/n/14.4 ^^@\OT1/cmr/m/n/14.4 189\OML/cmm/m/it/14.4 ; \OMS
+/cmsy/m/n/14.4 ^^@\OT1/cmr/m/n/14.4 186]\OML/cmm/m/it/14.4 ; []r \OMS/cmsy/m/n/
+14.4 2 \OT1/cmr/m/n/14.4 [\OMS/cmsy/m/n/14.4 ^^@\OT1/cmr/m/n/14.4 621\OML/cmm/m
+/it/14.4 ; \OMS/cmsy/m/n/14.4 ^^@\OT1/cmr/m/n/14.4 617]\OML/cmm/m/it/14.4 :$ 
  []
 
 
@@ -655,40 +674,8 @@ Overfull \hbox (6.79684pt too wide) in paragraph at lines 73--82
  []
 
 
-Overfull \hbox (42.2037pt too wide) in paragraph at lines 82--82
-[]$\OML/cmm/m/it/14.4 a \OMS/cmsy/m/n/14.4 2 \OT1/cmr/m/n/14.4 [72\OML/cmm/m/it
-/14.4 ; \OT1/cmr/m/n/14.4 84]\OML/cmm/m/it/14.4 ; []b \OMS/cmsy/m/n/14.4 2 \OT1
-/cmr/m/n/14.4 [\OMS/cmsy/m/n/14.4 ^^@\OT1/cmr/m/n/14.4 406\OML/cmm/m/it/14.4 ; 
-\OMS/cmsy/m/n/14.4 ^^@\OT1/cmr/m/n/14.4 403]\OML/cmm/m/it/14.4 ; []c \OMS/cmsy/
-m/n/14.4 2 \OT1/cmr/m/n/14.4 [1622\OML/cmm/m/it/14.4 ; \OT1/cmr/m/n/14.4 1626]\
-OML/cmm/m/it/14.4 ; []r \OMS/cmsy/m/n/14.4 2 \OT1/cmr/m/n/14.4 [\OMS/cmsy/m/n/1
-4.4 ^^@\OT1/cmr/m/n/14.4 6445\OML/cmm/m/it/14.4 ; \OMS/cmsy/m/n/14.4 ^^@\OT1/cm
-r/m/n/14.4 6443]\OML/cmm/m/it/14.4 :$ 
- []
-
-
-Overfull \hbox (28.10388pt too wide) in paragraph at lines 82--82
-[]$\OML/cmm/m/it/14.4 a \OMS/cmsy/m/n/14.4 2 \OT1/cmr/m/n/14.4 [13\OML/cmm/m/it
-/14.4 ; \OT1/cmr/m/n/14.4 25]\OML/cmm/m/it/14.4 ; []b \OMS/cmsy/m/n/14.4 2 \OT1
-/cmr/m/n/14.4 [\OMS/cmsy/m/n/14.4 ^^@\OT1/cmr/m/n/14.4 171\OML/cmm/m/it/14.4 ; 
-\OMS/cmsy/m/n/14.4 ^^@\OT1/cmr/m/n/14.4 164]\OML/cmm/m/it/14.4 ; []c \OMS/cmsy/
-m/n/14.4 2 \OT1/cmr/m/n/14.4 [663\OML/cmm/m/it/14.4 ; \OT1/cmr/m/n/14.4 670]\OM
-L/cmm/m/it/14.4 ; []r \OMS/cmsy/m/n/14.4 2 \OT1/cmr/m/n/14.4 [\OMS/cmsy/m/n/14.
-4 ^^@\OT1/cmr/m/n/14.4 2609\OML/cmm/m/it/14.4 ; \OMS/cmsy/m/n/14.4 ^^@\OT1/cmr/
-m/n/14.4 2603]\OML/cmm/m/it/14.4 :$ 
- []
-
-
-Overfull \hbox (8.20447pt too wide) in paragraph at lines 82--82
-[]$\OML/cmm/m/it/14.4 a \OMS/cmsy/m/n/14.4 2 \OT1/cmr/m/n/14.4 [13\OML/cmm/m/it
-/14.4 ; \OT1/cmr/m/n/14.4 25]\OML/cmm/m/it/14.4 ; []b \OMS/cmsy/m/n/14.4 2 \OT1
-/cmr/m/n/14.4 [\OMS/cmsy/m/n/14.4 ^^@\OT1/cmr/m/n/14.4 30\OML/cmm/m/it/14.4 ; \
-OMS/cmsy/m/n/14.4 ^^@\OT1/cmr/m/n/14.4 24]\OML/cmm/m/it/14.4 ; []c \OMS/cmsy/m/
-n/14.4 2 \OT1/cmr/m/n/14.4 [\OMS/cmsy/m/n/14.4 ^^@\OT1/cmr/m/n/14.4 74\OML/cmm/
-m/it/14.4 ; \OMS/cmsy/m/n/14.4 ^^@\OT1/cmr/m/n/14.4 68]\OML/cmm/m/it/14.4 ; []r
- \OMS/cmsy/m/n/14.4 2 \OT1/cmr/m/n/14.4 [\OMS/cmsy/m/n/14.4 ^^@\OT1/cmr/m/n/14.
-4 160\OML/cmm/m/it/14.4 ; \OMS/cmsy/m/n/14.4 ^^@\OT1/cmr/m/n/14.4 148]\OML/cmm/
-m/it/14.4 :$ 
+Overfull \hbox (42.88841pt too wide) in paragraph at lines 82--82
+[]$[]$ 
  []
 
 
@@ -696,27 +683,47 @@ Overfull \hbox (6.79684pt too wide) in paragraph at lines 82--91
 | [] 
  []
 
-[3]
-Overfull \hbox (28.59027pt too wide) in paragraph at lines 91--91
-[]$[]$ 
+
+Overfull \hbox (63.50412pt too wide) in paragraph at lines 91--91
+[]$\OML/cmm/m/it/14.4 a \OMS/cmsy/m/n/14.4 2 \OT1/cmr/m/n/14.4 [\OMS/cmsy/m/n/1
+4.4 ^^@\OT1/cmr/m/n/14.4 42\OML/cmm/m/it/14.4 ; \OMS/cmsy/m/n/14.4 ^^@\OT1/cmr/
+m/n/14.4 37]\OML/cmm/m/it/14.4 ; b \OMS/cmsy/m/n/14.4 2 \OT1/cmr/m/n/14.4 [\OMS
+/cmsy/m/n/14.4 ^^@\OT1/cmr/m/n/14.4 165\OML/cmm/m/it/14.4 ; \OMS/cmsy/m/n/14.4 
+^^@\OT1/cmr/m/n/14.4 155]\OML/cmm/m/it/14.4 ; c \OMS/cmsy/m/n/14.4 2 \OT1/cmr/m
+/n/14.4 [\OMS/cmsy/m/n/14.4 ^^@\OT1/cmr/m/n/14.4 792\OML/cmm/m/it/14.4 ; \OMS/c
+msy/m/n/14.4 ^^@\OT1/cmr/m/n/14.4 788]\OML/cmm/m/it/14.4 ; []r \OMS/cmsy/m/n/14
+.4 2 \OT1/cmr/m/n/14.4 [\OMS/cmsy/m/n/14.4 ^^@\OT1/cmr/m/n/14.4 4006\OML/cmm/m/
+it/14.4 ; \OMS/cmsy/m/n/14.4 ^^@\OT1/cmr/m/n/14.4 3999]\OML/cmm/m/it/14.4 :$ 
  []
 
 
+Overfull \hbox (32.80383pt too wide) in paragraph at lines 91--91
+[]$\OML/cmm/m/it/14.4 a \OMS/cmsy/m/n/14.4 2 \OT1/cmr/m/n/14.4 [\OMS/cmsy/m/n/1
+4.4 ^^@\OT1/cmr/m/n/14.4 42\OML/cmm/m/it/14.4 ; \OMS/cmsy/m/n/14.4 ^^@\OT1/cmr/
+m/n/14.4 37]\OML/cmm/m/it/14.4 ; b \OMS/cmsy/m/n/14.4 2 \OT1/cmr/m/n/14.4 [242\
+OML/cmm/m/it/14.4 ; \OT1/cmr/m/n/14.4 244]\OML/cmm/m/it/14.4 ; c \OMS/cmsy/m/n/
+14.4 2 \OT1/cmr/m/n/14.4 [\OMS/cmsy/m/n/14.4 ^^@\OT1/cmr/m/n/14.4 1217\OML/cmm/
+m/it/14.4 ; \OMS/cmsy/m/n/14.4 ^^@\OT1/cmr/m/n/14.4 1206]\OML/cmm/m/it/14.4 ; [
+]r \OMS/cmsy/m/n/14.4 2 \OT1/cmr/m/n/14.4 [5996\OML/cmm/m/it/14.4 ; \OT1/cmr/m/
+n/14.4 5999]\OML/cmm/m/it/14.4 :$ 
+ []
+
+[3]
 Overfull \hbox (6.79684pt too wide) in paragraph at lines 91--100
 | [] 
  []
 
 
-Overfull \hbox (35.30447pt too wide) in paragraph at lines 100--100
+Overfull \hbox (37.65443pt too wide) in paragraph at lines 100--100
 []$\OML/cmm/m/it/14.4 a \OMS/cmsy/m/n/14.4 2 \OT1/cmr/m/n/14.4 [\OMS/cmsy/m/n/1
 4.4 ^^@\OT1/cmr/m/n/14.4 16\OML/cmm/m/it/14.4 ; \OMS/cmsy/m/n/14.4 ^^@\OT1/cmr/
-m/n/14.4 14]\OML/cmm/m/it/14.4 ; b \OMS/cmsy/m/n/14.4 2 \OT1/cmr/m/n/14.4 [\OMS
-/cmsy/m/n/14.4 ^^@\OT1/cmr/m/n/14.4 36\OML/cmm/m/it/14.4 ; \OMS/cmsy/m/n/14.4 ^
-^@\OT1/cmr/m/n/14.4 25]\OML/cmm/m/it/14.4 ; c \OMS/cmsy/m/n/14.4 2 \OT1/cmr/m/n
-/14.4 [\OMS/cmsy/m/n/14.4 ^^@\OT1/cmr/m/n/14.4 107\OML/cmm/m/it/14.4 ; \OMS/cms
-y/m/n/14.4 ^^@\OT1/cmr/m/n/14.4 103]\OML/cmm/m/it/14.4 ; []r \OMS/cmsy/m/n/14.4
- 2 \OT1/cmr/m/n/14.4 [\OMS/cmsy/m/n/14.4 ^^@\OT1/cmr/m/n/14.4 231\OML/cmm/m/it/
-14.4 ; \OMS/cmsy/m/n/14.4 ^^@\OT1/cmr/m/n/14.4 226]\OML/cmm/m/it/14.4 :$ 
+m/n/14.4 6]\OML/cmm/m/it/14.4 ; []b \OMS/cmsy/m/n/14.4 2 \OT1/cmr/m/n/14.4 [\OM
+S/cmsy/m/n/14.4 ^^@\OT1/cmr/m/n/14.4 45\OML/cmm/m/it/14.4 ; \OMS/cmsy/m/n/14.4 
+^^@\OT1/cmr/m/n/14.4 36]\OML/cmm/m/it/14.4 ; []c \OMS/cmsy/m/n/14.4 2 \OT1/cmr/
+m/n/14.4 [\OMS/cmsy/m/n/14.4 ^^@\OT1/cmr/m/n/14.4 153\OML/cmm/m/it/14.4 ; \OMS/
+cmsy/m/n/14.4 ^^@\OT1/cmr/m/n/14.4 146]\OML/cmm/m/it/14.4 ; []r \OMS/cmsy/m/n/1
+4.4 2 \OT1/cmr/m/n/14.4 [\OMS/cmsy/m/n/14.4 ^^@\OT1/cmr/m/n/14.4 417\OML/cmm/m/
+it/14.4 ; \OMS/cmsy/m/n/14.4 ^^@\OT1/cmr/m/n/14.4 404]\OML/cmm/m/it/14.4 :$ 
  []
 
 
@@ -725,16 +732,8 @@ Overfull \hbox (6.79684pt too wide) in paragraph at lines 100--109
  []
 
 
-Overfull \hbox (12.43741pt too wide) in paragraph at lines 109--109
-[]$\OML/cmm/m/it/14.4 a \OMS/cmsy/m/n/14.4 2 \OT1/cmr/m/n/14.4 [\OMS/cmsy/m/n/1
-4.4 ^^@\OT1/cmr/m/n/14.4 19\OML/cmm/m/it/14.4 ; \OMS/cmsy/m/n/14.4 ^^@\OT1/cmr/
-m/n/14.4 11]\OML/cmm/m/it/14.4 ; b \OMS/cmsy/m/n/14.4 2 \OT1/cmr/m/n/14.4 [34\O
-ML/cmm/m/it/14.4 :\OT1/cmr/m/n/14.4 9\OML/cmm/m/it/14.4 ; \OT1/cmr/m/n/14.4 36\
-OML/cmm/m/it/14.4 :\OT1/cmr/m/n/14.4 3]\OML/cmm/m/it/14.4 ; c \OMS/cmsy/m/n/14.
-4 2 \OT1/cmr/m/n/14.4 [\OMS/cmsy/m/n/14.4 ^^@\OT1/cmr/m/n/14.4 142\OML/cmm/m/it
-/14.4 ; \OMS/cmsy/m/n/14.4 ^^@\OT1/cmr/m/n/14.4 128]\OML/cmm/m/it/14.4 ; []r \O
-MS/cmsy/m/n/14.4 2 \OT1/cmr/m/n/14.4 [434\OML/cmm/m/it/14.4 ; \OT1/cmr/m/n/14.4
- 435]\OML/cmm/m/it/14.4 :$ 
+Overfull \hbox (42.88841pt too wide) in paragraph at lines 109--109
+[]$[]$ 
  []
 
 
@@ -762,17 +761,17 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 112.
 Here is how much of TeX's memory you used:
  9115 strings out of 483183
  134821 string characters out of 5966293
- 417640 words of memory out of 5000000
+ 417647 words of memory out of 5000000
  23894 multiletter control sequences out of 15000+600000
  535915 words of font info for 40 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 34i,11n,45p,993b,543s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 34i,12n,45p,993b,543s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share
 /texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on Module10LA.pdf (4 pages, 66563 bytes).
+Output written on Module10LA.pdf (4 pages, 65846 bytes).
 PDF statistics:
  119 PDF objects out of 1000 (max. 8388607)
  106 compressed objects within 2 object streams

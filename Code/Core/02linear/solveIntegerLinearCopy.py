@@ -1,15 +1,6 @@
 import sys
-from sympy import *
-import numpy
 import random
-import math
-from decimal import Decimal
-import decimal
-import traceback
-import cmath
-import matplotlib.pyplot as plt
-from sympy.abc import x, y
-from sympy.solvers import solve
+import numpy
 
 DIR=sys.argv[1]
 debug=sys.argv[2]
@@ -29,37 +20,38 @@ sys.path.insert(1, f"/{DIR}/PythonScripts/ScriptsForDatabases")
 from storeQuestionData import *
 
 ### DEFINITIONS ###
-def generateBlocks():    # Create an array of 6 distinct naturals, then make some integers
-    blocks = [0,0,0,0,0,0]
+def generateCoefficients():    # Create an array of 6 distinct naturals, then make some integers
+    coefficients = [0,0,0,0,0,0]
     OneSolutionCheck = 0
     while (OneSolutionCheck == 0):    # Makes sure there is exactly one solution
-        listNaturals = range(2, 20)
-        blocks = random.sample(listNaturals, 6)
-        blocks[0] = -blocks[0]
-        blocks[1] = maybeMakeNegative(blocks[1])
-        blocks[2] = maybeMakeNegative(blocks[2])
-        blocks[3] = -blocks[3]
-        blocks[4] = maybeMakeNegative(blocks[4])
-        blocks[5] = maybeMakeNegative(blocks[5])
-        OneSolutionCheck = blocks[0]*blocks[2] - blocks[3]*blocks[4]
-    return blocks
-def generateSolution(blocks):
-    a, b, c, d, e, f = blocks
-    basicLinearEquation = a * (b * x + c) - d * ( x * e + f)
-    solution = solve(basicLinearEquation, x)
+        coefficients = random.sample(range(2, 20), 6) # ensures all coefficients are distinct
+        coefficients[0] = -coefficients[0] # to ensure a distractor for distribution of negative incorrectly
+        coefficients[1] = maybeMakeNegative(coefficients[1])
+        coefficients[2] = maybeMakeNegative(coefficients[2])
+        coefficients[3] = -coefficients[3] # to ensure a distractor for distribution of negative incorrectly
+        coefficients[4] = maybeMakeNegative(coefficients[4])
+        coefficients[5] = maybeMakeNegative(coefficients[5])
+        OneSolutionCheck = coefficients[0]*coefficients[2] - coefficients[3]*coefficients[4] # checks that the coefficient for resulting linear equation is nonzero
+    return coefficients
+def generateSolution(coefficients):
+    a, b, c, d, e, f = coefficients
+    eq1 = numpy.poly1d([a*b, a*c])
+    eq2 = numpy.poly1d([d*e, d*f])
+    basicLinearEquation = eq1 - eq2
+    solution = basicLinearEquation.r
     if len(solution) == 0:
         solution=[0]
     return solution[0]
-def generateDistractors(blocks):
-    a, b, c, d, e, f = blocks
+def generateDistractors(coefficients):
+    a, b, c, d, e, f = coefficients
     distractor1 = generateSolution([a, b, -c, d, e, f])    # not distributing the negative in front of the first parentheses correctly
     distractor2 = generateSolution([a, b, c, d, e, -f])    # not distributing the negative in front of the second parentheses correctly
     distractor3 = generateSolution([-a, b, c, d, e, f])    # negative of the actual solution
     return [distractor1, distractor2, distractor3]
 ### VARIABLE DECLARATIONS ###
-blocks = generateBlocks()
-solution = generateSolution(blocks)
-distractor1, distractor2, distractor3 = generateDistractors(blocks)
+coefficients = generateCoefficients()
+solution = generateSolution(coefficients)
+distractor1, distractor2, distractor3 = generateDistractors(coefficients)
 solutionList = [solution, distractor1, distractor2, distractor3]
 ### CREATE INTERVAL OPTIONS ###
 intervalOptions = createIntervalOptions(solutionList, 3, 1)
@@ -80,7 +72,7 @@ answerLetterIndicators = [answerList[0][2], answerList[1][2], answerList[2][2], 
 answerLetter = identifyAnswerLetter(answerLetterIndicators)
 ### DEFINE STEM, PROBLEM, GENERAL COMMENT ###
 displayStem = 'Solve the equation below. Then, choose the interval that contains the solution.'
-displayProblem = "%d(%s) = %d(%s)" %(blocks[0], generatePolynomialDisplay([blocks[1], blocks[2]]), blocks[3], generatePolynomialDisplay([blocks[4], blocks[5]]))
+displayProblem = "%d(%s) = %d(%s)" %(coefficients[0], generatePolynomialDisplay([coefficients[1], coefficients[2]]), coefficients[3], generatePolynomialDisplay([coefficients[4], coefficients[5]]))
 generalComment = "The most common mistake on this question is to not distribute the negative in front of the second fraction correctly. The best way to avoid this is putting the numerator in parentheses, which will help you remember to distribute the negative correctly."
 
 displayStemType="String"

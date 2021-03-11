@@ -1,12 +1,7 @@
 import sys
-from sympy import *
-import numpy
 import random
+import numpy
 import math
-from decimal import Decimal
-import decimal
-import traceback
-import cmath
 import matplotlib.pyplot as plt
 
 DIR=sys.argv[1]
@@ -29,19 +24,17 @@ from storeQuestionData import *
 ### DEFINITIONS ###
 def simplifySolution(A, B, C):
     if(A < 0):
-        A = -A
-        B = -B
-        C = -C
-    aBGCD = math.gcd(A, B)
-    bCGCD = math.gcd(B, C)
-    mixedGCD = math.gcd(aBGCD, bCGCD)
-    while(mixedGCD > 1):
-        A = int(A/mixedGCD)
-        B = int(B/mixedGCD)
-        C = int(C/mixedGCD)
-        aBGCD = math.gcd(A, B)
-        bCGCD = math.gcd(B, C)
-        mixedGCD = math.gcd(aBGCD, bCGCD)
+        A = -A; B = -B; C = -C # math.gcd does not like negative values
+    GCD_A_B = math.gcd(A, B)
+    GCD_B_C = math.gcd(B, C)
+    mixed_GCD = math.gcd(GCD_A_B, GCD_B_C)
+    while(mixed_GCD > 1):
+        A = int(A/mixed_GCD)
+        B = int(B/mixed_GCD)
+        C = int(C/mixed_GCD)
+        GCD_A_B = math.gcd(A, B)
+        GCD_B_C = math.gcd(B, C)
+        mixed_GCD = math.gcd(GCD_A_B, GCD_B_C)
     return [A, B, C]
 def generateProblemAndSolution(numeratorMax, interceptMax):
     numeratorSlope = maybeMakeNegative(random.randint(2, numeratorMax))

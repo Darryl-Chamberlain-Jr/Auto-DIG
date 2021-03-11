@@ -1,15 +1,7 @@
 import sys
-from sympy import *
-import numpy
-import random
 import math
-from decimal import Decimal
-import decimal
-import traceback
-import cmath
-import matplotlib.pyplot as plt
-from sympy.abc import x, y
-from sympy.solvers import solve
+import random
+import numpy
 
 DIR=sys.argv[1]
 debug=sys.argv[2]
@@ -70,11 +62,11 @@ def createViableConstants():
     return [a, b, c, d, e, f, g, h, i]
 def createSolution(constants):
     a, b, c, d, e, f, g, h, i = constants
-    equationBlockOne = (a*x+d)/g
-    equationBlockTwo = (b*x+e)/h
-    equationBlockThree = (c*x+f)/i
-    toSolve = equationBlockOne - equationBlockTwo - equationBlockThree
-    solution = solve(toSolve)
+    eq1 = numpy.poly1d([a/g, d/g])
+    eq2 = numpy.poly1d([b/h, e/h])
+    eq3 = numpy.poly1d([c/i, f/i])
+    toSolve = eq1 - eq2 - eq3
+    solution = toSolve.r
     if len(solution)==0:
         solution = [0]
     return solution[0]

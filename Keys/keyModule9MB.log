@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.8.4)  2 MAR 2021 11:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.8.4)  9 MAR 2021 14:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -581,11 +581,6 @@ Overfull \hbox (25.00003pt too wide) in paragraph at lines 50--76
  []
 
 
-Overfull \hbox (70.69038pt too wide) in paragraph at lines 76--76
-[][]\OT1/cmr/m/n/10 The so-lu-tion is $[]$,
- []
-
-
 Package Fancyhdr Warning: \headheight is too small (0.0pt): 
 Make it at least 12.0pt.
 We now make it that large for the rest of the document.
@@ -603,22 +598,22 @@ Overfull \hbox (25.00003pt too wide) in paragraph at lines 102--128
 [][] 
  []
 
-
-Overfull \hbox (19.41255pt too wide) in paragraph at lines 128--128
-[][]\OT1/cmr/m/n/10 The so-lu-tion is $[]$,
- []
-
 [2]
 Overfull \hbox (25.00003pt too wide) in paragraph at lines 128--154
 [][] 
  []
 
-
+[3]
 Overfull \hbox (25.00003pt too wide) in paragraph at lines 154--180
 [][] 
  []
 
-[3]
+
+Overfull \hbox (19.41255pt too wide) in paragraph at lines 180--180
+[][]\OT1/cmr/m/n/10 The so-lu-tion is $[]$,
+ []
+
+
 Overfull \hbox (25.00003pt too wide) in paragraph at lines 180--206
 [][] 
  []
@@ -626,6 +621,11 @@ Overfull \hbox (25.00003pt too wide) in paragraph at lines 180--206
 [4]
 Overfull \hbox (25.00003pt too wide) in paragraph at lines 206--232
 [][] 
+ []
+
+
+Overfull \hbox (0.30144pt too wide) in paragraph at lines 232--232
+[][]\OT1/cmr/m/n/10 The so-
  []
 
 
@@ -663,7 +663,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 287.
 Here is how much of TeX's memory you used:
  8647 strings out of 483183
  129034 string characters out of 5966293
- 404213 words of memory out of 5000000
+ 404220 words of memory out of 5000000
  23430 multiletter control sequences out of 15000+600000
  535699 words of font info for 39 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
@@ -671,14 +671,13 @@ Here is how much of TeX's memory you used:
  </home/dchamberlain31/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/tct
 i1000.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx1
 0.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb>
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/s
-hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/te
-xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on keyModule9MB.pdf (6 pages, 103399 bytes).
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/s
+hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/t
+exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on keyModule9MB.pdf (6 pages, 95298 bytes).
 PDF statistics:
- 140 PDF objects out of 1000 (max. 8388607)
- 123 compressed objects within 2 object streams
+ 136 PDF objects out of 1000 (max. 8388607)
+ 120 compressed objects within 2 object streams
  67 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

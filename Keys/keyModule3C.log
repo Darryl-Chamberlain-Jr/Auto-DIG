@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.8.4)  2 MAR 2021 10:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.8.4)  9 MAR 2021 13:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -618,12 +618,12 @@ Overfull \hbox (25.00003pt too wide) in paragraph at lines 178--200
 [][] 
  []
 
-
+[4]
 Overfull \hbox (25.00003pt too wide) in paragraph at lines 200--222
 [][] 
  []
 
-[4]
+
 Overfull \hbox (25.00003pt too wide) in paragraph at lines 222--244
 [][] 
  []
@@ -653,7 +653,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 247.
 Here is how much of TeX's memory you used:
  8645 strings out of 483183
  129002 string characters out of 5966293
- 404211 words of memory out of 5000000
+ 404218 words of memory out of 5000000
  23429 multiletter control sequences out of 15000+600000
  535322 words of font info for 38 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
@@ -663,7 +663,7 @@ r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texli
 ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on keyModule3C.pdf (6 pages, 84996 bytes).
+Output written on keyModule3C.pdf (6 pages, 85083 bytes).
 PDF statistics:
  131 PDF objects out of 1000 (max. 8388607)
  116 compressed objects within 2 object streams

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.8.4)  2 MAR 2021 10:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.8.4)  9 MAR 2021 13:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -598,40 +598,41 @@ LaTeX Font Info:    Trying to load font information for U+lasy on input line 23
 (/usr/share/texlive/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-<../Figures/quadraticEquationToGraphAC.png, id=4, 457.4691pt x 343.2825pt>
+<../Figures/quadraticEquationToGraphAC.png, id=4, 461.8053pt x 343.2825pt>
 File: ../Figures/quadraticEquationToGraphAC.png Graphic file (type png)
 <use ../Figures/quadraticEquationToGraphAC.png>
 Package pdftex.def Info: ../Figures/quadraticEquationToGraphAC.png  used on inp
 ut line 23.
-(pdftex.def)             Requested size: 140.92793pt x 105.75124pt.
-<../Figures/quadraticEquationToGraphBC.png, id=6, 457.4691pt x 343.2825pt>
+(pdftex.def)             Requested size: 140.92793pt x 104.756pt.
+<../Figures/quadraticEquationToGraphBC.png, id=6, 461.8053pt x 343.2825pt>
 File: ../Figures/quadraticEquationToGraphBC.png Graphic file (type png)
 <use ../Figures/quadraticEquationToGraphBC.png>
 Package pdftex.def Info: ../Figures/quadraticEquationToGraphBC.png  used on inp
 ut line 23.
-(pdftex.def)             Requested size: 140.92793pt x 105.75124pt.
-<../Figures/quadraticEquationToGraphCC.png, id=7, 476.982pt x 343.2825pt>
+(pdftex.def)             Requested size: 140.92793pt x 104.756pt.
+<../Figures/quadraticEquationToGraphCC.png, id=7, 461.8053pt x 343.2825pt>
 File: ../Figures/quadraticEquationToGraphCC.png Graphic file (type png)
 <use ../Figures/quadraticEquationToGraphCC.png>
 Package pdftex.def Info: ../Figures/quadraticEquationToGraphCC.png  used on inp
 ut line 23.
-(pdftex.def)             Requested size: 140.92793pt x 101.42459pt.
-<../Figures/quadraticEquationToGraphDC.png, id=8, 476.982pt x 343.2825pt>
+(pdftex.def)             Requested size: 140.92793pt x 104.756pt.
+<../Figures/quadraticEquationToGraphDC.png, id=8, 461.8053pt x 343.2825pt>
 File: ../Figures/quadraticEquationToGraphDC.png Graphic file (type png)
 <use ../Figures/quadraticEquationToGraphDC.png>
 Package pdftex.def Info: ../Figures/quadraticEquationToGraphDC.png  used on inp
 ut line 23.
-(pdftex.def)             Requested size: 140.92793pt x 101.42459pt.
+(pdftex.def)             Requested size: 140.92793pt x 104.756pt.
 
-Overfull \hbox (6.79684pt too wide) in paragraph at lines 23--32
+Overfull \hbox (6.79684pt too wide) in paragraph at lines 23--36
 | [] 
  []
 
-
-Overfull \hbox (6.79684pt too wide) in paragraph at lines 32--41
-| [] 
- []
-
+<../Figures/quadraticGraphToEquationC.png, id=9, 441.5697pt x 343.2825pt>
+File: ../Figures/quadraticGraphToEquationC.png Graphic file (type png)
+<use ../Figures/quadraticGraphToEquationC.png>
+Package pdftex.def Info: ../Figures/quadraticGraphToEquationC.png  used on inpu
+t line 36.
+(pdftex.def)             Requested size: 234.8775pt x 182.59885pt.
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
 Make it at least 17.0pt.
@@ -642,89 +643,117 @@ This may cause the page layout to be inconsistent, however.
 
  <../Figures/quadraticEquationToGraphAC.png> <../Figures/quadraticEquationToGra
 phBC.png> <../Figures/quadraticEquationToGraphCC.png> <../Figures/quadraticEqua
-tionToGraphDC.png>]
-Overfull \hbox (6.79684pt too wide) in paragraph at lines 41--54
-| [] 
- []
-
-<../Figures/quadraticGraphToEquationCopyC.png, id=35, 441.5697pt x 343.2825pt>
-File: ../Figures/quadraticGraphToEquationCopyC.png Graphic file (type png)
-<use ../Figures/quadraticGraphToEquationCopyC.png>
-Package pdftex.def Info: ../Figures/quadraticGraphToEquationCopyC.png  used on 
-input line 54.
-(pdftex.def)             Requested size: 234.8775pt x 182.59885pt.
-
-Overfull \hbox (6.79684pt too wide) in paragraph at lines 54--63
-| [] 
- []
-
-[2 <../Figures/quadraticGraphToEquationCopyC.png>]
-Overfull \hbox (6.79684pt too wide) in paragraph at lines 63--76
-| [] 
- []
-
-<../Figures/quadraticGraphToEquationC.png, id=54, 441.5697pt x 343.2825pt>
-File: ../Figures/quadraticGraphToEquationC.png Graphic file (type png)
-<use ../Figures/quadraticGraphToEquationC.png>
-Package pdftex.def Info: ../Figures/quadraticGraphToEquationC.png  used on inpu
-t line 76.
-(pdftex.def)             Requested size: 234.8775pt x 182.59885pt.
-
-Overfull \hbox (6.79684pt too wide) in paragraph at lines 76--85
-| [] 
- []
-
-[3 <../Figures/quadraticGraphToEquationC.png>]
-Overfull \hbox (6.79684pt too wide) in paragraph at lines 85--94
+tionToGraphDC.png> <../Figures/quadraticGraphToEquationC.png>]
+Overfull \hbox (6.79684pt too wide) in paragraph at lines 36--45
 | [] 
  []
 
 
-Overfull \hbox (6.79684pt too wide) in paragraph at lines 94--103
+Overfull \hbox (6.79684pt too wide) in paragraph at lines 45--54
 | [] 
  []
 
 
-Overfull \hbox (6.79684pt too wide) in paragraph at lines 103--107
+Overfull \hbox (6.79684pt too wide) in paragraph at lines 54--58
 | [] 
  []
 
-[4]
-<../Figures/quadraticEquationToGraphCopyAC.png, id=93, 476.982pt x 343.2825pt>
+[2]
+<../Figures/quadraticEquationToGraphCopyAC.png, id=53, 457.4691pt x 343.2825pt>
+
 File: ../Figures/quadraticEquationToGraphCopyAC.png Graphic file (type png)
 <use ../Figures/quadraticEquationToGraphCopyAC.png>
 Package pdftex.def Info: ../Figures/quadraticEquationToGraphCopyAC.png  used on
- input line 107.
-(pdftex.def)             Requested size: 140.92793pt x 101.42459pt.
-<../Figures/quadraticEquationToGraphCopyBC.png, id=94, 441.5697pt x 343.2825pt>
-
+ input line 58.
+(pdftex.def)             Requested size: 140.92793pt x 105.75124pt.
+<../Figures/quadraticEquationToGraphCopyBC.png, id=54, 476.982pt x 351.2322pt>
 File: ../Figures/quadraticEquationToGraphCopyBC.png Graphic file (type png)
 <use ../Figures/quadraticEquationToGraphCopyBC.png>
 Package pdftex.def Info: ../Figures/quadraticEquationToGraphCopyBC.png  used on
- input line 107.
-(pdftex.def)             Requested size: 140.92793pt x 109.5593pt.
-<../Figures/quadraticEquationToGraphCopyCC.png, id=95, 441.5697pt x 343.2825pt>
+ input line 58.
+(pdftex.def)             Requested size: 140.92793pt x 103.77338pt.
+<../Figures/quadraticEquationToGraphCopyCC.png, id=55, 457.4691pt x 343.2825pt>
 
 File: ../Figures/quadraticEquationToGraphCopyCC.png Graphic file (type png)
 <use ../Figures/quadraticEquationToGraphCopyCC.png>
 Package pdftex.def Info: ../Figures/quadraticEquationToGraphCopyCC.png  used on
- input line 107.
-(pdftex.def)             Requested size: 140.92793pt x 109.5593pt.
-<../Figures/quadraticEquationToGraphCopyDC.png, id=96, 476.982pt x 343.2825pt>
+ input line 58.
+(pdftex.def)             Requested size: 140.92793pt x 105.75124pt.
+<../Figures/quadraticEquationToGraphCopyDC.png, id=56, 476.982pt x 351.2322pt>
 File: ../Figures/quadraticEquationToGraphCopyDC.png Graphic file (type png)
 <use ../Figures/quadraticEquationToGraphCopyDC.png>
 Package pdftex.def Info: ../Figures/quadraticEquationToGraphCopyDC.png  used on
- input line 107.
-(pdftex.def)             Requested size: 140.92793pt x 101.42459pt.
+ input line 58.
+(pdftex.def)             Requested size: 140.92793pt x 103.77338pt.
+
+Overfull \hbox (6.79684pt too wide) in paragraph at lines 58--67
+| [] 
+ []
+
+
+Overfull \hbox (6.58148pt too wide) in paragraph at lines 67--67
+[]$\OML/cmm/m/it/14.4 a \OMS/cmsy/m/n/14.4 2 \OT1/cmr/m/n/14.4 [\OMS/cmsy/m/n/1
+4.4 ^^@\OT1/cmr/m/n/14.4 1\OML/cmm/m/it/14.4 :\OT1/cmr/m/n/14.4 7\OML/cmm/m/it/
+14.4 ; \OT1/cmr/m/n/14.4 1\OML/cmm/m/it/14.4 :\OT1/cmr/m/n/14.4 6]\OML/cmm/m/it
+/14.4 ;|  b \OMS/cmsy/m/n/14.4 2 \OT1/cmr/m/n/14.4 [\OMS/cmsy/m/n/14.4 ^^@\OT1/
+cmr/m/n/14.4 40\OML/cmm/m/it/14.4 ; \OMS/cmsy/m/n/14.4 ^^@\OT1/cmr/m/n/14.4 31]
+\OML/cmm/m/it/14.4 ;|  c \OMS/cmsy/m/n/14.4 2 \OT1/cmr/m/n/14.4 [0\OML/cmm/m/it
+/14.4 ; \OT1/cmr/m/n/14.4 2]\OML/cmm/m/it/14.4 ; []| d \OMS/cmsy/m/n/14.4 2 \OT
+1/cmr/m/n/14.4 [\OMS/cmsy/m/n/14.4 ^^@\OT1/cmr/m/n/14.4 24\OML/cmm/m/it/14.4 ; 
+\OMS/cmsy/m/n/14.4 ^^@\OT1/cmr/m/n/14.4 16]$ 
+ []
+
+
+Overfull \hbox (6.79684pt too wide) in paragraph at lines 67--80
+| [] 
+ []
+
+<../Figures/quadraticGraphToEquationCopyC.png, id=57, 461.8053pt x 343.2825pt>
+File: ../Figures/quadraticGraphToEquationCopyC.png Graphic file (type png)
+<use ../Figures/quadraticGraphToEquationCopyC.png>
+Package pdftex.def Info: ../Figures/quadraticGraphToEquationCopyC.png  used on 
+input line 80.
+(pdftex.def)             Requested size: 234.8775pt x 174.59508pt.
+
+Underfull \vbox (badness 2065) has occurred while \output is active []
+
+ [3 <../Figures/quadraticEquationToGraphCopyAC.png> <../Figures/quadraticEquati
+onToGraphCopyBC.png> <../Figures/quadraticEquationToGraphCopyCC.png> <../Figure
+s/quadraticEquationToGraphCopyDC.png>]
+Overfull \hbox (6.79684pt too wide) in paragraph at lines 80--89
+| [] 
+ []
+
+
+Overfull \hbox (6.11447pt too wide) in paragraph at lines 89--89
+[]$\OML/cmm/m/it/14.4 a \OMS/cmsy/m/n/14.4 2 \OT1/cmr/m/n/14.4 [0\OML/cmm/m/it/
+14.4 :\OT1/cmr/m/n/14.4 3\OML/cmm/m/it/14.4 ; \OT1/cmr/m/n/14.4 1\OML/cmm/m/it/
+14.4 :\OT1/cmr/m/n/14.4 6]\OML/cmm/m/it/14.4 ;|  b \OMS/cmsy/m/n/14.4 2 \OT1/cm
+r/m/n/14.4 [\OMS/cmsy/m/n/14.4 ^^@\OT1/cmr/m/n/14.4 24\OML/cmm/m/it/14.4 ; \OMS
+/cmsy/m/n/14.4 ^^@\OT1/cmr/m/n/14.4 15]\OML/cmm/m/it/14.4 ;|  c \OMS/cmsy/m/n/1
+4.4 2 \OT1/cmr/m/n/14.4 [\OMS/cmsy/m/n/14.4 ^^@\OT1/cmr/m/n/14.4 0\OML/cmm/m/it
+/14.4 :\OT1/cmr/m/n/14.4 1\OML/cmm/m/it/14.4 ; \OT1/cmr/m/n/14.4 2\OML/cmm/m/it
+/14.4 :\OT1/cmr/m/n/14.4 8]\OML/cmm/m/it/14.4 ; []| d \OMS/cmsy/m/n/14.4 2 \OT1
+/cmr/m/n/14.4 [31\OML/cmm/m/it/14.4 ; \OT1/cmr/m/n/14.4 38]$ 
+ []
+
+
+Overfull \hbox (6.79684pt too wide) in paragraph at lines 89--98
+| [] 
+ []
+
+[4 <../Figures/quadraticGraphToEquationCopyC.png>]
+Overfull \hbox (6.79684pt too wide) in paragraph at lines 98--107
+| [] 
+ []
+
 
 Overfull \hbox (6.79684pt too wide) in paragraph at lines 107--108
 | [] 
  []
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 110.
-[5 <../Figures/quadraticEquationToGraphCopyAC.png> <../Figures/quadraticEquatio
-nToGraphCopyBC.png> <../Figures/quadraticEquationToGraphCopyCC.png> <../Figures
-/quadraticEquationToGraphCopyDC.png>]
+[5]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 110.
  (./Module4C.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 110.
@@ -743,16 +772,16 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 110.
 Here is how much of TeX's memory you used:
  9176 strings out of 483183
  137449 string characters out of 5966293
- 415636 words of memory out of 5000000
+ 415643 words of memory out of 5000000
  23943 multiletter control sequences out of 15000+600000
  535568 words of font info for 39 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 34i,11n,45p,991b,538s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 34i,11n,45p,991b,539s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share
 /texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on Module4C.pdf (5 pages, 223808 bytes).
+Output written on Module4C.pdf (5 pages, 230205 bytes).
 PDF statistics:
  140 PDF objects out of 1000 (max. 8388607)
  107 compressed objects within 2 object streams

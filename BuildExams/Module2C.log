@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.8.4)  2 MAR 2021 10:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.8.4)  9 MAR 2021 13:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -581,36 +581,34 @@ Package graphics Info: Driver file: pdftex.def on input line 105.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 32.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 28.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 32.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 28.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+lasy on input line 32
+LaTeX Font Info:    Trying to load font information for U+lasy on input line 28
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-<../Figures/linearGraphToStandardC.png, id=4, 461.8053pt x 346.1733pt>
-File: ../Figures/linearGraphToStandardC.png Graphic file (type png)
-<use ../Figures/linearGraphToStandardC.png>
-Package pdftex.def Info: ../Figures/linearGraphToStandardC.png  used on input l
-ine 32.
-(pdftex.def)             Requested size: 234.8775pt x 176.06535pt.
-
-Overfull \hbox (6.79684pt too wide) in paragraph at lines 32--41
+Overfull \hbox (6.79684pt too wide) in paragraph at lines 28--37
 | [] 
  []
 
 
-Overfull \hbox (6.79684pt too wide) in paragraph at lines 41--50
+Overfull \hbox (6.79684pt too wide) in paragraph at lines 37--46
+| [] 
+ []
+
+
+Overfull \hbox (6.79684pt too wide) in paragraph at lines 46--59
 | [] 
  []
 
@@ -622,23 +620,26 @@ This may cause the page layout to be inconsistent, however.
 
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
- <../Figures/linearGraphToStandardC.png>]
-Overfull \hbox (6.79684pt too wide) in paragraph at lines 50--63
-| [] 
- []
-
-<../Figures/linearGraphToStandardCopyC.png, id=28, 485.6544pt x 353.4003pt>
+]
+<../Figures/linearGraphToStandardCopyC.png, id=30, 446.6286pt x 343.2825pt>
 File: ../Figures/linearGraphToStandardCopyC.png Graphic file (type png)
 <use ../Figures/linearGraphToStandardCopyC.png>
 Package pdftex.def Info: ../Figures/linearGraphToStandardCopyC.png  used on inp
-ut line 63.
-(pdftex.def)             Requested size: 234.8775pt x 170.91899pt.
+ut line 59.
+(pdftex.def)             Requested size: 234.8775pt x 180.5298pt.
 
-Overfull \hbox (6.79684pt too wide) in paragraph at lines 63--72
+Overfull \hbox (6.79684pt too wide) in paragraph at lines 59--72
 | [] 
  []
 
-[2 <../Figures/linearGraphToStandardCopyC.png>]
+<../Figures/linearGraphToStandardC.png, id=32, 452.4102pt x 353.4003pt>
+File: ../Figures/linearGraphToStandardC.png Graphic file (type png)
+<use ../Figures/linearGraphToStandardC.png>
+Package pdftex.def Info: ../Figures/linearGraphToStandardC.png  used on input l
+ine 72.
+(pdftex.def)             Requested size: 234.8775pt x 183.47261pt.
+[2 <../Figures/linearGraphToStandardCopyC.png> <../Figures/linearGraphToStandar
+dC.png>]
 Overfull \hbox (6.79684pt too wide) in paragraph at lines 72--81
 | [] 
  []
@@ -688,15 +689,15 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 120.
 Here is how much of TeX's memory you used:
  9127 strings out of 483183
  135279 string characters out of 5966293
- 415636 words of memory out of 5000000
+ 416643 words of memory out of 5000000
  23903 multiletter control sequences out of 15000+600000
  535568 words of font info for 39 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 34i,12n,45p,991b,537s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 34i,11n,45p,991b,539s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share
 /texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on Module2C.pdf (4 pages, 78002 bytes).
+Output written on Module2C.pdf (4 pages, 76897 bytes).
 PDF statistics:
  116 PDF objects out of 1000 (max. 8388607)
  101 compressed objects within 2 object streams

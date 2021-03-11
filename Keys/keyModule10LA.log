@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.8.4)  2 MAR 2021 11:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.8.4)  9 MAR 2021 14:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -608,22 +608,22 @@ Overfull \hbox (25.00003pt too wide) in paragraph at lines 134--156
 [][] 
  []
 
-
+[3]
 Overfull \hbox (25.00003pt too wide) in paragraph at lines 156--178
 [][] 
  []
 
-[3]
+
 Overfull \hbox (25.00003pt too wide) in paragraph at lines 178--200
 [][] 
  []
 
-
+[4]
 Overfull \hbox (25.00003pt too wide) in paragraph at lines 200--222
 [][] 
  []
 
-[4]
+
 Overfull \hbox (25.00003pt too wide) in paragraph at lines 222--244
 [][] 
  []
@@ -633,8 +633,9 @@ Overfull \hbox (25.00003pt too wide) in paragraph at lines 244--245
 [][] 
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 247.
 [5]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 247.
+ [6]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 247.
  (./keyModule10LA.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 247.
@@ -651,9 +652,9 @@ Package rerunfilecheck Info: Checksums for `keyModule10LA.out':
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 247.
  ) 
 Here is how much of TeX's memory you used:
- 8644 strings out of 483183
- 129014 string characters out of 5966293
- 405215 words of memory out of 5000000
+ 8645 strings out of 483183
+ 129020 string characters out of 5966293
+ 404222 words of memory out of 5000000
  23429 multiletter control sequences out of 15000+600000
  535322 words of font info for 38 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
@@ -664,10 +665,10 @@ e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texli
 ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf
 -dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/
 fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on keyModule10LA.pdf (5 pages, 93372 bytes).
+Output written on keyModule10LA.pdf (6 pages, 95378 bytes).
 PDF statistics:
- 130 PDF objects out of 1000 (max. 8388607)
- 115 compressed objects within 2 object streams
- 66 named destinations out of 1000 (max. 500000)
+ 135 PDF objects out of 1000 (max. 8388607)
+ 119 compressed objects within 2 object streams
+ 67 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

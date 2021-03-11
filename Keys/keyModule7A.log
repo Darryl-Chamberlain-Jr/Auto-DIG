@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.8.4)  2 MAR 2021 11:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.8.4)  9 MAR 2021 14:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -581,11 +581,6 @@ Overfull \hbox (25.00003pt too wide) in paragraph at lines 46--68
  []
 
 
-Overfull \hbox (25.00003pt too wide) in paragraph at lines 68--82
-[][] 
- []
-
-
 Package Fancyhdr Warning: \headheight is too small (0.0pt): 
 Make it at least 12.0pt.
 We now make it that large for the rest of the document.
@@ -594,100 +589,35 @@ This may cause the page layout to be inconsistent, however.
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 ]
-<../Figures/rationalEquationToGraphCA.png, id=30, 432.8973pt x 323.0469pt>
-File: ../Figures/rationalEquationToGraphCA.png Graphic file (type png)
-<use ../Figures/rationalEquationToGraphCA.png>
-Package pdftex.def Info: ../Figures/rationalEquationToGraphCA.png  used on inpu
-t line 82.
-(pdftex.def)             Requested size: 140.92793pt x 105.16644pt.
-<../Figures/rationalEquationToGraphAA.png, id=32, 432.8973pt x 323.0469pt>
-File: ../Figures/rationalEquationToGraphAA.png Graphic file (type png)
-<use ../Figures/rationalEquationToGraphAA.png>
-Package pdftex.def Info: ../Figures/rationalEquationToGraphAA.png  used on inpu
-t line 82.
-(pdftex.def)             Requested size: 140.92793pt x 105.16644pt.
-<../Figures/rationalEquationToGraphBA.png, id=33, 432.8973pt x 323.0469pt>
-File: ../Figures/rationalEquationToGraphBA.png Graphic file (type png)
-<use ../Figures/rationalEquationToGraphBA.png>
-Package pdftex.def Info: ../Figures/rationalEquationToGraphBA.png  used on inpu
-t line 82.
-(pdftex.def)             Requested size: 140.92793pt x 105.16644pt.
-File: ../Figures/rationalEquationToGraphCA.png Graphic file (type png)
-<use ../Figures/rationalEquationToGraphCA.png>
-Package pdftex.def Info: ../Figures/rationalEquationToGraphCA.png  used on inpu
-t line 82.
-(pdftex.def)             Requested size: 140.92793pt x 105.16644pt.
-<../Figures/rationalEquationToGraphDA.png, id=34, 432.8973pt x 323.0469pt>
-File: ../Figures/rationalEquationToGraphDA.png Graphic file (type png)
-<use ../Figures/rationalEquationToGraphDA.png>
-Package pdftex.def Info: ../Figures/rationalEquationToGraphDA.png  used on inpu
-t line 82.
-(pdftex.def)             Requested size: 140.92793pt x 105.16644pt.
-
-Overfull \hbox (1.16922pt too wide) in paragraph at lines 82--82
-\OT1/cmr/bx/n/10 General Com-ment: \OT1/cmr/m/n/10 Re-mem-ber that the gen-eral
- form of a ba-sic ra-tio-nal equa-tion is $\OML/cmm/m/it/10 f\OT1/cmr/m/n/10 (\
-OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) = [] +
- []
-
-
-Overfull \hbox (25.00003pt too wide) in paragraph at lines 82--96
+Overfull \hbox (25.00003pt too wide) in paragraph at lines 68--96
 [][] 
  []
 
-<../Figures/rationalEquationToGraphCopyAA.png, id=35, 432.8973pt x 323.0469pt>
-File: ../Figures/rationalEquationToGraphCopyAA.png Graphic file (type png)
-<use ../Figures/rationalEquationToGraphCopyAA.png>
-Package pdftex.def Info: ../Figures/rationalEquationToGraphCopyAA.png  used on 
-input line 96.
-(pdftex.def)             Requested size: 140.92793pt x 105.16644pt.
-[2 <../Figures/rationalEquationToGraphCA.png> <../Figures/rationalEquationToGra
-phAA.png> <../Figures/rationalEquationToGraphBA.png> <../Figures/rationalEquati
-onToGraphDA.png>]
-File: ../Figures/rationalEquationToGraphCopyAA.png Graphic file (type png)
-<use ../Figures/rationalEquationToGraphCopyAA.png>
-Package pdftex.def Info: ../Figures/rationalEquationToGraphCopyAA.png  used on 
-input line 96.
-(pdftex.def)             Requested size: 140.92793pt x 105.16644pt.
-<../Figures/rationalEquationToGraphCopyBA.png, id=52, 432.8973pt x 323.0469pt>
-File: ../Figures/rationalEquationToGraphCopyBA.png Graphic file (type png)
-<use ../Figures/rationalEquationToGraphCopyBA.png>
-Package pdftex.def Info: ../Figures/rationalEquationToGraphCopyBA.png  used on 
-input line 96.
-(pdftex.def)             Requested size: 140.92793pt x 105.16644pt.
-<../Figures/rationalEquationToGraphCopyCA.png, id=53, 432.8973pt x 323.0469pt>
-File: ../Figures/rationalEquationToGraphCopyCA.png Graphic file (type png)
-<use ../Figures/rationalEquationToGraphCopyCA.png>
-Package pdftex.def Info: ../Figures/rationalEquationToGraphCopyCA.png  used on 
-input line 96.
-(pdftex.def)             Requested size: 140.92793pt x 105.16644pt.
-<../Figures/rationalEquationToGraphCopyDA.png, id=54, 432.8973pt x 323.0469pt>
-File: ../Figures/rationalEquationToGraphCopyDA.png Graphic file (type png)
-<use ../Figures/rationalEquationToGraphCopyDA.png>
-Package pdftex.def Info: ../Figures/rationalEquationToGraphCopyDA.png  used on 
-input line 96.
-(pdftex.def)             Requested size: 140.92793pt x 105.16644pt.
+<../Figures/rationalGraphToEquationCopyA.png, id=28, 402.5439pt x 323.0469pt>
+File: ../Figures/rationalGraphToEquationCopyA.png Graphic file (type png)
+<use ../Figures/rationalGraphToEquationCopyA.png>
+Package pdftex.def Info: ../Figures/rationalGraphToEquationCopyA.png  used on i
+nput line 96.
+(pdftex.def)             Requested size: 234.8775pt x 188.49614pt.
 
 Overfull \hbox (1.16922pt too wide) in paragraph at lines 96--96
-\OT1/cmr/bx/n/10 General Com-ment: \OT1/cmr/m/n/10 Re-mem-ber that the gen-eral
- form of a ba-sic ra-tio-nal equa-tion is $\OML/cmm/m/it/10 f\OT1/cmr/m/n/10 (\
-OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) = [] +
+[]\OT1/cmr/bx/n/10 General Com-ment: \OT1/cmr/m/n/10 Re-mem-ber that the gen-er
+al form of a ba-sic ra-tio-nal equa-tion is $\OML/cmm/m/it/10 f\OT1/cmr/m/n/10 
+(\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) = [] +
  []
 
-
+[2 <../Figures/rationalGraphToEquationCopyA.png>]
 Overfull \hbox (25.00003pt too wide) in paragraph at lines 96--124
 [][] 
  []
 
-<../Figures/rationalGraphToEquationA.png, id=55, 402.5439pt x 323.0469pt>
+<../Figures/rationalGraphToEquationA.png, id=43, 432.8973pt x 323.0469pt>
 File: ../Figures/rationalGraphToEquationA.png Graphic file (type png)
 <use ../Figures/rationalGraphToEquationA.png>
 Package pdftex.def Info: ../Figures/rationalGraphToEquationA.png  used on input
  line 124.
-(pdftex.def)             Requested size: 234.8775pt x 188.49614pt.
-[3 <../Figures/rationalEquationToGraphCopyAA.png> <../Figures/rationalEquationT
-oGraphCopyBA.png> <../Figures/rationalEquationToGraphCopyCA.png> <../Figures/ra
-tionalEquationToGraphCopyDA.png> <../Figures/rationalGraphToEquationA.png>]
+(pdftex.def)             Requested size: 234.8775pt x 175.27577pt.
+
 Overfull \hbox (1.16922pt too wide) in paragraph at lines 124--124
 []\OT1/cmr/bx/n/10 General Com-ment: \OT1/cmr/m/n/10 Re-mem-ber that the gen-er
 al form of a ba-sic ra-tio-nal equa-tion is $\OML/cmm/m/it/10 f\OT1/cmr/m/n/10 
@@ -695,44 +625,112 @@ al form of a ba-sic ra-tio-nal equa-tion is $\OML/cmm/m/it/10 f\OT1/cmr/m/n/10
  []
 
 
-Overfull \hbox (25.00003pt too wide) in paragraph at lines 124--152
+Overfull \hbox (25.00003pt too wide) in paragraph at lines 124--146
 [][] 
  []
 
-<../Figures/rationalGraphToEquationCopyA.png, id=71, 402.5439pt x 323.0469pt>
-File: ../Figures/rationalGraphToEquationCopyA.png Graphic file (type png)
-<use ../Figures/rationalGraphToEquationCopyA.png>
-Package pdftex.def Info: ../Figures/rationalGraphToEquationCopyA.png  used on i
-nput line 152.
-(pdftex.def)             Requested size: 234.8775pt x 188.49614pt.
-[4 <../Figures/rationalGraphToEquationCopyA.png>]
-Overfull \hbox (1.16922pt too wide) in paragraph at lines 152--152
-[]\OT1/cmr/bx/n/10 General Com-ment: \OT1/cmr/m/n/10 Re-mem-ber that the gen-er
-al form of a ba-sic ra-tio-nal equa-tion is $\OML/cmm/m/it/10 f\OT1/cmr/m/n/10 
-(\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) = [] +
- []
-
-
-Overfull \hbox (25.00003pt too wide) in paragraph at lines 152--174
+[3 <../Figures/rationalGraphToEquationA.png>]
+Overfull \hbox (25.00003pt too wide) in paragraph at lines 146--168
 [][] 
  []
 
 
-Overfull \hbox (25.00003pt too wide) in paragraph at lines 174--196
+Overfull \hbox (25.00003pt too wide) in paragraph at lines 168--190
 [][] 
  []
 
-[5]
-Overfull \hbox (25.00003pt too wide) in paragraph at lines 196--218
+[4]
+Overfull \hbox (25.00003pt too wide) in paragraph at lines 190--204
 [][] 
  []
 
+<../Figures/rationalEquationToGraphCopyAA.png, id=73, 402.5439pt x 323.0469pt>
+File: ../Figures/rationalEquationToGraphCopyAA.png Graphic file (type png)
+<use ../Figures/rationalEquationToGraphCopyAA.png>
+Package pdftex.def Info: ../Figures/rationalEquationToGraphCopyAA.png  used on 
+input line 204.
+(pdftex.def)             Requested size: 140.92793pt x 113.09767pt.
+File: ../Figures/rationalEquationToGraphCopyAA.png Graphic file (type png)
+<use ../Figures/rationalEquationToGraphCopyAA.png>
+Package pdftex.def Info: ../Figures/rationalEquationToGraphCopyAA.png  used on 
+input line 204.
+(pdftex.def)             Requested size: 140.92793pt x 113.09767pt.
+<../Figures/rationalEquationToGraphCopyBA.png, id=74, 402.5439pt x 323.0469pt>
+File: ../Figures/rationalEquationToGraphCopyBA.png Graphic file (type png)
+<use ../Figures/rationalEquationToGraphCopyBA.png>
+Package pdftex.def Info: ../Figures/rationalEquationToGraphCopyBA.png  used on 
+input line 204.
+(pdftex.def)             Requested size: 140.92793pt x 113.09767pt.
+<../Figures/rationalEquationToGraphCopyCA.png, id=75, 402.5439pt x 323.0469pt>
+File: ../Figures/rationalEquationToGraphCopyCA.png Graphic file (type png)
+<use ../Figures/rationalEquationToGraphCopyCA.png>
+Package pdftex.def Info: ../Figures/rationalEquationToGraphCopyCA.png  used on 
+input line 204.
+(pdftex.def)             Requested size: 140.92793pt x 113.09767pt.
+<../Figures/rationalEquationToGraphCopyDA.png, id=76, 402.5439pt x 323.0469pt>
+File: ../Figures/rationalEquationToGraphCopyDA.png Graphic file (type png)
+<use ../Figures/rationalEquationToGraphCopyDA.png>
+Package pdftex.def Info: ../Figures/rationalEquationToGraphCopyDA.png  used on 
+input line 204.
+(pdftex.def)             Requested size: 140.92793pt x 113.09767pt.
+[5 <../Figures/rationalEquationToGraphCopyAA.png> <../Figures/rationalEquationT
+oGraphCopyBA.png>]
+Overfull \hbox (1.16922pt too wide) in paragraph at lines 204--204
+\OT1/cmr/bx/n/10 General Com-ment: \OT1/cmr/m/n/10 Re-mem-ber that the gen-eral
+ form of a ba-sic ra-tio-nal equa-tion is $\OML/cmm/m/it/10 f\OT1/cmr/m/n/10 (\
+OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) = [] +
+ []
 
+
+Overfull \hbox (25.00003pt too wide) in paragraph at lines 204--218
+[][] 
+ []
+
+<../Figures/rationalEquationToGraphBA.png, id=91, 432.8973pt x 323.0469pt>
+File: ../Figures/rationalEquationToGraphBA.png Graphic file (type png)
+<use ../Figures/rationalEquationToGraphBA.png>
+Package pdftex.def Info: ../Figures/rationalEquationToGraphBA.png  used on inpu
+t line 218.
+(pdftex.def)             Requested size: 140.92793pt x 105.16644pt.
+<../Figures/rationalEquationToGraphAA.png, id=92, 432.8973pt x 323.0469pt>
+File: ../Figures/rationalEquationToGraphAA.png Graphic file (type png)
+<use ../Figures/rationalEquationToGraphAA.png>
+Package pdftex.def Info: ../Figures/rationalEquationToGraphAA.png  used on inpu
+t line 218.
+(pdftex.def)             Requested size: 140.92793pt x 105.16644pt.
+File: ../Figures/rationalEquationToGraphBA.png Graphic file (type png)
+<use ../Figures/rationalEquationToGraphBA.png>
+Package pdftex.def Info: ../Figures/rationalEquationToGraphBA.png  used on inpu
+t line 218.
+(pdftex.def)             Requested size: 140.92793pt x 105.16644pt.
+<../Figures/rationalEquationToGraphCA.png, id=93, 432.8973pt x 323.0469pt>
+File: ../Figures/rationalEquationToGraphCA.png Graphic file (type png)
+<use ../Figures/rationalEquationToGraphCA.png>
+Package pdftex.def Info: ../Figures/rationalEquationToGraphCA.png  used on inpu
+t line 218.
+(pdftex.def)             Requested size: 140.92793pt x 105.16644pt.
+<../Figures/rationalEquationToGraphDA.png, id=94, 432.8973pt x 323.0469pt>
+File: ../Figures/rationalEquationToGraphDA.png Graphic file (type png)
+<use ../Figures/rationalEquationToGraphDA.png>
+Package pdftex.def Info: ../Figures/rationalEquationToGraphDA.png  used on inpu
+t line 218.
+(pdftex.def)             Requested size: 140.92793pt x 105.16644pt.
+
+Overfull \hbox (1.16922pt too wide) in paragraph at lines 218--218
+\OT1/cmr/bx/n/10 General Com-ment: \OT1/cmr/m/n/10 Re-mem-ber that the gen-eral
+ form of a ba-sic ra-tio-nal equa-tion is $\OML/cmm/m/it/10 f\OT1/cmr/m/n/10 (\
+OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) = [] +
+ []
+
+[6 <../Figures/rationalEquationToGraphCopyCA.png> <../Figures/rationalEquationT
+oGraphCopyDA.png> <../Figures/rationalEquationToGraphBA.png> <../Figures/ration
+alEquationToGraphAA.png> <../Figures/rationalEquationToGraphCA.png> <../Figures
+/rationalEquationToGraphDA.png>]
 Overfull \hbox (25.00003pt too wide) in paragraph at lines 218--240
 [][] 
  []
 
-[6]
+
 Overfull \hbox (25.00003pt too wide) in paragraph at lines 240--241
 [][] 
  []
@@ -757,11 +755,11 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 243.
 Here is how much of TeX's memory you used:
  8708 strings out of 483183
  131611 string characters out of 5966293
- 404211 words of memory out of 5000000
+ 404218 words of memory out of 5000000
  23479 multiletter control sequences out of 15000+600000
  535322 words of font info for 38 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 34i,12n,45p,939b,539s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 34i,12n,45p,939b,658s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texli
@@ -769,7 +767,7 @@ ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/f
 onts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/t
 ype1/public/amsfonts/cm/cmti10.pfb>
-Output written on keyModule7A.pdf (7 pages, 232534 bytes).
+Output written on keyModule7A.pdf (7 pages, 225112 bytes).
 PDF statistics:
  166 PDF objects out of 1000 (max. 8388607)
  128 compressed objects within 2 object streams

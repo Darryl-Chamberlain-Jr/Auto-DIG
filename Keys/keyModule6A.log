@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.8.4)  2 MAR 2021 11:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.8.4)  9 MAR 2021 13:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -576,19 +576,9 @@ LaTeX Font Info:    Trying to load font information for U+lasy on input line 46
 (/usr/share/texlive/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-Overfull \hbox (25.00003pt too wide) in paragraph at lines 46--60
+Overfull \hbox (25.00003pt too wide) in paragraph at lines 46--68
 [][] 
  []
-
-<../Figures/polyZeroBehaviorBA.png, id=6, 133.24782pt x 161.10187pt>
-File: ../Figures/polyZeroBehaviorBA.png Graphic file (type png)
-<use ../Figures/polyZeroBehaviorBA.png>
-Package pdftex.def Info: ../Figures/polyZeroBehaviorBA.png  used on input line 
-60.
-(pdftex.def)             Requested size: 140.92793pt x 170.40334pt.
-
-Underfull \vbox (badness 4899) has occurred while \output is active []
-
 
 
 Package Fancyhdr Warning: \headheight is too small (0.0pt): 
@@ -599,193 +589,199 @@ This may cause the page layout to be inconsistent, however.
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 ]
-<../Figures/polyZeroBehaviorAA.png, id=27, 90.3375pt x 103.88812pt>
+Overfull \hbox (25.00003pt too wide) in paragraph at lines 68--96
+[][] 
+ []
+
+<../Figures/polyGraphToFunctionA.png, id=29, 471.9231pt x 361.35pt>
+File: ../Figures/polyGraphToFunctionA.png Graphic file (type png)
+<use ../Figures/polyGraphToFunctionA.png>
+Package pdftex.def Info: ../Figures/polyGraphToFunctionA.png  used on input lin
+e 96.
+(pdftex.def)             Requested size: 234.8775pt x 179.84198pt.
+
+Overfull \hbox (25.00003pt too wide) in paragraph at lines 96--110
+[][] 
+ []
+
+<../Figures/polyZeroBehaviorCopyAA.png, id=31, 90.3375pt x 103.88812pt>
+File: ../Figures/polyZeroBehaviorCopyAA.png Graphic file (type png)
+<use ../Figures/polyZeroBehaviorCopyAA.png>
+Package pdftex.def Info: ../Figures/polyZeroBehaviorCopyAA.png  used on input l
+ine 110.
+(pdftex.def)             Requested size: 140.92793pt x 162.08224pt.
+[2 <../Figures/polyGraphToFunctionA.png>]
+File: ../Figures/polyZeroBehaviorCopyAA.png Graphic file (type png)
+<use ../Figures/polyZeroBehaviorCopyAA.png>
+Package pdftex.def Info: ../Figures/polyZeroBehaviorCopyAA.png  used on input l
+ine 110.
+(pdftex.def)             Requested size: 140.92793pt x 162.08224pt.
+<../Figures/polyZeroBehaviorCopyBA.png, id=45, 133.24782pt x 161.10187pt>
+File: ../Figures/polyZeroBehaviorCopyBA.png Graphic file (type png)
+<use ../Figures/polyZeroBehaviorCopyBA.png>
+Package pdftex.def Info: ../Figures/polyZeroBehaviorCopyBA.png  used on input l
+ine 110.
+(pdftex.def)             Requested size: 140.92793pt x 170.40334pt.
+<../Figures/polyZeroBehaviorCopyCA.png, id=46, 90.3375pt x 103.88812pt>
+File: ../Figures/polyZeroBehaviorCopyCA.png Graphic file (type png)
+<use ../Figures/polyZeroBehaviorCopyCA.png>
+Package pdftex.def Info: ../Figures/polyZeroBehaviorCopyCA.png  used on input l
+ine 110.
+(pdftex.def)             Requested size: 140.92793pt x 162.08224pt.
+<../Figures/polyZeroBehaviorCopyDA.png, id=47, 90.3375pt x 103.88812pt>
+File: ../Figures/polyZeroBehaviorCopyDA.png Graphic file (type png)
+<use ../Figures/polyZeroBehaviorCopyDA.png>
+Package pdftex.def Info: ../Figures/polyZeroBehaviorCopyDA.png  used on input l
+ine 110.
+(pdftex.def)             Requested size: 140.92793pt x 162.08224pt.
+
+Overfull \hbox (25.00003pt too wide) in paragraph at lines 110--124
+[][] 
+ []
+
+<../Figures/polyZeroBehaviorBA.png, id=48, 133.24782pt x 161.10187pt>
+File: ../Figures/polyZeroBehaviorBA.png Graphic file (type png)
+<use ../Figures/polyZeroBehaviorBA.png>
+Package pdftex.def Info: ../Figures/polyZeroBehaviorBA.png  used on input line 
+124.
+(pdftex.def)             Requested size: 140.92793pt x 170.40334pt.
+[3 <../Figures/polyZeroBehaviorCopyAA.png> <../Figures/polyZeroBehaviorCopyBA.p
+ng> <../Figures/polyZeroBehaviorCopyCA.png> <../Figures/polyZeroBehaviorCopyDA.
+png>]
+<../Figures/polyZeroBehaviorAA.png, id=60, 90.3375pt x 103.88812pt>
 File: ../Figures/polyZeroBehaviorAA.png Graphic file (type png)
 <use ../Figures/polyZeroBehaviorAA.png>
 Package pdftex.def Info: ../Figures/polyZeroBehaviorAA.png  used on input line 
-60.
+124.
 (pdftex.def)             Requested size: 140.92793pt x 162.08224pt.
 File: ../Figures/polyZeroBehaviorBA.png Graphic file (type png)
 <use ../Figures/polyZeroBehaviorBA.png>
 Package pdftex.def Info: ../Figures/polyZeroBehaviorBA.png  used on input line 
-60.
+124.
 (pdftex.def)             Requested size: 140.92793pt x 170.40334pt.
-<../Figures/polyZeroBehaviorCA.png, id=28, 90.3375pt x 103.88812pt>
+<../Figures/polyZeroBehaviorCA.png, id=61, 90.3375pt x 103.88812pt>
 File: ../Figures/polyZeroBehaviorCA.png Graphic file (type png)
 <use ../Figures/polyZeroBehaviorCA.png>
 Package pdftex.def Info: ../Figures/polyZeroBehaviorCA.png  used on input line 
-60.
+124.
 (pdftex.def)             Requested size: 140.92793pt x 162.08224pt.
-<../Figures/polyZeroBehaviorDA.png, id=29, 90.3375pt x 103.88812pt>
+<../Figures/polyZeroBehaviorDA.png, id=62, 90.3375pt x 103.88812pt>
 File: ../Figures/polyZeroBehaviorDA.png Graphic file (type png)
 <use ../Figures/polyZeroBehaviorDA.png>
 Package pdftex.def Info: ../Figures/polyZeroBehaviorDA.png  used on input line 
-60.
+124.
 (pdftex.def)             Requested size: 140.92793pt x 162.08224pt.
 
-Overfull \hbox (25.00003pt too wide) in paragraph at lines 60--88
+Overfull \hbox (25.00003pt too wide) in paragraph at lines 124--146
 [][] 
  []
 
-<../Figures/polyGraphToFunctionA.png, id=30, 464.6961pt x 361.35pt>
-File: ../Figures/polyGraphToFunctionA.png Graphic file (type png)
-<use ../Figures/polyGraphToFunctionA.png>
-Package pdftex.def Info: ../Figures/polyGraphToFunctionA.png  used on input lin
-e 88.
-(pdftex.def)             Requested size: 234.8775pt x 182.64296pt.
-[2 <../Figures/polyZeroBehaviorBA.png> <../Figures/polyZeroBehaviorAA.png> <../
+[4 <../Figures/polyZeroBehaviorBA.png> <../Figures/polyZeroBehaviorAA.png> <../
 Figures/polyZeroBehaviorCA.png> <../Figures/polyZeroBehaviorDA.png>]
-Overfull \hbox (25.00003pt too wide) in paragraph at lines 88--102
+Overfull \hbox (25.00003pt too wide) in paragraph at lines 146--168
 [][] 
  []
 
-<../Figures/polyZeroBehaviorCopyAA.png, id=42, 90.3375pt x 103.88812pt>
-File: ../Figures/polyZeroBehaviorCopyAA.png Graphic file (type png)
-<use ../Figures/polyZeroBehaviorCopyAA.png>
-Package pdftex.def Info: ../Figures/polyZeroBehaviorCopyAA.png  used on input l
-ine 102.
-(pdftex.def)             Requested size: 140.92793pt x 162.08224pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [3 <../Figures/polyGraphToFunctionA.png>]
-File: ../Figures/polyZeroBehaviorCopyAA.png Graphic file (type png)
-<use ../Figures/polyZeroBehaviorCopyAA.png>
-Package pdftex.def Info: ../Figures/polyZeroBehaviorCopyAA.png  used on input l
-ine 102.
-(pdftex.def)             Requested size: 140.92793pt x 162.08224pt.
-<../Figures/polyZeroBehaviorCopyBA.png, id=54, 133.24782pt x 161.10187pt>
-File: ../Figures/polyZeroBehaviorCopyBA.png Graphic file (type png)
-<use ../Figures/polyZeroBehaviorCopyBA.png>
-Package pdftex.def Info: ../Figures/polyZeroBehaviorCopyBA.png  used on input l
-ine 102.
-(pdftex.def)             Requested size: 140.92793pt x 170.40334pt.
-<../Figures/polyZeroBehaviorCopyCA.png, id=55, 90.3375pt x 103.88812pt>
-File: ../Figures/polyZeroBehaviorCopyCA.png Graphic file (type png)
-<use ../Figures/polyZeroBehaviorCopyCA.png>
-Package pdftex.def Info: ../Figures/polyZeroBehaviorCopyCA.png  used on input l
-ine 102.
-(pdftex.def)             Requested size: 140.92793pt x 162.08224pt.
-<../Figures/polyZeroBehaviorCopyDA.png, id=56, 90.3375pt x 103.88812pt>
-File: ../Figures/polyZeroBehaviorCopyDA.png Graphic file (type png)
-<use ../Figures/polyZeroBehaviorCopyDA.png>
-Package pdftex.def Info: ../Figures/polyZeroBehaviorCopyDA.png  used on input l
-ine 102.
-(pdftex.def)             Requested size: 140.92793pt x 162.08224pt.
-
-Overfull \hbox (25.00003pt too wide) in paragraph at lines 102--130
+Overfull \hbox (25.00003pt too wide) in paragraph at lines 168--182
 [][] 
  []
 
-<../Figures/polyGraphToFunctionCopyA.png, id=57, 464.6961pt x 361.35pt>
-File: ../Figures/polyGraphToFunctionCopyA.png Graphic file (type png)
-<use ../Figures/polyGraphToFunctionCopyA.png>
-Package pdftex.def Info: ../Figures/polyGraphToFunctionCopyA.png  used on input
- line 130.
-(pdftex.def)             Requested size: 234.8775pt x 182.64296pt.
-
-Underfull \vbox (badness 1430) has occurred while \output is active []
-
- [4 <../Figures/polyZeroBehaviorCopyAA.png> <../Figures/polyZeroBehaviorCopyBA.
-png> <../Figures/polyZeroBehaviorCopyCA.png> <../Figures/polyZeroBehaviorCopyDA
-.png>]
-Overfull \hbox (25.00003pt too wide) in paragraph at lines 130--144
-[][] 
- []
-
-<../Figures/polyEndBehaviorCopyAA.png, id=69, 182.18062pt x 204.01219pt>
+<../Figures/polyEndBehaviorCopyAA.png, id=74, 182.18062pt x 204.01219pt>
 File: ../Figures/polyEndBehaviorCopyAA.png Graphic file (type png)
 <use ../Figures/polyEndBehaviorCopyAA.png>
 Package pdftex.def Info: ../Figures/polyEndBehaviorCopyAA.png  used on input li
-ne 144.
+ne 182.
 (pdftex.def)             Requested size: 140.92793pt x 157.82141pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [5 <../Figures/polyGraphToFunctionCopyA.png>]
+[5]
 File: ../Figures/polyEndBehaviorCopyAA.png Graphic file (type png)
 <use ../Figures/polyEndBehaviorCopyAA.png>
 Package pdftex.def Info: ../Figures/polyEndBehaviorCopyAA.png  used on input li
-ne 144.
+ne 182.
 (pdftex.def)             Requested size: 140.92793pt x 157.82141pt.
-<../Figures/polyEndBehaviorCopyBA.png, id=81, 184.43906pt x 124.21407pt>
+<../Figures/polyEndBehaviorCopyBA.png, id=91, 184.43906pt x 124.21407pt>
 File: ../Figures/polyEndBehaviorCopyBA.png Graphic file (type png)
 <use ../Figures/polyEndBehaviorCopyBA.png>
 Package pdftex.def Info: ../Figures/polyEndBehaviorCopyBA.png  used on input li
-ne 144.
+ne 182.
 (pdftex.def)             Requested size: 140.92793pt x 94.90971pt.
-<../Figures/polyEndBehaviorCopyCA.png, id=82, 180.675pt x 127.22531pt>
+<../Figures/polyEndBehaviorCopyCA.png, id=92, 180.675pt x 127.22531pt>
 File: ../Figures/polyEndBehaviorCopyCA.png Graphic file (type png)
 <use ../Figures/polyEndBehaviorCopyCA.png>
 Package pdftex.def Info: ../Figures/polyEndBehaviorCopyCA.png  used on input li
-ne 144.
+ne 182.
 (pdftex.def)             Requested size: 140.92793pt x 99.23727pt.
-<../Figures/polyEndBehaviorCopyDA.png, id=83, 179.92218pt x 213.04594pt>
+<../Figures/polyEndBehaviorCopyDA.png, id=93, 179.92218pt x 213.04594pt>
 File: ../Figures/polyEndBehaviorCopyDA.png Graphic file (type png)
 <use ../Figures/polyEndBehaviorCopyDA.png>
 Package pdftex.def Info: ../Figures/polyEndBehaviorCopyDA.png  used on input li
-ne 144.
+ne 182.
 (pdftex.def)             Requested size: 140.92793pt x 166.88708pt.
 
-Overfull \hbox (25.00003pt too wide) in paragraph at lines 144--166
+Overfull \hbox (25.00003pt too wide) in paragraph at lines 182--210
 [][] 
  []
 
-[6 <../Figures/polyEndBehaviorCopyAA.png> <../Figures/polyEndBehaviorCopyBA.png
-> <../Figures/polyEndBehaviorCopyCA.png> <../Figures/polyEndBehaviorCopyDA.png>
-]
-Overfull \hbox (25.00003pt too wide) in paragraph at lines 166--180
+<../Figures/polyGraphToFunctionCopyA.png, id=94, 464.6961pt x 361.35pt>
+File: ../Figures/polyGraphToFunctionCopyA.png Graphic file (type png)
+<use ../Figures/polyGraphToFunctionCopyA.png>
+Package pdftex.def Info: ../Figures/polyGraphToFunctionCopyA.png  used on input
+ line 210.
+(pdftex.def)             Requested size: 234.8775pt x 182.64296pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [6 <../Figures/polyEndBehaviorCopyAA.png> <../Figures/polyEndBehaviorCopyBA.pn
+g> <../Figures/polyEndBehaviorCopyCA.png> <../Figures/polyEndBehaviorCopyDA.png
+>]
+Overfull \hbox (25.00003pt too wide) in paragraph at lines 210--224
 [][] 
  []
 
-<../Figures/polyEndBehaviorAA.png, id=99, 182.18062pt x 204.01219pt>
+<../Figures/polyEndBehaviorAA.png, id=109, 182.18062pt x 204.01219pt>
 File: ../Figures/polyEndBehaviorAA.png Graphic file (type png)
 <use ../Figures/polyEndBehaviorAA.png>
-Package pdftex.def Info: ../Figures/polyEndBehaviorAA.png  used on input line 1
-80.
+Package pdftex.def Info: ../Figures/polyEndBehaviorAA.png  used on input line 2
+24.
 (pdftex.def)             Requested size: 140.92793pt x 157.82141pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [7 <../Figures/polyGraphToFunctionCopyA.png>]
 File: ../Figures/polyEndBehaviorAA.png Graphic file (type png)
 <use ../Figures/polyEndBehaviorAA.png>
-Package pdftex.def Info: ../Figures/polyEndBehaviorAA.png  used on input line 1
-80.
+Package pdftex.def Info: ../Figures/polyEndBehaviorAA.png  used on input line 2
+24.
 (pdftex.def)             Requested size: 140.92793pt x 157.82141pt.
-<../Figures/polyEndBehaviorBA.png, id=100, 184.43906pt x 124.21407pt>
+<../Figures/polyEndBehaviorBA.png, id=122, 184.43906pt x 124.21407pt>
 File: ../Figures/polyEndBehaviorBA.png Graphic file (type png)
 <use ../Figures/polyEndBehaviorBA.png>
-Package pdftex.def Info: ../Figures/polyEndBehaviorBA.png  used on input line 1
-80.
+Package pdftex.def Info: ../Figures/polyEndBehaviorBA.png  used on input line 2
+24.
 (pdftex.def)             Requested size: 140.92793pt x 94.90971pt.
-<../Figures/polyEndBehaviorCA.png, id=101, 180.675pt x 127.22531pt>
+<../Figures/polyEndBehaviorCA.png, id=123, 180.675pt x 127.22531pt>
 File: ../Figures/polyEndBehaviorCA.png Graphic file (type png)
 <use ../Figures/polyEndBehaviorCA.png>
-Package pdftex.def Info: ../Figures/polyEndBehaviorCA.png  used on input line 1
-80.
+Package pdftex.def Info: ../Figures/polyEndBehaviorCA.png  used on input line 2
+24.
 (pdftex.def)             Requested size: 140.92793pt x 99.23727pt.
-<../Figures/polyEndBehaviorDA.png, id=102, 179.92218pt x 213.04594pt>
+<../Figures/polyEndBehaviorDA.png, id=124, 179.92218pt x 213.04594pt>
 File: ../Figures/polyEndBehaviorDA.png Graphic file (type png)
 <use ../Figures/polyEndBehaviorDA.png>
-Package pdftex.def Info: ../Figures/polyEndBehaviorDA.png  used on input line 1
-80.
+Package pdftex.def Info: ../Figures/polyEndBehaviorDA.png  used on input line 2
+24.
 (pdftex.def)             Requested size: 140.92793pt x 166.88708pt.
-[7 <../Figures/polyEndBehaviorAA.png> <../Figures/polyEndBehaviorBA.png>]
-Overfull \hbox (25.00003pt too wide) in paragraph at lines 180--202
-[][] 
- []
 
-
-Overfull \hbox (25.00003pt too wide) in paragraph at lines 202--224
-[][] 
- []
-
-[8 <../Figures/polyEndBehaviorCA.png> <../Figures/polyEndBehaviorDA.png>]
 Overfull \hbox (25.00003pt too wide) in paragraph at lines 224--225
 [][] 
  []
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 227.
-[9]
+[8 <../Figures/polyEndBehaviorAA.png> <../Figures/polyEndBehaviorBA.png> <../Fi
+gures/polyEndBehaviorCA.png> <../Figures/polyEndBehaviorDA.png>]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 227.
- (./keyModule6A.aux)
+
+(./keyModule6A.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 227.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 227.
 
@@ -800,23 +796,23 @@ Package rerunfilecheck Info: Checksums for `keyModule6A.out':
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 227.
  ) 
 Here is how much of TeX's memory you used:
- 8758 strings out of 483183
- 132935 string characters out of 5966293
- 403211 words of memory out of 5000000
+ 8757 strings out of 483183
+ 132929 string characters out of 5966293
+ 405218 words of memory out of 5000000
  23519 multiletter control sequences out of 15000+600000
  535322 words of font info for 38 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 34i,11n,45p,939b,658s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 34i,12n,45p,939b,537s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texli
 ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf
 -dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/
 fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on keyModule6A.pdf (9 pages, 179104 bytes).
+Output written on keyModule6A.pdf (8 pages, 180540 bytes).
 PDF statistics:
- 180 PDF objects out of 1000 (max. 8388607)
- 131 compressed objects within 2 object streams
- 70 named destinations out of 1000 (max. 500000)
+ 176 PDF objects out of 1000 (max. 8388607)
+ 128 compressed objects within 2 object streams
+ 69 named destinations out of 1000 (max. 500000)
  91 words of extra memory for PDF output out of 10000 (max. 10000000)
 

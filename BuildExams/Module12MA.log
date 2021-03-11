@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.8.4)  2 MAR 2021 11:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.8.4)  9 MAR 2021 14:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -581,43 +581,39 @@ Package graphics Info: Driver file: pdftex.def on input line 105.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-
-Overfull \hbox (6.79684pt too wide) in paragraph at lines 23--36
-[]| [] 
- []
-
-<../Figures/identifyModelGraph12A.png, id=4, 462.528pt x 346.896pt>
-File: ../Figures/identifyModelGraph12A.png Graphic file (type png)
-<use ../Figures/identifyModelGraph12A.png>
-Package pdftex.def Info: ../Figures/identifyModelGraph12A.png  used on input li
-ne 36.
+<../Figures/identifyModelGraph12CopyA.png, id=4, 462.528pt x 346.896pt>
+File: ../Figures/identifyModelGraph12CopyA.png Graphic file (type png)
+<use ../Figures/identifyModelGraph12CopyA.png>
+Package pdftex.def Info: ../Figures/identifyModelGraph12CopyA.png  used on inpu
+t line 32.
 (pdftex.def)             Requested size: 234.8775pt x 176.15768pt.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 36.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 32.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 36.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 32.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+lasy on input line 36
+LaTeX Font Info:    Trying to load font information for U+lasy on input line 32
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-Overfull \hbox (6.79684pt too wide) in paragraph at lines 36--49
+Overfull \hbox (6.79684pt too wide) in paragraph at lines 32--45
 | [] 
  []
 
-
-Overfull \hbox (6.79684pt too wide) in paragraph at lines 49--62
-| [] 
- []
-
+<../Figures/identifyModelGraph12A.png, id=6, 462.528pt x 346.896pt>
+File: ../Figures/identifyModelGraph12A.png Graphic file (type png)
+<use ../Figures/identifyModelGraph12A.png>
+Package pdftex.def Info: ../Figures/identifyModelGraph12A.png  used on input li
+ne 45.
+(pdftex.def)             Requested size: 234.8775pt x 176.15768pt.
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
 Make it at least 17.0pt.
@@ -626,41 +622,45 @@ This may cause the page layout to be inconsistent, however.
 
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
- <../Figures/identifyModelGraph12A.png>]
-<../Figures/identifyModelGraph12CopyA.png, id=27, 462.528pt x 346.896pt>
-File: ../Figures/identifyModelGraph12CopyA.png Graphic file (type png)
-<use ../Figures/identifyModelGraph12CopyA.png>
-Package pdftex.def Info: ../Figures/identifyModelGraph12CopyA.png  used on inpu
-t line 62.
-(pdftex.def)             Requested size: 234.8775pt x 176.15768pt.
-
-Overfull \hbox (6.79684pt too wide) in paragraph at lines 62--75
+ <../Figures/identifyModelGraph12CopyA.png> <../Figures/identifyModelGraph12A.p
+ng>]
+Overfull \hbox (6.79684pt too wide) in paragraph at lines 45--49
 | [] 
  []
 
 
-Overfull \hbox (6.79684pt too wide) in paragraph at lines 75--88
-| [] 
- []
-
-[2 <../Figures/identifyModelGraph12CopyA.png>]
-Overfull \hbox (6.79684pt too wide) in paragraph at lines 88--101
-| [] 
+Overfull \hbox (6.79684pt too wide) in paragraph at lines 49--62
+[]| [] 
  []
 
 
-Overfull \hbox (6.79684pt too wide) in paragraph at lines 101--114
+Overfull \hbox (6.79684pt too wide) in paragraph at lines 62--66
+| [] 
+ []
+
+
+Overfull \hbox (6.79684pt too wide) in paragraph at lines 66--79
+[]| [] 
+ []
+
+[2]
+Overfull \hbox (6.79684pt too wide) in paragraph at lines 79--92
+| [] 
+ []
+
+
+Overfull \hbox (6.79684pt too wide) in paragraph at lines 92--105
+| [] 
+ []
+
+
+Overfull \hbox (6.79684pt too wide) in paragraph at lines 105--118
 | [] 
  []
 
 [3]
-Overfull \hbox (6.79684pt too wide) in paragraph at lines 114--118
-| [] 
- []
-
-
 Overfull \hbox (6.79684pt too wide) in paragraph at lines 118--131
-[]| [] 
+| [] 
  []
 
 
@@ -688,16 +688,16 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 134.
 Here is how much of TeX's memory you used:
  9119 strings out of 483183
  135238 string characters out of 5966293
- 415640 words of memory out of 5000000
+ 415647 words of memory out of 5000000
  23904 multiletter control sequences out of 15000+600000
  535915 words of font info for 40 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 34i,11n,45p,993b,496s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 34i,11n,45p,993b,539s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share
 /texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on Module12MA.pdf (4 pages, 75328 bytes).
+Output written on Module12MA.pdf (4 pages, 74191 bytes).
 PDF statistics:
  108 PDF objects out of 1000 (max. 8388607)
  93 compressed objects within 1 object stream
