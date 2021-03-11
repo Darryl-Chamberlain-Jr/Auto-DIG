@@ -1,15 +1,6 @@
 import sys
-from sympy import *
 import numpy
 import random
-import math
-from decimal import Decimal
-import decimal
-import traceback
-import cmath
-import matplotlib.pyplot as plt
-from sympy.abc import x, y
-from sympy.solvers import solve
 
 DIR=sys.argv[1]
 debug=sys.argv[2]
@@ -29,64 +20,37 @@ sys.path.insert(1, f"/{DIR}/PythonScripts/ScriptsForDatabases")
 from storeQuestionData import *
 
 def createAllCoefficientsAndEndpoints():
-    coefficients = [0, 0, 0, 0, 0, 0, 0]
-    coefficients[0] = float(maybeMakeNegative(random.randint(3, 9)))
-    coefficients[1] = float(maybeMakeNegative(random.randint(3, 9)))
-    coefficients[3] = float(maybeMakeNegative(random.randint(3, 9)))
-    coefficients[4] = float(random.randint(3, 9))
-    coefficients[5] = float(maybeMakeNegative(random.randint(3, 9)))
-    coefficients[6] = float(maybeMakeNegative(random.randint(3, 9)))
+    c0 = maybeMakeNegative(random.randint(3, 9))
+    c1 = maybeMakeNegative(random.randint(3, 9))
+    c3 = maybeMakeNegative(random.randint(3, 9))
+    c4 = random.randint(3, 9)
+    c5 = maybeMakeNegative(random.randint(3, 9))
+    c6 = maybeMakeNegative(random.randint(3, 9))
     # Need 1, 4, and 6 set before 2
-    coefficients[2] = float((max(coefficients[1], coefficients[6])*coefficients[4]) + random.randint(2, 5))
-    # This flips the inequalities
-
-    smallerEndpoint = float((-coefficients[0]*coefficients[4] - coefficients[3]) / (coefficients[1]*coefficients[4] - coefficients[2]))
-    largerEndpoint = float((coefficients[4]*coefficients[5] + coefficients[3]) / (coefficients[2] - coefficients[4] * coefficients[6]))
-
+    c2 = (max(c1, c6)*c4) + random.randint(2, 5) # This flips the inequalities
+    smallerEndpoint = float((-c0*c4-c3) / (c1*c4-c2))
+    largerEndpoint = float((c4*c5+c3) / (c2-c4*c6))
     # Makes sure we get a solution interval
     while  (largerEndpoint <= smallerEndpoint):
-        coefficients[0] = float(maybeMakeNegative(random.randint(3, 9)))
-        coefficients[1] = float(maybeMakeNegative(random.randint(3, 9)))
-        coefficients[3] = float(maybeMakeNegative(random.randint(3, 9)))
-        coefficients[4] = float(random.randint(3, 9))
-        coefficients[5] = float(maybeMakeNegative(random.randint(3, 9)))
-        coefficients[6] = float(maybeMakeNegative(random.randint(3, 9)))
+        c0 = maybeMakeNegative(random.randint(3, 9))
+        c1 = maybeMakeNegative(random.randint(3, 9))
+        c3 = maybeMakeNegative(random.randint(3, 9))
+        c4 = random.randint(3, 9)
+        c5 = maybeMakeNegative(random.randint(3, 9))
+        c6 = maybeMakeNegative(random.randint(3, 9))
         # Need 1, 4, and 6 set before 2
-        coefficients[2] = float((max(coefficients[1], coefficients[6])*coefficients[4]) + random.randint(2, 5))
-        # This flips the inequalities
+        c2 = (max(c1, c6)*c4) + random.randint(2, 5) # This flips the inequalities
+        smallerEndpoint = float((-c0*c4-c3) / (c1*c4-c2))
+        largerEndpoint = float((c4*c5+c3) / (c2-c4*c6))
+    coefficients=[c0, c1, c2, c3, c4, c5, c6]
+    solutionEndpoints = [smallerEndpoint, largerEndpoint]
+    return [coefficients, solutionEndpoints]
 
-        smallerEndpoint = float((-coefficients[0]*coefficients[4] - coefficients[3]) / (coefficients[1]*coefficients[4] - coefficients[2]))
-        largerEndpoint = float((coefficients[4]*coefficients[5] + coefficients[3]) / (coefficients[2] - coefficients[4] * coefficients[6]))
-
-    a, b, c, d, e, f, g = coefficients
-
-    return [a, b, c, d, e, f, g, smallerEndpoint, largerEndpoint]
-
-def generateSolutionInterval(solution, intervalRange):
-    intervalList = [[]]*len(solution)
-    for i in xrange(0, len(solution)):
-        intervalList[i] = createInterval(solution[i], intervalRange)
-    return intervalList
-
-intervalRange = 4
-allCoefficientsAndEndpoints = createAllCoefficientsAndEndpoints()
-
-coefficients = [allCoefficientsAndEndpoints[0], allCoefficientsAndEndpoints[1], allCoefficientsAndEndpoints[2], allCoefficientsAndEndpoints[3], allCoefficientsAndEndpoints[4], allCoefficientsAndEndpoints[5], allCoefficientsAndEndpoints[6]]
-solutionEndpoints = [allCoefficientsAndEndpoints[7], allCoefficientsAndEndpoints[8]]
-
+coefficients, solutionEndpoints = createAllCoefficientsAndEndpoints()
 while (abs(solutionEndpoints[0])==abs(solutionEndpoints[1]) or abs(solutionEndpoints[0])<1 or abs(solutionEndpoints[1])<1 or abs(abs(solutionEndpoints[0])-abs(solutionEndpoints[1])) < 1 ):
-    allCoefficientsAndEndpoints = createAllCoefficientsAndEndpoints()
-    coefficients = [allCoefficientsAndEndpoints[0], allCoefficientsAndEndpoints[1], allCoefficientsAndEndpoints[2], allCoefficientsAndEndpoints[3], allCoefficientsAndEndpoints[4], allCoefficientsAndEndpoints[5], allCoefficientsAndEndpoints[6]]
-    solutionEndpoints = [float(allCoefficientsAndEndpoints[7]), float(allCoefficientsAndEndpoints[8])]
+    coefficients, solutionEndpoints = createAllCoefficientsAndEndpoints()
 
-# Display for LaTeX
-c0 = Integer(coefficients[0])
-c1 = Integer(coefficients[1])
-c2 = Integer(coefficients[2])
-c3 = Integer(coefficients[3])
-c4 = Integer(coefficients[4])
-c5 = Integer(coefficients[5])
-c6 = Integer(coefficients[6])
+c0, c1, c2, c3, c4, c5, c6 = coefficients
 
 if c1 < 0:
     AndInequalityLeft = "%s - %s x" %(c0, -c1)
@@ -103,12 +67,12 @@ if c6 < 0:
 else:
     AndInequalityRight = "%s + %s x" %(c5, c6)
 
-precision = 1
+precision = 0.75
 solutionAndNegative = [ [round(solutionEndpoints[0], 3), round(solutionEndpoints[1], 3)], [-round(solutionEndpoints[0], 3), -round(solutionEndpoints[1], 3)] ]
-intervalOptions1 = createIntervalOptions(solutionAndNegative, intervalRange, precision)
-intervalOptions2 = createIntervalOptions(solutionAndNegative, intervalRange, precision)
-intervalOptions3 = createIntervalOptions(solutionAndNegative, intervalRange, precision)
-intervalOptions4 = createIntervalOptions(solutionAndNegative, intervalRange, precision)
+intervalOptions1 = createIntervalOptions(solutionAndNegative, 4, precision)
+intervalOptions2 = createIntervalOptions(solutionAndNegative, 4, precision)
+intervalOptions3 = createIntervalOptions(solutionAndNegative, 4, precision)
+intervalOptions4 = createIntervalOptions(solutionAndNegative, 4, precision)
 
 displayStem = 'Solve the linear inequality below. Then, choose the constant and interval combination that describes the solution set.'
 

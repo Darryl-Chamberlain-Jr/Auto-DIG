@@ -29,7 +29,7 @@ def generateProblemAndSolution(lineType):
         point = [maybeMakeNegative(random.randint(2, 10)), maybeMakeNegative(random.randint(2, 10))]
         A = random.randint(3, 9)
         B = maybeMakeNegative(random.randint(3, 9))
-        while gcd(A, abs(B)) > 1:
+        while math.gcd(A, abs(B)) > 1:
             A = random.randint(3, 9)
             B = maybeMakeNegative(random.randint(3, 9))
         C = random.randint(3, 15)
@@ -40,7 +40,7 @@ def generateProblemAndSolution(lineType):
         point = [maybeMakeNegative(random.randint(2, 10)), maybeMakeNegative(random.randint(2, 10))]
         A = random.randint(3, 9)
         B = maybeMakeNegative(random.randint(3, 9))
-        while gcd(A, abs(B)) > 1:
+        while math.gcd(A, abs(B)) > 1:
             A = random.randint(3, 9)
             B = maybeMakeNegative(random.randint(3, 9))
         C = float(random.randint(3, 15))

@@ -1,15 +1,6 @@
 import sys
-from sympy import *
 import numpy
 import random
-import math
-from decimal import Decimal
-import decimal
-import traceback
-import cmath
-import matplotlib.pyplot as plt
-from sympy.abc import x, y
-from sympy.solvers import solve
 
 DIR=sys.argv[1]
 debug=sys.argv[2]
@@ -40,60 +31,40 @@ def createIntervalToDisplay(direction, inclusion, value):
     else:
         intervalToDisplay = "\\text{An error occured when creating this interval look.}"
     return intervalToDisplay
-
 def createNumerators():
     numerators = [0, 0, 0, 0]
     while (numerators[1] >= numerators[2] or numerators[0] == numerators[3]):
-        numerators[0] = maybeMakeNegative(random.randint(3, 10))
-        numerators[1] = maybeMakeNegative(random.randint(3, 10))
-        numerators[2] = maybeMakeNegative(random.randint(3, 10))
-        numerators[3] = maybeMakeNegative(random.randint(3, 10))
+        n0 = maybeMakeNegative(random.randint(3, 10))
+        n1 = maybeMakeNegative(random.randint(3, 10))
+        n2 = maybeMakeNegative(random.randint(3, 10))
+        n3 = maybeMakeNegative(random.randint(3, 10))
+        numerators=[n0, n1, n2, n3]
     return numerators
-
-def createDenominators():
-    listOfDenominators= range(2, 10)
-    denominators = random.sample(listOfDenominators, 4)
-    return denominators
-
 def createCoefficients():
     numerators = createNumerators()
-    denominators = createDenominators()
-    n0 = float(numerators[0])
-    n1 = float(numerators[1])
-    n2 = float(numerators[2])
-    n3 = float(numerators[3])
-    d0 =float(denominators[0])
-    d1 =float(denominators[1])
-    d2 =float(denominators[2])
-    d3 =float(denominators[3])
-    x = Symbol('x')
-    left = (n0/d0)+(n1/d1)*x
-    right = (n2/d2)*x+(n3/d3)
-    endpoint = solve(left-right)
-    while (endpoint==[] or abs(endpoint[0])<1 ):
+    denominators = random.sample(range(2, 10), 4)
+    n0, n1, n2, n3 = numerators
+    d0, d1, d2, d3 = denominators
+    left=numpy.poly1d([n1/d1, n0/d0])
+    right=numpy.poly1d([n2/d2, n3/d3])
+    diff_of_left_right=left-right
+    endpoint = diff_of_left_right.r
+    while (len(endpoint)==0 or abs(endpoint[0])<1 ):
         numerators = createNumerators()
-        denominators = createDenominators()
-        n0 = float(numerators[0])
-        n1 = float(numerators[1])
-        n2 = float(numerators[2])
-        n3 = float(numerators[3])
-        d0 =float(denominators[0])
-        d1 =float(denominators[1])
-        d2 =float(denominators[2])
-        d3 =float(denominators[3])
-        x = Symbol('x')
-        left = (n0/d0)+(n1/d1)*x
-        right = (n2/d2)*x+(n3/d3)
-        endpoint = solve(left-right)
-    numerators = [n0, n1, n2, n3]
-    denominators = [d0, d1, d2, d3]
+        denominators = random.sample(range(2, 10), 4)
+        n0, n1, n2, n3 = numerators
+        d0, d1, d2, d3 = denominators
+        left=numpy.poly1d([n1/d1, n0/d0])
+        right=numpy.poly1d([n2/d2, n3/d3])
+        diff_of_left_right=left-right
+        endpoint = diff_of_left_right.r
     return [numerators, denominators, endpoint[0]]
 
-intervalRange = 3
-precision = 1
 numerators, denominators, endpoint = createCoefficients()
+n0, n1, n2, n3 = numerators
+d0, d1, d2, d3 = denominators
 endpointCleaned = round(float(endpoint), 3)
-checkingToFlipInequality = numerators[1]*denominators[2] - numerators[2]*denominators[1]
+checkingToFlipInequality = n1*d2-n2*d1
 
 allProblemTypes = ["less", "leq", "greater", "geq"]
 random.shuffle(allProblemTypes)
@@ -136,11 +107,10 @@ distractor2Display = solutionDisplay
 ### Distractor 3 is the negation AND inverse of the solution ###
 distractor3Display = distractor1Display
 # Creates the intervals to hide the endpoints
-solutionList1 = [endpointCleaned, -endpointCleaned]
-solutionList2 = [endpointCleaned, -endpointCleaned]
-
-intervalOptions1 = createIntervalOptions(solutionList1, intervalRange, precision)
-intervalOptions2 = createIntervalOptions(solutionList2, intervalRange, precision)
+solutionList1 = [round(endpointCleaned, 3), -round(endpointCleaned, 3)]
+solutionList2 = [round(endpointCleaned, 3), -round(endpointCleaned, 3)]
+intervalOptions1 = createIntervalOptions(solutionList1, 3, 0.75)
+intervalOptions2 = createIntervalOptions(solutionList2, 3, 0.75)
 
 solution = [solutionAnswer, solutionDisplay, intervalOptions1[0], "* $%s$, which is the correct option." %solutionAnswer, 1]
 displaySolution = solutionAnswer
@@ -150,15 +120,6 @@ distractor3 = [distractor3Answer, distractor3Display, intervalOptions2[1], " $%s
 distractor4 = ["\\text{None of the above}.", "You may have chosen this if you thought the inequality did not match the ends of the intervals."]
 
 displayStem = 'Solve the linear inequality below. Then, choose the constant and interval combination that describes the solution set.'
-
-n0 = Integer(numerators[0])
-n1 = Integer(numerators[1])
-n2 = Integer(numerators[2])
-n3 = Integer(numerators[3])
-d0 = Integer(denominators[0])
-d1 = Integer(denominators[1])
-d2 = Integer(denominators[2])
-d3 = Integer(denominators[3])
 
 if n1 < 0 and n3 < 0:
     if problemType == "less":

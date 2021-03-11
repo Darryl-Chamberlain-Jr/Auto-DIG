@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.8.4)  9 MAR 2021 13:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.8.4)  11 MAR 2021 14:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -594,38 +594,42 @@ Overfull \hbox (25.00003pt too wide) in paragraph at lines 68--90
  []
 
 
-Overfull \hbox (25.00003pt too wide) in paragraph at lines 90--118
+Overfull \hbox (25.00003pt too wide) in paragraph at lines 90--112
 [][] 
  []
 
-<../Figures/linearGraphToStandardCopyC.png, id=27, 446.6286pt x 343.2825pt>
+[2]
+Overfull \hbox (25.00003pt too wide) in paragraph at lines 112--134
+[][] 
+ []
+
+
+Overfull \hbox (25.00003pt too wide) in paragraph at lines 134--162
+[][] 
+ []
+
+<../Figures/linearGraphToStandardCopyC.png, id=42, 499.3857pt x 343.2825pt>
 File: ../Figures/linearGraphToStandardCopyC.png Graphic file (type png)
 <use ../Figures/linearGraphToStandardCopyC.png>
 Package pdftex.def Info: ../Figures/linearGraphToStandardCopyC.png  used on inp
-ut line 118.
-(pdftex.def)             Requested size: 234.8775pt x 180.5298pt.
-[2 <../Figures/linearGraphToStandardCopyC.png>]
-Overfull \hbox (25.00003pt too wide) in paragraph at lines 118--146
+ut line 162.
+(pdftex.def)             Requested size: 234.8775pt x 161.45802pt.
+
+Underfull \vbox (badness 2486) has occurred while \output is active []
+
+ [3]
+Overfull \hbox (25.00003pt too wide) in paragraph at lines 162--190
 [][] 
  []
 
-<../Figures/linearGraphToStandardC.png, id=43, 452.4102pt x 353.4003pt>
+<../Figures/linearGraphToStandardC.png, id=58, 461.8053pt x 343.2825pt>
 File: ../Figures/linearGraphToStandardC.png Graphic file (type png)
 <use ../Figures/linearGraphToStandardC.png>
 Package pdftex.def Info: ../Figures/linearGraphToStandardC.png  used on input l
-ine 146.
-(pdftex.def)             Requested size: 234.8775pt x 183.47261pt.
-[3 <../Figures/linearGraphToStandardC.png>]
-Overfull \hbox (25.00003pt too wide) in paragraph at lines 146--168
-[][] 
- []
-
-
-Overfull \hbox (25.00003pt too wide) in paragraph at lines 168--190
-[][] 
- []
-
-[4]
+ine 190.
+(pdftex.def)             Requested size: 234.8775pt x 174.59508pt.
+[4 <../Figures/linearGraphToStandardCopyC.png> <../Figures/linearGraphToStandar
+dC.png>]
 Overfull \hbox (25.00003pt too wide) in paragraph at lines 190--212
 [][] 
  []
@@ -665,7 +669,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 259.
 Here is how much of TeX's memory you used:
  8659 strings out of 483183
  129501 string characters out of 5966293
- 404218 words of memory out of 5000000
+ 403211 words of memory out of 5000000
  23439 multiletter control sequences out of 15000+600000
  535322 words of font info for 38 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
@@ -675,7 +679,7 @@ r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texli
 ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on keyModule2C.pdf (6 pages, 120953 bytes).
+Output written on keyModule2C.pdf (6 pages, 121798 bytes).
 PDF statistics:
  136 PDF objects out of 1000 (max. 8388607)
  117 compressed objects within 2 object streams

@@ -1,15 +1,6 @@
 import sys
-from sympy import *
 import numpy
 import random
-import math
-from decimal import Decimal
-import decimal
-import traceback
-import cmath
-import matplotlib.pyplot as plt
-from sympy.abc import x, y
-from sympy.solvers import solve
 
 DIR=sys.argv[1]
 debug=sys.argv[2]
@@ -54,9 +45,10 @@ intervalRange = 5
 precision = 1
 coefficients = createCoefficients()
 a, b, c, d = coefficients
-left = a+b*x
-right = c*x+d
-endpoint = solve(left-right)
+left=numpy.poly1d([b, a])
+right=numpy.poly1d([c, d])
+diff_of_left_right=left-right
+endpoint=diff_of_left_right.r
 endpointCleaned = round(float(endpoint[0]), 3)
 allProblemTypes = ["less", "leq", "greater", "geq"]
 random.shuffle(allProblemTypes)

@@ -219,7 +219,7 @@ do
     cp -r /$DIR/Figures/. /$DIR/CompleteExam/"$exam_display_name"/Figures
 
     # Final declaration to user that exam has been completed.
-    xdg-open /${DIR}/CompleteExam/"$exam_display_name"; sleep 3
+    xdg-open /${DIR}/CompleteExam/"$exam_display_name"
     echo "100"
     echo "#Done! Click 'Ok' to see the time results."
     ) |

@@ -1,15 +1,6 @@
 import sys
-from sympy import *
 import numpy
 import random
-import math
-from decimal import Decimal
-import decimal
-import traceback
-import cmath
-import matplotlib.pyplot as plt
-from sympy.abc import x, y
-from sympy.solvers import solve
 
 DIR=sys.argv[1]
 debug=sys.argv[2]
@@ -29,50 +20,42 @@ sys.path.insert(1, f"/{DIR}/PythonScripts/ScriptsForDatabases")
 from storeQuestionData import *
 
 def createAllCoefficients():
-    coefficients = [0, 0, 0, 0, 0, 0]
-    coefficients[0] = maybeMakeNegative(random.randint(3, 9))
-    coefficients[1] = maybeMakeNegative(random.randint(3, 9))
-    coefficients[2] = abs(coefficients[1]) + random.randint(1, 3)
-    coefficients[3] = maybeMakeNegative(random.randint(3, 9))
-    coefficients[4] = maybeMakeNegative(random.randint(3, 9))
-    coefficients[5] = abs(coefficients[4]) + random.randint(1, 3)
-
-    smallerEndpoint = float(-coefficients[0]/(coefficients[1]-coefficients[2]))
-    largerEndpoint = float(-coefficients[3]/(coefficients[4]-coefficients[5]))
-
+    c0 = maybeMakeNegative(random.randint(3, 9))
+    c1 = maybeMakeNegative(random.randint(3, 9))
+    c2 = abs(c1) + random.randint(1, 3)
+    c3 = maybeMakeNegative(random.randint(3, 9))
+    c4 = maybeMakeNegative(random.randint(3, 9))
+    c5 = abs(c4) + random.randint(1, 3)
+    coefficients = [c0, c1, c2, c3, c4, c5]
+    smallerEndpoint = float(-c0/(c1-c2))
+    largerEndpoint = float(-c3/(c4-c5))
     while (largerEndpoint <= smallerEndpoint):
-        coefficients[0] = maybeMakeNegative(random.randint(3, 9))
-        coefficients[1] = maybeMakeNegative(random.randint(3, 9))
-        coefficients[2] = abs(coefficients[1]) + random.randint(1, 3)
-        coefficients[3] = maybeMakeNegative(random.randint(3, 9))
-        coefficients[4] = maybeMakeNegative(random.randint(3, 9))
-        coefficients[5] = abs(coefficients[4]) + random.randint(1, 3)
-
-        smallerEndpoint = float(-coefficients[0]/(coefficients[1]-coefficients[2]))
-        largerEndpoint = float(-coefficients[3]/(coefficients[4]-coefficients[5]))
-
+        c0 = maybeMakeNegative(random.randint(3, 9))
+        c1 = maybeMakeNegative(random.randint(3, 9))
+        c2 = abs(c1) + random.randint(1, 3)
+        c3 = maybeMakeNegative(random.randint(3, 9))
+        c4 = maybeMakeNegative(random.randint(3, 9))
+        c5 = abs(c4) + random.randint(1, 3)
+        coefficients = [c0, c1, c2, c3, c4, c5]
+        smallerEndpoint = float(-c0/(c1-c2))
+        largerEndpoint = float(-c3/(c4-c5))
     return coefficients
 
 def createIntervalFromGreaterThanInequality(coefficients):
     a, b, c = coefficients
-    left = a+b*x
-    right = c*x
-    endpoint = solve(left-right)
-    nearEndpoint = floor(endpoint[0]) + 1
+    left = numpy.poly1d([b, a])
+    right = numpy.poly1d([c, 0])
+    diff_of_left_right= left-right
+    endpoint = diff_of_left_right.r
     return [0, endpoint[0]]
-
 
 def createIntervalFromLessThanInequality(coefficients):
     a, b, c = coefficients
-    left = a+b*x
-    right = c*x
-    endpoint = solve(left-right)
-    nearEndpoint = floor(endpoint[0]) - 1
+    left = numpy.poly1d([b, a])
+    right = numpy.poly1d([c, 0])
+    diff_of_left_right= left-right
+    endpoint = diff_of_left_right.r
     return [endpoint[0], 0]
-
-def generateSolutionInterval(solution, intervalRange):
-    interval = createInterval(solution, intervalRange)
-    return interval
 
 def distractorNegateAndInverseDomain(intervalPresentation):
     a, b = intervalPresentation
@@ -93,37 +76,24 @@ def extractValue(solutionInterval):
     else:
         return a
 
-def generateSolutionInterval(solution, intervalRange):
-    intervalList = [[]]*len(solution)
-    for i in xrange(0, len(solution)):
-        intervalList[i] = createInterval(solution[i], intervalRange)
-    return intervalList
-
 # Type 1 - "or"
 # block[0] + block[1]*x > block[2]*x "or" block[3] + block[4]*x < block[5]*x
 
-intervalRange = 4
 allCoefficients = createAllCoefficients()
-
 factor1Coefficients = [allCoefficients[0], allCoefficients[1], allCoefficients[2]]
 factor2Coefficients = [allCoefficients[3], allCoefficients[4], allCoefficients[5]]
-
 intervalLeft = createIntervalFromGreaterThanInequality(factor1Coefficients)
 intervalRight = createIntervalFromLessThanInequality(factor2Coefficients)
-
 endpointLeft = extractValue(intervalLeft)
 endpointRight = extractValue(intervalRight)
 solution = [float(endpointLeft), float(endpointRight)]
 
 while (abs(solution[0])==abs(solution[1]) or abs(solution[0])<1 or abs(solution[1])<1 or abs(abs(solution[0])-abs(solution[1])) < 1 ):
     allCoefficients = createAllCoefficients()
-
     factor1Coefficients = [allCoefficients[0], allCoefficients[1], allCoefficients[2]]
     factor2Coefficients = [allCoefficients[3], allCoefficients[4], allCoefficients[5]]
-
     intervalLeft = createIntervalFromGreaterThanInequality(factor1Coefficients)
     intervalRight = createIntervalFromLessThanInequality(factor2Coefficients)
-
     endpointLeft = extractValue(intervalLeft)
     endpointRight = extractValue(intervalRight)
     solution = [float(endpointLeft), float(endpointRight)]
@@ -139,49 +109,28 @@ else:
     displayRightFactor = "%s + %s x < %s x" %(factor2Coefficients[0], factor2Coefficients[1], factor2Coefficients[2])
 
 distractor1 = distractorNegateAndInverseDomain(solution)
-#distractor1Interval = [intervalCupExclusive(solution), createFeasibleIntervals(distractor1, solution, intervalRange)]
 distractor2 = solution
-#distractor2Interval = [intervalCupInclusive(solution), generateSolutionInterval(distractor2, intervalRange)]
 distractor3 = distractorNegateAndInverseDomain(solution)
-#distractor3Interval = [intervalCupInclusive(solution), createFeasibleIntervals(distractor1, distractor2, intervalRange)]
-#distractor4Interval = ["(-\\infty, \\infty)", [[], []] ]
 
 solutionListA = [solution, distractor1]
 solutionListB = [distractor2, distractor3]
-precision = 1
-intervalOptionsA = createIntervalOptions(solutionListA, intervalRange, precision)
-intervalOptionsB = createIntervalOptions(solutionListB, intervalRange, precision)
+intervalOptionsA = createIntervalOptions(solutionListA, 4, 0.75)
+intervalOptionsB = createIntervalOptions(solutionListB, 4, 0.75)
 
-solutionInterval = [intervalCupExclusive(solution), intervalOptionsA[0]]
-distractor1Interval = [intervalCupExclusive(solution), intervalOptionsA[1]]
-distractor2Interval = [intervalCupInclusive(solution), intervalOptionsB[0]]
-distractor3Interval = [intervalCupInclusive(solution), intervalOptionsB[1]]
+solutionInterval = [intervalCupExclusive(solution), intervalOptionsA[0], ' * Correct option.', 1]
+distractor1Interval = [intervalCupExclusive(solution), intervalOptionsA[1], "Corresponds to inverting the inequality and negating the solution.", 0]
+distractor2Interval = [intervalCupInclusive(solution), intervalOptionsB[0], "Corresponds to including the endpoints (when they should be excluded).", 0]
+distractor3Interval = [intervalCupInclusive(solution), intervalOptionsB[1], "Corresponds to including the endpoints AND negating.", 0]
 # Distractor4Interval is all real numbers. "(-\\infty, \\infty)"
 
 displayStem = 'Solve the linear inequality below. Then, choose the constant and interval combination that describes the solution set.'
 displayProblem = '%s \\text{ or } %s' %(displayLeftFactor, displayRightFactor)
-
-display0 = round(solution[0], 3)
-display1 = round(solution[1], 3)
-displaySolution = "(-\\infty, %s) \\text{ or } (%s, \\infty)" %(display0, display1)
-
+displaySolution = "(-\\infty, %s) \\text{ or } (%s, \\infty)" %(round(solution[0], 3), round(solution[1], 3))
 generalComment = "When multiplying or dividing by a negative, flip the sign."
-
-solutionInterval.append(' * Correct option.')
-distractor1Interval.append("Corresponds to inverting the inequality and negating the solution.")
-distractor2Interval.append("Corresponds to including the endpoints (when they should be excluded).")
-distractor3Interval.append("Corresponds to including the endpoints AND negating.")
-
-solutionInterval.append(1)
-distractor1Interval.append(0)
-distractor2Interval.append(0)
-distractor3Interval.append(0)
 
 answerList = [solutionInterval, distractor1Interval, distractor2Interval, distractor3Interval]
 random.shuffle(answerList)
-toAppendAnswer = "(-\\infty, \\infty)"
-toAppendComment = "Corresponds to the variable canceling, which does not happen in this instance."
-answerList.append([toAppendAnswer, toAppendComment, 0, 0])
+answerList.append(["(-\\infty, \\infty)", "Corresponds to the variable canceling, which does not happen in this instance.", 0, 0])
 
 c0 = "%s, \\text{ where } a \\in [%s, %s] \\text{ and } b \\in [%s, %s]" %(answerList[0][0], answerList[0][1][0][0], answerList[0][1][0][1], answerList[0][1][1][0], answerList[0][1][1][1])
 c1 = "%s, \\text{ where } a \\in [%s, %s] \\text{ and } b \\in [%s, %s]" %(answerList[1][0], answerList[1][1][0][0], answerList[1][1][0][1], answerList[1][1][1][0], answerList[1][1][1][1])
