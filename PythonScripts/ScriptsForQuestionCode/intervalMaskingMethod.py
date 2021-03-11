@@ -1,17 +1,12 @@
 ### These functions are used to automatically generate the intervals that disguise option values. Comments will be added to these in the future.
-from sympy import *
-import numpy
 import random
 import math
 from decimal import Decimal
 import decimal
-import traceback
-import cmath
 
 def listToFloats(listOfNumbers):
     listOfNumbers = [float(i) for i in listOfNumbers]
     return listOfNumbers
-
 def format_number(num):
     try:
         dec = decimal.Decimal(num)
@@ -31,7 +26,6 @@ def format_number(num):
     if tup.sign:
         return '-' + val
     return val
-
 def cleanInterval(interval):
     return [format_number(str(float(str(interval[0])))), format_number(str(float(str(interval[1]))))]
 def simplifyFraction(numerator, denominator):
@@ -41,7 +35,6 @@ def simplifyFraction(numerator, denominator):
         raise ValueError("Divide by zero error when dividing %d/%d" %(numerator, denominator))
     gcd = greatestCommonDenominator(numerator, denominator)
     return [numerator/gcd, denominator/gcd]
-
 def createInterval(solution, intervalRange, precision = None):
     if(precision == None):
         leftPoint = round(solution - math.floor(abs(random.gauss(0, intervalRange/2))), 2)
@@ -65,7 +58,6 @@ def createInterval(solution, intervalRange, precision = None):
             if (not (solution <= rightPoint and solution >= leftPoint) or rightPoint == leftPoint):
                 createInterval(solution, intervalRange)
             return [leftPoint, rightPoint]
-
 def checkInterval(interval, solution):
     solution = float(solution)
     #The inputs of this function are the list of intervals for the distractor solutions and the list of solutions.
@@ -75,7 +67,6 @@ def checkInterval(interval, solution):
     if(not (solution <= rightPoint and solution >= leftPoint)):
         isPermissible = True
     return isPermissible
-
 def checkAllIntervals(intervals, solutions):
     isPermissible = True
     for i in range(len(intervals)):
@@ -85,13 +76,11 @@ def checkAllIntervals(intervals, solutions):
                     isPermissible = False
                     return isPermissible
     return isPermissible
-
 def createIntervalList(solutions, intervalRange, precision):
     intervalList = []
     for i in range(len(solutions)):
         intervalList.append(createInterval(solutions[i], intervalRange, precision))
     return intervalList
-
 def createDisjointIntervalList(solutions, intervalRange, precision):
     intervalList = createIntervalList(solutions, intervalRange, precision)
     throttleNumber = 0
@@ -102,7 +91,6 @@ def createDisjointIntervalList(solutions, intervalRange, precision):
             intervalRange = intervalRange/2.0
         intervalList = createIntervalList(solutions, intervalRange, precision)
     return intervalList
-
 def create2DList(rows, columns):
     outputList = []
     for i in range(rows):
@@ -111,7 +99,6 @@ def create2DList(rows, columns):
             new.append([])
         outputList.append(new)
     return outputList
-
 def createIntervalOptions(solutionMatrix, intervalRange, precision):
     if (not(isinstance(solutionMatrix[0], list))):
         currentList = [solutionMatrix[j] for j in range(len(solutionMatrix))]
