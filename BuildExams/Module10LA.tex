@@ -1,0 +1,112 @@
+\documentclass[14pt]{extbook}
+\usepackage{multicol, enumerate, enumitem, hyperref, color, soul, setspace, parskip, fancyhdr} %General Packages
+\usepackage{amssymb, amsthm, amsmath, latexsym, units, mathtools} %Math Packages
+\everymath{\displaystyle} %All math in Display Style
+% Packages with additional options
+\usepackage[headsep=0.5cm,headheight=12pt, left=1 in,right= 1 in,top= 1 in,bottom= 1 in]{geometry}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{dashrule}  % Package to use the command below to create lines between items
+\newcommand{\litem}[1]{\item#1\hspace*{-1cm}\rule{\textwidth}{0.4pt}}
+\pagestyle{fancy}
+\lhead{Progress Quiz 7}
+\chead{}
+\rhead{Version A}
+\lfoot{4173-5738}
+\cfoot{}
+\rfoot{Spring 2021}
+\begin{document}
+
+\begin{enumerate}
+\litem{
+What are the \textit{possible Integer} roots of the polynomial below?\[ f(x) = 3x^{3} +4 x^{2} +7 x + 5 \]\begin{enumerate}[label=\Alph*.]
+\item \( \pm 1,\pm 5 \)
+\item \( \pm 1,\pm 3 \)
+\item \( \text{ All combinations of: }\frac{\pm 1,\pm 3}{\pm 1,\pm 5} \)
+\item \( \text{ All combinations of: }\frac{\pm 1,\pm 5}{\pm 1,\pm 3} \)
+\item \( \text{There is no formula or theorem that tells us all possible Integer roots.} \)
+
+\end{enumerate} }
+\litem{
+Perform the division below. Then, find the intervals that correspond to the quotient in the form $ax^2+bx+c$ and remainder $r$.\[ \frac{16x^{3} -48 x -27}{x -2} \]\begin{enumerate}[label=\Alph*.]
+\item \( a \in [30, 35], b \in [-72, -60], c \in [76, 81], \text{ and } r \in [-189, -180]. \)
+\item \( a \in [8, 23], b \in [-35, -31], c \in [11, 21], \text{ and } r \in [-61, -55]. \)
+\item \( a \in [8, 23], b \in [13, 20], c \in [-38, -31], \text{ and } r \in [-61, -55]. \)
+\item \( a \in [30, 35], b \in [62, 69], c \in [76, 81], \text{ and } r \in [132, 139]. \)
+\item \( a \in [8, 23], b \in [30, 37], c \in [11, 21], \text{ and } r \in [4, 10]. \)
+
+\end{enumerate} }
+\litem{
+What are the \textit{possible Rational} roots of the polynomial below?\[ f(x) = 3x^{2} +2 x + 6 \]\begin{enumerate}[label=\Alph*.]
+\item \( \text{ All combinations of: }\frac{\pm 1,\pm 3}{\pm 1,\pm 2,\pm 3,\pm 6} \)
+\item \( \pm 1,\pm 2,\pm 3,\pm 6 \)
+\item \( \pm 1,\pm 3 \)
+\item \( \text{ All combinations of: }\frac{\pm 1,\pm 2,\pm 3,\pm 6}{\pm 1,\pm 3} \)
+\item \( \text{ There is no formula or theorem that tells us all possible Rational roots.} \)
+
+\end{enumerate} }
+\litem{
+Factor the polynomial below completely. Then, choose the intervals the zeros of the polynomial belong to, where $z_1 \leq z_2 \leq z_3$. \textit{To make the problem easier, all zeros are between -5 and 5.}\[ f(x) = 10x^{3} -39 x^{2} +18 x + 27 \]\begin{enumerate}[label=\Alph*.]
+\item \( z_1 \in [-5, -2], \text{   }  z_2 \in [-0.73, -0.38], \text{   and   } z_3 \in [1.5, 1.9] \)
+\item \( z_1 \in [-2.67, -0.67], \text{   }  z_2 \in [0.59, 1.01], \text{   and   } z_3 \in [2.8, 3.6] \)
+\item \( z_1 \in [-5, -2], \text{   }  z_2 \in [-0.6, -0.03], \text{   and   } z_3 \in [2.8, 3.6] \)
+\item \( z_1 \in [-5, -2], \text{   }  z_2 \in [-1.87, -0.88], \text{   and   } z_3 \in [-0.4, 0.8] \)
+\item \( z_1 \in [-0.6, 3.4], \text{   }  z_2 \in [1.3, 2], \text{   and   } z_3 \in [2.8, 3.6] \)
+
+\end{enumerate} }
+\litem{
+Factor the polynomial below completely, knowing that $x+2$ is a factor. Then, choose the intervals the zeros of the polynomial belong to, where $z_1 \leq z_2 \leq z_3 \leq z_4$. \textit{To make the problem easier, all zeros are between -5 and 5.}\[ f(x) = 20x^{4} -13 x^{3} -95 x^{2} +52 x + 60 \]\begin{enumerate}[label=\Alph*.]
+\item \( z_1 \in [-3, 1], \text{   }  z_2 \in [-1.92, -1.65], z_3 \in [0.77, 0.97], \text{   and   } z_4 \in [1.36, 2.38] \)
+\item \( z_1 \in [-3, 1], \text{   }  z_2 \in [-0.88, -0.66], z_3 \in [1.61, 1.84], \text{   and   } z_4 \in [1.36, 2.38] \)
+\item \( z_1 \in [-3, 1], \text{   }  z_2 \in [-0.76, -0.57], z_3 \in [1.23, 1.3], \text{   and   } z_4 \in [1.36, 2.38] \)
+\item \( z_1 \in [-3, 1], \text{   }  z_2 \in [-0.51, 0.03], z_3 \in [1.9, 2.15], \text{   and   } z_4 \in [2.48, 3.24] \)
+\item \( z_1 \in [-3, 1], \text{   }  z_2 \in [-1.52, -1.08], z_3 \in [0.55, 0.78], \text{   and   } z_4 \in [1.36, 2.38] \)
+
+\end{enumerate} }
+\litem{
+Factor the polynomial below completely. Then, choose the intervals the zeros of the polynomial belong to, where $z_1 \leq z_2 \leq z_3$. \textit{To make the problem easier, all zeros are between -5 and 5.}\[ f(x) = 6x^{3} -1 x^{2} -20 x + 12 \]\begin{enumerate}[label=\Alph*.]
+\item \( z_1 \in [-2.57, -1.94], \text{   }  z_2 \in [0.56, 0.71], \text{   and   } z_3 \in [0.6, 1.7] \)
+\item \( z_1 \in [-1.52, -1.02], \text{   }  z_2 \in [-0.93, -0.52], \text{   and   } z_3 \in [1.9, 2.4] \)
+\item \( z_1 \in [-3.42, -2.64], \text{   }  z_2 \in [-0.49, -0.3], \text{   and   } z_3 \in [1.9, 2.4] \)
+\item \( z_1 \in [-1.52, -1.02], \text{   }  z_2 \in [-0.93, -0.52], \text{   and   } z_3 \in [1.9, 2.4] \)
+\item \( z_1 \in [-2.57, -1.94], \text{   }  z_2 \in [0.56, 0.71], \text{   and   } z_3 \in [0.6, 1.7] \)
+
+\end{enumerate} }
+\litem{
+Factor the polynomial below completely, knowing that $x+3$ is a factor. Then, choose the intervals the zeros of the polynomial belong to, where $z_1 \leq z_2 \leq z_3 \leq z_4$. \textit{To make the problem easier, all zeros are between -5 and 5.}\[ f(x) = 15x^{4} +91 x^{3} +5 x^{2} -339 x + 180 \]\begin{enumerate}[label=\Alph*.]
+\item \( z_1 \in [-5.54, -4.92], \text{   }  z_2 \in [-3.08, -2.8], z_3 \in [0.68, 1.11], \text{   and   } z_4 \in [1.64, 2.04] \)
+\item \( z_1 \in [-2.18, -1.46], \text{   }  z_2 \in [-1.31, -0.71], z_3 \in [2.89, 3.23], \text{   and   } z_4 \in [4.76, 5.58] \)
+\item \( z_1 \in [-1.53, -0.97], \text{   }  z_2 \in [-0.73, -0.5], z_3 \in [2.89, 3.23], \text{   and   } z_4 \in [4.76, 5.58] \)
+\item \( z_1 \in [-4.14, -3.6], \text{   }  z_2 \in [-0.46, -0.15], z_3 \in [2.89, 3.23], \text{   and   } z_4 \in [4.76, 5.58] \)
+\item \( z_1 \in [-5.54, -4.92], \text{   }  z_2 \in [-3.08, -2.8], z_3 \in [0.43, 0.7], \text{   and   } z_4 \in [1.28, 1.53] \)
+
+\end{enumerate} }
+\litem{
+Perform the division below. Then, find the intervals that correspond to the quotient in the form $ax^2+bx+c$ and remainder $r$.\[ \frac{20x^{3} +20 x^{2} -100 x + 63}{x + 3} \]\begin{enumerate}[label=\Alph*.]
+\item \( a \in [-63, -57], \text{   } b \in [-163, -156], \text{   } c \in [-581, -579], \text{   and   } r \in [-1678, -1673]. \)
+\item \( a \in [20, 25], \text{   } b \in [-63, -59], \text{   } c \in [139, 145], \text{   and   } r \in [-504, -495]. \)
+\item \( a \in [20, 25], \text{   } b \in [-43, -35], \text{   } c \in [19, 27], \text{   and   } r \in [-1, 7]. \)
+\item \( a \in [-63, -57], \text{   } b \in [199, 206], \text{   } c \in [-701, -696], \text{   and   } r \in [2162, 2167]. \)
+\item \( a \in [20, 25], \text{   } b \in [76, 82], \text{   } c \in [139, 145], \text{   and   } r \in [478, 484]. \)
+
+\end{enumerate} }
+\litem{
+Perform the division below. Then, find the intervals that correspond to the quotient in the form $ax^2+bx+c$ and remainder $r$.\[ \frac{25x^{3} +105 x^{2} -83}{x + 4} \]\begin{enumerate}[label=\Alph*.]
+\item \( a \in [-101, -97], b \in [-296, -291], c \in [-1183, -1175], \text{ and } r \in [-4809, -4802]. \)
+\item \( a \in [20, 26], b \in [-23, -18], c \in [91, 105], \text{ and } r \in [-583, -581]. \)
+\item \( a \in [20, 26], b \in [201, 211], c \in [818, 824], \text{ and } r \in [3193, 3205]. \)
+\item \( a \in [20, 26], b \in [-1, 8], c \in [-20, -15], \text{ and } r \in [-10, -1]. \)
+\item \( a \in [-101, -97], b \in [500, 508], c \in [-2025, -2019], \text{ and } r \in [7995, 8006]. \)
+
+\end{enumerate} }
+\litem{
+Perform the division below. Then, find the intervals that correspond to the quotient in the form $ax^2+bx+c$ and remainder $r$.\[ \frac{8x^{3} +22 x^{2} -80 x + 47}{x + 5} \]\begin{enumerate}[label=\Alph*.]
+\item \( a \in [3, 13], \text{   } b \in [61, 63], \text{   } c \in [229, 232], \text{   and   } r \in [1191, 1201]. \)
+\item \( a \in [3, 13], \text{   } b \in [-31, -23], \text{   } c \in [74, 80], \text{   and   } r \in [-410, -405]. \)
+\item \( a \in [-41, -34], \text{   } b \in [216, 223], \text{   } c \in [-1191, -1187], \text{   and   } r \in [5991, 5998]. \)
+\item \( a \in [3, 13], \text{   } b \in [-23, -16], \text{   } c \in [10, 13], \text{   and   } r \in [-5, 0]. \)
+\item \( a \in [-41, -34], \text{   } b \in [-182, -177], \text{   } c \in [-971, -963], \text{   and   } r \in [-4807, -4797]. \)
+
+\end{enumerate} }
+\end{enumerate}
+
+\end{document}
