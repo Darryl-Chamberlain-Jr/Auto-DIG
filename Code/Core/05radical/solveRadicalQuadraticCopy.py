@@ -1,15 +1,7 @@
 import sys
-from sympy import *
-import numpy
 import random
-import math
-from decimal import Decimal
-import decimal
-import traceback
-import cmath
-import matplotlib.pyplot as plt
-from sympy.abc import x, y
-from sympy.solvers import solve
+import numpy
+from math import gcd
 
 DIR=sys.argv[1]
 debug=sys.argv[2]
@@ -36,8 +28,10 @@ def smallerFirst(twoValuesToCompare):
 
 def radicalCheck(coefficients):
     a, b, c, d = coefficients
-    equation = (a*x+b)*(c*x+d)
-    solution = solve(equation)
+    eq1 = numpy.poly1d([a, b])
+    eq2 = numpy.poly1d([c, d])
+    equation_to_solve=eq1*eq2
+    solution = equation_to_solve.r
     if len(solution) == 0:
         return [0, 0, 0, 0]
     else:
@@ -98,12 +92,11 @@ def generateCoefficients(numberOfSolutions):
 
 def generateSolutionToQuadratic(coefficients):
     a, b, c, d = coefficients
-    equation = (a*x+b)*(c*x+d)
-    solution = solve(equation)
-    if solution[0] < solution[1]:
-        return solution
-    else:
-        return [solution[1], solution[0]]
+    eq1 = numpy.poly1d([a, b])
+    eq2 = numpy.poly1d([c, d])
+    equation_to_solve=eq1*eq2
+    solution = equation_to_solve.r
+    return [min(solution[0], solution[1]), max(solution[0], solution[1])]
 
 def intervalToString(interval):
     return 'x \\in [%s,%s]' %(interval[0], interval[1])
