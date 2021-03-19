@@ -1,15 +1,6 @@
 import sys
-from sympy import *
 import numpy
 import random
-import math
-from decimal import Decimal
-import decimal
-import traceback
-import cmath
-import matplotlib.pyplot as plt
-from sympy.abc import x, y
-from sympy.solvers import solve
 
 DIR=sys.argv[1]
 debug=sys.argv[2]
@@ -30,9 +21,9 @@ from storeQuestionData import *
 
 def generateSolution(coefficients):
     a, b, c = coefficients
-    solveThisQuadratic = a*x**2+b*x+c
-    solution = solve(solveThisQuadratic, x)
-    return [min(float(solution[0]), float(solution[1])), max(float(solution[0]), float(solution[1]))]
+    polynomial = numpy.poly1d([a, b, c])
+    solution = polynomial.r
+    return [min(solution[0], solution[1]), max(solution[0], solution[1])]
 
 def findDiscriminant(coefficients):
     a, b, c = coefficients
@@ -67,7 +58,7 @@ intervalRange = 3
 
 coefficients = [maybeMakeNegative(random.randint(10, 20)), maybeMakeNegative(random.randint(7, 15)), maybeMakeNegative(random.randint(2, 9))]
 discrim = findDiscriminant(coefficients)
-while (discrim <= 0 or is_square(discrim)==true):
+while (discrim <= 0 or is_square(discrim)==True):
     coefficients = [maybeMakeNegative(random.randint(10, 20)), maybeMakeNegative(random.randint(7, 15)), maybeMakeNegative(random.randint(2, 9))]
     discrim = findDiscriminant(coefficients)
 

@@ -1,15 +1,8 @@
 import sys
-from sympy import *
 import numpy
 import random
 import math
-from decimal import Decimal
-import decimal
-import traceback
-import cmath
-import matplotlib.pyplot as plt
-from sympy.abc import x, y
-from sympy.solvers import solve
+from sympy import primerange
 
 DIR=sys.argv[1]
 debug=sys.argv[2]
@@ -43,7 +36,7 @@ def generateSolution(minimum, maximum, factors):
     d = maybeMakeNegative(random.randint(minimum, maximum))
 
     # This makes sure we can't factor out a constant and the middle coefficient doesn't cancel.
-    while ((gcd(a, b)*gcd(c, d)>1) or (a==c and b==-d) or (a*d+b*c==0)):
+    while ((math.gcd(a, b)*math.gcd(c, d)>1) or (a==c and b==-d) or (a*d+b*c==0)):
         aFactors = factors[0]
         cFactors = factors[1]
         a = numpy.prod(aFactors)

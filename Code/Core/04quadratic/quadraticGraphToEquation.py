@@ -1,15 +1,7 @@
 import sys
-from sympy import *
 import numpy
 import random
-import math
-from decimal import Decimal
-import decimal
-import traceback
-import cmath
-import matplotlib.pyplot as plt
-from sympy.abc import x, y
-from sympy.solvers import solve
+#import math
 import matplotlib.pyplot as plt
 
 DIR=sys.argv[1]
@@ -29,8 +21,6 @@ from intervalMaskingMethod import *
 sys.path.insert(1, f"/{DIR}/PythonScripts/ScriptsForDatabases")
 from storeQuestionData import *
 
-x = var("x")
-
 def generateSolutionAndDistractors(coefficients, vertex):
     a, b, c = coefficients
     solution = [[a, b, c], "* $f(x)=%s$, which is the correct option." %generatePolynomialDisplay([a, b, c]), 1]
@@ -41,8 +31,7 @@ def generateSolutionAndDistractors(coefficients, vertex):
     return [solution, distractor1, distractor2, distractor3, distractor4]
 
 def graphTheFunctionAndReturnCoefficients(a, vertex):
-    graphToFunction = a * (x-vertex[0])**2 + vertex[1]
-    #
+    #a * (x-vertex[0])**2 + vertex[1]
     SMALL_SIZE = 24
     MEDIUM_SIZE = 28
     BIGGER_SIZE = 32

@@ -1,15 +1,7 @@
 import sys
-from sympy import *
 import numpy
 import random
-import math
-from decimal import Decimal
-import decimal
-import traceback
-import cmath
-import matplotlib.pyplot as plt
-from sympy.abc import x, y
-from sympy.solvers import solve
+#import math
 import matplotlib.pyplot as plt
 
 DIR=sys.argv[1]
@@ -29,8 +21,6 @@ from intervalMaskingMethod import *
 sys.path.insert(1, f"/{DIR}/PythonScripts/ScriptsForDatabases")
 from storeQuestionData import *
 
-x = var("x")
-
 def generateSolutionAndDistractors(coefficients, vertex):
     a, b, c = coefficients
     solution = [[a, b, c], "* $f(x)=%s$, which is the correct option." %generatePolynomialDisplay([a, b, c]), 1]
@@ -41,12 +31,10 @@ def generateSolutionAndDistractors(coefficients, vertex):
     return [solution, distractor1, distractor2, distractor3, distractor4]
 
 def graphTheFunctionAndReturnCoefficients(a, vertex):
-    graphToFunction = a * (x-vertex[0])**2 + vertex[1]
-    #
+    #a * (x-vertex[0])**2 + vertex[1]
     SMALL_SIZE = 24
     MEDIUM_SIZE = 28
     BIGGER_SIZE = 32
-
     plt.rc('font', size=SMALL_SIZE)          # controls default text sizes
     plt.rc('axes', titlesize=SMALL_SIZE)     # fontsize of the axes title
     plt.rc('axes', labelsize=MEDIUM_SIZE)    # fontsize of the x and y labels
@@ -64,7 +52,7 @@ def graphTheFunctionAndReturnCoefficients(a, vertex):
     plt.grid(True)
     plt.savefig('/' + str(DIR) + '/Figures/' + str(thisQuestion) + str(version) + '.png', bbox_inches='tight')
     plt.close()
-    return [a, -2*vertex[0]*a, a*(vertex[0])**2 +vertex[1]]
+    return [a, -2*vertex[0]*a, a*(vertex[0]**2) +vertex[1]]
 
 a = maybeMakeNegative(1)
 vertex = [maybeMakeNegative(random.randint(1, 2))*2, maybeMakeNegative(random.randint(1, 5))*2]

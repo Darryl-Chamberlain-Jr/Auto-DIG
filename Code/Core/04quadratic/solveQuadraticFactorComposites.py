@@ -1,15 +1,8 @@
 import sys
-from sympy import *
+from sympy import primerange
 import numpy
 import random
-import math
-from decimal import Decimal
-import decimal
-import traceback
-import cmath
-import matplotlib.pyplot as plt
-from sympy.abc import x, y
-from sympy.solvers import solve
+from math import gcd
 
 DIR=sys.argv[1]
 debug=sys.argv[2]

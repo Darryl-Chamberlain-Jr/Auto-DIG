@@ -1,15 +1,7 @@
 import sys
-from sympy import *
 import numpy
 import random
-import math
-from decimal import Decimal
-import decimal
-import traceback
-import cmath
-import matplotlib.pyplot as plt
-from sympy.abc import x, y
-from sympy.solvers import solve
+#import math
 import matplotlib.pyplot as plt
 
 DIR=sys.argv[1]
@@ -29,7 +21,6 @@ from intervalMaskingMethod import *
 sys.path.insert(1, f"/{DIR}/PythonScripts/ScriptsForDatabases")
 from storeQuestionData import *
 
-x = var("x")
 # Type 2 - Function to graph
 
 def putChoicesInOrder(choiceAndComment):
@@ -49,7 +40,7 @@ aCoeffFtG = maybeMakeNegative(random.randint(1, 4))
 vertexFtG = [int(0), int(0)]
 vertexFtG[0] = maybeMakeNegative(random.randint(1, 4))
 vertexFtG[1] = maybeMakeNegative(random.randint(10, 20))
-functionToGraph = aCoeffFtG* (x-vertexFtG[0])**2 + vertexFtG[1]
+# aCoeffFtG* (x-vertexFtG[0])**2 + vertexFtG[1]
 
 def generateGraphs(aCoeffFtG, vertexFtG):
     figureAnswerList = [["A", '', 1], ["B", '', 0], ["C", '', 0], ["D", '', 0]]
