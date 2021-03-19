@@ -1,15 +1,8 @@
 import sys
-from sympy import *
-import numpy
 import random
-import math
-from decimal import Decimal
-import decimal
-import traceback
-import cmath
+import numpy
 import matplotlib.pyplot as plt
-from sympy.abc import x, y
-from sympy.solvers import solve
+from sympy.abc import x
 
 DIR=sys.argv[1]
 debug=sys.argv[2]
@@ -84,7 +77,7 @@ if degree == 6:
     xPlot = numpy.arange(xMinimum, xMaximum, 0.05)
     solutionGraph = aCoeff*(xPlot-randomZeros[0])**2 * (xPlot-randomZeros[1])**2 * (xPlot-randomZeros[2])**2
     plt.rcParams.update({'font.size': 36})
-    showPlot = plt.plot(xPlot, solutionGraph, linewidth = 5, color = 	'#02325f')
+    plt.plot(xPlot, solutionGraph, linewidth = 5, color = 	'#02325f')
     plt.xlabel('x')
     plt.ylabel('y')
     plt.grid(True)
@@ -114,11 +107,11 @@ elif degree ==5:
     xPlot = numpy.arange(xMinimum, xMaximum, 0.05)
     solutionGraph = aCoeff*(xPlot-randomZeros[0])**2 * (xPlot-randomZeros[1])**2 * (xPlot-randomZeros[2])
     plt.rcParams.update({'font.size': 36})
-    showPlot = plt.plot(xPlot, solutionGraph, linewidth = 5, color = 	'#02325f')
+    plt.plot(xPlot, solutionGraph, linewidth = 5, color = 	'#02325f')
     plt.xlabel('x')
     plt.ylabel('y')
     plt.grid(True)
-    plt.savefig('../Figures/' +  str(thisQuestion) + str(version) + '.png', bbox_inches='tight')
+    plt.savefig('/' + str(DIR) + '/Figures/' + str(thisQuestion) + str(version) + '.png', bbox_inches='tight')
     plt.close()
     # Distractors #
     negativeEquation = -aCoeff*(x-randomZeros[0])**2 * (x-randomZeros[1])**2 * (x-randomZeros[2])
@@ -135,8 +128,6 @@ elif degree ==5:
     negativeOneZeroOffEquation = - aCoeff*(x-randomZeros[0])**2 * (x-randomZeros[1])**2 * (x-randomZeros[2])**2
     displayNegativeOneZeroOffEquation = displayEquation(-aCoeff, randomZeros[0],  randomPower(2), randomZeros[1], randomPower(2), randomZeros[2], randomPower(2))
     d2comment = "The factor $%s$ should have an odd power and the leading coefficient should be the opposite sign." %displayFactor(randomZeros[2])
-    #####
-
 elif degree ==4:
     equationOfGraph = aCoeff*(x-randomZeros[0])**2 * (x-randomZeros[1]) * (x-randomZeros[2])
     displayEquationOfGraph = displayEquation(aCoeff, randomZeros[0],  randomPower(2), randomZeros[1], randomPower(1), randomZeros[2], randomPower(1))
@@ -144,11 +135,11 @@ elif degree ==4:
     xPlot = numpy.arange(xMinimum, xMaximum, 0.05)
     solutionGraph = aCoeff*(xPlot-randomZeros[0])**2 * (xPlot-randomZeros[1]) * (xPlot-randomZeros[2])
     plt.rcParams.update({'font.size': 36})
-    showPlot = plt.plot(xPlot, solutionGraph, linewidth = 5, color = 	'#02325f')
+    plt.plot(xPlot, solutionGraph, linewidth = 5, color = 	'#02325f')
     plt.xlabel('x')
     plt.ylabel('y')
     plt.grid(True)
-    plt.savefig('../Figures/' +  str(thisQuestion) + str(version) + '.png', bbox_inches='tight')
+    plt.savefig('/' + str(DIR) + '/Figures/' + str(thisQuestion) + str(version) + '.png', bbox_inches='tight')
     plt.close()
     # Distractors #
     negativeEquation = -aCoeff*(x-randomZeros[0])**2 * (x-randomZeros[1]) * (x-randomZeros[2])
@@ -165,8 +156,6 @@ elif degree ==4:
     negativeOneZeroOffEquation = - aCoeff*(x-randomZeros[0])**2 * (x-randomZeros[1]) * (x-randomZeros[2])**2
     displayNegativeOneZeroOffEquation= displayEquation(-aCoeff, randomZeros[0],  randomPower(2), randomZeros[1], randomPower(1), randomZeros[2], randomPower(2))
     d2comment = "The factor $%s$ should have an odd power and the leading coefficient should be the opposite sign." %displayFactor(randomZeros[2])
-    #####
-
 else:
     equationOfGraph = aCoeff*(x-randomZeros[0]) * (x-randomZeros[1]) * (x-randomZeros[2])
     displayEquationOfGraph = displayEquation(aCoeff, randomZeros[0],  randomPower(1), randomZeros[1], randomPower(1), randomZeros[2], randomPower(1))
@@ -174,11 +163,11 @@ else:
     xPlot = numpy.arange(xMinimum, xMaximum, 0.05)
     solutionGraph = aCoeff*(xPlot-randomZeros[0]) * (xPlot-randomZeros[1]) * (xPlot-randomZeros[2])
     plt.rcParams.update({'font.size': 36})
-    showPlot = plt.plot(xPlot, solutionGraph, linewidth = 5, color = 	'#02325f')
+    plt.plot(xPlot, solutionGraph, linewidth = 5, color = 	'#02325f')
     plt.xlabel('x')
     plt.ylabel('y')
     plt.grid(True)
-    plt.savefig('../Figures/' +  str(thisQuestion) + str(version) + '.png', bbox_inches='tight')
+    plt.savefig('/' + str(DIR) + '/Figures/' + str(thisQuestion) + str(version) + '.png', bbox_inches='tight')
     plt.close()
     # Distractors #
     negativeEquation = -aCoeff*(x-randomZeros[0]) * (x-randomZeros[1]) * (x-randomZeros[2])
@@ -195,7 +184,6 @@ else:
     negativeOneZeroOffEquation = -aCoeff*(x-randomZeros[0])**2 * (x-randomZeros[1]) * (x-randomZeros[2])
     displayNegativeOneZeroOffEquation = displayEquation(-aCoeff, randomZeros[0],  randomPower(2), randomZeros[1], randomPower(1), randomZeros[2], randomPower(1))
     d2comment = "The factor $%s$ should have an odd power and the leading coefficient should be the opposite sign." %displayFactor(randomZeros[0])
-    #####
 
 displayStem = 'Which of the following equations \\textit{could} be of the graph presented below?'
 displayProblem = f"{thisQuestion}{version}"

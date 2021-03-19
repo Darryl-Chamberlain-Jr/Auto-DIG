@@ -1,15 +1,5 @@
 import sys
-from sympy import *
-import numpy
 import random
-import math
-from decimal import Decimal
-import decimal
-import traceback
-import cmath
-import matplotlib.pyplot as plt
-from sympy.abc import x, y
-from sympy.solvers import solve
 
 DIR=sys.argv[1]
 debug=sys.argv[2]
@@ -50,7 +40,7 @@ def displayFactor(a):
         factor = "x - %d" %a
     return factor
 
-leadingCoefficient = Integer(maybeMakeNegative(random.randint(2, 9)))
+leadingCoefficient = maybeMakeNegative(random.randint(2, 9))
 factor1 = generateFactor()
 factor2 = generateFactor()
 
@@ -65,9 +55,7 @@ e1 = factor1[2] + 2*random.randint(1, 3)-1
 e2 = factor2[2]
 e3 = factor2[2] + random.randint(0, 2)
 
-displayPolynomial = leadingCoefficient * (x+factor1[1])**e0 *(x-factor1[1])**e1 *(x+factor2[1])**e2 *(x-factor2[1])**e3
 displayProblem = "f(x) = %s(%s)^{%d}(%s)^{%d}(%s)^{%d}(%s)^{%d}" %(leadingCoefficient, displayFactor(-factor1[1]), e0, displayFactor(factor1[1]), e1, displayFactor(-factor2[1]), e2, displayFactor(factor2[1]), e3)
-
 sumOfExponents = e0 + e1 + e2 + e3
 
 if leadingCoefficient < 0 and sumOfExponents % 2 == 0:

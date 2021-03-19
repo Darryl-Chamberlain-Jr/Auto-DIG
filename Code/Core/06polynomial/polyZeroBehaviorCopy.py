@@ -1,15 +1,5 @@
 import sys
-from sympy import *
-import numpy
 import random
-import math
-from decimal import Decimal
-import decimal
-import traceback
-import cmath
-import matplotlib.pyplot as plt
-from sympy.abc import x, y
-from sympy.solvers import solve
 
 DIR=sys.argv[1]
 debug=sys.argv[2]
@@ -68,7 +58,7 @@ def determineZeroBehavior(a, zeros, exponents, zeroDisplayed):
         behavior = "negativeOdd"
     return behavior
 
-leadingCoefficient = Integer(maybeMakeNegative(random.randint(2, 9)))
+leadingCoefficient = maybeMakeNegative(random.randint(2, 9))
 factor1 = generateFactor()
 factor2 = generateFactor()
 
@@ -112,14 +102,6 @@ else:
     e3 = factor2[2]
     expoenentOnDisplay = e2
 
-firstTerm = (x+factor1[1])**e0
-secondTerm = (x-factor1[1])**e1
-thirdTerm = (x+factor2[1])**e2
-fourthTerm = (x-factor2[1])**e3
-
-behaviorOfPolynomial = leadingCoefficient*( firstTerm * secondTerm * thirdTerm * fourthTerm )
-
-displayPolynomial = leadingCoefficient * (x+factor1[1])**e0 *(x-factor1[1])**e1 *(x+factor2[1])**e2 *(x-factor2[1])**e3
 displayProblem = "f(x) = %s(%s)^{%d}(%s)^{%d}(%s)^{%d}(%s)^{%d}" %(leadingCoefficient, displayFactor(-factor1[1]), e0, displayFactor(factor1[1]), e1, displayFactor(-factor2[1]), e2, displayFactor(factor2[1]), e3)
 
 zeros = [-factor1[1], factor1[1], -factor2[1], factor2[1]]
