@@ -45,28 +45,39 @@ def graph_rational_function_with_undefined_points(numerator_zeros, denominator_z
         else:
             vertical_asymptotes.append(denom_zero)
     undefined_values=sorted(undefined_values)
-    x_values=[]
-    index=0
-    while index < len(undefined_values)+1:
-        if index==0:
-            x_values.extend(numpy.arange(undefined_values[index]-2.5, undefined_values[0], step_size))
-        elif index == len(undefined_values):
-            x_values.extend(numpy.arange(undefined_values[index-1], undefined_values[index-1]+2.5, step_size))
-        else:
-            x_values.extend(numpy.arange(undefined_values[index-1], undefined_values[index], step_size))
-        index+=1
+    # Define all x-values and later throw out bad x-values
+    x_values=numpy.arange(-10, 10, step_size)
+    # OLD CODE
+    #x_values=[]
+    #index=0
+    #while index < len(undefined_values)+1:
+    #    if index==0:
+    #        x_values.extend(numpy.arange(undefined_values[index]-2.5, undefined_values[0], step_size))
+    #    elif index == len(undefined_values):
+    #        x_values.extend(numpy.arange(undefined_values[index-1], undefined_values[index-1]+2.5, step_size))
+    #    else:
+    #        x_values.extend(numpy.arange(undefined_values[index-1], undefined_values[index], step_size))
+    #    index+=1
+    # END OLD CODE
     ### GRAPH ###
-    plt.rcParams.update({'font.size': 36})
+    plt.rcParams.update({'font.size': 30})
     y_values=[]
+    # scale_value makes graph y-bounds reasonable
     for x_value in x_values:
-        temp_y=( (numerator_zeros[0][0]*x_value - numerator_zeros[0][1])*(numerator_zeros[1][0]*x_value - numerator_zeros[1][1])*(numerator_zeros[2][0]*x_value - numerator_zeros[2][1]) ) / ( (denominator_zeros[0][0]*x_value - denominator_zeros[0][1])*(denominator_zeros[1][0]*x_value - denominator_zeros[1][1])*(denominator_zeros[2][0]*x_value - denominator_zeros[2][1]) )
-        y_values.append(temp_y)
+        numerator_value=(x_value - list_numerator_zeros[0])*(x_value - list_numerator_zeros[1])*(x_value - list_numerator_zeros[2])
+        denominator_value=(x_value - list_denominator_zeros[0])*(x_value - list_denominator_zeros[1])*(x_value - list_denominator_zeros[2])
+        temp_y=numerator_value/denominator_value
+        if temp_y == float("inf") or temp_y == float("-inf") or temp_y > 50 or temp_y < -50:
+            x_values=x_values[ x_values != x_value]
+        else:
+            y_values.append(temp_y)
+    scale_value=1
     plt.plot(x_values, y_values, linewidth=2, color='blue')
     numerator=numpy.poly1d(list_numerator_zeros, True)
     denominator=numpy.poly1d(list_denominator_zeros, True)
     for va in vertical_asymptotes:
         plt.axvline(x= va, ls=('dashed'), color='black')
-        plt.text(va, numerator(va-0.01)/denominator(va-0.01), f"x={va}", fontsize=18, horizontalalignment='right')
+        plt.text(va, -numerator(va-0.5)/denominator(va-0.5), f"x={int(va)}", fontsize=12, horizontalalignment='right')
     flip_text_placement=1
     for hole in holes:
         num_value=int(numerator(hole))
@@ -77,8 +88,8 @@ def graph_rational_function_with_undefined_points(numerator_zeros, denominator_z
             num_value=int(numerator(hole))
             denom_value=int(denominator(hole))
         hole_y_value=float(num_value/denom_value)
-        plt.plot(hole, hole_y_value, 'o', color='black', markersize=10, mfc='none')
-        plt.text(hole, flip_text_placement*3*hole_y_value, f"Hole at {int(hole)}", fontsize=18)
+        plt.plot(hole, hole_y_value/scale_value, 'o', color='black', markersize=10, mfc='none')
+        plt.text(hole, hole_y_value+5*flip_text_placement, f"Hole at {int(hole)}", fontsize=12)
         flip_text_placement=flip_text_placement*-1
     #for hole in holes:
     #    plt.scatter(hole[1], y_hole, s=80, facecolors='none', edgecolors='r')
@@ -105,7 +116,7 @@ else:
 vertical_asymptotes=list(numpy.setdiff1d(denominator_zeros, holes) )
 
 # Solution
-step_size=0.025
+step_size=0.02
 graph_rational_function_with_undefined_points( [  [1, numerator_zeros[0]],   [1, numerator_zeros[1]],  [1, numerator_zeros[2]]  ],  [  [1, denominator_zeros[0]], [1, denominator_zeros[1]],  [1, denominator_zeros[2]] ], step_size)
 num_poly_solution=generatePolynomialDisplay(coefficientsForPoly(numerator_zeros))
 denom_poly_solution=generatePolynomialDisplay(coefficientsForPoly(denominator_zeros))
