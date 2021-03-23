@@ -1,15 +1,6 @@
 import sys
-from sympy import *
-import numpy
 import random
-import math
-from decimal import Decimal
-import decimal
-import traceback
-import cmath
-import matplotlib.pyplot as plt
-from sympy.abc import x, y
-from sympy.solvers import solve
+from math import gcd
 
 DIR=sys.argv[1]
 debug=sys.argv[2]
@@ -30,31 +21,25 @@ from storeQuestionData import *
 
 def generateDisplayAndZeros():
     #Goal: (a0*x+b0)*(a1*x+b1)*(x-z)
+    # This can be improved in the future with numpy.poly1d as it provides quotient and remainder with poly division.
     a0 = random.randint(2, 5)
     b0 = maybeMakeNegative(random.randint(2, 5))
     a1 = random.randint(2, 5)
     b1 = maybeMakeNegative(random.randint(2, 5))
     z = maybeMakeNegative(random.randint(2, 5))
-
     while (gcd(a0, b0)>1 or gcd(a1, b1)>1) or (a0 == a1 and b0 == b1):
         a0 = random.randint(2, 5)
         b0 = maybeMakeNegative(random.randint(2, 5))
         a1 = random.randint(2, 5)
         b1 = maybeMakeNegative(random.randint(2, 5))
         z = maybeMakeNegative(random.randint(2, 5))
-
     numCo1 = a0*a1
     numCo2 = -a0*a1*z + a0*b1 + a1*b0
     numCo3 = -a0*b1*z - a1*b0*z + b0*b1
     numCo4 = -b0*b1*z
     displayPolynomial = generatePolynomialDisplay([numCo1, numCo2, numCo3, numCo4])
-    a0f = float(a0)
-    a1f = float(a1)
-    b0f = float(b0)
-    b1f = float(b1)
-    #
-    z1 = float(-b0f/a0f)
-    z2 = float(-b1f/a1f)
+    z1 = round(float(-b0/a0), 2)
+    z2 = round(float(-b1/a1), 2)
     z3 = z
     #zeros = [float(-b0/a0), float(-b1/a1), z]
     zeros = descendingOrder(z1, z2, z3)
@@ -97,7 +82,6 @@ def generateDistractors(coefficients):
     distractor3 = descendingOrder(float(a0f/b0f), float(a1f/b1f), -z)
     # Distractor 4: Corresponds to moving factors from one rational to another.
     distractor4 = descendingOrder(b0, float(b1f/(a1f*a0f)), -z)
-
     distractors = [distractor1, distractor2, distractor3, distractor4]
     return distractors
 

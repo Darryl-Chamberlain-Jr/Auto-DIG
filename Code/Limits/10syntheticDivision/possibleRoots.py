@@ -1,15 +1,5 @@
 import sys
-from sympy import *
-import numpy
 import random
-import math
-from decimal import Decimal
-import decimal
-import traceback
-import cmath
-import matplotlib.pyplot as plt
-from sympy.abc import x, y
-from sympy.solvers import solve
 
 DIR=sys.argv[1]
 debug=sys.argv[2]
@@ -33,11 +23,11 @@ def generateFunctionAndImportantCoefficients():
     an = int(random.randint(2, 7))
     a0 = int(random.randint(2, 7))
     if degree == 4:
-        coefficients = [an, int(random.randint(2, 7)), int(random.randint(2, 7)), int(random.randint(2, 7)), a0]
+        coefficients = [an, random.randint(2, 7), random.randint(2, 7), random.randint(2, 7), a0]
     elif degree == 3:
-        coefficients = [an, int(random.randint(2, 7)), int(random.randint(2, 7)), a0]
+        coefficients = [an, random.randint(2, 7), random.randint(2, 7), a0]
     else:
-      coefficients = [an, int(random.randint(2, 7)), a0]
+      coefficients = [an, random.randint(2, 7), a0]
     function = generatePolynomialDisplay(coefficients)
     return [function, a0, an]
 

@@ -1,15 +1,5 @@
 import sys
-from sympy import *
-import numpy
 import random
-import math
-from decimal import Decimal
-import decimal
-import traceback
-import cmath
-import matplotlib.pyplot as plt
-from sympy.abc import x, y
-from sympy.solvers import solve
 
 DIR=sys.argv[1]
 debug=sys.argv[2]
@@ -30,6 +20,7 @@ from storeQuestionData import *
 
 def generateDisplayAndSolution():
     #Goal: (a0*x+b0)*(a1*x+b1)*(x-z)+r
+    # This can be improved in the future with numpy.poly1d as it provides quotient and remainder after poly division.
     a0 = random.randint(2, 5)
     b0 = maybeMakeNegative(random.randint(2, 5))
     a1 = random.randint(2, 5)

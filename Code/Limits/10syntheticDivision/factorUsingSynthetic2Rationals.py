@@ -1,15 +1,6 @@
 import sys
-from sympy import *
-import numpy
 import random
-import math
-from decimal import Decimal
-import decimal
-import traceback
-import cmath
-import matplotlib.pyplot as plt
-from sympy.abc import x, y
-from sympy.solvers import solve
+from math import gcd
 
 DIR=sys.argv[1]
 debug=sys.argv[2]
@@ -29,6 +20,7 @@ sys.path.insert(1, f"/{DIR}/PythonScripts/ScriptsForDatabases")
 from storeQuestionData import *
 
 def generateDisplayAndZeros():
+    # This can be improved in the future with numpy.poly1d as it provides quotient and remainder with poly division.
     #Goal: (a0*x+b0)*(a1*x+b1)*(x-za)(x-zb)
     a0 = random.randint(2, 5)
     b0 = maybeMakeNegative(random.randint(2, 5))
@@ -36,7 +28,6 @@ def generateDisplayAndZeros():
     b1 = maybeMakeNegative(random.randint(2, 5))
     za = maybeMakeNegative(random.randint(2, 5))
     zb = maybeMakeNegative(random.randint(2, 5))
-
     while (gcd(a0, b0)>1 or gcd(a1, b1)>1) or (a0 == a1 and b0 == b1) or (za == zb):
         a0 = random.randint(2, 5)
         b0 = maybeMakeNegative(random.randint(2, 5))
@@ -44,33 +35,23 @@ def generateDisplayAndZeros():
         b1 = maybeMakeNegative(random.randint(2, 5))
         za = maybeMakeNegative(random.randint(2, 5))
         zb = maybeMakeNegative(random.randint(2, 5))
-
     #intermediatePolynomial = (a0*a1)*x**3 + (-a0*a1*za + a0*b1 + a1*b0)*x**2+ (-a0*b1*za - a1*b0*za + b0*b1)*x + (-b0*b1*za)
     c3 = a0*a1
     c2 = -a0*a1*za + a0*b1 + a1*b0
     c1 = -a0*b1*za - a1*b0*za + b0*b1
     c0 = -b0*b1*za
     # intermediatePolynomial = interCo1*x**3 + interCo2*x**2 + interCo3*x + interCo4
-
     f4 = c3
     f3 = c2 - c3*zb
     f2 = c1 - c2*zb
     f1 = c0 - c1*zb
     f0 = -c0*zb
-
     finalPoly = generatePolynomialDisplay([f4, f3, f2, f1, f0])
-
-    a0f = float(a0)
-    a1f = float(a1)
-    b0f = float(b0)
-    b1f = float(b1)
-
-    z1 = float(-b0f/a0f)
-    z2 = float(-b1f/a1f)
+    z1 = round(float(-b0/a0), 3)
+    z2 = round(float(-b1/a1), 3)
     z3 = za
     z4 = zb
     #zeros = [float(-b0/a0), float(-b1/a1), za, zb]
-
     zeros = descendingOrder(z1, z2, z3, z4)
     coefficients = [a0, b0, a1, b1, za, zb]
 
@@ -127,10 +108,7 @@ def generateDistractors(coefficients):
 intervalRange = 3
 precision = 1
 
-info = generateDisplayAndZeros()
-displayPolynomial = info[0]
-zeros = info[1]
-coefficients = info[2]
+displayPolynomial, zeros, coefficients = generateDisplayAndZeros()
 solution = zeros
 distractors = generateDistractors(coefficients)
 
