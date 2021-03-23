@@ -1,15 +1,6 @@
 import sys
-from sympy import *
-import numpy
 import random
-import math
-from decimal import Decimal
-import decimal
-import traceback
-import cmath
-import matplotlib.pyplot as plt
-from sympy.abc import x, y
-from sympy.solvers import solve
+from math import sqrt
 
 DIR=sys.argv[1]
 debug=sys.argv[2]
@@ -77,7 +68,7 @@ else:
         option4 = ["\\infty", "You likely believed that since the denominator is equal to 0, the limit is infinity.", 0]
         option5 = ["\\text{None of the above}", "If you got a limit that does not match any of the above, please contact the coordinator.", 0]
     else:
-        option1 = ["%.3f" %limit, "", 1]
+        option1 = ["%.3f" %limit, "* This is the correct option.", 1]
         option2 = ["%.3f" %hwLimit, "You likely memorized how to solve the similar homework problem and used the same formula here.", 0]
         option3 = ["%.3f" %badLHospital, "You likely learned L'Hospital's Rule in a previous course, but misapplied it here.", 0]
         option4 = ["\\infty", "You likely believed that since the denominator is equal to 0, the limit is infinity.", 0]
