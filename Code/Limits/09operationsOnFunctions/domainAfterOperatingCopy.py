@@ -1,15 +1,6 @@
 import sys
-from sympy import *
-import numpy
 import random
-import math
-from decimal import Decimal
-import decimal
-import traceback
-import cmath
-import matplotlib.pyplot as plt
-from sympy.abc import x, y
-from sympy.solvers import solve
+from math import gcd
 
 DIR=sys.argv[1]
 debug=sys.argv[2]
@@ -79,7 +70,6 @@ def generateFunctionAndDomain(functionClass):
         while (not(gcd(a, b)==1)):
             a = random.randint(3, 6)
             b = maybeMakeNegative(a*random.randint(3, 6) + random.randint(1, 6))
-        term = a*x+b
         excludeFromDomain = float(-b)/float(a)
         if (b<0):
             function = "\\frac{%d}{%dx-%d}" %(numerator, a, -b)
@@ -90,7 +80,6 @@ def generateFunctionAndDomain(functionClass):
     else:
         a = float(maybeMakeNegative(random.randint(3, 6)))
         b = float(maybeMakeNegative(a*random.randint(3, 6) + random.randint(1, 6)))
-        term = a*x+b
         excludeFromDomain = float(-b)/float(a)
         if (a>0):
             inequalityDirection = "geq"
@@ -219,7 +208,7 @@ if (len(operatedFunctionInfo)==1):
 elif (len(operatedFunctionInfo)==2):
     distractor1 = randomRadicalDomain("leq")
     distractor2 = randomRadicalDomain("geq")
-    displaySolution = "\\text{ The domain is all Real numbers except } x = %s" %solution[1]
+    displaySolution = "\\text{ The domain is all Real numbers except } x = %s" %round(solution[1], 2)
 
     # Shuffles all answers that have a single interval to input
     preparingAnswerList = [[distractor1, 0], [distractor2, 0], [solution, 1]]
@@ -246,7 +235,7 @@ elif (len(operatedFunctionInfo)==3):
     if (operatedFunctionInfo[2] == "geq"):
         distractor1 = randomRationalDomain()
         distractor2 = randomRadicalDomain("leq")
-        displaySolution = "\\text{ The domain is all Real numbers greater than or equal to} x = %s." %solution[1]
+        displaySolution = "\\text{ The domain is all Real numbers greater than or equal to} x = %s." %round(solution[1], 2)
 
         # Shuffles all answers that have a single interval to input
         preparingAnswerList = [[distractor1, 0], [distractor2, 0], [solution, 1]]
@@ -271,7 +260,7 @@ elif (len(operatedFunctionInfo)==3):
     else:
         distractor1 = randomRationalDomain()
         distractor2 = randomRadicalDomain("geq")
-        displaySolution = "\\text{ The domain is all Real numbers less than or equal to} x = %s." %solution[1]
+        displaySolution = "\\text{ The domain is all Real numbers less than or equal to} x = %s." %round(solution[1], 2)
 
         # Shuffles all answers that have a single interval to input
         preparingAnswerList = [[distractor1, 0], [distractor2, 0], [solution, 1]]
@@ -306,7 +295,7 @@ else:
 
     # 4th option always has 2 intervals to input
     answerList.append(solution)
-    displaySolution = "\\text{ The domain is all Real numbers except } x = %s \\text{ and } x = %s" %(solution[2], solution[3])
+    displaySolution = "\\text{ The domain is all Real numbers except } x = %s \\text{ and } x = %s" %(round(solution[2], 2), round(solution[3], 2))
     answerLetter = "D"
     # Final answer is Domain of all real numbers
     distractor4 = domainOfFunctions(["RR"])
