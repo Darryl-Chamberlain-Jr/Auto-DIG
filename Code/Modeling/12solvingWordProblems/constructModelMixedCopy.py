@@ -1,16 +1,5 @@
 import sys
-from sympy import *
-import numpy
 import random
-import math
-from decimal import Decimal
-import decimal
-import traceback
-import cmath
-import matplotlib.pyplot as plt
-from sympy.abc import x, y
-from sympy.solvers import solve
-
 import subprocess
 
 DIR=sys.argv[1]

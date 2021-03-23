@@ -1,15 +1,5 @@
 import sys
-from sympy import *
-import numpy
 import random
-import math
-from decimal import Decimal
-import decimal
-import traceback
-import cmath
-import matplotlib.pyplot as plt
-from sympy.abc import x, y
-from sympy.solvers import solve
 
 DIR=sys.argv[1]
 debug=sys.argv[2]
@@ -75,10 +65,10 @@ else:
 displayStem = "Solve the modeling problem below, if possible."
 displayProblem = "In CHM2045L, Brittany created a %d liter %d percent solution of chemical $\\chi$ using two different solution percentages of chemical $\\chi$. When she went to write her lab report, she realized she forgot to write the amount of each solution she used! If she remembers she used %d percent and %d percent solutions, what was the amount she used of the %d percent solution?" %(totalVolume, totalConcentration, concentrationA, concentrationB, concQuestion)
 
-option1 = ["%.2f" %volumeQuestion, "*This is the correct option.", 1]
-option2 = ["%.2f" %otherVolume, "This is the concentration of %d percent solution." %otherConc, 0]
-option3 = ["%.2f" %treatedEqual, "This would be correct if Brittany used equal parts of each solution.", 0]
-option4 = ["%.2f" %randomValue, "This was a random value. If this was not a guess, contact the coordinator to talk about how you got this value.", 0]
+option1 = ["%.2f liters" %volumeQuestion, "*This is the correct option.", 1]
+option2 = ["%.2f liters" %otherVolume, "This is the concentration of %d percent solution." %otherConc, 0]
+option3 = ["%.2f liters" %treatedEqual, "This would be correct if Brittany used equal parts of each solution.", 0]
+option4 = ["%.2f liters" %randomValue, "This was a random value. If this was not a guess, contact the coordinator to talk about how you got this value.", 0]
 option5 = ["\\text{There is not enough information to solve the problem.}", "You may have chose this if you thought you needed to know how much of the second solution was used in the problem. Remember that the total minus the first solution would give you the second amount used.", 0]
 displaySolution = option1[0]
 
