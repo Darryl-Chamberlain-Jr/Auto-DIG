@@ -1,16 +1,7 @@
 import sys
-from sympy import *
-import numpy
 import random
-import math
-from decimal import Decimal
-import decimal
-import traceback
-import cmath
-import matplotlib.pyplot as plt
-from sympy.abc import x, y
+from sympy.abc import x
 from sympy.solvers import solve
-#import fractions
 
 DIR=sys.argv[1]
 debug=sys.argv[2]
@@ -41,38 +32,29 @@ def generateCoefficients(numberOfSolutions):
         c = maybeMakeNegative(random.randint(2, 9)) * mask
         return [a, b, c, d, e, f]
     else:
-        a = float(maybeMakeNegative(random.randint(2, 9)))
-        b = float(maybeMakeNegative(random.randint(2, 9)))
-        c = float(maybeMakeNegative(random.randint(2, 9)))
-        d = float(maybeMakeNegative(random.randint(2, 9)))
-        e = float(maybeMakeNegative(random.randint(2, 9)))
-        f = float(maybeMakeNegative(random.randint(2, 9)))
+        a = maybeMakeNegative(random.randint(2, 9))
+        b = maybeMakeNegative(random.randint(2, 9))
+        c = maybeMakeNegative(random.randint(2, 9))
+        d = maybeMakeNegative(random.randint(2, 9))
+        e = maybeMakeNegative(random.randint(2, 9))
+        f = maybeMakeNegative(random.randint(2, 9))
         makeSolutionExist = float((-f*a +e + d*c*f)/(-d*f*b) + c/b)
         while (makeSolutionExist==0):
-            a = float(maybeMakeNegative(random.randint(2, 9)))
-            b = float(maybeMakeNegative(random.randint(2, 9)))
-            c = float(maybeMakeNegative(random.randint(2, 9)))
-            d = float(maybeMakeNegative(random.randint(2, 9)))
-            e = float(maybeMakeNegative(random.randint(2, 9)))
-            f = float(maybeMakeNegative(random.randint(2, 9)))
+            a = maybeMakeNegative(random.randint(2, 9))
+            b = maybeMakeNegative(random.randint(2, 9))
+            c = maybeMakeNegative(random.randint(2, 9))
+            d = maybeMakeNegative(random.randint(2, 9))
+            e = maybeMakeNegative(random.randint(2, 9))
+            f = maybeMakeNegative(random.randint(2, 9))
             makeSolutionExist = float((-f*a + e + d*c*f)/(-d*f*b) + c/b)
-    return [Integer(a), Integer(b), Integer(c), Integer(d), Integer(e), Integer(f)]
+    return [a, b, c, d, e, f]
 
 def generateSolution(coefficients, numberOfSolutions):
-    a = float(coefficients[0])
-    b = float(coefficients[1])
-    c = float(coefficients[2])
-    d = float(coefficients[3])
-    e = float(coefficients[4])
-    f = float(coefficients[5])
+    a, b, c, d, e, f = coefficients
     if (numberOfSolutions == 0):
         return float(-c/b)
     else:
         return float((-f*a +e +d*c*f)/(-d*f*b))
-
-def generateSolutionInterval(solution, intervalRange):
-    interval = createInterval(solution, intervalRange)
-    return interval
 
 # Distractors
 # No solution when there is a solution / Solution when there is no solution
@@ -123,9 +105,9 @@ if (numberOfSolutions==0):
     solutionLength = 0
     distractor1 = solution
     distractor1Length = 1
-    distractor1Interval = [intervalToString(generateSolutionInterval(float(solution), intervalRange)), "$x = %.3f$, which corresponds to not checking if this value leads to dividing by 0 in the original equation and thus is not a valid solution." %solution, 0]
+    distractor1Interval = [intervalToString(createInterval(float(solution), intervalRange)), "$x = %.3f$, which corresponds to not checking if this value leads to dividing by 0 in the original equation and thus is not a valid solution." %solution, 0]
 else:
-    solutionInterval = [intervalToString(generateSolutionInterval(solution, intervalRange)), "* $x = %.3f$, which is the correct option." %solution, 1]
+    solutionInterval = [intervalToString(createInterval(solution, intervalRange)), "* $x = %.3f$, which is the correct option." %solution, 1]
     solutionLength = 1
     distractor1 = '\\text{All solutions are invalid or lead to complex values in the equation.}'
     distractor1Length = 0

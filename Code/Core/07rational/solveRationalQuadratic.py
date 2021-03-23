@@ -1,14 +1,7 @@
 import sys
-from sympy import *
-import numpy
 import random
-import math
-from decimal import Decimal
-import decimal
-import traceback
-import cmath
-import matplotlib.pyplot as plt
-from sympy.abc import x, y
+# sympy.solvers needed to solve rational equations. numpy.poly1d does not evaluate roots of rational functions.
+from sympy.abc import x
 from sympy.solvers import solve
 
 DIR=sys.argv[1]
