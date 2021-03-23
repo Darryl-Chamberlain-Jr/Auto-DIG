@@ -1,15 +1,5 @@
 import sys
-from sympy import *
-import numpy
 import random
-import math
-from decimal import Decimal
-import decimal
-import traceback
-import cmath
-import matplotlib.pyplot as plt
-from sympy.abc import x, y
-from sympy.solvers import solve
 
 DIR=sys.argv[1]
 debug=sys.argv[2]
@@ -28,7 +18,6 @@ from intervalMaskingMethod import *
 sys.path.insert(1, f"/{DIR}/PythonScripts/ScriptsForDatabases")
 from storeQuestionData import *
 
-# Mixture
 lowPrice = round(random.uniform(2, 5), 2)
 highPrice = round(random.uniform(lowPrice+1, lowPrice+3), 2)
 midPrice = round((lowPrice+highPrice)/2, 2)
