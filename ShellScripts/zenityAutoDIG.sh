@@ -79,15 +79,27 @@ do
     fi
     # Start time and estimated_run_time are used to estimate how long the program ran for. Not necessary for standalone app.
     StartTime=$( date +'%s' )
-    # Estimated run time calculated as 5 seconds per question, with 1 error per 10 questions run.
-    estimated_run_time=$( echo "scale=2;(5.5*$number_of_questions*$number_of_versions)/60" | bc )
+    # Estimated run time calculated as 1.5 second per question, with 1 error per 10 questions run.
+    estimated_run_time=$( echo "scale=2;(1.65*$number_of_questions*$number_of_versions)/60" | bc )
+    seconds_decimal_estimate=$(( ${estimated_run_time:2:3} ))
+    if [ ${#estimated_run_time} -eq 3 ]; then
+        estimated_run_time=$( echo "scale=2;(1.65*$number_of_questions*$number_of_versions)" | bc )
+        minutes_or_seconds="seconds"
+    elif [ $seconds_decimal_estimate -eq 0 ]; then
+        minutes_or_seconds="minute"
+    else
+        minutes_or_seconds="minutes"
+    fi
     # BEGINS zenity pipe to create assessments.
     (
     # Clears old keys and pdfs
     rm -rf /${DIR}/Keys/*
     rm -rf /${DIR}/BuildExams/*
+    rm -rf /${DIR}/ErrorMessages/*
+    touch "/home/${USER}/git-repos/Auto-DIG/ErrorMessages/full_error_messages.txt"
+    touch "/home/${USER}/git-repos/Auto-DIG/ErrorMessages/question_generation_order_with_errors.txt"
     # Alerts user to the estimated run time. Waits 3 seconds before continuing.
-    echo "#Estimated run time for ${number_of_questions} questions and ${number_of_versions} version: ${estimated_run_time} minutes"; sleep 3
+    echo "#Estimated run time for ${number_of_questions} questions and ${number_of_versions} version: ${estimated_run_time} ${minutes_or_seconds}"; sleep 3
     # ${question_step} defines the step used in the progress bar display. Increases step after each question data is saved in the database.
     question_step=$( echo "scale=2;100/ ($number_of_questions*$number_of_versions)" | bc )
     # ${counter} to track progress bar. Starts at 0 and increases by question_step.
@@ -138,6 +150,7 @@ do
                 # Both echos are to show the user the current progress and announce the specific question/version that is being generated.
                 echo "$counter"
                 echo "#Running '${question}' for Version ${version}."
+                echo "${question} V${version}" >> "/home/${USER}/git-repos/Auto-DIG/ErrorMessages/question_generation_order_with_errors.txt"
                 # Defines name of python script to be called later. Saves all metadata for question to the new database ${full_db_name}.
                 run_save_metadata="/$DIR/PythonScripts/ScriptsForDatabases/saveMetadataToNewDatabase.py"
                 # Unclear why this is needed. Will need to investigate. saveMetadataToNewDatabase.py uses absolute calls.
@@ -151,6 +164,7 @@ do
                 do
                     if [ $error_counter -ne 0 ]; then
                         echo "#An error occured while running ${question} for version ${version}. Don't worry - we will continue to try again. Attempt: ${error_counter}"
+                        echo "Error #${error_counter}" >> "/home/${USER}/git-repos/Auto-DIG/ErrorMessages/question_generation_order_with_errors.txt"
                     fi
                     # This python script is used to dynamically define the corresponding folder and subfolder the code is housed in based on a question's metadata.
                     run_return_key_value_from_db="/$DIR/PythonScripts/ScriptsForDatabases/return_key_value_from_db.py"
@@ -159,7 +173,7 @@ do
                     # Easier-to-read script name.
                     question_py="/$DIR/Code/$code_folder/$code_subfolder/$question.py"
                     # Actual python script to generate and save question information to the corresponding database.
-                    python3 $question_py $DIR "save" $full_db_name $question_list_name $version $question $OSTYPE
+                    python3 $question_py $DIR "save" $full_db_name $question_list_name $version $question $OSTYPE 2>> "/home/${USER}/git-repos/Auto-DIG/ErrorMessages/full_error_messages.txt"
                     return_error=$?
                     error_counter=$(( error_counter+1 ))
                 done # Question data has now been saved with the metadata.
@@ -214,10 +228,8 @@ do
         full_db_name="${db_name}-Ver${version}"
         mv /$DIR/Databases/${full_db_name}.db /$DIR/CompleteExam/"$exam_display_name"/Databases
     done
-
     # Indescriminately copies all figures currently in the figure folder. This is overkill and could be refined in the future.
     cp -r /$DIR/Figures/. /$DIR/CompleteExam/"$exam_display_name"/Figures
-
     # Final declaration to user that exam has been completed.
     xdg-open /${DIR}/CompleteExam/"$exam_display_name"
     echo "100"
@@ -229,7 +241,7 @@ do
       --text="Initializing parameters..." \
       --percentage=0 \
       --width=350 \
-    #  --auto-close
+      #--auto-close
     # DO NOT USE AUTO-CLOSE! There is currently at least one echo somewhere with a value over 100, which is signaling zenity to close the process early while the process wants to continue, causing a broken pipe.
     checkForEscape $?
     # Checks the time that the program ran for. In the future, it would be smarter to move both the begin/end time into the pipe and save it somewhere so it can be called after the pipe is complete. Currently the end time doesn't happen until AFTER the user clicks OK and so isn't perfectly accurate.
@@ -239,16 +251,16 @@ do
     TotalRunTimeSeconds=$(( EndTime-StartTime ))
     RunTimeMinutes=$(( (EndTime-StartTime) / 60 ))
     RunTimeSecondsRemainder=$(( TotalRunTimeSeconds-(RunTimeMinutes*60) ))
-    estimated_run_time_seconds_float=$( echo "scale=0;(60*$estimated_run_time)" | bc )
+    estimated_run_time_seconds_float=$( echo "scale=0;(1.65*$number_of_questions*$number_of_versions)" | bc )
     estimated_run_time_seconds=${estimated_run_time_seconds_float%.*}
     estimated_run_time_minutes=$(( (estimated_run_time_seconds) / 60 ))
     estimated_run_time_seconds_remainder=$(( estimated_run_time_seconds - (estimated_run_time_minutes*60) ))
     off_by_seconds=$(( estimated_run_time_seconds-TotalRunTimeSeconds ))
     if [[  $off_by_seconds -lt 0 ]]; then
         off_by_seconds=$(( -1*off_by_seconds ))
-        over_or_under="over"
-    else
         over_or_under="under"
+    else
+        over_or_under="over"
     fi
     off_by_seconds_minutes=$(( (off_by_seconds) / 60 ))
     off_by_seconds_remainder=$(( off_by_seconds - (off_by_seconds_minutes*60) ))

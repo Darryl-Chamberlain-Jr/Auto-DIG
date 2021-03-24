@@ -1,5 +1,6 @@
 import sys
 import random
+from math import gcd
 
 DIR=sys.argv[1]
 debug=sys.argv[2]

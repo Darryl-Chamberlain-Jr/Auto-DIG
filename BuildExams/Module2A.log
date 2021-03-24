@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.8.4)  16 MAR 2021 10:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.8.4)  23 MAR 2021 22:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -581,33 +581,34 @@ Package graphics Info: Driver file: pdftex.def on input line 105.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 28.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 32.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 28.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 32.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+lasy on input line 28
+LaTeX Font Info:    Trying to load font information for U+lasy on input line 32
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-Overfull \hbox (6.79684pt too wide) in paragraph at lines 28--41
-| [] 
- []
-
-<../Figures/linearGraphToStandardA.png, id=4, 441.5697pt x 343.2825pt>
+<../Figures/linearGraphToStandardA.png, id=4, 450.9648pt x 346.896pt>
 File: ../Figures/linearGraphToStandardA.png Graphic file (type png)
 <use ../Figures/linearGraphToStandardA.png>
 Package pdftex.def Info: ../Figures/linearGraphToStandardA.png  used on input l
-ine 41.
-(pdftex.def)             Requested size: 234.8775pt x 182.59885pt.
+ine 32.
+(pdftex.def)             Requested size: 234.8775pt x 180.67807pt.
+
+Overfull \hbox (6.79684pt too wide) in paragraph at lines 32--41
+| [] 
+ []
+
 
 Overfull \hbox (6.79684pt too wide) in paragraph at lines 41--50
 | [] 
@@ -627,55 +628,48 @@ Overfull \hbox (6.79684pt too wide) in paragraph at lines 50--59
  []
 
 
-Overfull \hbox (6.79684pt too wide) in paragraph at lines 59--68
+Overfull \hbox (6.79684pt too wide) in paragraph at lines 59--72
+| [] 
+ []
+
+<../Figures/linearGraphToStandardCopyA.png, id=27, 483.4863pt x 343.2825pt>
+File: ../Figures/linearGraphToStandardCopyA.png Graphic file (type png)
+<use ../Figures/linearGraphToStandardCopyA.png>
+Package pdftex.def Info: ../Figures/linearGraphToStandardCopyA.png  used on inp
+ut line 72.
+(pdftex.def)             Requested size: 234.8775pt x 166.76418pt.
+[2 <../Figures/linearGraphToStandardCopyA.png>]
+Overfull \hbox (6.79684pt too wide) in paragraph at lines 72--81
 | [] 
  []
 
 
-Overfull \hbox (6.79684pt too wide) in paragraph at lines 68--77
-| [] 
- []
-
-[2]
-Overfull \hbox (6.79684pt too wide) in paragraph at lines 77--86
+Overfull \hbox (6.79684pt too wide) in paragraph at lines 81--90
 | [] 
  []
 
 
-Overfull \hbox (0.22687pt too wide) detected at line 86
-[]\OT1/cmr/m/n/14.4 5\OML/cmm/m/it/14.4 x \OT1/cmr/m/n/14.4 + 6\OML/cmm/m/it/14
-.4 y \OT1/cmr/m/n/14.4 = 15[](\OMS/cmsy/m/n/14.4 ^^@\OT1/cmr/m/n/14.4 2\OML/cmm
-/m/it/14.4 ; \OMS/cmsy/m/n/14.4 ^^@\OT1/cmr/m/n/14.4 6)\OML/cmm/m/it/14.4 :
- []
-
-
-Overfull \hbox (6.79684pt too wide) in paragraph at lines 86--95
-| [] 
- []
-
-
-Overfull \hbox (6.79684pt too wide) in paragraph at lines 95--104
+Overfull \hbox (6.79684pt too wide) in paragraph at lines 90--99
 | [] 
  []
 
 [3]
-Overfull \hbox (6.79684pt too wide) in paragraph at lines 104--117
+Overfull \hbox (6.79684pt too wide) in paragraph at lines 99--108
 | [] 
  []
 
-<../Figures/linearGraphToStandardCopyA.png, id=71, 516.0078pt x 353.4003pt>
-File: ../Figures/linearGraphToStandardCopyA.png Graphic file (type png)
-<use ../Figures/linearGraphToStandardCopyA.png>
-Package pdftex.def Info: ../Figures/linearGraphToStandardCopyA.png  used on inp
-ut line 117.
-(pdftex.def)             Requested size: 234.8775pt x 160.86208pt.
+
+Overfull \hbox (6.79684pt too wide) in paragraph at lines 108--117
+| [] 
+ []
+
 
 Overfull \hbox (6.79684pt too wide) in paragraph at lines 117--118
 | [] 
  []
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 120.
-[4 <../Figures/linearGraphToStandardCopyA.png>]
+[4]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 120.
  (./Module2A.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 120.
@@ -694,15 +688,15 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 120.
 Here is how much of TeX's memory you used:
  9127 strings out of 483183
  135279 string characters out of 5966293
- 415636 words of memory out of 5000000
+ 416621 words of memory out of 5000000
  23903 multiletter control sequences out of 15000+600000
  535568 words of font info for 39 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 34i,12n,45p,991b,448s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 34i,12n,45p,991b,539s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share
 /texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on Module2A.pdf (4 pages, 78688 bytes).
+Output written on Module2A.pdf (4 pages, 75567 bytes).
 PDF statistics:
  116 PDF objects out of 1000 (max. 8388607)
  101 compressed objects within 2 object streams

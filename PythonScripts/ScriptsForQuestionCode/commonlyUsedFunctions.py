@@ -85,8 +85,8 @@ def generateTerms(coefficients):
     i=i+1
     while i < len(coefficients):
         if coefficients[i] == 0:
-            print("Skipping a zero term.")
-        elif coefficients[i] < 0:
+            pass
+        if coefficients[i] < 0:
             if len(coefficients)-i-1 == 1:
                 if coefficients[i] == -1:
                     terms.append("-x")

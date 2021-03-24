@@ -1,0 +1,48 @@
+Traceback (most recent call last):
+  File "/home/dchamberlain31/git-repos/Auto-DIG/Code/Core/02linear/linearParOrPerCopy.py", line 71, in <module>
+    intervalOptions = createIntervalOptions(solutionList, 4, 1)
+  File "/home/dchamberlain31/git-repos/Auto-DIG/PythonScripts/ScriptsForQuestionCode/intervalMaskingMethod.py", line 129, in createIntervalOptions
+    intervalMatrix[i][j] = cleanInterval(intervalMatrix[i][j])
+  File "/home/dchamberlain31/git-repos/Auto-DIG/PythonScripts/ScriptsForQuestionCode/intervalMaskingMethod.py", line 30, in cleanInterval
+    return [format_number(str(float(str(interval[0])))), format_number(str(float(str(interval[1]))))]
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/home/dchamberlain31/git-repos/Auto-DIG/Code/Core/02linear/solveLinearRationalCopy.py", line 86, in <module>
+    intervalOptions = createIntervalOptions(solutionList, 3, 1)
+  File "/home/dchamberlain31/git-repos/Auto-DIG/PythonScripts/ScriptsForQuestionCode/intervalMaskingMethod.py", line 113, in createIntervalOptions
+    intervalList[i] = cleanInterval(intervalList[i])
+  File "/home/dchamberlain31/git-repos/Auto-DIG/PythonScripts/ScriptsForQuestionCode/intervalMaskingMethod.py", line 30, in cleanInterval
+    return [format_number(str(float(str(interval[0])))), format_number(str(float(str(interval[1]))))]
+TypeError: 'int' object is not subscriptable
+Traceback (most recent call last):
+  File "/home/dchamberlain31/git-repos/Auto-DIG/Code/Core/02linear/solveLinearRational.py", line 86, in <module>
+    intervalOptions = createIntervalOptions(solutionList, 3, 1)
+  File "/home/dchamberlain31/git-repos/Auto-DIG/PythonScripts/ScriptsForQuestionCode/intervalMaskingMethod.py", line 113, in createIntervalOptions
+    intervalList[i] = cleanInterval(intervalList[i])
+  File "/home/dchamberlain31/git-repos/Auto-DIG/PythonScripts/ScriptsForQuestionCode/intervalMaskingMethod.py", line 30, in cleanInterval
+    return [format_number(str(float(str(interval[0])))), format_number(str(float(str(interval[1]))))]
+TypeError: 'int' object is not subscriptable
+Traceback (most recent call last):
+  File "/home/dchamberlain31/git-repos/Auto-DIG/Code/Core/02linear/solveLinearRational.py", line 86, in <module>
+    intervalOptions = createIntervalOptions(solutionList, 3, 1)
+  File "/home/dchamberlain31/git-repos/Auto-DIG/PythonScripts/ScriptsForQuestionCode/intervalMaskingMethod.py", line 113, in createIntervalOptions
+    intervalList[i] = cleanInterval(intervalList[i])
+  File "/home/dchamberlain31/git-repos/Auto-DIG/PythonScripts/ScriptsForQuestionCode/intervalMaskingMethod.py", line 30, in cleanInterval
+    return [format_number(str(float(str(interval[0])))), format_number(str(float(str(interval[1]))))]
+TypeError: 'int' object is not subscriptable
+Traceback (most recent call last):
+  File "/home/dchamberlain31/git-repos/Auto-DIG/Code/Core/02linear/solveLinearRational.py", line 86, in <module>
+    intervalOptions = createIntervalOptions(solutionList, 3, 1)
+  File "/home/dchamberlain31/git-repos/Auto-DIG/PythonScripts/ScriptsForQuestionCode/intervalMaskingMethod.py", line 113, in createIntervalOptions
+    intervalList[i] = cleanInterval(intervalList[i])
+  File "/home/dchamberlain31/git-repos/Auto-DIG/PythonScripts/ScriptsForQuestionCode/intervalMaskingMethod.py", line 30, in cleanInterval
+    return [format_number(str(float(str(interval[0])))), format_number(str(float(str(interval[1]))))]
+TypeError: 'int' object is not subscriptable
+Traceback (most recent call last):
+  File "/home/dchamberlain31/git-repos/Auto-DIG/Code/Core/02linear/solveLinearRationalCopy.py", line 86, in <module>
+    intervalOptions = createIntervalOptions(solutionList, 3, 1)
+  File "/home/dchamberlain31/git-repos/Auto-DIG/PythonScripts/ScriptsForQuestionCode/intervalMaskingMethod.py", line 113, in createIntervalOptions
+    intervalList[i] = cleanInterval(intervalList[i])
+  File "/home/dchamberlain31/git-repos/Auto-DIG/PythonScripts/ScriptsForQuestionCode/intervalMaskingMethod.py", line 30, in cleanInterval
+    return [format_number(str(float(str(interval[0])))), format_number(str(float(str(interval[1]))))]
+TypeError: 'int' object is not subscriptable
