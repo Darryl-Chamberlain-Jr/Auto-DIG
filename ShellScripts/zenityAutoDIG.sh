@@ -96,6 +96,7 @@ do
     rm -rf /${DIR}/Keys/*
     rm -rf /${DIR}/BuildExams/*
     rm -rf /${DIR}/ErrorMessages/*
+    # Create debug files
     touch "/home/${USER}/git-repos/Auto-DIG/ErrorMessages/full_error_messages.txt"
     touch "/home/${USER}/git-repos/Auto-DIG/ErrorMessages/question_generation_order_with_errors.txt"
     # Alerts user to the estimated run time. Waits 3 seconds before continuing.
@@ -123,6 +124,9 @@ do
         fi
         # ${file_name} of the single pdf
         file_name=${list_of_file_names[index]}
+        # Create master pdf and key files
+        python3 /$DIR/PythonScripts/ScriptsForPDFs/createFiles.py "Create Exam File" $file_name "$exam_display_name" "$footnote_left" "$footnote_right" "ALL" $DIR
+        python3 /$DIR/PythonScripts/ScriptsForPDFs/createFiles.py "Create Key File" $file_name "$exam_display_name" "$footnote_left" "$footnote_right" "ALL" $DIR
         # ${question_list_${index}} is defined in previous .sh files based on what type of assessment the user chooses. Defined dynamically using ${module${number}questionList} that are defined statically in functionsForZenityScript.sh.
         question_list_name="question_list_${index}"
         # Defines question_list elements dynamically based on ${question_list_${index}}.
@@ -179,8 +183,10 @@ do
                 done # Question data has now been saved with the metadata.
 
                 # Python script to import question data saved in the database into a latex file.
-                python3 /$DIR/PythonScripts/ScriptsForPDFs/printQuestions.py "Print questions to exam" $DIR $file_name $full_db_name $question_list_name $question $version $OSTYPE
-                python3 /$DIR/PythonScripts/ScriptsForPDFs/printQuestions.py "Print questions to key" $DIR $file_name $full_db_name $question_list_name $question $version $OSTYPE
+                python3 /$DIR/PythonScripts/ScriptsForPDFs/printQuestions.py "Print questions to exam" $DIR $file_name $full_db_name $question_list_name $question $version $OSTYPE "single"
+                python3 /$DIR/PythonScripts/ScriptsForPDFs/printQuestions.py "Print questions to key" $DIR $file_name $full_db_name $question_list_name $question $version $OSTYPE "single"
+                python3 /$DIR/PythonScripts/ScriptsForPDFs/printQuestions.py "Print questions to exam" $DIR $file_name $full_db_name $question_list_name $question $version $OSTYPE "combined"
+                python3 /$DIR/PythonScripts/ScriptsForPDFs/printQuestions.py "Print questions to key" $DIR $file_name $full_db_name $question_list_name $question $version $OSTYPE "combined"
                 # Increments the ${counter} by ${question_step} to display progress to user.
                 counter=$( echo "scale=2;$counter+$question_step" | bc )
             done
@@ -213,6 +219,20 @@ do
             cp key${file_name}${version}.pdf /$DIR/CompleteExam/"$exam_display_name"/Keys
             cp key${file_name}${version}.tex /$DIR/CompleteExam/"$exam_display_name"/TeXs
         done
+        # DO THINGS FOR ALL VERSION
+        # Cap tex files
+        python3 /$DIR/PythonScripts/ScriptsForPDFs/createFiles.py "Finish Exam File" $file_name "$exam_display_name" "$footnote_left" "$footnote_right" "ALL" $DIR
+        python3 /$DIR/PythonScripts/ScriptsForPDFs/createFiles.py "Finish Key File" $file_name "$exam_display_name" "$footnote_left" "$footnote_right" "ALL" $DIR
+        # Run ALL tex file for main pdf. cd to make all temp files stay in BuildExams folder
+        cd /$DIR/BuildExams/
+        pdflatex -synctex=1 -interaction=nonstopmode ${file_name}ALL.tex
+        cp ${file_name}ALL.pdf /$DIR/CompleteExam/"$exam_display_name"/PDFs
+        cp ${file_name}ALL.tex /$DIR/CompleteExam/"$exam_display_name"/TeXs
+        # Run ALL tex file for key. cd to make all temp files stay in Keys folder
+        cd /$DIR/Keys/
+        pdflatex -synctex=1 -interaction=nonstopmode key${file_name}ALL.tex
+        cp key${file_name}ALL.pdf /$DIR/CompleteExam/"$exam_display_name"/Keys
+        cp key${file_name}ALL.tex /$DIR/CompleteExam/"$exam_display_name"/TeXs
     done
     # Creates master key which includes ALL answers for ALL versions. Order of question structures was kept static earlier to ensure question structures for each version correspond by number.
     python3 /$DIR/PythonScripts/ScriptsForCSVs/create_grading_CSVs.py $OSTYPE $DIR $db_name ${#version_list[@]} "${version_list[@]}" ${#code_name_array[@]} "${code_name_array[@]}" "${question_list_name_array[@]}"

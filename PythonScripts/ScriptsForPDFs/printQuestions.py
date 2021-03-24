@@ -4,7 +4,7 @@ import shelve
 
 def print_question_to_exam(database_info, version, file_name, DIR):
     display_stem_type, display_stem, display_problem_type, display_problem, display_options_type, choices, choice_comments, solution, answer_letter, general_comment = database_info
-    examFile = open('/' + str(DIR) + '/BuildExams/' + str(file_name) + str(version)+ '.tex', 'a')
+    examFile = open('/' + str(DIR) + '/BuildExams/' + str(file_name) + '.tex', 'a')
     examFile.write(r"\litem{")
     examFile.write('\n')
     # display_stem_type: String, Math Mode, or Graph
@@ -87,7 +87,7 @@ def print_question_to_exam(database_info, version, file_name, DIR):
     examFile.close()
 def print_question_to_key(database_info, version, code_name, file_name, DIR):
     display_stem_type, display_stem, display_problem_type, display_problem, display_options_type, choices, choice_comments, solution, answer_letter, general_comment = database_info
-    keyFile = open('../Keys/key' + str(file_name) + str(version) + '.tex', 'a')
+    keyFile = open('../Keys/key' + str(file_name) + '.tex', 'a')
     keyFile.write(r"\litem{")
     keyFile.write('\n')
     # display_stem_type: String, Math Mode, or Graph
@@ -288,11 +288,17 @@ question_list = sys.argv[5]
 code_name = sys.argv[6]
 version = sys.argv[7]
 OS_type = sys.argv[8]
+single_or_combined = sys.argv[9]
 
 if "linux-gnu" == OS_type:
     ql=shelve.open(f"/{DIR}/Databases/{database_name}.db")
 else:
     ql=shelve.open(f"/{DIR}/Databases/{database_name}")
+
+if single_or_combined == "single":
+    full_file_name = f"{file_name}{version}"
+else:
+    full_file_name = f"{file_name}ALL"
 
 try:
     master_list = ql[f'{question_list}']
@@ -314,11 +320,11 @@ try:
             database_info = [display_stem_type, display_stem, display_problem_type, display_problem, display_options_type, choices, choice_comments, solution, answer_letter, general_comment]
             ql.close()
             if to_do == "Print questions to exam":
-                print_question_to_exam(database_info, version, file_name, DIR)
+                print_question_to_exam(database_info, version, full_file_name, DIR)
             elif to_do == "Print questions to key":
-                print_question_to_key(database_info, version, code_name, file_name, DIR)
+                print_question_to_key(database_info, version, code_name, full_file_name, DIR)
             elif to_do == "Print questions to feedback":
-                print_question_to_feedback(database_info, student_answer_letter, version, code_name, file_name, DIR)
+                print_question_to_feedback(database_info, student_answer_letter, version, code_name, full_file_name, DIR)
             else:
                 print("Error occured when trying print questions to tex files.")
                 exit(1)
@@ -327,4 +333,4 @@ except:
     print(f"{code_name} has not been loaded into database {database_name}.db.")
     exit(1)
 finally:
-    print(f"The question list {question_list} has been printed into {file_name}{version}.tex.")
+    print(f"The question list {question_list} has been printed into {full_file_name}.tex.")

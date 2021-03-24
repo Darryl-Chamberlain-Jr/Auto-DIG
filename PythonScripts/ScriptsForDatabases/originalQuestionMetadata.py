@@ -1087,8 +1087,66 @@ identifyVAs = {
     "Date": "August 2020"
 }
 
+MA_8_F_1_1 = {
+    "Code Name": "MA_8_F_1_1",
+    "Folder": "CRIF",
+    "Subfolder": "Functions",
+    "Topic": "Relations",
+    "Topic Number": "F",
+    "Objective Number": "F.01.01",
+    "Short Description": "Determine whether relation is function.",
+    "Long Description": "Given a set of ordered pairs, a table, a graph, or mapping diagram, determine whether the relationship is a function. Identify the domain and range of the relation.",
+    "Notes": "Currently only presents as ordered pairs or table.",
+    "Author": "Darryl Chamberlain Jr.",
+    "Date": "March 2021"
+}
+
+MA_8_F_1_2_equation = {
+    "Code Name": "MA_8_F_1_2_equation",
+    "Folder": "CRIF",
+    "Subfolder": "Functions",
+    "Topic": "Linear Functions",
+    "Topic Number": "F",
+    "Objective Number": "F.01.02",
+    "Short Description": "Determine whether equation is linear function.",
+    "Long Description": "Given a function defined by an equation, determine whether the equation represents a linear function.",
+    "Notes": "Restricted to parents: polynomial up to degree 3, square root, cube root, absolute value, exponential base 2, exponential base 1/2.",
+    "Author": "Darryl Chamberlain Jr.",
+    "Date": "March 2021"
+}
+
+MA_8_F_1_2_graph = {
+    "Code Name": "MA_8_F_1_2_graph",
+    "Folder": "CRIF",
+    "Subfolder": "Functions",
+    "Topic": "Linear Functions",
+    "Topic Number": "F",
+    "Objective Number": "F.01.02",
+    "Short Description": "Determine whether graph is linear function.",
+    "Long Description": "Given a function defined by an graph, determine whether the graph represents a linear function.",
+    "Notes": "Restricted to parents: polynomial up to degree 3, square root, cube root, absolute value, exponential base 2, exponential base 1/2.",
+    "Author": "Darryl Chamberlain Jr.",
+    "Date": "March 2021"
+}
+
+MA_8_F_1_2_table = {
+    "Code Name": "MA_8_F_1_2_table",
+    "Folder": "CRIF",
+    "Subfolder": "Functions",
+    "Topic": "Linear Functions",
+    "Topic Number": "F",
+    "Objective Number": "F.01.02",
+    "Short Description": "Determine whether table is linear function.",
+    "Long Description": "Given an input-output table, determine whether it could represent a linear function.",
+    "Notes": "Parent restrictions expanded compared to other F.1.2 questions.",
+    "Author": "Darryl Chamberlain Jr.",
+    "Date": "March 2021"
+}
+
 # LISTS OF QUESTIONS
 masterQuestionList = [
+    # CRIF questions
+    MA_8_F_1_1, MA_8_F_1_2_equation, MA_8_F_1_2_graph, MA_8_F_1_2_table, #MA.8.F
     # Core questions
     divideComplex, multiplyComplex, orderOfOperations, subgroupComplex, subgroupReal, # M1
     linearGraphToStandard, linearParOrPer, linearTwoPoints, solveIntegerLinear, solveLinearRational, # M2

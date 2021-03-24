@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/home/dchamberlain31/git-repos/Auto-DIG/Code/CRIF/Functions/MA_8_F_1_1.py", line 165, in <module>
+    displayProblem = [header_row, relation[0], relation[1], relation[2], relation[3], relation[4], relation[5], relation[6]]
+IndexError: list index out of range
