@@ -1,0 +1,60 @@
+\documentclass[14pt]{extbook}
+\usepackage{multicol, enumerate, enumitem, hyperref, color, soul, setspace, parskip, fancyhdr} %General Packages
+\usepackage{amssymb, amsthm, amsmath, latexsym, units, mathtools} %Math Packages
+\everymath{\displaystyle} %All math in Display Style
+% Packages with additional options
+\usepackage[headsep=0.5cm,headheight=12pt, left=1 in,right= 1 in,top= 1 in,bottom= 1 in]{geometry}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{dashrule}  % Package to use the command below to create lines between items
+\newcommand{\litem}[1]{\item#1\hspace*{-1cm}\rule{\textwidth}{0.4pt}}
+\pagestyle{fancy}
+\lhead{CRIF Functions 8}
+\chead{}
+\rhead{Version X}
+\lfoot{1542-4749}
+\cfoot{}
+\rfoot{test}
+\begin{document}
+
+\begin{enumerate}
+\litem{
+Is the graph below a linear function?
+\begin{center}
+    \includegraphics[width=0.5\textwidth]{../Figures/MA_8_F_1_2_graphX.png}
+\end{center}
+\begin{enumerate}[label=\Alph*.]
+\item Yes, the graph is linear
+\item No, the graph is not linear.
+
+\end{enumerate} }
+\litem{
+Is the following relation a function?\[ (-4, -48), (-3, -27), (-2, -12), (-1, -3), (0, 0), (1, -3), (2, -12) \]\begin{enumerate}[label=\Alph*.]
+\item Yes
+\item No
+
+\end{enumerate} }
+\litem{
+Is the equation below a linear function?\[ f(x) = 5(x -5)+2 \]\begin{enumerate}[label=\Alph*.]
+\item Yes, the equation is linear
+\item No, the equation is not linear.
+
+\end{enumerate} }
+\litem{
+Is the following relation a linear function?
+
+\begin{tabular}{c|c}
+x &y\tabularnewline \hline
+1 &-2\tabularnewline \hline
+2 &-4\tabularnewline \hline
+3 &-4\tabularnewline \hline
+2 &2\tabularnewline \hline
+1 &4\tabularnewline \hline
+0 &6\tabularnewline \hline
+-1 &8\end{tabular}\begin{enumerate}[label=\Alph*.]
+\item Yes
+\item No
+
+\end{enumerate} }
+\end{enumerate}
+
+\end{document}

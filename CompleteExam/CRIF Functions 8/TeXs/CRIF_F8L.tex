@@ -1,0 +1,70 @@
+\documentclass[14pt]{extbook}
+\usepackage{multicol, enumerate, enumitem, hyperref, color, soul, setspace, parskip, fancyhdr} %General Packages
+\usepackage{amssymb, amsthm, amsmath, latexsym, units, mathtools} %Math Packages
+\everymath{\displaystyle} %All math in Display Style
+% Packages with additional options
+\usepackage[headsep=0.5cm,headheight=12pt, left=1 in,right= 1 in,top= 1 in,bottom= 1 in]{geometry}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{dashrule}  % Package to use the command below to create lines between items
+\newcommand{\litem}[1]{\item#1\hspace*{-1cm}\rule{\textwidth}{0.4pt}}
+\pagestyle{fancy}
+\lhead{CRIF Functions 8}
+\chead{}
+\rhead{Version L}
+\lfoot{1542-4749}
+\cfoot{}
+\rfoot{test}
+\begin{document}
+
+\begin{enumerate}
+\litem{
+Is the graph below a linear function?
+\begin{center}
+    \includegraphics[width=0.5\textwidth]{../Figures/MA_8_F_1_2_graphL.png}
+\end{center}
+\begin{enumerate}[label=\Alph*.]
+\item Yes, the graph is linear
+\item No, the graph is not linear.
+
+\end{enumerate} }
+\litem{
+Is the following relation a function?
+
+\begin{tabular}{c|c}
+x &y\tabularnewline \hline
+2 &-16\tabularnewline \hline
+3 &-54\tabularnewline \hline
+4 &-128\tabularnewline \hline
+5 &-250\tabularnewline \hline
+6 &-432\tabularnewline \hline
+7 &-686\tabularnewline \hline
+8 &-1024\end{tabular}\begin{enumerate}[label=\Alph*.]
+\item Yes
+\item No
+
+\end{enumerate} }
+\litem{
+Is the equation below a linear function?\[ f(x) = 3(x + 5)-5 \]\begin{enumerate}[label=\Alph*.]
+\item Yes, the equation is linear
+\item No, the equation is not linear.
+
+\end{enumerate} }
+\litem{
+Is the following relation a linear function?
+
+\begin{tabular}{c|c}
+x &y\tabularnewline \hline
+1 &2.0\tabularnewline \hline
+2 &2.83\tabularnewline \hline
+3 &3.46\tabularnewline \hline
+4 &4.0\tabularnewline \hline
+5 &4.47\tabularnewline \hline
+6 &4.9\tabularnewline \hline
+7 &5.29\end{tabular}\begin{enumerate}[label=\Alph*.]
+\item Yes
+\item No
+
+\end{enumerate} }
+\end{enumerate}
+
+\end{document}
