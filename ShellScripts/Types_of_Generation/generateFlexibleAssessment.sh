@@ -9,9 +9,8 @@ number_of_assessments=$(zenity \
     --max-value=30 \
     --step=1
 )
-escape=$?
+checkForEscape $?
 number_of_questions=0
-checkForEscape $escape
 for ((index=0;index<number_of_assessments;index++))
 do
     # Zenity - NAME YOUR ASSESSMENT - exam_display_name
@@ -20,16 +19,14 @@ do
         --entry \
         --text 'What do you want to call this assessment?'
     )
-    escape=$?
-    checkForEscape $escape
+    checkForEscape $?
     # Zenity - SHORT FILE NAME - file_name
     file_name=$(zenity \
         --title="${titleOfProgram[@]}" \
         --entry \
         --text 'Give a short, NO SPACES, name to your assessment.'
     )
-    escape=$?
-    checkForEscape $escape
+    checkForEscape $?
     question_list_name="question_list_${index}"
     # Zenity - CHOOSE YOUR QUESTIONS - question_list_index
     defineAllQuestionsDynamically
@@ -45,7 +42,7 @@ do
         echo ${Author[i]}
         echo ${Date[i]}
     done | zenity \
-    --title="Auto-DIG v.0.2" \
+    --title="${titleOfProgram[@]}" \
     --height=600 \
     --width=1000 \
     --list \
