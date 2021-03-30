@@ -1,8 +1,0 @@
-Traceback (most recent call last):
-  File "/home/dchamberlain31/git-repos/Auto-DIG/Code/CRIF/Functions/MA_8_F_1_2_table.py", line 172, in <module>
-    displayProblem = [header_row, relation[0], relation[1], relation[2], relation[3], relation[4], relation[5], relation[6]]
-IndexError: list index out of range
-Traceback (most recent call last):
-  File "/home/dchamberlain31/git-repos/Auto-DIG/Code/CRIF/Functions/MA_8_F_1_1.py", line 161, in <module>
-    displayProblem = f"({relation[0][0]}, {relation[0][1]}), ({relation[1][0]}, {relation[1][1]}), ({relation[2][0]}, {relation[2][1]}), ({relation[3][0]}, {relation[3][1]}), ({relation[4][0]}, {relation[4][1]}), ({relation[5][0]}, {relation[5][1]}), ({relation[6][0]}, {relation[6][1]})"
-IndexError: list index out of range

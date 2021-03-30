@@ -81,11 +81,13 @@ do
     StartTime=$( date +'%s' )
     # Estimated run time calculated as 1.5 second per question, with 1 error per 10 questions run.
     estimated_run_time=$( echo "scale=2;(1.65*$number_of_questions*$number_of_versions)/60" | bc )
-    seconds_decimal_estimate=$(( ${estimated_run_time:2:3} ))
-    if [ ${#estimated_run_time} -eq 3 ]; then
+    estimated_run_time_seconds=$( echo "scale=2;(165*$number_of_questions*$number_of_versions)/60" | bc )
+    estimated_minutes=${estimated_run_time%.*}
+    estimated_seconds=$(( ${estimated_run_time_seconds%.*} % 100 ))
+    if [ ${#estimated_minutes} -eq 0 ]; then
         estimated_run_time=$( echo "scale=2;(1.65*$number_of_questions*$number_of_versions)" | bc )
         minutes_or_seconds="seconds"
-    elif [ $seconds_decimal_estimate -eq 0 ]; then
+    elif [ $estimated_seconds -eq 0 ]; then
         minutes_or_seconds="minute"
     else
         minutes_or_seconds="minutes"
