@@ -9,6 +9,7 @@ if debug == "save":
     version=sys.argv[5]
     thisQuestion=sys.argv[6]
     OS_type=sys.argv[7]
+    response_type=sys.argv[8]
 else:
     version="Z"
     thisQuestion="debug_image"
@@ -19,6 +20,7 @@ sys.path.insert(1, f"/{DIR}/PythonScripts/ScriptsForDatabases")
 from storeQuestionData import *
 
 stemType = random.randint(0, 2)
+# Note stem does not change for multiple-choice vs free-response versions.
 
 if stemType == 0:
     xApproaches = random.choice([-4, -2, 1, 3])

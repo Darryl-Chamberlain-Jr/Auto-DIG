@@ -10,6 +10,7 @@ if debug == "save":
     version=sys.argv[5]
     thisQuestion=sys.argv[6]
     OS_type=sys.argv[7]
+    response_type=sys.argv[8]
 else:
     version="Z"
     thisQuestion="debug_image"
@@ -120,6 +121,7 @@ else:
     option5 = ["\\text{None of the above}", "This corresponds to believing there should be an oblique asymptote.", 0]
     displaySolution = option1[0]
 
+#Note the stem is the same for multiple-choice vs free-response versions.
 displayStem = "Determine the horizontal and/or oblique asymptotes in the rational function below."
 displayProblem = "f(x) = \\frac{%s}{%s}" %(numerator, denominator)
 generalComment = "We have a Horizontal Asymptote if the degree of the numerator is smaller than or equal to the degree of the denominator. We have an Oblique Asymptote if the degree of the numerator is larger than the degree of the denominator. We cannot have both!"

@@ -9,6 +9,7 @@ if debug == "save":
     version=sys.argv[5]
     thisQuestion=sys.argv[6]
     OS_type=sys.argv[7]
+    response_type=sys.argv[8]
 else:
     version="Z"
     thisQuestion="debug_image"
@@ -133,7 +134,10 @@ distractor4Interval.append(0)
 answerList = [solutionInterval, distractor1Interval, distractor2Interval, distractor3Interval, distractor4Interval]
 random.shuffle(answerList)
 
-displayStem = "Perform the division below. Then, find the intervals that correspond to the quotient in the form $ax^2+bx+c$ and remainder $r$."
+if response_type=="Multiple-Choice":
+	displayStem = "Perform the division below. Then, find the intervals that correspond to the quotient in the form $ax^2+bx+c$ and remainder $r$."
+else:
+	displayStem="Perform the division below. Write the resulting quotient in the form $ax^2+bx+c$ and remainder as $r$."
 displayProblem = "\\frac{%s}{%s}" %(displayNumerator, displayDenominator)
 displaySolution = "%s + \\frac{%s}{%s}" %(displayQuotient, coefficients[5], displayDenominator)
 generalComment = "Be sure to synthetically divide by the zero of the denominator! Also, make sure to include 0 placeholders for missing terms."

@@ -10,6 +10,7 @@ if debug == "save":
     version=sys.argv[5]
     thisQuestion=sys.argv[6]
     OS_type=sys.argv[7]
+    response_type=sys.argv[8]
 else:
     version="Z"
     thisQuestion="debug_image"
@@ -120,7 +121,11 @@ distractor4Interval.append(0)
 answerList = [solutionInterval, distractor1Interval, distractor2Interval, distractor3Interval, distractor4Interval]
 random.shuffle(answerList)
 
-displayStem = "Factor the polynomial below completely. Then, choose the intervals the zeros of the polynomial belong to, where $z_1 \\leq z_2 \\leq z_3$. \\textit{To make the problem easier, all zeros are between -5 and 5.}"
+if response_type=="Multiple-Choice":
+	displayStem="Factor the polynomial below completely. Then, choose the intervals the zeros of the polynomial belong to, where $z_1 \\leq z_2 \\leq z_3$. \\textit{To make the problem easier, all zeros are between -5 and 5.}"
+else:
+	displayStem="Factor the polynomial below completely. \\textit{To make the problem easier, all zeros are between -5 and 5.}"
+
 displayProblem = "f(x) = %s" %displayPolynomial
 displaySolution = solution
 generalComment = "Remember to try the middle-most integers first as these normally are the zeros. Also, once you get it to a quadratic, you can use your other factoring techniques to finish factoring."

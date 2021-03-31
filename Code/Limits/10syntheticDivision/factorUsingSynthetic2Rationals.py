@@ -10,6 +10,7 @@ if debug == "save":
     version=sys.argv[5]
     thisQuestion=sys.argv[6]
     OS_type=sys.argv[7]
+    response_type=sys.argv[8]
 else:
     version="Z"
     thisQuestion="debug_image"
@@ -139,10 +140,10 @@ distractor4Interval.append(0)
 answerList = [solutionInterval, distractor1Interval, distractor2Interval, distractor3Interval, distractor4Interval]
 random.shuffle(answerList)
 
-if(coefficients[4]<0):
-    displayStem = "Factor the polynomial below completely, knowing that $x+%d$ is a factor. Then, choose the intervals the zeros of the polynomial belong to, where $z_1 \\leq z_2 \\leq z_3 \\leq z_4$. \\textit{To make the problem easier, all zeros are between -5 and 5.}" %(-coefficients[4])
+if response_type=="Multiple-Choice":
+	displayStem="Factor the polynomial below completely, knowing that $%s$ is a factor. Then, choose the intervals the zeros of the polynomial belong to, where $z_1 \\leq z_2 \\leq z_3 \\leq z_4$. \\textit{To make the problem easier, all zeros are between -5 and 5.}" %generatePolynomialDisplay([1, -coefficients[4]])
 else:
-    displayStem = "Factor the polynomial below completely, knowing that $x-%d$ is a factor. Then, choose the intervals the zeros of the polynomial belong to, where $z_1 \\leq z_2 \\leq z_3 \\leq z_4$. \\textit{To make the problem easier, all zeros are between -5 and 5.}" %coefficients[4]
+	displayStem="Factor the polynomial below completely, knowing that $%s$ is a factor. \\textit{To make the problem easier, all zeros are between -5 and 5.}" %generatePolynomialDisplay([1, -coefficients[4]])
 
 displayProblem = "f(x) = %s" %displayPolynomial
 displaySolution = solution

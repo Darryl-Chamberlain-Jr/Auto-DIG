@@ -1,36 +1,12 @@
-Traceback (most recent call last):
-  File "/home/pi/git-repos/Auto-DIG/Code/Limits/09operationsOnFunctions/findInverseLogOrExp.py", line 99, in <module>
-    intervalOptions = createIntervalOptions(solutionList, intervalRange, precision)
-  File "/home/pi/git-repos/Auto-DIG/PythonScripts/ScriptsForQuestionCode/intervalMaskingMethod.py", line 113, in createIntervalOptions
-    intervalList[i] = cleanInterval(intervalList[i])
-  File "/home/pi/git-repos/Auto-DIG/PythonScripts/ScriptsForQuestionCode/intervalMaskingMethod.py", line 30, in cleanInterval
-    return [format_number(str(float(str(interval[0])))), format_number(str(float(str(interval[1]))))]
-TypeError: 'int' object is not subscriptable
-Traceback (most recent call last):
-  File "/home/pi/git-repos/Auto-DIG/Code/Limits/09operationsOnFunctions/determine1to1.py", line 96, in <module>
-    functionAndSolution = generateFunctionAndSolution()
-  File "/home/pi/git-repos/Auto-DIG/Code/Limits/09operationsOnFunctions/determine1to1.py", line 30, in generateFunctionAndSolution
-    function, displayFunction = generateRadicalFunction()
-  File "/home/pi/git-repos/Auto-DIG/Code/Limits/09operationsOnFunctions/determine1to1.py", line 49, in generateRadicalFunction
-    function = sqrt(term)
-NameError: name 'sqrt' is not defined
-Traceback (most recent call last):
-  File "/home/pi/git-repos/Auto-DIG/Code/Limits/09operationsOnFunctions/determine1to1.py", line 96, in <module>
-    functionAndSolution = generateFunctionAndSolution()
-  File "/home/pi/git-repos/Auto-DIG/Code/Limits/09operationsOnFunctions/determine1to1.py", line 30, in generateFunctionAndSolution
-    function, displayFunction = generateRadicalFunction()
-  File "/home/pi/git-repos/Auto-DIG/Code/Limits/09operationsOnFunctions/determine1to1.py", line 49, in generateRadicalFunction
-    function = sqrt(term)
-NameError: name 'sqrt' is not defined
-Traceback (most recent call last):
-  File "/home/pi/git-repos/Auto-DIG/Code/Limits/09operationsOnFunctions/domainAfterOperatingCopy.py", line 227, in <module>
-    distractor3 = randomDoubleRationalDomain()
-  File "/home/pi/git-repos/Auto-DIG/Code/Limits/09operationsOnFunctions/domainAfterOperatingCopy.py", line 169, in randomDoubleRationalDomain
-    domain = domainOfFunctions(info)
-  File "/home/pi/git-repos/Auto-DIG/Code/Limits/09operationsOnFunctions/domainAfterOperatingCopy.py", line 148, in domainOfFunctions
-    interval1 = createIntervalOptions([float(operatedFunctionInfo[0][1])], 5, 1)
-  File "/home/pi/git-repos/Auto-DIG/PythonScripts/ScriptsForQuestionCode/intervalMaskingMethod.py", line 113, in createIntervalOptions
-    intervalList[i] = cleanInterval(intervalList[i])
-  File "/home/pi/git-repos/Auto-DIG/PythonScripts/ScriptsForQuestionCode/intervalMaskingMethod.py", line 30, in cleanInterval
-    return [format_number(str(float(str(interval[0])))), format_number(str(float(str(interval[1]))))]
-TypeError: 'int' object is not subscriptable
+libEGL warning: DRI2: failed to authenticate
+qt5ct: using qt5ct plugin
+libEGL warning: DRI2: failed to authenticate
+qt5ct: using qt5ct plugin
+libEGL warning: DRI2: failed to authenticate
+qt5ct: using qt5ct plugin
+libEGL warning: DRI2: failed to authenticate
+qt5ct: using qt5ct plugin
+libEGL warning: DRI2: failed to authenticate
+qt5ct: using qt5ct plugin
+libEGL warning: DRI2: failed to authenticate
+qt5ct: using qt5ct plugin

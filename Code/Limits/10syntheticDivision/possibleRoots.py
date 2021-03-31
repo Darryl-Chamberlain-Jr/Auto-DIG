@@ -9,6 +9,7 @@ if debug == "save":
     version=sys.argv[5]
     thisQuestion=sys.argv[6]
     OS_type=sys.argv[7]
+    response_type=sys.argv[8]
 else:
     version="Z"
     thisQuestion="debug_image"
@@ -86,6 +87,7 @@ rationalOrIntegerList = ["Rational", "Integer"]
 rationalOrInteger = rationalOrIntegerList[random.randint(0, 1)]
 answerList, displaySolution = generateSolutionAndDistractors(rationalOrInteger, info[1], info[2])
 
+# Note the stem is the same for multiple-choice and free-response versions. 
 displayStem = "What are the \\textit{possible %s} roots of the polynomial below?" %rationalOrInteger
 displayProblem = "f(x) = %s" %displayPolynomial
 generalComment = "We have a way to find the possible Rational roots. The possible Integer roots are the Integers in this list."

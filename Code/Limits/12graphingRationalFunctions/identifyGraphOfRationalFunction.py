@@ -11,6 +11,7 @@ if debug == "save":
     version=sys.argv[5]
     thisQuestion=sys.argv[6]
     OS_type=sys.argv[7]
+    response_type=sys.argv[8]
 else:
     version="Z"
     thisQuestion="debug_image"
@@ -97,7 +98,10 @@ def graph_rational_function_with_undefined_points(numerator_zeros, denominator_z
     plt.savefig('/' + str(DIR) + '/Figures/' + str(thisQuestion) + str(version) + '.png', bbox_inches='tight')
     plt.close()
 
-displayStem = "Which of the following functions \\textit{could} be the graph below?"
+if response_type=="Multiple-Choice":
+	displayStem="Which of the following functions \\textit{could} be the graph below?"
+else:
+	displayStem="Write an equation of a function that \\textit{could} be represented by the graph below. Explain why your function could represent the graph."
 displayProblem = f"{thisQuestion}{version}"
 
 # Gives a range of possible values to choose from

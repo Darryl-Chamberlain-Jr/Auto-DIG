@@ -9,6 +9,7 @@ if debug == "save":
     version=sys.argv[5]
     thisQuestion=sys.argv[6]
     OS_type=sys.argv[7]
+    response_type=sys.argv[8]
 else:
     version="Z"
     thisQuestion="debug_image"
@@ -29,7 +30,11 @@ else:
     x_0 = random.randint(0, 9)
     y_0 = "\\infty"
 
-displayStem = "Based on the information below, which of the following statements is always true?"
+if response_type=="Multiple-Choice":
+	displayStem = "Based on the information below, which of the following statements is always true?"
+else:
+	displayStem=f"Based on the information below, what can be said about (a.) $f({x_0})$ and (b.) $f(x)$ when $x$ is close to ${x_0}$?" 
+    
 xFirst = random.randint(0, 1)
 if xFirst == 1:
     displayProblem = "As $x$ approaches $%s$, $f(x)$ approaches $%s$." %(x_0, y_0)

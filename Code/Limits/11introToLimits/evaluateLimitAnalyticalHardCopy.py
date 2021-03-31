@@ -10,6 +10,7 @@ if debug == "save":
     version=sys.argv[5]
     thisQuestion=sys.argv[6]
     OS_type=sys.argv[7]
+    response_type=sys.argv[8]
 else:
     version="Z"
     thisQuestion="debug_image"
@@ -47,6 +48,7 @@ hwLimit = 1.0/float(2*c)
 naiveLimit = float(math.sqrt(a))/float(f)
 badLHospital = limit / float(a)
 
+# Note the stem does not change for multiple-choice vs free-response versions. 
 displayStem = "Evaluate the limit below, if possible."
 displayProblem = "\\lim_{x \\rightarrow %d} \\frac{\\sqrt{%dx - %d} - %d}{%dx - %d}" %(xApproaches, a, b, c, f, d)
 generalComment = "\\textbf{General comments:} It is difficult to imagine the graph of this function, so you need to test values close to $x = %d$." %xApproaches

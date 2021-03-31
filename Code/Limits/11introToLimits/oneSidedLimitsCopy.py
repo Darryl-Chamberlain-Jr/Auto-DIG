@@ -9,6 +9,7 @@ if debug == "save":
     version=sys.argv[5]
     thisQuestion=sys.argv[6]
     OS_type=sys.argv[7]
+    response_type=sys.argv[8]
 else:
     version="Z"
     thisQuestion="debug_image"
@@ -49,9 +50,11 @@ else:
     displaySolution = option2[0]
     descriptionOfSide = "left"
 
-displayStem = "To estimate the one-sided limit of the function below as $x$ approaches %d from the %s, which of the following sets of numbers should you use?" %(int(a), descriptionOfSide)
+if response_type=="Multiple-Choice":
+	displayStem = "To estimate the one-sided limit of the function below as $x$ approaches %d from the %s, which of the following sets of numbers should you use?" %(int(a), descriptionOfSide)
+else:
+	displayStem="List 10 numbers you should use to estimate the one-sided limit of the function below as $x$ approaches %d from the %s." %(int(a), descriptionOfSide)
 displayProblem = "\\frac{\\frac{%d}{x} - 1}{x - %d}" %(a, a)
-
 answerList = [option1, option2, option3, option4, option5]
 random.shuffle(answerList)
 

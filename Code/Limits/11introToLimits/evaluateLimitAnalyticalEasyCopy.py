@@ -9,6 +9,7 @@ if debug == "save":
     version=sys.argv[5]
     thisQuestion=sys.argv[6]
     OS_type=sys.argv[7]
+    response_type=sys.argv[8]
 else:
     version="Z"
     thisQuestion="debug_image"
@@ -35,6 +36,7 @@ if atOrAwayFromVA == 0:
 else:
     xApproaches = -shift[0]
 
+# Note the stem does not change for multiple-choice vs free-response versions. 
 displayStem = "Evaluate the one-sided limit of the function $f(x)$ below, if possible."
 option1 = ["\\infty", "", 0]
 option2 = ["-\\infty", "", 0]

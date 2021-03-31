@@ -10,6 +10,7 @@ if debug == "save":
     version=sys.argv[5]
     thisQuestion=sys.argv[6]
     OS_type=sys.argv[7]
+    response_type=sys.argv[8]
 else:
     version="Z"
     thisQuestion="debug_image"
@@ -75,6 +76,7 @@ distractorVertical = ["\\text{Horizontal Asymptote at } y = %s" %(cleanRational(
 distractorObliqueAndHorizontal = ["\\text{Horizontal Asymptote of } y = %s \\text{ and Oblique Asymptote of } y = %s" %(cleanRational(falseHorizontalAsy), obliqueAsy), "This corresponds to believing there can be both a horizontal and oblique asymptote.", 0]
 distractorObliqueAndVertical = ["\\text{Horizontal Asymptote of } y = %s \\text{ and Oblique Asymptote of } y = %s" %(cleanRational(verticalAsy), obliqueAsy), "This corresponds to believing there can be both a horizontal and oblique asymptote AND mixing up horizontal/vertical asymoptote.", 0]
 
+# Note the stem is the same for multiple-choice and free-response versions.
 displayStem = "Determine the horizontal and/or oblique asymptotes in the rational function below."
 displayProblem = "f(x) = \\frac{%s}{%s}" %(numerator, denominator)
 displaySolution = "y = %s" %(obliqueAsy)

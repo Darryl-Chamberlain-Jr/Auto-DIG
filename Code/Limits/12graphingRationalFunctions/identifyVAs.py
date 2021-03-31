@@ -10,6 +10,7 @@ if debug == "save":
     version=sys.argv[5]
     thisQuestion=sys.argv[6]
     OS_type=sys.argv[7]
+    response_type=sys.argv[8]
 else:
     version="Z"
     thisQuestion="debug_image"
@@ -72,6 +73,7 @@ distractorAllHoles = ["\\text{Holes at } x = %s \\text{ and } x = %s \\text{ wit
 distractorHor = ["\\text{Vertical Asymptote of } x = %s \\text{ and hole at } x = %s" %(cleanRational(horizontalAsy), cleanRational(hole)), "This corresponds to mixing vertical and horizontal asymptotes.", 0]
 distractorAllNumerator = ["\\text{Vertical Asymptotes of } x = %s \\text{ and } x = %s \\text{ with a hole at } x = %s" %(cleanRational(verticalAsy), cleanRational(fakeVert), cleanRational(hole)), "This corresponds to setting the numerator equal to 0.", 0]
 
+# Note the stem is the same for multiple-choice vs free-response versions.
 displayStem = "Determine the vertical asymptotes and holes in the rational function below."
 displayProblem = "f(x) = \\frac{%s}{%s}" %(numerator, denominator)
 displaySolution = solution[0]
