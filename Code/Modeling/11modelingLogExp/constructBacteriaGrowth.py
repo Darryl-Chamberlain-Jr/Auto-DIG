@@ -10,6 +10,7 @@ if debug == "save":
     version=sys.argv[5]
     thisQuestion=sys.argv[6]
     OS_type=sys.argv[7]
+    response_type=sys.argv[8]
 else:
     version="Z"
     thisQuestion="debug_image"
@@ -41,7 +42,10 @@ WBnoConversionApproxReplicationRate = int( 360.0 / ( log(ratio)/(float(timePasse
 WBincorrectPropertiesApproxReplicationRate = int( 1.0 / ( log(finalPop)/(float(convertedTime)*log(wrongRateBase*initialPop)) ) )
 WBincorrectPropertiesAndNoConversionApproxRepRate = int( 360.0 / ( log(finalPop)/(float(timePassed)*log(wrongRateBase*initialPop)) ) )
 
-displayStem = "Using the scenario below, model the population of bacteria $\\alpha$ in terms of the number of minutes, $t$ that pass. Then, choose the correct approximate \\textit{(rounded to the nearest minute)} replication rate of bacteria-$\\alpha$."
+if response_type=="Multiple-Choice":
+	displayStem = "Using the scenario below, model the population of bacteria $\\alpha$ in terms of the number of minutes, $t$ that pass. Then, choose the correct approximate \\textit{(rounded to the nearest minute)} replication rate of bacteria-$\\alpha$."
+else:
+	displayStem = "Using the scenario below, model the population of bacteria $\\alpha$ in terms of the number of minutes, $t$ that pass. Then, solve for the replication rate of bacteria-$\\alpha$."
 displayProblem = "A newly discovered bacteria, $\\alpha$, is being examined in a lab. The lab started with a petri dish of %d bacteria-$\\alpha$. After %d hours, the petri dish has %d bacteria-$\\alpha$. Based on similar bacteria, the lab believes bacteria-$\\alpha$ %s after some undetermined number of minutes." %(initialPop, timePassed, finalPop, rateDescription)
 
 listedOrNot = random.randint(0, 1)

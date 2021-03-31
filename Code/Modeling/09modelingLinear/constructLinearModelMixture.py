@@ -9,6 +9,7 @@ if debug == "save":
     version=sys.argv[5]
     thisQuestion=sys.argv[6]
     OS_type=sys.argv[7]
+    response_type=sys.argv[8]
 else:
     version="Z"
     thisQuestion="debug_image"
@@ -30,6 +31,7 @@ highOrLowQuality = typesOfBeans[random.randint(0,1)]
 totalCostHigh = [highPrice-lowPrice, lowPrice*totalWeight]
 totalCostLow = [lowPrice-highPrice, highPrice*totalWeight]
 
+# Note the stem is the same for multiple-choice vs free-response versions.
 displayStem = "Using the situation below, construct a linear model that describes the cost of the coffee beans $C(h)$ in terms of the weight of the %s coffee beans $h$." %highOrLowQuality
 displayProblem = "Veronica needs to prepare %d of blended coffee beans selling for \\$%.2f per pound. She has a high-quality bean that sells for \\$%.2f a pound and a low-quality bean that sells for \\$%.2f a pound." %(totalWeight, blendPrice, highPrice, lowPrice)
 

@@ -42,6 +42,7 @@ noRestrictions = [noRestriction0]
 
 typesToChooseFrom = ["natural", "integer", "rational", "properSubReal", "noRestriction"]
 problemType = typesToChooseFrom[random.randint(0, len(typesToChooseFrom)-1)]
+# Note the stem is the same for multiple-choice vs free-response versions.
 displayStem = "What is the \\textbf{best} way to describe the domain of the scenario below?"
 naturalAnswer = 0
 integerAnswer = 0

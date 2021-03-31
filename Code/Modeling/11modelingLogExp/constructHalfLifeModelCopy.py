@@ -11,6 +11,7 @@ if debug == "save":
     version=sys.argv[5]
     thisQuestion=sys.argv[6]
     OS_type=sys.argv[7]
+    response_type=sys.argv[8]
 else:
     version="Z"
     thisQuestion="debug_image"
@@ -36,6 +37,7 @@ kWithBaseE = log( float(finalAmount)/float(initialAmount) )  /  ( float(timePass
 halfLifeWithBaseE = int(-1.0/kWithBaseE) * 365
 ###
 ### LATER, MAKE A BASE OF E ###
+# Note the stem is the same for multiple-choice vs free-response versions.
 displayStem = "Using the scenario below, model the situation using an exponential function and a base of $\\frac{1}{2}$. Then, solve for the half-life of the element, rounding to the nearest day."
 displayProblem = "The half-life of an element is the amount of time it takes for the element to decay to half of its initial starting amount. There is initially %d grams of element $X$ and after %d years there is %d grams remaining." %(initialAmount, timePassed, finalAmount)
 

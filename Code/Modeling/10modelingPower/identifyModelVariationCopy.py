@@ -9,6 +9,7 @@ if debug == "save":
     version=sys.argv[5]
     thisQuestion=sys.argv[6]
     OS_type=sys.argv[7]
+    response_type=sys.argv[8]
 else:
     version="Z"
     thisQuestion="debug_image"
@@ -82,7 +83,11 @@ else:
     option4 = ["\\text{None of the above}", "", 1]
     displaySolution = option4[0]
 
-displayStem = "Choose the model type that would best describe the scenario below."
+if response_type=="Multiple-Choice":
+	displayStem = "Choose the model type that would best describe the scenario below."
+else:
+	displayStem="What model type would best describe the scenario below?"
+
 answerListTemp = [option1, option2, option3]
 random.shuffle(answerListTemp)
 answerList = [answerListTemp[0], answerListTemp[1], answerListTemp[2], option4]

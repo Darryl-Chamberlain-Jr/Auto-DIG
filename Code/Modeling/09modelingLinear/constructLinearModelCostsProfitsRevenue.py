@@ -9,6 +9,7 @@ if debug == "save":
     version=sys.argv[5]
     thisQuestion=sys.argv[6]
     OS_type=sys.argv[7]
+    response_type=sys.argv[8]
 else:
     version="Z"
     thisQuestion="debug_image"
@@ -29,7 +30,7 @@ profits = edExpense + savings
 
 costProfitOrRevenue = random.randint(0, 2)
 correctOrNoneOfTheAbove = random.randint(0, 1)
-
+# Note the stem is the same for multiple-choice vs free-response versions.
 if costProfitOrRevenue == 0:
     # COST
     displayStem = "For the information provided below, construct a linear model that describes her total costs, $C$, as a function of the number of months, $x$ she is at UF. "

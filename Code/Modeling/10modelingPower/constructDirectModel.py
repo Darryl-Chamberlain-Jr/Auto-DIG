@@ -10,6 +10,7 @@ if debug == "save":
     version=sys.argv[5]
     thisQuestion=sys.argv[6]
     OS_type=sys.argv[7]
+    response_type=sys.argv[8]
 else:
     version="Z"
     thisQuestion="debug_image"
@@ -32,6 +33,7 @@ constant = float(orbitTime**timeExponent) / float(averageDistance**distanceExpon
 homeworkConstant = float( (4.0*pi**2) / (9.8) )
 indirectConstant = float(orbitTime**timeExponent * averageDistance**distanceExponent)
 reversePowers = float(orbitTime**(1/float(timeExponent))) / float(averageDistance**(1/float(distanceExponent)))
+# Note the stem is the same for multiple-choice vs free-response versions.
 displayStem = "For the scenario below, find the variation constant $k$ of the model (if possible)."
 displayProblem = "In an alternative galaxy, the %s of the time, $T$ (Earth years), required for a planet to orbit Sun $\\chi$ %s as the %s of the distance, $d$ (AUs), that the planet is from Sun $\\chi$ %s. For example, when Ea's average distance from Sun $\\chi$ is %d, it takes %d Earth days to complete an orbit." %(timeDescription, increasesOrDecreases, distanceDescription, increasesOrDecreases, averageDistance, orbitTime)
 

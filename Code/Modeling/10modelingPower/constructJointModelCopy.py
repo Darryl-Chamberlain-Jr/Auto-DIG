@@ -10,6 +10,7 @@ if debug == "save":
     version=sys.argv[5]
     thisQuestion=sys.argv[6]
     OS_type=sys.argv[7]
+    response_type=sys.argv[8]
 else:
     version="Z"
     thisQuestion="debug_image"
@@ -19,7 +20,8 @@ from intervalMaskingMethod import *
 sys.path.insert(1, f"/{DIR}/PythonScripts/ScriptsForDatabases")
 from storeQuestionData import *
 
-displayStem = "For the scenario below, use the model for the volume of a cylinder as $V = \\pi r^2 h$ to find the coefficient for the model of the new volume $V_{\text{new}} = k r^2 h$."
+# Note the stem is the same for multiple-choice vs free-response versions.
+displayStem = "For the scenario below, use the model for the volume of a cylinder as $V = \\pi r^2 h$ to find the coefficient for the model of the new volume $V_{\\text{new}} = k r^2 h$."
 
 increasesOrDecreasesRadius = random.choice(["increase", "decrease"])
 increasesOrDecreasesHeight = random.choice(["increase", "decrease"])

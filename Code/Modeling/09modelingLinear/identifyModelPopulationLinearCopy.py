@@ -10,7 +10,7 @@ if debug == "save":
     version=sys.argv[5]
     thisQuestion=sys.argv[6]
     OS_type=sys.argv[7]
-    
+    response_type=sys.argv[8]
 else:
     version="Z"
     thisQuestion="debug_image"
@@ -50,6 +50,7 @@ def generateStem(type):
 typesToChooseFrom=["linear", "direct", "exponential", "logarithmic"]
 problemType = typesToChooseFrom[random.randint(0, 3)]
 initialPop, populations = generateStem(problemType)
+# Note stem is same for multiple-choice and free-response versions.
 displayStem = "A town has an initial population of %d. The town's population for the next 9 years is provided below. Which type of function would be most appropriate to model the town's population?" %initialPop
 #header for the table
 header_row = ['\\textbf{Year}', 1, 2, 3, 4, 5, 6, 7, 8, 9]

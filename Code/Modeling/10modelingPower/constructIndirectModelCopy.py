@@ -9,6 +9,7 @@ if debug == "save":
     version=sys.argv[5]
     thisQuestion=sys.argv[6]
     OS_type=sys.argv[7]
+    response_type=sys.argv[8]
 else:
     version="Z"
     thisQuestion="debug_image"
@@ -35,6 +36,7 @@ wrongConversion = float(vibrationRate * (stringLength)**lengthExponent * 10 )
 wrongModel = float(vibrationRate) / float( (((stringLength)/10.0)**lengthExponent) )
 wrongModelNoConversion = float(vibrationRate) / float( ((stringLength)**lengthExponent) )
 
+# Note the stem is the same for multiple-choice vs free-response versions.
 displayStem = "For the scenario below, model the rate of vibration (cm/s) of the string in terms of the length of the string. Then determine the variation constant $k$ of the model (if possible). The constant should be in terms of cm and s."
 displayProblem = "The rate of vibration of a string under constant tension varies based on the type of string and the length of the string. The rate of vibration of string $\\omega$ %s as the %s length of the string %s. For example, when string $\\omega$ is %d mm long, the rate of vibration is %d cm/s." %(increasesOrDecreases, lengthDescription, decreasesOrIncreases, stringLength, vibrationRate)
 generalComment = "The most common mistake on this question is to not convert mm to cm! When modeling, you need to make sure all of the units for your variables are compatible."

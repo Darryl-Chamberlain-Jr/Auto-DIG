@@ -9,6 +9,7 @@ if debug == "save":
     version=sys.argv[5]
     thisQuestion=sys.argv[6]
     OS_type=sys.argv[7]
+    response_type=sys.argv[8]
 else:
     version="Z"
     thisQuestion="debug_image"
@@ -33,6 +34,7 @@ distractorTime = distanceUp * distanceDown * distanceFlat
 # ASK EITHER LINEAR MODEL FOR TOTAL DISTANCE OR TOTAL TIME
 distanceOrTime = random.randint(0, 2)
 modelShown = random.randint(0, 2)
+# Note the stem is the same for multiple-choice vs free-response versions.
 if distanceOrTime == 0:
     # DISTANCE
     if modelShown == 0:

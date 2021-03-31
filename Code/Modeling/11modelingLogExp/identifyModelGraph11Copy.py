@@ -13,6 +13,7 @@ if debug == "save":
     version=sys.argv[5]
     thisQuestion=sys.argv[6]
     OS_type=sys.argv[7]
+    response_type=sys.argv[8]
 else:
     version="Z"
     thisQuestion="debug_image"
@@ -85,6 +86,7 @@ else:
     option5[2] = 1
     displaySolution = option5[0]
 
+# Note the stem is the same for multiple-choice vs free-response versions.
 displayStem = "Determine the appropriate model for the graph of points below."
 displayProblem = f"{thisQuestion}{version}"
 
