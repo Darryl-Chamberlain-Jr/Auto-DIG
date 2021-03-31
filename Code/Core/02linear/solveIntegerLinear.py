@@ -10,6 +10,7 @@ if debug == "save":
     version=sys.argv[5]
     thisQuestion=sys.argv[6]
     OS_type=sys.argv[7]
+    response_type=sys.argv[8]
 else:
     version="Z"
     thisQuestion="debug_image"
@@ -71,7 +72,10 @@ choiceComments = [answerList[0][1], answerList[1][1], answerList[2][1], answerLi
 answerLetterIndicators = [answerList[0][2], answerList[1][2], answerList[2][2], answerList[3][2], answerList[4][2]]
 answerLetter = identifyAnswerLetter(answerLetterIndicators)
 ### DEFINE STEM, PROBLEM, GENERAL COMMENT ###
-displayStem = 'Solve the equation below. Then, choose the interval that contains the solution.'
+if response_type=="Multiple-Choice":
+    displayStem = 'Solve the equation below. Then, choose the interval that contains the solution.'
+else:
+    displayStem = 'Solve the equation below.'
 displayProblem = "%d(%s) = %d(%s)" %(coefficients[0], generatePolynomialDisplay([coefficients[1], coefficients[2]]), coefficients[3], generatePolynomialDisplay([coefficients[4], coefficients[5]]))
 generalComment = "The most common mistake on this question is to not distribute the negative in front of the second fraction correctly. The best way to avoid this is putting the numerator in parentheses, which will help you remember to distribute the negative correctly."
 

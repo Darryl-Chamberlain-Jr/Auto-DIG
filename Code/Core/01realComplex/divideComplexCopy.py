@@ -9,6 +9,7 @@ if debug == "save":
     version=sys.argv[5]
     thisQuestion=sys.argv[6]
     OS_type=sys.argv[7]
+    response_type=sys.argv[8]
 else:
     version="Z"
     thisQuestion="debug_image"
@@ -108,7 +109,10 @@ answerList = [solutionInterval, distractor1Interval, distractor2Interval, distra
 random.shuffle(answerList)
 
 ### DEFINE STEM, PROBLEM, AND GENERAL COMMENT ###
-displayStem = 'Simplify the expression below into the form $a+bi$. Then, choose the intervals that $a$ and $b$ belong to.'
+if response_type=="Multiple-Choice":
+    displayStem = 'Simplify the expression below into the form $a+bi$. Then, choose the intervals that $a$ and $b$ belong to.'
+else:
+    displayStem = 'Simplify the expression below into the form $a+bi$.'
 displayProblem = "\\frac{%s}{%s}" %(displayComplexFactor([coefficients[0], coefficients[1]]), displayComplexFactor([coefficients[2], coefficients[3]]))
 generalComment = "Multiply the numerator and denominator by the *conjugate* of the denominator, then simplify. For example, if we have $2+3i$, the conjugate is $2-3i$."
 

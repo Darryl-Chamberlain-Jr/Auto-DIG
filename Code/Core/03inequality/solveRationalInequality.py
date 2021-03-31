@@ -10,6 +10,7 @@ if debug == "save":
     version=sys.argv[5]
     thisQuestion=sys.argv[6]
     OS_type=sys.argv[7]
+    response_type=sys.argv[8]
 else:
     version="Z"
     thisQuestion="debug_image"
@@ -119,7 +120,10 @@ distractor2 = [distractor2Answer, distractor2Display, intervalOptions1[1], " $%s
 distractor3 = [distractor3Answer, distractor3Display, intervalOptions2[1], " $%s$, which corresponds to switching the direction of the interval AND negating the endpoint. You likely did this if you did not flip the inequality when dividing by a negative as well as not moving values over to a side properly." %distractor3Answer, 0]
 distractor4 = ["\\text{None of the above}.", "You may have chosen this if you thought the inequality did not match the ends of the intervals."]
 
-displayStem = 'Solve the linear inequality below. Then, choose the constant and interval combination that describes the solution set.'
+if response_type=="Multiple-Choice":
+    displayStem = 'Solve the linear inequality below. Then, choose the constant and interval combination that describes the solution set.'
+else:
+    displayStem = 'Solve the linear inequality below.'
 
 if n1 < 0 and n3 < 0:
     if problemType == "less":

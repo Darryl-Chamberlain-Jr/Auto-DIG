@@ -10,6 +10,7 @@ if debug == "save":
     version=sys.argv[5]
     thisQuestion=sys.argv[6]
     OS_type=sys.argv[7]
+    response_type=sys.argv[8]
 else:
     version="Z"
     thisQuestion="debug_image"
@@ -122,8 +123,10 @@ distractor1Interval = [intervalCupExclusive(solution), intervalOptionsA[1], "Cor
 distractor2Interval = [intervalCupInclusive(solution), intervalOptionsB[0], "Corresponds to including the endpoints (when they should be excluded).", 0]
 distractor3Interval = [intervalCupInclusive(solution), intervalOptionsB[1], "Corresponds to including the endpoints AND negating.", 0]
 # Distractor4Interval is all real numbers. "(-\\infty, \\infty)"
-
-displayStem = 'Solve the linear inequality below. Then, choose the constant and interval combination that describes the solution set.'
+if response_type=="Multiple-Choice":
+    displayStem = 'Solve the linear inequality below. Then, choose the constant and interval combination that describes the solution set.'
+else:
+    displayStem = 'Solve the linear inequality below.'
 displayProblem = '%s \\text{ or } %s' %(displayLeftFactor, displayRightFactor)
 displaySolution = "(-\\infty, %s) \\text{ or } (%s, \\infty)" %(round(solution[0], 3), round(solution[1], 3))
 generalComment = "When multiplying or dividing by a negative, flip the sign."

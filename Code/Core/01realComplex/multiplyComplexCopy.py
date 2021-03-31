@@ -9,6 +9,7 @@ if debug == "save":
     version=sys.argv[5]
     thisQuestion=sys.argv[6]
     OS_type=sys.argv[7]
+    response_type=sys.argv[8]
 else:
     version="Z"
     thisQuestion="debug_image"
@@ -70,7 +71,10 @@ answerList = [solutionInterval, distractor1Interval, distractor2Interval, distra
 random.shuffle(answerList)
 
 ### DEFINE STEM, PROBLEM, GENERAL COMMENT ###
-displayStem = 'Simplify the expression below into the form $a+bi$. Then, choose the intervals that $a$ and $b$ belong to.'
+if response_type=="Multiple-Choice":
+    displayStem = 'Simplify the expression below into the form $a+bi$. Then, choose the intervals that $a$ and $b$ belong to.'
+else:
+    displayStem = 'Simplify the expression below into the form $a+bi$.'
 displayProblem = "(%s)(%s)" %(displayComplexFactor([problemCoefficients[0], problemCoefficients[1]]), displayComplexFactor([problemCoefficients[2], problemCoefficients[3]]))
 generalComment = "You can treat $i$ as a variable and distribute. Just remember that $i^2=-1$, so you can continue to reduce after you distribute."
 

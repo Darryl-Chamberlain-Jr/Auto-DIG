@@ -10,6 +10,7 @@ if debug == "save":
     version=sys.argv[5]
     thisQuestion=sys.argv[6]
     OS_type=sys.argv[7]
+    response_type=sys.argv[8]
 else:
     version="Z"
     thisQuestion="debug_image"
@@ -83,6 +84,7 @@ while (questionType == 4 and fromNumber < 0):
     distance, fromNumber, endValues = generateDistanceAndFromNumber(2, 10)
 answerList, displayProblem = generateQuestion(endValues, questionType, distance, fromNumber)
 
+# Note instructions do not change for multiple-choice vs free response
 displayStem = 'Using an interval or intervals, describe all the $x$-values within or including a distance of the given values.'
 generalComment = "When thinking about this language, it helps to draw a number line and try points."
 

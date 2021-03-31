@@ -10,6 +10,7 @@ if debug == "save":
     version=sys.argv[5]
     thisQuestion=sys.argv[6]
     OS_type=sys.argv[7]
+    response_type=sys.argv[8]
 else:
     version="Z"
     thisQuestion="debug_image"
@@ -78,7 +79,10 @@ distractor2Interval = [intervalOptions[2], " $x_1 = %.3f \\text{ and } x_2 = %.3
 distractor3Interval = [intervalOptions[3], " $x_1 = %.3f \\text{ and } x_2 = %.3f$, which corresponds to writing the Quadratic Formula as $-\\frac{b}{2a} \\pm \\sqrt{b^2 - 4ac}$." %(float(distractor3[0][0]), float(distractor3[0][1])), 0]
 distractor4Interval = ["\\text{There are no Real solutions}", "Corresponds to getting a negative under the radical or believing that since the quadratic cannot be factored, it has no Real solutions.", 0]
 
-displayStem = 'Solve the quadratic equation below. Then, choose the intervals that the solutions belong to, with $x_1 \\leq x_2$ (if they exist).'
+if response_type=="Multiple-Choice":
+    displayStem = 'Solve the quadratic equation below. Then, choose the intervals that the solutions belong to, with $x_1 \\leq x_2$ (if they exist).'
+else:
+    displayStem = 'Solve the quadratic equation below.'
 displayProblem = "%s = 0" %generatePolynomialDisplay(coefficients)
 displaySolution = "x_1 = %.3f \\text{ and } x_2 = %.3f" %(float(solution[0]),  float(solution[1]))
 generalComment = "This requires Quadratic Formula. Just be sure to use the correct formula and watch your signs."

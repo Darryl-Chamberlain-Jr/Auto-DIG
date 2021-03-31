@@ -10,6 +10,7 @@ if debug == "save":
     version=sys.argv[5]
     thisQuestion=sys.argv[6]
     OS_type=sys.argv[7]
+    response_type=sys.argv[8]
 else:
     version="Z"
     thisQuestion="debug_image"
@@ -200,7 +201,10 @@ answerList = [option0, option1, option2, option3, option4]
 random.shuffle(answerList)
 
 ### DEFINE STEM, PROBLEM, GENERAL COMMENT ###
-displayStem = 'Choose the \\textbf{smallest} set of Complex numbers that the number below belongs to.'
+if response_type=="Multiple-Choice":
+    displayStem = 'Choose the \\textbf{smallest} set of Complex numbers that the number below belongs to.'
+else:
+    displayStem = 'What is the \\textbf{smallest} set of Complex numbers that the number below belongs to?'
 # displayProblem was defined previously
 generalComment = "Be sure to simplify $i^2 = -1$. This may remove the imaginary portion for your number. If you are having trouble, you may want to look at the \\textit{Subgroups of the Real Numbers} section."
 

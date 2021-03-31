@@ -11,6 +11,7 @@ if debug == "save":
     version=sys.argv[5]
     thisQuestion=sys.argv[6]
     OS_type=sys.argv[7]
+    response_type=sys.argv[8]
 else:
     version="Z"
     thisQuestion="debug_image"
@@ -100,7 +101,10 @@ choiceComments = [answerList[0][1], answerList[1][1], answerList[2][1], answerLi
 answerLetterIndicators = [answerList[0][2], answerList[1][2], answerList[2][2], answerList[3][2], answerList[4][2]]
 answerLetter = identifyAnswerLetter(answerLetterIndicators)
 ### DEFINE STEM, PROBLEM, GENERAL COMMENT ###
-displayStem = 'Solve the linear equation below. Then, choose the interval that contains the solution.'
+if response_type=="Multiple-Choice":
+    displayStem = 'Solve the linear equation below. Then, choose the interval that contains the solution.'
+else:
+    displayStem = 'Solve the linear equation below.'
 displayProblem = "\\frac{%s}{%s} - \\frac{%s}{%s} = \\frac{%s}{%s}" %(generatePolynomialDisplay(  [constants[0], constants[3]]  ), constants[6], generatePolynomialDisplay(  [constants[1], constants[4]]  ), constants[7], generatePolynomialDisplay(  [constants[2], constants[5]]  ), constants[8]    )
 generalComment = "If you are having trouble with this problem, try to remove a fraction at a time by multiplying each term by the denominator."
 

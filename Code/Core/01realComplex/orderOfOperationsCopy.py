@@ -9,6 +9,7 @@ if debug == "save":
     version=sys.argv[5]
     thisQuestion=sys.argv[6]
     OS_type=sys.argv[7]
+    response_type=sys.argv[8]
 else:
     version="Z"
     thisQuestion="debug_image"
@@ -95,7 +96,10 @@ random.shuffle(answerList)
 answerList.append(distractor4Interval)
 
 ### DEFINE STEM, PROBLEM, GENERAL COMMENT ###
-displayStem = 'Simplify the expression below and choose the interval the simplification is contained within.'
+if response_type=="Multiple-Choice":
+    displayStem = 'Simplify the expression below and choose the interval the simplification is contained within.'
+else:
+    displayStem = 'Simplify the expression below.'
 # displayProblem was already defined
 generalComment = "While you may remember (or were taught) PEMDAS is done in order, it is actually done as P/E/MD/AS. When we are at MD or AS, we read left to right."
 

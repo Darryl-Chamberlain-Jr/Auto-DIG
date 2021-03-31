@@ -12,6 +12,7 @@ if debug == "save":
     version=sys.argv[5]
     thisQuestion=sys.argv[6]
     OS_type=sys.argv[7]
+    response_type=sys.argv[8]
 else:
     version="Z"
     thisQuestion="debug_image"
@@ -65,7 +66,10 @@ intervalOptions = createIntervalOptions(solutionList, intervalRange, precision)
 answerList = [ [intervalOptions[0], solution[1], solution[2]], [intervalOptions[1], distractor1[1], distractor1[2]], [intervalOptions[2], distractor2[1], distractor2[2]], [intervalOptions[3], distractor3[1], distractor3[2]], [intervalOptions[4], distractor4[1], distractor4[2]] ]
 random.shuffle(answerList)
 
-displayStem = 'Write the equation of the graph presented below in the form $f(x)=ax^2+bx+c$, assuming  $a=1$ or $a=-1$. Then, choose the intervals that $a, b,$ and $c$ belong to.'
+if response_type=="Multiple-Choice":
+    displayStem = 'Write the equation of the graph presented below in the form $f(x)=ax^2+bx+c$, assuming  $a=1$ or $a=-1$. Then, choose the intervals that $a, b,$ and $c$ belong to.'
+else:
+    displayStem = 'Write the equation of the graph presented below in the form $f(x)=ax^2+bx+c$, assuming  $a=1$ or $a=-1$.'
 displayProblem = f"{thisQuestion}{version}"
 displaySolution = "f(x) = %s" %generatePolynomialDisplay(solution[0])
 generalComment = "When the graph is pointing up, $a=1$. When the graph is pointing down, $a=-1$. Be sure to use Vertex Form: $y = a(x-h)^2+k$."

@@ -11,6 +11,7 @@ if debug == "save":
     version=sys.argv[5]
     thisQuestion=sys.argv[6]
     OS_type=sys.argv[7]
+    response_type=sys.argv[8]
 else:
     version="Z"
     thisQuestion="debug_image"
@@ -89,7 +90,10 @@ choiceComments = [answerList[0][1], answerList[1][1], answerList[2][1], answerLi
 answerLetterIndicators = [answerList[0][2], answerList[1][2], answerList[2][2], answerList[3][2], answerList[4][2]]
 answerLetter = identifyAnswerLetter(answerLetterIndicators)
 ### DEFINE STEM, PROBLEM, GENERAL COMMENT ###
-displayStem = 'Find the equation of the line described below. Write the linear equation as $ y=mx+b $ and choose the intervals that contain $m$ and $b$.'
+if response_type=="Multiple-Choice":
+    displayStem = 'Find the equation of the line described below. Write the linear equation in the form $ y=mx+b $ and choose the intervals that contain $m$ and $b$.'
+else:
+    displayStem = 'Find the equation of the line described below. Write the linear equation in the form $y=mx+b$.'
 if B < 0:
     standardFormParOrPer = "%s x - %s y" %(A, -B)
 else:

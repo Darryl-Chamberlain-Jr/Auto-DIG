@@ -12,6 +12,7 @@ if debug == "save":
     version=sys.argv[5]
     thisQuestion=sys.argv[6]
     OS_type=sys.argv[7]
+    response_type=sys.argv[8]
 else:
     version="Z"
     thisQuestion="debug_image"
@@ -109,7 +110,10 @@ while (solutionList[0]==solutionList[1] or solutionList[0]==solutionList[2] or s
 precision = 1
 intervalOptions = createIntervalOptions(solutionList, intervalRange, precision)
 problem = generateProblem(solution)
-displayStem = 'Factor the quadratic below. Then, choose the intervals that contain the constants in the form $(ax+b)(cx+d); b \\leq d.$'
+if response_type=="Multiple-Choice":
+    displayStem = 'Factor the quadratic below. Then, choose the intervals that contain the constants in the form $(ax+b)(cx+d); b \\leq d.$'
+else:
+    displayStem = 'Factor the quadratic below into the form $(ax+b)(cx+d)$.'
 
 displayProblem = generatePolynomialDisplay(problem)
 

@@ -37,6 +37,17 @@ do
         zenity --info --width=200 --title="${titleOfProgram[@]}" --text="Exiting now. Have a great day!"
         break
     fi
+    # Designate the exam as free response or multiple-choice
+    response_type=$(zenity \
+        --title="${titleOfProgram[@]}" \
+        --height=200 \
+        --width=250 \
+        --list \
+        --text '<b> Type of assessment? </b>' \
+        --column 'Response type...' \
+        "Multiple-Choice" \
+        "Free-Response"
+    )
     # Currently used to denote the semester the exam is taking place in. Flexible to print anything the user wants in the bottom-right of the page. Can take spaces.
     footnote_right=$(zenity \
         --title="${titleOfProgram[@]}" \
@@ -179,16 +190,16 @@ do
                     # Easier-to-read script name.
                     question_py="/$DIR/Code/$code_folder/$code_subfolder/$question.py"
                     # Actual python script to generate and save question information to the corresponding database.
-                    python3 $question_py $DIR "save" $full_db_name $question_list_name $version $question $OSTYPE 2>> "/home/${USER}/git-repos/Auto-DIG/ErrorMessages/full_error_messages.txt"
+                    python3 $question_py $DIR "save" $full_db_name $question_list_name $version $question $OSTYPE $response_type 2>> "/home/${USER}/git-repos/Auto-DIG/ErrorMessages/full_error_messages.txt"
                     return_error=$?
                     error_counter=$(( error_counter+1 ))
                 done # Question data has now been saved with the metadata.
 
                 # Python script to import question data saved in the database into a latex file.
-                python3 /$DIR/PythonScripts/ScriptsForPDFs/printQuestions.py "Print questions to exam" $DIR $file_name $full_db_name $question_list_name $question $version $OSTYPE "single"
-                python3 /$DIR/PythonScripts/ScriptsForPDFs/printQuestions.py "Print questions to key" $DIR $file_name $full_db_name $question_list_name $question $version $OSTYPE "single"
-                python3 /$DIR/PythonScripts/ScriptsForPDFs/printQuestions.py "Print questions to exam" $DIR $file_name $full_db_name $question_list_name $question $version $OSTYPE "combined"
-                python3 /$DIR/PythonScripts/ScriptsForPDFs/printQuestions.py "Print questions to key" $DIR $file_name $full_db_name $question_list_name $question $version $OSTYPE "combined"
+                python3 /$DIR/PythonScripts/ScriptsForPDFs/printQuestions.py "Print questions to exam" $DIR $file_name $full_db_name $question_list_name $question $version $OSTYPE "single" $response_type
+                python3 /$DIR/PythonScripts/ScriptsForPDFs/printQuestions.py "Print questions to key" $DIR $file_name $full_db_name $question_list_name $question $version $OSTYPE "single" $response_type
+                python3 /$DIR/PythonScripts/ScriptsForPDFs/printQuestions.py "Print questions to exam" $DIR $file_name $full_db_name $question_list_name $question $version $OSTYPE "combined" $response_type
+                python3 /$DIR/PythonScripts/ScriptsForPDFs/printQuestions.py "Print questions to key" $DIR $file_name $full_db_name $question_list_name $question $version $OSTYPE "combined" $response_type
                 # Increments the ${counter} by ${question_step} to display progress to user.
                 counter=$( echo "scale=2;$counter+$question_step" | bc )
             done

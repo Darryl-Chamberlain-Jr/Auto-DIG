@@ -12,6 +12,7 @@ if debug == "save":
     version=sys.argv[5]
     thisQuestion=sys.argv[6]
     OS_type=sys.argv[7]
+    response_type=sys.argv[8]
 else:
     version="Z"
     thisQuestion="debug_image"
@@ -104,6 +105,7 @@ def generateGraphs(aCoeffFtG, vertexFtG):
 figureAnswerList = generateGraphs(aCoeffFtG, vertexFtG)
 answerLetter = figureAnswerList[0][0]
 
+# Note the stem is the same for multiple-choice and free-response.
 displayStem = 'Graph the equation below.'
 if aCoeffFtG < 0:
     if vertexFtG[0] < 0:

@@ -12,6 +12,7 @@ if debug == "save":
     version=sys.argv[5]
     thisQuestion=sys.argv[6]
     OS_type=sys.argv[7]
+    response_type=sys.argv[8]
 else:
     version="Z"
     thisQuestion="debug_image"
@@ -133,7 +134,10 @@ choiceComments = [answerList[0][1], answerList[1][1], answerList[2][1], answerLi
 answerLetterIndicators = [answerList[0][2], answerList[1][2], answerList[2][2], answerList[3][2], answerList[4][2]]
 answerLetter = identifyAnswerLetter(answerLetterIndicators)
 ### DEFINE STEM, PROBLEM, GENERAL COMMENT AS STRINGS
-displayStem = 'Write the equation of the line in the graph below in Standard form $Ax+By=C$. Then, choose the intervals that contain $A, B, \\text{ and } C$.'
+if response_type=="Multiple-Choice":
+    displayStem = 'Write the equation of the line in the graph below in Standard Form $Ax+By=C$. Then, choose the intervals that contain $A, B, \\text{ and } C$.'
+else:
+    displayStem = "Write the equation of the line in the graph below in Standard Form $Ax+By=C$."
 displayProblem = "\\text{Equation that was graphed:} f(x)= %s" %generatePolynomialDisplay(slopeInt)
 generalComment = "Standard form is supposed to have $A > 0$ and all fractions removed."
 

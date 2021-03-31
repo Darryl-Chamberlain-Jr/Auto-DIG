@@ -12,6 +12,7 @@ if debug == "save":
     version=sys.argv[5]
     thisQuestion=sys.argv[6]
     OS_type=sys.argv[7]
+    response_type=sys.argv[8]
 else:
     version="Z"
     thisQuestion="debug_image"
@@ -178,7 +179,10 @@ solutionList = [[answer[0], answer[1]], [distractor1[0], distractor1[1]], [distr
 precision = 1
 intervalOptions = createIntervalOptions(solutionList, intervalRange, precision)
 
-displayStem = 'Solve the quadratic equation below. Then, choose the intervals that the solutions $x_1$ and $x_2$ belong to, with $x_1 \\leq x_2$.'
+if response_type=="Multiple-Choice":
+    displayStem = 'Solve the quadratic equation below. Then, choose the intervals that the solutions $x_1$ and $x_2$ belong to, with $x_1 \\leq x_2$.'
+else:
+    displayStem = 'Solve the quadratic equation below.'
 displayProblem = "%s = 0" %generatePolynomialDisplay(problem)
 displaySolution = "x_1 = %.3f \\text{ and } x_2 = %.3f" %(answer[0], answer[1])
 generalComment = "This question can be factored, but it may be faster to find the solutions via the Quadratic Equation."

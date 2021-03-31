@@ -10,6 +10,7 @@ if debug == "save":
     version=sys.argv[5]
     thisQuestion=sys.argv[6]
     OS_type=sys.argv[7]
+    response_type=sys.argv[8]
 else:
     version="Z"
     thisQuestion="debug_image"
@@ -70,7 +71,10 @@ choiceComments = [answerList[0][1], answerList[1][1], answerList[2][1], answerLi
 answerLetterIndicators = [answerList[0][2], answerList[1][2], answerList[2][2], answerList[3][2], answerList[4][2]]
 answerLetter = identifyAnswerLetter(answerLetterIndicators)
 ### DEFINE STEM, PROBLEM, GENERAL COMMENT AS STRINGS ###
-displayStem = 'First, find the equation of the line containing the two points below. Then, write the equation as $ y=mx+b $ and choose the intervals that contain $m$ and $b$.'
+if response_type=="Multiple-Choice":
+    displayStem = 'First, find the equation of the line containing the two points below. Then, write the equation in the form $ y=mx+b $ and choose the intervals that contain $m$ and $b$.'
+else:
+    displayStem = 'First, find the equation of the line containing the two points below. Then, write the equation in the form $ y=mx+b $.'
 displayProblem = "(%s, %s) \\text{ and } (%s, %s)" %(pointOne[0], pointOne[1], pointTwo[0], pointTwo[1])
 generalComment = "Remember to keep your points in order when plugging in to the slope formula."
 

@@ -10,6 +10,7 @@ if debug == "save":
     version=sys.argv[5]
     thisQuestion=sys.argv[6]
     OS_type=sys.argv[7]
+    response_type=sys.argv[8]
 else:
     version="Z"
     thisQuestion="debug_image"
@@ -74,8 +75,10 @@ intervalOptions2 = createIntervalOptions(solutionAndNegative, 4, precision)
 intervalOptions3 = createIntervalOptions(solutionAndNegative, 4, precision)
 intervalOptions4 = createIntervalOptions(solutionAndNegative, 4, precision)
 
-displayStem = 'Solve the linear inequality below. Then, choose the constant and interval combination that describes the solution set.'
-
+if response_type=="Multiple-Choice":
+    displayStem = 'Solve the linear inequality below. Then, choose the constant and interval combination that describes the solution set.'
+else:
+    displayStem = 'Solve the linear inequality below.'
 problemType = random.randint(0,3)
 
 if problemType == 0:

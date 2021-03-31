@@ -9,6 +9,7 @@ if debug == "save":
     version=sys.argv[5]
     thisQuestion=sys.argv[6]
     OS_type=sys.argv[7]
+    response_type=sys.argv[8]
 else:
     version="Z"
     thisQuestion="debug_image"
@@ -135,7 +136,10 @@ answerList = [option0, option1, option2, option3, option4]
 random.shuffle(answerList)
 
 ### DEFINE STEM, PROBLEM, GENERAL COMMENT ###
-displayStem = 'Choose the \\textbf{smallest} set of Real numbers that the number below belongs to.'
+if response_type=="Multiple-Choice":
+    displayStem = 'Choose the \\textbf{smallest} set of Real numbers that the number below belongs to.'
+else:
+    displayStem = 'What is the \\textbf{smallest} set of Real numbers that the number below belongs to?'
 # displayProblem was defined previously
 generalComment = "First, you \\textbf{NEED} to simplify the expression. This question simplifies to $%s$. \n \n Be sure you look at the simplified fraction and not just the decimal expansion. Numbers such as 13, 17, and 19 provide \\textbf{long but repeating/terminating decimal expansions!} \n \n The only ways to *not* be a Real number are: dividing by 0 or taking the square root of a negative number. \n \n Irrational numbers are more than just square root of 3: adding or subtracting values from square root of 3 is also irrational." %simplifiedNumber
 

@@ -1,0 +1,37 @@
+Traceback (most recent call last):
+  File "/home/dchamberlain31/git-repos/Auto-DIG/Code/Core/04quadratic/quadraticFormulaCopy.py", line 75, in <module>
+    intervalOptions = createIntervalOptions(solutionList, intervalRange, precision)
+  File "/home/dchamberlain31/git-repos/Auto-DIG/PythonScripts/ScriptsForQuestionCode/intervalMaskingMethod.py", line 129, in createIntervalOptions
+    intervalMatrix[i][j] = cleanInterval(intervalMatrix[i][j])
+  File "/home/dchamberlain31/git-repos/Auto-DIG/PythonScripts/ScriptsForQuestionCode/intervalMaskingMethod.py", line 30, in cleanInterval
+    return [format_number(str(float(str(interval[0])))), format_number(str(float(str(interval[1]))))]
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/home/dchamberlain31/git-repos/Auto-DIG/Code/Core/04quadratic/quadraticFormulaCopy.py", line 75, in <module>
+    intervalOptions = createIntervalOptions(solutionList, intervalRange, precision)
+  File "/home/dchamberlain31/git-repos/Auto-DIG/PythonScripts/ScriptsForQuestionCode/intervalMaskingMethod.py", line 122, in createIntervalOptions
+    setIntervals = createDisjointIntervalList(currentSet, intervalRange, precision)
+  File "/home/dchamberlain31/git-repos/Auto-DIG/PythonScripts/ScriptsForQuestionCode/intervalMaskingMethod.py", line 92, in createDisjointIntervalList
+    intervalList = createIntervalList(solutions, intervalRange, precision)
+  File "/home/dchamberlain31/git-repos/Auto-DIG/PythonScripts/ScriptsForQuestionCode/intervalMaskingMethod.py", line 82, in createIntervalList
+    intervalList.append(createInterval(solutions[i], intervalRange, precision))
+  File "/home/dchamberlain31/git-repos/Auto-DIG/PythonScripts/ScriptsForQuestionCode/intervalMaskingMethod.py", line 59, in createInterval
+    createInterval(solution, intervalRange)
+  File "/home/dchamberlain31/git-repos/Auto-DIG/PythonScripts/ScriptsForQuestionCode/intervalMaskingMethod.py", line 43, in createInterval
+    createInterval(solution, intervalRange)
+  File "/home/dchamberlain31/git-repos/Auto-DIG/PythonScripts/ScriptsForQuestionCode/intervalMaskingMethod.py", line 43, in createInterval
+    createInterval(solution, intervalRange)
+  File "/home/dchamberlain31/git-repos/Auto-DIG/PythonScripts/ScriptsForQuestionCode/intervalMaskingMethod.py", line 43, in createInterval
+    createInterval(solution, intervalRange)
+  [Previous line repeated 987 more times]
+  File "/home/dchamberlain31/git-repos/Auto-DIG/PythonScripts/ScriptsForQuestionCode/intervalMaskingMethod.py", line 40, in createInterval
+    leftPoint = round(solution - math.floor(abs(random.gauss(0, intervalRange/2))), 2)
+RecursionError: maximum recursion depth exceeded while calling a Python object
+Traceback (most recent call last):
+  File "/home/dchamberlain31/git-repos/Auto-DIG/Code/Core/04quadratic/quadraticFormula.py", line 75, in <module>
+    intervalOptions = createIntervalOptions(solutionList, intervalRange, precision)
+  File "/home/dchamberlain31/git-repos/Auto-DIG/PythonScripts/ScriptsForQuestionCode/intervalMaskingMethod.py", line 129, in createIntervalOptions
+    intervalMatrix[i][j] = cleanInterval(intervalMatrix[i][j])
+  File "/home/dchamberlain31/git-repos/Auto-DIG/PythonScripts/ScriptsForQuestionCode/intervalMaskingMethod.py", line 30, in cleanInterval
+    return [format_number(str(float(str(interval[0])))), format_number(str(float(str(interval[1]))))]
+IndexError: list index out of range
