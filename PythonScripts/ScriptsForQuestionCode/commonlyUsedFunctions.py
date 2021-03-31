@@ -84,8 +84,6 @@ def generateTerms(coefficients):
             terms = ["%sx^{%d}" %(coefficients[0], len(coefficients)-1)]
     i=i+1
     while i < len(coefficients):
-        if coefficients[i] == 0:
-            pass
         if coefficients[i] < 0:
             if len(coefficients)-i-1 == 1:
                 if coefficients[i] == -1:
@@ -99,7 +97,7 @@ def generateTerms(coefficients):
                     terms.append("-x^{%d}" %(len(coefficients)-i-1))
                 else:
                     terms.append("-%s x^{%d}" %(-coefficients[i], len(coefficients)-i-1))
-        else:
+        elif coefficients[i] > 0:
             if len(coefficients)-i-1 == 1:
                 if coefficients[i] == 1:
                     terms.append("+x")
@@ -112,6 +110,8 @@ def generateTerms(coefficients):
                     terms.append("+ x^{%d}" %(len(coefficients)-i-1))
                 else:
                     terms.append("+%s x^{%d}" %(coefficients[i], len(coefficients)-i-1))
+        else:
+            pass
         i=i+1
     return terms
 

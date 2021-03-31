@@ -9,6 +9,7 @@ if debug == "save":
     version=sys.argv[5]
     thisQuestion=sys.argv[6]
     OS_type=sys.argv[7]
+    response_type=sys.argv[8]
 else:
     version="Z"
     thisQuestion="debug_image"
@@ -122,7 +123,8 @@ else:
 
 choices = [f"{thisQuestion}A{version}", f"{thisQuestion}B{version}", f"{thisQuestion}C{version}", f"{thisQuestion}D{version}"]
 
-displayStem = 'Describe the zero behavior of the zero $x = %s$ of the polynomial below.' %zeroOnDisplay
+#Note the stem does not change for multiple-choice versus free-response.
+displayStem=f'Describe the zero behavior of the zero $x = {zeroOnDisplay}$ of the polynomial below.'
 generalComment = "You will need to sketch the entire graph, then zoom in on the zero the question asks about."
 choiceComments = ["", "", "", ""]
 

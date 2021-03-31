@@ -9,6 +9,7 @@ if debug == "save":
     version=sys.argv[5]
     thisQuestion=sys.argv[6]
     OS_type=sys.argv[7]
+    response_type=sys.argv[8]
 else:
     version="Z"
     thisQuestion="debug_image"
@@ -94,7 +95,10 @@ solutionAndAnswers = createSolutionAndDistractors(coefficients)
 displayEquation = equationAndCoefficients[0]
 answerList = solutionAndAnswers[1]
 
-displayStem = 'Solve the equation for $x$ and choose the interval that contains the solution (if it exists).'
+if response_type=="Multiple-Choice":
+	displayStem = 'Solve the equation for $x$ and choose the interval that contains the solution (if it exists).'
+else:
+	displayStem="Solve the equation below for $x$."
 displayProblem = displayEquation
 displaySolution = "x = %.3f" %solutionAndAnswers[2]
 

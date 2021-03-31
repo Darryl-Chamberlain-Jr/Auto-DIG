@@ -9,6 +9,7 @@ if debug == "save":
     version=sys.argv[5]
     thisQuestion=sys.argv[6]
     OS_type=sys.argv[7]
+    response_type=sys.argv[8]
 else:
     version="Z"
     thisQuestion="debug_image"
@@ -55,7 +56,10 @@ distractor3Interval = [c3, "$%s$, which corresponds to multiplying out $(%s)(%s)
 distractor4Interval = [c4, "This corresponds to making an unanticipated error or not understanding how to use nonreal complex numbers to create the lowest-degree polynomial. If you chose this and are not sure what you did wrong, please contact the coordinator for help.", 0]
 
 ### DEFINE STEM, PROBLEM, GENERAL COMMENT ###
-displayStem = 'Construct the lowest-degree polynomial given the zeros below. Then, choose the intervals that contain the coefficients of the polynomial in the form $x^3+bx^2+cx+d$.'
+if response_type=="Multiple-Choice":
+	displayStem='Construct the lowest-degree polynomial given the zeros below. Then, choose the intervals that contain the coefficients of the polynomial in the form $x^3+bx^2+cx+d$.'
+else:
+	displayStem="Construct the lowest-degree polynomial given the zeros below."
 displayProblem = '%s \\text{ and } %s' %(displayZero1, displayZero2)
 generalComment = "Remember that the conjugate of $a+bi$ is $a-bi$. Since these zeros always come in pairs, we need to multiply out $(x-(%s))(x-(%s))(x-(%s))$." %(displayZero1, displayZero1Conjugate, displayZero2)
 

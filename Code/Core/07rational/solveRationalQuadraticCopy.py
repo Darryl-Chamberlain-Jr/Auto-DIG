@@ -1,5 +1,6 @@
 import sys
 import random
+from math import sqrt
 from sympy.abc import x
 from sympy.solvers import solve
 
@@ -11,6 +12,7 @@ if debug == "save":
     version=sys.argv[5]
     thisQuestion=sys.argv[6]
     OS_type=sys.argv[7]
+    response_type=sys.argv[8]
 else:
     version="Z"
     thisQuestion="debug_image"
@@ -178,8 +180,7 @@ def stringForAnswersWithTwoIntervals(leftInterval, rightInterval):
     return ['x_1 \\in [%s, %s] \\text{ and } x_2 \\in [%s,%s]' %(leftL, leftR, rightL, rightR)]
 
 intervalRange = 6
-#numberOfSolutions = random.randint(0, 2)
-numberOfSolutions = 2
+numberOfSolutions = random.randint(0, 2)
 coefficients = generateCoefficients(numberOfSolutions)
 
 factorNumerator1 = generatePolynomialDisplay([coefficients[0], 0])
@@ -256,7 +257,10 @@ elif (numberOfSolutions==2):
     distractor4Interval = [["\\text{All solutions lead to invalid or complex values in the equation.}"], "", 0]
 #else:
 #    print("Something went wrong, please try again.")
-displayStem = 'Solve the rational equation below. Then, choose the interval(s) that the solution(s) belongs to.'
+if response_type=="Multiple-Choice":
+	displayStem = 'Solve the rational equation below. Then, choose the interval(s) that the solution(s) belongs to.'
+else:
+	displayStem="Solve the rational equation below."
 displayProblem = '%s + %s = %s' %(firstTerm, secondTerm, thirdTerm)
 generalComment = "Distractors are different based on the number of solutions. Remember that after solving, we need to make sure our solution does not make the original equation divide by zero!"
 

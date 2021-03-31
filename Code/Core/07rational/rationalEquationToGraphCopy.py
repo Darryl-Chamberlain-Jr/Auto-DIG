@@ -11,6 +11,7 @@ if debug == "save":
     version=sys.argv[5]
     thisQuestion=sys.argv[6]
     OS_type=sys.argv[7]
+    response_type=sys.argv[8]
 else:
     version="Z"
     thisQuestion="debug_image"
@@ -136,7 +137,10 @@ if graphedRightOrWrong == 0:
 else:
     choiceComments.append("You likely thought the vertex was not correct for any of the graphs.")
 
-displayStem = "Choose the graph of the equation below."
+if response_type=="Multiple-Choice":
+	displayStem="Choose the graph of the equation below."
+else:
+	displayStem="Sketch a graph that represents the equation below."
 displayProblem = displayEquation(vertAsy, leadingCoeff, power, horShift)
 generalComment = "Remember that the general form of a basic rational equation is $ f(x) = \\frac{a}{(x-h)^n} + k$, where $a$ is the leading coefficient (and in this case, we assume is either $1$ or $-1$), $n$ is the degree (in this case, either $1$ or $2$), and $(h, k)$ is the intersection of the asymptotes."
 

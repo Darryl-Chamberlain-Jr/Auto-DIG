@@ -9,6 +9,7 @@ if debug == "save":
     version=sys.argv[5]
     thisQuestion=sys.argv[6]
     OS_type=sys.argv[7]
+    response_type=sys.argv[8]
 else:
     version="Z"
     thisQuestion="debug_image"
@@ -52,6 +53,7 @@ distractorExclude1Wrong = ["\\text{All Real numbers except } x = a, \\text{ wher
 distractorExclude1Right = ["\\text{All Real numbers except } x = a, \\text{ where } a \\in [%s, %s]" %(intervalOptions[2][0], intervalOptions[2][1]), "All Real numbers except $x = %.3f$, which corresponds to removing a distractor value from the denominator." %distractor1, 0]
 distractorAll = ["\\text{All Real numbers.}", "This corresponds to thinking the denominator has complex roots or that rational functions have a domain of all Real numbers.", 0]
 
+# Note the stem does not change for the multiple-choice vs free-response.
 displayStem = "Determine the domain of the function below."
 displayProblem = "f(x) = \\frac{%s}{%s}" %(numerator, quadraticDenominator)
 displaySolution = "\\text{All Real numbers except } x = %.3f \\text{ and } x = %.3f." %(exclude1, exclude2)

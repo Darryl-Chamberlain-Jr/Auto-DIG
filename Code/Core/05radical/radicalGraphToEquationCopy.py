@@ -11,6 +11,7 @@ if debug == "save":
     version=sys.argv[5]
     thisQuestion=sys.argv[6]
     OS_type=sys.argv[7]
+    response_type=sys.argv[8]
 else:
     version="Z"
     thisQuestion="debug_image"
@@ -166,7 +167,10 @@ else:
     choiceComments = [optionList[0][1], optionList[1][1], optionList[2][1], optionList[3][1], "* This is correct! The general shape of the graph is not correct for the radical power."]
     answerLetter = "E"
 
-displayStem = "Choose the equation of the function graphed below."
+if response_type=="Multiple-Choice":
+	displayStem="Choose the equation of the function graphed below."
+else:
+	displayStem="Write the equation of the function graphed below."
 displayProblem = f"{thisQuestion}{version}"
 generalComment = "Remember that the general form of a radical equation is $ f(x) = a \\sqrt[b]{x - h} + k$, where $a$ is the leading coefficient (and in this case, we assume is either $1$ or $-1$), $b$ is the root degree (in this case, either $2$ or $3$), and $(h, k)$ is the vertex."
 

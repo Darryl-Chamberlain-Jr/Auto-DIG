@@ -9,6 +9,7 @@ if debug == "save":
     version=sys.argv[5]
     thisQuestion=sys.argv[6]
     OS_type=sys.argv[7]
+    response_type=sys.argv[8]
 else:
     version="Z"
     thisQuestion="debug_image"
@@ -74,6 +75,7 @@ else:
 choices = [f"{thisQuestion}A{version}", f"{thisQuestion}B{version}", f"{thisQuestion}C{version}", f"{thisQuestion}D{version}"]
 choiceComments = ["The function is above the $x$-axis, then passes through.", "The function is below the $x$-axis, then touches.", "The function is above the $x$-axis, then touches.", "The function is below the $x$-axis, then passes through."]
 
+# Note the stem does not change for free-response vs multiple-choice.
 displayStem = 'Describe the end behavior of the polynomial below.'
 generalComment = "Remember that end behavior is determined by the leading coefficient AND whether the \\textbf{sum} of the multiplicities is positive or negative."
 

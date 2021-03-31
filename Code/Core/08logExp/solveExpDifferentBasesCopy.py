@@ -10,6 +10,7 @@ if debug == "save":
     version=sys.argv[5]
     thisQuestion=sys.argv[6]
     OS_type=sys.argv[7]
+    response_type=sys.argv[8]
 else:
     version="Z"
     thisQuestion="debug_image"
@@ -131,7 +132,10 @@ while (abs(solutionList[0]-solutionList[1]) < 1 or abs(solutionList[0]-solutionL
     solutionList = createSolutionAndDistractors(coefficients)
 answerList = createAnswerList(solutionList)
 
-displayStem = 'Solve the equation for $x$ and choose the interval that contains the solution (if it exists).'
+if response_type=="Multiple-Choice":
+	displayStem = 'Solve the equation for $x$ and choose the interval that contains the solution (if it exists).'
+else:
+	displayStem="Solve the equation below for $x$."
 displayProblem = equation
 displaySolution = "x = %.3f" %solutionList[0]
 generalComment = "\\textbf{General Comments:} This question was written so that the bases could not be written the same. You will need to take the log of both sides."

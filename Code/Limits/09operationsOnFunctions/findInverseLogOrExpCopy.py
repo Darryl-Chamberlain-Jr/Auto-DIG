@@ -12,6 +12,7 @@ if debug == "save":
     version=sys.argv[5]
     thisQuestion=sys.argv[6]
     OS_type=sys.argv[7]
+    response_type=sys.argv[8]
 else:
     version="Z"
     thisQuestion="debug_image"
@@ -117,7 +118,10 @@ distractor4Interval.append(0)
 answerList = [solutionInterval, distractor1Interval, distractor2Interval, distractor3Interval, distractor4Interval]
 random.shuffle(answerList)
 
-displayStem = "Find the inverse of the function below. Then, evaluate the inverse at $x = %d$ and choose the interval that $f^{-1}(%d)$ belongs to." %(evaluateAt, evaluateAt)
+if response_type=="Multiple-Choice":
+	displayStem=f"Find the inverse of the function below. Then, evaluate the inverse at $x = {evaluateAt}$ and choose the interval that $f^{-1}({evaluateAt})$ belongs to." 
+else:
+	displayStem=f"Find the inverse of the function below (if it exists). If the inverse exists, evaluate the inverse at $x = {evaluateAt}$."
 displayProblem = "f(x) = %s" %functionAndInverse[0]
 displaySolution = "f^{-1}(%d) = %s" %(evaluateAt, round(solution, 3))
 generalComment = "Natural log and exponential functions always have an inverse. Once you switch the $x$ and $y$, use the conversion $ e^y = x \\leftrightarrow y=\\ln(x)$."

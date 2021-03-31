@@ -12,6 +12,7 @@ if debug == "save":
     version=sys.argv[5]
     thisQuestion=sys.argv[6]
     OS_type=sys.argv[7]
+    response_type=sys.argv[8]
 else:
     version="Z"
     thisQuestion="debug_image"
@@ -185,7 +186,10 @@ else:
     displayNegativeOneZeroOffEquation = displayEquation(-aCoeff, randomZeros[0],  randomPower(2), randomZeros[1], randomPower(1), randomZeros[2], randomPower(1))
     d2comment = "The factor $%s$ should have an odd power and the leading coefficient should be the opposite sign." %displayFactor(randomZeros[0])
 
-displayStem = 'Which of the following equations \\textit{could} be of the graph presented below?'
+if response_type=="Multiple-Choice":
+	displayStem='Which of the following equations \\textit{could} be of the graph presented below?'
+else:
+	displayStem="Write an equation that \\textit{could} represent the graph below."
 displayProblem = f"{thisQuestion}{version}"
 displaySolution = displayEquationOfGraph
 generalComment = "General Comments: Draw the x-axis to determine which zeros are touching (and so have even multiplicity) or cross (and have odd multiplicity)."

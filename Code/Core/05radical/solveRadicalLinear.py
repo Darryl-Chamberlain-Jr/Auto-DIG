@@ -10,6 +10,7 @@ if debug == "save":
     version=sys.argv[5]
     thisQuestion=sys.argv[6]
     OS_type=sys.argv[7]
+    response_type=sys.argv[8]
 else:
     version="Z"
     thisQuestion="debug_image"
@@ -137,7 +138,10 @@ else:
     solutionInterval.append('*$x = %.3f$ leads to a complex value in the equation, so this is the correct option.' %solution)
     distractor1 = solution
 
-displayStem = 'Solve the radical equation below. Then, choose the interval(s) that the solution(s) belongs to.'
+if response_type=="Multiple-Choice":
+	displayStem='Solve the radical equation below. Then, choose the interval(s) that the solution(s) belongs to.'
+else:
+	displayStem='Solve the radical equation below.'
 displayProblem = '\\sqrt{%s} - \\sqrt{%s} = 0' %(displayFactor1, displayFactor2)
 if (numberOfSolutions==0):
     displaySolution = '\\text{All solutions lead to invalid or complex values in the equation.}'

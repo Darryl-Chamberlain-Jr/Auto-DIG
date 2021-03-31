@@ -9,6 +9,7 @@ if debug == "save":
     version=sys.argv[5]
     thisQuestion=sys.argv[6]
     OS_type=sys.argv[7]
+    response_type=sys.argv[8]
 else:
     version="Z"
     thisQuestion="debug_image"
@@ -132,7 +133,10 @@ else:
     answerList.append(solutionInterval)
     answerLetter = "E"
 
-displayStem = 'Which of the following intervals describes the %s of the function below?' %domainOrRange
+if response_type=="Multiple-Choice":
+	displayStem = f'Which of the following intervals describes the {domainOrRange} of the function below?' 
+else:
+	displayStem=f"Describe the {domainOrRange} of the function below."
 # Makes the function display correctly.
 if (a<0):
     if (h<0):

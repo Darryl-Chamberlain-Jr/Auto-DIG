@@ -9,6 +9,7 @@ if debug == "save":
     version=sys.argv[5]
     thisQuestion=sys.argv[6]
     OS_type=sys.argv[7]
+    response_type=sys.argv[8]
 else:
     version="Z"
     thisQuestion="debug_image"
@@ -85,7 +86,10 @@ b1, b2, b3, b4 = function2
 displayFunction1 = generatePolynomialDisplay(function1)
 displayFunction2 = generatePolynomialDisplay(function2)
 
-displayStem = "Choose the interval below that $f$ composed with $g$ at $x=%d$ is in." %evaluateAt
+if response_type=="Multiple-Choice":
+	displayStem=f"Choose the interval below that $f$ composed with $g$ at $x={evaluateAt}$ is in." 
+else:
+	displayStem=f"Evaluate $f$ composed with $g$ at $x={evaluateAt}$."
 displayProblem = "f(x) = %s \\text{ and } g(x) = %s" %(displayFunction1, displayFunction2)
 displaySolution = solution
 generalComment = "$f$ composed with $g$ at $x$ means $f(g(x))$. The order matters!"

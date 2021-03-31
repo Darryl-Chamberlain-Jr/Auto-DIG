@@ -10,6 +10,7 @@ if debug == "save":
     version=sys.argv[5]
     thisQuestion=sys.argv[6]
     OS_type=sys.argv[7]
+    response_type=sys.argv[8]
 else:
     version="Z"
     thisQuestion="debug_image"
@@ -126,9 +127,6 @@ if (functionAndMaybeInverse[1]=="no"):
     distractor4Interval.append(0)
 
     answerList = [distractor1Interval, distractor2Interval, distractor3Interval, distractor4Interval]
-
-    displayStem = "Find the inverse of the function below (if it exists). Then, evaluate the inverse at $x = %d$ and choose the interval that $f^{-1}(%d)$ belongs to." %(evaluateAt, evaluateAt)
-    displayProblem = "f(x) = %s" %functionAndMaybeInverse[0]
     displaySolution = solution[0]
 
     random.shuffle(answerList)
@@ -172,13 +170,17 @@ else:
     distractor4Interval.append(0)
 
     answerList = [solutionInterval, distractor1Interval, distractor2Interval, distractor3Interval]
-    displayStem = "Find the inverse of the function below (if it exists). Then, evaluate the inverse at $x = %d$ and choose the interval the $f^{-1}(%d)$ belongs to." %(evaluateAt, evaluateAt)
-    displayProblem = "f(x) = %s" %functionAndMaybeInverse[0]
     displaySolution = solution
 
     random.shuffle(answerList)
     answerList.append(distractor4Interval)
 
+evaluateAt=int(evaluateAt)
+if response_type=="Multiple-Choice":
+	displayStem=f"Find the inverse of the function below (if it exists). Then, evaluate the inverse at $x = {evaluateAt}$ and choose the interval that $f^{-1}({evaluateAt})$ belongs to." 
+else:
+	displayStem=f"Find the inverse of the function below (if it exists). If the inverse exists, evaluate the inverse at $x = {evaluateAt}$"
+displayProblem = f"f(x) = {functionAndMaybeInverse[0]}" 
 generalComment = "Be sure you check that the function is 1-1 before trying to find the inverse!"
 
 c0 = "f^{-1}(%d) \\in [%s, %s]" %(evaluateAt, answerList[0][0][0], answerList[0][0][1])

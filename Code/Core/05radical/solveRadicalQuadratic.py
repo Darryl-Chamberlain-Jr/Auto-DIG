@@ -11,6 +11,7 @@ if debug == "save":
     version=sys.argv[5]
     thisQuestion=sys.argv[6]
     OS_type=sys.argv[7]
+    response_type=sys.argv[8]
 else:
     version="Z"
     thisQuestion="debug_image"
@@ -200,7 +201,11 @@ else:
     distractor3Interval = [stringForAnswersWithTwoIntervals(intervalOptionsFirstSet[3], intervalOptionsSecondSet[1]), "$x = %.3f \\text{ and } x = %.3f$, which are the negative or absolute values of the values you would have gotten by solving the equation correctly." %(distractor3[0], distractor3[1]), 0]
     distractor4Interval = ['\\text{All solutions lead to invalid or complex values in the equation.}', "Corresponds to thinking that $x = %.3f \\text{ and } x = %.3f$ lead to negatives in at least one of the radicands." %(solution[0], solution[1]), 0]
     displaySolution = '\\text{that there are two solutions and they are } x = %.3f \\text{ and } x = %.3f.' %(solution[0], solution[1])
-displayStem = 'Solve the radical equation below. Then, choose the interval(s) that the solution(s) belongs to.'
+
+if response_type=="Multiple-Choice":
+	displayStem='Solve the radical equation below. Then, choose the interval(s) that the solution(s) belongs to.'
+else:
+	displayStem='Solve the radical equation below.'
 displayProblem = '\\sqrt{%s} - \\sqrt{%s} = 0' %(displayFactor1, displayFactor2)
 generalComment = "Distractors are different based on the number of solutions. For example, if the question is designed to have 0 options, then the distractors are solving the equation and not checking that the solutions lead to complex numbers (because plugging them in makes the value under the square root negative). Remember that after solving, we need to make sure our solution does not make the original equation take the square root of a negative number!"
 

@@ -10,6 +10,7 @@ if debug == "save":
     version=sys.argv[5]
     thisQuestion=sys.argv[6]
     OS_type=sys.argv[7]
+    response_type=sys.argv[8]
 else:
     version="Z"
     thisQuestion="debug_image"
@@ -305,7 +306,10 @@ displayFunction1 = function1[0]
 displayFunction2 = function2[0]
 
 # In the future, this should have 10 options
-displayStem = "%s the following functions, then choose the domain of the resulting function from the list below." %operation
+if response_type=="Multiple-Choice":
+	displayStem = f"{operation} the following functions, then choose the domain of the resulting function from the list below." 
+else:
+	displayStem=f"{operation} the following functions and write the domain of the resulting function."
 displayProblem = "f(x) = %s \\text{ and } g(x) = %s" %(displayFunction1, displayFunction2)
 generalComment = "The new domain is the intersection of the previous domains."
 

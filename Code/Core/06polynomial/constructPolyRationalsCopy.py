@@ -10,6 +10,7 @@ if debug == "save":
     version=sys.argv[5]
     thisQuestion=sys.argv[6]
     OS_type=sys.argv[7]
+    response_type=sys.argv[8]
 else:
     version="Z"
     thisQuestion="debug_image"
@@ -142,7 +143,10 @@ distractor2Interval = [intervalOptions[2], "$%s$, which corresponds to multiplyi
 distractor3Interval = [intervalOptions[3], "$%s$, which corresponds to multiplying out $(%s)(%s)(%s)$." %(generatePolynomialDisplay(distractor3), generatePolynomialDisplay([factor1[0], factor1[1]]), generatePolynomialDisplay([factor2[0], -factor2[1]]),generatePolynomialDisplay([factor3[0], -factor3[1]])), 0]
 distractor4Interval = [intervalOptions[4], "$%s$, which corresponds to multiplying out $(%s)(%s)(%s)$." %(generatePolynomialDisplay(distractor4), generatePolynomialDisplay([factor1[0], factor1[1]]), generatePolynomialDisplay([factor2[0], factor2[1]]),generatePolynomialDisplay([factor3[0], -factor3[1]])), 0]
 
-displayStem = 'Construct the lowest-degree polynomial given the zeros below. Then, choose the intervals that contain the coefficients of the polynomial in the form $ax^3+bx^2+cx+d$.'
+if response_type=="Multiple-Choice":
+	displayStem='Construct the lowest-degree polynomial given the zeros below. Then, choose the intervals that contain the coefficients of the polynomial in the form $ax^3+bx^2+cx+d$.'
+else:
+	displayStem="Construct the lowest-degree polynomial given the zeros below."
 
 if factor1[0] == 1:
     displayZero1 = factor1[1]

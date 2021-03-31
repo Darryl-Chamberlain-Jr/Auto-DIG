@@ -11,6 +11,7 @@ if debug == "save":
     version=sys.argv[5]
     thisQuestion=sys.argv[6]
     OS_type=sys.argv[7]
+    response_type=sys.argv[8]
 else:
     version="Z"
     thisQuestion="debug_image"
@@ -139,7 +140,10 @@ rootDegree, coefficient, pointOfInterest = createFunctionAndPointOfInterest()
 displaySolution = "radicalEquationToGraph%s%s" %(optionList[0], version)
 solution, distractor1, distractor2, distractor3 = createGraphs(rootDegree, coefficient, pointOfInterest, optionList, figureName)
 
-displayStem = "Choose the graph of the equation below."
+if response_type=="Multiple-Choice":
+	displayStem="Choose the graph of the equation below."
+else:
+	displayStem="Sketch a graph of the equation below."
 displayProblem = "f(x) = %s" %solution[0]
 generalComment = "Remember that the general form of a radical equation is $ f(x) = a \\sqrt[b]{x - h} + k $, where $a$ is the leading coefficient (and in this case, we assume is either 1 or -1), $b$ is the root degree (in this case, either 2 or 3), and $(h, k)$ is the vertex."
 answerLetter = optionList[0]

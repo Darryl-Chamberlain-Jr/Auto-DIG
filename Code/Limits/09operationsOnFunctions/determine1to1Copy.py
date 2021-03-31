@@ -10,6 +10,7 @@ if debug == "save":
     version=sys.argv[5]
     thisQuestion=sys.argv[6]
     OS_type=sys.argv[7]
+    response_type=sys.argv[8]
 else:
     version="Z"
     thisQuestion="debug_image"
@@ -125,7 +126,10 @@ else:
 
 answerList =  [response1, response2, response3, response4, response5]
 
-displayStem = "Determine whether the function below is 1-1."
+if response_type=="Multiple-Choice":
+	displayStem = "Determine whether the function below is 1-1."
+else:
+	displayStem="Determine whether the function below is 1-1. Provide reasoning for your response."
 displayProblem = "f(x) = %s" %functionAndSolution[2]
 displaySolution = "\\text{%s}" %functionAndSolution[1]
 generalComment = "There are only two valid options: The function is 1-1 OR No because there is a $y$-value that goes to 2 different $x$-values."

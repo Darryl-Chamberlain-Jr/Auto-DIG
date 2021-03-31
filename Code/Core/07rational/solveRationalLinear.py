@@ -11,6 +11,7 @@ if debug == "save":
     version=sys.argv[5]
     thisQuestion=sys.argv[6]
     OS_type=sys.argv[7]
+    response_type=sys.argv[8]
 else:
     version="Z"
     thisQuestion="debug_image"
@@ -119,7 +120,10 @@ if (distractor1 == distractor2):
     distractor2 = distractor2 + 1
 else:
     distractor2 = distractor2
-displayStem = 'Solve the rational equation below. Then, choose the interval(s) that the solution(s) belongs to.'
+if response_type=="Multiple-Choice":
+	displayStem = 'Solve the rational equation below. Then, choose the interval(s) that the solution(s) belongs to.'
+else:
+	displayStem="Solve the rational equation below."
 displayProblem = '\\frac{%s}{%s} + %s = \\frac{%s}{%s}' %(factorNumerator1, factorDenominator1, -factorNumerator2, factorNumerator3, factorDenominator3)
 if (numberOfSolutions==0):
     displaySolution = '\\text{all solutions are invalid or lead to complex values in the equation.}'

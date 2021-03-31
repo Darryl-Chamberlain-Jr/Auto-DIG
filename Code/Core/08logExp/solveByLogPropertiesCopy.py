@@ -10,6 +10,7 @@ if debug == "save":
     version=sys.argv[5]
     thisQuestion=sys.argv[6]
     OS_type=sys.argv[7]
+    response_type=sys.argv[8]
 else:
     version="Z"
     thisQuestion="debug_image"
@@ -132,7 +133,10 @@ for checkLetter in letters:
         break
     answerIndex = answerIndex+1
 
-displayStem = ' Solve the equation for $x$ and choose the interval that contains $x$ (if it exists).'
+if response_type=="Multiple-Choice":
+	displayStem = ' Solve the equation for $x$ and choose the interval that contains $x$ (if it exists).'
+else:
+	displayStem="Solve the equation below for $x$."
 generalComment = "\\textbf{General Comments}: After using the properties of logarithmic functions to break up the right-hand side, use $\\ln(e) = 1$ to reduce the question to a linear function to solve. You can put $\\ln(%d)$ into a calculator if you are having trouble." %numerator
 
 # String, Math Mode, or Graph

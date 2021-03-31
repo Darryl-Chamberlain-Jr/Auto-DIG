@@ -9,6 +9,7 @@ if debug == "save":
     version=sys.argv[5]
     thisQuestion=sys.argv[6]
     OS_type=sys.argv[7]
+    response_type=sys.argv[8]
 else:
     version="Z"
     thisQuestion="debug_image"
@@ -148,6 +149,7 @@ if rootDegree % 2 == 0:
 else:
     factor, displaySolution, choices, choiceComments, answerLetter = solutionAndDistractorsOdd()
 
+# Note stem does not change for multiple-choice versus free-response.
 displayStem = "What is the domain of the function below?"
 displayProblem = "f(x) = \\sqrt[%d]{%s}" %(rootDegree, factor)
 generalComment = "Remember that we cannot take the even root of a negative number - this is why the domain is only sometimes restricted! If we have an even root, we solve $%s \\geq 0$. Since this is an inequality, remember to flip the inequality if we divide by a negative number." %factor

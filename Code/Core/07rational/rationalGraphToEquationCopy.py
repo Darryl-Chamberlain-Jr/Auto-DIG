@@ -11,6 +11,7 @@ if debug == "save":
     version=sys.argv[5]
     thisQuestion=sys.argv[6]
     OS_type=sys.argv[7]
+    response_type=sys.argv[8]
 else:
     version="Z"
     thisQuestion="debug_image"
@@ -151,7 +152,10 @@ else:
     displaySolution = displayEquation(vertAsy, leadingCoeff, power, horShift)
     distractor1, distractor2, distractor3 = createDistractors(vertAsy, leadingCoeff, power, horShift, vertAsyOrHorAsyWrong)
 
-displayStem = "Choose the equation of the function graphed below."
+if response_type=="Multiple-Choice":
+	displayStem = "Choose the equation of the function graphed below."
+else:
+	displayStem="Write an equation that can represent the function graphed below."
 displayProblem = f"{thisQuestion}{version}"
 generalComment = "Remember that the general form of a basic rational equation is $ f(x) = \\frac{a}{(x-h)^n} + k$, where $a$ is the leading coefficient (and in this case, we assume is either $1$ or $-1$), $n$ is the degree (in this case, either $1$ or $2$), and $(h, k)$ is the intersection of the asymptotes."
 
