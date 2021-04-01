@@ -9,6 +9,7 @@ if debug == "save":
     version=sys.argv[5]
     thisQuestion=sys.argv[6]
     OS_type=sys.argv[7]
+    response_type=sys.argv[8]
 else:
     version="Z"
     thisQuestion="debug_image"
@@ -62,6 +63,7 @@ else:
     otherVolume = volumeA
     otherConc = concentrationA
 ##
+# Note there is no difference in the stem for multiple-choice vs free-response.
 displayStem = "Solve the modeling problem below, if possible."
 displayProblem = "In CHM2045L, Brittany created a %d liter %d percent solution of chemical $\\chi$ using two different solution percentages of chemical $\\chi$. When she went to write her lab report, she realized she forgot to write the amount of each solution she used! If she remembers she used %d percent and %d percent solutions, what was the amount she used of the %d percent solution?" %(totalVolume, totalConcentration, concentrationA, concentrationB, concQuestion)
 

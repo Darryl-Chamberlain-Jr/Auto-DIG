@@ -1,12 +1,4 @@
-libEGL warning: DRI2: failed to authenticate
-qt5ct: using qt5ct plugin
-libEGL warning: DRI2: failed to authenticate
-qt5ct: using qt5ct plugin
-libEGL warning: DRI2: failed to authenticate
-qt5ct: using qt5ct plugin
-libEGL warning: DRI2: failed to authenticate
-qt5ct: using qt5ct plugin
-libEGL warning: DRI2: failed to authenticate
-qt5ct: using qt5ct plugin
-libEGL warning: DRI2: failed to authenticate
-qt5ct: using qt5ct plugin
+Traceback (most recent call last):
+  File "/home/dchamberlain31/git-repos/Auto-DIG/Code/Modeling/11modelingLogExp/constructHalfLifeModel.py", line 49, in <module>
+    option3 = ["\\text{About } %d \\text{ %s}" %(constantModelHalfLife, constant_days), "This models half-life as a linear function.", 0]
+NameError: name 'constant_days' is not defined

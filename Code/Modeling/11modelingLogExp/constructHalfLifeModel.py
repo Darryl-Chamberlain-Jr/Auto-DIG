@@ -32,6 +32,9 @@ kBadSolve = log(finalAmount) / ( float(timePassed)*log(0.5*initialAmount) )
 halfLifeBadSolve = int(1.0/kBadSolve) * 365
 # Modeled as constant function A/A_0 = kt
 constantModelHalfLife = int( float(finalAmount)/float(initialAmount) * float(timePassed) ) * 365
+if constantModelHalfLife < 1:
+    constantModelHalfLife = 1
+    constant_days = "day"
 # Modeled with base of e rather than 1/2
 kWithBaseE = log( float(finalAmount)/float(initialAmount) )  /  ( float(timePassed)*log(exp(1)) )
 halfLifeWithBaseE = int(-1.0/kWithBaseE) * 365
@@ -43,7 +46,7 @@ displayProblem = "The half-life of an element is the amount of time it takes for
 
 option1 = ["\\text{About } %d \\text{ days}" %halfLife, "* This is the correct option.", 1]
 option2 = ["\\text{About } %d \\text{ days}" %halfLifeBadSolve, "This uses the correct model but solves for the exponential constant incorrectly.", 0]
-option3 = ["\\text{About } %d \\text{ days}" %constantModelHalfLife, "This models half-life as a linear function.", 0]
+option3 = ["\\text{About } %d \\text{ %s}" %(constantModelHalfLife, constant_days), "This models half-life as a linear function.", 0]
 option4 = ["\\text{About } %d \\text{ days}" %halfLifeWithBaseE, "This uses the correct model but a base of $e$ rather than $\\frac{1}{2}$.", 0]
 option5 = ["\\text{None of the above}", "Please contact the coordinator if you believe all the options above are incorrect.", 0]
 displaySolution = option1[0]

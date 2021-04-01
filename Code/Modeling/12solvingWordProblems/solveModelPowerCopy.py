@@ -9,6 +9,7 @@ if debug == "save":
     version=sys.argv[5]
     thisQuestion=sys.argv[6]
     OS_type=sys.argv[7]
+    response_type=sys.argv[8]
 else:
     version="Z"
     thisQuestion="debug_image"
@@ -32,8 +33,8 @@ while len(set(test_list)) != len(test_list):
     incorrectSolve = int(round(float(percentMore)/3.0, 0))
     test_list = [increaseEach, increaseSQRT, increaseHalf, incorrectSolve]
 
+# Note there is no difference in the stem for multiple-choice vs free-response.
 displayStem = "For the scenario below, use the model for the volume of a cylinder as $V = \\pi r^2 h$."
-
 displayProblem = "Pringles wants to add %d \\text{percent} more chips to their cylinder cans and minimize the design change of their cans. They've decided that the best way to minimize the design change is to increase the radius and height by the same percentage. What should this increase be?" %percentMore
 
 option1 = ["\\text{About } %d \\text{ percent}" %increaseEach, "* This is the correct option.", 1]

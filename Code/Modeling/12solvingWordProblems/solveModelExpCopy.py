@@ -12,6 +12,7 @@ if debug == "save":
     version=sys.argv[5]
     thisQuestion=sys.argv[6]
     OS_type=sys.argv[7]
+    response_type=sys.argv[8]
 else:
     version="Z"
     thisQuestion="debug_image"
@@ -48,6 +49,7 @@ while len(set(test_list)) != len(test_list):
     incorrectPropertiesEAsBase = int( math.ceil(    float( replicationRate * log( thresholdConfirmedCases ) ) / float(log(exp(1)*initialPop))    )   )
     test_list = [daysUntilThreshold, incorrectProperties, eAsBase, incorrectPropertiesEAsBase]
 
+# Note there is no difference in the stem for multiple-choice vs free-response.
 displayStem = "Solve the modeling problem below, if possible."
 displayProblem = "A new virus is spreading throughout the world. There were initially %d many cases reported, but the number of confirmed cases has %s every %d days. How long will it be until there are at least %d confirmed cases?" %(initialPop, growthDescription, replicationRate, thresholdConfirmedCases)
 
