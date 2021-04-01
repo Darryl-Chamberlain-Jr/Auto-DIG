@@ -52,7 +52,7 @@ def generate_relation(parent):
             counter += 1
     elif (parent == "absolute value"):
         m = 1; b = 0; counter = 0
-        while (counter < float(-b/m) ):
+        while (counter > float(-b/m) ) or (counter == float(-b/m) ):
             m = maybeMakeNegative(random.randint(2, 7))
             b = maybeMakeNegative(random.randint(1, 9))
             counter = maybeMakeNegative(random.randint(1, 4))
@@ -70,21 +70,21 @@ def generate_relation(parent):
             counter += 1
     elif (parent == "square root"):
         a = maybeMakeNegative(random.randint(1, 5))
-        counter = random.randint(1, 4)
+        counter = round(random.choice([2, 3, 5])**0.5, 2)
         relation = []
         for i in range(7):
             relation.append([counter, round(a*(counter)**0.5, 2)])
             counter += 1
     elif (parent == "cube root"):
         a = maybeMakeNegative(random.randint(1, 5))
-        counter = random.randint(1, 4)
+        counter = round(random.choice([2, 3, 5])**0.5, 2)
         relation = []
         for i in range(7):
             relation.append([counter, round(a*(counter)**(1./3.), 2)])
             counter += 1
     elif (parent == "exponential base 1/2"):
         a = maybeMakeNegative(random.randint(1, 5))
-        counter = random.randint(1, 4)
+        counter = round(random.choice([2, 3, 5])**0.5, 2)
         relation = []
         for i in range(7):
             relation.append([counter, round(a*(1/2)**(counter), 2)])

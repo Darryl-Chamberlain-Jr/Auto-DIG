@@ -25,7 +25,7 @@ from storeQuestionData import *
 ### DEFINITIONS ###
 # This should list all definitions used. Be sure to check the commonly used functions file before creating a new one.
 def generate_relation(parent):
-    if (parent == "linear"):
+    if (parent == "Linear"):
         m = maybeMakeNegative(random.randint(2, 7))
         b = maybeMakeNegative(random.randint(1, 9))
         linear_equation = numpy.poly1d([m, b])
@@ -34,7 +34,7 @@ def generate_relation(parent):
         for i in range(7):
             relation.append([counter, linear_equation(counter)])
             counter += 1
-    elif (parent == "quadratic"):
+    elif (parent == "Quadratic"):
         a = maybeMakeNegative(random.randint(1, 5))
         quadratic_equation = numpy.poly1d([a, 0, 0])
         counter = maybeMakeNegative(random.randint(1, 4))
@@ -42,15 +42,7 @@ def generate_relation(parent):
         for i in range(7):
             relation.append([counter, quadratic_equation(counter)])
             counter += 1
-    elif (parent == "cubic"):
-        a = maybeMakeNegative(random.randint(1, 5))
-        cubic_equation = numpy.poly1d([a, 0, 0, 0])
-        counter = maybeMakeNegative(random.randint(1, 4))
-        relation = []
-        for i in range(7):
-            relation.append([counter, cubic_equation(counter)])
-            counter += 1
-    elif (parent == "absolute value"):
+    elif (parent == "Absolute Value"):
         m = 1; b = 0; counter = 0
         while (counter > float(-b/m) ) or (counter == float(-b/m) ):
             m = maybeMakeNegative(random.randint(2, 7))
@@ -61,7 +53,7 @@ def generate_relation(parent):
         for i in range(7):
             relation.append([counter, abs(linear_equation(counter))])
             counter += 1
-    elif (parent == "exponential base 2"):
+    elif (parent == "Exponential base 2"):
         a = maybeMakeNegative(random.randint(1, 5))
         counter = random.randint(1, 4)
         relation = []
@@ -77,21 +69,29 @@ def generate_relation(parent):
         for i in range(7):
             relation.append([counter, linear_equation(counter)])
             counter += 1
-    elif (parent == "square root"):
+    elif (parent == "Quadratic irrational"):
+        a = maybeMakeNegative(random.randint(1, 5))
+        quadratic_equation = numpy.poly1d([a, 0, 0])
+        counter = round(random.choice([2, 3, 5])**0.5, 2)*(-1)**(random.randint(0, 1))
+        relation = []
+        for i in range(7):
+            relation.append([counter, quadratic_equation(counter)])
+            counter += 1
+    elif (parent == "Square Root"):
         a = maybeMakeNegative(random.randint(1, 5))
         counter = round(random.choice([2, 3, 5])**0.5, 2)
         relation = []
         for i in range(7):
             relation.append([counter, round(a*(counter)**0.5, 2)])
             counter += 1
-    elif (parent == "cube root"):
+    elif (parent == "Cube Root"):
         a = maybeMakeNegative(random.randint(1, 5))
         counter = round(random.choice([2, 3, 5])**0.5, 2)
         relation = []
         for i in range(7):
             relation.append([counter, round(a*(counter)**(1./3.), 2)])
             counter += 1
-    elif (parent == "exponential base 1/2"):
+    elif (parent == "Exponential base 1/2"):
         a = maybeMakeNegative(random.randint(1, 5))
         counter = round(random.choice([2, 3, 5])**0.5, 2)
         relation = []
@@ -135,64 +135,75 @@ def generate_relation(parent):
 
 ### VARIABLE DECLARATIONS ###
 # Declare the necessary variables.
-function_parents_integers = ["linear", "quadratic", "cubic", "absolute value", "exponential base 2"]
-function_parents_irrational = ["linear irrational", "square root", "cube root", "exponential base 1/2"]
+function_parents_integers = ["Linear", "Quadratic", "Absolute Value", "Exponential base 2"]
+function_parents_irrational = ["Linear irrational", "Square Root", "Cube Root", "Exponential base 1/2"]
 # Ideas for later nonfunction_parents: "x^2+y^2=1", "y=sqrt(1-x^2)"
 nonfunction_parents = ["x=y^2", "x=sqrt(y)", "x=|y|"]
-relation_is_function = random.randint(0, 1)
-relation_is_linear = random.randint(0, 1)
+# Describe all possible choices and choice comments.
+c_linear=["Linear", "A linear function would have a constant rate of change. As $x$ increases by some value, the $y$ value would increase by a constant amount.", 0]
+c_quadratic=["Quadratic", "A quadratic function would have a slowly increase rate of change. As $x$ increased, the $y$ value would increase by a slowly increasing amount.", 0]
+c_absolute_value=["Absolute Value", "An absolute value function would have a constant rate of change that at some point would change signs.", 0]
+c_exponential_base_2=["Exponential base 2", "An exponential function with base 2 would have a rate of change that increases extremely slowly at first, then extremely quickly.", 0]
+c_sqrt=["Square Root", "A square root function would have a slowly decreasing rate of change. As $x$ increased, the $y$ value would increase at a slower and slower rate.", 0]
+c_exponential_base_half=["Exponential base 1/2", "An exponential function with base 1/2 would have a rate of change that increases extremely quickly at first, then extremely slowly.", 0]
+all_integer_choices=[c_linear, c_quadratic, c_absolute_value, c_exponential_base_2]
+all_irrational_choices=[c_linear, c_sqrt, c_quadratic, c_exponential_base_half]
+# Choose whether the table can be represented by a function, then determine whether that function will have integer vs irrational inputs.
+relation_is_function = random.randint(0, 3) # Not a function appears 25% of time now.
+function_values_irrational = random.randint(0, 1)
 if relation_is_function == 0:
     relation_for_problem = random.choice(nonfunction_parents)
     relation = generate_relation(relation_for_problem)
-    displaySolution = "No"
-    answerLetter = "B"
-    yes_comment = "Notice how one $x$-value has two separate outputs? For a relation to be a function, every $x$-value needs exactly one output."
-    no_comment = "* Correct! An $x$-value has two separate outputs and thus this relation is not a function, let alone a linear function."
-elif relation_is_linear == 0:
-    displaySolution = "No"
-    answerLetter = "B"
-    function_value_types = ["integer", "float"]
-    function_choice = random.choice(function_value_types)
-    if function_choice == "integer":
-        relation_for_problem = random.choice(function_parents_integers)
-        while relation_for_problem == "linear":
-            relation_for_problem = random.choice(function_parents_integers)
+    if function_values_irrational == 0:
+        option_info=all_integer_choices
+        random.shuffle(option_info)
     else:
-        relation_for_problem = random.choice(function_parents_irrational)
-        while relation_for_problem == "linear irrational":
-            relation_for_problem = random.choice(function_parents_irrational)
-    relation = generate_relation(relation_for_problem)
-    yes_comment = "A linear function has a constant rate of growth. As $x$ increases/decreases, $y$ increases/decreases at the same rate. The table in this example does have a constant rate of change."
-    no_comment = f"* Correct! The table in this example does not have a constant rate of change. This relation is a {function_choice} function."
+        option_info=all_irrational_choices
+        random.shuffle(option_info)
+    choice_nonrelation=["Not a function", "The table does not describe a relation, therefore no function can be represented by the table.", 1]
+    option_info.append(choice_nonrelation)
+    displaySolution = "not a function"
 else:
-    displaySolution = "Yes"
-    answerLetter = "A"
-    function_value_types = ["integer", "float"]
-    function_choice = random.choice(function_value_types)
-    if function_choice == "integer":
-        relation_for_problem = "linear"
+    if function_values_irrational == 0:
+        option_info=all_integer_choices
+        random.shuffle(option_info)
+        option_info[0][2]=1
+        displaySolution = option_info[0][0]
+        random.shuffle(option_info)
+        option_info.append(["Not a function", "For a relation to be a function, every $x$-value needs exactly one output. That means for a relation to NOT be a function, we would need one $x$-value that has two or more different outputs.", 0])
+        relation=generate_relation(displaySolution)
     else:
-        relation_for_problem = "linear irrational"
-    relation = generate_relation(relation_for_problem)
-    yes_comment = "* Correct! As $x$ increases/decreases, $y$ increases/decreases at the same rate."
-    no_comment = "A linear function has a constant rate of growth. As $x$ increases/decreases, $y$ increases/decreases at the same rate."
+        option_info=all_irrational_choices
+        random.shuffle(option_info)
+        option_info[0][2]=1
+        displaySolution = option_info[0][0]
+        if displaySolution == "Linear":
+            relation_choice = "Linear irrational"
+        elif displaySolution == "Quadratic":
+            relation_choice = "Quadratic irrational"
+        else:
+            relation_choice = displaySolution
+        random.shuffle(option_info)
+        option_info.append(["Not a function", "For a relation to be a function, every $x$-value needs exactly one output. That means for a relation to NOT be a function, we would need one $x$-value that has two or more different outputs.", 0])
+        relation=generate_relation(relation_choice)
 
-displayStem = "Is the following relation a linear function?"
+# Note the stem does not change for multiple-choice vs free-response.
+displayStem = "What function type \\textit{could} represent the table below?"
 header_row = ["x", "y"]
 displayProblem = [header_row, relation[0], relation[1], relation[2], relation[3], relation[4], relation[5], relation[6]]
 
 ### DEFINE CHOICES, CHOICE COMMENTS, AND ANSWER LETTER
-c0 = ["Yes", f"{yes_comment}"]
-c1 = ["No", f"{no_comment}"]
-choices = [c0[0], c1[0]]
-choiceComments = [c0[1], c1[1]]
+choices = [option_info[i][0] for i in range(5)]
+choiceComments = [option_info[i][1] for i in range(5)]
+identifier_list = [option_info[i][2] for i in range(5)]
+answerLetter = identifyAnswerLetter(identifier_list)
 
 ### Define display variables ###
 # Options are: "String", "Math Mode", "Graph", or "Table"
 displayStemType="String"
 displayProblemType="Table"
 displayOptionsType="String"
-generalComment="For a relation to be a linear function, every $x$-value needs exactly one output AND there needs to be a constant rate of growth (as $x$ increases/decreases, $y$ increases/decreases at the same rate)."
+generalComment="To identify a function that could represent the table, identify the rate of change."
 
 ### Writes important information to database. ###
 if debug=="save":
