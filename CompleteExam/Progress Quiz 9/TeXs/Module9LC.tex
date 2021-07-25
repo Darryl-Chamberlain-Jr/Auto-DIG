@@ -1,0 +1,112 @@
+\documentclass[14pt]{extbook}
+\usepackage{multicol, enumerate, enumitem, hyperref, color, soul, setspace, parskip, fancyhdr} %General Packages
+\usepackage{amssymb, amsthm, amsmath, latexsym, units, mathtools} %Math Packages
+\everymath{\displaystyle} %All math in Display Style
+% Packages with additional options
+\usepackage[headsep=0.5cm,headheight=12pt, left=1 in,right= 1 in,top= 1 in,bottom= 1 in]{geometry}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{dashrule}  % Package to use the command below to create lines between items
+\newcommand{\litem}[1]{\item#1\hspace*{-1cm}\rule{\textwidth}{0.4pt}}
+\pagestyle{fancy}
+\lhead{Progress Quiz 9}
+\chead{}
+\rhead{Version C}
+\lfoot{9541-5764}
+\cfoot{}
+\rfoot{Summer C 2021}
+\begin{document}
+
+\begin{enumerate}
+\litem{
+Find the inverse of the function below. Then, evaluate the inverse at $x = 6$ and choose the interval that $f^-1(6)$ belongs to.\[ f(x) = e^{x-4}-4 \]\begin{enumerate}[label=\Alph*.]
+\item \( f^{-1}(6) \in [-7.31, -2.31] \)
+\item \( f^{-1}(6) \in [-1.7, 3.3] \)
+\item \( f^{-1}(6) \in [-7.31, -2.31] \)
+\item \( f^{-1}(6) \in [6.3, 9.3] \)
+\item \( f^{-1}(6) \in [-1.7, 3.3] \)
+
+\end{enumerate} }
+\litem{
+Multiply the following functions, then choose the domain of the resulting function from the list below.\[ f(x) = 8x + 2 \text{ and } g(x) = \sqrt{3x+14}  \]\begin{enumerate}[label=\Alph*.]
+\item \( \text{ The domain is all Real numbers less than or equal to } x = a, \text{ where } a \in [-2.17, 1.83] \)
+\item \( \text{ The domain is all Real numbers greater than or equal to } x = a, \text{ where } a \in [-5.67, -2.67] \)
+\item \( \text{ The domain is all Real numbers except } x = a, \text{ where } a \in [2.25, 7.25] \)
+\item \( \text{ The domain is all Real numbers except } x = a \text{ and } x = b, \text{ where } a \in [4.67, 12.67] \text{ and } b \in [6.67, 10.67] \)
+\item \( \text{ The domain is all Real numbers. } \)
+
+\end{enumerate} }
+\litem{
+Find the inverse of the function below (if it exists). Then, evaluate the inverse at $x = -14$ and choose the interval that $f^-1(-14)$ belongs to.\[ f(x) = 5 x^2 - 4 \]\begin{enumerate}[label=\Alph*.]
+\item \( f^{-1}(-14) \in [4.27, 4.55] \)
+\item \( f^{-1}(-14) \in [1.76, 2.08] \)
+\item \( f^{-1}(-14) \in [1.22, 1.83] \)
+\item \( f^{-1}(-14) \in [6.66, 7.48] \)
+\item \( \text{ The function is not invertible for all Real numbers. } \)
+
+\end{enumerate} }
+\litem{
+Subtract the following functions, then choose the domain of the resulting function from the list below.\[ f(x) = 7x + 8 \text{ and } g(x) = \sqrt{-4x+11}  \]\begin{enumerate}[label=\Alph*.]
+\item \( \text{ The domain is all Real numbers greater than or equal to } x = a, \text{ where } a \in [-5.6, -3.6] \)
+\item \( \text{ The domain is all Real numbers less than or equal to } x = a, \text{ where } a \in [-0.25, 3.75] \)
+\item \( \text{ The domain is all Real numbers except } x = a, \text{ where } a \in [-11.2, -6.2] \)
+\item \( \text{ The domain is all Real numbers except } x = a \text{ and } x = b, \text{ where } a \in [-9.8, -4.8] \text{ and } b \in [-4.2, 1.8] \)
+\item \( \text{ The domain is all Real numbers. } \)
+
+\end{enumerate} }
+\litem{
+Choose the interval below that $f$ composed with $g$ at $x=1$ is in.\[ f(x) = -x^{3} +2 x^{2} +x -3 \text{ and } g(x) = 2x^{3} +2 x^{2} -2 x \]\begin{enumerate}[label=\Alph*.]
+\item \( (f \circ g)(1) \in [1.69, 3.52] \)
+\item \( (f \circ g)(1) \in [-2.82, -0.76] \)
+\item \( (f \circ g)(1) \in [3.04, 5.12] \)
+\item \( (f \circ g)(1) \in [7.85, 8.59] \)
+\item \( \text{It is not possible to compose the two functions.} \)
+
+\end{enumerate} }
+\litem{
+Choose the interval below that $f$ composed with $g$ at $x=2$ is in.\[ f(x) = -2x^{3} +3 x^{2} +2 x \text{ and } g(x) = -2x^{3} +2 x^{2} +4 x \]\begin{enumerate}[label=\Alph*.]
+\item \( (f \circ g)(2) \in [-0.5, 0.1] \)
+\item \( (f \circ g)(2) \in [-0.5, 0.1] \)
+\item \( (f \circ g)(2) \in [9.4, 11] \)
+\item \( (f \circ g)(2) \in [5.2, 9.2] \)
+\item \( \text{It is not possible to compose the two functions.} \)
+
+\end{enumerate} }
+\litem{
+Determine whether the function below is 1-1.\[ f(x) = -20 x^2 - 247 x - 713 \]\begin{enumerate}[label=\Alph*.]
+\item \( \text{No, because there is a $y$-value that goes to 2 different $x$-values.} \)
+\item \( \text{Yes, the function is 1-1.} \)
+\item \( \text{No, because the domain of the function is not $(-\infty, \infty)$.} \)
+\item \( \text{No, because there is an $x$-value that goes to 2 different $y$-values.} \)
+\item \( \text{No, because the range of the function is not $(-\infty, \infty)$.} \)
+
+\end{enumerate} }
+\litem{
+Determine whether the function below is 1-1.\[ f(x) = 36 x^2 + 300 x + 625 \]\begin{enumerate}[label=\Alph*.]
+\item \( \text{No, because the domain of the function is not $(-\infty, \infty)$.} \)
+\item \( \text{No, because the range of the function is not $(-\infty, \infty)$.} \)
+\item \( \text{Yes, the function is 1-1.} \)
+\item \( \text{No, because there is a $y$-value that goes to 2 different $x$-values.} \)
+\item \( \text{No, because there is an $x$-value that goes to 2 different $y$-values.} \)
+
+\end{enumerate} }
+\litem{
+Find the inverse of the function below. Then, evaluate the inverse at $x = 10$ and choose the interval that $f^-1(10)$ belongs to.\[ f(x) = \ln{(x-3)}+5 \]\begin{enumerate}[label=\Alph*.]
+\item \( f^{-1}(10) \in [442417.39, 442419.39] \)
+\item \( f^{-1}(10) \in [150.41, 156.41] \)
+\item \( f^{-1}(10) \in [140.41, 151.41] \)
+\item \( f^{-1}(10) \in [3269014.37, 3269023.37] \)
+\item \( f^{-1}(10) \in [1097.63, 1104.63] \)
+
+\end{enumerate} }
+\litem{
+Find the inverse of the function below (if it exists). Then, evaluate the inverse at $x = 10$ and choose the interval that $f^-1(10)$ belongs to.\[ f(x) = \sqrt[3]{5 x + 4} \]\begin{enumerate}[label=\Alph*.]
+\item \( f^{-1}(10) \in [-199.5, -199.1] \)
+\item \( f^{-1}(10) \in [198.4, 199.8] \)
+\item \( f^{-1}(10) \in [199.5, 202.3] \)
+\item \( f^{-1}(10) \in [-203.4, -200.2] \)
+\item \( \text{ The function is not invertible for all Real numbers. } \)
+
+\end{enumerate} }
+\end{enumerate}
+
+\end{document}

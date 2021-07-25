@@ -1,0 +1,128 @@
+\documentclass[14pt]{extbook}
+\usepackage{multicol, enumerate, enumitem, hyperref, color, soul, setspace, parskip, fancyhdr} %General Packages
+\usepackage{amssymb, amsthm, amsmath, latexsym, units, mathtools} %Math Packages
+\everymath{\displaystyle} %All math in Display Style
+% Packages with additional options
+\usepackage[headsep=0.5cm,headheight=12pt, left=1 in,right= 1 in,top= 1 in,bottom= 1 in]{geometry}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{dashrule}  % Package to use the command below to create lines between items
+\newcommand{\litem}[1]{\item#1\hspace*{-1cm}\rule{\textwidth}{0.4pt}}
+\pagestyle{fancy}
+\lhead{Progress Quiz 6}
+\chead{}
+\rhead{Version C}
+\lfoot{4563-7456}
+\cfoot{}
+\rfoot{Summer C 2021}
+\begin{document}
+
+\begin{enumerate}
+\litem{
+For the graph below, find the value(s) $a$ that makes the statement true: $ \displaystyle \lim_{x \rightarrow a} f(x) = 3$.
+\begin{center}
+    \includegraphics[width=0.5\textwidth]{../Figures/evaluateLimitGraphicallyC.png}
+\end{center}
+\begin{enumerate}[label=\Alph*.]
+\item \( -2 \)
+\item \( 1 \)
+\item \( -\infty \)
+\item \( \text{Multiple } a \text{ make the statement true}. \)
+\item \( \text{No } a \text{ make the statement true}. \)
+
+\end{enumerate} }
+\litem{
+Evaluate the limit below, if possible.\[ \lim_{x \rightarrow 9} \frac{\sqrt{7x - 14} - 7}{2x - 18} \]\begin{enumerate}[label=\Alph*.]
+\item \( 1.323 \)
+\item \( \infty \)
+\item \( 0.036 \)
+\item \( 0.071 \)
+\item \( \text{None of the above} \)
+
+\end{enumerate} }
+\litem{
+Evaluate the one-sided limit of the function $f(x)$ below, if possible.\[ \lim_{x \rightarrow 1^+} \frac{1}{(x-1)^8}+4 \]\begin{enumerate}[label=\Alph*.]
+\item \( -\infty \)
+\item \( f(1) \)
+\item \( \infty \)
+\item \( \text{The limit does not exist} \)
+\item \( \text{None of the above} \)
+
+\end{enumerate} }
+\litem{
+To estimate the one-sided limit of the function below as $x$ approaches 8 from the left, which of the following sets of numbers should you use?\[ \frac{\frac{8}{x} - 1}{x - 8} \]\begin{enumerate}[label=\Alph*.]
+\item \( \{ 7.9000, 7.9900, 8.0100, 8.1000 \} \)
+\item \( \{ 8.1000, 8.0100, 8.0010, 8.0001 \} \)
+\item \( \{ 7.9000, 7.9900, 7.9990, 7.9999 \} \)
+\item \( \{ 8.0000, 7.9000, 7.9900, 7.9990 \} \)
+\item \( \{ 8.0000, 8.1000, 8.0100, 8.0010 \} \)
+
+\end{enumerate} }
+\litem{
+Based on the information below, which of the following statements is always true?
+\begin{center}
+    \textit{ As $x$ approaches $9$, $f(x)$ approaches $7.206$. }
+\end{center}
+\begin{enumerate}[label=\Alph*.]
+\item \( f(x) = 9 \text{ when } x \text{ is close to } 7.206 \)
+\item \( f(x) = 7.206 \text{ when } x \text{ is close to } 9 \)
+\item \( f(x) \text{ is close to or exactly } 9 \text{ when } x \text{ is close to } 7.206 \)
+\item \( f(x) \text{ is close to or exactly } 7.206 \text{ when } x \text{ is close to } 9 \)
+\item \( \text{None of the above are always true.} \)
+
+\end{enumerate} }
+\litem{
+Based on the information below, which of the following statements is always true?
+\begin{center}
+    \textit{ As $x$ approaches $9$, $f(x)$ approaches $8.194$. }
+\end{center}
+\begin{enumerate}[label=\Alph*.]
+\item \( f(8) \text{ is close to or exactly } 9 \)
+\item \( f(9) \text{ is close to or exactly } 8 \)
+\item \( f(9) = 8 \)
+\item \( f(8) = 9 \)
+\item \( \text{None of the above are always true.} \)
+
+\end{enumerate} }
+\litem{
+To estimate the one-sided limit of the function below as $x$ approaches 3 from the left, which of the following sets of numbers should you use?\[ \frac{\frac{3}{x} - 1}{x - 3} \]\begin{enumerate}[label=\Alph*.]
+\item \( \{ 2.9000, 2.9900, 3.0100, 3.1000 \} \)
+\item \( \{ 3.0000, 2.9000, 2.9900, 2.9990 \} \)
+\item \( \{ 3.1000, 3.0100, 3.0010, 3.0001 \} \)
+\item \( \{ 3.0000, 3.1000, 3.0100, 3.0010 \} \)
+\item \( \{ 2.9000, 2.9900, 2.9990, 2.9999 \} \)
+
+\end{enumerate} }
+\litem{
+Evaluate the one-sided limit of the function $f(x)$ below, if possible.\[ \lim_{x \rightarrow -1^-} \frac{8}{(x+1)^5}+1 \]\begin{enumerate}[label=\Alph*.]
+\item \( \infty \)
+\item \( f(-1) \)
+\item \( -\infty \)
+\item \( \text{The limit does not exist} \)
+\item \( \text{None of the above} \)
+
+\end{enumerate} }
+\litem{
+Evaluate the limit below, if possible.\[ \lim_{x \rightarrow 8} \frac{\sqrt{3x - 8} - 4}{6x - 48} \]\begin{enumerate}[label=\Alph*.]
+\item \( \infty \)
+\item \( 0.021 \)
+\item \( 0.289 \)
+\item \( 0.125 \)
+\item \( \text{None of the above} \)
+
+\end{enumerate} }
+\litem{
+For the graph below, find the value(s) $a$ that makes the statement true: $ \displaystyle \lim_{x \rightarrow a} f(x) = 0$.
+\begin{center}
+    \includegraphics[width=0.5\textwidth]{../Figures/evaluateLimitGraphicallyCopyC.png}
+\end{center}
+\begin{enumerate}[label=\Alph*.]
+\item \( 3 \)
+\item \( -4 \)
+\item \( 0 \)
+\item \( \text{Multiple } a \text{ make the statement true}. \)
+\item \( \text{No } a \text{ make the statement true}. \)
+
+\end{enumerate} }
+\end{enumerate}
+
+\end{document}

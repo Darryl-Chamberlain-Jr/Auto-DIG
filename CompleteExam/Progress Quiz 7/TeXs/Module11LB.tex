@@ -1,0 +1,128 @@
+\documentclass[14pt]{extbook}
+\usepackage{multicol, enumerate, enumitem, hyperref, color, soul, setspace, parskip, fancyhdr} %General Packages
+\usepackage{amssymb, amsthm, amsmath, latexsym, units, mathtools} %Math Packages
+\everymath{\displaystyle} %All math in Display Style
+% Packages with additional options
+\usepackage[headsep=0.5cm,headheight=12pt, left=1 in,right= 1 in,top= 1 in,bottom= 1 in]{geometry}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{dashrule}  % Package to use the command below to create lines between items
+\newcommand{\litem}[1]{\item#1\hspace*{-1cm}\rule{\textwidth}{0.4pt}}
+\pagestyle{fancy}
+\lhead{Progress Quiz 7}
+\chead{}
+\rhead{Version B}
+\lfoot{3510-5252}
+\cfoot{}
+\rfoot{Summer C 2021}
+\begin{document}
+
+\begin{enumerate}
+\litem{
+Evaluate the limit below, if possible.\[ \lim_{x \rightarrow 8} \frac{\sqrt{7x - 7} - 7}{4x - 32} \]\begin{enumerate}[label=\Alph*.]
+\item \( 0.071 \)
+\item \( \infty \)
+\item \( 0.661 \)
+\item \( 0.018 \)
+\item \( \text{None of the above} \)
+
+\end{enumerate} }
+\litem{
+Based on the information below, which of the following statements is always true?
+\begin{center}
+    \textit{ As $x$ approaches $7$, $f(x)$ approaches $\infty$. }
+\end{center}
+\begin{enumerate}[label=\Alph*.]
+\item \( f(x) \text{ is close to or exactly } \infty \text{ when } x \text{ is large enough}. \)
+\item \( x \text{ is undefined when } f(x) \text{ is close to or exactly } \infty. \)
+\item \( f(x) \text{ is undefined when } x \text{ is close to or exactly } 7. \)
+\item \( f(x) \text{ is close to or exactly } 7 \text{ when } x \text{ is large enough}. \)
+\item \( \text{None of the above are always true.} \)
+
+\end{enumerate} }
+\litem{
+For the graph below, find the value(s) $a$ that makes the statement true: $ \displaystyle \lim_{x \rightarrow a} f(x) = -\infty$.
+\begin{center}
+    \includegraphics[width=0.5\textwidth]{../Figures/evaluateLimitGraphicallyCopyB.png}
+\end{center}
+\begin{enumerate}[label=\Alph*.]
+\item \( -\infty \)
+\item \( -2 \)
+\item \( 3 \)
+\item \( \text{Multiple } a \text{ make the statement true}. \)
+\item \( \text{No } a \text{ make the statement true}. \)
+
+\end{enumerate} }
+\litem{
+For the graph below, find the value(s) $a$ that makes the statement true: $ \displaystyle \lim_{x \rightarrow a} f(x) = -\infty$.
+\begin{center}
+    \includegraphics[width=0.5\textwidth]{../Figures/evaluateLimitGraphicallyB.png}
+\end{center}
+\begin{enumerate}[label=\Alph*.]
+\item \( -2 \)
+\item \( -\infty \)
+\item \( 3 \)
+\item \( \text{Multiple } a \text{ make the statement true}. \)
+\item \( \text{No } a \text{ make the statement true}. \)
+
+\end{enumerate} }
+\litem{
+Evaluate the one-sided limit of the function $f(x)$ below, if possible.\[ \lim_{x \rightarrow 8^-} \frac{-5}{(x+8)^8}+2 \]\begin{enumerate}[label=\Alph*.]
+\item \( \infty \)
+\item \( f(8) \)
+\item \( -\infty \)
+\item \( \text{The limit does not exist} \)
+\item \( \text{None of the above} \)
+
+\end{enumerate} }
+\litem{
+Evaluate the one-sided limit of the function $f(x)$ below, if possible.\[ \lim_{x \rightarrow 6^+} \frac{1}{(x+6)^4}+7 \]\begin{enumerate}[label=\Alph*.]
+\item \( f(6) \)
+\item \( -\infty \)
+\item \( \infty \)
+\item \( \text{The limit does not exist} \)
+\item \( \text{None of the above} \)
+
+\end{enumerate} }
+\litem{
+To estimate the one-sided limit of the function below as $x$ approaches 1 from the left, which of the following sets of numbers should you use?\[ \frac{\frac{1}{x} - 1}{x - 1} \]\begin{enumerate}[label=\Alph*.]
+\item \( \{ 1.0000, 1.1000, 1.0100, 1.0010 \} \)
+\item \( \{ 0.9000, 0.9900, 1.0100, 1.1000 \} \)
+\item \( \{ 0.9000, 0.9900, 0.9990, 0.9999 \} \)
+\item \( \{ 1.0000, 0.9000, 0.9900, 0.9990 \} \)
+\item \( \{ 1.1000, 1.0100, 1.0010, 1.0001 \} \)
+
+\end{enumerate} }
+\litem{
+Based on the information below, which of the following statements is always true?
+\begin{center}
+    \textit{ $f(x)$ approaches $17.817$ as $x$ approaches $6$. }
+\end{center}
+\begin{enumerate}[label=\Alph*.]
+\item \( f(6) \text{ is close to or exactly } 17 \)
+\item \( f(17) = 6 \)
+\item \( f(6) = 17 \)
+\item \( f(17) \text{ is close to or exactly } 6 \)
+\item \( \text{None of the above are always true.} \)
+
+\end{enumerate} }
+\litem{
+To estimate the one-sided limit of the function below as $x$ approaches 5 from the right, which of the following sets of numbers should you use?\[ \frac{\frac{5}{x} - 1}{x - 5} \]\begin{enumerate}[label=\Alph*.]
+\item \( \{ 5.0000, 5.1000, 5.0100, 5.0010 \} \)
+\item \( \{ 5.0000, 4.9000, 4.9900, 4.9990 \} \)
+\item \( \{ 4.9000, 4.9900, 5.0100, 5.1000 \} \)
+\item \( \{ 5.1000, 5.0100, 5.0010, 5.0001 \} \)
+\item \( \{ 4.9000, 4.9900, 4.9990, 4.9999 \} \)
+
+\end{enumerate} }
+\litem{
+Evaluate the limit below, if possible.\[ \lim_{x \rightarrow 3} \frac{\sqrt{7x - 5} - 4}{6x - 18} \]\begin{enumerate}[label=\Alph*.]
+\item \( 0.021 \)
+\item \( 0.441 \)
+\item \( 0.125 \)
+\item \( \infty \)
+\item \( \text{None of the above} \)
+
+\end{enumerate} }
+\end{enumerate}
+
+\end{document}

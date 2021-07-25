@@ -1,0 +1,112 @@
+\documentclass[14pt]{extbook}
+\usepackage{multicol, enumerate, enumitem, hyperref, color, soul, setspace, parskip, fancyhdr} %General Packages
+\usepackage{amssymb, amsthm, amsmath, latexsym, units, mathtools} %Math Packages
+\everymath{\displaystyle} %All math in Display Style
+% Packages with additional options
+\usepackage[headsep=0.5cm,headheight=12pt, left=1 in,right= 1 in,top= 1 in,bottom= 1 in]{geometry}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{dashrule}  % Package to use the command below to create lines between items
+\newcommand{\litem}[1]{\item#1\hspace*{-1cm}\rule{\textwidth}{0.4pt}}
+\pagestyle{fancy}
+\lhead{Progress Quiz 9}
+\chead{}
+\rhead{Version C}
+\lfoot{9541-5764}
+\cfoot{}
+\rfoot{Summer C 2021}
+\begin{document}
+
+\begin{enumerate}
+\litem{
+What are the \textit{possible Rational} roots of the polynomial below?\[ f(x) = 4x^{4} +6 x^{3} +5 x^{2} +4 x + 3 \]\begin{enumerate}[label=\Alph*.]
+\item \( \text{ All combinations of: }\frac{\pm 1,\pm 3}{\pm 1,\pm 2,\pm 4} \)
+\item \( \pm 1,\pm 3 \)
+\item \( \text{ All combinations of: }\frac{\pm 1,\pm 2,\pm 4}{\pm 1,\pm 3} \)
+\item \( \pm 1,\pm 2,\pm 4 \)
+\item \( \text{ There is no formula or theorem that tells us all possible Rational roots.} \)
+
+\end{enumerate} }
+\litem{
+Perform the division below. Then, find the intervals that correspond to the quotient in the form $ax^2+bx+c$ and remainder $r$.\[ \frac{20x^{3} -60 x + 44}{x + 2} \]\begin{enumerate}[label=\Alph*.]
+\item \( a \in [19, 22], b \in [-62, -58], c \in [115, 129], \text{ and } r \in [-316, -315]. \)
+\item \( a \in [19, 22], b \in [-41, -38], c \in [16, 27], \text{ and } r \in [2, 5]. \)
+\item \( a \in [-41, -34], b \in [-82, -79], c \in [-222, -212], \text{ and } r \in [-396, -391]. \)
+\item \( a \in [-41, -34], b \in [74, 87], c \in [-222, -212], \text{ and } r \in [478, 485]. \)
+\item \( a \in [19, 22], b \in [37, 41], c \in [16, 27], \text{ and } r \in [81, 89]. \)
+
+\end{enumerate} }
+\litem{
+Factor the polynomial below completely, knowing that $x + 5$ is a factor. Then, choose the intervals the zeros of the polynomial belong to, where $z_1 \leq z_2 \leq z_3 \leq z_4$. \textit{To make the problem easier, all zeros are between -5 and 5.}\[ f(x) = 15x^{4} +151 x^{3} +429 x^{2} +185 x -300 \]\begin{enumerate}[label=\Alph*.]
+\item \( z_1 \in [-0.52, 0.32], \text{   }  z_2 \in [3.14, 4.93], z_3 \in [4.85, 5.74], \text{   and   } z_4 \in [4.91, 6.54] \)
+\item \( z_1 \in [-5.08, -4.82], \text{   }  z_2 \in [-4.33, -2.95], z_3 \in [-1.8, -1.17], \text{   and   } z_4 \in [0.44, 1.16] \)
+\item \( z_1 \in [-1.83, -1.54], \text{   }  z_2 \in [0.34, 0.99], z_3 \in [3.09, 4.44], \text{   and   } z_4 \in [4.91, 6.54] \)
+\item \( z_1 \in [-5.08, -4.82], \text{   }  z_2 \in [-4.33, -2.95], z_3 \in [-0.77, -0.17], \text{   and   } z_4 \in [0.89, 2.04] \)
+\item \( z_1 \in [-1.07, -0.25], \text{   }  z_2 \in [1.41, 2.22], z_3 \in [3.09, 4.44], \text{   and   } z_4 \in [4.91, 6.54] \)
+
+\end{enumerate} }
+\litem{
+Factor the polynomial below completely. Then, choose the intervals the zeros of the polynomial belong to, where $z_1 \leq z_2 \leq z_3$. \textit{To make the problem easier, all zeros are between -5 and 5.}\[ f(x) = 12x^{3} +11 x^{2} -45 x -50 \]\begin{enumerate}[label=\Alph*.]
+\item \( z_1 \in [-0.89, -0.61], \text{   }  z_2 \in [-0.68, -0.46], \text{   and   } z_3 \in [1.96, 2.53] \)
+\item \( z_1 \in [-1.84, -1.27], \text{   }  z_2 \in [-1.31, -1.2], \text{   and   } z_3 \in [1.96, 2.53] \)
+\item \( z_1 \in [-2.26, -1.88], \text{   }  z_2 \in [0.35, 0.54], \text{   and   } z_3 \in [4.65, 5.07] \)
+\item \( z_1 \in [-2.26, -1.88], \text{   }  z_2 \in [0.45, 0.67], \text{   and   } z_3 \in [0.65, 0.85] \)
+\item \( z_1 \in [-2.26, -1.88], \text{   }  z_2 \in [1.12, 1.42], \text{   and   } z_3 \in [1.03, 1.93] \)
+
+\end{enumerate} }
+\litem{
+Factor the polynomial below completely. Then, choose the intervals the zeros of the polynomial belong to, where $z_1 \leq z_2 \leq z_3$. \textit{To make the problem easier, all zeros are between -5 and 5.}\[ f(x) = 10x^{3} + x^{2} -77 x + 30 \]\begin{enumerate}[label=\Alph*.]
+\item \( z_1 \in [-2.06, -1.86], \text{   }  z_2 \in [-0.7, -0.5], \text{   and   } z_3 \in [2.63, 3.17] \)
+\item \( z_1 \in [-3.19, -2.73], \text{   }  z_2 \in [0.32, 0.41], \text{   and   } z_3 \in [2.14, 2.85] \)
+\item \( z_1 \in [-3.19, -2.73], \text{   }  z_2 \in [0.32, 0.41], \text{   and   } z_3 \in [2.14, 2.85] \)
+\item \( z_1 \in [-2.57, -2.12], \text{   }  z_2 \in [-0.48, -0.3], \text{   and   } z_3 \in [2.63, 3.17] \)
+\item \( z_1 \in [-2.57, -2.12], \text{   }  z_2 \in [-0.48, -0.3], \text{   and   } z_3 \in [2.63, 3.17] \)
+
+\end{enumerate} }
+\litem{
+Perform the division below. Then, find the intervals that correspond to the quotient in the form $ax^2+bx+c$ and remainder $r$.\[ \frac{15x^{3} +65 x^{2} +90 x + 37}{x + 2} \]\begin{enumerate}[label=\Alph*.]
+\item \( a \in [15, 20], \text{   } b \in [19, 21], \text{   } c \in [30, 31], \text{   and   } r \in [-56, -46]. \)
+\item \( a \in [15, 20], \text{   } b \in [35, 38], \text{   } c \in [16, 22], \text{   and   } r \in [-4, -2]. \)
+\item \( a \in [15, 20], \text{   } b \in [90, 97], \text{   } c \in [280, 281], \text{   and   } r \in [588, 607]. \)
+\item \( a \in [-32, -28], \text{   } b \in [124, 127], \text{   } c \in [-163, -157], \text{   and   } r \in [356, 359]. \)
+\item \( a \in [-32, -28], \text{   } b \in [4, 6], \text{   } c \in [96, 103], \text{   and   } r \in [227, 239]. \)
+
+\end{enumerate} }
+\litem{
+Perform the division below. Then, find the intervals that correspond to the quotient in the form $ax^2+bx+c$ and remainder $r$.\[ \frac{6x^{3} +27 x^{2} +39 x + 23}{x + 2} \]\begin{enumerate}[label=\Alph*.]
+\item \( a \in [-14, -8], \text{   } b \in [46, 55], \text{   } c \in [-64, -57], \text{   and   } r \in [149, 153]. \)
+\item \( a \in [1, 10], \text{   } b \in [39, 40], \text{   } c \in [116, 119], \text{   and   } r \in [253, 263]. \)
+\item \( a \in [-14, -8], \text{   } b \in [3, 5], \text{   } c \in [41, 48], \text{   and   } r \in [111, 118]. \)
+\item \( a \in [1, 10], \text{   } b \in [9, 13], \text{   } c \in [12, 14], \text{   and   } r \in [-14, -7]. \)
+\item \( a \in [1, 10], \text{   } b \in [15, 24], \text{   } c \in [3, 10], \text{   and   } r \in [2, 12]. \)
+
+\end{enumerate} }
+\litem{
+Perform the division below. Then, find the intervals that correspond to the quotient in the form $ax^2+bx+c$ and remainder $r$.\[ \frac{12x^{3} -65 x^{2} + 120}{x -5} \]\begin{enumerate}[label=\Alph*.]
+\item \( a \in [11, 16], b \in [-8, -1], c \in [-27, -21], \text{ and } r \in [-7, -1]. \)
+\item \( a \in [11, 16], b \in [-125, -124], c \in [617, 628], \text{ and } r \in [-3013, -3003]. \)
+\item \( a \in [60, 65], b \in [-369, -364], c \in [1819, 1828], \text{ and } r \in [-9010, -9000]. \)
+\item \( a \in [11, 16], b \in [-19, -16], c \in [-69, -67], \text{ and } r \in [-152, -149]. \)
+\item \( a \in [60, 65], b \in [235, 241], c \in [1174, 1176], \text{ and } r \in [5995, 5996]. \)
+
+\end{enumerate} }
+\litem{
+Factor the polynomial below completely, knowing that $x -3$ is a factor. Then, choose the intervals the zeros of the polynomial belong to, where $z_1 \leq z_2 \leq z_3 \leq z_4$. \textit{To make the problem easier, all zeros are between -5 and 5.}\[ f(x) = 16x^{4} -112 x^{3} +167 x^{2} +175 x -300 \]\begin{enumerate}[label=\Alph*.]
+\item \( z_1 \in [-4.63, -3.96], \text{   }  z_2 \in [-3.23, -2.25], z_3 \in [-1.08, -0.54], \text{   and   } z_4 \in [0.18, 1.04] \)
+\item \( z_1 \in [-0.98, -0.53], \text{   }  z_2 \in [-0.07, 0.93], z_3 \in [2.84, 3.28], \text{   and   } z_4 \in [3.16, 4.57] \)
+\item \( z_1 \in [-4.63, -3.96], \text{   }  z_2 \in [-3.23, -2.25], z_3 \in [-0.48, 0.1], \text{   and   } z_4 \in [4.77, 5.57] \)
+\item \( z_1 \in [-4.63, -3.96], \text{   }  z_2 \in [-3.23, -2.25], z_3 \in [-1.68, -1.22], \text{   and   } z_4 \in [0.94, 1.37] \)
+\item \( z_1 \in [-1.71, -1.18], \text{   }  z_2 \in [1.2, 2.35], z_3 \in [2.84, 3.28], \text{   and   } z_4 \in [3.16, 4.57] \)
+
+\end{enumerate} }
+\litem{
+What are the \textit{possible Rational} roots of the polynomial below?\[ f(x) = 2x^{3} +7 x^{2} +7 x + 4 \]\begin{enumerate}[label=\Alph*.]
+\item \( \pm 1,\pm 2,\pm 4 \)
+\item \( \text{ All combinations of: }\frac{\pm 1,\pm 2}{\pm 1,\pm 2,\pm 4} \)
+\item \( \text{ All combinations of: }\frac{\pm 1,\pm 2,\pm 4}{\pm 1,\pm 2} \)
+\item \( \pm 1,\pm 2 \)
+\item \( \text{ There is no formula or theorem that tells us all possible Rational roots.} \)
+
+\end{enumerate} }
+\end{enumerate}
+
+\end{document}

@@ -1,0 +1,412 @@
+\documentclass[14pt]{extbook}
+\usepackage{multicol, enumerate, enumitem, hyperref, color, soul, setspace, parskip, fancyhdr} %General Packages
+\usepackage{amssymb, amsthm, amsmath, latexsym, units, mathtools} %Math Packages
+\everymath{\displaystyle} %All math in Display Style
+% Packages with additional options
+\usepackage[headsep=0.5cm,headheight=12pt, left=1 in,right= 1 in,top= 1 in,bottom= 1 in]{geometry}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{dashrule}  % Package to use the command below to create lines between items
+\newcommand{\litem}[1]{\item#1\hspace*{-1cm}\rule{\textwidth}{0.4pt}}
+\pagestyle{fancy}
+\lhead{Progress Quiz 9}
+\chead{}
+\rhead{Version ALL}
+\lfoot{9541-5764}
+\cfoot{}
+\rfoot{Summer C 2021}
+\begin{document}
+
+\begin{enumerate}
+\litem{
+A town has an initial population of 90000. The town's population for the next 10 years is provided below. Which type of function would be most appropriate to model the town's population?
+
+\begin{tabular}{c|c|c|c|c|c|c|c|c|c}
+\textbf{Year} &1 &2 &3 &4 &5 &6 &7 &8 &9\tabularnewline \hline
+\textbf{Pop} &89960 &89920 &89880 &89840 &89800 &89760 &89720 &89680 &89640\end{tabular}\begin{enumerate}[label=\Alph*.]
+\item \( \text{Exponential} \)
+\item \( \text{Non-Linear Power} \)
+\item \( \text{Linear} \)
+\item \( \text{Logarithmic} \)
+\item \( \text{None of the above} \)
+
+\end{enumerate} }
+\litem{
+Using the scenario below, model the situation using an exponential function and a base of $\frac{1}{2}$. Then, solve for the half-life of the element, rounding to the nearest day.
+\begin{center}
+    \textit{ The half-life of an element is the amount of time it takes for the element to decay to half of its initial starting amount. There is initially 506 grams of element $X$ and after 4 years there is 72 grams remaining. }
+\end{center}
+\begin{enumerate}[label=\Alph*.]
+\item \( \text{About } 1 \text{ day} \)
+\item \( \text{About } 730 \text{ days} \)
+\item \( \text{About } 1825 \text{ days} \)
+\item \( \text{About } 365 \text{ days} \)
+\item \( \text{None of the above} \)
+
+\end{enumerate} }
+\litem{
+The temperature of an object, $T$, in a different surrounding temperature $T_s$ will behave according to the formula $T(t) = Ae^{kt} + T_s$, where $t$ is minutes, $A$ is a constant, and k is a constant. Use this formula and the situation below to construct a model that describes the uranium's temperature, $T$, based on the amount of time t (in minutes) that have passed. Choose the correct constant $k$ from the options below.
+\begin{center}
+    \textit{ Uranium is taken out of the reactor with a temperature of $130^{\circ}$ C and is placed into a $11^{\circ}$ C bath to cool. After 19 minutes, the uranium has cooled to $77^{\circ}$ C. }
+\end{center}
+\begin{enumerate}[label=\Alph*.]
+\item \( k = -0.03568 \)
+\item \( k = -0.03102 \)
+\item \( k = -0.03816 \)
+\item \( k = -0.03758 \)
+\item \( \text{None of the above} \)
+
+\end{enumerate} }
+\litem{
+The temperature of an object, $T$, in a different surrounding temperature $T_s$ will behave according to the formula $T(t) = Ae^{kt} + T_s$, where $t$ is minutes, $A$ is a constant, and k is a constant. Use this formula and the situation below to construct a model that describes the uranium's temperature, $T$, based on the amount of time t (in minutes) that have passed. Choose the correct constant $k$ from the options below.
+\begin{center}
+    \textit{ Uranium is taken out of the reactor with a temperature of $160^{\circ}$ C and is placed into a $17^{\circ}$ C bath to cool. After 16 minutes, the uranium has cooled to $113^{\circ}$ C. }
+\end{center}
+\begin{enumerate}[label=\Alph*.]
+\item \( k = -0.04784 \)
+\item \( k = -0.03193 \)
+\item \( k = -0.04696 \)
+\item \( k = -0.02491 \)
+\item \( \text{None of the above} \)
+
+\end{enumerate} }
+\litem{
+Using the scenario below, model the situation using an exponential function and a base of $\frac{1}{2}$. Then, solve for the half-life of the element, rounding to the nearest day.
+\begin{center}
+    \textit{ The half-life of an element is the amount of time it takes for the element to decay to half of its initial starting amount. There is initially 508 grams of element $X$ and after 4 years there is 50 grams remaining. }
+\end{center}
+\begin{enumerate}[label=\Alph*.]
+\item \( \text{About } 365 \text{ days} \)
+\item \( \text{About } 365 \text{ days} \)
+\item \( \text{About } 1 \text{ day} \)
+\item \( \text{About } 1825 \text{ days} \)
+\item \( \text{None of the above} \)
+
+\end{enumerate} }
+\litem{
+Determine the appropriate model for the graph of points below.
+\begin{center}
+    \includegraphics[width=0.5\textwidth]{../Figures/identifyModelGraph11A.png}
+\end{center}
+\begin{enumerate}[label=\Alph*.]
+\item \( \text{Logarithmic model} \)
+\item \( \text{Non-linear Power model} \)
+\item \( \text{Exponential model} \)
+\item \( \text{Linear model} \)
+\item \( \text{None of the above} \)
+
+\end{enumerate} }
+\litem{
+Determine the appropriate model for the graph of points below.
+\begin{center}
+    \includegraphics[width=0.5\textwidth]{../Figures/identifyModelGraph11CopyA.png}
+\end{center}
+\begin{enumerate}[label=\Alph*.]
+\item \( \text{Non-linear Power model} \)
+\item \( \text{Exponential model} \)
+\item \( \text{Linear model} \)
+\item \( \text{Logarithmic model} \)
+\item \( \text{None of the above} \)
+
+\end{enumerate} }
+\litem{
+Using the scenario below, model the population of bacteria $\alpha$ in terms of the number of minutes, $t$ that pass. Then, choose the correct approximate \textit{(rounded to the nearest minute)} replication rate of bacteria-$\alpha$.
+\begin{center}
+    \textit{ A newly discovered bacteria, $\alpha$, is being examined in a lab. The lab started with a petri dish of 4 bacteria-$\alpha$. After 1 hours, the petri dish has 37 bacteria-$\alpha$. Based on similar bacteria, the lab believes bacteria-$\alpha$ triples after some undetermined number of minutes. }
+\end{center}
+\begin{enumerate}[label=\Alph*.]
+\item \( \text{About } 246 \text{ minutes} \)
+\item \( \text{About } 29 \text{ minutes} \)
+\item \( \text{About } 176 \text{ minutes} \)
+\item \( \text{About } 41 \text{ minutes} \)
+\item \( \text{None of the above} \)
+
+\end{enumerate} }
+\litem{
+A town has an initial population of 50000. The town's population for the next 10 years is provided below. Which type of function would be most appropriate to model the town's population?
+
+\begin{tabular}{c|c|c|c|c|c|c|c|c|c}
+\textbf{Year} &1 &2 &3 &4 &5 &6 &7 &8 &9\tabularnewline \hline
+\textbf{Pop} &50040 &50080 &50120 &50160 &50200 &50240 &50280 &50320 &50360\end{tabular}\begin{enumerate}[label=\Alph*.]
+\item \( \text{Non-Linear Power} \)
+\item \( \text{Linear} \)
+\item \( \text{Logarithmic} \)
+\item \( \text{Exponential} \)
+\item \( \text{None of the above} \)
+
+\end{enumerate} }
+\litem{
+Using the scenario below, model the population of bacteria $\alpha$ in terms of the number of minutes, $t$ that pass. Then, choose the correct approximate \textit{(rounded to the nearest minute)} replication rate of bacteria-$\alpha$.
+\begin{center}
+    \textit{ A newly discovered bacteria, $\alpha$, is being examined in a lab. The lab started with a petri dish of 3 bacteria-$\alpha$. After 3 hours, the petri dish has 9022 bacteria-$\alpha$. Based on similar bacteria, the lab believes bacteria-$\alpha$ quadruples after some undetermined number of minutes. }
+\end{center}
+\begin{enumerate}[label=\Alph*.]
+\item \( \text{About } 15 \text{ minutes} \)
+\item \( \text{About } 35 \text{ minutes} \)
+\item \( \text{About } 93 \text{ minutes} \)
+\item \( \text{About } 212 \text{ minutes} \)
+\item \( \text{None of the above} \)
+
+\end{enumerate} }
+\litem{
+A town has an initial population of 100000. The town's population for the next 10 years is provided below. Which type of function would be most appropriate to model the town's population?
+
+\begin{tabular}{c|c|c|c|c|c|c|c|c|c}
+\textbf{Year} &1 &2 &3 &4 &5 &6 &7 &8 &9\tabularnewline \hline
+\textbf{Pop} &100000 &99979 &99967 &99958 &99951 &99946 &99941 &99937 &99934\end{tabular}\begin{enumerate}[label=\Alph*.]
+\item \( \text{Non-Linear Power} \)
+\item \( \text{Exponential} \)
+\item \( \text{Logarithmic} \)
+\item \( \text{Linear} \)
+\item \( \text{None of the above} \)
+
+\end{enumerate} }
+\litem{
+Using the scenario below, model the situation using an exponential function and a base of $\frac{1}{2}$. Then, solve for the half-life of the element, rounding to the nearest day.
+\begin{center}
+    \textit{ The half-life of an element is the amount of time it takes for the element to decay to half of its initial starting amount. There is initially 808 grams of element $X$ and after 6 years there is 115 grams remaining. }
+\end{center}
+\begin{enumerate}[label=\Alph*.]
+\item \( \text{About } 1 \text{ day} \)
+\item \( \text{About } 2555 \text{ days} \)
+\item \( \text{About } 730 \text{ days} \)
+\item \( \text{About } 1095 \text{ days} \)
+\item \( \text{None of the above} \)
+
+\end{enumerate} }
+\litem{
+The temperature of an object, $T$, in a different surrounding temperature $T_s$ will behave according to the formula $T(t) = Ae^{kt} + T_s$, where $t$ is minutes, $A$ is a constant, and k is a constant. Use this formula and the situation below to construct a model that describes the uranium's temperature, $T$, based on the amount of time t (in minutes) that have passed. Choose the correct constant $k$ from the options below.
+\begin{center}
+    \textit{ Uranium is taken out of the reactor with a temperature of $150^{\circ}$ C and is placed into a $15^{\circ}$ C bath to cool. After 16 minutes, the uranium has cooled to $84^{\circ}$ C. }
+\end{center}
+\begin{enumerate}[label=\Alph*.]
+\item \( k = -0.04195 \)
+\item \( k = -0.04481 \)
+\item \( k = -0.04403 \)
+\item \( k = -0.04853 \)
+\item \( \text{None of the above} \)
+
+\end{enumerate} }
+\litem{
+The temperature of an object, $T$, in a different surrounding temperature $T_s$ will behave according to the formula $T(t) = Ae^{kt} + T_s$, where $t$ is minutes, $A$ is a constant, and k is a constant. Use this formula and the situation below to construct a model that describes the uranium's temperature, $T$, based on the amount of time t (in minutes) that have passed. Choose the correct constant $k$ from the options below.
+\begin{center}
+    \textit{ Uranium is taken out of the reactor with a temperature of $190^{\circ}$ C and is placed into a $12^{\circ}$ C bath to cool. After 20 minutes, the uranium has cooled to $131^{\circ}$ C. }
+\end{center}
+\begin{enumerate}[label=\Alph*.]
+\item \( k = -0.03825 \)
+\item \( k = -0.06857 \)
+\item \( k = -0.03865 \)
+\item \( k = -0.02340 \)
+\item \( \text{None of the above} \)
+
+\end{enumerate} }
+\litem{
+Using the scenario below, model the situation using an exponential function and a base of $\frac{1}{2}$. Then, solve for the half-life of the element, rounding to the nearest day.
+\begin{center}
+    \textit{ The half-life of an element is the amount of time it takes for the element to decay to half of its initial starting amount. There is initially 690 grams of element $X$ and after 6 years there is 69 grams remaining. }
+\end{center}
+\begin{enumerate}[label=\Alph*.]
+\item \( \text{About } 365 \text{ days} \)
+\item \( \text{About } 730 \text{ days} \)
+\item \( \text{About } 1 \text{ day} \)
+\item \( \text{About } 2920 \text{ days} \)
+\item \( \text{None of the above} \)
+
+\end{enumerate} }
+\litem{
+Determine the appropriate model for the graph of points below.
+\begin{center}
+    \includegraphics[width=0.5\textwidth]{../Figures/identifyModelGraph11B.png}
+\end{center}
+\begin{enumerate}[label=\Alph*.]
+\item \( \text{Logarithmic model} \)
+\item \( \text{Linear model} \)
+\item \( \text{Non-linear Power model} \)
+\item \( \text{Exponential model} \)
+\item \( \text{None of the above} \)
+
+\end{enumerate} }
+\litem{
+Determine the appropriate model for the graph of points below.
+\begin{center}
+    \includegraphics[width=0.5\textwidth]{../Figures/identifyModelGraph11CopyB.png}
+\end{center}
+\begin{enumerate}[label=\Alph*.]
+\item \( \text{Non-linear Power model} \)
+\item \( \text{Exponential model} \)
+\item \( \text{Linear model} \)
+\item \( \text{Logarithmic model} \)
+\item \( \text{None of the above} \)
+
+\end{enumerate} }
+\litem{
+Using the scenario below, model the population of bacteria $\alpha$ in terms of the number of minutes, $t$ that pass. Then, choose the correct approximate \textit{(rounded to the nearest minute)} replication rate of bacteria-$\alpha$.
+\begin{center}
+    \textit{ A newly discovered bacteria, $\alpha$, is being examined in a lab. The lab started with a petri dish of 4 bacteria-$\alpha$. After 2 hours, the petri dish has 159 bacteria-$\alpha$. Based on similar bacteria, the lab believes bacteria-$\alpha$ triples after some undetermined number of minutes. }
+\end{center}
+\begin{enumerate}[label=\Alph*.]
+\item \( \text{About } 214 \text{ minutes} \)
+\item \( \text{About } 35 \text{ minutes} \)
+\item \( \text{About } 352 \text{ minutes} \)
+\item \( \text{About } 58 \text{ minutes} \)
+\item \( \text{None of the above} \)
+
+\end{enumerate} }
+\litem{
+A town has an initial population of 60000. The town's population for the next 10 years is provided below. Which type of function would be most appropriate to model the town's population?
+
+\begin{tabular}{c|c|c|c|c|c|c|c|c|c}
+\textbf{Year} &1 &2 &3 &4 &5 &6 &7 &8 &9\tabularnewline \hline
+\textbf{Pop} &59950 &59900 &59850 &59800 &59750 &59700 &59650 &59600 &59550\end{tabular}\begin{enumerate}[label=\Alph*.]
+\item \( \text{Logarithmic} \)
+\item \( \text{Linear} \)
+\item \( \text{Exponential} \)
+\item \( \text{Non-Linear Power} \)
+\item \( \text{None of the above} \)
+
+\end{enumerate} }
+\litem{
+Using the scenario below, model the population of bacteria $\alpha$ in terms of the number of minutes, $t$ that pass. Then, choose the correct approximate \textit{(rounded to the nearest minute)} replication rate of bacteria-$\alpha$.
+\begin{center}
+    \textit{ A newly discovered bacteria, $\alpha$, is being examined in a lab. The lab started with a petri dish of 3 bacteria-$\alpha$. After 2 hours, the petri dish has 1657 bacteria-$\alpha$. Based on similar bacteria, the lab believes bacteria-$\alpha$ quadruples after some undetermined number of minutes. }
+\end{center}
+\begin{enumerate}[label=\Alph*.]
+\item \( \text{About } 79 \text{ minutes} \)
+\item \( \text{About } 29 \text{ minutes} \)
+\item \( \text{About } 174 \text{ minutes} \)
+\item \( \text{About } 13 \text{ minutes} \)
+\item \( \text{None of the above} \)
+
+\end{enumerate} }
+\litem{
+A town has an initial population of 70000. The town's population for the next 10 years is provided below. Which type of function would be most appropriate to model the town's population?
+
+\begin{tabular}{c|c|c|c|c|c|c|c|c|c}
+\textbf{Year} &1 &2 &3 &4 &5 &6 &7 &8 &9\tabularnewline \hline
+\textbf{Pop} &70020 &70040 &70060 &70080 &70100 &70120 &70140 &70160 &70180\end{tabular}\begin{enumerate}[label=\Alph*.]
+\item \( \text{Non-Linear Power} \)
+\item \( \text{Logarithmic} \)
+\item \( \text{Exponential} \)
+\item \( \text{Linear} \)
+\item \( \text{None of the above} \)
+
+\end{enumerate} }
+\litem{
+Using the scenario below, model the situation using an exponential function and a base of $\frac{1}{2}$. Then, solve for the half-life of the element, rounding to the nearest day.
+\begin{center}
+    \textit{ The half-life of an element is the amount of time it takes for the element to decay to half of its initial starting amount. There is initially 771 grams of element $X$ and after 5 years there is 77 grams remaining. }
+\end{center}
+\begin{enumerate}[label=\Alph*.]
+\item \( \text{About } 730 \text{ days} \)
+\item \( \text{About } 365 \text{ days} \)
+\item \( \text{About } 1 \text{ day} \)
+\item \( \text{About } 2190 \text{ days} \)
+\item \( \text{None of the above} \)
+
+\end{enumerate} }
+\litem{
+The temperature of an object, $T$, in a different surrounding temperature $T_s$ will behave according to the formula $T(t) = Ae^{kt} + T_s$, where $t$ is minutes, $A$ is a constant, and k is a constant. Use this formula and the situation below to construct a model that describes the uranium's temperature, $T$, based on the amount of time t (in minutes) that have passed. Choose the correct constant $k$ from the options below.
+\begin{center}
+    \textit{ Uranium is taken out of the reactor with a temperature of $200^{\circ}$ C and is placed into a $18^{\circ}$ C bath to cool. After 25 minutes, the uranium has cooled to $150^{\circ}$ C. }
+\end{center}
+\begin{enumerate}[label=\Alph*.]
+\item \( k = -0.03101 \)
+\item \( k = -0.03148 \)
+\item \( k = -0.01285 \)
+\item \( k = -0.01662 \)
+\item \( \text{None of the above} \)
+
+\end{enumerate} }
+\litem{
+The temperature of an object, $T$, in a different surrounding temperature $T_s$ will behave according to the formula $T(t) = Ae^{kt} + T_s$, where $t$ is minutes, $A$ is a constant, and k is a constant. Use this formula and the situation below to construct a model that describes the uranium's temperature, $T$, based on the amount of time t (in minutes) that have passed. Choose the correct constant $k$ from the options below.
+\begin{center}
+    \textit{ Uranium is taken out of the reactor with a temperature of $200^{\circ}$ C and is placed into a $17^{\circ}$ C bath to cool. After 13 minutes, the uranium has cooled to $156^{\circ}$ C. }
+\end{center}
+\begin{enumerate}[label=\Alph*.]
+\item \( k = -0.06027 \)
+\item \( k = -0.06113 \)
+\item \( k = -0.02799 \)
+\item \( k = -0.09902 \)
+\item \( \text{None of the above} \)
+
+\end{enumerate} }
+\litem{
+Using the scenario below, model the situation using an exponential function and a base of $\frac{1}{2}$. Then, solve for the half-life of the element, rounding to the nearest day.
+\begin{center}
+    \textit{ The half-life of an element is the amount of time it takes for the element to decay to half of its initial starting amount. There is initially 741 grams of element $X$ and after 7 years there is 82 grams remaining. }
+\end{center}
+\begin{enumerate}[label=\Alph*.]
+\item \( \text{About } 1095 \text{ days} \)
+\item \( \text{About } 3285 \text{ days} \)
+\item \( \text{About } 730 \text{ days} \)
+\item \( \text{About } 1 \text{ day} \)
+\item \( \text{None of the above} \)
+
+\end{enumerate} }
+\litem{
+Determine the appropriate model for the graph of points below.
+\begin{center}
+    \includegraphics[width=0.5\textwidth]{../Figures/identifyModelGraph11C.png}
+\end{center}
+\begin{enumerate}[label=\Alph*.]
+\item \( \text{Linear model} \)
+\item \( \text{Non-linear Power model} \)
+\item \( \text{Exponential model} \)
+\item \( \text{Logarithmic model} \)
+\item \( \text{None of the above} \)
+
+\end{enumerate} }
+\litem{
+Determine the appropriate model for the graph of points below.
+\begin{center}
+    \includegraphics[width=0.5\textwidth]{../Figures/identifyModelGraph11CopyC.png}
+\end{center}
+\begin{enumerate}[label=\Alph*.]
+\item \( \text{Linear model} \)
+\item \( \text{Exponential model} \)
+\item \( \text{Logarithmic model} \)
+\item \( \text{Non-linear Power model} \)
+\item \( \text{None of the above} \)
+
+\end{enumerate} }
+\litem{
+Using the scenario below, model the population of bacteria $\alpha$ in terms of the number of minutes, $t$ that pass. Then, choose the correct approximate \textit{(rounded to the nearest minute)} replication rate of bacteria-$\alpha$.
+\begin{center}
+    \textit{ A newly discovered bacteria, $\alpha$, is being examined in a lab. The lab started with a petri dish of 3 bacteria-$\alpha$. After 1 hours, the petri dish has 19 bacteria-$\alpha$. Based on similar bacteria, the lab believes bacteria-$\alpha$ triples after some undetermined number of minutes. }
+\end{center}
+\begin{enumerate}[label=\Alph*.]
+\item \( \text{About } 264 \text{ minutes} \)
+\item \( \text{About } 209 \text{ minutes} \)
+\item \( \text{About } 44 \text{ minutes} \)
+\item \( \text{About } 34 \text{ minutes} \)
+\item \( \text{None of the above} \)
+
+\end{enumerate} }
+\litem{
+A town has an initial population of 70000. The town's population for the next 10 years is provided below. Which type of function would be most appropriate to model the town's population?
+
+\begin{tabular}{c|c|c|c|c|c|c|c|c|c}
+\textbf{Year} &1 &2 &3 &4 &5 &6 &7 &8 &9\tabularnewline \hline
+\textbf{Pop} &69950 &69900 &69850 &69800 &69750 &69700 &69650 &69600 &69550\end{tabular}\begin{enumerate}[label=\Alph*.]
+\item \( \text{Exponential} \)
+\item \( \text{Linear} \)
+\item \( \text{Non-Linear Power} \)
+\item \( \text{Logarithmic} \)
+\item \( \text{None of the above} \)
+
+\end{enumerate} }
+\litem{
+Using the scenario below, model the population of bacteria $\alpha$ in terms of the number of minutes, $t$ that pass. Then, choose the correct approximate \textit{(rounded to the nearest minute)} replication rate of bacteria-$\alpha$.
+\begin{center}
+    \textit{ A newly discovered bacteria, $\alpha$, is being examined in a lab. The lab started with a petri dish of 2 bacteria-$\alpha$. After 3 hours, the petri dish has 64 bacteria-$\alpha$. Based on similar bacteria, the lab believes bacteria-$\alpha$ doubles after some undetermined number of minutes. }
+\end{center}
+\begin{enumerate}[label=\Alph*.]
+\item \( \text{About } 57 \text{ minutes} \)
+\item \( \text{About } 77 \text{ minutes} \)
+\item \( \text{About } 342 \text{ minutes} \)
+\item \( \text{About } 465 \text{ minutes} \)
+\item \( \text{None of the above} \)
+
+\end{enumerate} }
+\end{enumerate}
+
+\end{document}

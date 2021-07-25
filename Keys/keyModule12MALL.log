@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.8.4)  1 APR 2021 10:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.8.4)  25 MAY 2021 19:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -559,54 +559,30 @@ Package graphics Info: Driver file: pdftex.def on input line 105.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 40.
+<../Figures/identifyModelGraph12A.png, id=6, 462.528pt x 346.896pt>
+File: ../Figures/identifyModelGraph12A.png Graphic file (type png)
+<use ../Figures/identifyModelGraph12A.png>
+Package pdftex.def Info: ../Figures/identifyModelGraph12A.png  used on input li
+ne 52.
+(pdftex.def)             Requested size: 234.8775pt x 176.15768pt.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 52.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 40.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 52.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+lasy on input line 40
+LaTeX Font Info:    Trying to load font information for U+lasy on input line 52
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.40 }
-      
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Overfull \hbox (25.00003pt too wide) in paragraph at lines 40--56
-[][] 
- []
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.56 }
-      
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Overfull \hbox (25.00003pt too wide) in paragraph at lines 56--72
+Overfull \hbox (25.00003pt too wide) in paragraph at lines 52--78
 [][] 
  []
 
@@ -618,522 +594,193 @@ This may cause the page layout to be inconsistent, however.
 
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
-]
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.72 }
-      
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Overfull \hbox (25.00003pt too wide) in paragraph at lines 72--90
+ <../Figures/identifyModelGraph12A.png>]
+Overfull \hbox (25.00003pt too wide) in paragraph at lines 78--104
 [][] 
  []
 
-<../Figures/identifyModelGraph12CopyA.png, id=21, 462.528pt x 346.896pt>
+
+Overfull \hbox (25.00003pt too wide) in paragraph at lines 104--132
+[][] 
+ []
+
+<../Figures/identifyModelGraph12CopyA.png, id=27, 462.528pt x 346.896pt>
 File: ../Figures/identifyModelGraph12CopyA.png Graphic file (type png)
 <use ../Figures/identifyModelGraph12CopyA.png>
 Package pdftex.def Info: ../Figures/identifyModelGraph12CopyA.png  used on inpu
-t line 90.
+t line 132.
 (pdftex.def)             Requested size: 234.8775pt x 176.15768pt.
+[2]
+Overfull \hbox (25.00003pt too wide) in paragraph at lines 132--158
+[][] 
+ []
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.90 }
-      
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Overfull \hbox (25.00003pt too wide) in paragraph at lines 90--106
+[3 <../Figures/identifyModelGraph12CopyA.png>]
+Overfull \hbox (25.00003pt too wide) in paragraph at lines 158--184
 [][] 
  []
 
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.106 }
-       
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-[2 <../Figures/identifyModelGraph12CopyA.png>]
-Overfull \hbox (25.00003pt too wide) in paragraph at lines 106--124
-[][] 
- []
-
-<../Figures/identifyModelGraph12A.png, id=30, 462.528pt x 346.896pt>
-File: ../Figures/identifyModelGraph12A.png Graphic file (type png)
-<use ../Figures/identifyModelGraph12A.png>
-Package pdftex.def Info: ../Figures/identifyModelGraph12A.png  used on input li
-ne 124.
-(pdftex.def)             Requested size: 234.8775pt x 176.15768pt.
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.124 }
-       
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Overfull \hbox (25.00003pt too wide) in paragraph at lines 124--140
-[][] 
- []
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.140 }
-       
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Overfull \hbox (25.00003pt too wide) in paragraph at lines 140--156
-[][] 
- []
-
-[3 <../Figures/identifyModelGraph12A.png>]
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.156 }
-       
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Overfull \hbox (25.00003pt too wide) in paragraph at lines 156--172
-[][] 
- []
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.172 }
-       
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Overfull \hbox (25.00003pt too wide) in paragraph at lines 172--188
-[][] 
- []
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.188 }
-       
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Overfull \hbox (25.00003pt too wide) in paragraph at lines 188--204
+Overfull \hbox (25.00003pt too wide) in paragraph at lines 184--210
 [][] 
  []
 
 [4]
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.204 }
-       
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Overfull \hbox (25.00003pt too wide) in paragraph at lines 204--220
+Overfull \hbox (25.00003pt too wide) in paragraph at lines 210--236
 [][] 
  []
 
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.220 }
-       
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Overfull \hbox (25.00003pt too wide) in paragraph at lines 220--236
+Overfull \hbox (25.00003pt too wide) in paragraph at lines 236--262
 [][] 
  []
 
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.236 }
-       
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Overfull \hbox (25.00003pt too wide) in paragraph at lines 236--254
-[][] 
- []
-
-<../Figures/identifyModelGraph12CopyB.png, id=46, 462.528pt x 346.896pt>
-File: ../Figures/identifyModelGraph12CopyB.png Graphic file (type png)
-<use ../Figures/identifyModelGraph12CopyB.png>
-Package pdftex.def Info: ../Figures/identifyModelGraph12CopyB.png  used on inpu
-t line 254.
-(pdftex.def)             Requested size: 234.8775pt x 176.15768pt.
 [5]
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.254 }
-       
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Overfull \hbox (25.00003pt too wide) in paragraph at lines 254--270
+Overfull \hbox (25.00003pt too wide) in paragraph at lines 262--288
 [][] 
  []
 
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.270 }
-       
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Overfull \hbox (25.00003pt too wide) in paragraph at lines 270--288
+Overfull \hbox (25.00003pt too wide) in paragraph at lines 288--316
 [][] 
  []
 
-<../Figures/identifyModelGraph12B.png, id=56, 462.528pt x 346.896pt>
+<../Figures/identifyModelGraph12B.png, id=88, 462.528pt x 346.896pt>
 File: ../Figures/identifyModelGraph12B.png Graphic file (type png)
 <use ../Figures/identifyModelGraph12B.png>
 Package pdftex.def Info: ../Figures/identifyModelGraph12B.png  used on input li
-ne 288.
+ne 316.
 (pdftex.def)             Requested size: 234.8775pt x 176.15768pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [6 <../Figures/identifyModelGraph12CopyB.png>]
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.288 }
-       
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Overfull \hbox (25.00003pt too wide) in paragraph at lines 288--304
+[6]
+Overfull \hbox (25.00003pt too wide) in paragraph at lines 316--342
 [][] 
  []
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.304 }
-       
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Overfull \hbox (25.00003pt too wide) in paragraph at lines 304--320
-[][] 
- []
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.320 }
-       
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
 
 [7 <../Figures/identifyModelGraph12B.png>]
-Overfull \hbox (25.00003pt too wide) in paragraph at lines 320--336
+Overfull \hbox (25.00003pt too wide) in paragraph at lines 342--368
 [][] 
  []
 
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.336 }
-       
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Overfull \hbox (25.00003pt too wide) in paragraph at lines 336--352
+Overfull \hbox (25.00003pt too wide) in paragraph at lines 368--396
 [][] 
  []
 
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.352 }
-       
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Overfull \hbox (25.00003pt too wide) in paragraph at lines 352--357
-[][] 
- []
-
-
-Overfull \hbox (25.00003pt too wide) in paragraph at lines 357--373
-[][] 
- []
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.373 }
-       
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-[8]
-Overfull \hbox (25.00003pt too wide) in paragraph at lines 373--389
-[][] 
- []
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.389 }
-       
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Overfull \hbox (25.00003pt too wide) in paragraph at lines 389--407
-[][] 
- []
-
-<../Figures/identifyModelGraph12CopyC.png, id=80, 462.528pt x 346.896pt>
-File: ../Figures/identifyModelGraph12CopyC.png Graphic file (type png)
-<use ../Figures/identifyModelGraph12CopyC.png>
-Package pdftex.def Info: ../Figures/identifyModelGraph12CopyC.png  used on inpu
-t line 407.
+<../Figures/identifyModelGraph12CopyB.png, id=122, 462.528pt x 346.896pt>
+File: ../Figures/identifyModelGraph12CopyB.png Graphic file (type png)
+<use ../Figures/identifyModelGraph12CopyB.png>
+Package pdftex.def Info: ../Figures/identifyModelGraph12CopyB.png  used on inpu
+t line 396.
 (pdftex.def)             Requested size: 234.8775pt x 176.15768pt.
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
+Underfull \vbox (badness 6001) has occurred while \output is active []
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.407 }
-       
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+ [8]
+Overfull \hbox (25.00003pt too wide) in paragraph at lines 396--422
+[][] 
+ []
 
-[9 <../Figures/identifyModelGraph12CopyC.png>]
-Overfull \hbox (25.00003pt too wide) in paragraph at lines 407--423
+[9 <../Figures/identifyModelGraph12CopyB.png>]
+Overfull \hbox (25.00003pt too wide) in paragraph at lines 422--448
 [][] 
  []
 
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.423 }
-       
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Overfull \hbox (25.00003pt too wide) in paragraph at lines 423--441
+Overfull \hbox (25.00003pt too wide) in paragraph at lines 448--474
 [][] 
  []
 
-<../Figures/identifyModelGraph12C.png, id=88, 462.528pt x 346.896pt>
-File: ../Figures/identifyModelGraph12C.png Graphic file (type png)
-<use ../Figures/identifyModelGraph12C.png>
-Package pdftex.def Info: ../Figures/identifyModelGraph12C.png  used on input li
-ne 441.
-(pdftex.def)             Requested size: 234.8775pt x 176.15768pt.
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.441 }
-       
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Overfull \hbox (25.00003pt too wide) in paragraph at lines 441--457
-[][] 
- []
-
-[10 <../Figures/identifyModelGraph12C.png>]
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.457 }
-       
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Overfull \hbox (25.00003pt too wide) in paragraph at lines 457--473
+[10]
+Overfull \hbox (25.00003pt too wide) in paragraph at lines 474--500
 [][] 
  []
 
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.473 }
-       
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Overfull \hbox (25.00003pt too wide) in paragraph at lines 473--489
-[][] 
- []
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.489 }
-       
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Overfull \hbox (25.00003pt too wide) in paragraph at lines 489--505
+Overfull \hbox (25.00003pt too wide) in paragraph at lines 500--526
 [][] 
  []
 
 [11]
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.505 }
-       
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Overfull \hbox (25.00003pt too wide) in paragraph at lines 505--506
+Overfull \hbox (25.00003pt too wide) in paragraph at lines 526--552
 [][] 
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 508.
+
+Overfull \hbox (25.00003pt too wide) in paragraph at lines 552--580
+[][] 
+ []
+
+<../Figures/identifyModelGraph12C.png, id=182, 462.528pt x 346.896pt>
+File: ../Figures/identifyModelGraph12C.png Graphic file (type png)
+<use ../Figures/identifyModelGraph12C.png>
+Package pdftex.def Info: ../Figures/identifyModelGraph12C.png  used on input li
+ne 580.
+(pdftex.def)             Requested size: 234.8775pt x 176.15768pt.
 [12]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 508.
+Overfull \hbox (25.00003pt too wide) in paragraph at lines 580--606
+[][] 
+ []
+
+[13 <../Figures/identifyModelGraph12C.png>]
+Overfull \hbox (25.00003pt too wide) in paragraph at lines 606--632
+[][] 
+ []
+
+
+Overfull \hbox (25.00003pt too wide) in paragraph at lines 632--660
+[][] 
+ []
+
+<../Figures/identifyModelGraph12CopyC.png, id=212, 462.528pt x 346.896pt>
+File: ../Figures/identifyModelGraph12CopyC.png Graphic file (type png)
+<use ../Figures/identifyModelGraph12CopyC.png>
+Package pdftex.def Info: ../Figures/identifyModelGraph12CopyC.png  used on inpu
+t line 660.
+(pdftex.def)             Requested size: 234.8775pt x 176.15768pt.
+
+Underfull \vbox (badness 4726) has occurred while \output is active []
+
+ [14]
+Overfull \hbox (25.00003pt too wide) in paragraph at lines 660--686
+[][] 
+ []
+
+[15 <../Figures/identifyModelGraph12CopyC.png>]
+Overfull \hbox (25.00003pt too wide) in paragraph at lines 686--712
+[][] 
+ []
+
+
+Overfull \hbox (25.00003pt too wide) in paragraph at lines 712--738
+[][] 
+ []
+
+[16]
+Overfull \hbox (25.00003pt too wide) in paragraph at lines 738--764
+[][] 
+ []
+
+
+Overfull \hbox (25.00003pt too wide) in paragraph at lines 764--790
+[][] 
+ []
+
+[17]
+Overfull \hbox (25.00003pt too wide) in paragraph at lines 790--816
+[][] 
+ []
+
+
+Overfull \hbox (25.00003pt too wide) in paragraph at lines 816--817
+[][] 
+ []
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 819.
+[18]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 819.
  (./keyModule12MALL.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 508.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 508.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 819.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 819.
 
 
 Package rerunfilecheck Warning: File `keyModule12MALL.out' has changed.
@@ -1143,28 +790,29 @@ Package rerunfilecheck Warning: File `keyModule12MALL.out' has changed.
 Package rerunfilecheck Info: Checksums for `keyModule12MALL.out':
 (rerunfilecheck)             Before: <no file>
 (rerunfilecheck)             After:  D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 508.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 819.
  ) 
 Here is how much of TeX's memory you used:
- 8659 strings out of 483183
- 130298 string characters out of 5966293
- 403208 words of memory out of 5000000
- 23459 multiletter control sequences out of 15000+600000
- 535322 words of font info for 38 fonts, out of 8000000 for 9000
+ 8817 strings out of 483183
+ 131494 string characters out of 5966293
+ 403230 words of memory out of 5000000
+ 23460 multiletter control sequences out of 15000+600000
+ 535699 words of font info for 39 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 34i,12n,45p,943b,519s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texli
-ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmti10.pfb>
-Output written on keyModule12MALL.pdf (12 pages, 187737 bytes).
+ 34i,12n,45p,943b,541s stack positions out of 5000i,500n,10000p,200000b,80000s
+ </home/dchamberlain31/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/tct
+i1000.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx1
+0.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb>
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/s
+hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/te
+xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/font
+s/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on keyModule12MALL.pdf (18 pages, 196258 bytes).
 PDF statistics:
- 148 PDF objects out of 1000 (max. 8388607)
- 112 compressed objects within 2 object streams
- 43 named destinations out of 1000 (max. 500000)
+ 360 PDF objects out of 1000 (max. 8388607)
+ 315 compressed objects within 4 object streams
+ 199 named destinations out of 1000 (max. 500000)
  31 words of extra memory for PDF output out of 10000 (max. 10000000)
 

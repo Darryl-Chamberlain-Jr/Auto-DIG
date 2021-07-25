@@ -1,0 +1,128 @@
+\documentclass[14pt]{extbook}
+\usepackage{multicol, enumerate, enumitem, hyperref, color, soul, setspace, parskip, fancyhdr} %General Packages
+\usepackage{amssymb, amsthm, amsmath, latexsym, units, mathtools} %Math Packages
+\everymath{\displaystyle} %All math in Display Style
+% Packages with additional options
+\usepackage[headsep=0.5cm,headheight=12pt, left=1 in,right= 1 in,top= 1 in,bottom= 1 in]{geometry}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{dashrule}  % Package to use the command below to create lines between items
+\newcommand{\litem}[1]{\item#1\hspace*{-1cm}\rule{\textwidth}{0.4pt}}
+\pagestyle{fancy}
+\lhead{Makeup Progress Quiz 2}
+\chead{}
+\rhead{Version A}
+\lfoot{2790-1423}
+\cfoot{}
+\rfoot{Summer C 2021}
+\begin{document}
+
+\begin{enumerate}
+\litem{
+For the graph below, find the value(s) $a$ that makes the statement true: $ \displaystyle \lim_{x \rightarrow a} f(x) = 3$.
+\begin{center}
+    \includegraphics[width=0.5\textwidth]{../Figures/evaluateLimitGraphicallyA.png}
+\end{center}
+\begin{enumerate}[label=\Alph*.]
+\item \( 1 \)
+\item \( -\infty \)
+\item \( -2 \)
+\item \( \text{Multiple } a \text{ make the statement true}. \)
+\item \( \text{No } a \text{ make the statement true}. \)
+
+\end{enumerate} }
+\litem{
+Evaluate the one-sided limit of the function $f(x)$ below, if possible.\[ \lim_{x \rightarrow -5^-} \frac{-8}{(x+5)^8}+5 \]\begin{enumerate}[label=\Alph*.]
+\item \( f(-5) \)
+\item \( \infty \)
+\item \( -\infty \)
+\item \( \text{The limit does not exist} \)
+\item \( \text{None of the above} \)
+
+\end{enumerate} }
+\litem{
+For the graph below, find the value(s) $a$ that makes the statement true: $ \displaystyle \lim_{x \rightarrow a} f(x)$ does not exist.
+\begin{center}
+    \includegraphics[width=0.5\textwidth]{../Figures/evaluateLimitGraphicallyCopyA.png}
+\end{center}
+\begin{enumerate}[label=\Alph*.]
+\item \( 1 \)
+\item \( 3 \)
+\item \( -2 \)
+\item \( \text{Multiple } a \text{ make the statement true}. \)
+\item \( \text{No } a \text{ make the statement true}. \)
+
+\end{enumerate} }
+\litem{
+Evaluate the limit below, if possible.\[ \lim_{x \rightarrow 9} \frac{\sqrt{3x - 11} - 4}{8x - 72} \]\begin{enumerate}[label=\Alph*.]
+\item \( 0.016 \)
+\item \( 0.217 \)
+\item \( \infty \)
+\item \( 0.125 \)
+\item \( \text{None of the above} \)
+
+\end{enumerate} }
+\litem{
+Evaluate the limit below, if possible.\[ \lim_{x \rightarrow 9} \frac{\sqrt{4x - 11} - 5}{6x - 54} \]\begin{enumerate}[label=\Alph*.]
+\item \( 0.067 \)
+\item \( 0.100 \)
+\item \( 0.333 \)
+\item \( \infty \)
+\item \( \text{None of the above} \)
+
+\end{enumerate} }
+\litem{
+Evaluate the one-sided limit of the function $f(x)$ below, if possible.\[ \lim_{x \rightarrow -5^-} \frac{-8}{(x+5)^6}+6 \]\begin{enumerate}[label=\Alph*.]
+\item \( f(-5) \)
+\item \( \infty \)
+\item \( -\infty \)
+\item \( \text{The limit does not exist} \)
+\item \( \text{None of the above} \)
+
+\end{enumerate} }
+\litem{
+To estimate the one-sided limit of the function below as $x$ approaches 8 from the left, which of the following sets of numbers should you use?\[ \frac{\frac{8}{x} - 1}{x - 8} \]\begin{enumerate}[label=\Alph*.]
+\item \( \{ 7.9000, 7.9900, 8.0100, 8.1000 \} \)
+\item \( \{ 7.9000, 7.9900, 7.9990, 7.9999 \} \)
+\item \( \{ 8.1000, 8.0100, 8.0010, 8.0001 \} \)
+\item \( \{ 8.0000, 7.9000, 7.9900, 7.9990 \} \)
+\item \( \{ 8.0000, 8.1000, 8.0100, 8.0010 \} \)
+
+\end{enumerate} }
+\litem{
+To estimate the one-sided limit of the function below as $x$ approaches 2 from the left, which of the following sets of numbers should you use?\[ \frac{\frac{2}{x} - 1}{x - 2} \]\begin{enumerate}[label=\Alph*.]
+\item \( \{ 2.1000, 2.0100, 2.0010, 2.0001 \} \)
+\item \( \{ 1.9000, 1.9900, 2.0100, 2.1000 \} \)
+\item \( \{ 2.0000, 1.9000, 1.9900, 1.9990 \} \)
+\item \( \{ 1.9000, 1.9900, 1.9990, 1.9999 \} \)
+\item \( \{ 2.0000, 2.1000, 2.0100, 2.0010 \} \)
+
+\end{enumerate} }
+\litem{
+Based on the information below, which of the following statements is always true?
+\begin{center}
+    \textit{ $f(x)$ approaches $\infty$ as $x$ approaches $4$. }
+\end{center}
+\begin{enumerate}[label=\Alph*.]
+\item \( x \text{ is undefined when } f(x) \text{ is close to or exactly } \infty. \)
+\item \( f(x) \text{ is close to or exactly } 4 \text{ when } x \text{ is large enough}. \)
+\item \( f(x) \text{ is undefined when } x \text{ is close to or exactly } 4. \)
+\item \( f(x) \text{ is close to or exactly } \infty \text{ when } x \text{ is large enough}. \)
+\item \( \text{None of the above are always true.} \)
+
+\end{enumerate} }
+\litem{
+Based on the information below, which of the following statements is always true?
+\begin{center}
+    \textit{ $f(x)$ approaches $17.314$ as $x$ approaches $6$. }
+\end{center}
+\begin{enumerate}[label=\Alph*.]
+\item \( f(6) = 17 \)
+\item \( f(17) \text{ is close to or exactly } 6 \)
+\item \( f(6) \text{ is close to or exactly } 17 \)
+\item \( f(17) = 6 \)
+\item \( \text{None of the above are always true.} \)
+
+\end{enumerate} }
+\end{enumerate}
+
+\end{document}

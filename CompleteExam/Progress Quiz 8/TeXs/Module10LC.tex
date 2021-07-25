@@ -1,0 +1,112 @@
+\documentclass[14pt]{extbook}
+\usepackage{multicol, enumerate, enumitem, hyperref, color, soul, setspace, parskip, fancyhdr} %General Packages
+\usepackage{amssymb, amsthm, amsmath, latexsym, units, mathtools} %Math Packages
+\everymath{\displaystyle} %All math in Display Style
+% Packages with additional options
+\usepackage[headsep=0.5cm,headheight=12pt, left=1 in,right= 1 in,top= 1 in,bottom= 1 in]{geometry}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{dashrule}  % Package to use the command below to create lines between items
+\newcommand{\litem}[1]{\item#1\hspace*{-1cm}\rule{\textwidth}{0.4pt}}
+\pagestyle{fancy}
+\lhead{Progress Quiz 8}
+\chead{}
+\rhead{Version C}
+\lfoot{5493-4176}
+\cfoot{}
+\rfoot{Summer C 2021}
+\begin{document}
+
+\begin{enumerate}
+\litem{
+What are the \textit{possible Integer} roots of the polynomial below?\[ f(x) = 7x^{2} +7 x + 2 \]\begin{enumerate}[label=\Alph*.]
+\item \( \text{ All combinations of: }\frac{\pm 1,\pm 2}{\pm 1,\pm 7} \)
+\item \( \pm 1,\pm 7 \)
+\item \( \pm 1,\pm 2 \)
+\item \( \text{ All combinations of: }\frac{\pm 1,\pm 7}{\pm 1,\pm 2} \)
+\item \( \text{There is no formula or theorem that tells us all possible Integer roots.} \)
+
+\end{enumerate} }
+\litem{
+Factor the polynomial below completely. Then, choose the intervals the zeros of the polynomial belong to, where $z_1 \leq z_2 \leq z_3$. \textit{To make the problem easier, all zeros are between -5 and 5.}\[ f(x) = 9x^{3} -39 x^{2} +52 x -20 \]\begin{enumerate}[label=\Alph*.]
+\item \( z_1 \in [-5.01, -4.98], \text{   }  z_2 \in [-2.06, -1.97], \text{   and   } z_3 \in [-0.27, -0.21] \)
+\item \( z_1 \in [0.67, 0.72], \text{   }  z_2 \in [1.62, 1.68], \text{   and   } z_3 \in [1.96, 2.08] \)
+\item \( z_1 \in [0.45, 0.64], \text{   }  z_2 \in [1.45, 1.53], \text{   and   } z_3 \in [1.96, 2.08] \)
+\item \( z_1 \in [-2, -1.9], \text{   }  z_2 \in [-1.83, -1.63], \text{   and   } z_3 \in [-0.68, -0.64] \)
+\item \( z_1 \in [-2, -1.9], \text{   }  z_2 \in [-1.6, -1.45], \text{   and   } z_3 \in [-0.62, -0.56] \)
+
+\end{enumerate} }
+\litem{
+Factor the polynomial below completely, knowing that $x -5$ is a factor. Then, choose the intervals the zeros of the polynomial belong to, where $z_1 \leq z_2 \leq z_3 \leq z_4$. \textit{To make the problem easier, all zeros are between -5 and 5.}\[ f(x) = 15x^{4} -41 x^{3} -266 x^{2} +512 x -160 \]\begin{enumerate}[label=\Alph*.]
+\item \( z_1 \in [-5.3, -4.1], \text{   }  z_2 \in [-2.37, -1.54], z_3 \in [-0.37, -0.19], \text{   and   } z_4 \in [2.7, 4.3] \)
+\item \( z_1 \in [-4.6, -0.9], \text{   }  z_2 \in [0.42, 0.84], z_3 \in [2.4, 2.57], \text{   and   } z_4 \in [4.4, 5.1] \)
+\item \( z_1 \in [-5.3, -4.1], \text{   }  z_2 \in [-1.77, -1.09], z_3 \in [-0.65, -0.35], \text{   and   } z_4 \in [2.7, 4.3] \)
+\item \( z_1 \in [-5.3, -4.1], \text{   }  z_2 \in [-2.52, -2.43], z_3 \in [-0.84, -0.7], \text{   and   } z_4 \in [2.7, 4.3] \)
+\item \( z_1 \in [-4.6, -0.9], \text{   }  z_2 \in [0.35, 0.54], z_3 \in [1.29, 1.39], \text{   and   } z_4 \in [4.4, 5.1] \)
+
+\end{enumerate} }
+\litem{
+Factor the polynomial below completely, knowing that $x + 5$ is a factor. Then, choose the intervals the zeros of the polynomial belong to, where $z_1 \leq z_2 \leq z_3 \leq z_4$. \textit{To make the problem easier, all zeros are between -5 and 5.}\[ f(x) = 10x^{4} +53 x^{3} -39 x^{2} -310 x -200 \]\begin{enumerate}[label=\Alph*.]
+\item \( z_1 \in [-2.56, -2.48], \text{   }  z_2 \in [0.49, 1.07], z_3 \in [1.47, 2.9], \text{   and   } z_4 \in [3.3, 5.3] \)
+\item \( z_1 \in [-5.02, -4.99], \text{   }  z_2 \in [-2.01, -1.47], z_3 \in [-1.12, -0.05], \text{   and   } z_4 \in [0.6, 3.6] \)
+\item \( z_1 \in [-5.02, -4.99], \text{   }  z_2 \in [-2.01, -1.47], z_3 \in [-1.29, -1.2], \text{   and   } z_4 \in [-0.5, 1.1] \)
+\item \( z_1 \in [-0.48, -0.31], \text{   }  z_2 \in [1.22, 1.73], z_3 \in [1.47, 2.9], \text{   and   } z_4 \in [3.3, 5.3] \)
+\item \( z_1 \in [-0.52, -0.47], \text{   }  z_2 \in [1.99, 2.21], z_3 \in [3.32, 5.3], \text{   and   } z_4 \in [3.3, 5.3] \)
+
+\end{enumerate} }
+\litem{
+Perform the division below. Then, find the intervals that correspond to the quotient in the form $ax^2+bx+c$ and remainder $r$.\[ \frac{20x^{3} +118 x^{2} +94 x + 16}{x + 5} \]\begin{enumerate}[label=\Alph*.]
+\item \( a \in [16, 25], \text{   } b \in [-5, 2], \text{   } c \in [100, 110], \text{   and   } r \in [-621, -614]. \)
+\item \( a \in [-102, -98], \text{   } b \in [-387, -379], \text{   } c \in [-1818, -1815], \text{   and   } r \in [-9072, -9061]. \)
+\item \( a \in [-102, -98], \text{   } b \in [618, 620], \text{   } c \in [-2998, -2994], \text{   and   } r \in [14988, 14999]. \)
+\item \( a \in [16, 25], \text{   } b \in [16, 22], \text{   } c \in [2, 8], \text{   and   } r \in [-4, 0]. \)
+\item \( a \in [16, 25], \text{   } b \in [216, 224], \text{   } c \in [1182, 1188], \text{   and   } r \in [5935, 5938]. \)
+
+\end{enumerate} }
+\litem{
+Perform the division below. Then, find the intervals that correspond to the quotient in the form $ax^2+bx+c$ and remainder $r$.\[ \frac{15x^{3} +35 x^{2} -15}{x + 2} \]\begin{enumerate}[label=\Alph*.]
+\item \( a \in [-37, -28], b \in [-34, -21], c \in [-58, -46], \text{ and } r \in [-121, -110]. \)
+\item \( a \in [13, 17], b \in [63, 67], c \in [129, 131], \text{ and } r \in [242, 246]. \)
+\item \( a \in [13, 17], b \in [3, 8], c \in [-11, -9], \text{ and } r \in [4, 6]. \)
+\item \( a \in [-37, -28], b \in [93, 96], c \in [-191, -184], \text{ and } r \in [364, 367]. \)
+\item \( a \in [13, 17], b \in [-15, -5], c \in [27, 36], \text{ and } r \in [-105, -98]. \)
+
+\end{enumerate} }
+\litem{
+Perform the division below. Then, find the intervals that correspond to the quotient in the form $ax^2+bx+c$ and remainder $r$.\[ \frac{6x^{3} -18 x -14}{x -2} \]\begin{enumerate}[label=\Alph*.]
+\item \( a \in [6, 9], b \in [-14, -11], c \in [4, 11], \text{ and } r \in [-30, -19]. \)
+\item \( a \in [6, 9], b \in [1, 10], c \in [-12, -11], \text{ and } r \in [-30, -19]. \)
+\item \( a \in [11, 13], b \in [24, 26], c \in [29, 33], \text{ and } r \in [40, 49]. \)
+\item \( a \in [11, 13], b \in [-24, -23], c \in [29, 33], \text{ and } r \in [-81, -72]. \)
+\item \( a \in [6, 9], b \in [9, 14], c \in [4, 11], \text{ and } r \in [-4, -1]. \)
+
+\end{enumerate} }
+\litem{
+What are the \textit{possible Rational} roots of the polynomial below?\[ f(x) = 4x^{3} +2 x^{2} +7 x + 7 \]\begin{enumerate}[label=\Alph*.]
+\item \( \text{ All combinations of: }\frac{\pm 1,\pm 7}{\pm 1,\pm 2,\pm 4} \)
+\item \( \text{ All combinations of: }\frac{\pm 1,\pm 2,\pm 4}{\pm 1,\pm 7} \)
+\item \( \pm 1,\pm 2,\pm 4 \)
+\item \( \pm 1,\pm 7 \)
+\item \( \text{ There is no formula or theorem that tells us all possible Rational roots.} \)
+
+\end{enumerate} }
+\litem{
+Perform the division below. Then, find the intervals that correspond to the quotient in the form $ax^2+bx+c$ and remainder $r$.\[ \frac{20x^{3} -67 x^{2} -155 x -53}{x -5} \]\begin{enumerate}[label=\Alph*.]
+\item \( a \in [20, 22], \text{   } b \in [29, 39], \text{   } c \in [4, 14], \text{   and   } r \in [-5, -2]. \)
+\item \( a \in [20, 22], \text{   } b \in [-170, -166], \text{   } c \in [677, 685], \text{   and   } r \in [-3457, -3448]. \)
+\item \( a \in [99, 105], \text{   } b \in [-569, -562], \text{   } c \in [2678, 2688], \text{   and   } r \in [-13455, -13451]. \)
+\item \( a \in [20, 22], \text{   } b \in [11, 15], \text{   } c \in [-107, -100], \text{   and   } r \in [-468, -461]. \)
+\item \( a \in [99, 105], \text{   } b \in [428, 436], \text{   } c \in [2005, 2011], \text{   and   } r \in [9992, 9998]. \)
+
+\end{enumerate} }
+\litem{
+Factor the polynomial below completely. Then, choose the intervals the zeros of the polynomial belong to, where $z_1 \leq z_2 \leq z_3$. \textit{To make the problem easier, all zeros are between -5 and 5.}\[ f(x) = 12x^{3} -13 x^{2} -59 x -30 \]\begin{enumerate}[label=\Alph*.]
+\item \( z_1 \in [-1.53, -1.3], \text{   }  z_2 \in [-0.81, -0.72], \text{   and   } z_3 \in [2.54, 3.21] \)
+\item \( z_1 \in [-3.01, -2.71], \text{   }  z_2 \in [0.63, 0.72], \text{   and   } z_3 \in [1.21, 1.29] \)
+\item \( z_1 \in [-3.01, -2.71], \text{   }  z_2 \in [0.24, 0.55], \text{   and   } z_3 \in [1.99, 2.09] \)
+\item \( z_1 \in [-1.34, -1.02], \text{   }  z_2 \in [-0.67, -0.6], \text{   and   } z_3 \in [2.54, 3.21] \)
+\item \( z_1 \in [-3.01, -2.71], \text{   }  z_2 \in [0.72, 0.85], \text{   and   } z_3 \in [1.38, 1.64] \)
+
+\end{enumerate} }
+\end{enumerate}
+
+\end{document}
