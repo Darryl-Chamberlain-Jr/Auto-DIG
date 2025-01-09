@@ -4,6 +4,9 @@ authors:
   - family-names: Chamberlain Jr.
     given-names: Darryl
     orcid: https://orcid.org/0000-0001-9724-3225
+  - family-names: Jeter
+    given-names: Russell
+    orcid: https://orcid.org/0000-0002-3019-2387
 title: "Automatic Diagnostic Item Generation"
 version: 1.0.0
 identifiers:
